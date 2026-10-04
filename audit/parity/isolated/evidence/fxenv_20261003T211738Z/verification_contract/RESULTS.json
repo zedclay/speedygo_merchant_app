@@ -1,0 +1,103 @@
+{
+  "suite": "merchant_verification_contract_completion",
+  "pass": 16,
+  "fail": 0,
+  "results": [
+    {
+      "id": "V0",
+      "check": "schema tables present",
+      "result": "PASS",
+      "detail": "count=4"
+    },
+    {
+      "id": "V1",
+      "check": "GET legal/current seeds both kinds",
+      "result": "PASS",
+      "detail": "status=200 kinds=['DOSSIER_ACCURACY_DECLARATION', 'MERCHANT_TERMS']"
+    },
+    {
+      "id": "V2",
+      "check": "create PENDING merchant",
+      "result": "PASS",
+      "detail": "status=201"
+    },
+    {
+      "id": "V3",
+      "check": "submit without acceptances \u2192 LEGAL_ACCEPTANCE_REQUIRED or NOT_READY",
+      "result": "PASS",
+      "detail": "status=409 code=MERCHANT_VERIFICATION_NOT_READY"
+    },
+    {
+      "id": "V4",
+      "check": "required documents PENDING",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "V5",
+      "check": "ready but empty acceptances \u2192 LEGAL_ACCEPTANCE_REQUIRED",
+      "result": "PASS",
+      "detail": "status=400 code=LEGAL_ACCEPTANCE_REQUIRED"
+    },
+    {
+      "id": "V6",
+      "check": "outdated terms \u2192 LEGAL_VERSION_OUTDATED",
+      "result": "PASS",
+      "detail": "status=400 code=LEGAL_VERSION_OUTDATED"
+    },
+    {
+      "id": "V7",
+      "check": "submit with consent creates attempt 1",
+      "result": "PASS",
+      "detail": "status=200 attempt=1 submittedAt=True"
+    },
+    {
+      "id": "V8",
+      "check": "DB submission + 2 acceptances",
+      "result": "PASS",
+      "detail": "sub=1 acc=2"
+    },
+    {
+      "id": "V9",
+      "check": "admin reject with structured issues",
+      "result": "PASS",
+      "detail": "status=201 merchant=REJECTED"
+    },
+    {
+      "id": "V10",
+      "check": "OWNER sees currentIssues after reject",
+      "result": "PASS",
+      "detail": "status=200 merchantStatus=REJECTED issues=2 count=2"
+    },
+    {
+      "id": "V11",
+      "check": "rebind IDENTITY resolves DOCUMENT issue",
+      "result": "PASS",
+      "detail": "status=200 doc_open=0"
+    },
+    {
+      "id": "V12",
+      "check": "resubmit after reject \u2192 attempt 2",
+      "result": "PASS",
+      "detail": "status=200 attempt=2"
+    },
+    {
+      "id": "V13",
+      "check": "admin approve stamps ACTIVE",
+      "result": "PASS",
+      "detail": "status=201 merchant=ACTIVE"
+    },
+    {
+      "id": "V14",
+      "check": "OWNER package after approve",
+      "result": "PASS",
+      "detail": "status=200 merchantStatus=ACTIVE attempt=2 reviewedAt=True issues=0"
+    },
+    {
+      "id": "V15",
+      "check": "legal_document_versions seeded on fx",
+      "result": "PASS",
+      "detail": "rows=2"
+    }
+  ]
+}

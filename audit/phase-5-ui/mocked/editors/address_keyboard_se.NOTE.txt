@@ -1,0 +1,1 @@
+Simulated MediaQuery.viewInsets.bottom=280 (not native IME capture).

@@ -1,0 +1,12 @@
+accounts.id = 2
+accounts.phone = 2
+audit_logs.after_json = 3
+audit_logs.target_id = 3
+devices.account_id = 4
+merchant_branches.id = 2
+merchant_branches.merchant_id = 2
+merchant_documents.merchant_id = 4
+merchant_members.account_id = 2
+merchant_members.merchant_id = 2
+merchants.id = 2
+sessions.account_id = 4

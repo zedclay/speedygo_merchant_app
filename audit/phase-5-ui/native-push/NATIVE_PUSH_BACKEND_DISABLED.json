@@ -1,0 +1,57 @@
+{
+  "phase": "disabled",
+  "fixture": "Dar El Bahja (merchant 0d00c071-\u20260001, owner account only)",
+  "providerNote": "PUSH_PROVIDER=disabled (real .env)",
+  "results": [
+    {
+      "check": "provider disabled: order + inbox persisted, PUSH logged SKIPPED_NOT_CONFIGURED",
+      "result": "PASS",
+      "orderId": "01a0e8ac-3118-7245-a92d-852c53c95a69",
+      "logs": [
+        {
+          "notificationId": "01a0e8ac-31a0-7230-848e-ad8d573375c4",
+          "accountId": "0d00c071-d000-7000-8000-000000000001",
+          "channel": "IN_APP",
+          "status": "SENT",
+          "providerReference": "in_app:MERCHANT_ORDER_CREATED:01a0e8ac-3118-7245-a92d-852c53c95a69",
+          "sentAt": "2026-09-28 16:39:54.146+01"
+        },
+        {
+          "notificationId": "01a0e8ac-31a0-7230-848e-ad8d573375c4",
+          "accountId": "0d00c071-d000-7000-8000-000000000001",
+          "channel": "PUSH",
+          "status": "SKIPPED_NOT_CONFIGURED",
+          "providerReference": "",
+          "sentAt": ""
+        }
+      ],
+      "order": {
+        "status": "CREATED",
+        "fulfillmentStatus": "PENDING_ACCEPTANCE"
+      }
+    },
+    {
+      "check": "token released by logout is re-registrable by next account; live foreign token \u2192 409",
+      "result": "PASS",
+      "http": [
+        200,
+        200,
+        200,
+        409
+      ],
+      "afterLogout": {
+        "accountId": "0d00c071-d000-7000-8000-000000000001",
+        "active": false
+      },
+      "afterClaim": {
+        "accountId": "0d00c074-d000-7000-8000-000000000001",
+        "active": true
+      },
+      "afterForeignPut": {
+        "accountId": "0d00c074-d000-7000-8000-000000000001",
+        "active": true
+      },
+      "conflictCode": null
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "fixture": "Dar El Bahja",
+  "phone": "+213550000071",
+  "mode": "resume_stale",
+  "pollIntervalSeconds": 8,
+  "harnessResult": "PASS",
+  "error": null,
+  "steps": [
+    {
+      "id": "home_loaded",
+      "status": "PASS",
+      "detail": null,
+      "mode": "resume_stale",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:33:44.670356Z"
+    },
+    {
+      "id": "alert_before_stale",
+      "status": "PASS",
+      "detail": null,
+      "mode": "resume_stale",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:33:44.673037Z"
+    },
+    {
+      "id": "host_mutated_order",
+      "status": "PASS",
+      "detail": null,
+      "mode": "resume_stale",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:33:48.688098Z"
+    },
+    {
+      "id": "resume_stale_dismissed",
+      "status": "PASS",
+      "detail": null,
+      "mode": "resume_stale",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:33:54.492445Z"
+    }
+  ],
+  "nativePush": "NOT_EXERCISED (DisabledPushMessagingGateway; no Firebase options in this build)",
+  "nativePushRequirement": "FCM adapter + firebase_messaging client are implemented; delivery still needs FCM credentials (backend) and Firebase options (config/push.local.json). See docs/architecture/NATIVE_PUSH_SETUP.md and audit/phase-5-ui/native-push/NATIVE_PUSH_REPORT.md. Foreground poll evidence here is independent of Push.",
+  "offlineSimulation": null
+}

@@ -1,0 +1,20 @@
+{
+  "api": "http://127.0.0.1:3100/api/v1",
+  "branchId": "0d00f0f0-fa00-7000-8000-000000002001",
+  "productId": "0d00f0f0-fa00-7000-8000-000000007003",
+  "addressId": "0d00f0f0-fa00-7000-8000-000000000113",
+  "orders": [
+    {
+      "id": "01a0fdb9-a41e-7996-aeff-617ec5a30846",
+      "publicReference": "sgo_01a0fdb9a41e76449c226d29c39ffbe2",
+      "customerTotalMinor": 65000
+    },
+    {
+      "id": "01a0fdb9-a4fa-7ead-b163-1a1dd55e2a66",
+      "publicReference": "sgo_01a0fdb9a4fa7482baf19389834bc8ef",
+      "customerTotalMinor": 65000
+    }
+  ],
+  "errors": [],
+  "customerLogoutHttp": 200
+}

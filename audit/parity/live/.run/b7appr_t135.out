@@ -1,0 +1,20 @@
+BUNDLE_MISMATCH
+PHASE register exit=0
+{"phone" : "+213550000098", "accountId" : "01a0f773-d531-72eb-94ec-c3ff00315cb2", "merchantId" : "01a0f773-f164-71ac-83a9-d4597b7e857f", "merchantStatus" : "PENDING_REVIEW", "branchIds" : ["01a0f774-82c3-7ab4-9997-2cfec437d73b"]}
+admin_reject_http=201
+admin_logout_http=200
+merchant_status_before_approve=PENDING_REVIEW
+admin_approve_http=201
+admin_logout_http=200
+BUNDLE_OK
+SHOT live2_t135_b7_rejected
+SHOT live2_t135_b7_resubmission
+SHOT live2_t135_b7_pending
+SHOT live2_t135_b7_approved
+SHOT live2_t135_b7_approved_next
+PHASE approval exit=0
+merchant_status_after=ACTIVE
+PARITY_B7_APPROVAL_LIVE prefix=live2_t135 start=rejected done
+{"label": "b7appr_t135_admin", "accountId": "0d00c074-d000-7000-8000-000000000001", "start": "2026-10-01T12:31:31Z", "exit": 0,
+ "sessions": [{"id" : "01a0f775-c7f8-743e-ac85-891e189fb1f4", "revoked" : true}, {"id" : "01a0f774-9669-732c-a7c7-57240b1bada5", "revoked" : true}], "fallbackRevoked": 0, "devices": ["01a0f774-9669-7d1d-83ff-74a24b9dd25d", "01a0f775-c7f8-797f-8594-59765e1500cb"], "deviceTokens": []}
+RC=0

@@ -1,0 +1,135 @@
+{
+  "takenAt": "2026-10-03T14:36:48Z",
+  "devDb": {
+    "database": "speedygo_dev",
+    "readOnly": "on",
+    "counts": {
+      "accounts": 6,
+      "sessions": 253,
+      "sessionsActiveMerchant": 180,
+      "sessionsActiveCustomer": 76,
+      "sessionsActiveDarElBahjaOwner": 160,
+      "sessionsActivePrepTimeCustomer": 61,
+      "devices": 253,
+      "orders": 76,
+      "ordersCompleted": 0,
+      "orderStatusEvents": 154,
+      "orderCancellations": 47,
+      "estimateRevisions": 36,
+      "financialSnapshots": 76,
+      "payments": 76,
+      "notifications": 163,
+      "notificationDeliveryLogs": 326,
+      "deliveries": 1,
+      "driverAssignments": 0,
+      "ledgerEntries": 0,
+      "carts": 76,
+      "cartItems": 76,
+      "auditLogs": 6,
+      "merchants": 12,
+      "merchantBranches": 12,
+      "products": 79
+    },
+    "darElBahjaOrdersByState": {
+      "CANCELLED/PENDING_ACCEPTANCE": 47,
+      "ACTIVE/READY": 1,
+      "CONFIRMED/ACCEPTED": 28
+    },
+    "trackedOrders": [
+      {
+        "id": "01a0fd2a-2e34-7919-ab9a-043225c2fbf1",
+        "status": "CONFIRMED",
+        "fulfillment": "ACCEPTED",
+        "estimateVersion": 1,
+        "updatedAt": "2026-10-02T16:18:14.889+01:00"
+      },
+      {
+        "id": "01a0fd2a-2f23-7094-abf0-26b4b3c0e977",
+        "status": "CANCELLED",
+        "fulfillment": "PENDING_ACCEPTANCE",
+        "estimateVersion": 0,
+        "updatedAt": "2026-10-02T16:20:45.248+01:00"
+      },
+      {
+        "id": "01a0fd32-688b-7757-9124-3aa8574d93ea",
+        "status": "CONFIRMED",
+        "fulfillment": "ACCEPTED",
+        "estimateVersion": 1,
+        "updatedAt": "2026-10-02T16:20:34.634+01:00"
+      },
+      {
+        "id": "01a0fd37-f350-7c88-ac7e-7c4c5c8c3d30",
+        "status": "CONFIRMED",
+        "fulfillment": "ACCEPTED",
+        "estimateVersion": 1,
+        "updatedAt": "2026-10-02T16:26:42.844+01:00"
+      },
+      {
+        "id": "01a0fd37-f447-7440-a6db-bf459aca7c8e",
+        "status": "CANCELLED",
+        "fulfillment": "PENDING_ACCEPTANCE",
+        "estimateVersion": 0,
+        "updatedAt": "2026-10-02T16:26:53.535+01:00"
+      },
+      {
+        "id": "01a0fd63-3d79-7d51-a414-6bf504b8fc81",
+        "status": "CONFIRMED",
+        "fulfillment": "ACCEPTED",
+        "estimateVersion": 1,
+        "updatedAt": "2026-10-02T17:13:57.784+01:00"
+      },
+      {
+        "id": "01a0fd63-3e5c-7d0a-8801-d5bb1e793486",
+        "status": "CANCELLED",
+        "fulfillment": "PENDING_ACCEPTANCE",
+        "estimateVersion": 0,
+        "updatedAt": "2026-10-02T17:14:08.57+01:00"
+      }
+    ],
+    "lateOrder": {
+      "status": "CONFIRMED",
+      "fulfillment": "ACCEPTED",
+      "estimateVersion": 1,
+      "estimatedReadyAt": "2026-09-28T17:45:48.358+01:00"
+    },
+    "branchNames": {
+      "0d00c071-d000-7000-8000-000000011010": "Atelier Sucr\u00e9",
+      "0d00c071-d000-7000-8000-000000011001": "Dar El Bahja"
+    },
+    "fixtureNamespaceInDev": {
+      "accounts": 0,
+      "merchants": 0,
+      "orders": 0,
+      "products": 0
+    },
+    "createdSince": {
+      "since": "2026-10-03T14:36:47Z",
+      "accounts": 0,
+      "sessions": 0,
+      "devices": 0,
+      "orders": 0,
+      "orderStatusEvents": 0,
+      "notifications": 0,
+      "ordersUpdated": 0,
+      "branchesUpdated": 0
+    }
+  },
+  "fxDb": null,
+  "redis": {
+    "dbsize": {
+      "0": 29,
+      "9": 0,
+      "15": 10
+    },
+    "parityfxKeys": {
+      "0": 0,
+      "15": 0,
+      "9": 0
+    },
+    "index9KeysWithoutIsolatedPrefix": 0,
+    "devJobCounters": {
+      "bull:matching:notifications:id": "2653",
+      "bull:matching:matching:id": "12742"
+    }
+  }
+}

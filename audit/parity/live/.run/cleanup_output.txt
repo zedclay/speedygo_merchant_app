@@ -1,0 +1,22 @@
+BEGIN
+DO
+CREATE TABLE
+INSERT 0 3
+CREATE TABLE
+INSERT 0 3
+CREATE TABLE
+INSERT 0 2
+DO
+DELETE 6
+DELETE 2
+DELETE 3
+DELETE 3
+DELETE 5
+DELETE 5
+DELETE 3
+ accounts_left | merchants_left | dar_el_bahja_status | finjan_present 
+---------------+----------------+---------------------+----------------
+             0 |              0 | ACTIVE              |              1
+(1 row)
+
+COMMIT

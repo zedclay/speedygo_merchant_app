@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "layer": "live_merchant_ui",
+  "bundleId": "com.speedygo.speedygoMerchantApp",
+  "fixture": "Dar El Bahja",
+  "phone": "+213550000071",
+  "simulator": "iPhone 16e",
+  "simulatorUdid": "8DB9007A-B816-4EC5-86ED-C627AC60F2C5",
+  "remoteMediaRead": "Merchant JWT GET streams",
+  "finjanUntouched": true,
+  "customerTokenUnused": true,
+  "entrypoint": "integration_test/media_remote_display_live_test.dart",
+  "steps": [
+    {
+      "id": "home",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "fixture": "Dar El Bahja",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-24T15:10:23.238038Z"
+    },
+    {
+      "id": "cover_save",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "fixture": "Dar El Bahja",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-24T15:10:43.716795Z"
+    },
+    {
+      "id": "cover_reopen_remote",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "fixture": "Dar El Bahja",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-24T15:10:52.009574Z"
+    },
+    {
+      "id": "product_reopen_remote",
+      "status": "PASS",
+      "detail": "bytes=1391 expectRemote=true remoteFailed=false imageWidget=true productId=0d00c071-d000-7000-8000-000000030101",
+      "layer": "live_merchant_ui",
+      "fixture": "Dar El Bahja",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-24T15:11:20.250358Z"
+    }
+  ],
+  "at": "2026-09-24T15:11:23.253071Z"
+}

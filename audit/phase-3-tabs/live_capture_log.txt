@@ -1,0 +1,7 @@
+[13:11:54] api_ok
+[13:12:53] shot=live-home-pro
+[13:13:00] shot=live-orders-pro
+[13:13:05] shot=live-catalog-pro
+[13:13:12] shot=live-reports-pro
+[13:13:18] shot=live-profile-pro
+[13:13:19] flutter_test_exit=0

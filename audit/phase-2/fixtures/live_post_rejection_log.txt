@@ -1,0 +1,8 @@
+[18:06:21] reject_order=01a0b51d-bf20-785a-abcb-a3b7cd7381b5
+[18:06:23] pre_check=CANCELLED/PENDING_ACCEPTANCE|TEST FIXTURE Phase2 refuse — rupture
+[18:06:25] otp_cooldown_cleared_for_ui
+[18:06:26] se_reset_done
+[18:07:38] shot=list-cancelled
+[18:07:47] shot=post-rejected-detail
+[18:07:55] shot=list-cancelled-after-back
+[18:07:57] flutter_test_exit=0

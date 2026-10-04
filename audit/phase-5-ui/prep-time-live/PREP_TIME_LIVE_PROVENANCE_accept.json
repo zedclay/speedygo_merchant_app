@@ -1,0 +1,73 @@
+{
+  "fixture": "Dar El Bahja",
+  "phone": "+213550000071",
+  "mode": "accept",
+  "acceptOrderId": "01a0d695-92e0-7c55-8569-e0e5cdc856d2",
+  "coldOrderId": "01a0d695-92e0-7c55-8569-e0e5cdc856d2",
+  "harnessResult": "PASS",
+  "steps": [
+    {
+      "id": "home_loaded",
+      "status": "PASS",
+      "detail": null,
+      "layer": "automated_integration",
+      "mode": "accept",
+      "fixture": "Dar El Bahja",
+      "at": "2026-09-25T03:23:22.948448Z"
+    },
+    {
+      "id": "open_via_incoming_card",
+      "status": "PASS",
+      "detail": null,
+      "layer": "automated_integration",
+      "mode": "accept",
+      "fixture": "Dar El Bahja",
+      "at": "2026-09-25T03:23:38.297447Z"
+    },
+    {
+      "id": "accept_sheet",
+      "status": "PASS",
+      "detail": null,
+      "layer": "automated_integration",
+      "mode": "accept",
+      "fixture": "Dar El Bahja",
+      "at": "2026-09-25T03:23:40.400932Z"
+    },
+    {
+      "id": "accept_with_estimate_ui",
+      "status": "PASS",
+      "detail": null,
+      "layer": "automated_integration",
+      "mode": "accept",
+      "fixture": "Dar El Bahja",
+      "at": "2026-09-25T03:23:50.135448Z"
+    },
+    {
+      "id": "reopen_via_accepted_card",
+      "status": "PASS",
+      "detail": null,
+      "layer": "automated_integration",
+      "mode": "accept",
+      "fixture": "Dar El Bahja",
+      "at": "2026-09-25T03:24:10.541643Z"
+    },
+    {
+      "id": "update_sheet",
+      "status": "PASS",
+      "detail": null,
+      "layer": "automated_integration",
+      "mode": "accept",
+      "fixture": "Dar El Bahja",
+      "at": "2026-09-25T03:24:15.569695Z"
+    },
+    {
+      "id": "update_estimate_ui",
+      "status": "PASS",
+      "detail": null,
+      "layer": "automated_integration",
+      "mode": "accept",
+      "fixture": "Dar El Bahja",
+      "at": "2026-09-25T03:24:24.134921Z"
+    }
+  ]
+}

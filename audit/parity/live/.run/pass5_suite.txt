@@ -1,0 +1,3 @@
+00:30 +523 ~1: /Users/mac/Downloads/speedygo_project/apps/merchant_app/test/audit/parity/batch3_catalog_capture_test.dart: catalogue behaviour image crop screen zoom never crops below the 400 px minimum
+00:30 +524 ~1: /Users/mac/Downloads/speedygo_project/apps/merchant_app/test/audit/parity/batch3_catalog_capture_test.dart: catalogue behaviour image crop screen delete asks the editor to remove the image
+00:30 +525 ~1: All tests passed!

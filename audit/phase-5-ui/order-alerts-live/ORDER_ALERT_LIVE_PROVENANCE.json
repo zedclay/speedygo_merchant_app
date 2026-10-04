@@ -1,0 +1,47 @@
+{
+  "fixture": "Dar El Bahja",
+  "phone": "+213550000071",
+  "orderId": "01a0d6c1-009b-7d8f-b55e-9234a18154ce",
+  "pollIntervalSeconds": 8,
+  "harnessResult": "PASS",
+  "error": null,
+  "steps": [
+    {
+      "id": "home_loaded",
+      "status": "PASS",
+      "detail": null,
+      "layer": "automated_integration",
+      "at": "2026-09-25T04:10:20.390100Z"
+    },
+    {
+      "id": "foreground_alert",
+      "status": "PASS",
+      "detail": null,
+      "layer": "automated_integration",
+      "at": "2026-09-25T04:10:24.448846Z"
+    },
+    {
+      "id": "dedupe_single_alert",
+      "status": "PASS",
+      "detail": null,
+      "layer": "automated_integration",
+      "at": "2026-09-25T04:10:29.582393Z"
+    },
+    {
+      "id": "alert_tap_opens_order",
+      "status": "PASS",
+      "detail": null,
+      "layer": "automated_integration",
+      "at": "2026-09-25T04:10:37.734103Z"
+    },
+    {
+      "id": "no_repeat_after_open",
+      "status": "PASS",
+      "detail": null,
+      "layer": "automated_integration",
+      "at": "2026-09-25T04:10:42.850593Z"
+    }
+  ],
+  "nativePush": "BLOCKED",
+  "nativePushRequirement": "APNs/FCM credentials + provider adapter; DeviceToken APIs ready but Push stays SKIPPED_NOT_CONFIGURED"
+}

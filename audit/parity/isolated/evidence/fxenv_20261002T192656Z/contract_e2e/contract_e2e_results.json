@@ -1,0 +1,288 @@
+{
+  "api": "http://127.0.0.1:3100/api/v1",
+  "startedAtAlgiers": "2026-10-02T20:27:25.631765+01:00",
+  "finishedAtAlgiers": "2026-10-02T20:27:39.448816+01:00",
+  "logoutHttp": {
+    "OWNER": 200,
+    "MANAGER": 200,
+    "STAFF": 200,
+    "CUSTOMER": 200
+  },
+  "pass": 33,
+  "fail": 6,
+  "results": [
+    {
+      "id": "L01",
+      "area": "logo",
+      "check": "no logo → GET 404 STORAGE_OBJECT_MISSING (fallback state)",
+      "result": "PASS",
+      "detail": "http=404 code=STORAGE_OBJECT_MISSING"
+    },
+    {
+      "id": "L02",
+      "area": "logo",
+      "check": "OWNER upload PNG → pending reference, purpose MERCHANT_BRANCH_LOGO",
+      "result": "PASS",
+      "detail": "http=200 purpose=MERCHANT_BRANCH_LOGO size=569"
+    },
+    {
+      "id": "L03",
+      "area": "logo",
+      "check": "OWNER bind → logoVersion + logoImageUrl",
+      "result": "PASS",
+      "detail": "http=200 url=/merchant/0d00f0f0-fa00-7000-8000-000000001001/branches/0d00f0f0-fa00-7000-8000-000000002001/logo"
+    },
+    {
+      "id": "L04",
+      "area": "logo",
+      "check": "GET streams exact bytes with ETag/no-cache/nosniff",
+      "result": "PASS",
+      "detail": "http=200 sha_match=True etag_match=True cc=private, no-cache"
+    },
+    {
+      "id": "L05",
+      "area": "logo",
+      "check": "DB: one merchant_branch_logos row bound to the branch; object stored under logos/",
+      "result": "PASS",
+      "detail": "rows=1 stored=True"
+    },
+    {
+      "id": "L06",
+      "area": "logo",
+      "check": "STAFF may view the logo",
+      "result": "PASS",
+      "detail": "http=200"
+    },
+    {
+      "id": "L07",
+      "area": "logo",
+      "check": "STAFF upload / bind / delete → 403",
+      "result": "PASS",
+      "detail": "http=403,403,403 codes=MERCHANT_ROLE_FORBIDDEN,MERCHANT_ROLE_FORBIDDEN,MERCHANT_ROLE_FORBIDDEN"
+    },
+    {
+      "id": "L08",
+      "area": "logo",
+      "check": "MANAGER replace → new version, new bytes, no stale object, single row",
+      "result": "PASS",
+      "detail": "http=200 new_version=True sha_b=True old_object_removed=True rows=1"
+    },
+    {
+      "id": "L09",
+      "area": "logo",
+      "check": "consumed upload reference cannot be bound twice",
+      "result": "PASS",
+      "detail": "http=404 code=STORAGE_UPLOAD_REFERENCE_FOREIGN"
+    },
+    {
+      "id": "L10",
+      "area": "logo",
+      "check": "cover upload reference refused as logo (purpose isolation)",
+      "result": "PASS",
+      "detail": "cover_upload=200 bind=404 code=STORAGE_UPLOAD_REFERENCE_FOREIGN"
+    },
+    {
+      "id": "L11",
+      "area": "logo",
+      "check": "GIF refused (JPEG/PNG only)",
+      "result": "PASS",
+      "detail": "http=400 code=STORAGE_UNSUPPORTED_TYPE"
+    },
+    {
+      "id": "L12",
+      "area": "logo",
+      "check": "below 128 px refused",
+      "result": "PASS",
+      "detail": "http=400 code=STORAGE_UNSUPPORTED_TYPE"
+    },
+    {
+      "id": "L13",
+      "area": "logo",
+      "check": "over 1 MiB refused",
+      "result": "FAIL",
+      "detail": "http=413 code=HTTP_ERROR"
+    },
+    {
+      "id": "L14",
+      "area": "logo",
+      "check": "foreign branch / foreign merchant refused, no row",
+      "result": "PASS",
+      "detail": "http=404,404,404,404 codes=MERCHANT_BRANCH_NOT_FOUND,MERCHANT_BRANCH_NOT_FOUND,MERCHANT_NOT_FOUND,MERCHANT_NOT_FOUND"
+    },
+    {
+      "id": "L15",
+      "area": "logo",
+      "check": "OWNER delete → GET 404 fallback, row and object removed, cover untouched",
+      "result": "PASS",
+      "detail": "http=200 get=404 rows=0 object_removed=True covers=0"
+    },
+    {
+      "id": "L16",
+      "area": "logo",
+      "check": "repeat delete is idempotent",
+      "result": "PASS",
+      "detail": "http=200"
+    },
+    {
+      "id": "L17",
+      "area": "logo",
+      "check": "no orphan logo objects remain",
+      "result": "PASS",
+      "detail": "objects=0"
+    },
+    {
+      "id": "H01",
+      "area": "hours",
+      "check": "GET exceptions: empty list, today is the Algiers civil date",
+      "result": "PASS",
+      "detail": "http=200 today=2026-10-02 local=2026-10-02"
+    },
+    {
+      "id": "H02",
+      "area": "hours",
+      "check": "baseline: weekly 24h open on every surface",
+      "result": "PASS",
+      "detail": "{\"label\": \"baseline weekly 24h, no exception\", \"merchantIsOpenNow\": true, \"acceptingOrders\": true, \"hoursException\": null, \"nextOpenAt\": null, \"currentClosesAt\": \"2026-10-09T23:00:00.000Z\", \"previewHttp\": 200, \"previewCode\": null, \"customerIsOpenNow\": true, \"listedOpenNow\": true}"
+    },
+    {
+      "id": "H03",
+      "area": "hours",
+      "check": "STAFF read-only: GET 200, PUT/DELETE 403",
+      "result": "FAIL",
+      "detail": "http=200,400,403 codes=VALIDATION_ERROR,MERCHANT_ROLE_FORBIDDEN"
+    },
+    {
+      "id": "H04",
+      "area": "hours",
+      "check": "today closed → closed on every surface; checkout preview CHECKOUT_BRANCH_CLOSED",
+      "result": "FAIL",
+      "detail": "http=400 {\"label\": \"today closed all day\", \"merchantIsOpenNow\": true, \"acceptingOrders\": true, \"hoursException\": null, \"nextOpenAt\": null, \"currentClosesAt\": \"2026-10-09T23:00:00.000Z\", \"previewHttp\": 200, \"previewCode\": null, \"customerIsOpenNow\": true, \"listedOpenNow\": true}"
+    },
+    {
+      "id": "H05",
+      "area": "hours",
+      "check": "today closed → order creation ORDER_BRANCH_CLOSED",
+      "result": "FAIL",
+      "detail": "http=201 code=None"
+    },
+    {
+      "id": "H06",
+      "area": "hours",
+      "check": "custom interval containing now → open everywhere; currentClosesAt = interval end",
+      "result": "FAIL",
+      "detail": "http=409 {\"label\": \"today custom 19:15\\u201321:30 (now inside)\", \"merchantIsOpenNow\": true, \"acceptingOrders\": true, \"hoursException\": null, \"nextOpenAt\": null, \"currentClosesAt\": \"2026-10-09T23:00:00.000Z\", \"previewHttp\": 409, \"previewCode\": \"CHECKOUT_CART_REQUIRED\", \"customerIsOpenNow\": true, \"listedOpenNow\": true}"
+    },
+    {
+      "id": "X",
+      "area": "hours_suite",
+      "check": "suite raised",
+      "result": "FAIL",
+      "detail": "KeyError: 'merchandiseSubtotalMinor'"
+    },
+    {
+      "id": "D01",
+      "area": "dup",
+      "check": "OWNER duplicate → 201, default French name, unavailable, counts reported",
+      "result": "PASS",
+      "detail": "http=201 name=Copie de Couscous royal available=False copied={'optionGroupCount': 2, 'optionCount': 5, 'imageCopied': True}"
+    },
+    {
+      "id": "D02",
+      "area": "dup",
+      "check": "deep copy: same branch/category/description/price, same groups/options in order, distinct IDs",
+      "result": "PASS",
+      "detail": "groups=2 options=5 shared_ids=0"
+    },
+    {
+      "id": "D03",
+      "area": "dup",
+      "check": "image: bytes copied to a distinct object (no shared reference)",
+      "result": "PASS",
+      "detail": "http=200 same_bytes=True distinct_object=True"
+    },
+    {
+      "id": "D04",
+      "area": "dup",
+      "check": "no order/cart history attached to the copy",
+      "result": "PASS",
+      "detail": "rows=0"
+    },
+    {
+      "id": "D05",
+      "area": "dup",
+      "check": "original unchanged (product, groups, options, image incl. timestamps)",
+      "result": "PASS",
+      "detail": "identical"
+    },
+    {
+      "id": "D06",
+      "area": "dup",
+      "check": "retry with the same requestId → 200 replay of the same product, nothing new",
+      "result": "PASS",
+      "detail": "http=200 replayed=True products=7→8"
+    },
+    {
+      "id": "D07",
+      "area": "dup",
+      "check": "three concurrent taps with one requestId → exactly one new product",
+      "result": "PASS",
+      "detail": "statuses=[200, 200, 201] distinct_ids=1 products=8→9"
+    },
+    {
+      "id": "D08",
+      "area": "dup",
+      "check": "MANAGER duplicate with edited name → 201, trimmed name, unavailable",
+      "result": "PASS",
+      "detail": "http=201 name=Couscous royal — format famille"
+    },
+    {
+      "id": "D09",
+      "area": "dup",
+      "check": "STAFF 403; foreign product 404; foreign merchant refused; invalid requestId/name 400; no rows",
+      "result": "PASS",
+      "detail": "http=403,404,404,400,400 codes=MERCHANT_ROLE_FORBIDDEN,CATALOG_PRODUCT_NOT_FOUND,MERCHANT_NOT_FOUND,VALIDATION_ERROR,VALIDATION_ERROR"
+    },
+    {
+      "id": "D10",
+      "area": "dup",
+      "check": "forced failure on the 2nd option insert → error, zero product/group/option/image rows, copied object discarded",
+      "result": "PASS",
+      "detail": "http=500 code=INTERNAL_ERROR counts_equal=True partial=0 objects_equal=True"
+    },
+    {
+      "id": "D11",
+      "area": "dup",
+      "check": "failed source unchanged",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "D12",
+      "area": "dup",
+      "check": "retry of the failed requestId after the fault is removed → 201 complete copy",
+      "result": "PASS",
+      "detail": "http=201 copied={'optionGroupCount': 1, 'optionCount': 2, 'imageCopied': True}"
+    },
+    {
+      "id": "D13",
+      "area": "dup",
+      "check": "deleting the copy’s image leaves the original image intact",
+      "result": "PASS",
+      "detail": "delete=200 source_get=200"
+    },
+    {
+      "id": "D14",
+      "area": "dup",
+      "check": "deleting the copy product leaves the original product and image intact",
+      "result": "PASS",
+      "detail": "delete=200 source_get=200"
+    },
+    {
+      "id": "D15",
+      "area": "dup",
+      "check": "no shared product-image object between rows; no unreferenced stored objects",
+      "result": "PASS",
+      "detail": "rows=5 distinct=5 stored=5"
+    }
+  ]
+}

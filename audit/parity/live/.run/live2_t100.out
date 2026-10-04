@@ -1,0 +1,15 @@
+BUNDLE_OK
+SHOT live2_t100_b2_order_detail 290501
+SHOT live2_t100_b3_category 230401
+SHOT live2_t100_b3_variants 241255
+SHOT live2_t100_b3_extras 230415
+SHOT live2_t100_b3_product_availability 224094
+SHOT live2_t100_b3_reorder 185966
+SHOT live2_t100_b4_profile 332931
+SHOT live2_t100_b4_address 250743
+SHOT live2_t100_b6_notifications 292094
+SHOT live2_t100_b6_notification_settings 309745
+PARITY_LIVE prefix=live2_t100 exit=0
+{"label": "live2_t100", "accountId": "0d00c071-d000-7000-8000-000000000001", "start": "2026-10-01T12:15:50Z", "exit": 0,
+ "sessions": [{"id" : "01a0f766-67a0-7e5e-8df1-5d74ac3bf30f", "revoked" : true}], "fallbackRevoked": 0, "devices": ["01a0f766-67a2-7479-9ff6-c9cd341faab3"], "deviceTokens": []}
+RC=0

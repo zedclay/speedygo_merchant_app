@@ -1,0 +1,39 @@
+{
+  "app": "merchant",
+  "bundleId": "com.speedygo.speedygoMerchantApp",
+  "fixture": "Parité B7 Isolé",
+  "phase": "register",
+  "backend": "isolated speedygo_parity_fx",
+  "apiBase": "http://127.0.0.1:3100/api/v1",
+  "sessionRevoked": true,
+  "stores": "memory only (session, context, launch, approval notice, push token)",
+  "checks": {
+    "pendingReference": "sgm_01a104815369777dbcde476868498074",
+    "attemptNumber": 1,
+    "submittedAt": "2026-10-04 02:23:20.734+01",
+    "legalAcceptance": true,
+    "pendingSurvivesColdRestart": true
+  },
+  "steps": [
+    {
+      "tag": "fxb7_t135_b7_registration",
+      "at": "2026-10-04T01:22:23.836009Z"
+    },
+    {
+      "tag": "fxb7_t135_b7_documents",
+      "at": "2026-10-04T01:22:37.687009Z"
+    },
+    {
+      "tag": "fxb7_t135_b7_review",
+      "at": "2026-10-04T01:23:20.070117Z"
+    },
+    {
+      "tag": "fxb7_t135_b7_pending",
+      "at": "2026-10-04T01:23:25.702702Z"
+    },
+    {
+      "tag": "fxb7_t135_b7_pending_cold",
+      "at": "2026-10-04T01:23:37.203527Z"
+    }
+  ]
+}

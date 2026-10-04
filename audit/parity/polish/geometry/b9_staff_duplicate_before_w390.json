@@ -1,0 +1,10 @@
+{
+  "phase": "before",
+  "variant": "w390",
+  "textScale": 1.0,
+  "appBar": true,
+  "backButton": true,
+  "catalogFallback": false,
+  "duplicateFormShown": false,
+  "createActionShown": false
+}

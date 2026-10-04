@@ -1,0 +1,36 @@
+{
+    "layer": "http_api",
+    "note": "Separate from Merchant UI screenshots",
+    "at": "2026-09-21T01:50:15Z",
+    "geoWilayasCount": 69,
+    "oranCommunesSample": {
+        "communes": [
+            {
+                "id": 1131,
+                "wilayaCode": "31",
+                "nameFr": "Oran",
+                "nameAr": "\u0648\u0647\u0631\u0627\u0646",
+                "aliasesFr": []
+            }
+        ]
+    },
+    "fixtureBranch": {
+        "branches": [
+            {
+                "id": "01a0bf0f-aeef-70bb-8f86-dfe2a5e80154",
+                "name": "Live Geo Branch",
+                "phone": "+213555099888",
+                "addressText": "12 Rue Didouche Mourad",
+                "latitude": 36.753,
+                "longitude": 3.058,
+                "wilayaCode": "31",
+                "communeId": 1131,
+                "wilayaNameFr": "Oran",
+                "communeNameFr": "Oran",
+                "operationalStatus": "ACTIVE",
+                "createdAt": "2026-09-20 14:44:31.215+01",
+                "updatedAt": "2026-09-21 02:46:44.326+01"
+            }
+        ]
+    }
+}

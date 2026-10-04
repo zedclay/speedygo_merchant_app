@@ -1,0 +1,1 @@
+PARITY_LIVE prefix=live2_t100 exit=1

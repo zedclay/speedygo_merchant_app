@@ -1,0 +1,200 @@
+{
+  "layer": "http",
+  "backend": "http://127.0.0.1:3000/api/v1",
+  "fixture": "Dar El Bahja synthetic + sgo_finvis_* (speedygo_dev)",
+  "at": "2026-09-30T02:47:25+0100",
+  "passed": 38,
+  "failed": 0,
+  "results": [
+    {
+      "id": "OWNER.list.status",
+      "status": "PASS",
+      "detail": "200"
+    },
+    {
+      "id": "MANAGER.list.status",
+      "status": "PASS",
+      "detail": "200"
+    },
+    {
+      "id": "STAFF.list.status",
+      "status": "PASS",
+      "detail": "200"
+    },
+    {
+      "id": "fixture.orders.visible",
+      "status": "PASS",
+      "detail": "{\"sgo_finvis_1\": \"97905510-a68a-454d-a201-0b6630f1fa48\", \"sgo_finvis_2\": \"7499b355-12da-430f-9458-3a43c7b67f02\"}"
+    },
+    {
+      "id": "OWNER.detail.status",
+      "status": "PASS",
+      "detail": "200"
+    },
+    {
+      "id": "MANAGER.detail.status",
+      "status": "PASS",
+      "detail": "200"
+    },
+    {
+      "id": "STAFF.detail.status",
+      "status": "PASS",
+      "detail": "200"
+    },
+    {
+      "id": "OWNER.detail.granted",
+      "status": "PASS",
+      "detail": "{\"currency\": \"DZD\", \"grossMerchandiseSubtotalMinor\": \"255000\", \"deliveryFeeMinor\": \"20000\", \"merchantDiscountMinor\": \"5000\", \"merchantCommissionRateBps\": 700, \"merchantCommissionAmountMinor\": \"17500\", \"merchantNetAmountMinor\": \"232500\"}"
+    },
+    {
+      "id": "OWNER.detail.values",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "OWNER.list.granted",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "MANAGER.detail.granted",
+      "status": "PASS",
+      "detail": "{\"currency\": \"DZD\", \"grossMerchandiseSubtotalMinor\": \"255000\", \"deliveryFeeMinor\": \"20000\", \"merchantDiscountMinor\": \"5000\", \"merchantCommissionRateBps\": 700, \"merchantCommissionAmountMinor\": \"17500\", \"merchantNetAmountMinor\": \"232500\"}"
+    },
+    {
+      "id": "MANAGER.detail.values",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "MANAGER.list.granted",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "STAFF.detail.restricted",
+      "status": "PASS",
+      "detail": "ROLE_RESTRICTED"
+    },
+    {
+      "id": "STAFF.detail.keys",
+      "status": "PASS",
+      "detail": "{\"currency\": \"DZD\", \"grossMerchandiseSubtotalMinor\": \"255000\", \"deliveryFeeMinor\": \"20000\"}"
+    },
+    {
+      "id": "STAFF.detail.no_terms",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "STAFF.detail.gross_matches_owner",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "STAFF.detail.items_match_owner",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "STAFF.list.sgo_finvis_1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "STAFF.list.sgo_finvis_2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "STAFF.list.no_terms",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "STAFF.mutation.accept",
+      "status": "PASS",
+      "detail": "403"
+    },
+    {
+      "id": "STAFF.mutation.reject",
+      "status": "PASS",
+      "detail": "403"
+    },
+    {
+      "id": "STAFF.mutation.start-preparation",
+      "status": "PASS",
+      "detail": "403"
+    },
+    {
+      "id": "STAFF.mutation.mark-ready",
+      "status": "PASS",
+      "detail": "403"
+    },
+    {
+      "id": "STAFF.mutation.preparation-estimate",
+      "status": "PASS",
+      "detail": "403"
+    },
+    {
+      "id": "STAFF.mutation.no_state_change",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "STAFF.foreign_branch",
+      "status": "PASS",
+      "detail": "404"
+    },
+    {
+      "id": "STAFF.foreign_merchant",
+      "status": "PASS",
+      "detail": "404"
+    },
+    {
+      "id": "STAFF.foreign_merchant_order",
+      "status": "PASS",
+      "detail": "404"
+    },
+    {
+      "id": "STAFF.commission_forbidden",
+      "status": "PASS",
+      "detail": "403"
+    },
+    {
+      "id": "STAFF.settlements_forbidden",
+      "status": "PASS",
+      "detail": "403"
+    },
+    {
+      "id": "OWNER.reports.status",
+      "status": "PASS",
+      "detail": "200"
+    },
+    {
+      "id": "STAFF.reports.status",
+      "status": "PASS",
+      "detail": "200"
+    },
+    {
+      "id": "OWNER.reports.granted",
+      "status": "PASS",
+      "detail": "{\"merchantDiscountMinor\": \"0\", \"commissionMinor\": \"8400\", \"merchantNetMinor\": \"111600\", \"uniformCommissionRateBps\": 700, \"refundsCompletedCount\": 0, \"recordedRefundAdjustmentsMinor\": \"0\"}"
+    },
+    {
+      "id": "STAFF.reports.restricted",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "STAFF.reports.sales_match_owner",
+      "status": "PASS",
+      "detail": "gross=120000 count=1"
+    },
+    {
+      "id": "STAFF.reports.top_revenue",
+      "status": "PASS",
+      "detail": "200"
+    }
+  ]
+}

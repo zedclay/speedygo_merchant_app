@@ -1,0 +1,132 @@
+{
+  "app": "merchant",
+  "test": "polish_fx_live_test",
+  "backend": "isolated (speedygo_parity_fx via 127.0.0.1:3100)",
+  "apiBaseUrl": "http://127.0.0.1:3100/api/v1",
+  "prefix": "fxp_t135",
+  "session": "one OTP session per role, app stores in memory (Keychain untouched)",
+  "branchId": "0d00f0f0-fa00-7000-8000-000000002001",
+  "sourceProductId": "0d00f0f0-fa00-7000-8000-000000007001",
+  "results": {
+    "sourceHadImageBefore": false,
+    "fixtureImage": "13968:68f68bb2",
+    "sourceServedImage": "13968:68f68bb2",
+    "sourceServedEqualsFixture": true,
+    "duplicateSourceImagePainted": "13968:68f68bb2",
+    "duplicateSourceImageMatchesServer": true,
+    "snackDuplicateEditor": {
+      "message": "Copie créée — indisponible jusqu’à votre vérification.",
+      "textScale": 1.3529411764705883,
+      "safeBottom": 34.0,
+      "screen": "390x844",
+      "snack": "16.0,588.0,374.0,670.0",
+      "stickyBar": "16.0,678.0,374.0,844.0",
+      "primaryAction": "32.0,690.0,358.0,742.0",
+      "gapAboveStickyBar": 8.0,
+      "snackOverlapsStickyBar": false,
+      "snackOverlapsPrimaryAction": false
+    },
+    "copyId": "01a0ff91-a3d4-726a-a698-8bdff836d515",
+    "copyHasImage": true,
+    "copyAvailable": false,
+    "copyServedImage": "13968:68f68bb2",
+    "copyServedEqualsSource": true,
+    "copyEditorImagePainted": "13968:68f68bb2",
+    "copyEditorImageMatchesSource": true,
+    "copyEditorImageAfterFreshInstance": "13968:68f68bb2",
+    "copyEditorImageAfterFreshInstanceMatchesSource": true,
+    "sourceImageUnchanged": true,
+    "catalogEnd": {
+      "textScale": 1.3529411764705883,
+      "safeBottom": 34.0,
+      "productCount": 7,
+      "atScrollEnd": true,
+      "lastCard": "16.0,453.0,374.0,642.0",
+      "fab": "138.9,666.0,374.0,722.0",
+      "bottomNav": "0.0,738.0,390.0,844.0",
+      "gapAboveFab": 24.0,
+      "gapAboveNav": 96.0,
+      "gapAboveSafeArea": 168.0,
+      "lastCardOverlapsFab": false
+    },
+    "snackExceptionalHours": {
+      "message": "Exception enregistrée.",
+      "textScale": 1.3529411764705883,
+      "safeBottom": 34.0,
+      "screen": "390x844",
+      "snack": "16.0,671.0,374.0,726.0",
+      "stickyBar": "0.0,734.0,390.0,844.0",
+      "primaryAction": "201.0,746.0,374.0,798.0",
+      "gapAboveStickyBar": 8.0,
+      "snackOverlapsStickyBar": false,
+      "snackOverlapsPrimaryAction": false
+    },
+    "exceptionRemoved": true,
+    "weeklyBefore": "1:00:00-00:00|2:00:00-00:00|3:00:00-00:00|4:00:00-00:00|5:00:00-00:00|6:00:00-00:00|7:00:00-00:00",
+    "snackWeeklyHours": {
+      "message": "Horaires enregistrés.",
+      "textScale": 1.3529411764705883,
+      "safeBottom": 34.0,
+      "screen": "390x844",
+      "snack": "16.0,671.0,374.0,726.0",
+      "stickyBar": "0.0,734.0,390.0,844.0",
+      "primaryAction": "16.0,746.0,374.0,798.0",
+      "gapAboveStickyBar": 8.0,
+      "snackOverlapsStickyBar": false,
+      "snackOverlapsPrimaryAction": false
+    },
+    "weeklyChangedBySave": true,
+    "weeklyAfterSave": "1:|2:00:00-00:00+00:00-00:00|3:00:00-00:00+00:00-00:00|4:00:00-00:00+00:00-00:00|5:00:00-00:00+00:00-00:00|6:00:00-00:00+00:00-00:00|7:00:00-00:00+00:00-00:00",
+    "weeklyAfterRestore": "1:00:00-00:00|2:00:00-00:00+00:00-00:00|3:00:00-00:00+00:00-00:00+00:00-00:00|4:00:00-00:00+00:00-00:00+00:00-00:00|5:00:00-00:00+00:00-00:00+00:00-00:00|6:00:00-00:00+00:00-00:00+00:00-00:00|7:00:00-00:00+00:00-00:00+00:00-00:00",
+    "weeklyRestored": false,
+    "logout_OWNER": true,
+    "staffDirectDuplicate": {
+      "appBar": true,
+      "backAction": true,
+      "catalogFallback": true,
+      "duplicateFormShown": false,
+      "createActionShown": false,
+      "textScale": 1.3529411764705883
+    },
+    "failedRole": "STAFF",
+    "failure": "Expected: no matching candidates   Actual: _KeyWidgetFinder:<Found 1 widget with key [<'duplicate-forbidden'>]: [             Center-[<'duplicate-forbidden'>](alignment: Alignment.center, dependencies: [Directionality], renderObject: RenderPositionedBox#822b9 relayoutBoundary=up3),"
+  },
+  "steps": [
+    {
+      "tag": "fxp_t135_01_duplicate_source_image",
+      "at": "2026-10-03T02:22:09.850765Z"
+    },
+    {
+      "tag": "fxp_t135_02_duplicate_editor_snack",
+      "at": "2026-10-03T02:22:14.116826Z"
+    },
+    {
+      "tag": "fxp_t135_03_duplicate_editor_image",
+      "at": "2026-10-03T02:22:17.167442Z"
+    },
+    {
+      "tag": "fxp_t135_04_copy_editor_reopened",
+      "at": "2026-10-03T02:22:31.267505Z"
+    },
+    {
+      "tag": "fxp_t135_05_catalog_end",
+      "at": "2026-10-03T02:22:36.300840Z"
+    },
+    {
+      "tag": "fxp_t135_06_hours_exception_snack",
+      "at": "2026-10-03T02:22:47.100304Z"
+    },
+    {
+      "tag": "fxp_t135_07_weekly_hours_snack",
+      "at": "2026-10-03T02:22:55.934195Z"
+    },
+    {
+      "tag": "fxp_t135_08_staff_duplicate_forbidden",
+      "at": "2026-10-03T02:23:11.784405Z"
+    },
+    {
+      "tag": "fxp_t135_failure_state",
+      "at": "2026-10-03T02:23:14.584308Z"
+    }
+  ]
+}

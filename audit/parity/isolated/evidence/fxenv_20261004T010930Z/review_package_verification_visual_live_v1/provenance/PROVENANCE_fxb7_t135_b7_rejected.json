@@ -1,0 +1,54 @@
+{
+  "app": "merchant",
+  "bundleId": "com.speedygo.speedygoMerchantApp",
+  "fixture": "Parité B7 Isolé",
+  "phase": "rejected",
+  "backend": "isolated speedygo_parity_fx",
+  "apiBase": "http://127.0.0.1:3100/api/v1",
+  "sessionRevoked": true,
+  "stores": "memory only (session, context, launch, approval notice, push token)",
+  "checks": {
+    "rejectedReference": "sgm_01a104815369777dbcde476868498074",
+    "unresolvedIssueCount": 2,
+    "currentIssues": [
+      {
+        "scope": "APPLICATION",
+        "code": "PROFILE_INCOMPLETE",
+        "messageFr": "Complétez le nom commercial.",
+        "documentType": null,
+        "isResolved": false
+      },
+      {
+        "scope": "DOCUMENT",
+        "code": "DOCUMENT_ILLEGIBLE",
+        "messageFr": "Pièce d’identité illisible.",
+        "documentType": "BUSINESS_IDENTITY",
+        "isResolved": false
+      }
+    ],
+    "documentIssueOpenAfterRebind": 0,
+    "applicationIssueStillOpen": true,
+    "resubmitAttempt": 2,
+    "resubmitLegalAcceptance": true,
+    "resubmitted": true,
+    "resubmitPendingSurvivesColdRestart": true
+  },
+  "steps": [
+    {
+      "tag": "fxb7_t135_b7_rejected",
+      "at": "2026-10-04T01:24:35.002901Z"
+    },
+    {
+      "tag": "fxb7_t135_b7_documents_correction",
+      "at": "2026-10-04T01:24:48.986797Z"
+    },
+    {
+      "tag": "fxb7_t135_b7_resubmission",
+      "at": "2026-10-04T01:24:59.886805Z"
+    },
+    {
+      "tag": "fxb7_t135_b7_pending_after_resubmit",
+      "at": "2026-10-04T01:25:05.586992Z"
+    }
+  ]
+}

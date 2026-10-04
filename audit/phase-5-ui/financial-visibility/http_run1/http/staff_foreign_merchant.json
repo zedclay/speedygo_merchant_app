@@ -1,0 +1,9 @@
+{
+  "status": 404,
+  "body": {
+    "error": {
+      "code": "MERCHANT_NOT_FOUND",
+      "message": "Merchant was not found"
+    }
+  }
+}

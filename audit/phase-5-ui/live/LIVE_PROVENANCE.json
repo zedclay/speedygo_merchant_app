@@ -1,0 +1,56 @@
+{
+  "merchantId": "0d00c071-d000-7000-8000-000000010001",
+  "branchId": "0d00c071-d000-7000-8000-000000011001",
+  "phone": "+213550000071",
+  "merchantName": "Dar El Bahja",
+  "publicReference": "sgm_review_01",
+  "fixture": "apps/backend/scripts/dev-review-catalog",
+  "auth": "OTP PHONE AUTHENTICATE (isolated API session; Finjan UI untouched)",
+  "steps": [
+    {
+      "flow": "category_save_reload_reopen",
+      "categoryId": "0d00c071-d000-7000-8000-000000020101",
+      "ok": true,
+      "restored": true
+    },
+    {
+      "flow": "product_create_reload_update_reopen",
+      "productId": "01a0bbed-e584-7fa1-ad00-6613d2fc8b11",
+      "ok": true,
+      "reloadedName": "Phase5b Live Probe Edit",
+      "reloadedPriceMinor": 130000,
+      "reloadedAvailable": false
+    },
+    {
+      "flow": "address_save_reload_reopen",
+      "branchId": "0d00c071-d000-7000-8000-000000011001",
+      "ok": true,
+      "restored": true
+    },
+    {
+      "flow": "product_media_upload_bind",
+      "productId": "01a0bbed-e584-7fa1-ad00-6613d2fc8b11",
+      "uploadOk": true,
+      "bindOk": true,
+      "merchantRemoteReadOk": false,
+      "merchantRemoteReadStatus": "GET /merchant/0d00c071-d000-7000-8000-000000010001/branches/0d00c071-d000-7000-8000-000000011001/products/01a0bbed-e584-7fa1-ad00-6613d2fc8b11/image/content -> 404 {\"error\":{\"code\":\"HTTP_ERROR\",\"message\":\"Cannot GET /api/v1/merchant/0d00c071-d000-7000-8000-000000010001/branches/0d00c071-d000-7000-8000-000000011001/products/01a0bbed-e584-7fa1-ad00-6613d2fc8b11/image/content\"}}",
+      "note": "upload/bind success is not remote-display success"
+    },
+    {
+      "flow": "cover_media_upload_bind",
+      "uploadOk": true,
+      "bindOk": true,
+      "merchantRemoteReadOk": false,
+      "merchantRemoteReadStatus": "GET /merchant/0d00c071-d000-7000-8000-000000010001/branches/0d00c071-d000-7000-8000-000000011001/cover/content -> 404 {\"error\":{\"code\":\"HTTP_ERROR\",\"message\":\"Cannot GET /api/v1/merchant/0d00c071-d000-7000-8000-000000010001/branches/0d00c071-d000-7000-8000-000000011001/cover/content\"}}",
+      "note": "upload/bind success is not remote-display success"
+    },
+    {
+      "flow": "cleanup_delete_product",
+      "productId": "01a0bbed-e584-7fa1-ad00-6613d2fc8b11",
+      "ok": true
+    }
+  ],
+  "finjanUiUntouched": true,
+  "customerTokensUnused": true,
+  "sessionKind": "API-only; not merchant app simulator UI session"
+}

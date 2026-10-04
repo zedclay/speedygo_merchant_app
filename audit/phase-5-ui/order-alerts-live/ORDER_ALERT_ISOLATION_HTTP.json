@@ -1,0 +1,52 @@
+{
+  "layer": "http_backend_executed",
+  "nativePush": "BLOCKED",
+  "darOrderId": "01a0d977-9825-7fbb-b6ca-a120bb466363",
+  "darInboxSeesOrder": {
+    "assertion": "executed",
+    "httpStatus": 200,
+    "matchCount": 1,
+    "pass": true
+  },
+  "finjanInboxDoesNotSeeDarOrder": {
+    "assertion": "executed",
+    "httpStatus": 200,
+    "matchCount": 0,
+    "leakCount": 0,
+    "pass": true
+  },
+  "finjanCannotGetDarOrder": {
+    "assertion": "executed",
+    "httpStatus": 404,
+    "pass": true
+  },
+  "deviceTokenScopedDeactivate": {
+    "assertion": "executed_with_db",
+    "registerT1": 200,
+    "registerT2": 200,
+    "registerActiveFlags": {
+      "t1": true,
+      "t2": true
+    },
+    "dbBefore": {
+      "t1": true,
+      "t2": true
+    },
+    "deactivateT1Http": 200,
+    "dbAfterDeactivateT1": {
+      "t1": false,
+      "t2": true
+    },
+    "finjanDeleteDarT2Http": 200,
+    "dbAfterForeignDelete": {
+      "t2": true
+    },
+    "darDeactivateT2Http": 200,
+    "dbAfterOwnDeactivateT2": {
+      "t2": false
+    },
+    "pass": true,
+    "note": "deactivate filters by accountId+token; peer token and foreign account verified via device_tokens.active"
+  },
+  "overallPass": true
+}

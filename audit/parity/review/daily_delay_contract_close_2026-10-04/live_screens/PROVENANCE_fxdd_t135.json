@@ -1,0 +1,15 @@
+{
+  "app": "merchant",
+  "backend": "isolated speedygo_parity_fx",
+  "apiBase": "http://127.0.0.1:3100/api/v1",
+  "lateOrderId": "01a10498-351f-7df9-8bc2-a6f9206397f9",
+  "checks": {
+    "dailySummaryLoaded": true,
+    "dailySummaryEmpty": true,
+    "delayedOrderLoaded": true,
+    "deliveryImpactVisible": true,
+    "prepEstimateUpdated": true,
+    "dailySummaryCold": true,
+    "staffSalesRestricted": false
+  }
+}

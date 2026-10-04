@@ -1,0 +1,26 @@
+{
+  "label": "fx_t100d",
+  "branchId": "0d00c071-d000-7000-8000-000000011001",
+  "productId": "0d00c071-d000-7000-8000-000000030121",
+  "customerAccountId": "0d00c074-d000-7000-8000-000000000001",
+  "orders": [
+    {
+      "id": "01a0fd37-f350-7c88-ac7e-7c4c5c8c3d30",
+      "publicReference": "sgo_01a0fd37f35078fbbf595ff20c885a52"
+    },
+    {
+      "id": "01a0fd37-f447-7440-a6db-bf459aca7c8e",
+      "publicReference": "sgo_01a0fd37f4477534840792f0eaaf24ba"
+    }
+  ],
+  "errors": [],
+  "addressId": "01a0d4b7-b8b5-7b28-84b3-6fd15a810154",
+  "customerLogoutHttp": 200,
+  "customerSessions": [
+    {
+      "id": "01a0fd37-f28b-794c-a643-afd532e78095",
+      "revoked": true
+    }
+  ],
+  "customerFallbackRevoked": 0
+}

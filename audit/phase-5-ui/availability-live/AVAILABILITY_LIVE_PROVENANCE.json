@@ -1,0 +1,54 @@
+{
+  "fixture": "Dar El Bahja",
+  "phone": "+213550000071",
+  "steps": [
+    {
+      "id": "home_loaded",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "fixture": "Dar El Bahja",
+      "at": "2026-09-24T17:08:47.876539Z"
+    },
+    {
+      "id": "availability_screen",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "fixture": "Dar El Bahja",
+      "at": "2026-09-24T17:09:01.151773Z"
+    },
+    {
+      "id": "save_force_closed",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "fixture": "Dar El Bahja",
+      "at": "2026-09-24T17:09:10.279113Z"
+    },
+    {
+      "id": "temporary_screen",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "fixture": "Dar El Bahja",
+      "at": "2026-09-24T17:09:17.331500Z"
+    },
+    {
+      "id": "confirm_temporary",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "fixture": "Dar El Bahja",
+      "at": "2026-09-24T17:09:25.462843Z"
+    },
+    {
+      "id": "restore_follow",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "fixture": "Dar El Bahja",
+      "at": "2026-09-24T17:09:34.549949Z"
+    }
+  ]
+}

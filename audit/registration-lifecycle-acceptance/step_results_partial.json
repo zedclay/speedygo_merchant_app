@@ -1,0 +1,42 @@
+{
+  "phoneLocal": "559907701",
+  "merchantName": "TEST FIXTURE — Lifecycle Acceptance Shop",
+  "steps": [
+    {
+      "id": "auth_otp",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "at": "2026-09-18T14:30:05.552919Z"
+    },
+    {
+      "id": "registration_establishment_map",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "at": "2026-09-18T14:30:23.521352Z"
+    },
+    {
+      "id": "submission",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "at": "2026-09-18T14:30:42.383080Z"
+    },
+    {
+      "id": "pending_optional_absent",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "at": "2026-09-18T14:30:49.438937Z"
+    },
+    {
+      "id": "pending_blocks_home",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "at": "2026-09-18T14:30:49.440012Z"
+    }
+  ],
+  "note": "Admin reject/approve NOT RUN in this widget — see host report"
+}

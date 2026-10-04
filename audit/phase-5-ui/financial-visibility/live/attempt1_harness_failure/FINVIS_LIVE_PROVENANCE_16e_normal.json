@@ -1,0 +1,19 @@
+{
+  "layer": "live_authenticated_ui",
+  "fixture": "Dar El Bahja synthetic owner (+213550000071), isolated STAFF (+213550000081), sgo_finvis_* orders in speedygo_dev",
+  "orderId": "97905510-a68a-454d-a201-0b6630f1fa48",
+  "device": "iPhone 16e (8DB9007A), iOS simulator, text scale 1.0",
+  "backend": "local dev backend http://127.0.0.1:3000",
+  "result": "FAIL",
+  "error": "The finder \"Found 0 widgets with key [<'nav-home'>]: []\" (used in a call to \"tap()\") could not find any matching widgets.",
+  "staffFramesCheckedForOwnerFinance": 0,
+  "observed": {},
+  "steps": [
+    {
+      "id": "owner_login",
+      "status": "PASS",
+      "detail": "existing Dar El Bahja owner session",
+      "at": "2026-09-30T01:52:44.365065Z"
+    }
+  ]
+}

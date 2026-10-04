@@ -1,0 +1,35 @@
+{
+  "storageRoot": "~/.speedygo/parity_fx/storage/product-images",
+  "checks": [
+    {
+      "prefix": "fxp_t135",
+      "sourceProductId": "0d00f0f0-fa00-7000-8000-000000007001",
+      "copyProductId": "01a0ff8c-9a22-7a40-9a47-712fc41fd2c6",
+      "sourceRow": {
+        "object_id": "0714e62e6a554c69a6a2f09cda8af71a",
+        "content_type": "image/jpeg",
+        "byte_size": 13968,
+        "width_px": 480,
+        "height_px": 480
+      },
+      "copyRow": {
+        "object_id": "861178913e314f4ca55684dad181b486",
+        "content_type": "image/jpeg",
+        "byte_size": 13968,
+        "width_px": 480,
+        "height_px": 480
+      },
+      "sourceStored": {
+        "bytes": 13968,
+        "sha256": "a7a2a718198b15de1352d10bd21909bf5f2755245b56e8cba2821f8e32ed0a36"
+      },
+      "copyStored": {
+        "bytes": 13968,
+        "sha256": "a7a2a718198b15de1352d10bd21909bf5f2755245b56e8cba2821f8e32ed0a36"
+      },
+      "distinctObjects": true,
+      "equalBytes": true,
+      "result": "PASS"
+    }
+  ]
+}

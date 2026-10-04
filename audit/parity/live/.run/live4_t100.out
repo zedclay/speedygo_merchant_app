@@ -1,0 +1,19 @@
+DISK_PREFLIGHT_OK step=guard:live4_t100 free_gb=14 min_gb=5
+DISK_PREFLIGHT_OK step=live:live4_t100 free_gb=14 min_gb=5
+BUNDLE_OK
+SHOT live4_t100_b2_orders 166371
+SHOT live4_t100_b2_order_detail 314865
+SHOT live4_t100_b2_order_detail_end 311742
+SHOT live4_t100_b2_update_sheet 288103
+SHOT live4_t100_b2_update_sheet_reason 247713
+SHOT live4_t100_b3_category 225211
+SHOT live4_t100_b3_category_end 225211
+SHOT live4_t100_b4_profile 333882
+SHOT live4_t100_b4_general 190394
+SHOT live4_t100_b5_overview 270734
+SHOT live4_t100_b5_top_products 171717
+SHOT live4_t100_b6_notification_settings 282931
+SHOT live4_t100_b6_support 180272
+PARITY_LIVE prefix=live4_t100 exit=0
+{"label": "live4_t100", "accountId": "0d00c071-d000-7000-8000-000000000001", "start": "2026-10-02T15:05:44Z", "exit": 0,
+ "sessions": [{"id" : "01a0fd27-7b8b-7d4b-b1ba-93dd59c29651", "revoked" : true}], "fallbackRevoked": 0, "devices": ["01a0fd27-7b8c-728a-81c6-abef44d291f4"], "deviceTokens": []}

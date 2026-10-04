@@ -1,0 +1,274 @@
+{
+  "results": [
+    {
+      "id": "T0",
+      "check": "schema invitations + member version/updated_at",
+      "result": "PASS",
+      "detail": "table=1 cols=2"
+    },
+    {
+      "id": "T1",
+      "check": "OWNER lists roster with 3 seeded members",
+      "result": "PASS",
+      "detail": "status=200 members=3 canManage=True"
+    },
+    {
+      "id": "T2",
+      "check": "MANAGER can read roster (canManage false)",
+      "result": "PASS",
+      "detail": "status=200 canManage=False"
+    },
+    {
+      "id": "T3",
+      "check": "STAFF forbidden on team read",
+      "result": "PASS",
+      "detail": "status=403 code=MERCHANT_ROLE_FORBIDDEN"
+    },
+    {
+      "id": "T4",
+      "check": "foreign merchant owner cannot read Comptoir team",
+      "result": "PASS",
+      "detail": "status=404 code=MERCHANT_NOT_FOUND"
+    },
+    {
+      "id": "T5",
+      "check": "OWNER cannot read foreign merchant team",
+      "result": "PASS",
+      "detail": "status=404 code=MERCHANT_NOT_FOUND"
+    },
+    {
+      "id": "T6",
+      "check": "MANAGER cannot create invite",
+      "result": "PASS",
+      "detail": "status=403 code=MERCHANT_ROLE_FORBIDDEN"
+    },
+    {
+      "id": "T7",
+      "check": "STAFF cannot create invite",
+      "result": "PASS",
+      "detail": "status=403 code=MERCHANT_ROLE_FORBIDDEN"
+    },
+    {
+      "id": "T8",
+      "check": "OWNER creates invite; acceptCode returned; no sent claim",
+      "result": "PASS",
+      "detail": "status=201 hasCode=True role=STAFF"
+    },
+    {
+      "id": "T9",
+      "check": "duplicate pending invite rejected",
+      "result": "PASS",
+      "detail": "status=409 code=TEAM_DUPLICATE_INVITE"
+    },
+    {
+      "id": "T10",
+      "check": "invite OWNER role rejected",
+      "result": "PASS",
+      "detail": "status=403 code=TEAM_OWNER_PROTECTED"
+    },
+    {
+      "id": "T11",
+      "check": "invite existing member phone rejected",
+      "result": "PASS",
+      "detail": "status=409 code=TEAM_DUPLICATE_MEMBER"
+    },
+    {
+      "id": "T12",
+      "check": "client branch assignment rejected",
+      "result": "PASS",
+      "detail": "status=400 code=TEAM_INVALID_INPUT"
+    },
+    {
+      "id": "T13",
+      "check": "invitee without membership lists pending invite",
+      "result": "PASS",
+      "detail": "status=200 count=1"
+    },
+    {
+      "id": "T14",
+      "check": "bad accept code rejected",
+      "result": "PASS",
+      "detail": "status=400 code=TEAM_INVITE_CODE_INVALID"
+    },
+    {
+      "id": "T15",
+      "check": "phone mismatch on accept",
+      "result": "PASS",
+      "detail": "status=403 code=TEAM_PHONE_MISMATCH"
+    },
+    {
+      "id": "T16",
+      "check": "invitee accepts with code \u2192 STAFF membership",
+      "result": "PASS",
+      "detail": "status=200 role=STAFF"
+    },
+    {
+      "id": "T17",
+      "check": "accept code single-use",
+      "result": "PASS",
+      "detail": "status=404 code=TEAM_INVITE_NOT_FOUND"
+    },
+    {
+      "id": "T18",
+      "check": "OWNER promotes STAFF \u2192 MANAGER",
+      "result": "PASS",
+      "detail": "status=200 role=MANAGER"
+    },
+    {
+      "id": "T19",
+      "check": "cannot demote a protected OWNER (non-self)",
+      "result": "PASS",
+      "detail": "status=403 code=TEAM_OWNER_PROTECTED"
+    },
+    {
+      "id": "T20",
+      "check": "self role change forbidden",
+      "result": "PASS",
+      "detail": "status=403 code=TEAM_SELF_FORBIDDEN"
+    },
+    {
+      "id": "T21",
+      "check": "cannot assign OWNER via patch",
+      "result": "PASS",
+      "detail": "status=403 code=TEAM_OWNER_PROTECTED"
+    },
+    {
+      "id": "T22",
+      "check": "MANAGER cannot mutate roles",
+      "result": "PASS",
+      "detail": "status=403 code=MERCHANT_ROLE_FORBIDDEN"
+    },
+    {
+      "id": "T23",
+      "check": "stale version conflict on role change",
+      "result": "PASS",
+      "detail": "status=409 code=TEAM_VERSION_CONFLICT"
+    },
+    {
+      "id": "T24",
+      "check": "OWNER demotes MANAGER \u2192 STAFF (session revoke)",
+      "result": "PASS",
+      "detail": "status=200 role=STAFF"
+    },
+    {
+      "id": "T25",
+      "check": "demoted invitee session revoked on next protected request",
+      "result": "PASS",
+      "detail": "status=401 code=AUTH_SESSION_REVOKED"
+    },
+    {
+      "id": "T26",
+      "check": "re-authed STAFF still cannot read team",
+      "result": "PASS",
+      "detail": "status=403 code=MERCHANT_ROLE_FORBIDDEN"
+    },
+    {
+      "id": "T27",
+      "check": "second invite for new phone",
+      "result": "PASS",
+      "detail": "status=201"
+    },
+    {
+      "id": "T28",
+      "check": "regenerate code invalidates previous",
+      "result": "PASS",
+      "detail": "status=200 version=2"
+    },
+    {
+      "id": "T29",
+      "check": "cancel pending invitation",
+      "result": "PASS",
+      "detail": "status=200 invStatus=CANCELLED"
+    },
+    {
+      "id": "T30",
+      "check": "self-revoke rejected",
+      "result": "PASS",
+      "detail": "status=403 code=TEAM_SELF_FORBIDDEN"
+    },
+    {
+      "id": "T31",
+      "check": "OWNER membership protected from revoke",
+      "result": "PASS",
+      "detail": "status=403 code=TEAM_SELF_FORBIDDEN"
+    },
+    {
+      "id": "T32",
+      "check": "OWNER revokes invitee membership",
+      "result": "PASS",
+      "detail": "status=200 keys=['memberId', 'revoked']"
+    },
+    {
+      "id": "T33",
+      "check": "revoked member session dead",
+      "result": "PASS",
+      "detail": "status=401 code=AUTH_SESSION_REVOKED"
+    },
+    {
+      "id": "T34",
+      "check": "revoked account has no Comptoir membership; Account remains",
+      "result": "PASS",
+      "detail": "status=200 still=False exists=False count=0"
+    },
+    {
+      "id": "T35",
+      "check": "unrelated foreign membership intact",
+      "result": "PASS",
+      "detail": "status=200 foreign=True"
+    },
+    {
+      "id": "T36",
+      "check": "legacy seeded members remain (OWNER/MANAGER/STAFF)",
+      "result": "PASS",
+      "detail": "status=200 phones=3"
+    },
+    {
+      "id": "T37",
+      "check": "Account preserved; membership row removed",
+      "result": "PASS",
+      "detail": "accounts=1 members=0"
+    },
+    {
+      "id": "T38",
+      "check": "MANAGER re-auth still has TEAM_READ",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "id": "T39",
+      "check": "STAFF re-auth still forbidden",
+      "result": "PASS",
+      "detail": "status=403 code=MERCHANT_ROLE_FORBIDDEN"
+    },
+    {
+      "id": "T40",
+      "check": "expired invitation rejected",
+      "result": "PASS",
+      "detail": "status=409 code=TEAM_INVITE_EXPIRED"
+    },
+    {
+      "id": "T41",
+      "check": "members expose ALL_MERCHANT_BRANCHES scope",
+      "result": "PASS",
+      "detail": "scopes=['ALL_MERCHANT_BRANCHES']"
+    },
+    {
+      "id": "T42",
+      "check": "foreign owner cannot revoke Comptoir member",
+      "result": "PASS",
+      "detail": "status=404 code=MERCHANT_NOT_FOUND"
+    },
+    {
+      "id": "T43",
+      "check": "re-invite after cancel succeeds (no duplicate pending)",
+      "result": "PASS",
+      "detail": "status=201"
+    },
+    {
+      "id": "T44",
+      "check": "isolated e2e completed against :3100 only",
+      "result": "PASS",
+      "detail": "port=3100"
+    }
+  ]
+}

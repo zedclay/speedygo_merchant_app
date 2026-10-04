@@ -1,0 +1,25 @@
+{
+  "merchantId": "01a0b4e7-83a0-7742-8ac0-03fcb5e9b056",
+  "branchId": "01a0b4ec-f8e2-751e-8129-f1d5322ea68d",
+  "merchantPhone": "+213559907701",
+  "categoryId": "01a0b51d-b576-79b8-acdc-c62993fa099b",
+  "productId": "01a0b51d-b5b6-7710-8be6-6fd844f18175",
+  "customerPhone": "+213559907702",
+  "customerLabel": "TEST FIXTURE Phase2 Customer",
+  "addressId": "01a0b51d-bc7c-7b50-8ef3-ad024865b272",
+  "orderAcceptId": "01a0b51d-bdbb-7b65-a87a-d431a13883a5",
+  "orderAcceptPublicRef": "sgo_01a0b51dbdbb74b594148ba9d15d7353",
+  "orderRejectId": "01a0b51d-bf20-785a-abcb-a3b7cd7381b5",
+  "orderRejectPublicRef": "sgo_01a0b51dbf20737f9eff68ef327f9993",
+  "layers": {
+    "catalogHoursCustomerOrders": "API-only synthetic fixture",
+    "merchantAcceptPrepReady": "live Merchant UI taps on SE",
+    "merchantReject": "live Merchant UI taps on SE (server reconciled; rejected screenshot missed by assertion timing)"
+  },
+  "finalStates": {
+    "orderAcceptId": "ACTIVE / READY",
+    "orderRejectId": "CANCELLED / PENDING_ACCEPTANCE",
+    "orderRejectReason": "TEST FIXTURE Phase2 refuse — rupture"
+  },
+  "untouched": ["Finjan", "Customer Revue", "Admin +213550000099 permissions"]
+}

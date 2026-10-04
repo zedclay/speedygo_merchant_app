@@ -1,0 +1,52 @@
+{
+  "app": "merchant",
+  "backend": "isolated (speedygo_parity_fx via 127.0.0.1:3100)",
+  "apiBaseUrl": "http://127.0.0.1:3100/api/v1",
+  "prefix": "fxi_t100",
+  "session": "one OTP session per role, app stores in memory (Keychain untouched)",
+  "acceptOrderId": "01a0fdb9-a41e-7996-aeff-617ec5a30846",
+  "rejectOrderId": "01a0fdb9-a4fa-7ead-b163-1a1dd55e2a66",
+  "branchId": "0d00f0f0-fa00-7000-8000-000000002001",
+  "results": {
+    "alertsDismissed": 2,
+    "accepted": "01a0fdb9-a41e-7996-aeff-617ec5a30846",
+    "rejected": "01a0fdb9-a4fa-7ead-b163-1a1dd55e2a66",
+    "branchAfterFreshInstance": "Comptoir Essai TEST FX",
+    "branchRestoredTo": "Comptoir Essai",
+    "failedRole": "OWNER"
+  },
+  "steps": [
+    {
+      "tag": "fxi_t100_alert",
+      "at": "2026-10-02T17:48:17.284122Z"
+    },
+    {
+      "tag": "fxi_t100_incoming",
+      "at": "2026-10-02T17:48:26.390030Z"
+    },
+    {
+      "tag": "fxi_t100_accept_sheet",
+      "at": "2026-10-02T17:48:30.948852Z"
+    },
+    {
+      "tag": "fxi_t100_after_accept",
+      "at": "2026-10-02T17:48:36.274813Z"
+    },
+    {
+      "tag": "fxi_t100_reject_sheet",
+      "at": "2026-10-02T17:48:41.999215Z"
+    },
+    {
+      "tag": "fxi_t100_after_reject",
+      "at": "2026-10-02T17:48:46.818670Z"
+    },
+    {
+      "tag": "fxi_t100_branch_saved",
+      "at": "2026-10-02T17:48:57.298923Z"
+    },
+    {
+      "tag": "fxi_t100_branch_reopened",
+      "at": "2026-10-02T17:49:13.082135Z"
+    }
+  ]
+}

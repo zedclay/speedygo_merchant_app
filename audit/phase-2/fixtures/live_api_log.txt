@@ -1,0 +1,27 @@
+[15:23:36] api_ok db=speedygo_dev merchant=01a0b4e7-83a0-7742-8ac0-03fcb5e9b056 branch=01a0b4ec-f8e2-751e-8129-f1d5322ea68d
+[15:23:38] merchant_auth_ok
+[15:23:38] opening_hours http=409
+[15:23:38] opening_hours_retry http=200 ver=1
+[15:23:38] category http=201
+[15:23:38] category_id=01a0b51d-b576-79b8-acdc-c62993fa099b
+[15:23:38] product http=201
+[15:23:38] product_id=01a0b51d-b5b6-7710-8be6-6fd844f18175
+[15:23:39] customer_auth_ok phone=0559907702
+[15:23:39] customer_profile_exists=False
+[15:23:40] customer_profile_create http=201
+[15:23:40] address http=201
+[15:23:40] address_id=01a0b51d-bc7c-7b50-8ef3-ad024865b272
+[15:23:40] cart_add_accept http=200
+[15:23:40] checkout_preview_accept http=200
+[15:23:40] order_accept http=201
+[15:23:40] cart_add_reject http=200
+[15:23:40] checkout_preview_reject http=200
+[15:23:40] order_reject http=201
+[15:23:40] order_accept_id=[15:23:40] cart_add_accept http=200
+[15:23:40] checkout_preview_accept http=200
+[15:23:40] order_accept http=201
+01a0b51d-bdbb-7b65-a87a-d431a13883a5 order_reject_id=[15:23:40] cart_add_reject http=200
+[15:23:40] checkout_preview_reject http=200
+[15:23:40] order_reject http=201
+01a0b51d-bf20-785a-abcb-a3b7cd7381b5
+[15:23:40] merchant_list_total=2

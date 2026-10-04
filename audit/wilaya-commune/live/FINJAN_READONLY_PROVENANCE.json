@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "layer": "live_merchant_ui",
+  "bundleId": "com.speedygo.speedygoMerchantApp",
+  "fixture": "Finjan",
+  "savePerformed": false,
+  "finjanDataModified": false,
+  "customerAppUntouched": true,
+  "simulatorUdid": "4A1C3481-8B8E-48BD-983D-03896884EF09",
+  "simulator": "iPhone 17 Pro",
+  "entrypoint": "integration_test/wilaya_commune_finjan_readonly_test.dart",
+  "steps": [
+    {
+      "id": "finjan_home",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "fixture": "Finjan",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-21T01:52:03.721757Z"
+    },
+    {
+      "id": "nav_profile",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "fixture": "Finjan",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-21T01:52:09.815356Z"
+    },
+    {
+      "id": "selectors_visible",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "fixture": "Finjan",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-21T01:52:14.952054Z"
+    },
+    {
+      "id": "no_save",
+      "status": "PASS",
+      "detail": "save control present; not activated",
+      "layer": "live_merchant_ui",
+      "fixture": "Finjan",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-21T01:52:17.963557Z"
+    }
+  ],
+  "at": "2026-09-21T01:52:17.963989Z"
+}

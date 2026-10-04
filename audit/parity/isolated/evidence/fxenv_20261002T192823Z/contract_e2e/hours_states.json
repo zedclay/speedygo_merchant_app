@@ -1,0 +1,182 @@
+[
+  {
+    "label": "baseline weekly 24h, no exception",
+    "merchantIsOpenNow": true,
+    "acceptingOrders": true,
+    "hoursException": null,
+    "nextOpenAt": null,
+    "currentClosesAt": "2026-10-09T23:00:00.000Z",
+    "previewHttp": 200,
+    "previewCode": null,
+    "customerIsOpenNow": true,
+    "listedOpenNow": true
+  },
+  {
+    "label": "today closed all day",
+    "merchantIsOpenNow": false,
+    "acceptingOrders": false,
+    "hoursException": {
+      "date": "2026-10-02",
+      "closed": true,
+      "label": "Inventaire"
+    },
+    "nextOpenAt": "2026-10-02T23:00:00.000Z",
+    "currentClosesAt": null,
+    "previewHttp": 409,
+    "previewCode": "CHECKOUT_BRANCH_CLOSED",
+    "customerIsOpenNow": false,
+    "listedOpenNow": false
+  },
+  {
+    "label": "today custom 19:15–21:30 (now inside)",
+    "merchantIsOpenNow": true,
+    "acceptingOrders": true,
+    "hoursException": {
+      "date": "2026-10-02",
+      "closed": false,
+      "label": "Horaires réduits"
+    },
+    "nextOpenAt": null,
+    "currentClosesAt": "2026-10-02T20:30:00.000Z",
+    "previewHttp": 200,
+    "previewCode": null,
+    "customerIsOpenNow": true,
+    "listedOpenNow": true
+  },
+  {
+    "label": "today custom 21:58–22:58 (now before)",
+    "merchantIsOpenNow": false,
+    "acceptingOrders": false,
+    "hoursException": {
+      "date": "2026-10-02",
+      "closed": false,
+      "label": "Ouverture tardive"
+    },
+    "nextOpenAt": "2026-10-02T20:58:00.000Z",
+    "currentClosesAt": null,
+    "previewHttp": 409,
+    "previewCode": "CHECKOUT_BRANCH_CLOSED",
+    "customerIsOpenNow": false,
+    "listedOpenNow": false
+  },
+  {
+    "label": "after rejected writes",
+    "merchantIsOpenNow": false,
+    "acceptingOrders": false,
+    "hoursException": {
+      "date": "2026-10-02",
+      "closed": false,
+      "label": "Ouverture tardive"
+    },
+    "nextOpenAt": "2026-10-02T20:58:00.000Z",
+    "currentClosesAt": null,
+    "previewHttp": 409,
+    "previewCode": "CHECKOUT_BRANCH_CLOSED",
+    "customerIsOpenNow": false,
+    "listedOpenNow": false
+  },
+  {
+    "label": "today 19:15–00:00, tomorrow closed",
+    "merchantIsOpenNow": true,
+    "acceptingOrders": true,
+    "hoursException": {
+      "date": "2026-10-02",
+      "closed": false,
+      "label": "Jusqu’à minuit"
+    },
+    "nextOpenAt": null,
+    "currentClosesAt": "2026-10-02T23:00:00.000Z",
+    "previewHttp": 200,
+    "previewCode": null,
+    "customerIsOpenNow": true,
+    "listedOpenNow": true
+  },
+  {
+    "label": "no exception today (weekly 24h), tomorrow closed",
+    "merchantIsOpenNow": true,
+    "acceptingOrders": true,
+    "hoursException": null,
+    "nextOpenAt": null,
+    "currentClosesAt": "2026-10-02T23:00:00.000Z",
+    "previewHttp": 200,
+    "previewCode": null,
+    "customerIsOpenNow": true,
+    "listedOpenNow": true
+  },
+  {
+    "label": "no exceptions at all",
+    "merchantIsOpenNow": true,
+    "acceptingOrders": true,
+    "hoursException": null,
+    "nextOpenAt": null,
+    "currentClosesAt": "2026-10-09T23:00:00.000Z",
+    "previewHttp": 200,
+    "previewCode": null,
+    "customerIsOpenNow": true,
+    "listedOpenNow": true
+  },
+  {
+    "label": "open all-day exception + FORCE_CLOSED",
+    "merchantIsOpenNow": false,
+    "acceptingOrders": false,
+    "hoursException": {
+      "date": "2026-10-02",
+      "closed": false,
+      "label": "Journée continue"
+    },
+    "nextOpenAt": null,
+    "currentClosesAt": null,
+    "previewHttp": 409,
+    "previewCode": "CHECKOUT_BRANCH_CLOSED",
+    "customerIsOpenNow": false,
+    "listedOpenNow": false
+  },
+  {
+    "label": "open all-day exception + TEMPORARY_CLOSED",
+    "merchantIsOpenNow": false,
+    "acceptingOrders": false,
+    "hoursException": {
+      "date": "2026-10-02",
+      "closed": false,
+      "label": "Journée continue"
+    },
+    "nextOpenAt": "2026-10-02T19:58:46.000Z",
+    "currentClosesAt": null,
+    "previewHttp": 409,
+    "previewCode": "CHECKOUT_BRANCH_CLOSED",
+    "customerIsOpenNow": false,
+    "listedOpenNow": false
+  },
+  {
+    "label": "open all-day exception + FOLLOW_SCHEDULE",
+    "merchantIsOpenNow": true,
+    "acceptingOrders": true,
+    "hoursException": {
+      "date": "2026-10-02",
+      "closed": false,
+      "label": "Journée continue"
+    },
+    "nextOpenAt": null,
+    "currentClosesAt": "2026-10-09T23:00:00.000Z",
+    "previewHttp": 200,
+    "previewCode": null,
+    "customerIsOpenNow": true,
+    "listedOpenNow": true
+  },
+  {
+    "label": "closed exception + FOLLOW_SCHEDULE",
+    "merchantIsOpenNow": false,
+    "acceptingOrders": false,
+    "hoursException": {
+      "date": "2026-10-02",
+      "closed": true,
+      "label": "Fermé"
+    },
+    "nextOpenAt": "2026-10-02T23:00:00.000Z",
+    "currentClosesAt": null,
+    "previewHttp": 409,
+    "previewCode": "CHECKOUT_BRANCH_CLOSED",
+    "customerIsOpenNow": false,
+    "listedOpenNow": false
+  }
+]

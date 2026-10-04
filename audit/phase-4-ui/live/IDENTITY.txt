@@ -1,0 +1,9 @@
+captured_at_utc=2026-09-19T14:08:10Z
+merchant_bundle=com.speedygo.speedygoMerchantApp
+merchant_display=Speedygo Merchant App
+merchant_name=speedygo_merchant_app
+customer_bundle=com.speedygo.speedygoCustomerApp
+customer_display=Speedygo Customer App
+device=iPhone 17 Pro (4A1C3481-8B8E-48BD-983D-03896884EF09)
+entrypoint=apps/merchant_app
+API_BASE_URL=http://127.0.0.1:3000/api/v1

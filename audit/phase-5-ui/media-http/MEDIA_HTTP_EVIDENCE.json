@@ -1,0 +1,74 @@
+{
+  "layer": "http_api",
+  "fixture": "Dar El Bahja",
+  "phone": "+213550000071",
+  "merchantId": "0d00c071-d000-7000-8000-000000010001",
+  "branchId": "0d00c071-d000-7000-8000-000000011001",
+  "productId": "0d00c071-d000-7000-8000-000000030101",
+  "finjanUntouched": true,
+  "steps": [
+    {
+      "id": "login",
+      "status": "PASS",
+      "phone": "+213550000071"
+    },
+    {
+      "id": "identity",
+      "status": "PASS",
+      "merchantId": "0d00c071-d000-7000-8000-000000010001",
+      "branchId": "0d00c071-d000-7000-8000-000000011001"
+    },
+    {
+      "id": "product_selected",
+      "status": "PASS",
+      "productId": "0d00c071-d000-7000-8000-000000030101"
+    },
+    {
+      "id": "product_bind",
+      "status": "PASS",
+      "imageUrl": "/customer/branches/0d00c071-d000-7000-8000-000000011001/products/0d00c071-d000-7000-8000-000000030101/image"
+    },
+    {
+      "id": "product_merchant_get",
+      "status": "PASS",
+      "bytes": 1391,
+      "contentType": "image/png"
+    },
+    {
+      "id": "product_replace_get",
+      "status": "PASS",
+      "bytes": 1391
+    },
+    {
+      "id": "cover_merchant_get",
+      "status": "PASS",
+      "bytes": 2116,
+      "contentType": "image/png"
+    },
+    {
+      "id": "cover_replace_get",
+      "status": "PASS",
+      "bytes": 2116
+    },
+    {
+      "id": "cover_delete_missing",
+      "status": "PASS"
+    },
+    {
+      "id": "unauth_product_get",
+      "status": "PASS",
+      "http": 401
+    },
+    {
+      "id": "foreign_merchant_denied",
+      "status": "PASS",
+      "http": 404
+    },
+    {
+      "id": "customer_token_on_merchant_route",
+      "status": "NOT RUN",
+      "detail": "No isolated customer phone in this script; merchant JWT isolation covered by unauth + foreign merchant"
+    }
+  ],
+  "at": "2026-09-24T13:57:31Z"
+}

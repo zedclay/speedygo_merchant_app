@@ -1,0 +1,18 @@
+{
+  "app": "merchant",
+  "bundleId": "com.speedygo.speedygoMerchantApp",
+  "fixture": "Fixture Parité B7",
+  "phase": "rejected",
+  "backend": "local dev",
+  "sessionRevoked": true,
+  "steps": [
+    {
+      "tag": "live_t135_b7_rejected",
+      "at": "2026-09-30T16:56:37.515634Z"
+    },
+    {
+      "tag": "live_t135_b7_resubmission",
+      "at": "2026-09-30T16:56:43.416383Z"
+    }
+  ]
+}

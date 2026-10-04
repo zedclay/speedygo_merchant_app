@@ -1,0 +1,69 @@
+{
+  "app": "merchant",
+  "test": "contract_batch_fx_live_test",
+  "backend": "isolated (speedygo_parity_fx via 127.0.0.1:3100)",
+  "apiBaseUrl": "http://127.0.0.1:3100/api/v1",
+  "prefix": "fxc_t100",
+  "session": "one OTP session per role, app stores in memory (Keychain untouched)",
+  "branchId": "0d00f0f0-fa00-7000-8000-000000002001",
+  "logoFixtures": {
+    "A": "13659:5260b817",
+    "B": "12877:fdf7a49b"
+  },
+  "results": {
+    "logoInitiallyEmpty": true,
+    "logoSavedMatchesA": true,
+    "logoAfterFreshInstance": "13659:5260b817",
+    "logoReplacedMatchesB": true,
+    "logoReplacedDiffersFromA": true,
+    "logoDisplayedIsB": true,
+    "logoAfterRemove": "none",
+    "serverToday": "2026-10-02",
+    "failedRole": "OWNER",
+    "failure": "Timed out waiting for Found 0 widgets with key [<'home-branch-name'>]: []",
+    "failureInlineError": null,
+    "failureSaveEnabled": null
+  },
+  "steps": [
+    {
+      "tag": "fxc_t100_logo_empty",
+      "at": "2026-10-02T20:41:42.576915Z"
+    },
+    {
+      "tag": "fxc_t100_profile_logo",
+      "at": "2026-10-02T20:41:48.777683Z"
+    },
+    {
+      "tag": "fxc_t100_logo_reopened",
+      "at": "2026-10-02T20:42:04.258464Z"
+    },
+    {
+      "tag": "fxc_t100_logo_replaced",
+      "at": "2026-10-02T20:42:14.192510Z"
+    },
+    {
+      "tag": "fxc_t100_logo_removed",
+      "at": "2026-10-02T20:42:19.746406Z"
+    },
+    {
+      "tag": "fxc_t100_profile_logo_fallback",
+      "at": "2026-10-02T20:42:26.142637Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exceptions_empty",
+      "at": "2026-10-02T20:42:34.876280Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_form",
+      "at": "2026-10-02T20:42:40.776437Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_saved",
+      "at": "2026-10-02T20:42:45.975982Z"
+    },
+    {
+      "tag": "fxc_t100_failure_state",
+      "at": "2026-10-02T20:43:22.226853Z"
+    }
+  ]
+}

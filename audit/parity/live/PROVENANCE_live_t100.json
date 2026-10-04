@@ -1,0 +1,115 @@
+{
+  "app": "merchant",
+  "bundleId": "com.speedygo.speedygoMerchantApp",
+  "merchant": "Dar El Bahja (synthetic, OWNER)",
+  "backend": "local dev",
+  "prefix": "live_t100",
+  "session": "restored device session (preserved, not revoked)",
+  "sessionRevoked": false,
+  "steps": [
+    {
+      "tag": "live_t100_b1_home",
+      "at": "2026-09-30T16:03:53.904933Z"
+    },
+    {
+      "tag": "live_t100_b1_home_end",
+      "at": "2026-09-30T16:03:59.271189Z"
+    },
+    {
+      "tag": "live_t100_b2_orders",
+      "at": "2026-09-30T16:04:06.886912Z"
+    },
+    {
+      "tag": "live_t100_b2_order_detail",
+      "at": "2026-09-30T16:04:15.388573Z"
+    },
+    {
+      "tag": "live_t100_b2_order_detail_end",
+      "at": "2026-09-30T16:04:20.788390Z"
+    },
+    {
+      "tag": "live_t100_b3_catalog",
+      "at": "2026-09-30T16:04:28.422662Z"
+    },
+    {
+      "tag": "live_t100_b3_category",
+      "at": "2026-09-30T16:04:36.953223Z"
+    },
+    {
+      "tag": "live_t100_b3_product",
+      "at": "2026-09-30T16:04:45.405562Z"
+    },
+    {
+      "tag": "live_t100_b3_variants",
+      "at": "2026-09-30T16:04:53.938713Z"
+    },
+    {
+      "tag": "live_t100_b3_extras",
+      "at": "2026-09-30T16:05:02.455162Z"
+    },
+    {
+      "tag": "live_t100_b3_product_availability",
+      "at": "2026-09-30T16:05:10.955083Z"
+    },
+    {
+      "tag": "live_t100_b3_reorder",
+      "at": "2026-09-30T16:05:19.438446Z"
+    },
+    {
+      "tag": "live_t100_b3_bulk_availability",
+      "at": "2026-09-30T16:05:27.855567Z"
+    },
+    {
+      "tag": "live_t100_b4_profile",
+      "at": "2026-09-30T16:05:35.421727Z"
+    },
+    {
+      "tag": "live_t100_b4_hours",
+      "at": "2026-09-30T16:05:43.938867Z"
+    },
+    {
+      "tag": "live_t100_b4_availability",
+      "at": "2026-09-30T16:05:52.455263Z"
+    },
+    {
+      "tag": "live_t100_b4_temporary",
+      "at": "2026-09-30T16:06:00.975971Z"
+    },
+    {
+      "tag": "live_t100_b4_cover",
+      "at": "2026-09-30T16:06:09.470383Z"
+    },
+    {
+      "tag": "live_t100_b4_address",
+      "at": "2026-09-30T16:06:17.905989Z"
+    },
+    {
+      "tag": "live_t100_b5_overview",
+      "at": "2026-09-30T16:06:25.505939Z"
+    },
+    {
+      "tag": "live_t100_b5_top_products",
+      "at": "2026-09-30T16:06:34.055526Z"
+    },
+    {
+      "tag": "live_t100_b6_settings",
+      "at": "2026-09-30T16:06:42.570650Z"
+    },
+    {
+      "tag": "live_t100_b6_notifications",
+      "at": "2026-09-30T16:06:50.987447Z"
+    },
+    {
+      "tag": "live_t100_b6_notification_settings",
+      "at": "2026-09-30T16:06:59.489289Z"
+    },
+    {
+      "tag": "live_t100_b6_support",
+      "at": "2026-09-30T16:07:07.972378Z"
+    },
+    {
+      "tag": "live_t100_b6_logout",
+      "at": "2026-09-30T16:07:16.672116Z"
+    }
+  ]
+}

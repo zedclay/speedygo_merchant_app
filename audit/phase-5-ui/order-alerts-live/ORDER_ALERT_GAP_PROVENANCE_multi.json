@@ -1,0 +1,29 @@
+{
+  "fixture": "Dar El Bahja",
+  "phone": "+213550000071",
+  "mode": "multi",
+  "pollIntervalSeconds": 8,
+  "harnessResult": "PASS",
+  "error": null,
+  "steps": [
+    {
+      "id": "home_loaded",
+      "status": "PASS",
+      "detail": null,
+      "mode": "multi",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:35:36.483703Z"
+    },
+    {
+      "id": "multi_order_queued",
+      "status": "PASS",
+      "detail": "queued=1 ids=2",
+      "mode": "multi",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:35:38.561234Z"
+    }
+  ],
+  "nativePush": "NOT_EXERCISED (DisabledPushMessagingGateway; no Firebase options in this build)",
+  "nativePushRequirement": "FCM adapter + firebase_messaging client are implemented; delivery still needs FCM credentials (backend) and Firebase options (config/push.local.json). See docs/architecture/NATIVE_PUSH_SETUP.md and audit/phase-5-ui/native-push/NATIVE_PUSH_REPORT.md. Foreground poll evidence here is independent of Push.",
+  "offlineSimulation": null
+}

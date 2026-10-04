@@ -1,0 +1,53 @@
+{
+  "fixture": "Dar El Bahja",
+  "phone": "+213550000071",
+  "mode": "shots",
+  "pollIntervalSeconds": 8,
+  "harnessResult": "PASS",
+  "error": null,
+  "steps": [
+    {
+      "id": "home_loaded",
+      "status": "PASS",
+      "detail": null,
+      "mode": "shots",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:37:01.328001Z"
+    },
+    {
+      "id": "inbox_shot",
+      "status": "PASS",
+      "detail": null,
+      "mode": "shots",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:37:08.463772Z"
+    },
+    {
+      "id": "preferences_shot",
+      "status": "PASS",
+      "detail": null,
+      "mode": "shots",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:37:14.481899Z"
+    },
+    {
+      "id": "inbox_shot-a11y",
+      "status": "PASS",
+      "detail": null,
+      "mode": "shots",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:37:21.550513Z"
+    },
+    {
+      "id": "preferences_shot-a11y",
+      "status": "PASS",
+      "detail": null,
+      "mode": "shots",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:37:27.643085Z"
+    }
+  ],
+  "nativePush": "NOT_EXERCISED (DisabledPushMessagingGateway; no Firebase options in this build)",
+  "nativePushRequirement": "FCM adapter + firebase_messaging client are implemented; delivery still needs FCM credentials (backend) and Firebase options (config/push.local.json). See docs/architecture/NATIVE_PUSH_SETUP.md and audit/phase-5-ui/native-push/NATIVE_PUSH_REPORT.md. Foreground poll evidence here is independent of Push.",
+  "offlineSimulation": null
+}

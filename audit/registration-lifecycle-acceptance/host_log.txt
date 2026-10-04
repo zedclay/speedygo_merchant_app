@@ -1,0 +1,7 @@
+[14:29:12] env db=speedygo_dev api=http://127.0.0.1:3000/api/v1 phone_id=0559907701 se=E342AC62-65EB-4786-87D1-292AF132E1CF
+[14:29:12] API health OK storage=~/.speedygo/dev/storage
+[14:29:13] se_reset_merchant_session attempted (SE uninstall+keychain only)
+[14:29:13] admin_probe skipped (cached 403 without merchants.verify)
+[14:30:32] shot=review
+[14:30:46] shot=pending
+[14:30:50] flutter_test_exit=0

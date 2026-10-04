@@ -1,0 +1,57 @@
+{
+  "status": 200,
+  "body": {
+    "id": "97905510-a68a-454d-a201-0b6630f1fa48",
+    "publicReference": "sgo_finvis_1",
+    "status": "CREATED",
+    "fulfillmentStatus": "PENDING_ACCEPTANCE",
+    "merchantBranchId": "0d00c071-d000-7000-8000-000000011001",
+    "createdAt": "2026-09-30 02:42:24.672456+01",
+    "confirmedAt": null,
+    "customerFullName": "TEST FIXTURE PrepTime Customer",
+    "payment": {
+      "method": "COD",
+      "status": "PENDING"
+    },
+    "preparationMinutes": null,
+    "originalPreparationMinutes": null,
+    "estimatedReadyAt": null,
+    "originalEstimatedReadyAt": null,
+    "preparationEstimateVersion": 0,
+    "isPreparationLate": false,
+    "items": [
+      {
+        "id": "4c0a83c1-e110-4700-bf67-84d321fa49ea",
+        "productId": "0d00c071-d000-7000-8000-000000030141",
+        "productNameSnapshot": "Thé à la menthe",
+        "quantity": 1,
+        "unitPriceMinor": "15000",
+        "lineTotalMinor": "15000",
+        "options": []
+      },
+      {
+        "id": "6d7c320b-c417-4c4d-804b-1452104b8179",
+        "productId": "0d00c071-d000-7000-8000-000000030101",
+        "productNameSnapshot": "Couscous royal",
+        "quantity": 2,
+        "unitPriceMinor": "120000",
+        "lineTotalMinor": "240000",
+        "options": []
+      }
+    ],
+    "deliveryAddress": {
+      "addressText": "Adresse de test — fixture visibilité financière",
+      "latitude": 36.7538,
+      "longitude": 3.0588,
+      "instructions": null
+    },
+    "statusHistory": [],
+    "cancellation": null,
+    "financialAccess": "ROLE_RESTRICTED",
+    "financial": {
+      "currency": "DZD",
+      "grossMerchandiseSubtotalMinor": "255000",
+      "deliveryFeeMinor": "20000"
+    }
+  }
+}

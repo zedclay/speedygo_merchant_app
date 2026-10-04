@@ -1,0 +1,27 @@
+{
+  "harness": "isolated LocationPickerScreen fixture + integration_test (Finjan untouched)",
+  "device": "iPhone 17 Pro simulator (4A1C3481-8B8E-48BD-983D-03896884EF09)",
+  "gpsSource": "simulated via simctl location set 36.7538,3.0588 — not physical GNSS",
+  "physicalDevice": "iPhone De Hafid wireless visible; not used (avoid Finjan session mutation)",
+  "integrationTest": {
+    "file": "integration_test/location_map_live_test.dart",
+    "result": "passed",
+    "confirmedLat": 36.75311230931512,
+    "confirmedLng": 3.0605166137695465,
+    "movedLat": 36.75362807790667,
+    "movedLng": 3.059229153442398,
+    "pinMoved": true,
+    "cancelReturnedNull": true
+  },
+  "tiles": {
+    "mockedWidgetTest": "registration_capture_test map picker: OSM HTTP 400 → grey/failed tiles (not live)",
+    "liveDefaultOsm": "live-map-osm-default.png — real Algiers streets (Latin+Arabic), pin, confirm CTA",
+    "liveCartoWatermarked": "live-map-carto-light.png / live-map-picker-tiles.png — streets visible under Carto API KEY REQUIRED watermark",
+    "productionNote": "Default OSM is policy-limited; provision MAP_TILE_URL_TEMPLATE or Google Maps before production"
+  },
+  "gpsPermission": {
+    "evidence": "live-map-after-gps-tap.png (native iOS dialog over map)",
+    "usageStringFr": "SpeedyGo utilise votre position uniquement pour proposer le lieu de retrait de votre établissement. La confirmation reste manuelle sur la carte."
+  },
+  "finjanUntouched": true
+}

@@ -1,0 +1,88 @@
+{
+  "app": "merchant",
+  "test": "contract_batch_fx_live_test",
+  "backend": "isolated (speedygo_parity_fx via 127.0.0.1:3100)",
+  "apiBaseUrl": "http://127.0.0.1:3100/api/v1",
+  "prefix": "fxc_t135",
+  "session": "one OTP session per role, app stores in memory (Keychain untouched)",
+  "branchId": "0d00f0f0-fa00-7000-8000-000000002001",
+  "logoFixtures": {
+    "A": "13659:5260b817",
+    "B": "12877:fdf7a49b"
+  },
+  "results": {
+    "logoInitiallyEmpty": true,
+    "logoSavedMatchesA": true,
+    "logoAfterFreshInstance": "13659:5260b817",
+    "logoReplacedMatchesB": true,
+    "logoReplacedDiffersFromA": true,
+    "logoDisplayedIsB": true,
+    "logoAfterRemove": "none",
+    "serverToday": "2026-10-02",
+    "exceptionAfterFreshInstance": "2026-10-05",
+    "conflictKeptDraft": true,
+    "retryAfterConflictSaved": true,
+    "failedRole": "OWNER",
+    "failure": "Expected: exactly one matching candidate",
+    "failureInlineError": null,
+    "failureSaveEnabled": true
+  },
+  "steps": [
+    {
+      "tag": "fxc_t135_logo_empty",
+      "at": "2026-10-02T21:08:00.713318Z"
+    },
+    {
+      "tag": "fxc_t135_profile_logo",
+      "at": "2026-10-02T21:08:06.913547Z"
+    },
+    {
+      "tag": "fxc_t135_logo_reopened",
+      "at": "2026-10-02T21:08:22.315065Z"
+    },
+    {
+      "tag": "fxc_t135_logo_replaced",
+      "at": "2026-10-02T21:08:32.498321Z"
+    },
+    {
+      "tag": "fxc_t135_logo_removed",
+      "at": "2026-10-02T21:08:37.793345Z"
+    },
+    {
+      "tag": "fxc_t135_profile_logo_fallback",
+      "at": "2026-10-02T21:08:44.164789Z"
+    },
+    {
+      "tag": "fxc_t135_hours_exceptions_empty",
+      "at": "2026-10-02T21:08:52.948948Z"
+    },
+    {
+      "tag": "fxc_t135_hours_exception_form",
+      "at": "2026-10-02T21:08:59.231800Z"
+    },
+    {
+      "tag": "fxc_t135_hours_exception_saved",
+      "at": "2026-10-02T21:09:04.649022Z"
+    },
+    {
+      "tag": "fxc_t135_hours_exception_reopened",
+      "at": "2026-10-02T21:09:20.132177Z"
+    },
+    {
+      "tag": "fxc_t135_hours_exception_conflict",
+      "at": "2026-10-02T21:09:28.164678Z"
+    },
+    {
+      "tag": "fxc_t135_hours_exception_open_interval",
+      "at": "2026-10-02T21:09:33.298952Z"
+    },
+    {
+      "tag": "fxc_t135_hours_exception_deleted",
+      "at": "2026-10-02T21:09:38.804264Z"
+    },
+    {
+      "tag": "fxc_t135_failure_state",
+      "at": "2026-10-02T21:09:45.832024Z"
+    }
+  ]
+}

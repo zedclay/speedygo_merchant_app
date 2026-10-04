@@ -1,0 +1,106 @@
+[
+  {
+    "op": "reset_tokens",
+    "arg": null,
+    "out": {
+      "ok": true
+    }
+  },
+  {
+    "op": "reject_pending",
+    "arg": null,
+    "out": {
+      "rejected": 0
+    }
+  },
+  {
+    "op": "token",
+    "arg": "sim-harness-1790612720696-1",
+    "out": {
+      "accountId": "0d00c071-d000-7000-8000-000000000001",
+      "active": true
+    }
+  },
+  {
+    "op": "create",
+    "arg": null,
+    "out": {
+      "orderId": "01a0e8d6-32bc-73b5-bd68-39981d69f0aa"
+    }
+  },
+  {
+    "op": "accept",
+    "arg": "01a0e8d6-32bc-73b5-bd68-39981d69f0aa",
+    "out": {
+      "status": 200
+    }
+  },
+  {
+    "op": "token",
+    "arg": "sim-harness-1790612720696-1",
+    "out": {
+      "accountId": "0d00c071-d000-7000-8000-000000000001",
+      "active": false
+    }
+  },
+  {
+    "op": "token",
+    "arg": "sim-harness-1790612720696-2",
+    "out": {
+      "accountId": "0d00c071-d000-7000-8000-000000000001",
+      "active": true
+    }
+  },
+  {
+    "op": "token",
+    "arg": "sim-harness-1790612720696-2",
+    "out": {
+      "accountId": "0d00c071-d000-7000-8000-000000000001",
+      "active": false
+    }
+  },
+  {
+    "op": "token",
+    "arg": "sim-harness-1790612720696-2",
+    "out": {
+      "accountId": "0d00c071-d000-7000-8000-000000000001",
+      "active": true
+    }
+  },
+  {
+    "op": "create",
+    "arg": null,
+    "out": {
+      "orderId": "01a0e8d7-09c6-78d0-82ec-542708385b45"
+    }
+  },
+  {
+    "op": "token",
+    "arg": "sim-harness-1790612720696-2",
+    "out": {
+      "accountId": "0d00c071-d000-7000-8000-000000000001",
+      "active": false
+    }
+  },
+  {
+    "op": "cleanup",
+    "arg": "01a0e8d6-32bc-73b5-bd68-39981d69f0aa",
+    "out": {
+      "rejected": false
+    }
+  },
+  {
+    "op": "cleanup",
+    "arg": "01a0e8d7-09c6-78d0-82ec-542708385b45",
+    "out": {
+      "rejected": true
+    }
+  },
+  {
+    "op": "done",
+    "arg": null,
+    "out": {
+      "ok": true
+    }
+  }
+]

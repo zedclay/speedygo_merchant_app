@@ -1,0 +1,17 @@
+Merchant app — fifth pass automated results (2026-10-02, 17:19 CET, after all live runs)
+
+flutter test (full suite):   525 passed, 1 skipped, 0 failed   ("All tests passed!")
+flutter analyze:             0 errors, 1 warning (pre-existing: test/features/order_list_visual_corrections_test.dart:66 unused_element_parameter), 64 infos (style)
+
+Regression tests added in this pass for the two live-found defects (both failed before the fix, pass after):
+- test/features/order_alert_permissions_test.dart
+    "above the navigator (app builder) the alert builds and dismisses"
+- test/features/store_general_save_navigation_test.dart
+    saving "Informations générales" closes the editor; home shows the new name
+
+Focused runs after the defect fixes (same session): alert/push 26 passed; store-general 48 passed.
+Previous full run before the live runs: 523 passed, 1 skipped.
+
+Live test harnesses (not part of `flutter test`, run on the simulator):
+- integration_test/parity_live_capture_test.dart        live4_t100 exit 0 (13 shots), live4_t135 exit 0 (13 shots)
+- integration_test/parity_fixture_writes_live_test.dart fx_t100 exit 0 after 3 failed attempts (kept as evidence), fx_t135 exit 0

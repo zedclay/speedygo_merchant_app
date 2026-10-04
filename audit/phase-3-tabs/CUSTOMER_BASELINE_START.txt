@@ -1,0 +1,2 @@
+c42620cff4ab3a572ae6d675a8a8f50f10bdd30effe3d317ae5564896f59a11d  /Users/mac/Downloads/speedygo_project/apps/customer_app/lib/main.dart
+e0a48c4cb2d7c17494459f305180a5796ebd92d4f276be0082200773b45cedb1  /Users/mac/Downloads/speedygo_project/apps/customer_app/lib/features/auth/presentation/splash_screen.dart

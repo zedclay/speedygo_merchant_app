@@ -1,0 +1,38 @@
+{
+  "fixture": "Dar El Bahja",
+  "phone": "+213550000071",
+  "preserved": ["Finjan", "Customer", "Driver"],
+  "device": "iPhone 16e (8DB9007A-B816-4EC5-86ED-C627AC60F2C5)",
+  "pollIntervalSeconds": 8,
+  "transportRedesign": false,
+  "nativePush": "IMPLEMENTED; real FCM/APNs delivery BLOCKED (no credentials) — see ../native-push/NATIVE_PUSH_REPORT.md",
+  "status": "implementer_reviewed",
+  "uiCorrectionPass": "2026-09-25-prefs-inbox-evidence",
+  "rerun": "2026-09-28 on final native-push code: reconnect, resume_stale, multi, shots all PASS",
+  "offlineSimulation": "harness_injected_file_gate (ALERT_OFFLINE_GATE) — not a native device-network disconnect",
+  "screenshotPair": {
+    "incoming": "alert-incoming.png",
+    "opened": "alert-opened-order.png",
+    "sameOrder": true,
+    "provenance": "ORDER_ALERT_GAP_PROVENANCE_reconnect.json"
+  },
+  "textLayouts": {
+    "normal": ["alert-inbox.png", "alert-preferences.png"],
+    "a11y_1_35": ["alert-inbox-a11y.png", "alert-preferences-a11y.png"]
+  },
+  "isolationHttp": {
+    "result": "PASS",
+    "evidence": "ORDER_ALERT_ISOLATION_HTTP.json",
+    "tokenAssert": "executed_with_db — peer remains active; foreign delete leaves peer active"
+  },
+  "logoutSession": {
+    "result": "PASS",
+    "evidenceType": "code_inspection + live simulator harness (../native-push/NATIVE_PUSH_SIM_HARNESS_PROVENANCE.json step logout)",
+    "notes": [
+      "OrderAlertController stop() on non-ready session",
+      "epoch + session.generation gate in-flight applies",
+      "logout deactivates stored device token only",
+      "2026-09-28: fixed Riverpod session/push cycle that skipped token DELETE and /auth/logout in debug builds"
+    ]
+  }
+}

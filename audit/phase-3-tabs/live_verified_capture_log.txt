@@ -1,0 +1,13 @@
+[13:43:40] customer_container=/Users/mac/Library/Developer/CoreSimulator/Devices/4A1C3481-8B8E-48BD-983D-03896884EF09/data/Containers/Bundle/Application/0C91997D-FBDA-49B4-BCC2-6BCEB2535171/Runner.app
+[13:43:40] merchant_container_before=/Users/mac/Library/Developer/CoreSimulator/Devices/4A1C3481-8B8E-48BD-983D-03896884EF09/data/Containers/Bundle/Application/7551D59E-A3B2-4652-B230-E672E6E1DC82/Runner.app
+[13:43:41] api_ok
+[13:44:37] shot=live-home-pro
+[13:44:43] shot=live-orders-pro
+[13:44:49] shot=live-catalog-pro
+[13:44:56] shot=live-reports-pro
+[13:45:02] shot=live-profile-pro
+[13:45:04] flutter_test_exit=0
+[13:45:04] customer_container_after=/Users/mac/Library/Developer/CoreSimulator/Devices/4A1C3481-8B8E-48BD-983D-03896884EF09/data/Containers/Bundle/Application/0C91997D-FBDA-49B4-BCC2-6BCEB2535171/Runner.app
+[13:45:04] merchant_container_after=MISSING
+identity com.speedygo.speedygoMerchantApp display=None name=None
+identity com.speedygo.speedygoCustomerApp display=Speedygo Customer App name=speedygo_customer_app

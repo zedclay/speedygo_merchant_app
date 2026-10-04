@@ -1,0 +1,9 @@
+{
+  "status": 403,
+  "body": {
+    "error": {
+      "code": "MERCHANT_ROLE_FORBIDDEN",
+      "message": "Merchant membership cannot perform this action"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "app": "merchant",
+  "backend": "isolated (speedygo_parity_fx via 127.0.0.1:3100)",
+  "apiBaseUrl": "http://127.0.0.1:3100/api/v1",
+  "prefix": "fxi_t100",
+  "session": "one OTP session per role, app stores in memory (Keychain untouched)",
+  "acceptOrderId": "01a0fdbd-6623-7113-833e-b10954883ff5",
+  "rejectOrderId": "01a0fdbd-66c5-7362-b9a3-2774e9045e9a",
+  "branchId": "0d00f0f0-fa00-7000-8000-000000002001",
+  "results": {
+    "alertsDismissed": 2,
+    "accepted": "01a0fdbd-6623-7113-833e-b10954883ff5",
+    "rejected": "01a0fdbd-66c5-7362-b9a3-2774e9045e9a",
+    "branchAfterFreshInstance": "Comptoir Essai TEST FX",
+    "branchRestoredTo": "Comptoir Essai",
+    "ownerOverviewRowOpensEditor": true,
+    "topRows_OWNER": 5,
+    "topChevrons_OWNER": 5,
+    "topRowOpensEditor_OWNER": true,
+    "logout_OWNER": true,
+    "topRows_MANAGER": 5,
+    "topChevrons_MANAGER": 5,
+    "topRowOpensEditor_MANAGER": true,
+    "logout_MANAGER": true,
+    "topRows_STAFF": 5,
+    "topChevrons_STAFF": 0,
+    "topRowOpensEditor_STAFF": false,
+    "staffOverviewRowOpensEditor": false,
+    "logout_STAFF": true
+  },
+  "steps": [
+    {
+      "tag": "fxi_t100_alert",
+      "at": "2026-10-02T17:52:08.151214Z"
+    },
+    {
+      "tag": "fxi_t100_incoming",
+      "at": "2026-10-02T17:52:17.250192Z"
+    },
+    {
+      "tag": "fxi_t100_accept_sheet",
+      "at": "2026-10-02T17:52:21.833601Z"
+    },
+    {
+      "tag": "fxi_t100_after_accept",
+      "at": "2026-10-02T17:52:27.276698Z"
+    },
+    {
+      "tag": "fxi_t100_reject_sheet",
+      "at": "2026-10-02T17:52:33.026689Z"
+    },
+    {
+      "tag": "fxi_t100_after_reject",
+      "at": "2026-10-02T17:52:37.837283Z"
+    },
+    {
+      "tag": "fxi_t100_branch_saved",
+      "at": "2026-10-02T17:52:47.649956Z"
+    },
+    {
+      "tag": "fxi_t100_branch_reopened",
+      "at": "2026-10-02T17:53:03.084963Z"
+    },
+    {
+      "tag": "fxi_t100_reports",
+      "at": "2026-10-02T17:53:11.400400Z"
+    },
+    {
+      "tag": "fxi_t100_reports_top_section",
+      "at": "2026-10-02T17:53:16.500480Z"
+    },
+    {
+      "tag": "fxi_t100_top_products_owner",
+      "at": "2026-10-02T17:53:26.217378Z"
+    },
+    {
+      "tag": "fxi_t100_editor_owner",
+      "at": "2026-10-02T17:53:31.066652Z"
+    },
+    {
+      "tag": "fxi_t100_top_products_manager",
+      "at": "2026-10-02T17:53:52.802489Z"
+    },
+    {
+      "tag": "fxi_t100_editor_manager",
+      "at": "2026-10-02T17:53:57.617863Z"
+    },
+    {
+      "tag": "fxi_t100_top_products_staff",
+      "at": "2026-10-02T17:54:19.651618Z"
+    },
+    {
+      "tag": "fxi_t100_reports_staff",
+      "at": "2026-10-02T17:54:29.234599Z"
+    }
+  ]
+}

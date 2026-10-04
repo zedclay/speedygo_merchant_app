@@ -1,0 +1,51 @@
+{
+ "prefix": "fxg_t100",
+ "apiBaseUrl": "http://127.0.0.1:3100/api/v1",
+ "results": {
+  "catalogMaxScrollExtent": 2839.769230769231,
+  "dockHideScrollBefore": 0.0,
+  "dockHideScrollAfter": 140.0,
+  "dockHideDelta": 140.0,
+  "dockHiddenAtPixels": 140.0,
+  "dockRestoreByScrollPixels": 80.0,
+  "dockRestoreAtTopPixels": 0.0,
+  "lastRowBottom": 582.0,
+  "dockTop": 730.0,
+  "lastRowMaxScrollExtent": 2677.0,
+  "lastRowScrollPixels": 2677.0,
+  "visibleAfterBallistic": false,
+  "visibleBeforeFling": true,
+  "dockHideReveal": "PASS",
+  "emptyCatalogue": "PASS",
+  "unreachableLeaveLoadingMs": 3162,
+  "unreachable": "PASS",
+  "retryAfterUnreachable": "PASS",
+  "http500LeaveLoadingMs": 3157,
+  "http500": "PASS",
+  "retryAfter500": "PASS",
+  "noPermanentSpinner": true
+ },
+ "requestLog": [
+  {
+   "kind": "unreachable",
+   "label": "isolated API process stopped on port 3100 (not a native network disconnection)",
+   "at": "2026-10-03T15:05:30.305557Z"
+  },
+  {
+   "kind": "retry_after_unreachable",
+   "label": "single Réessayer after isolated API restored",
+   "at": "2026-10-03T15:05:40.935786Z"
+  },
+  {
+   "kind": "http_500",
+   "label": "controlled HTTP 500 stub on 127.0.0.1:3100 (deterministic)",
+   "at": "2026-10-03T15:05:47.877654Z"
+  },
+  {
+   "kind": "retry_after_500",
+   "label": "single Réessayer after controlled stub replaced by real API",
+   "at": "2026-10-03T15:05:59.261982Z"
+  }
+ ],
+ "at": "2026-10-03T15:06:05.492419Z"
+}

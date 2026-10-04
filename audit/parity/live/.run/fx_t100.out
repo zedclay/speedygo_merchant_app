@@ -1,0 +1,7 @@
+DISK_PREFLIGHT_OK step=guard:fx_t100 free_gb=14 min_gb=5
+DISK_PREFLIGHT_OK step=fixture:fx_t100 free_gb=14 min_gb=5
+BUNDLE_OK
+SHOT fx_t100_fx_incoming 598573
+PARITY_FIXTURE prefix=fx_t100 exit=1
+{"label": "fx_t100", "accountId": "0d00c071-d000-7000-8000-000000000001", "start": "2026-10-02T15:10:00Z", "exit": 1,
+ "sessions": [{"id" : "01a0fd2b-96f2-759b-96b1-d342ee191b89", "revoked" : true}], "fallbackRevoked": 0, "devices": ["01a0fd2b-96f4-709f-86e4-834f90c4ebf4"], "deviceTokens": []}

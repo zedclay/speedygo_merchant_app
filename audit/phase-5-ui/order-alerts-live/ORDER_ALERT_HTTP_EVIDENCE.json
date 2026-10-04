@@ -1,0 +1,18 @@
+{
+  "orderId": "01a0d6ba-2c40-76ed-84a5-209c315f47b0",
+  "inboxMatch": true,
+  "notification": {
+    "id": "01a0d6ba-2cf9-7f71-95f2-f207bbae688d",
+    "type": "MERCHANT_ORDER_CREATED",
+    "sourceId": "01a0d6ba-2c40-76ed-84a5-209c315f47b0",
+    "title": "Nouvelle commande",
+    "body": "Une nouvelle commande sgo_01a0d6ba2c4070a49e6d0d641558f0b4 nécessite votre attention.",
+    "read": false,
+    "createdAt": "2026-09-25 05:02:00.569+01"
+  },
+  "unreadCount": 28,
+  "deviceTokenRegisterDeactivate": "PASS",
+  "pollIntervalSeconds": 8,
+  "nativePush": "BLOCKED",
+  "nativePushRequirement": "APNs/FCM credentials + provider adapter; Push remains SKIPPED_NOT_CONFIGURED"
+}

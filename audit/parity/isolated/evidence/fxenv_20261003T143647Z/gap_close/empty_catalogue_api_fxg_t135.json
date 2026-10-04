@@ -1,0 +1,12 @@
+{
+  "endpoint": "GET /merchant/0d00f0f0-fa00-7000-8000-000000001003/products?branchId=0d00f0f0-fa00-7000-8000-000000002003",
+  "httpStatus": 200,
+  "productCount": 0,
+  "bodyKeys": [
+    "items",
+    "limit",
+    "offset",
+    "total"
+  ],
+  "label": "isolated empty Catalogue API proof \u2014 not a native offline gate"
+}

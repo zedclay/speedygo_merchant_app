@@ -1,0 +1,148 @@
+{
+  "results": [
+    {
+      "id": "H0",
+      "check": "delivery_pickup_handoffs table",
+      "result": "PASS",
+      "detail": "count=1"
+    },
+    {
+      "id": "H1",
+      "check": "driver_assignments.version",
+      "result": "PASS",
+      "detail": "count=1"
+    },
+    {
+      "id": "A1",
+      "check": "OWNER assignedDriver current assignment",
+      "result": "PASS",
+      "detail": "status=200 name=Yacine Mansouri call=False"
+    },
+    {
+      "id": "A2",
+      "check": "STAFF can read assignedDriver (ORDER_READ)",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "id": "A3",
+      "check": "foreign merchant rejected",
+      "result": "PASS",
+      "detail": "status=404 code=MERCHANT_NOT_FOUND"
+    },
+    {
+      "id": "A4",
+      "check": "reassignment shows new driver only",
+      "result": "PASS",
+      "detail": "status=200 driver=0d00f0f0-fa00-7000-8000-000000009132"
+    },
+    {
+      "id": "P1",
+      "check": "merchant issues/read PENDING handoff",
+      "result": "PASS",
+      "detail": "status=200 attempts=5"
+    },
+    {
+      "id": "P2",
+      "check": "cold re-read returns same code (no silent regenerate)",
+      "result": "PASS",
+      "detail": "status=200 same=True"
+    },
+    {
+      "id": "P3",
+      "check": "delivery GET omits plaintext pickup code",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "id": "P4",
+      "check": "wrong code distinct error",
+      "result": "PASS",
+      "detail": "status=409 code=PICKUP_HANDOFF_CODE_INVALID"
+    },
+    {
+      "id": "P5",
+      "check": "wrong driver rejected",
+      "result": "PASS",
+      "detail": "status=409 code=DRIVER_DELIVERY_INVALID_STATE"
+    },
+    {
+      "id": "P6",
+      "check": "foreign merchant handoff 404",
+      "result": "PASS",
+      "detail": "status=404 code=MERCHANT_NOT_FOUND"
+    },
+    {
+      "id": "P7",
+      "check": "regenerate issues new code",
+      "result": "PASS",
+      "detail": "status=200 changed=True"
+    },
+    {
+      "id": "P8",
+      "check": "old code rejected after regenerate",
+      "result": "PASS",
+      "detail": "status=409 code=PICKUP_HANDOFF_CODE_INVALID"
+    },
+    {
+      "id": "P9",
+      "check": "authorized confirm-pickup consumes handoff (API fixture)",
+      "result": "PASS",
+      "detail": "status=200 delivery=PICKED_UP (API fixture \u2260 Driver UI evidence)"
+    },
+    {
+      "id": "P10",
+      "check": "retry after success idempotent / already confirmed",
+      "result": "PASS",
+      "detail": "status=200 already=None delivery=PICKED_UP"
+    },
+    {
+      "id": "P11",
+      "check": "reassignment invalidates old proof for old driver",
+      "result": "PASS",
+      "detail": "status=409 code=DRIVER_DELIVERY_ASSIGNMENT_NOT_ACTIVE"
+    },
+    {
+      "id": "P12",
+      "check": "legacy confirm-pickup without handoff (no code)",
+      "result": "PASS",
+      "detail": "status=200 delivery=PICKED_UP"
+    },
+    {
+      "id": "P13",
+      "check": "concurrent verify \u2192 exactly one consumption",
+      "result": "PASS",
+      "detail": "successes=1 outcomes=409:PICKUP_HANDOFF_ASSIGNMENT_CONFLICT,200:PICKED_UP"
+    },
+    {
+      "id": "P14",
+      "check": "handoff refused outside AT_PICKUP",
+      "result": "PASS",
+      "detail": "status=409 code=PICKUP_HANDOFF_INVALID_STATE"
+    },
+    {
+      "id": "P15",
+      "check": "stale assignmentVersion conflict",
+      "result": "PASS",
+      "detail": "status=409 code=PICKUP_HANDOFF_ASSIGNMENT_CONFLICT"
+    },
+    {
+      "id": "P16",
+      "check": "expired code distinct error",
+      "result": "PASS",
+      "detail": "status=409 code=PICKUP_HANDOFF_EXPIRED"
+    },
+    {
+      "id": "P17",
+      "check": "attempt limit locks handoff",
+      "result": "PASS",
+      "detail": "locked=True last_status=429 last_code=PICKUP_HANDOFF_LOCKED"
+    },
+    {
+      "id": "P18",
+      "check": "generate code has no financial side effect",
+      "result": "PASS",
+      "detail": "earnings=0 payment=PENDING"
+    }
+  ]
+}

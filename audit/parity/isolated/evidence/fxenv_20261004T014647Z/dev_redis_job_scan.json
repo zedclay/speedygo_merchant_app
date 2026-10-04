@@ -1,0 +1,15 @@
+{
+  "isolatedRowIds": 56,
+  "indexes": {
+    "0": {
+      "keys": 25,
+      "hashesScanned": 13,
+      "keysReferencingIsolatedRows": []
+    },
+    "15": {
+      "keys": 10,
+      "hashesScanned": 4,
+      "keysReferencingIsolatedRows": []
+    }
+  }
+}

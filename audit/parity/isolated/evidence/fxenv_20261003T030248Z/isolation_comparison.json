@@ -1,0 +1,96 @@
+[
+  {
+    "check": "speedygo_dev row counts unchanged",
+    "result": "PASS",
+    "detail": "all equal"
+  },
+  {
+    "check": "seven tracked orders unchanged",
+    "result": "PASS",
+    "detail": "7 rows compared"
+  },
+  {
+    "check": "late order unchanged",
+    "result": "PASS",
+    "detail": {
+      "status": "CONFIRMED",
+      "fulfillment": "ACCEPTED",
+      "estimateVersion": 1,
+      "estimatedReadyAt": "2026-09-28T17:45:48.358+01:00"
+    }
+  },
+  {
+    "check": "shared branch names unchanged",
+    "result": "PASS",
+    "detail": {
+      "0d00c071-d000-7000-8000-000000011010": "Atelier Sucr\u00e9",
+      "0d00c071-d000-7000-8000-000000011001": "Dar El Bahja"
+    }
+  },
+  {
+    "check": "Dar El Bahja order states unchanged",
+    "result": "PASS",
+    "detail": {
+      "CANCELLED/PENDING_ACCEPTANCE": 47,
+      "ACTIVE/READY": 1,
+      "CONFIRMED/ACCEPTED": 28
+    }
+  },
+  {
+    "check": "no dev/e2e Redis job references an isolated row",
+    "result": "PASS",
+    "detail": "38 isolated IDs; hashes scanned 0:13 15:4; hits {'0': [], '15': []}"
+  },
+  {
+    "check": "dev BullMQ job counters (informational)",
+    "result": "INFO",
+    "detail": "before {'bull:matching:notifications:id': '1701', 'bull:matching:matching:id': '7999'} after {'bull:matching:notifications:id': '1701', 'bull:matching:matching:id': '7999'}; the shared dev API advances these on its own (recovery loops)"
+  },
+  {
+    "check": "no fixture identities in speedygo_dev",
+    "result": "PASS",
+    "detail": {
+      "accounts": 0,
+      "merchants": 0,
+      "orders": 0,
+      "products": 0
+    }
+  },
+  {
+    "check": "no speedygo_dev rows created or updated since start",
+    "result": "PASS",
+    "detail": {
+      "accounts": 0,
+      "sessions": 0,
+      "devices": 0,
+      "orders": 0,
+      "orderStatusEvents": 0,
+      "notifications": 0,
+      "ordersUpdated": 0,
+      "branchesUpdated": 0
+    }
+  },
+  {
+    "check": "no isolated keys on Redis 0 or 15",
+    "result": "PASS",
+    "detail": {
+      "0": 0,
+      "15": 0,
+      "9": 0
+    }
+  },
+  {
+    "check": "Redis index 9 empty",
+    "result": "PASS",
+    "detail": {
+      "0": 25,
+      "9": 0,
+      "15": 10
+    }
+  },
+  {
+    "check": "speedygo_parity_fx dropped",
+    "result": "PASS",
+    "detail": "absent"
+  }
+]

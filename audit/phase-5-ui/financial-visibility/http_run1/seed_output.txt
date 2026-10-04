@@ -1,0 +1,25 @@
+BEGIN
+SELECT 1
+DO
+INSERT 0 2
+CREATE TABLE
+INSERT 0 2
+INSERT 0 2
+INSERT 0 3
+INSERT 0 2
+INSERT 0 2
+INSERT 0 2
+ public_reference |  status   | fulfillment_status |  gms   | discount | commission |  net   
+------------------+-----------+--------------------+--------+----------+------------+--------
+ sgo_finvis_1     | CREATED   | PENDING_ACCEPTANCE | 255000 |     5000 |      17500 | 232500
+ sgo_finvis_2     | COMPLETED | READY              | 120000 |        0 |       8400 | 111600
+(2 rows)
+
+     phone     |  role   
+---------------+---------
+ +213550000082 | MANAGER
+ +213550000071 | OWNER
+ +213550000081 | STAFF
+(3 rows)
+
+COMMIT

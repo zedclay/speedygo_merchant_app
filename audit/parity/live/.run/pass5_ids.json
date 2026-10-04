@@ -1,0 +1,35 @@
+{
+ "merchantSessions": [
+  "01a0fd27-7b8b-7d4b-b1ba-93dd59c29651",
+  "01a0fd2b-96f2-759b-96b1-d342ee191b89",
+  "01a0fd31-5b86-768a-9e90-7bdfea134ea4",
+  "01a0fd33-7d79-7a74-9caf-ef16e57b6470",
+  "01a0fd39-3901-7df1-a4af-d78789d2d5dc",
+  "01a0fd60-8e1c-7bd9-92b7-8192d96f8ca9",
+  "01a0fd64-7b38-7f4f-a20b-d238b9d8d5ff"
+ ],
+ "devices": [
+  "01a0fd27-7b8c-728a-81c6-abef44d291f4",
+  "01a0fd2b-96f4-709f-86e4-834f90c4ebf4",
+  "01a0fd31-5b87-7893-906d-93ddd4e38f0a",
+  "01a0fd33-7d7a-76b6-8fb9-a0554a4b76f5",
+  "01a0fd39-3902-76a2-9fa4-c212e4e46d5b",
+  "01a0fd60-8e1e-7aa2-883b-64a76fe8408c",
+  "01a0fd64-7b39-702f-a061-ca3b56ba83e2"
+ ],
+ "orders": [
+  "01a0fd2a-2e34-7919-ab9a-043225c2fbf1",
+  "01a0fd2a-2f23-7094-abf0-26b4b3c0e977",
+  "01a0fd32-688b-7757-9124-3aa8574d93ea",
+  "01a0fd37-f350-7c88-ac7e-7c4c5c8c3d30",
+  "01a0fd37-f447-7440-a6db-bf459aca7c8e",
+  "01a0fd63-3d79-7d51-a414-6bf504b8fc81",
+  "01a0fd63-3e5c-7d0a-8801-d5bb1e793486"
+ ],
+ "customerSessions": [
+  "01a0fd2a-2ce3-7321-a99f-6416f5ff4169",
+  "01a0fd32-67d4-726b-a6a3-4bfa22b2d6fd",
+  "01a0fd37-f28b-794c-a643-afd532e78095",
+  "01a0fd63-3cb5-7664-b1ae-99348228be5e"
+ ]
+}

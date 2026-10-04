@@ -1,0 +1,32 @@
+{
+  "app": "merchant",
+  "backend": "local dev",
+  "prefix": "fx_t100",
+  "session": "dedicated OTP session, app stores in memory (Keychain untouched)",
+  "acceptOrderId": "01a0fd2a-2e34-7919-ab9a-043225c2fbf1",
+  "rejectOrderId": "01a0fd2a-2f23-7094-abf0-26b4b3c0e977",
+  "renameBranchId": "0d00c071-d000-7000-8000-000000011010",
+  "results": {
+    "alertsDismissed": 2,
+    "acceptHeaderStacked": true,
+    "acceptSnack": "Commande acceptée."
+  },
+  "steps": [
+    {
+      "tag": "fx_t100_fx_alert",
+      "at": "2026-10-02T15:18:00.705492Z"
+    },
+    {
+      "tag": "fx_t100_fx_incoming",
+      "at": "2026-10-02T15:18:09.752599Z"
+    },
+    {
+      "tag": "fx_t100_fx_accept_sheet",
+      "at": "2026-10-02T15:18:14.321866Z"
+    },
+    {
+      "tag": "fx_t100_fx_after_accept",
+      "at": "2026-10-02T15:18:19.693680Z"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "layer": "live_authenticated_ui",
+  "fixture": "Dar El Bahja synthetic owner (+213550000071), isolated STAFF (+213550000081), sgo_finvis_* orders in speedygo_dev",
+  "orderId": "cbf6d6fb-5877-41f7-8e5c-13910ec8465c",
+  "device": "iPhone 16e (8DB9007A), iOS simulator, text scale 1.0",
+  "backend": "local dev backend http://127.0.0.1:3000",
+  "result": "FAIL",
+  "error": "Timed out waiting for Found 0 widgets with key [<'merchant-otp-field'>]: []",
+  "staffFramesCheckedForOwnerFinance": 283,
+  "observed": {
+    "staffSales": {
+      "financeGranted": false,
+      "finance": null,
+      "gross": "120000"
+    }
+  },
+  "steps": [
+    {
+      "id": "owner_login",
+      "status": "PASS",
+      "detail": "existing Dar El Bahja owner session",
+      "at": "2026-09-30T02:35:54.131284Z"
+    },
+    {
+      "id": "owner_incoming_alert",
+      "status": "PASS",
+      "detail": "view and refuse offered",
+      "at": "2026-09-30T02:35:54.366029Z"
+    },
+    {
+      "id": "owner_order_detail",
+      "status": "PASS",
+      "detail": {
+        "net": "2 325,00 DZD",
+        "commission": "175,00 DZD",
+        "discount": "50,00 DZD"
+      },
+      "at": "2026-09-30T02:36:05.599301Z"
+    },
+    {
+      "id": "owner_reports",
+      "status": "PASS",
+      "detail": {
+        "net": "1 116,00 DZD"
+      },
+      "at": "2026-09-30T02:36:12.128385Z"
+    },
+    {
+      "id": "owner_logout",
+      "status": "PASS",
+      "detail": null,
+      "at": "2026-09-30T02:36:21.533831Z"
+    },
+    {
+      "id": "staff_login",
+      "status": "PASS",
+      "detail": "OTP login (dev OTP file)",
+      "at": "2026-09-30T02:36:29.813457Z"
+    },
+    {
+      "id": "staff_incoming_alert",
+      "status": "PASS",
+      "detail": "view offered, refuse absent",
+      "at": "2026-09-30T02:36:30.048260Z"
+    },
+    {
+      "id": "staff_alert_view_details",
+      "status": "PASS",
+      "detail": null,
+      "at": "2026-09-30T02:36:35.381451Z"
+    },
+    {
+      "id": "staff_order_detail",
+      "status": "PASS",
+      "detail": {
+        "gross": "2 550,00 DZD"
+      },
+      "at": "2026-09-30T02:36:40.299946Z"
+    },
+    {
+      "id": "staff_reports",
+      "status": "PASS",
+      "detail": {
+        "financeGranted": false,
+        "finance": null,
+        "gross": "120000"
+      },
+      "at": "2026-09-30T02:36:46.775692Z"
+    }
+  ]
+}

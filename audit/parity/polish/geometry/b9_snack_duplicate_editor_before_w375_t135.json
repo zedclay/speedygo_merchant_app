@@ -1,0 +1,31 @@
+{
+  "phase": "before",
+  "variant": "w375_t135",
+  "textScale": 1.35,
+  "surface": {
+    "width": 375.0,
+    "height": 812.0
+  },
+  "safeBottom": 34.0,
+  "snackBar": {
+    "left": 0.0,
+    "top": 696.0,
+    "right": 375.0,
+    "bottom": 812.0
+  },
+  "stickyBar": {
+    "left": 16.0,
+    "top": 646.0,
+    "right": 359.0,
+    "bottom": 812.0
+  },
+  "primaryAction": {
+    "left": 32.0,
+    "top": 658.0,
+    "right": 343.0,
+    "bottom": 710.0
+  },
+  "snackOverlapsStickyBar": true,
+  "snackOverlapsPrimaryAction": true,
+  "gapAboveStickyBar": -166.0
+}

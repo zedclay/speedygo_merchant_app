@@ -1,0 +1,57 @@
+{
+  "status": 200,
+  "body": {
+    "scope": {
+      "merchantId": "0d00c071-d000-7000-8000-000000010001",
+      "branchId": "0d00c071-d000-7000-8000-000000011001"
+    },
+    "period": {
+      "period": "TODAY",
+      "timezone": "Africa/Algiers",
+      "from": "2026-09-29T23:00:00.000Z",
+      "to": "2026-09-30T23:00:00.000Z",
+      "interval": "[from, to)",
+      "localFrom": "2026-09-30",
+      "localToInclusive": "2026-09-30"
+    },
+    "asOf": "2026-09-30T01:47:24.977Z",
+    "currency": "DZD",
+    "dataStatus": "COMPLETE",
+    "completedOrderCount": 1,
+    "grossMerchandiseMinor": "120000",
+    "averageBasketMinor": "120000",
+    "cancelledOrderCount": 0,
+    "financeAccess": "GRANTED",
+    "finance": {
+      "merchantDiscountMinor": "0",
+      "commissionMinor": "8400",
+      "merchantNetMinor": "111600",
+      "uniformCommissionRateBps": 700,
+      "refundsCompletedCount": 0,
+      "recordedRefundAdjustmentsMinor": "0"
+    },
+    "trend": {
+      "granularity": "HOUR",
+      "buckets": [
+        {
+          "start": "2026-09-29T23:00:00.000Z",
+          "localStart": "2026-09-30T00:00",
+          "completedOrderCount": 0,
+          "grossMerchandiseMinor": "0"
+        },
+        {
+          "start": "2026-09-30T00:00:00.000Z",
+          "localStart": "2026-09-30T01:00",
+          "completedOrderCount": 0,
+          "grossMerchandiseMinor": "0"
+        },
+        {
+          "start": "2026-09-30T01:00:00.000Z",
+          "localStart": "2026-09-30T02:00",
+          "completedOrderCount": 1,
+          "grossMerchandiseMinor": "120000"
+        }
+      ]
+    }
+  }
+}

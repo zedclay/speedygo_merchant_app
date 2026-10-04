@@ -1,0 +1,28 @@
+{
+  "fixture": "Dar El Bahja",
+  "phone": "+213550000071",
+  "mode": "cold",
+  "acceptOrderId": "01a0d67b-35f8-7d98-af28-893268ec10fd",
+  "coldOrderId": "01a0d67b-35f8-7d98-af28-893268ec10fd",
+  "harnessResult": "PASS",
+  "steps": [
+    {
+      "id": "home_loaded",
+      "status": "PASS",
+      "detail": null,
+      "layer": "automated_integration",
+      "mode": "cold",
+      "fixture": "Dar El Bahja",
+      "at": "2026-09-25T02:57:30.572502Z"
+    },
+    {
+      "id": "cold_reopen_via_accepted_card",
+      "status": "PASS",
+      "detail": null,
+      "layer": "automated_integration",
+      "mode": "cold",
+      "fixture": "Dar El Bahja",
+      "at": "2026-09-25T02:57:45.954996Z"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+BUNDLE_MISMATCH
+PHASE register exit=0
+{"phone" : "+213550000097", "accountId" : "01a0f76f-bdf6-73e5-92f7-31d59970cb48", "merchantId" : "01a0f76f-da4c-74d6-b799-45a0b53e037c", "merchantStatus" : "PENDING_REVIEW", "branchIds" : ["01a0f770-6bc1-7186-8712-aa0cb253ae4c"]}
+merchant_status_before_approve=PENDING_REVIEW
+admin_approve_http=201
+admin_logout_http=200
+BUNDLE_OK
+SHOT live2_t100_b7_pending
+SHOT live2_t100_b7_approved
+SHOT live2_t100_b7_approved_next
+PHASE approval exit=0
+merchant_status_after=ACTIVE
+PARITY_B7_APPROVAL_LIVE prefix=live2_t100 start=pending done
+{"label": "b7appr_t100_admin", "accountId": "0d00c074-d000-7000-8000-000000000001", "start": "2026-10-01T12:26:06Z", "exit": 0,
+ "sessions": [{"id" : "01a0f771-9570-7770-aa17-f6af88464a51", "revoked" : true}], "fallbackRevoked": 0, "devices": ["01a0f771-9570-7f68-a50d-22746d748224"], "deviceTokens": []}
+RC=0

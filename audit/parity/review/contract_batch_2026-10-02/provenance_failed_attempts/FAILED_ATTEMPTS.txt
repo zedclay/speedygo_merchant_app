@@ -1,0 +1,21 @@
+Failed and superseded attempts of the contract-completion batch.
+Provenance only: NOT successful evidence. No screenshot from these folders
+is included in this package. Causes are in CONTRACT_COMPLETION_BATCH_REPORT.md
+section 3. Paths are relative to apps/merchant_app/audit/parity/isolated/evidence/.
+
+fxenv_20261002T192656Z/  files=14  screenshots_excluded=0  cleanup=FX_CLEANUP_OK
+fxenv_20261002T192823Z/  files=15  screenshots_excluded=0  cleanup=FX_CLEANUP_OK
+fxenv_20261002T195904Z/  files=36  screenshots_excluded=18  cleanup=FX_CLEANUP_OK
+fxenv_20261002T200449Z/  files=35  screenshots_excluded=17  cleanup=FX_CLEANUP_OK
+fxenv_20261002T200923Z/  files=45  screenshots_excluded=27  cleanup=FX_CLEANUP_OK
+fxenv_20261002T201535Z/  files=26  screenshots_excluded=8  cleanup=FX_CLEANUP_OK
+fxenv_20261002T201945Z/  files=31  screenshots_excluded=13  cleanup=FX_CLEANUP_OK
+fxenv_20261002T202439Z/  files=31  screenshots_excluded=13  cleanup=FX_CLEANUP_OK
+fxenv_20261002T203005Z/  files=32  screenshots_excluded=14  cleanup=FX_CLEANUP_OK
+fxenv_20261002T203415Z/  files=45  screenshots_excluded=27  cleanup=FX_CLEANUP_OK
+fxenv_20261002T204011Z/  files=27  screenshots_excluded=9  cleanup=FX_CLEANUP_OK
+fxenv_20261002T204412Z/  files=32  screenshots_excluded=14  cleanup=FX_CLEANUP_OK
+fxenv_20261002T205950Z/  files=45  screenshots_excluded=27  cleanup=FX_CLEANUP_OK
+fxenv_20261002T210605Z/  files=32  screenshots_excluded=14  cleanup=FX_CLEANUP_OK
+
+fxenv_unknown_20261002T204328Z/  empty (cleanup.log bytes=0); NOT evidence, not packaged.

@@ -1,0 +1,95 @@
+{
+  "fixture": "Dar El Bahja",
+  "phone": "+213550000071",
+  "merchantId": "0d00c071-d000-7000-8000-000000010001",
+  "branchId": "0d00c071-d000-7000-8000-000000011001",
+  "customerPhone": "+213550000099",
+  "generatedAt": "2026-09-24T18:46:36.772352+00:00",
+  "steps": [
+    {
+      "id": "merchant_login",
+      "status": "PASS"
+    },
+    {
+      "id": "resolve_branch",
+      "status": "PASS",
+      "merchantId": "0d00c071-d000-7000-8000-000000010001",
+      "branchId": "0d00c071-d000-7000-8000-000000011001",
+      "branchName": "Dar El Bahja"
+    },
+    {
+      "id": "pick_product",
+      "status": "PASS",
+      "productId": "0d00c071-d000-7000-8000-000000030103"
+    },
+    {
+      "id": "customer_login",
+      "status": "PASS"
+    },
+    {
+      "id": "create_orders",
+      "status": "PASS",
+      "orderIds": [
+        "01a0d4bd-a984-78bc-b952-49251428b915",
+        "01a0d4bd-abe5-76ae-8d8a-14287b6c9dab",
+        "01a0d4bd-ad3e-785a-a4a1-ab6906b525d7",
+        "01a0d4bd-adb5-73b8-b3da-a20ad25da6d8"
+      ]
+    },
+    {
+      "id": "reject_invalid_minutes",
+      "status": "PASS",
+      "http": 400,
+      "code": "VALIDATION_ERROR"
+    },
+    {
+      "id": "accept_with_estimate",
+      "status": "PASS",
+      "orderId": "01a0d4bd-a984-78bc-b952-49251428b915",
+      "estimatedReadyAt": "2026-09-24 20:11:35.763+01",
+      "confirmedAt": "2026-09-24 19:46:35.763+01"
+    },
+    {
+      "id": "reget_estimate_persisted",
+      "status": "PASS"
+    },
+    {
+      "id": "update_estimate",
+      "status": "PASS",
+      "estimatedReadyAt": "2026-09-24 20:21:35.763+01",
+      "version": 2
+    },
+    {
+      "id": "stale_version_conflict",
+      "status": "PASS",
+      "http": 409
+    },
+    {
+      "id": "unauthorized_update",
+      "status": "PASS",
+      "http": 404,
+      "code": "MERCHANT_NOT_FOUND"
+    },
+    {
+      "id": "ready_rejects_update",
+      "status": "PASS"
+    },
+    {
+      "id": "cancelled_rejects_update",
+      "status": "PASS",
+      "http": 409
+    },
+    {
+      "id": "late_does_not_mutate_fulfillment",
+      "status": "PASS",
+      "fulfillmentStatus": "ACCEPTED",
+      "isPreparationLate": true
+    },
+    {
+      "id": "revisions_recorded",
+      "status": "PASS",
+      "count": 2
+    }
+  ],
+  "notificationsClaimed": false
+}

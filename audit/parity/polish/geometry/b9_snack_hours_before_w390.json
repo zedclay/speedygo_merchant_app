@@ -1,0 +1,31 @@
+{
+  "phase": "before",
+  "variant": "w390",
+  "textScale": 1.0,
+  "surface": {
+    "width": 390.0,
+    "height": 844.0
+  },
+  "safeBottom": 34.0,
+  "snackBar": {
+    "left": 0.0,
+    "top": 762.0,
+    "right": 390.0,
+    "bottom": 844.0
+  },
+  "stickyBar": {
+    "left": 0.0,
+    "top": 734.0,
+    "right": 390.0,
+    "bottom": 844.0
+  },
+  "primaryAction": {
+    "left": 143.33333333333331,
+    "top": 746.0,
+    "right": 374.0,
+    "bottom": 798.0
+  },
+  "snackOverlapsStickyBar": true,
+  "snackOverlapsPrimaryAction": true,
+  "gapAboveStickyBar": -110.0
+}

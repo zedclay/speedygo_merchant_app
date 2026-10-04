@@ -1,0 +1,63 @@
+{
+  "app": "merchant",
+  "bundleId": "com.speedygo.speedygoMerchantApp",
+  "merchant": "Dar El Bahja (synthetic, OWNER)",
+  "backend": "local dev",
+  "prefix": "live4_t135",
+  "session": "dedicated OTP session, app stores in memory (Keychain untouched)",
+  "sessionRevoked": true,
+  "steps": [
+    {
+      "tag": "live4_t135_b2_orders",
+      "at": "2026-10-02T16:09:27.271184Z"
+    },
+    {
+      "tag": "live4_t135_b2_order_detail",
+      "at": "2026-10-02T16:09:35.820694Z"
+    },
+    {
+      "tag": "live4_t135_b2_order_detail_end",
+      "at": "2026-10-02T16:09:41.671324Z"
+    },
+    {
+      "tag": "live4_t135_b2_update_sheet",
+      "at": "2026-10-02T16:09:47.087748Z"
+    },
+    {
+      "tag": "live4_t135_b2_update_sheet_reason",
+      "at": "2026-10-02T16:09:52.822645Z"
+    },
+    {
+      "tag": "live4_t135_b3_category",
+      "at": "2026-10-02T16:10:05.555537Z"
+    },
+    {
+      "tag": "live4_t135_b3_category_end",
+      "at": "2026-10-02T16:10:11.504246Z"
+    },
+    {
+      "tag": "live4_t135_b4_profile",
+      "at": "2026-10-02T16:10:42.740239Z"
+    },
+    {
+      "tag": "live4_t135_b4_general",
+      "at": "2026-10-02T16:10:51.440686Z"
+    },
+    {
+      "tag": "live4_t135_b5_overview",
+      "at": "2026-10-02T16:11:18.674299Z"
+    },
+    {
+      "tag": "live4_t135_b5_top_products",
+      "at": "2026-10-02T16:11:27.157384Z"
+    },
+    {
+      "tag": "live4_t135_b6_notification_settings",
+      "at": "2026-10-02T16:11:43.490944Z"
+    },
+    {
+      "tag": "live4_t135_b6_support",
+      "at": "2026-10-02T16:11:51.974296Z"
+    }
+  ]
+}

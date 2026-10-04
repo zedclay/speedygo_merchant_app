@@ -1,0 +1,55 @@
+{
+  "runAt": "2026-09-18T14:51:03Z",
+  "verdict": "PASS_REGISTRATION_LIFECYCLE",
+  "phase2": "NOT_RUN_PAUSED",
+  "environment": {
+    "db": "speedygo_dev",
+    "api": "http://127.0.0.1:3000/api/v1",
+    "simulatorUdid": "E342AC62-65EB-4786-87D1-292AF132E1CF"
+  },
+  "seed": {
+    "path": "apps/backend/scripts/dev-merchant-lifecycle-acceptance/seed-admin.sql",
+    "startupAttached": false,
+    "adminPhone": "+213550000099",
+    "permissions": ["merchants.read", "merchants.verify"],
+    "applied": true
+  },
+  "primaryFixture": {
+    "merchantId": "01a0b4e7-83a0-7742-8ac0-03fcb5e9b056",
+    "phoneE164": "+213559907701",
+    "finalStatus": "ACTIVE",
+    "verified": true,
+    "recreated": false
+  },
+  "finjan": {
+    "merchantId": "01a0ad2a-29eb-7959-b23c-d21f1e1c0915",
+    "status": "PENDING_REVIEW",
+    "isolation": "PASS"
+  },
+  "steps": [
+    {"id": "segment_a_draft_to_pending", "status": "PASS", "layer": "live_merchant_ui"},
+    {"id": "seed_merchants_verify", "status": "PASS", "layer": "dev_sql_seed"},
+    {"id": "admin_reject", "status": "PASS", "layer": "admin_api", "http": 201},
+    {"id": "rejection_reason_persisted", "status": "LIMITATION", "detail": "v1.0 contract: no reason field; generic UI guidance only"},
+    {"id": "rejected_ui_generic_guidance", "status": "PASS", "layer": "live_merchant_ui"},
+    {"id": "correction_documents", "status": "PASS", "layer": "live_merchant_ui"},
+    {"id": "resubmit_pending", "status": "PASS", "layer": "live_merchant_ui"},
+    {"id": "admin_approve", "status": "PASS", "layer": "admin_api", "http": 201},
+    {"id": "post_approve_home", "status": "PASS", "layer": "live_merchant_ui", "detail": "ACTIVE+branch → Home; not Phase 2 order readiness"},
+    {"id": "cold_relaunch_home", "status": "PASS", "layer": "live_merchant_ui"},
+    {"id": "phase2_order_ops", "status": "NOT RUN"}
+  ],
+  "flutterTests": {
+    "registration_lifecycle_acceptance": "PASS (prior segment A)",
+    "registration_correction_acceptance": "PASS exit 0"
+  },
+  "screenshots": [
+    "screenshots/live-review.png",
+    "screenshots/live-pending.png",
+    "screenshots/live-rejected.png",
+    "screenshots/live-resubmit-review.png",
+    "screenshots/live-resubmit-pending.png",
+    "screenshots/live-approved-home.png",
+    "screenshots/live-cold-relaunch-home.png"
+  ]
+}

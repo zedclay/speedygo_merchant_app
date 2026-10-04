@@ -1,0 +1,26 @@
+{
+  "label": "fx_t135",
+  "branchId": "0d00c071-d000-7000-8000-000000011001",
+  "productId": "0d00c071-d000-7000-8000-000000030121",
+  "customerAccountId": "0d00c074-d000-7000-8000-000000000001",
+  "orders": [
+    {
+      "id": "01a0fd63-3d79-7d51-a414-6bf504b8fc81",
+      "publicReference": "sgo_01a0fd633d7979e79eb3080f5e4c1ffb"
+    },
+    {
+      "id": "01a0fd63-3e5c-7d0a-8801-d5bb1e793486",
+      "publicReference": "sgo_01a0fd633e5c79b980a5e352166c889d"
+    }
+  ],
+  "errors": [],
+  "addressId": "01a0d4b7-b8b5-7b28-84b3-6fd15a810154",
+  "customerLogoutHttp": 200,
+  "customerSessions": [
+    {
+      "id": "01a0fd63-3cb5-7664-b1ae-99348228be5e",
+      "revoked": true
+    }
+  ],
+  "customerFallbackRevoked": 0
+}

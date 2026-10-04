@@ -1,0 +1,45 @@
+{
+  "phoneLocal": "559907701",
+  "steps": [
+    {
+      "id": "rejected_ui_generic_guidance",
+      "status": "PASS",
+      "detail": "Generic correction body; no persisted rejection reason (contract)",
+      "layer": "live_merchant_ui",
+      "at": "2026-09-18T14:49:47.881927Z"
+    },
+    {
+      "id": "correction_documents",
+      "status": "PASS",
+      "detail": "Re-attached required evidence after REJECTED",
+      "layer": "live_merchant_ui",
+      "at": "2026-09-18T14:50:08.440215Z"
+    },
+    {
+      "id": "resubmit_pending",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "at": "2026-09-18T14:50:29.255797Z"
+    },
+    {
+      "id": "post_approve_home",
+      "status": "PASS",
+      "detail": "Refresh after Admin approve",
+      "layer": "live_merchant_ui",
+      "at": "2026-09-18T14:50:44.972869Z"
+    },
+    {
+      "id": "cold_relaunch_home",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "at": "2026-09-18T14:50:58.041765Z"
+    }
+  ],
+  "notes": [
+    "Admin reject/approve are API-only (host).",
+    "v1.0 has no persisted rejection reason — generic guidance only.",
+    "Approval ≠ catalog/order ops readiness (Phase 2 paused)."
+  ]
+}

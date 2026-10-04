@@ -1,0 +1,29 @@
+BUNDLE_OK
+SHOT live_t100_b1_home 277455
+SHOT live_t100_b1_home_end 277455
+SHOT live_t100_b2_orders 166185
+SHOT live_t100_b2_order_detail 288669
+SHOT live_t100_b2_order_detail_end 313605
+SHOT live_t100_b3_catalog 269979
+SHOT live_t100_b3_category 230435
+SHOT live_t100_b3_product 248195
+SHOT live_t100_b3_variants 241285
+SHOT live_t100_b3_extras 230152
+SHOT live_t100_b3_product_availability 223922
+SHOT live_t100_b3_reorder 185738
+SHOT live_t100_b3_bulk_availability 262620
+SHOT live_t100_b4_profile 338244
+SHOT live_t100_b4_hours 263529
+SHOT live_t100_b4_availability 246951
+SHOT live_t100_b4_temporary 264694
+SHOT live_t100_b4_cover 224277
+SHOT live_t100_b4_address 249991
+SHOT live_t100_b5_overview 275502
+SHOT live_t100_b5_top_products 170361
+SHOT live_t100_b6_settings 212530
+SHOT live_t100_b6_notifications 295720
+SHOT live_t100_b6_notification_settings 309704
+SHOT live_t100_b6_support 116144
+SHOT live_t100_b6_logout 262560
+PARITY_LIVE prefix=live_t100 exit=0
+exit 0

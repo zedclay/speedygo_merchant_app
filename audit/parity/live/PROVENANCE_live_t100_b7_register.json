@@ -1,0 +1,26 @@
+{
+  "app": "merchant",
+  "bundleId": "com.speedygo.speedygoMerchantApp",
+  "fixture": "Fixture Parité B7",
+  "phase": "register",
+  "backend": "local dev",
+  "sessionRevoked": true,
+  "steps": [
+    {
+      "tag": "live_t100_b7_registration",
+      "at": "2026-09-30T16:40:29.938747Z"
+    },
+    {
+      "tag": "live_t100_b7_documents",
+      "at": "2026-09-30T16:40:58.834505Z"
+    },
+    {
+      "tag": "live_t100_b7_review",
+      "at": "2026-09-30T16:41:34.684629Z"
+    },
+    {
+      "tag": "live_t100_b7_pending",
+      "at": "2026-09-30T16:41:40.317976Z"
+    }
+  ]
+}

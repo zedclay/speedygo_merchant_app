@@ -1,0 +1,26 @@
+{
+  "fixture": "Dar El Bahja",
+  "phone": "+213550000071",
+  "acceptOrderId": "01a0d4c6-66c4-762c-9f08-489406ba5712",
+  "updateOrderId": "01a0d4c6-66c4-762c-9f08-489406ba5712",
+  "serverAfterUi": {
+    "fulfillmentStatus": "ACCEPTED",
+    "preparationMinutes": 25,
+    "preparationEstimateVersion": 2,
+    "note": "Countdown after update showed ~34:32; original ready time preserved at 20:24"
+  },
+  "steps": [
+    { "id": "home_loaded", "status": "PASS", "layer": "live_merchant_ui" },
+    { "id": "open_accept_order", "status": "PASS", "layer": "live_merchant_ui" },
+    { "id": "accept_sheet", "status": "PASS", "layer": "live_merchant_ui", "shot": "prep-accept-sheet.png" },
+    { "id": "accept_with_estimate_ui", "status": "PASS", "layer": "live_merchant_ui", "shot": "prep-countdown.png" },
+    { "id": "reopen_countdown", "status": "PASS", "layer": "live_merchant_ui", "shot": "prep-reopen.png", "detail": "detail refresh preserves server estimatedReadyAt" },
+    { "id": "update_sheet", "status": "PASS", "layer": "live_merchant_ui", "shot": "prep-update-sheet.png" },
+    { "id": "update_estimate_ui", "status": "PASS", "layer": "live_merchant_ui", "shot": "prep-after-update.png" },
+    { "id": "small_screen", "status": "PARTIAL", "layer": "live_merchant_ui", "detail": "surface resize captured post-test finished screen; layout exercised in unit ChoiceChip/sheet tests" },
+    { "id": "enlarged_text", "status": "PASS", "layer": "unit", "detail": "IncomingActionRow stacks at textScale >= 1.25" },
+    { "id": "cold_relaunch", "status": "PASS", "layer": "http+ui_refresh", "detail": "GET after UI update version=2; detail refresh restored countdown without local timer state" },
+    { "id": "harness_dds", "status": "FAIL", "detail": "Flutter DDS failed to report green after successful device flow; evidence is screenshots + server state" }
+  ],
+  "notificationsClaimed": false
+}

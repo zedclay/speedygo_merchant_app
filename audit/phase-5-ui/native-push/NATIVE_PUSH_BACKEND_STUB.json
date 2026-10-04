@@ -1,0 +1,161 @@
+{
+  "phase": "stub",
+  "fixture": "Dar El Bahja (merchant 0d00c071-\u20260001, owner account only)",
+  "providerNote": "stub = local FCM HTTP v1 contract stub on 127.0.0.1; no device delivery",
+  "results": [
+    {
+      "check": "provider accepted \u2192 PROVIDER_ACCEPTED with provider message name (not SENT/DELIVERED)",
+      "result": "PASS",
+      "orderId": "01a0e8b2-40a4-77d4-b5ab-77a262ddc45d",
+      "pushLog": {
+        "notificationId": "01a0e8b2-4115-78a5-8890-b7ed4fffd333",
+        "accountId": "0d00c071-d000-7000-8000-000000000001",
+        "channel": "PUSH",
+        "status": "PROVIDER_ACCEPTED",
+        "providerReference": "fcm:projects/speedygo-stub/messages/stub-3",
+        "sentAt": "2026-09-28 16:46:31.37+01"
+      }
+    },
+    {
+      "check": "UNREGISTERED token deactivated; healthy token stays active",
+      "result": "PASS",
+      "unregToken": {
+        "accountId": "0d00c071-d000-7000-8000-000000000001",
+        "active": false
+      },
+      "okToken": {
+        "accountId": "0d00c071-d000-7000-8000-000000000001",
+        "active": true
+      }
+    },
+    {
+      "check": "payload: routing data, collapse key = orderId, Android channel, bearer auth",
+      "result": "PASS",
+      "sends": [
+        {
+          "kind": "send",
+          "path": "/v1/projects/speedygo-stub/messages:send",
+          "bearerOk": true,
+          "tokenTail": "k-9aa307ec",
+          "attempt": 1,
+          "data": {
+            "type": "MERCHANT_ORDER_CREATED",
+            "orderId": "01a0e8b2-40a4-77d4-b5ab-77a262ddc45d",
+            "merchantId": "0d00c071-d000-7000-8000-000000010001",
+            "branchId": "0d00c071-d000-7000-8000-000000011001",
+            "notificationId": "01a0e8b2-4115-78a5-8890-b7ed4fffd333"
+          },
+          "notification": {
+            "title": "Nouvelle commande",
+            "body": "Une nouvelle commande sgo_01a0e8b240a470efb641649112472efb n\u00e9cessite votre attention."
+          },
+          "androidCollapseKey": "01a0e8b2-40a4-77d4-b5ab-77a262ddc45d",
+          "androidChannel": "merchant_new_orders",
+          "apnsCollapseId": "01a0e8b2-40a4-77d4-b5ab-77a262ddc45d",
+          "returned": 200,
+          "at": "2026-09-28T16:46:31"
+        },
+        {
+          "kind": "send",
+          "path": "/v1/projects/speedygo-stub/messages:send",
+          "bearerOk": true,
+          "tokenTail": "g-9aa307ec",
+          "attempt": 1,
+          "data": {
+            "type": "MERCHANT_ORDER_CREATED",
+            "orderId": "01a0e8b2-40a4-77d4-b5ab-77a262ddc45d",
+            "merchantId": "0d00c071-d000-7000-8000-000000010001",
+            "branchId": "0d00c071-d000-7000-8000-000000011001",
+            "notificationId": "01a0e8b2-4115-78a5-8890-b7ed4fffd333"
+          },
+          "notification": {
+            "title": "Nouvelle commande",
+            "body": "Une nouvelle commande sgo_01a0e8b240a470efb641649112472efb n\u00e9cessite votre attention."
+          },
+          "androidCollapseKey": "01a0e8b2-40a4-77d4-b5ab-77a262ddc45d",
+          "androidChannel": "merchant_new_orders",
+          "apnsCollapseId": "01a0e8b2-40a4-77d4-b5ab-77a262ddc45d",
+          "returned": 404,
+          "at": "2026-09-28T16:46:31"
+        }
+      ]
+    },
+    {
+      "check": "transient provider errors retried with backoff then accepted",
+      "result": "PASS",
+      "orderId": "01a0e8b2-46a7-7e7f-b58b-8c9537efa6ea",
+      "attempts": [
+        [
+          1,
+          503
+        ],
+        [
+          2,
+          503
+        ],
+        [
+          3,
+          200
+        ]
+      ]
+    },
+    {
+      "check": "retries bounded (PUSH_SEND_MAX_ATTEMPTS=3) \u2192 FAILED retry_exhausted; order/inbox not rolled back; token kept",
+      "result": "PASS",
+      "orderId": "01a0e8b2-5e53-7504-a45e-fbcab301369a",
+      "attempts": 3,
+      "logs": [
+        {
+          "notificationId": "01a0e8b2-5e9b-7353-a6ad-3bcbc3a0d78b",
+          "accountId": "0d00c071-d000-7000-8000-000000000001",
+          "channel": "IN_APP",
+          "status": "SENT",
+          "providerReference": "in_app:MERCHANT_ORDER_CREATED:01a0e8b2-5e53-7504-a45e-fbcab301369a",
+          "sentAt": "2026-09-28 16:46:38.875+01"
+        },
+        {
+          "notificationId": "01a0e8b2-5e9b-7353-a6ad-3bcbc3a0d78b",
+          "accountId": "0d00c071-d000-7000-8000-000000000001",
+          "channel": "PUSH",
+          "status": "FAILED",
+          "providerReference": "push:retry_exhausted:UNAVAILABLE",
+          "sentAt": ""
+        }
+      ],
+      "order": {
+        "status": "CREATED",
+        "fulfillmentStatus": "PENDING_ACCEPTANCE"
+      },
+      "token": {
+        "accountId": "0d00c071-d000-7000-8000-000000000001",
+        "active": true
+      }
+    },
+    {
+      "check": "order cancelled before retry \u2192 SKIPPED_STALE_SOURCE (no push for a handled order)",
+      "result": "PASS",
+      "orderId": "01a0e8b2-7615-79ab-8938-0ae8defd3781",
+      "sends": [
+        [
+          1,
+          503
+        ]
+      ],
+      "order": {
+        "status": "CANCELLED",
+        "fulfillmentStatus": "PENDING_ACCEPTANCE"
+      }
+    },
+    {
+      "check": "recipient without active tokens \u2192 SKIPPED_NO_ACTIVE_TOKEN",
+      "result": "PASS",
+      "orderId": "01a0e8b2-80b4-7f7f-815b-767e489d9698"
+    },
+    {
+      "check": "recovery sweep re-enqueues stranded PENDING push log \u2192 PROVIDER_ACCEPTED",
+      "result": "PASS",
+      "orderId": "01a0e8b2-80b4-7f7f-815b-767e489d9698",
+      "status": "PROVIDER_ACCEPTED"
+    }
+  ]
+}

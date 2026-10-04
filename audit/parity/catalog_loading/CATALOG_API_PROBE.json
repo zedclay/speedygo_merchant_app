@@ -1,0 +1,106 @@
+{
+  "merchantName": "TEST FIXTURE — Lifecycle Acceptance Shop",
+  "merchantId": "01a0b4e7-83a0-7742-8ac0-03fcb5e9b056",
+  "branchName": "TEST FIXTURE Branch Alger (corrected)",
+  "branchId": "01a0b4ec-f8e2-751e-8129-f1d5322ea68d",
+  "otpRequest": {
+    "status": 200,
+    "ms": 45.2,
+    "errorCode": null
+  },
+  "otpCapturedFresh": true,
+  "otpWaitMs": 0.2,
+  "otpVerify": {
+    "status": 200,
+    "ms": 12.4,
+    "errorCode": null,
+    "hasAccessToken": true,
+    "accountMatchesOwner": null
+  },
+  "merchantMe": {
+    "status": 200,
+    "ms": 3.4,
+    "errorCode": null,
+    "membershipExists": false,
+    "membershipCount": 0,
+    "merchantIdsMatchFixture": false,
+    "merchantNames": [],
+    "sessionAccountMatchesOwner": null
+  },
+  "unauthenticatedCatalog": {
+    "status": 401,
+    "ms": 1.2,
+    "errorCode": "AUTH_INVALID_TOKEN"
+  },
+  "authenticated": {
+    "catalog": {
+      "path": "/merchant/01a0b4e7-83a0-7742-8ac0-03fcb5e9b056/catalog?branchId=01a0b4ec-f8e2-751e-8129-f1d5322ea68d",
+      "status": 404,
+      "ms": 3.2,
+      "errorCode": "MERCHANT_NOT_FOUND",
+      "outcome": "not_found",
+      "summary": {
+        "keys": [
+          "error"
+        ],
+        "branchId": null,
+        "categoryCount": 0,
+        "itemCount": 0,
+        "total": null,
+        "stats": {
+          "categoryCount": null,
+          "productCount": null,
+          "availableProductCount": null
+        },
+        "categoryNames": [],
+        "productNames": []
+      }
+    },
+    "categories": {
+      "path": "/merchant/01a0b4e7-83a0-7742-8ac0-03fcb5e9b056/categories?branchId=01a0b4ec-f8e2-751e-8129-f1d5322ea68d",
+      "status": 404,
+      "ms": 3.1,
+      "errorCode": "MERCHANT_NOT_FOUND",
+      "outcome": "not_found",
+      "summary": {
+        "keys": [
+          "error"
+        ],
+        "branchId": null,
+        "categoryCount": 0,
+        "itemCount": 0,
+        "total": null,
+        "stats": {
+          "categoryCount": null,
+          "productCount": null,
+          "availableProductCount": null
+        },
+        "categoryNames": [],
+        "productNames": []
+      }
+    },
+    "products": {
+      "path": "/merchant/01a0b4e7-83a0-7742-8ac0-03fcb5e9b056/products?branchId=01a0b4ec-f8e2-751e-8129-f1d5322ea68d&limit=100&offset=0",
+      "status": 404,
+      "ms": 2.1,
+      "errorCode": "MERCHANT_NOT_FOUND",
+      "outcome": "not_found",
+      "summary": {
+        "keys": [
+          "error"
+        ],
+        "branchId": null,
+        "categoryCount": 0,
+        "itemCount": 0,
+        "total": null,
+        "stats": {
+          "categoryCount": null,
+          "productCount": null,
+          "availableProductCount": null
+        },
+        "categoryNames": [],
+        "productNames": []
+      }
+    }
+  }
+}

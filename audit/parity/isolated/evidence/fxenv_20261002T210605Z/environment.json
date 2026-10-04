@@ -1,0 +1,40 @@
+{
+  "runId": "fxenv_20261002T210605Z",
+  "startedAt": "2026-10-02T21:06:05Z",
+  "database": "speedygo_parity_fx",
+  "databaseMarker": "speedygo-parity-fx disposable run=fxenv_20261002T210605Z",
+  "postgres": "127.0.0.1/localhost:5433 (native Homebrew)",
+  "redis": {
+    "index": 9,
+    "port": 6381,
+    "prefixes": [
+      "auth:parityfx:",
+      "matching:parityfx:",
+      "bull:matching:parityfx",
+      "tracking:parityfx:",
+      "socket.io:tracking:parityfx",
+      "storage:parityfx:"
+    ]
+  },
+  "api": {
+    "base": "http://127.0.0.1:3100/api/v1",
+    "pid": 32605,
+    "entry": "~/.speedygo/parity_fx/dist/src/main.js",
+    "envMode": "env -i + explicit variable list; every dev .env key overridden"
+  },
+  "providers": {
+    "push": "disabled",
+    "payment": "test",
+    "googleMaps": "empty key",
+    "otp": "console, capture in ~/.speedygo/parity_fx/otp",
+    "storage": "local, ~/.speedygo/parity_fx/storage",
+    "s3": "empty",
+    "chargily": "empty secret",
+    "fcm": "empty"
+  },
+  "connections": {
+    "postgresDatabasesOfApiSockets": "speedygo_parity_fx",
+    "apiPostgresClientPorts": "51032 51033 ",
+    "redis": "index 9 clients 0 -> 9; all clients before [0:1] after [0:1 9:9]; keys without isolated prefix on index 9: 0"
+  }
+}

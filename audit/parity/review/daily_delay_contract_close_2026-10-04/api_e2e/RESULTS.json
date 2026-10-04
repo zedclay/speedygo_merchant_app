@@ -1,0 +1,76 @@
+{
+  "results": [
+    {
+      "id": "D0",
+      "check": "reason_code column present",
+      "result": "PASS",
+      "detail": "count=1"
+    },
+    {
+      "id": "D1",
+      "check": "OWNER daily-summary TODAY",
+      "result": "PASS",
+      "detail": "status=200 created=6 completed=5 avgPrep=None"
+    },
+    {
+      "id": "D2",
+      "check": "future date refused",
+      "result": "PASS",
+      "detail": "status=400 code=REPORTS_INVALID_INPUT"
+    },
+    {
+      "id": "D3",
+      "check": "foreign merchant \u2192 404",
+      "result": "PASS",
+      "detail": "status=404 code=MERCHANT_NOT_FOUND"
+    },
+    {
+      "id": "D4",
+      "check": "STAFF sees ops metrics",
+      "result": "PASS",
+      "detail": "status=200 finance=ROLE_RESTRICTED"
+    },
+    {
+      "id": "D5",
+      "check": "reject with reasonCode",
+      "result": "PASS",
+      "detail": "status=200 code=PRODUCT_UNAVAILABLE"
+    },
+    {
+      "id": "D6",
+      "check": "daily-summary lists PRODUCT_UNAVAILABLE motif",
+      "result": "PASS",
+      "detail": "status=200 reasons=[{'reasonCode': 'PRODUCT_UNAVAILABLE', 'label': 'Indisponibilit\u00e9 produit', 'count': 2}]"
+    },
+    {
+      "id": "D7",
+      "check": "accept for late fixture",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "id": "D8",
+      "check": "late detail exposes delayMinutes + deliveryImpact",
+      "result": "PASS",
+      "detail": "status=200 late=True delay=12 impact=MAY_DELAY_DRIVER_ASSIGNMENT"
+    },
+    {
+      "id": "D9",
+      "check": "prep revision after late",
+      "result": "PASS",
+      "detail": "status=200 rev={'revisionNumber': 2, 'addMinutes': 10, 'reason': 'Forte affluence (essai isol\u00e9)', 'createdAt': '2026-10-04 02:47:26.934+01'}"
+    },
+    {
+      "id": "D10",
+      "check": "MANAGER daily-summary",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "id": "D11",
+      "check": "completed sales / basket not fabricated as zero when empty avg",
+      "result": "PASS",
+      "detail": "completed=5 basket=148000 gms=740000"
+    }
+  ]
+}

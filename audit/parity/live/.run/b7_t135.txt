@@ -1,0 +1,15 @@
+BUNDLE_OK
+SHOT live_t135_b7_registration
+SHOT live_t135_b7_documents
+SHOT live_t135_b7_review
+SHOT live_t135_b7_pending
+PHASE register exit=0
+{"phone" : "+213550000096", "accountId" : "01a0f33d-0da4-7069-934a-dfcc38c43152", "merchantId" : "01a0f33d-3bc5-7162-8fd4-9b3132a18684", "merchantStatus" : "PENDING_REVIEW", "branchIds" : ["01a0f33d-deec-72c9-9167-2eed28f45499"]}
+admin_reject_http=201
+admin_logout_http=200
+BUNDLE_OK
+SHOT live_t135_b7_rejected
+SHOT live_t135_b7_resubmission
+PHASE rejected exit=0
+PARITY_B7_LIVE prefix=live_t135 done
+exit 0

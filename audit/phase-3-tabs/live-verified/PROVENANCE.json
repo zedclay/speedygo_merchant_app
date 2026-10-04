@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "app": "merchant",
+  "bundleId": "com.speedygo.speedygoMerchantApp",
+  "displayName": "Speedygo Merchant App",
+  "package": "speedygo_merchant_app",
+  "simulatorUdid": "4A1C3481-8B8E-48BD-983D-03896884EF09",
+  "simulator": "iPhone 17 Pro",
+  "workingDirectory": "apps/merchant_app",
+  "entrypoint": "lib/main.dart",
+  "tabs": ["Accueil","Commandes","Catalogue","Rapports","Profil"],
+  "at": "2026-09-19T13:45:03.248981Z"
+}

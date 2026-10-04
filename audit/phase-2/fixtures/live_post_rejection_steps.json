@@ -1,0 +1,36 @@
+{
+  "label": "Post-rejection state verified through live UI.",
+  "note": "Does not recover the missed screenshot of the original rejection tap.",
+  "rejectOrderId": "01a0b51d-bf20-785a-abcb-a3b7cd7381b5",
+  "expectedReason": "TEST FIXTURE Phase2 refuse — rupture",
+  "steps": [
+    {
+      "id": "login_home",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui_post_rejection",
+      "at": "2026-09-18T18:07:28.802128Z"
+    },
+    {
+      "id": "filter_cancelled",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui_post_rejection",
+      "at": "2026-09-18T18:07:35.983406Z"
+    },
+    {
+      "id": "cancelled_detail",
+      "status": "PASS",
+      "detail": "TEST FIXTURE Phase2 refuse — rupture",
+      "layer": "live_merchant_ui_post_rejection",
+      "at": "2026-09-18T18:07:45.089103Z"
+    },
+    {
+      "id": "back_to_cancelled_list",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui_post_rejection",
+      "at": "2026-09-18T18:07:57.153022Z"
+    }
+  ]
+}

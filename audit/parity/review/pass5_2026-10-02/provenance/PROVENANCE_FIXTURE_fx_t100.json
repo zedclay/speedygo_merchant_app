@@ -1,0 +1,57 @@
+{
+  "app": "merchant",
+  "backend": "local dev",
+  "prefix": "fx_t100",
+  "session": "dedicated OTP session, app stores in memory (Keychain untouched)",
+  "acceptOrderId": "01a0fd37-f350-7c88-ac7e-7c4c5c8c3d30",
+  "rejectOrderId": "01a0fd37-f447-7440-a6db-bf459aca7c8e",
+  "renameBranchId": "0d00c071-d000-7000-8000-000000011010",
+  "results": {
+    "alertsDismissed": 2,
+    "acceptHeaderStacked": true,
+    "acceptSnack": "Commande acceptée.",
+    "rejectSemanticsLabel": "Refuser la commande",
+    "rejectOpenedBy": "semantics tap action",
+    "rejectSnack": "Commande refusée.",
+    "branchOriginal": "Atelier Sucré",
+    "branchRenamedTo": "Atelier Sucré TEST FIXTURE P5",
+    "screenClosedAfterSave": true,
+    "branchAfterFreshInstance": "Atelier Sucré TEST FIXTURE P5",
+    "branchRestoredTo": "Atelier Sucré",
+    "sessionRevokedByLogout": true
+  },
+  "steps": [
+    {
+      "tag": "fx_t100_fx_alert",
+      "at": "2026-10-02T15:26:28.692669Z"
+    },
+    {
+      "tag": "fx_t100_fx_incoming",
+      "at": "2026-10-02T15:26:37.742516Z"
+    },
+    {
+      "tag": "fx_t100_fx_accept_sheet",
+      "at": "2026-10-02T15:26:42.325699Z"
+    },
+    {
+      "tag": "fx_t100_fx_after_accept",
+      "at": "2026-10-02T15:26:47.650773Z"
+    },
+    {
+      "tag": "fx_t100_fx_reject_sheet",
+      "at": "2026-10-02T15:26:53.476737Z"
+    },
+    {
+      "tag": "fx_t100_fx_after_reject",
+      "at": "2026-10-02T15:26:58.300244Z"
+    },
+    {
+      "tag": "fx_t100_fx_branch_saved",
+      "at": "2026-10-02T15:27:15.073812Z"
+    },
+    {
+      "tag": "fx_t100_fx_branch_reopened",
+      "at": "2026-10-02T15:27:30.492268Z"
+    }
+  ]
+}

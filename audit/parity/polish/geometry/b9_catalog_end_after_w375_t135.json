@@ -1,0 +1,32 @@
+{
+  "phase": "after",
+  "variant": "w375_t135",
+  "textScale": 1.35,
+  "surface": {
+    "width": 375.0,
+    "height": 812.0
+  },
+  "safeBottom": 34.0,
+  "lastCard": {
+    "left": 16.0,
+    "top": 405.0,
+    "right": 359.0,
+    "bottom": 594.0
+  },
+  "fab": {
+    "left": 124.22184753417969,
+    "top": 618.0,
+    "right": 359.0,
+    "bottom": 674.0
+  },
+  "bottomNav": {
+    "left": 0.0,
+    "top": 690.0,
+    "right": 375.0,
+    "bottom": 812.0
+  },
+  "lastCardOverlapsFab": false,
+  "gapAboveFab": 24.0,
+  "gapAboveNav": 96.0,
+  "gapAboveSafeArea": 184.0
+}

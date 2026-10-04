@@ -1,0 +1,23 @@
+{
+  "app": "merchant",
+  "bundleId": "com.speedygo.speedygoMerchantApp",
+  "merchant": "Dar El Bahja (synthetic, OWNER)",
+  "backend": "local dev",
+  "prefix": "live5_t135",
+  "session": "dedicated OTP session, app stores in memory (Keychain untouched)",
+  "sessionRevoked": true,
+  "steps": [
+    {
+      "tag": "live5_t135_b2_order_detail",
+      "at": "2026-10-02T16:42:14.570582Z"
+    },
+    {
+      "tag": "live5_t135_b2_update_sheet",
+      "at": "2026-10-02T16:42:21.270676Z"
+    },
+    {
+      "tag": "live5_t135_b2_update_sheet_reason",
+      "at": "2026-10-02T16:42:26.986845Z"
+    }
+  ]
+}

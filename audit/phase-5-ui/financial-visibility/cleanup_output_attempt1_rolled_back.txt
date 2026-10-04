@@ -1,0 +1,13 @@
+BEGIN
+DO
+SELECT 2
+SELECT 2
+DELETE 2
+DELETE 2
+DELETE 2
+DELETE 3
+DELETE 0
+DELETE 2
+DELETE 2
+psql:../merchant_app/audit/phase-5-ui/financial-visibility/cleanup_financial_visibility_fixture.sql:28: ERROR:  update or delete on table "notifications" violates foreign key constraint "notification_delivery_logs_notification_id_fkey" on table "notification_delivery_logs"
+DETAIL:  Key (id)=(01a0effe-ee22-72c8-99a1-83d9d4431441) is still referenced from table "notification_delivery_logs".

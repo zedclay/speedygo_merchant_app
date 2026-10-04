@@ -1,0 +1,326 @@
+{
+  "layer": "live_authenticated_ui",
+  "fixture": "Dar El Bahja (+213550000071), controlled sgo_rptlive_* orders in speedygo_dev",
+  "device": "iPhone 16e simulator (isolated Dar El Bahja; 390x844; default text size)",
+  "backend": "local dev backend http://127.0.0.1:3000",
+  "result": "PASS",
+  "error": null,
+  "observed": {
+    "logicalSize": "390x844",
+    "textScale": 1.0,
+    "today": {
+      "period": "TODAY",
+      "from": "2026-09-29T23:00:00.000Z",
+      "to": "2026-09-30T23:00:00.000Z",
+      "completedOrderCount": 4,
+      "grossMerchandiseMinor": "570000",
+      "cancelledOrderCount": 0,
+      "financeGranted": true,
+      "commissionMinor": "39900",
+      "merchantNetMinor": "530100",
+      "uniformCommissionRateBps": 700,
+      "buckets": 3
+    },
+    "todayTop3": [
+      [
+        1,
+        "Couscous royal",
+        2,
+        3,
+        "360000"
+      ],
+      [
+        2,
+        "Thé à la menthe",
+        2,
+        3,
+        "45000"
+      ],
+      [
+        3,
+        "Poulet rôti",
+        1,
+        1,
+        "95000"
+      ]
+    ],
+    "overviewTitleFits": true,
+    "week": {
+      "period": "THIS_WEEK",
+      "from": "2026-09-27T23:00:00.000Z",
+      "to": "2026-10-04T23:00:00.000Z",
+      "completedOrderCount": 5,
+      "grossMerchandiseMinor": "655000",
+      "cancelledOrderCount": 22,
+      "financeGranted": true,
+      "commissionMinor": "48400",
+      "merchantNetMinor": "606600",
+      "uniformCommissionRateBps": null,
+      "buckets": 3
+    },
+    "weekByOrders": [
+      [
+        1,
+        "Couscous royal",
+        2,
+        3,
+        "360000"
+      ],
+      [
+        2,
+        "Thé à la menthe",
+        2,
+        3,
+        "45000"
+      ],
+      [
+        3,
+        "Poulet rôti",
+        1,
+        1,
+        "95000"
+      ],
+      [
+        4,
+        "Couscous légumes",
+        1,
+        1,
+        "85000"
+      ],
+      [
+        5,
+        "Chorba frik",
+        1,
+        1,
+        "45000"
+      ],
+      [
+        6,
+        "Jus d’orange pressé",
+        1,
+        1,
+        "25000"
+      ]
+    ],
+    "topTitleFits": true,
+    "weekByRevenue": [
+      [
+        1,
+        "Couscous royal",
+        2,
+        3,
+        "360000"
+      ],
+      [
+        2,
+        "Poulet rôti",
+        1,
+        1,
+        "95000"
+      ],
+      [
+        3,
+        "Couscous légumes",
+        1,
+        1,
+        "85000"
+      ],
+      [
+        4,
+        "Thé à la menthe",
+        2,
+        3,
+        "45000"
+      ],
+      [
+        5,
+        "Chorba frik",
+        1,
+        1,
+        "45000"
+      ],
+      [
+        6,
+        "Jus d’orange pressé",
+        1,
+        1,
+        "25000"
+      ]
+    ]
+  },
+  "steps": [
+    {
+      "id": "login",
+      "status": "PASS",
+      "detail": "existing Dar El Bahja session",
+      "at": "2026-09-30T01:13:51.286182Z"
+    },
+    {
+      "id": "environment",
+      "status": "INFO",
+      "detail": {
+        "size": "390x844",
+        "textScale": 1.0
+      },
+      "at": "2026-09-30T01:13:51.505789Z"
+    },
+    {
+      "id": "overview_today",
+      "status": "PASS",
+      "detail": {
+        "period": "TODAY",
+        "from": "2026-09-29T23:00:00.000Z",
+        "to": "2026-09-30T23:00:00.000Z",
+        "completedOrderCount": 4,
+        "grossMerchandiseMinor": "570000",
+        "cancelledOrderCount": 0,
+        "financeGranted": true,
+        "commissionMinor": "39900",
+        "merchantNetMinor": "530100",
+        "uniformCommissionRateBps": 700,
+        "buckets": 3
+      },
+      "at": "2026-09-30T01:13:52.248662Z"
+    },
+    {
+      "id": "overview_refresh",
+      "status": "PASS",
+      "detail": "refresh tapped; report reloaded",
+      "at": "2026-09-30T01:13:56.815844Z"
+    },
+    {
+      "id": "period_this_week",
+      "status": "PASS",
+      "detail": {
+        "period": "THIS_WEEK",
+        "from": "2026-09-27T23:00:00.000Z",
+        "to": "2026-10-04T23:00:00.000Z",
+        "completedOrderCount": 5,
+        "grossMerchandiseMinor": "655000",
+        "cancelledOrderCount": 22,
+        "financeGranted": true,
+        "commissionMinor": "48400",
+        "merchantNetMinor": "606600",
+        "uniformCommissionRateBps": null,
+        "buckets": 3
+      },
+      "at": "2026-09-30T01:14:06.803702Z"
+    },
+    {
+      "id": "top_products_open",
+      "status": "PASS",
+      "detail": [
+        [
+          1,
+          "Couscous royal",
+          2,
+          3,
+          "360000"
+        ],
+        [
+          2,
+          "Thé à la menthe",
+          2,
+          3,
+          "45000"
+        ],
+        [
+          3,
+          "Poulet rôti",
+          1,
+          1,
+          "95000"
+        ],
+        [
+          4,
+          "Couscous légumes",
+          1,
+          1,
+          "85000"
+        ],
+        [
+          5,
+          "Chorba frik",
+          1,
+          1,
+          "45000"
+        ],
+        [
+          6,
+          "Jus d’orange pressé",
+          1,
+          1,
+          "25000"
+        ]
+      ],
+      "at": "2026-09-30T01:14:12.208280Z"
+    },
+    {
+      "id": "sort_revenue",
+      "status": "PASS",
+      "detail": [
+        [
+          1,
+          "Couscous royal",
+          2,
+          3,
+          "360000"
+        ],
+        [
+          2,
+          "Poulet rôti",
+          1,
+          1,
+          "95000"
+        ],
+        [
+          3,
+          "Couscous légumes",
+          1,
+          1,
+          "85000"
+        ],
+        [
+          4,
+          "Thé à la menthe",
+          2,
+          3,
+          "45000"
+        ],
+        [
+          5,
+          "Chorba frik",
+          1,
+          1,
+          "45000"
+        ],
+        [
+          6,
+          "Jus d’orange pressé",
+          1,
+          1,
+          "25000"
+        ]
+      ],
+      "at": "2026-09-30T01:14:17.125766Z"
+    },
+    {
+      "id": "back_to_overview",
+      "status": "PASS",
+      "detail": "THIS_WEEK retained",
+      "at": "2026-09-30T01:14:23.085097Z"
+    },
+    {
+      "id": "reopen_top_products",
+      "status": "PASS",
+      "detail": "THIS_WEEK + REVENUE retained",
+      "at": "2026-09-30T01:14:27.906135Z"
+    },
+    {
+      "id": "reset_period",
+      "status": "PASS",
+      "detail": "TODAY",
+      "at": "2026-09-30T01:14:33.636180Z"
+    }
+  ]
+}

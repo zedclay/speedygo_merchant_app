@@ -1,0 +1,6 @@
+bundleId=com.speedygo.speedygoMerchantApp
+runningProcesses=1
+contentSize=large
+udid=8DB9007A-B816-4EC5-86ED-C627AC60F2C5
+apiBase=http://127.0.0.1:3100/api/v1
+at=2026-10-04T14:46:27Z

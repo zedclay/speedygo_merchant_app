@@ -1,0 +1,74 @@
+{
+  "layer": "live_authenticated_ui",
+  "fixture": "Dar El Bahja synthetic owner (+213550000071), isolated STAFF (+213550000081), sgo_finvis_* orders in speedygo_dev",
+  "orderId": "97905510-a68a-454d-a201-0b6630f1fa48",
+  "device": "iPhone 16e (8DB9007A), iOS simulator, text scale 1.0",
+  "backend": "local dev backend http://127.0.0.1:3000",
+  "result": "FAIL",
+  "error": "Timed out waiting for Found 0 widgets with key [<'profile-screen'>]: []",
+  "staffFramesCheckedForOwnerFinance": 508,
+  "observed": {
+    "staffIncomingAlertShown": true,
+    "staffSales": {
+      "financeGranted": false,
+      "finance": null,
+      "gross": "120000"
+    }
+  },
+  "steps": [
+    {
+      "id": "owner_login",
+      "status": "PASS",
+      "detail": "existing Dar El Bahja owner session",
+      "at": "2026-09-30T01:55:50.800502Z"
+    },
+    {
+      "id": "owner_order_detail",
+      "status": "PASS",
+      "detail": {
+        "net": "2 325,00 DZD",
+        "commission": "175,00 DZD",
+        "discount": "50,00 DZD"
+      },
+      "at": "2026-09-30T01:55:57.698668Z"
+    },
+    {
+      "id": "owner_reports",
+      "status": "PASS",
+      "detail": {
+        "net": "1 116,00 DZD"
+      },
+      "at": "2026-09-30T01:56:04.292671Z"
+    },
+    {
+      "id": "owner_logout",
+      "status": "PASS",
+      "detail": null,
+      "at": "2026-09-30T01:56:10.768207Z"
+    },
+    {
+      "id": "staff_login",
+      "status": "PASS",
+      "detail": "OTP login (dev OTP file)",
+      "at": "2026-09-30T01:56:19.347520Z"
+    },
+    {
+      "id": "staff_order_detail",
+      "status": "PASS",
+      "detail": {
+        "gross": "2 550,00 DZD"
+      },
+      "at": "2026-09-30T01:56:34.816509Z"
+    },
+    {
+      "id": "staff_reports",
+      "status": "PASS",
+      "detail": {
+        "financeGranted": false,
+        "finance": null,
+        "gross": "120000"
+      },
+      "at": "2026-09-30T01:56:41.277346Z"
+    }
+  ]
+}

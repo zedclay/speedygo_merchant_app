@@ -1,0 +1,10 @@
+{
+  "phase": "after",
+  "variant": "w375_t135",
+  "textScale": 1.35,
+  "appBar": true,
+  "backButton": true,
+  "catalogFallback": true,
+  "duplicateFormShown": false,
+  "createActionShown": false
+}

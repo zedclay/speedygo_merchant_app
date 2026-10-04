@@ -1,0 +1,9 @@
+{
+  "httpStatus": 201,
+  "merchantStatus": "REJECTED",
+  "issueScopes": [
+    "APPLICATION",
+    "DOCUMENT"
+  ],
+  "merchantId": "01a1047d-dcdc-7a4d-8e7b-f6b6316e0fe0"
+}

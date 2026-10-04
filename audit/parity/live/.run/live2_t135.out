@@ -1,0 +1,15 @@
+BUNDLE_OK
+SHOT live2_t135_b2_order_detail 271613
+SHOT live2_t135_b3_category 266658
+SHOT live2_t135_b3_variants 273524
+SHOT live2_t135_b3_extras 246940
+SHOT live2_t135_b3_product_availability 274625
+SHOT live2_t135_b3_reorder 218578
+SHOT live2_t135_b4_profile 311489
+SHOT live2_t135_b4_address 275391
+SHOT live2_t135_b6_notifications 285638
+SHOT live2_t135_b6_notification_settings 329062
+PARITY_LIVE prefix=live2_t135 exit=0
+{"label": "live2_t135", "accountId": "0d00c071-d000-7000-8000-000000000001", "start": "2026-10-01T12:20:59Z", "exit": 0,
+ "sessions": [{"id" : "01a0f76a-2a1b-7b32-8c48-6a91dc5c7575", "revoked" : true}], "fallbackRevoked": 0, "devices": ["01a0f76a-2a1d-7c66-b6a2-1f0be25da888"], "deviceTokens": []}
+RC=0

@@ -1,0 +1,6 @@
+bundleId=com.speedygo.speedygoMerchantApp
+displayName=Speedygo Merchant App
+runningProcesses=1
+contentSize=extra-extra-extra-large
+udid=8DB9007A-B816-4EC5-86ED-C627AC60F2C5
+at=2026-10-02T16:09:24Z

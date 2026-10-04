@@ -1,0 +1,64 @@
+{
+  "merchant": "Finjan",
+  "merchantId": "01a0b9ad-86cd-7b9d-803a-40b618afb9c5",
+  "branchId": "01a0b9ae-85d3-736b-86a0-9db0f2a61dd1",
+  "otpRequest": {
+    "status": 200,
+    "ms": 184.3
+  },
+  "otpVerify": {
+    "status": 200,
+    "ms": 237.8,
+    "hasToken": true
+  },
+  "merchantMe": {
+    "status": 200,
+    "membershipExists": true,
+    "count": 1,
+    "names": [
+      "Finjan"
+    ]
+  },
+  "authenticated": {
+    "catalog": {
+      "status": 200,
+      "ms": 112.9,
+      "code": null,
+      "categoryCount": 1,
+      "itemCount": 0,
+      "stats": {
+        "categoryCount": 1,
+        "productCount": 1,
+        "availableProductCount": 1
+      },
+      "productNames": [],
+      "categoryNames": [
+        "Coffee"
+      ]
+    },
+    "categories": {
+      "status": 200,
+      "ms": 176.4,
+      "code": null,
+      "categoryCount": 1,
+      "itemCount": 0,
+      "stats": null,
+      "productNames": [],
+      "categoryNames": [
+        "Coffee"
+      ]
+    },
+    "products": {
+      "status": 200,
+      "ms": 85.6,
+      "code": null,
+      "categoryCount": 0,
+      "itemCount": 1,
+      "stats": null,
+      "productNames": [
+        "Caps"
+      ],
+      "categoryNames": []
+    }
+  }
+}

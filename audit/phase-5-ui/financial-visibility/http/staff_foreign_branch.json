@@ -1,0 +1,9 @@
+{
+  "status": 404,
+  "body": {
+    "error": {
+      "code": "MERCHANT_BRANCH_NOT_FOUND",
+      "message": "Branch was not found"
+    }
+  }
+}

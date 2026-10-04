@@ -1,0 +1,11 @@
+{
+  "app": "merchant",
+  "bundleId": "com.speedygo.speedygoMerchantApp",
+  "fixture": "Fixture Parité B7",
+  "phase": "register",
+  "backend": "local dev",
+  "sessionRevoked": true,
+  "stores": "memory only (session, context, launch, approval notice, push token)",
+  "checks": {},
+  "steps": []
+}

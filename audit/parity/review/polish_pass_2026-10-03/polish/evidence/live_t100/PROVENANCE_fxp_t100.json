@@ -1,0 +1,148 @@
+{
+  "app": "merchant",
+  "test": "polish_fx_live_test",
+  "backend": "isolated (speedygo_parity_fx via 127.0.0.1:3100)",
+  "apiBaseUrl": "http://127.0.0.1:3100/api/v1",
+  "prefix": "fxp_t100",
+  "session": "one OTP session per role, app stores in memory (Keychain untouched)",
+  "branchId": "0d00f0f0-fa00-7000-8000-000000002001",
+  "sourceProductId": "0d00f0f0-fa00-7000-8000-000000007001",
+  "results": {
+    "sourceHadImageBefore": false,
+    "fixtureImage": "13968:68f68bb2",
+    "sourceServedImage": "13968:68f68bb2",
+    "sourceServedEqualsFixture": true,
+    "duplicateSourceImagePainted": "13968:68f68bb2",
+    "duplicateSourceImageMatchesServer": true,
+    "snackDuplicateEditor": {
+      "message": "Copie créée — indisponible jusqu’à votre vérification.",
+      "textScale": 1.0,
+      "safeBottom": 34.0,
+      "screen": "390x844",
+      "snack": "16.0,658.0,374.0,726.0",
+      "stickyBar": "16.0,734.0,374.0,844.0",
+      "primaryAction": "169.6,746.0,358.0,798.0",
+      "gapAboveStickyBar": 8.0,
+      "snackOverlapsStickyBar": false,
+      "snackOverlapsPrimaryAction": false
+    },
+    "copyId": "01a0ff98-8dda-733d-b1fa-f53458807c6e",
+    "copyHasImage": true,
+    "copyAvailable": false,
+    "copyServedImage": "13968:68f68bb2",
+    "copyServedEqualsSource": true,
+    "copyEditorImagePainted": "13968:68f68bb2",
+    "copyEditorImageMatchesSource": true,
+    "copyEditorImageAfterFreshInstance": "13968:68f68bb2",
+    "copyEditorImageAfterFreshInstanceMatchesSource": true,
+    "sourceImageUnchanged": true,
+    "catalogEnd": {
+      "textScale": 1.0,
+      "safeBottom": 34.0,
+      "productCount": 7,
+      "atScrollEnd": true,
+      "lastCard": "16.0,552.0,374.0,648.0",
+      "fab": "182.0,672.0,374.0,728.0",
+      "bottomNav": "0.0,744.0,390.0,844.0",
+      "gapAboveFab": 24.0,
+      "gapAboveNav": 96.0,
+      "gapAboveSafeArea": 162.0,
+      "lastCardOverlapsFab": false
+    },
+    "snackExceptionalHours": {
+      "message": "Exception enregistrée.",
+      "textScale": 1.0,
+      "safeBottom": 34.0,
+      "screen": "390x844",
+      "snack": "16.0,678.0,374.0,726.0",
+      "stickyBar": "0.0,734.0,390.0,844.0",
+      "primaryAction": "143.3,746.0,374.0,798.0",
+      "gapAboveStickyBar": 8.0,
+      "snackOverlapsStickyBar": false,
+      "snackOverlapsPrimaryAction": false
+    },
+    "exceptionRemoved": true,
+    "weeklyBefore": "1:00:00-00:00|2:00:00-00:00|3:00:00-00:00|4:00:00-00:00|5:00:00-00:00|6:00:00-00:00|7:00:00-00:00",
+    "snackWeeklyHours": {
+      "message": "Horaires enregistrés.",
+      "textScale": 1.0,
+      "safeBottom": 34.0,
+      "screen": "390x844",
+      "snack": "16.0,678.0,374.0,726.0",
+      "stickyBar": "0.0,734.0,390.0,844.0",
+      "primaryAction": "16.0,746.0,374.0,798.0",
+      "gapAboveStickyBar": 8.0,
+      "snackOverlapsStickyBar": false,
+      "snackOverlapsPrimaryAction": false
+    },
+    "weeklyChangedBySave": true,
+    "weeklyAfterSave": "1:|2:00:00-00:00+00:00-00:00|3:00:00-00:00+00:00-00:00|4:00:00-00:00+00:00-00:00|5:00:00-00:00+00:00-00:00|6:00:00-00:00+00:00-00:00|7:00:00-00:00+00:00-00:00",
+    "weeklyAfterRestore": "1:00:00-00:00|2:00:00-00:00+00:00-00:00|3:00:00-00:00+00:00-00:00+00:00-00:00|4:00:00-00:00+00:00-00:00+00:00-00:00|5:00:00-00:00+00:00-00:00+00:00-00:00|6:00:00-00:00+00:00-00:00+00:00-00:00|7:00:00-00:00+00:00-00:00+00:00-00:00",
+    "weeklyRestored": false,
+    "logout_OWNER": true,
+    "staffDirectDuplicate": {
+      "appBar": true,
+      "backAction": true,
+      "catalogFallback": true,
+      "duplicateFormShown": false,
+      "createActionShown": false,
+      "textScale": 1.0
+    },
+    "staffBackOpensCatalogue": true,
+    "staffFallbackOpensCatalogue": true,
+    "staffServerRefusal": {
+      "status": 403,
+      "code": "MERCHANT_ROLE_FORBIDDEN",
+      "productCountUnchanged": true
+    },
+    "logout_STAFF": true,
+    "failedRole": "STAFF",
+    "failure": "Expected: true   Actual: <false> weekly hours after restore: 1:00:00-00:00|2:00:00-00:00+00:00-00:00|3:00:00-00:00+00:00-00:00+00:00-00:00|4:00:00-00:00+00:00-00:00+00:00-00:00|5:00:00-00:00+00:00-00:00+00:00-00:00|6:00:00-00:00+00:00-00:00+00:00-00:00|7:00:00-00:00+00:00-00:00+00:00-00:00 expected: 1:00:00-00:00|2:00:00-00:00|3:00:00-00:00|4:00:00-00:00|5:00:00-00:00|6:00:00-00:00|7:00:00-00:00"
+  },
+  "steps": [
+    {
+      "tag": "fxp_t100_01_duplicate_source_image",
+      "at": "2026-10-03T02:29:42.973721Z"
+    },
+    {
+      "tag": "fxp_t100_02_duplicate_editor_snack",
+      "at": "2026-10-03T02:29:47.106151Z"
+    },
+    {
+      "tag": "fxp_t100_03_duplicate_editor_image",
+      "at": "2026-10-03T02:29:50.158004Z"
+    },
+    {
+      "tag": "fxp_t100_04_copy_editor_reopened",
+      "at": "2026-10-03T02:30:04.441383Z"
+    },
+    {
+      "tag": "fxp_t100_05_catalog_end",
+      "at": "2026-10-03T02:30:08.925701Z"
+    },
+    {
+      "tag": "fxp_t100_06_hours_exception_snack",
+      "at": "2026-10-03T02:30:19.739537Z"
+    },
+    {
+      "tag": "fxp_t100_07_weekly_hours_snack",
+      "at": "2026-10-03T02:30:28.624559Z"
+    },
+    {
+      "tag": "fxp_t100_08_staff_duplicate_forbidden",
+      "at": "2026-10-03T02:30:44.357629Z"
+    },
+    {
+      "tag": "fxp_t100_09_staff_back_catalogue",
+      "at": "2026-10-03T02:30:47.656548Z"
+    },
+    {
+      "tag": "fxp_t100_10_staff_fallback_catalogue",
+      "at": "2026-10-03T02:30:51.658287Z"
+    },
+    {
+      "tag": "fxp_t100_failure_state",
+      "at": "2026-10-03T02:30:58.723333Z"
+    }
+  ]
+}

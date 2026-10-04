@@ -1,0 +1,18 @@
+[14:48:48] env db=speedygo_dev phone=559907701 merchant=01a0b4e7-83a0-7742-8ac0-03fcb5e9b056 se=E342AC62-65EB-4786-87D1-292AF132E1CF
+[14:48:48] se_session_reset_done
+[14:48:48] fixture_status_before_ui=REJECTED
+[14:49:45] shot=rejected
+[14:50:17] shot=resubmit-review
+[14:50:31] shot=resubmit-pending
+[14:50:34] approve_start merchant=01a0b4e7-83a0-7742-8ac0-03fcb5e9b056 (API-only)
+[14:50:35] approve_http=201
+[14:50:35] approve_done
+[14:50:47] shot=approved-home
+[14:51:00] shot=cold-relaunch-home
+[14:51:03] flutter_test_exit=0
+                  id                  |     status     | verified 
+--------------------------------------+----------------+----------
+ 01a0ad2a-29eb-7959-b23c-d21f1e1c0915 | PENDING_REVIEW | f
+ 01a0b4e7-83a0-7742-8ac0-03fcb5e9b056 | ACTIVE         | t
+(2 rows)
+

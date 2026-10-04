@@ -1,0 +1,4 @@
+audit_logs.session_id = 3
+devices.id = 5
+sessions.device_id = 5
+sessions.id = 5

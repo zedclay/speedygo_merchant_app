@@ -1,0 +1,7 @@
+[15:28:45] orders accept=01a0b51d-bdbb-7b65-a87a-d431a13883a5 reject=01a0b51d-bf20-785a-abcb-a3b7cd7381b5
+[15:28:45] api_ok
+[15:28:54] se_reset_done
+[15:30:47] shot=incoming
+[15:31:01] shot=preparing
+[15:31:10] shot=ready
+[15:31:28] flutter_test_exit=1

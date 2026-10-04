@@ -1,0 +1,147 @@
+{
+  "fixture": "Dar El Bahja",
+  "phone": "+213550000071",
+  "merchantId": "0d00c071-d000-7000-8000-000000010001",
+  "branchId": "0d00c071-d000-7000-8000-000000011001",
+  "steps": [
+    {
+      "id": "login",
+      "status": "PASS"
+    },
+    {
+      "id": "resolve_branch",
+      "status": "PASS",
+      "merchantId": "0d00c071-d000-7000-8000-000000010001",
+      "branchId": "0d00c071-d000-7000-8000-000000011001",
+      "branchName": "Dar El Bahja",
+      "merchantName": "Dar El Bahja"
+    },
+    {
+      "id": "get_initial",
+      "status": "PASS",
+      "body": {
+        "branchId": "0d00c071-d000-7000-8000-000000011001",
+        "timezone": "Africa/Algiers",
+        "availabilityMode": "FOLLOW_SCHEDULE",
+        "effectiveMode": "FOLLOW_SCHEDULE",
+        "hoursConfigured": true,
+        "isOpenNow": true,
+        "acceptingOrders": true,
+        "temporaryExpired": false,
+        "outsideWeeklyHours": false,
+        "reasonCode": null,
+        "customerMessage": null,
+        "closedUntil": null,
+        "nextOpenAt": null,
+        "currentClosesAt": "2026-09-24T22:00:00.000Z",
+        "version": null,
+        "updatedAt": null
+      }
+    },
+    {
+      "id": "put_force_closed",
+      "status": "PASS",
+      "body": {
+        "branchId": "0d00c071-d000-7000-8000-000000011001",
+        "timezone": "Africa/Algiers",
+        "availabilityMode": "FORCE_CLOSED",
+        "effectiveMode": "FORCE_CLOSED",
+        "hoursConfigured": true,
+        "isOpenNow": false,
+        "acceptingOrders": false,
+        "temporaryExpired": false,
+        "outsideWeeklyHours": false,
+        "reasonCode": "TECHNICAL",
+        "customerMessage": null,
+        "closedUntil": null,
+        "nextOpenAt": null,
+        "currentClosesAt": null,
+        "version": 1,
+        "updatedAt": "2026-09-24 18:07:20.018+01"
+      }
+    },
+    {
+      "id": "put_conflict",
+      "status": "PASS",
+      "body": {
+        "error": {
+          "code": "AVAILABILITY_VERSION_CONFLICT",
+          "message": "Branch availability version conflict",
+          "availability": {
+            "branchId": "0d00c071-d000-7000-8000-000000011001",
+            "timezone": "Africa/Algiers",
+            "availabilityMode": "FORCE_CLOSED",
+            "effectiveMode": "FORCE_CLOSED",
+            "hoursConfigured": true,
+            "isOpenNow": false,
+            "acceptingOrders": false,
+            "temporaryExpired": false,
+            "outsideWeeklyHours": false,
+            "reasonCode": "TECHNICAL",
+            "customerMessage": null,
+            "closedUntil": null,
+            "nextOpenAt": null,
+            "currentClosesAt": null,
+            "version": 1,
+            "updatedAt": "2026-09-24 18:07:20.018+01"
+          }
+        }
+      }
+    },
+    {
+      "id": "put_temporary",
+      "status": "PASS",
+      "body": {
+        "branchId": "0d00c071-d000-7000-8000-000000011001",
+        "timezone": "Africa/Algiers",
+        "availabilityMode": "TEMPORARY_CLOSED",
+        "effectiveMode": "TEMPORARY_CLOSED",
+        "hoursConfigured": true,
+        "isOpenNow": false,
+        "acceptingOrders": false,
+        "temporaryExpired": false,
+        "outsideWeeklyHours": false,
+        "reasonCode": "PEAK_KITCHEN",
+        "customerMessage": "Pause 30 min (live verify)",
+        "closedUntil": "2026-09-24T17:37:20.000Z",
+        "nextOpenAt": "2026-09-24T17:37:20.000Z",
+        "currentClosesAt": null,
+        "version": 2,
+        "updatedAt": "2026-09-24 18:07:20.067+01"
+      }
+    },
+    {
+      "id": "put_follow_schedule",
+      "status": "PASS",
+      "body": {
+        "branchId": "0d00c071-d000-7000-8000-000000011001",
+        "timezone": "Africa/Algiers",
+        "availabilityMode": "FOLLOW_SCHEDULE",
+        "effectiveMode": "FOLLOW_SCHEDULE",
+        "hoursConfigured": true,
+        "isOpenNow": true,
+        "acceptingOrders": true,
+        "temporaryExpired": false,
+        "outsideWeeklyHours": false,
+        "reasonCode": null,
+        "customerMessage": null,
+        "closedUntil": null,
+        "nextOpenAt": null,
+        "currentClosesAt": "2026-09-24T22:00:00.000Z",
+        "version": 3,
+        "updatedAt": "2026-09-24 18:07:20.099+01"
+      }
+    },
+    {
+      "id": "reject_past_until",
+      "status": "PASS",
+      "body": {
+        "error": {
+          "code": "AVAILABILITY_INVALID",
+          "message": "closedUntil must be strictly in the future"
+        }
+      }
+    }
+  ],
+  "at": "2026-09-24T17:07:20.136074+00:00"
+}

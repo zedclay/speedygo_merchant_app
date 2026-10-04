@@ -1,0 +1,9 @@
+{
+  "db": "speedygo_dev",
+  "accounts": 6,
+  "merchants": 12,
+  "legal_table": 0,
+  "merchant_max_updated": "2026-09-20 14:44:30.977+01",
+  "capturedAt": "2026-10-03T21:19:41.283935Z",
+  "source": "verification_contract_after_fx"
+}

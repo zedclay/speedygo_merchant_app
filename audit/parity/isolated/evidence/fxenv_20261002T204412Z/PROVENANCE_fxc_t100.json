@@ -1,0 +1,88 @@
+{
+  "app": "merchant",
+  "test": "contract_batch_fx_live_test",
+  "backend": "isolated (speedygo_parity_fx via 127.0.0.1:3100)",
+  "apiBaseUrl": "http://127.0.0.1:3100/api/v1",
+  "prefix": "fxc_t100",
+  "session": "one OTP session per role, app stores in memory (Keychain untouched)",
+  "branchId": "0d00f0f0-fa00-7000-8000-000000002001",
+  "logoFixtures": {
+    "A": "13659:5260b817",
+    "B": "12877:fdf7a49b"
+  },
+  "results": {
+    "logoInitiallyEmpty": true,
+    "logoSavedMatchesA": true,
+    "logoAfterFreshInstance": "13659:5260b817",
+    "logoReplacedMatchesB": true,
+    "logoReplacedDiffersFromA": true,
+    "logoDisplayedIsB": true,
+    "logoAfterRemove": "none",
+    "serverToday": "2026-10-02",
+    "exceptionAfterFreshInstance": "2026-10-05",
+    "conflictKeptDraft": true,
+    "retryAfterConflictSaved": true,
+    "failedRole": "OWNER",
+    "failure": "Timed out waiting for Found 0 widgets with text \"Exception enregistrée.\": []",
+    "failureInlineError": null,
+    "failureSaveEnabled": true
+  },
+  "steps": [
+    {
+      "tag": "fxc_t100_logo_empty",
+      "at": "2026-10-02T20:56:29.829371Z"
+    },
+    {
+      "tag": "fxc_t100_profile_logo",
+      "at": "2026-10-02T20:56:35.978644Z"
+    },
+    {
+      "tag": "fxc_t100_logo_reopened",
+      "at": "2026-10-02T20:56:51.445169Z"
+    },
+    {
+      "tag": "fxc_t100_logo_replaced",
+      "at": "2026-10-02T20:57:01.395943Z"
+    },
+    {
+      "tag": "fxc_t100_logo_removed",
+      "at": "2026-10-02T20:57:06.669635Z"
+    },
+    {
+      "tag": "fxc_t100_profile_logo_fallback",
+      "at": "2026-10-02T20:57:13.045909Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exceptions_empty",
+      "at": "2026-10-02T20:57:21.779434Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_form",
+      "at": "2026-10-02T20:57:27.878621Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_saved",
+      "at": "2026-10-02T20:57:33.094617Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_reopened",
+      "at": "2026-10-02T20:57:48.546470Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_conflict",
+      "at": "2026-10-02T20:57:56.879684Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_open_interval",
+      "at": "2026-10-02T20:58:02.046294Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_deleted",
+      "at": "2026-10-02T20:58:07.594872Z"
+    },
+    {
+      "tag": "fxc_t100_failure_state",
+      "at": "2026-10-02T20:58:38.694813Z"
+    }
+  ]
+}

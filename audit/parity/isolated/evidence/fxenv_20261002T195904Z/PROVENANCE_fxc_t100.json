@@ -1,0 +1,105 @@
+{
+  "app": "merchant",
+  "test": "contract_batch_fx_live_test",
+  "backend": "isolated (speedygo_parity_fx via 127.0.0.1:3100)",
+  "apiBaseUrl": "http://127.0.0.1:3100/api/v1",
+  "prefix": "fxc_t100",
+  "session": "one OTP session per role, app stores in memory (Keychain untouched)",
+  "branchId": "0d00f0f0-fa00-7000-8000-000000002001",
+  "logoFixtures": {
+    "A": "13659:5260b817",
+    "B": "12877:fdf7a49b"
+  },
+  "results": {
+    "logoInitiallyEmpty": true,
+    "logoSavedMatchesA": true,
+    "logoAfterFreshInstance": "13659:5260b817",
+    "logoReplacedMatchesB": true,
+    "logoReplacedDiffersFromA": true,
+    "logoDisplayedIsB": true,
+    "logoAfterRemove": "none",
+    "serverToday": "2026-10-02",
+    "exceptionAfterFreshInstance": "2026-10-05",
+    "conflictKeptDraft": true,
+    "retryAfterConflictSaved": true,
+    "todayClosedIsOpenNow": false,
+    "todayClosedAccepting": false,
+    "weeklyFallbackIsOpenNow": true,
+    "failedRole": "OWNER",
+    "failure": "Validation failed (uuid is expected)"
+  },
+  "steps": [
+    {
+      "tag": "fxc_t100_logo_empty",
+      "at": "2026-10-02T20:01:17.932545Z"
+    },
+    {
+      "tag": "fxc_t100_profile_logo",
+      "at": "2026-10-02T20:01:24.065199Z"
+    },
+    {
+      "tag": "fxc_t100_logo_reopened",
+      "at": "2026-10-02T20:01:39.465138Z"
+    },
+    {
+      "tag": "fxc_t100_logo_replaced",
+      "at": "2026-10-02T20:01:49.381981Z"
+    },
+    {
+      "tag": "fxc_t100_logo_removed",
+      "at": "2026-10-02T20:01:54.662039Z"
+    },
+    {
+      "tag": "fxc_t100_profile_logo_fallback",
+      "at": "2026-10-02T20:02:01.031608Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exceptions_empty",
+      "at": "2026-10-02T20:02:09.765789Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_form",
+      "at": "2026-10-02T20:02:15.649951Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_saved",
+      "at": "2026-10-02T20:02:20.475958Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_reopened",
+      "at": "2026-10-02T20:02:35.949202Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_conflict",
+      "at": "2026-10-02T20:02:42.932943Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_open_interval",
+      "at": "2026-10-02T20:02:47.726351Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_deleted",
+      "at": "2026-10-02T20:02:53.227065Z"
+    },
+    {
+      "tag": "fxc_t100_hours_today_closed",
+      "at": "2026-10-02T20:03:03.634422Z"
+    },
+    {
+      "tag": "fxc_t100_hours_weekly_fallback",
+      "at": "2026-10-02T20:03:17.233577Z"
+    },
+    {
+      "tag": "fxc_t100_duplicate_owner_menu",
+      "at": "2026-10-02T20:03:22.748740Z"
+    },
+    {
+      "tag": "fxc_t100_duplicate_owner_screen",
+      "at": "2026-10-02T20:03:27.299479Z"
+    },
+    {
+      "tag": "fxc_t100_duplicate_owner_editor",
+      "at": "2026-10-02T20:03:31.972272Z"
+    }
+  ]
+}

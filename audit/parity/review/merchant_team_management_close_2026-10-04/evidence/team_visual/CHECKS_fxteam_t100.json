@@ -1,0 +1,15 @@
+{
+  "prefix": "fxteam_t100",
+  "apiBase": "http://127.0.0.1:3100/api/v1",
+  "checks": {
+    "ownerLogin": true,
+    "teamTop": true,
+    "teamEnd": true,
+    "inviteSheet": true,
+    "teamCold": true,
+    "staffNoTeamRow": true,
+    "staffDenied": true
+  },
+  "backend": "isolated speedygo_parity_fx",
+  "at": "2026-10-04T03:05:22.032163Z"
+}

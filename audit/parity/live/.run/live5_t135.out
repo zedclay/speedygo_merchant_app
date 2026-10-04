@@ -1,0 +1,10 @@
+DISK_PREFLIGHT_OK step=guard:live5_t135 free_gb=12 min_gb=5
+DISK_PREFLIGHT_OK step=live:live5_t135 free_gb=12 min_gb=5
+BUNDLE_OK
+SHOT live5_t135_b2_order_detail 305943
+SHOT live5_t135_b2_update_sheet 288703
+SHOT live5_t135_b2_update_sheet_reason 233315
+PARITY_LIVE prefix=live5_t135 exit=0
+{"label": "live5_t135", "accountId": "0d00c071-d000-7000-8000-000000000001", "start": "2026-10-02T16:41:11Z", "exit": 0,
+ "sessions": [{"id" : "01a0fd7e-8322-74e1-a6b0-f23d112817d4", "revoked" : true}], "fallbackRevoked": 0, "devices": ["01a0fd7e-8323-7efa-ae00-fa0aa0ac1cdd"], "deviceTokens": []}
+EXIT=0

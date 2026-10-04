@@ -1,0 +1,101 @@
+{
+  "app": "merchant",
+  "test": "contract_batch_fx_live_test",
+  "backend": "isolated (speedygo_parity_fx via 127.0.0.1:3100)",
+  "apiBaseUrl": "http://127.0.0.1:3100/api/v1",
+  "prefix": "fxc_t100",
+  "session": "one OTP session per role, app stores in memory (Keychain untouched)",
+  "branchId": "0d00f0f0-fa00-7000-8000-000000002001",
+  "logoFixtures": {
+    "A": "13659:5260b817",
+    "B": "12877:fdf7a49b"
+  },
+  "results": {
+    "logoInitiallyEmpty": true,
+    "logoSavedMatchesA": true,
+    "logoAfterFreshInstance": "13659:5260b817",
+    "logoReplacedMatchesB": true,
+    "logoReplacedDiffersFromA": true,
+    "logoDisplayedIsB": true,
+    "logoAfterRemove": "none",
+    "serverToday": "2026-10-02",
+    "exceptionAfterFreshInstance": "2026-10-05",
+    "conflictKeptDraft": true,
+    "retryAfterConflictSaved": true,
+    "todayClosedIsOpenNow": false,
+    "todayClosedAccepting": false,
+    "weeklyFallbackIsOpenNow": true,
+    "failedRole": "OWNER",
+    "failure": "The finder \"Found 0 widgets with key [<'duplicate-create'>]: []\" (used in a call to \"tap()\") could not find any matching widgets."
+  },
+  "steps": [
+    {
+      "tag": "fxc_t100_logo_empty",
+      "at": "2026-10-02T20:06:19.333279Z"
+    },
+    {
+      "tag": "fxc_t100_profile_logo",
+      "at": "2026-10-02T20:06:25.451336Z"
+    },
+    {
+      "tag": "fxc_t100_logo_reopened",
+      "at": "2026-10-02T20:06:40.835818Z"
+    },
+    {
+      "tag": "fxc_t100_logo_replaced",
+      "at": "2026-10-02T20:06:50.784155Z"
+    },
+    {
+      "tag": "fxc_t100_logo_removed",
+      "at": "2026-10-02T20:06:56.096750Z"
+    },
+    {
+      "tag": "fxc_t100_profile_logo_fallback",
+      "at": "2026-10-02T20:07:02.485075Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exceptions_empty",
+      "at": "2026-10-02T20:07:11.235327Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_form",
+      "at": "2026-10-02T20:07:17.068366Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_saved",
+      "at": "2026-10-02T20:07:21.879507Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_reopened",
+      "at": "2026-10-02T20:07:37.268311Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_conflict",
+      "at": "2026-10-02T20:07:44.352585Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_open_interval",
+      "at": "2026-10-02T20:07:49.160969Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_deleted",
+      "at": "2026-10-02T20:07:54.700202Z"
+    },
+    {
+      "tag": "fxc_t100_hours_today_closed",
+      "at": "2026-10-02T20:08:05.301843Z"
+    },
+    {
+      "tag": "fxc_t100_hours_weekly_fallback",
+      "at": "2026-10-02T20:08:18.985593Z"
+    },
+    {
+      "tag": "fxc_t100_duplicate_owner_menu",
+      "at": "2026-10-02T20:08:24.452574Z"
+    },
+    {
+      "tag": "fxc_t100_duplicate_owner_screen",
+      "at": "2026-10-02T20:08:29.018662Z"
+    }
+  ]
+}

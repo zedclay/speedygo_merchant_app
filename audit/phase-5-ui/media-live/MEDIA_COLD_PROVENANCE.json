@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "layer": "flutter_run_cold_relaunch",
+  "bundleId": "com.speedygo.speedygoMerchantApp",
+  "fixture": "Dar El Bahja",
+  "phone": "+213550000071",
+  "merchantId": "0d00c071-d000-7000-8000-000000010001",
+  "branchId": "0d00c071-d000-7000-8000-000000011001",
+  "productId": "0d00c071-d000-7000-8000-000000030101",
+  "simulator": "iPhone 16e",
+  "simulatorUdid": "8DB9007A-B816-4EC5-86ED-C627AC60F2C5",
+  "finjanUntouched": true,
+  "required": {
+    "media-product-reopen.png": true,
+    "media-cover-reopen.png": true,
+    "media-product-cold.png": true,
+    "media-cover-cold.png": true,
+    "media-product-replace.png": true
+  },
+  "screenshots": {
+    "media-cover-replace.png": 215038,
+    "media-cover-reopened.png": 215449,
+    "media-product-reopen.png": 202188,
+    "media-product-reopened.png": 201174,
+    "media-product-replace.png": 200943,
+    "media-cover-reopen.png": 214666,
+    "media-product-cold.png": 202433,
+    "media-cover-cold.png": 214918
+  },
+  "at": "2026-09-24T15:18:14.892125+00:00"
+}

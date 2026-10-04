@@ -1,0 +1,155 @@
+{
+  "app": "merchant",
+  "test": "contract_batch_fx_live_test",
+  "backend": "isolated (speedygo_parity_fx via 127.0.0.1:3100)",
+  "apiBaseUrl": "http://127.0.0.1:3100/api/v1",
+  "prefix": "fxc_t100",
+  "session": "one OTP session per role, app stores in memory (Keychain untouched)",
+  "branchId": "0d00f0f0-fa00-7000-8000-000000002001",
+  "logoFixtures": {
+    "A": "13659:5260b817",
+    "B": "12877:fdf7a49b"
+  },
+  "results": {
+    "logoInitiallyEmpty": true,
+    "logoSavedMatchesA": true,
+    "logoAfterFreshInstance": "13659:5260b817",
+    "logoReplacedMatchesB": true,
+    "logoReplacedDiffersFromA": true,
+    "logoDisplayedIsB": true,
+    "logoAfterRemove": "none",
+    "serverToday": "2026-10-02",
+    "exceptionAfterFreshInstance": "2026-10-05",
+    "conflictKeptDraft": true,
+    "retryAfterConflictSaved": true,
+    "todayClosedIsOpenNow": false,
+    "todayClosedAccepting": false,
+    "weeklyFallbackIsOpenNow": true,
+    "ownerCopyId": "01a0fe3f-bdcb-7097-8109-05d0aecd87a0",
+    "ownerCopyAvailable": false,
+    "ownerCopyName": "Copie de Couscous royal",
+    "ownerCopyHasImage": false,
+    "ownerCopiesAfterDoubleTap": 1,
+    "sourceUnchanged": true,
+    "logout_OWNER": true,
+    "managerLogoControls": true,
+    "managerExceptionEditor": true,
+    "managerCopyAvailable": false,
+    "logout_MANAGER": true,
+    "staffLogoReadOnly": true,
+    "staffExceptionsReadOnly": true,
+    "staffNoProductMenu": true,
+    "staffDuplicateRefused": true,
+    "logout_STAFF": true
+  },
+  "steps": [
+    {
+      "tag": "fxc_t100_logo_empty",
+      "at": "2026-10-02T20:10:55.504111Z"
+    },
+    {
+      "tag": "fxc_t100_profile_logo",
+      "at": "2026-10-02T20:11:01.621175Z"
+    },
+    {
+      "tag": "fxc_t100_logo_reopened",
+      "at": "2026-10-02T20:11:17.086066Z"
+    },
+    {
+      "tag": "fxc_t100_logo_replaced",
+      "at": "2026-10-02T20:11:27.035616Z"
+    },
+    {
+      "tag": "fxc_t100_logo_removed",
+      "at": "2026-10-02T20:11:32.343710Z"
+    },
+    {
+      "tag": "fxc_t100_profile_logo_fallback",
+      "at": "2026-10-02T20:11:38.721019Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exceptions_empty",
+      "at": "2026-10-02T20:11:47.487787Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_form",
+      "at": "2026-10-02T20:11:53.486634Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_saved",
+      "at": "2026-10-02T20:11:58.308211Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_reopened",
+      "at": "2026-10-02T20:12:13.621207Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_conflict",
+      "at": "2026-10-02T20:12:20.704681Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_open_interval",
+      "at": "2026-10-02T20:12:25.514205Z"
+    },
+    {
+      "tag": "fxc_t100_hours_exception_deleted",
+      "at": "2026-10-02T20:12:31.080642Z"
+    },
+    {
+      "tag": "fxc_t100_hours_today_closed",
+      "at": "2026-10-02T20:12:41.604875Z"
+    },
+    {
+      "tag": "fxc_t100_hours_weekly_fallback",
+      "at": "2026-10-02T20:12:55.253835Z"
+    },
+    {
+      "tag": "fxc_t100_duplicate_owner_menu",
+      "at": "2026-10-02T20:13:00.737964Z"
+    },
+    {
+      "tag": "fxc_t100_duplicate_owner_screen",
+      "at": "2026-10-02T20:13:05.320560Z"
+    },
+    {
+      "tag": "fxc_t100_duplicate_owner_editor",
+      "at": "2026-10-02T20:13:09.973152Z"
+    },
+    {
+      "tag": "fxc_t100_catalog_with_copy",
+      "at": "2026-10-02T20:13:14.672142Z"
+    },
+    {
+      "tag": "fxc_t100_manager_logo",
+      "at": "2026-10-02T20:13:35.804950Z"
+    },
+    {
+      "tag": "fxc_t100_duplicate_manager_menu",
+      "at": "2026-10-02T20:13:45.304168Z"
+    },
+    {
+      "tag": "fxc_t100_duplicate_manager_screen",
+      "at": "2026-10-02T20:13:49.854882Z"
+    },
+    {
+      "tag": "fxc_t100_duplicate_manager_editor",
+      "at": "2026-10-02T20:13:54.459590Z"
+    },
+    {
+      "tag": "fxc_t100_staff_logo",
+      "at": "2026-10-02T20:14:17.804832Z"
+    },
+    {
+      "tag": "fxc_t100_staff_hours_exceptions",
+      "at": "2026-10-02T20:14:26.253597Z"
+    },
+    {
+      "tag": "fxc_t100_staff_catalog",
+      "at": "2026-10-02T20:14:30.838877Z"
+    },
+    {
+      "tag": "fxc_t100_staff_duplicate",
+      "at": "2026-10-02T20:14:39.287943Z"
+    }
+  ]
+}

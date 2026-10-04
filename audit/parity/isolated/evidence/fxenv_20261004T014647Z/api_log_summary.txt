@@ -1,0 +1,6 @@
+total_lines=472 error_lines=0 warn_lines=16
+[32m[Nest] <n>  - [39m10/04/<n>, 2:46:59 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[33m[Nest] <n>  - [39m10/04/<n>, 2:46:59 AM [33m   WARN[39m [33mDuplicate DTO detected: "MerchantBranchClassificationResponseDto" is defined multiple times with different schemas.
+[32m[Nest] <n>  - [39m10/04/<n>, 2:46:59 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] <n>  - [39m10/04/<n>, 2:46:59 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +31ms[39m
+[32m[Nest] <n>  - [39m10/04/<n>, 2:46:59 AM [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mspeedygo-backend listening on port <n>[39m

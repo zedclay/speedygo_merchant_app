@@ -1,0 +1,7 @@
+Failed live attempts of the final Merchant polish pass.
+Provenance only: NOT successful evidence. No screenshot from these folders
+is included. Causes are in MERCHANT_POLISH_PASS_REPORT.md section 6.
+Paths are relative to apps/merchant_app/audit/parity/isolated/evidence/.
+
+fxenv_20261003T021436Z/  files=28  screenshots_excluded=8  cleanup=FX_CLEANUP_OK
+fxenv_20261003T022037Z/  files=28  screenshots_excluded=9  cleanup=FX_CLEANUP_OK

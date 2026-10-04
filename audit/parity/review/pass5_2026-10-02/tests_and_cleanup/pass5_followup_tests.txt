@@ -1,0 +1,26 @@
+Merchant app: fifth pass follow-up, focused verification (2026-10-02, 17:48 CET)
+
+Scope: update-time sheet compact reference and dated estimates. Only focused tests
+were run for these changes; the full suite was not re-run.
+
+flutter test (8 files):  129 passed, 0 failed
+  test/features/preparation_time_widgets_test.dart
+    - update sheet preview uses branch timezone for +10 (clock pinned to the estimate's day; adds "no date shown")
+    - overdue previous-day estimate dates current and proposed            (new)
+    - update crossing midnight dates only the next-day estimate           (new)
+    - just after midnight, yesterday is dated and today is not            (new)
+    - reference is compact with full reveal and copy                      (new)
+  test/audit/parity/batch2_orders_capture_test.dart
+    - update prep sheet previous day w390 / w375_t135                     (new capture + assertions)
+  test/features/prep_time_clock_test.dart, live_defect_fixes_test.dart,
+  order_alert_permissions_test.dart, order_ops_test.dart,
+  order_list_visual_corrections_test.dart, order_alert_test.dart          (unchanged, regression)
+
+flutter analyze (changed files): 0 errors, 0 warnings, 1 info (pre-existing: prep_time_clock.dart:25 unnecessary_brace_in_string_interps)
+
+Earlier full suite for the fifth pass (before this follow-up): 525 passed, 1 skipped.
+
+Live (iPhone 16e, read-only, sheet opened and never confirmed):
+  live5_t100 (large)                   exit 0, 3 shots, bundle confirmed, session revoked by the app
+  live5_t135 (extra-extra-extra-large) exit 0, 3 shots, bundle confirmed, session revoked by the app
+  Late order 01a0e8dc-…: CONFIRMED/ACCEPTED, estimate version 1, 28/09 17:45 (unchanged)

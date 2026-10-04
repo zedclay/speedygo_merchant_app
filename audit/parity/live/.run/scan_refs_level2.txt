@@ -1,0 +1,5 @@
+devices.id = 5
+merchant_documents.id = 6
+merchant_members.id = 3
+sessions.device_id = 5
+sessions.id = 5

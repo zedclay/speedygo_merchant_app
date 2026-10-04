@@ -1,0 +1,15 @@
+DISK_PREFLIGHT_OK step=guard:fx_t135 free_gb=13 min_gb=5
+DISK_PREFLIGHT_OK step=fixture:fx_t135 free_gb=13 min_gb=5
+BUNDLE_OK
+SHOT fx_t135_fx_alert 260390
+SHOT fx_t135_fx_incoming 293771
+SHOT fx_t135_fx_accept_sheet 283034
+SHOT fx_t135_fx_after_accept 265331
+SHOT fx_t135_fx_reject_sheet 370941
+SHOT fx_t135_fx_after_reject 193575
+SHOT fx_t135_fx_branch_saved 287970
+SHOT fx_t135_fx_branch_reopened 238586
+PARITY_FIXTURE prefix=fx_t135 exit=0
+{"label": "fx_t135", "accountId": "0d00c071-d000-7000-8000-000000000001", "start": "2026-10-02T16:12:22Z", "exit": 0,
+ "sessions": [{"id" : "01a0fd64-7b38-7f4f-a20b-d238b9d8d5ff", "revoked" : true}], "fallbackRevoked": 0, "devices": ["01a0fd64-7b39-702f-a061-ca3b56ba83e2"], "deviceTokens": []}
+EXIT=0

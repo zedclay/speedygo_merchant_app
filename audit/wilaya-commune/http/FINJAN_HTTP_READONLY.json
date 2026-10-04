@@ -1,0 +1,19 @@
+{
+    "branches": [
+        {
+            "id": "01a0b9ae-85d3-736b-86a0-9db0f2a61dd1",
+            "name": "Finjan Coffer",
+            "phone": "+213549445167",
+            "addressText": "made a center",
+            "latitude": 36.756001,
+            "longitude": 3.061318,
+            "wilayaCode": "22",
+            "communeId": 824,
+            "wilayaNameFr": "Sidi Bel Abb\u00e8s",
+            "communeNameFr": "Sidi Bel-Abbes",
+            "operationalStatus": "ACTIVE",
+            "createdAt": "2026-09-19 13:40:17.619+01",
+            "updatedAt": "2026-09-21 00:22:03.043+01"
+        }
+    ]
+}

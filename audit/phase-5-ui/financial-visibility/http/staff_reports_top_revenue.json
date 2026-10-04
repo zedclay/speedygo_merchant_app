@@ -1,0 +1,32 @@
+{
+  "status": 200,
+  "body": {
+    "scope": {
+      "merchantId": "0d00c071-d000-7000-8000-000000010001",
+      "branchId": "0d00c071-d000-7000-8000-000000011001"
+    },
+    "period": {
+      "period": "TODAY",
+      "timezone": "Africa/Algiers",
+      "from": "2026-09-29T23:00:00.000Z",
+      "to": "2026-09-30T23:00:00.000Z",
+      "interval": "[from, to)",
+      "localFrom": "2026-09-30",
+      "localToInclusive": "2026-09-30"
+    },
+    "asOf": "2026-09-30T02:33:18.981Z",
+    "currency": "DZD",
+    "sort": "REVENUE",
+    "distinctProductCount": 1,
+    "items": [
+      {
+        "rank": 1,
+        "productId": "0d00c071-d000-7000-8000-000000030101",
+        "name": "Couscous royal",
+        "orderCount": 1,
+        "quantity": 1,
+        "revenueMinor": "120000"
+      }
+    ]
+  }
+}

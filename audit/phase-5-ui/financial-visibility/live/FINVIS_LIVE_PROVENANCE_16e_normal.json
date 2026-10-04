@@ -1,0 +1,86 @@
+{
+  "layer": "live_authenticated_ui",
+  "fixture": "Dar El Bahja synthetic owner (+213550000071), isolated STAFF (+213550000081), sgo_finvis_* orders in speedygo_dev",
+  "orderId": "97905510-a68a-454d-a201-0b6630f1fa48",
+  "device": "iPhone 16e (8DB9007A), iOS simulator, text scale 1.0",
+  "backend": "local dev backend http://127.0.0.1:3000",
+  "result": "PASS",
+  "error": null,
+  "staffFramesCheckedForOwnerFinance": 327,
+  "observed": {
+    "staffIncomingAlertShown": true,
+    "staffSales": {
+      "financeGranted": false,
+      "finance": null,
+      "gross": "120000"
+    }
+  },
+  "steps": [
+    {
+      "id": "prior_session_signed_out",
+      "status": "PASS",
+      "detail": "STAFF",
+      "at": "2026-09-30T02:00:02.780421Z"
+    },
+    {
+      "id": "owner_login",
+      "status": "PASS",
+      "detail": "OTP login (dev OTP file)",
+      "at": "2026-09-30T02:00:11.045695Z"
+    },
+    {
+      "id": "owner_order_detail",
+      "status": "PASS",
+      "detail": {
+        "net": "2 325,00 DZD",
+        "commission": "175,00 DZD",
+        "discount": "50,00 DZD"
+      },
+      "at": "2026-09-30T02:00:17.894987Z"
+    },
+    {
+      "id": "owner_reports",
+      "status": "PASS",
+      "detail": {
+        "net": "1 116,00 DZD"
+      },
+      "at": "2026-09-30T02:00:24.414317Z"
+    },
+    {
+      "id": "owner_logout",
+      "status": "PASS",
+      "detail": null,
+      "at": "2026-09-30T02:00:32.903593Z"
+    },
+    {
+      "id": "staff_login",
+      "status": "PASS",
+      "detail": "OTP login (dev OTP file)",
+      "at": "2026-09-30T02:00:41.200551Z"
+    },
+    {
+      "id": "staff_order_detail",
+      "status": "PASS",
+      "detail": {
+        "gross": "2 550,00 DZD"
+      },
+      "at": "2026-09-30T02:00:56.663221Z"
+    },
+    {
+      "id": "staff_reports",
+      "status": "PASS",
+      "detail": {
+        "financeGranted": false,
+        "finance": null,
+        "gross": "120000"
+      },
+      "at": "2026-09-30T02:01:03.128221Z"
+    },
+    {
+      "id": "owner_restored",
+      "status": "PASS",
+      "detail": null,
+      "at": "2026-09-30T02:01:19.793175Z"
+    }
+  ]
+}

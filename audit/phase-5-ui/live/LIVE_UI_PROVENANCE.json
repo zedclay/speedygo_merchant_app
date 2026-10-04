@@ -1,0 +1,97 @@
+{
+  "ok": true,
+  "layer": "live_merchant_ui",
+  "bundleId": "com.speedygo.speedygoMerchantApp",
+  "displayName": "Speedygo Merchant App",
+  "phone": "+213550000071",
+  "merchant": "Dar El Bahja",
+  "simulatorUdid": "8DB9007A-B816-4EC5-86ED-C627AC60F2C5",
+  "simulator": "iPhone 16e",
+  "entrypoint": "integration_test/phase5_editors_live_test.dart",
+  "finjanUntouched": true,
+  "customerAppUntouched": true,
+  "remoteMediaRead": "UNRESOLVED — no authorized merchant read route verified",
+  "steps": [
+    {
+      "id": "login_home_dar_el_bahja",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-20T03:37:10.987395Z"
+    },
+    {
+      "id": "nav_catalog",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-20T03:37:16.106775Z"
+    },
+    {
+      "id": "nav_product_create",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-20T03:37:19.185938Z"
+    },
+    {
+      "id": "product_field_validation",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-20T03:37:23.289376Z"
+    },
+    {
+      "id": "native_keyboard_focus_name",
+      "status": "PASS",
+      "detail": "product-editor-name focused on device (native IME path)",
+      "layer": "live_merchant_ui",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-20T03:37:26.407716Z"
+    },
+    {
+      "id": "product_save",
+      "status": "PASS",
+      "detail": "popped after save",
+      "layer": "live_merchant_ui",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-20T03:37:40.544921Z"
+    },
+    {
+      "id": "product_save_identity",
+      "status": "PASS",
+      "detail": "{\"productId\":\"01a0bce3-f2f1-7c6f-bd57-146d647e9252\",\"expectedName\":\"Phase5 UI Probe 48411\",\"expectedPriceMajor\":\"18,50\",\"expectedPriceMinor\":1850}",
+      "layer": "live_merchant_ui",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-20T03:37:46.362999Z"
+    },
+    {
+      "id": "product_reopen",
+      "status": "PASS",
+      "detail": "{\"productId\":\"01a0bce3-f2f1-7c6f-bd57-146d647e9252\",\"reopenedName\":\"Phase5 UI Probe 48411\",\"reopenedPriceMajor\":\"18,50\"}",
+      "layer": "live_merchant_ui",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-20T03:37:50.453417Z"
+    },
+    {
+      "id": "product_cleanup",
+      "status": "PASS",
+      "detail": "DELETE productId=01a0bce3-f2f1-7c6f-bd57-146d647e9252",
+      "layer": "live_merchant_ui",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-20T03:37:52.940409Z"
+    },
+    {
+      "id": "nav_address",
+      "status": "PASS",
+      "detail": null,
+      "layer": "live_merchant_ui",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-20T03:38:01.219291Z"
+    }
+  ],
+  "at": "2026-09-20T03:38:05.336845Z"
+}

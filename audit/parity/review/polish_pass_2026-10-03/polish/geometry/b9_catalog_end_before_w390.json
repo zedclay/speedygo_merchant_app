@@ -1,0 +1,32 @@
+{
+  "phase": "before",
+  "variant": "w390",
+  "textScale": 1.0,
+  "surface": {
+    "width": 390.0,
+    "height": 844.0
+  },
+  "safeBottom": 34.0,
+  "lastCard": {
+    "left": 16.0,
+    "top": 552.0,
+    "right": 374.0,
+    "bottom": 648.0
+  },
+  "fab": {
+    "left": 181.9939422607422,
+    "top": 672.0,
+    "right": 374.0,
+    "bottom": 728.0
+  },
+  "bottomNav": {
+    "left": 0.0,
+    "top": 744.0,
+    "right": 390.0,
+    "bottom": 844.0
+  },
+  "lastCardOverlapsFab": false,
+  "gapAboveFab": 24.0,
+  "gapAboveNav": 96.0,
+  "gapAboveSafeArea": 162.0
+}

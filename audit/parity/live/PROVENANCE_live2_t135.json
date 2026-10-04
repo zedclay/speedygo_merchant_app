@@ -1,0 +1,51 @@
+{
+  "app": "merchant",
+  "bundleId": "com.speedygo.speedygoMerchantApp",
+  "merchant": "Dar El Bahja (synthetic, OWNER)",
+  "backend": "local dev",
+  "prefix": "live2_t135",
+  "session": "dedicated OTP session, app stores in memory (Keychain untouched)",
+  "sessionRevoked": true,
+  "steps": [
+    {
+      "tag": "live2_t135_b2_order_detail",
+      "at": "2026-10-01T12:22:17.928463Z"
+    },
+    {
+      "tag": "live2_t135_b3_category",
+      "at": "2026-10-01T12:22:30.361866Z"
+    },
+    {
+      "tag": "live2_t135_b3_variants",
+      "at": "2026-10-01T12:22:42.812226Z"
+    },
+    {
+      "tag": "live2_t135_b3_extras",
+      "at": "2026-10-01T12:22:51.311788Z"
+    },
+    {
+      "tag": "live2_t135_b3_product_availability",
+      "at": "2026-10-01T12:22:59.811947Z"
+    },
+    {
+      "tag": "live2_t135_b3_reorder",
+      "at": "2026-10-01T12:23:08.278556Z"
+    },
+    {
+      "tag": "live2_t135_b4_profile",
+      "at": "2026-10-01T12:23:19.878906Z"
+    },
+    {
+      "tag": "live2_t135_b4_address",
+      "at": "2026-10-01T12:23:44.212493Z"
+    },
+    {
+      "tag": "live2_t135_b6_notifications",
+      "at": "2026-10-01T12:24:03.663144Z"
+    },
+    {
+      "tag": "live2_t135_b6_notification_settings",
+      "at": "2026-10-01T12:24:12.163178Z"
+    }
+  ]
+}

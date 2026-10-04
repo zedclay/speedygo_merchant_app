@@ -1,0 +1,77 @@
+{
+  "fixture": "Dar El Bahja",
+  "phone": "+213550000071",
+  "mode": "reconnect",
+  "pollIntervalSeconds": 8,
+  "harnessResult": "PASS",
+  "error": null,
+  "steps": [
+    {
+      "id": "home_loaded",
+      "status": "PASS",
+      "detail": null,
+      "mode": "reconnect",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:31:47.530403Z"
+    },
+    {
+      "id": "offline_gate_on",
+      "status": "PASS",
+      "detail": null,
+      "mode": "reconnect",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:31:47.535223Z"
+    },
+    {
+      "id": "offline_no_alert",
+      "status": "PASS",
+      "detail": null,
+      "mode": "reconnect",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:31:50.691117Z"
+    },
+    {
+      "id": "orders_created_while_offline",
+      "status": "PASS",
+      "detail": "01a0e8db-b7c5-7f8d-8091-f5fd0f2608e3",
+      "mode": "reconnect",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:31:50.694936Z"
+    },
+    {
+      "id": "still_offline_no_alert",
+      "status": "PASS",
+      "detail": null,
+      "mode": "reconnect",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:31:51.738924Z"
+    },
+    {
+      "id": "offline_gate_off",
+      "status": "PASS",
+      "detail": null,
+      "mode": "reconnect",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:31:51.740138Z"
+    },
+    {
+      "id": "reconnect_one_alert",
+      "status": "PASS",
+      "detail": "01a0e8db-b7c5-7f8d-8091-f5fd0f2608e3",
+      "mode": "reconnect",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:31:54.080316Z"
+    },
+    {
+      "id": "reconnect_tap_opens",
+      "status": "PASS",
+      "detail": null,
+      "mode": "reconnect",
+      "layer": "automated_integration",
+      "at": "2026-09-28T16:32:05.153100Z"
+    }
+  ],
+  "nativePush": "NOT_EXERCISED (DisabledPushMessagingGateway; no Firebase options in this build)",
+  "nativePushRequirement": "FCM adapter + firebase_messaging client are implemented; delivery still needs FCM credentials (backend) and Firebase options (config/push.local.json). See docs/architecture/NATIVE_PUSH_SETUP.md and audit/phase-5-ui/native-push/NATIVE_PUSH_REPORT.md. Foreground poll evidence here is independent of Push.",
+  "offlineSimulation": "harness_injected_file_gate (ALERT_OFFLINE_GATE) — not a native device-network disconnect"
+}

@@ -1,0 +1,136 @@
+{
+  "fixture": "Dar El Bahja",
+  "device": "iPhone 16e simulator (isolated; Finjan simulator untouched)",
+  "layer": "harness_injected_push_hint",
+  "nativeDelivery": "NOT_EXERCISED — no APNs/FCM message, no OS banner, no native tap",
+  "backend": "live local backend (PUSH_PROVIDER=disabled); device-token API is real",
+  "tokenPrefix": "sim-harness-1790612720696",
+  "harnessResult": "PASS",
+  "error": null,
+  "steps": [
+    {
+      "id": "token_registered_after_session_ready",
+      "status": "PASS",
+      "detail": {
+        "token": "sim-harness-1790612720696-1",
+        "server": {
+          "accountId": "0d00c071-d000-7000-8000-000000000001",
+          "active": true
+        }
+      },
+      "layer": "harness_injected_push_hint",
+      "at": "2026-09-28T16:25:45.061455Z"
+    },
+    {
+      "id": "foreground_push_and_poll_deduped",
+      "status": "PASS",
+      "detail": {
+        "orderId": "01a0e8d6-32bc-73b5-bd68-39981d69f0aa",
+        "alertAppearances": 1
+      },
+      "layer": "harness_injected_push_hint",
+      "at": "2026-09-28T16:26:00.453767Z"
+    },
+    {
+      "id": "tap_opens_correct_pending_order",
+      "status": "PASS",
+      "detail": {
+        "orderId": "01a0e8d6-32bc-73b5-bd68-39981d69f0aa",
+        "detailOpen": true
+      },
+      "layer": "harness_injected_push_hint",
+      "at": "2026-09-28T16:26:05.252620Z"
+    },
+    {
+      "id": "tap_on_handled_order_not_shown_as_awaiting",
+      "status": "PASS",
+      "detail": {
+        "orderId": "01a0e8d6-32bc-73b5-bd68-39981d69f0aa",
+        "hostAccept": 200,
+        "detailOpen": true,
+        "acceptButtonVisible": false,
+        "incomingLabelVisible": false
+      },
+      "layer": "harness_injected_push_hint",
+      "at": "2026-09-28T16:26:12.617316Z"
+    },
+    {
+      "id": "tap_on_inaccessible_order_does_not_navigate",
+      "status": "PASS",
+      "detail": {
+        "unknownOrder": "01a0ffff-ffff-7fff-8fff-ffffffffffff",
+        "foreignMerchantHint": true
+      },
+      "layer": "harness_injected_push_hint",
+      "at": "2026-09-28T16:26:22.768797Z"
+    },
+    {
+      "id": "token_refresh_rotates_server_row",
+      "status": "PASS",
+      "detail": {
+        "old": {
+          "accountId": "0d00c071-d000-7000-8000-000000000001",
+          "active": false
+        },
+        "new": {
+          "accountId": "0d00c071-d000-7000-8000-000000000001",
+          "active": true
+        }
+      },
+      "layer": "harness_injected_push_hint",
+      "at": "2026-09-28T16:26:29.484967Z"
+    },
+    {
+      "id": "permission_denied_deactivates_token",
+      "status": "PASS",
+      "detail": {
+        "server": {
+          "accountId": "0d00c071-d000-7000-8000-000000000001",
+          "active": false
+        },
+        "settingsCopy": true
+      },
+      "layer": "harness_injected_push_hint",
+      "at": "2026-09-28T16:26:36.856101Z"
+    },
+    {
+      "id": "permission_regranted_reregisters",
+      "status": "PASS",
+      "detail": {
+        "server": {
+          "accountId": "0d00c071-d000-7000-8000-000000000001",
+          "active": true
+        }
+      },
+      "layer": "harness_injected_push_hint",
+      "at": "2026-09-28T16:26:39.272347Z"
+    },
+    {
+      "id": "cold_start_tap_opens_after_auth_and_navigation_ready",
+      "status": "PASS",
+      "detail": {
+        "orderId": "01a0e8d7-09c6-78d0-82ec-542708385b45",
+        "statesSeen": [
+          "boot/loading/held=true/detail=false",
+          "ready/home/held=false/detail=false",
+          "ready/home/held=false/detail=true"
+        ]
+      },
+      "layer": "harness_injected_push_hint",
+      "at": "2026-09-28T16:26:48.523053Z"
+    },
+    {
+      "id": "logout_deactivates_install_token",
+      "status": "PASS",
+      "detail": {
+        "server": {
+          "accountId": "0d00c071-d000-7000-8000-000000000001",
+          "active": false
+        },
+        "providerDeleteCalls": 2
+      },
+      "layer": "harness_injected_push_hint",
+      "at": "2026-09-28T16:26:51.970992Z"
+    }
+  ]
+}

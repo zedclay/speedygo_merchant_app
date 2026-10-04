@@ -1,0 +1,10 @@
+{
+  "db": "speedygo_dev",
+  "accounts": 6,
+  "merchants": 12,
+  "products": 79,
+  "selling_col": 0,
+  "merchant_max_updated": "2026-09-20 14:44:30.977+01",
+  "capturedAt": "2026-10-04T00:55:13.463854Z",
+  "source": "catalogue_store_after_fx"
+}

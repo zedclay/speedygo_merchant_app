@@ -1,0 +1,133 @@
+{
+  "suite": "merchant_catalogue_store_contracts_completion",
+  "pass": 21,
+  "fail": 0,
+  "results": [
+    {
+      "id": "C0",
+      "check": "additive columns/tables present",
+      "result": "PASS",
+      "detail": "count=12"
+    },
+    {
+      "id": "C1",
+      "check": "legacy product sellingUnit null",
+      "result": "PASS",
+      "detail": "status=200 found=True"
+    },
+    {
+      "id": "C2",
+      "check": "OWNER sets PLAT unit",
+      "result": "PASS",
+      "detail": "status=200 label=Plat"
+    },
+    {
+      "id": "C3",
+      "check": "weight unit KG rejected",
+      "result": "PASS",
+      "detail": "status=400 code=CATALOG_SELLING_UNIT_INVALID"
+    },
+    {
+      "id": "C4",
+      "check": "MANAGER CUSTOM unit with label",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "id": "C5",
+      "check": "STAFF cannot edit selling unit",
+      "result": "PASS",
+      "detail": "status=403 code=MERCHANT_ROLE_FORBIDDEN"
+    },
+    {
+      "id": "C6",
+      "check": "clear selling unit to null",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "id": "C7",
+      "check": "OWNER patches store info fields",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "id": "C8",
+      "check": "invalid publicEmail rejected",
+      "result": "PASS",
+      "detail": "status=400 code=MERCHANT_BRANCH_INVALID"
+    },
+    {
+      "id": "C9",
+      "check": "STAFF cannot patch store info",
+      "result": "PASS",
+      "detail": "status=403"
+    },
+    {
+      "id": "C10",
+      "check": "MANAGER reopens persisted store info",
+      "result": "PASS",
+      "detail": "status=200 desc='Cuisine familiale d\u2019essai.'"
+    },
+    {
+      "id": "C11",
+      "check": "commerce-verticals active only (items)",
+      "result": "PASS",
+      "detail": "status=200 n=3"
+    },
+    {
+      "id": "C12",
+      "check": "OWNER assigns classification",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "id": "C13",
+      "check": "inactive vertical rejected",
+      "result": "PASS",
+      "detail": "status=404 code=COMMERCE_VERTICAL_INACTIVE"
+    },
+    {
+      "id": "C14",
+      "check": "STAFF cannot assign classification",
+      "result": "PASS",
+      "detail": "status=403"
+    },
+    {
+      "id": "C15",
+      "check": "MANAGER clears classification",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "id": "C16",
+      "check": "support topics seeded for Merchant",
+      "result": "PASS",
+      "detail": "status=200 n=5"
+    },
+    {
+      "id": "C17",
+      "check": "support FAQ articles present",
+      "result": "PASS",
+      "detail": "status=200 n=3"
+    },
+    {
+      "id": "C18",
+      "check": "create without topic/subject rejected",
+      "result": "PASS",
+      "detail": "status=400 code=SUPPORT_SUBJECT_INVALID"
+    },
+    {
+      "id": "C19",
+      "check": "create ticket with topic+subject",
+      "result": "PASS",
+      "detail": "status=201 ref=sgt_01a104684abe7911a898ed466f2af911"
+    },
+    {
+      "id": "C20",
+      "check": "STAFF cannot create support ticket",
+      "result": "PASS",
+      "detail": "status=403"
+    }
+  ]
+}

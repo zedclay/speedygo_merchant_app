@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "layer": "live_merchant_ui",
+  "bundleId": "com.speedygo.speedygoMerchantApp",
+  "fixture": "Geo Live Fixture Merchant",
+  "phone": "+213555019998",
+  "publicReference": "sgm_01a0bf0fae06732f86a98e3d8984eded",
+  "merchantId": "01a0bf0f-ae06-7992-a9ee-22fed331d03f",
+  "branchId": "01a0bf0f-aeef-70bb-8f86-dfe2a5e80154",
+  "simulatorUdid": "8DB9007A-B816-4EC5-86ED-C627AC60F2C5",
+  "simulator": "iPhone 16e",
+  "mode": "reopen",
+  "finjanUntouched": true,
+  "customerAppUntouched": true,
+  "entrypoint": "integration_test/wilaya_commune_fixture_live_test.dart",
+  "steps": [
+    {
+      "id": "fixture_home",
+      "status": "PASS",
+      "detail": "Live Geo Branch",
+      "layer": "live_merchant_ui",
+      "fixture": "Geo Live Fixture Merchant",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-21T01:49:05.096499Z"
+    },
+    {
+      "id": "cold_reopen_restore",
+      "status": "PASS",
+      "detail": "{\"wilayaText\":\"31 — Oran\",\"communeText\":\"Oran\",\"addressText\":\"12 Rue Didouche Mourad\",\"prior\":{\"wilayaCode\":\"31\",\"wilayaName\":\"Oran\",\"communeName\":\"Oran\",\"addressText\":\"12 Rue Didouche Mourad\",\"wilayaDisplay\":\"31 — Oran\",\"communeDisplay\":\"Oran\",\"phone\":\"+213555099888\",\"expectedCoords\":{\"lat\":36.753,\"lng\":3.058}}}",
+      "layer": "live_merchant_ui",
+      "fixture": "Geo Live Fixture Merchant",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-21T01:49:20.427329Z"
+    },
+    {
+      "id": "registration_live_selectors",
+      "status": "NOT RUN",
+      "detail": "Fixture already has branch; establishment step not reachable. Shared AdminLocationSelectField covered by store-address + layout unit test.",
+      "layer": "live_merchant_ui",
+      "fixture": "Geo Live Fixture Merchant",
+      "bundleId": "com.speedygo.speedygoMerchantApp",
+      "at": "2026-09-21T01:49:23.430769Z"
+    }
+  ],
+  "at": "2026-09-21T01:49:23.431191Z"
+}

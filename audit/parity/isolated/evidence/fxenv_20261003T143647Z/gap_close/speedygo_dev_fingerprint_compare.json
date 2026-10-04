@@ -1,0 +1,34 @@
+{
+  "products": {
+    "before_rows": 79,
+    "after_rows": 79,
+    "rows_equal": true,
+    "before_md5": "e539ea8763362d8b0f99e83fef8c10db",
+    "after_md5_id_only": "4c5dc963d229486e324120f1b4e479c6",
+    "md5_equal": false
+  },
+  "sessions": {
+    "before_rows": 253,
+    "after_rows": 253,
+    "rows_equal": true,
+    "before_md5": "e55238374bfa5af58dcbad3cd7eee0b1",
+    "after_md5_id_only": "6e11669926ac7a54a4dba577a9ce63d3",
+    "md5_equal": false
+  },
+  "orders": {
+    "before_rows": 76,
+    "after_rows": 76,
+    "rows_equal": true,
+    "before_md5": "b0a9b2b7d742b0c9094032c92497aed5",
+    "after_md5_id_only": "6f5c73a36aecd604e7062d8681d8ff8b",
+    "md5_equal": false
+  },
+  "merchant_branches": {
+    "before_rows": 12,
+    "after_rows": 12,
+    "rows_equal": true,
+    "before_md5": "8b543c593a0f9310fb4848f73d14b329",
+    "after_md5_id_only": "924f745969ca8f3e605160a9b5dd5816",
+    "md5_equal": false
+  }
+}

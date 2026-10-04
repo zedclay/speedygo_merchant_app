@@ -1,0 +1,687 @@
+[
+ {
+  "batch": "A/E",
+  "file": "A_shell_E_reports.md",
+  "ref": "*(shell)* canonical bottom nav + top app bar",
+  "route": "`MerchantShell` (all `/app/*` tabs); `MerchantScaffold` AppBar",
+  "status": "`needs_work`",
+  "work": "Replace the text-colour `BottomNavigationBar` with the canonical pill nav (colour pending a decision). Align the tab app bars: `#F9F9FF` surface, `shadow-sm`, primary title, and the bell with a red dot on every main tab."
+ },
+ {
+  "batch": "A/E",
+  "file": "A_shell_E_reports.md",
+  "ref": "`merchant_operational_dashboard_french`",
+  "route": "`HomeScreen` → `/app/home`",
+  "status": "`needs_work`",
+  "work": "Add the KPI strip for Ventes and Commandes from `GET /reports/sales?period=TODAY&branchId`; omit Temps moyen. Restyle the chip, card accent, CTA and the READY card. Remove the dead banner tap. Settle the Ouvert/Actif pill question.",
+  "diff": "Flutter shows *two* pills, \"Ouvert\" (availability) and \"Actif\" (operational status).; The store name truncates (\"Finjan C…\") in the capture.; The Ouvert pill uses bg `#E8F5D3` / text `tertiary`, with a 7 px dot and no pulse."
+ },
+ {
+  "batch": "A/E",
+  "file": "A_shell_E_reports.md",
+  "ref": "`merchant_reports_overview_french`",
+  "route": "`ReportsScreen` → `/app/reports`",
+  "status": "`needs_work`",
+  "work": "Header chrome (storefront avatar, primary title, bell, shadow), card/rank-badge tokens, KPI order, pill nav, and a French label for settlement status. Growth % and average prep time stay omitted.",
+  "diff": "Title \"Rapports\" (shortened for 1.35 text scale, documented in; `MERCHANT_REPORTS_IMPLEMENTATION_REPORT.md` §11.1), in `onSurface` rather than primary.; No storefront avatar, no bell (a refresh icon instead), no shadow."
+ },
+ {
+  "batch": "A/E",
+  "file": "A_shell_E_reports.md",
+  "ref": "`sales_summary_french`",
+  "route": "Merged into `ReportsScreen` (documented decision)",
+  "status": "`not_applicable_duplicate`",
+  "work": "No separate screen. The payment-method block and \"+12 % vs Hier\" are blocked (no contract). Optional: hero-style net figure in the overview.",
+  "diff": "No drill-down screen and no centred brand header.; The net figure is `titleLarge` in a row, not a 40 px hero.; Trend has no y-axis ticks, no peak highlight and first/middle/last labels only."
+ },
+ {
+  "batch": "A/E",
+  "file": "A_shell_E_reports.md",
+  "ref": "`daily_summary_french`",
+  "route": "Partly covered by `ReportsScreen` with the TODAY period",
+  "status": "`blocked_contract`",
+  "work": "Its own sections (breakdown bar, preparation efficiency, cancellation reasons, prep time) have no contract. The shared KPIs are already in the overview.",
+  "diff": "No daily screen, title block, date pill or avatar.; No breakdown bar, efficiency block, cancellation reasons or CTA.; Temps Prép. shows \"—\" / \"Non suivi\" in the overview."
+ },
+ {
+  "batch": "A/E",
+  "file": "A_shell_E_reports.md",
+  "ref": "`popular_products_french`",
+  "route": "`TopProductsScreen` → `/app/reports/top-products`",
+  "status": "`partial_contract_limited`",
+  "work": "Card/ribbon/badge styling. Images are only partly available (no `hasImage` on the aggregate). Row navigation and search need product decisions or a contract.",
+  "diff": "Title \"Top produits\" (shortened, documented §11.1) vs \"Produits les plus vendus\".; Subtitle is the branch name only.; Refresh icon instead of search; no bottom border (AppBar, elevation 0)."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`active_orders_list_french`",
+  "route": "`/app/orders` · `OrdersScreen` · En cours segment",
+  "status": "`partial_contract_limited`",
+  "work": "Rebuild card (ref/name/amount/ribbon/inline actions), counts on every chip, bell + open/closed header; omit search/Aujourd'hui/Urgent/5+ (no contract)",
+  "diff": "subtitle shows `operationalStatus` (\"Actif\") not open/closed; refresh icon instead of bell with unread dot.; Status tabs are separate `ChoiceChip`s with checkmark in a horizontal scroller, not a single segmented container; count shown only on the selected chip (`list.total`); label \"Nouvelles\" vs \"Nouveaux\"; extra \"Acceptées\" chip (documented, contract state CONFIRMED+ACCEPTED).; customer name first + `StatusBadge`; `sgo_…` ref line + copy; payment line; \"Marchandises\" + GMS; \"Créée · dd/MM HH:mm\". No ribbon, no \"À accepter immédiatement\" banner, no inline Accepter/✕, no item count, no per-state variants (prep timer / ready moped row). Left 4px primary bar instead of 2px tinted border + ribbon."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`merchant_order_history_unified`",
+  "route": "`/app/orders` · Historique segment",
+  "status": "`partial_contract_limited`",
+  "work": "Day-grouped cards with left status bar + icon chips; omit search and \"Tout\" (no multi-status query)",
+  "diff": "No \"Tout\"; chips \"Annulées / Terminées / Échouées\" (order differs: reference Livré first). Default history filter is `cancelled` (`orders_screen.dart:55`).; No day grouping, no left success/error bar, no icon chips, no strike-through amount, no opacity for cancelled; card shows same fields as active list."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`incoming_order_alert_french`",
+  "route": "`MerchantAlertHost` overlay · `IncomingOrderAlertOverlay`",
+  "status": "`needs_work`",
+  "work": "White sheet over blue header, bento tiles, dashed items card, white footer; relabel GMS total; no countdown/Urgent/logo",
+  "diff": "Header is a left-aligned 20px/800 label + close ✕ on blue; no centered layout, no rings, no timer (correct omission).; Body is a floating white card on blue (rest of screen blue), not a rounded-top sheet over surface.; avatar + name with `sgo_…` ref underneath (reference: \"Client\"/\"Commande\" two-column)."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`incoming_order_details_french`",
+  "route": "`/app/orders/:orderId` · `CREATED`+`PENDING_ACCEPTANCE`",
+  "status": "`partial_contract_limited`",
+  "work": "Primary-container identity block, item rows, CTA \"Choisir le temps de préparation\"; omit expiry, loyalty, note, customer total",
+  "diff": "App bar \"Commande\" + refresh (reference brand title — shell rule favours task title; keep task title).; Header is a white card with a warning-toned banner; no primary-container identity block with received time + locality.; No customer sub-line; no note block."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`accept_order_and_preparation_time_french`",
+  "route": "Detail → `showAcceptPreparationSheet`",
+  "status": "`needs_work`",
+  "work": "Bento time grid + \"Temps personnalisé\" (5–120 supported), summary card, \"Confirmer et Accepter\"; no Recommandé / dispatch claim",
+  "diff": "Modal bottom sheet, not a page; no store badge, no summary card (only ref under title).; Presets as Material `ChoiceChip`s (\"15 min\"…) in a `Wrap`, default 25 selected without label; no bento tiles.; No custom time; no callout; CTA \"Confirmer l’acceptation\" (no icon in reference wording \"Confirmer et Accepter\"); secondary \"Annuler\" instead of \"Refuser la commande\"."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`commande_en_pr_paration_tat_initial`",
+  "route": "Detail · `CONFIRMED`+`ACCEPTED`",
+  "status": "`partial_contract_limited`",
+  "work": "Big MM:SS boxes + \"Prévu pour\", Client/Paiement tiles, footer Modifier temps + Support; keep \"Démarrer la préparation\"; no Appeler/note/Synchronisé",
+  "diff": "App bar \"Commande\" + refresh; no state title/ref/status chip.; Countdown is a text card (\"Temps restant · 24:54\" + TextButton \"Modifier temps\" + \"Heure prévue : 04:48\"); no big MM:SS boxes, no \"Prévu pour\" pill.; No Client/Paiement tiles; items card without checkboxes/\"Tout cocher\"/\"N produits • N unités\"."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`commande_en_pr_paration_en_cours`",
+  "route": "Detail · `ACTIVE`+`PREPARING`",
+  "status": "`partial_contract_limited`",
+  "work": "Same structure (light-box timer variant), item cards, footer Modifier temps + Support + Marquer comme prête (not checklist-gated)",
+  "diff": "As `…_tat_initial`, plus: no customer card with photo/COD chips/call; no progress pill; items not card-per-row; \"Marquer comme prête\" enabled (correct per contract; reference disables pending checklist)."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`preparing_order_french_1`",
+  "route": "Detail · ACCEPTED/PREPARING",
+  "status": "`not_applicable_duplicate`",
+  "work": "Duplicate of `…_tat_initial` (+ stock kitchen photo); do not implement separately",
+  "diff": "Same as `…_tat_initial`; kitchen image absent (correct)."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`preparing_order_french_2`",
+  "route": "Detail · `ACTIVE`+`PREPARING`",
+  "status": "`not_applicable_duplicate`",
+  "work": "Duplicate of `…_en_cours`; its enabled CTA is the contract-correct state",
+  "diff": "As `…_en_cours`."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`mise_jour_du_temps_de_pr_paration`",
+  "route": "Detail → `showUpdatePreparationSheet`",
+  "status": "`partial_contract_limited`",
+  "work": "Full-screen/sheet parity: context header, state card, 4-col grid, \"Saisie personnalisée\" (1–60), comparison card; drop notification claim",
+  "diff": "Bottom sheet with left title, no close icon, no order/customer context header.; \"Heure prévue actuelle\" + time headline + \"Initiale : HH:mm\"; no icon circle, no \"En cours\" chip.; Presets are `ChoiceChip`s with checkmark in a `Wrap`, selected primary-container + white text (better contrast than reference)."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`update_preparation_time_french`",
+  "route": "same",
+  "status": "`not_applicable_duplicate`",
+  "work": "Variant with named Client/Livreur notification (unsupported); fold into `mise_jour…`",
+  "diff": "As `mise_jour…`."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`delayed_order_french`",
+  "route": "Detail late state (`PreparationCountdownBanner` late) + update sheet",
+  "status": "`partial_contract_limited`",
+  "work": "Late hero card from server instant; \"+\" only revision; omit reason chips taxonomy, minus, customer ETA, driver row",
+  "diff": "Late shown as a banner line + error hint inside a white card; no hero card, no reason tiles, no +/- time editor, no impact list, no support CTA."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`mark_order_ready_french`",
+  "route": "Detail · PREPARING → mark-ready",
+  "status": "`needs_work`",
+  "work": "Optional confirm step with packing list + note block, \"Confirmer et marquer prêt\" / \"Retour\"; checklist must not gate",
+  "diff": "No confirmation step, no packing list, no note; one-tap mutation."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`waiting_for_driver_french`",
+  "route": "Detail · `READY` (+ delivery `SEARCHING_DRIVER`)",
+  "status": "`needs_work`",
+  "work": "Status hero, \"Prête depuis\" (ORDER_READY event), order + pickup cards, sticky Actualiser + Contacter le support; no wait ETA",
+  "diff": "No \"Prête depuis\"; no dispatch card with icon; search copy is a text line.; Summary card lacks amount/payment status and items (items in a separate card).; No pickup card; no Actualiser / Contacter le support footer."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`driver_assigned_call_action_at_bottom`",
+  "route": "Detail · READY + delivery `DRIVER_ASSIGNED`/`TO_PICKUP`",
+  "status": "`partial_contract_limited`",
+  "work": "Status header + summary + pickup card + support; driver identity, call and ETA blocked",
+  "diff": "No driver card, no ETA box, no call CTA; header generic; status label missing for `TO_PICKUP`; no summary rows/pickup card/support."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`driver_arrived_french`",
+  "route": "Detail · READY + delivery `AT_PICKUP`",
+  "status": "`partial_contract_limited`",
+  "work": "\"Livreur Arrivé\" banner with arrival time/wait from `DRIVER_ARRIVED_PICKUP` event; fix AT_PICKUP label; no driver card/call/confirm",
+  "diff": "No arrival banner, no driver card, no contents card styling, no handoff/problem CTAs."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`driver_arrived_secure_handoff_final_ux`",
+  "route": "— (would be detail · `AT_PICKUP`)",
+  "status": "`blocked_contract`",
+  "work": "Pickup code + merchant validation do not exist; only post-pickup \"Remise confirmée\" state is supported",
+  "diff": "Entire screen absent."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`cancelled_order_french`",
+  "route": "Detail · `status=CANCELLED`",
+  "status": "`needs_work`",
+  "work": "Centered hero, actor (\"par le client\"/rejet) from statusHistory, reason chip, summary, Support + Voir l'historique, \"Compris\"",
+  "diff": "No hero; no actor line; reason as \"Motif :\" text; no initials avatar/rows; no support/history buttons; no \"Compris\"; generic app bar."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`d_tails_de_la_commande_finance_transparente`",
+  "route": "Detail · finance card (+ COMPLETED layout)",
+  "status": "`needs_work`",
+  "work": "Status card + localized timeline (order + delivery events), finance card styling, support CTA; no receipt/driver card/note",
+  "diff": "No status card with delivered time; `_HistoryCard` lists raw `eventType` codes (\"MERCHANT_ACCEPTED · …\") and its title string is misspelled `'Histororique'` (`app_strings.dart:231`); no timeline visuals, no delivery events.; labels follow contract (correct); commission not shown negative/red; no payment method chip.; No driver card (correct), no receipt/support footer."
+ },
+ {
+  "batch": "B",
+  "file": "B_orders.md",
+  "ref": "`signaler_un_probl_me_standardis`",
+  "route": "none (new route)",
+  "status": "`partial_contract_limited`",
+  "work": "New order-scoped support form → `POST /merchant/:merchantId/support`; no category/photos/draft; OWNER/MANAGER only",
+  "diff": "Screen absent. Every \"Support\" / \"Contacter le support\" / \"Signaler un problème\" CTA in this batch currently has no destination."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`liste_des_produits_standardis_e`",
+  "route": "`/app/catalog` · `CatalogTab.products`",
+  "status": "`needs_work`",
+  "work": "Restyle rows/header/FAB to ref, drop category+description lines and \",00\", add \"En stock/Rupture\" label above toggle; paginate beyond first 50 products; omit \"/ unité\" suffix (no contract)",
+  "diff": "left-aligned \"Catalogue\" with `refresh` action; no menu icon, no bell (ref centered primary title + menu + bell).; No filter button next to search; search placeholder uses `…` ellipsis char (fine) — Flutter search has `surface` fill, 12px radius.; Material `ChoiceChip` with check mark and `primaryContainer` fill + `onPrimary` text (ref: no check, on-primary-container text, full-pill radius, white unselected with outline)."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`liste_des_produits_menu_ouvert`",
+  "route": "`/app/catalog` · row `PopupMenuButton`",
+  "status": "`partial_contract_limited`",
+  "work": "Menu to ref style (icons, divider, error delete); remove dead \"Dupliquer\" snackbar or wire real composition; \"Archiver\" wording has no contract",
+  "diff": "Only 2 items, no icons, no divider, no availability or delete entries.; \"Dupliquer\" shows `AppStrings.catalogDuplicateUnsupported` (\"La duplication n'est pas disponible.\") — violates \"no dead actions\".; Material default popup styling vs 220 px rounded-xl bordered card."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`product_search_and_filters_french`",
+  "route": "none (inline search + chips only)",
+  "status": "`partial_contract_limited`",
+  "work": "New filters screen from filter icon: search, category, status via server `q/categoryId/available` + `total`; omit units & translation filters; \"Image manquante\" only client-side",
+  "diff": "Screen absent. No status filter, no result count, no reset."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`liste_des_cat_gories_standardis_e`",
+  "route": "`/app/catalog` · `CatalogTab.categories`",
+  "status": "`needs_work`",
+  "work": "Rows to ref (article count, inline Visible/Masqué toggle, more_vert, hidden styling), search, \"Réorganiser\" header action; omit Arabic line",
+  "diff": "Rows show name + `StatusBadge` \"Actif\"/\"Inactif\" + chevron (ref: \"Visible\"/\"Masqué\" toggle + count + more_vert). No inline toggle, no article count, no hidden styling.; No category search, no filter button, no \"Réorganiser\" action.; FAB is extended Material (radius 16) vs full-pill."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`d_tails_de_la_cat_gorie_standardis`",
+  "route": "none (row tap → editor)",
+  "status": "`needs_work`",
+  "work": "New category detail route: header w/ edit, details card (count, visibility, sortOrder), product list w/ toggles, \"Ajouter un produit\" FAB",
+  "diff": "Screen absent."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`modifier_la_cat_gorie_standardis`",
+  "route": "`/app/catalog/categories/:id`",
+  "status": "`partial_contract_limited`",
+  "work": "Tighten visuals (card radius, toggle style); AR name + description stay omitted/gap; map `CATALOG_CATEGORY_IN_USE` on delete",
+  "diff": "Section titles primary-colored with Material `translate`/`settings` icons (ref on-surface titles, `settings_suggest`).; Card radius 16 + elevation vs 8px + soft shadow. Field fill `surfaceContainerLow` (tinted) vs `surface-bright`.; Material primary thumb vs ref green track + check thumb."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`reorder_categories_french`",
+  "route": "none",
+  "status": "`partial_contract_limited`",
+  "work": "New reorder screen (`ReorderableListView`) saving via per-category `PATCH sortOrder`; no atomic batch endpoint",
+  "diff": "Screen absent. Current list order = backend `sortOrder asc` (`catalog.repository.ts` L56)."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`ajouter_un_produit_standardis`",
+  "route": "`/app/catalog/products/new`",
+  "status": "`partial_contract_limited`",
+  "work": "Media dropzone + price row visuals; wire variants/extras (supported) after first save; AR fields, prep time, unit remain unsupported",
+  "diff": "Section order matches (Informations → Médias → Prix et préparation → Configuration) and CTA copy matches.; Red required asterisks on name/category/price (ref FR has none).; AR name/desc, \"Temps de prép.\", \"Unité de vente\", \"Variantes obligatoires\", \"Suppléments optionnels\" all rendered as disabled gap rows."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`d_tails_du_produit_standardis`",
+  "route": "none (row tap → editor)",
+  "status": "`partial_contract_limited`",
+  "work": "Optional read-only detail screen: header card, config groups (supported), client preview; no fake short ID; omit AR/unit/prep",
+  "diff": "Screen absent. Editor has a local \"Aperçu du produit\" bottom sheet (name/desc/category/price/availability/image) — partial analogue of \"Aperçu Client\"."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`modifier_le_produit_standardis_image_corrig_e`",
+  "route": "`/app/catalog/products/:id`",
+  "status": "`needs_work`",
+  "work": "Header subtitle from `updatedAt`, solid banner, availability card, section headers, warning icon, \"Enregistrer les modifications\"; replace variants/extras gap rows with real navigation",
+  "diff": "Title is left-aligned (`centerTitle: false`, matches) but there is no \"Dernière mise à jour\" subtitle; `CatalogProduct` does not parse `updatedAt`.; Banner is 12% tint + primary text (ref solid primary-container + light text).; Availability is a sectioned `SwitchListTile` (\"Actuellement en stock.\" with period, primary switch) vs compact card with status icon + tertiary toggle."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`product_image_upload_and_crop_french`",
+  "route": "none (picker → direct)",
+  "status": "`needs_work`",
+  "work": "Crop/rotate/zoom screen client-side (existing `image` pkg), tips card, \"Utiliser cette image\"; copy must say 2 Mo not 5 Mo",
+  "diff": "Screen absent; no crop, rotate, zoom, or tips."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`duplicate_product_french`",
+  "route": "dead menu item",
+  "status": "`partial_contract_limited`",
+  "work": "PNG unusable; build from HTML only if composition approved; \"brouillon\" has no contract",
+  "diff": "Screen absent; current menu item is a dead action."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`delete_product_logic_fixed`",
+  "route": "`AlertDialog` in editor",
+  "status": "`partial_contract_limited`",
+  "work": "Dedicated delete screen; \"archive\" ⇒ only `available=false`; historical-use known only after `DELETE` 409",
+  "diff": "Dialog vs full screen; no archive option; 409 not explained."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`product_availability_french`",
+  "route": "inline `Switch` only",
+  "status": "`partial_contract_limited`",
+  "work": "Screen with Disponible/Rupture (boolean) only; omit temporary/scheduled, history, sync badge, order ref",
+  "diff": "Screen absent."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`bulk_availability_french`",
+  "route": "none",
+  "status": "`partial_contract_limited`",
+  "work": "Multi-select screen looping `PATCH available`; per-item failure reporting; omit temporary status + time presets",
+  "diff": "Screen absent."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`required_variants_french`",
+  "route": "gap row \"Variantes obligatoires\"",
+  "status": "`needs_work`",
+  "work": "New screen on option-groups API (`required=true`); omit AR names + drag reorder; client API + models missing",
+  "diff": "Screen absent; entry misreported as unsupported."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`optional_extras_french`",
+  "route": "gap row \"Suppléments optionnels\"",
+  "status": "`needs_work`",
+  "work": "New screen on option-groups API (`required=false`, `maxSelections`, option `available`); omit drag reorder",
+  "diff": "Screen absent."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "`selling_units_french`",
+  "route": "gap row \"Unité de vente\"",
+  "status": "`blocked_contract`",
+  "work": "No unit field anywhere in contract; keep omitted",
+  "diff": "Screen absent."
+ },
+ {
+  "batch": "C",
+  "file": "C_catalogue.md",
+  "ref": "root `MerchantScreens/screen.png` + `code.html` (Arabic add-product)",
+  "route": "would be `/app/catalog/products/new` in `ar` locale",
+  "status": "`not_applicable_duplicate` (pending decision)",
+  "work": "Different design, not a translation of the French form — see section"
+ },
+ {
+  "batch": "D",
+  "file": "D_store.md",
+  "ref": "`store_profile_french`",
+  "route": "`/app/profile` · `StoreProfileScreen`",
+  "status": "`needs_work`",
+  "work": "Use bound branch cover as hero; fix \"Informations générales\" (routes to read-only settings); align row order/copy/icons; keep preview/owner/call omitted (contract)",
+  "diff": "Hero is a static gradient (`surfaceContainerHigh → surfaceDim → primaryContainer`), height; 168, even when a branch cover is bound; the cover is instead shown in the 64px logo slot via; `MerchantBranchCoverThumb`. The reference puts the cover in the hero and a logo in the tile."
+ },
+ {
+  "batch": "D",
+  "file": "D_store.md",
+  "ref": "`store_information_french`",
+  "route": "none post-onboarding; wizard step ≈ `/access/registration` `_EstablishmentStep`",
+  "status": "`partial_contract_limited`",
+  "work": "Decide whether \"Informations générales\" editor exists; if so build branch name + phone editor (supported) and omit AR name/description/email/ETA (not supported)",
+  "diff": "Post-onboarding: screen entirely missing.; Wizard chrome (\"Étape 4 de 4\", \"Continuer\") does not fit a post-onboarding editor; would need; \"Enregistrer les modifications\"."
+ },
+ {
+  "batch": "D",
+  "file": "D_store.md",
+  "ref": "`merchant_information_french`",
+  "route": "wizard step ≈ `/access/registration` `_ActivityStep`",
+  "status": "`exception_approved`",
+  "work": "Registration is an approved exception; manager name / pro email / NIF have no contract — do not build post-onboarding",
+  "diff": "Registration asks only the commerce name; manager name, pro email and NIF are absent by; design (evidence goes through Documents step)."
+ },
+ {
+  "batch": "D",
+  "file": "D_store.md",
+  "ref": "`store_contact_and_address_french`",
+  "route": "`/app/profile/address` · `StoreAddressScreen`",
+  "status": "`partial_contract_limited`",
+  "work": "Fix false \"visible par les clients\" helper; restyle to outlined floating-label fields; CTA copy; keep public contact / pickup instructions omitted",
+  "diff": "Title matches; `centerTitle: true` vs left-aligned; title color `onSurface` vs primary.; `primaryContainer/10` wash, `bodySmall` primary text vs `surface-container-low`; + border + `body-md` on-surface-variant."
+ },
+ {
+  "batch": "D",
+  "file": "D_store.md",
+  "ref": "`store_address_french`",
+  "route": "wizard step ≈ `_EstablishmentStep`; post-onboarding = `StoreAddressScreen`",
+  "status": "`not_applicable_duplicate`",
+  "work": "Same state as contact/address (onboarding framing); landmark field unsupported",
+  "diff": "Wizard framing (Continuer, wordmark) duplicates registration; post-onboarding covered by; `store_contact_and_address_french`.; \"Position confirmée\" badge + name/commune footer are not in `StoreAddressScreen`'s map card"
+ },
+ {
+  "batch": "D",
+  "file": "D_store.md",
+  "ref": "`store_map_location_french`",
+  "route": "`LocationPickerScreen` (pushed from `StoreAddressScreen`)",
+  "status": "`partial_contract_limited`",
+  "work": "Pass branch label; primary title/CTA tokens; omit address search (no geocoding) and owner footer (no owner name)",
+  "diff": "Title \"Position du magasin\" and CTA \"Confirmer l’emplacement\" + `check_circle_outline`; match. Pin shape matches (no pulse rings). GPS + zoom controls match.; No right header icon; header uses `titleMedium` w700."
+ },
+ {
+  "batch": "D",
+  "file": "D_store.md",
+  "ref": "`store_logo_and_cover_french`",
+  "route": "`/app/profile/cover` · `StoreCoverScreen`",
+  "status": "`partial_contract_limited`",
+  "work": "Align cover card, outlined-error \"Supprimer\", sticky CTA copy; logo blocked (no contract)",
+  "diff": "Title/centered matches (color onSurface vs primary).; `MerchantContractGapRow` \"Modifier / Supprimer — Non disponible actuellement\" in; place of buttons + preview (correct omission)."
+ },
+ {
+  "batch": "D",
+  "file": "D_store.md",
+  "ref": "`store_category_selection_french`",
+  "route": "none",
+  "status": "`blocked_contract`",
+  "work": "No Merchant read/write for `CommerceVertical`; admin-assigned single vertical; product decision needed",
+  "diff": "Screen missing."
+ },
+ {
+  "batch": "D",
+  "file": "D_store.md",
+  "ref": "`store_availability_control_french`",
+  "route": "`/app/profile/availability` · `StoreAvailabilityScreen`",
+  "status": "`needs_work`",
+  "work": "Show today's real hours; add 1 HEURE preset; closing warning; accurate active-order count; real relative \"Dernière mise à jour\"",
+  "diff": "Segment labels \"Selon les horaires\" / \"Fermé\" vs \"OUVERT\" / \"FERMÉ\"; server-driven; Ouvert/Fermé pill added under the name. Documented decision; (`STORE_AVAILABILITY_LIVE_REPORT.md` notes: segment never labeled \"Ouvert\"). Keep."
+ },
+ {
+  "batch": "D",
+  "file": "D_store.md",
+  "ref": "`temporary_closure_french`",
+  "route": "`/app/profile/availability/temporary` · `TemporaryClosureScreen`",
+  "status": "`needs_work`",
+  "work": "Remove hardcoded \"Aujourd'hui à 15:30\"; branch name as app-bar subtitle; zero-count copy; accurate count",
+  "diff": "Structure, copy and reason icons match; single-column reasons match HTML.; Store name rendered as body text above the card instead of app-bar subtitle; (`MerchantScaffold` supports `subtitle`). No `help_outline` (no help destination — correct)."
+ },
+ {
+  "batch": "D",
+  "file": "D_store.md",
+  "ref": "`horaires_d_ouverture_pur`",
+  "route": "`/app/profile/hours` · `OpeningHoursScreen`",
+  "status": "`needs_work`",
+  "work": "Row list + day editor; multi-interval support (currently drops intervals 2–3); status card; Sunday-first; CTA copy",
+  "diff": "one `MerchantCard` per day with inline \"Ouverture\"/\"Fermeture\" `InputDecorator` fields; vs a single list card with one-line summaries + chevron to a day editor.; Order Lundi→Dimanche (ISO) vs Dimanche-first (Algerian week)."
+ },
+ {
+  "batch": "D",
+  "file": "D_store.md",
+  "ref": "`horaires_exceptionnels_format_24h`",
+  "route": "none",
+  "status": "`blocked_contract`",
+  "work": "Date-specific hours explicitly out of scope in both foundation docs; needs new domain/ERD/contract",
+  "diff": "Screen missing."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_notification_center_french`",
+  "route": "`/app/notifications` → `NotificationsScreen`",
+  "status": "`needs_work`",
+  "work": "Move \"Tout marquer comme lu\" to app bar, pill chips without checkmark, 48px type-icon circles, time top-right; omit Compte/Support chips, inline Accepter and help FAB (no contract / no screen).",
+  "diff": "`MerchantScaffold` title + refresh `IconButton`; \"Tout marquer comme lu\" is a left-aligned body `TextButton` above the chips instead of the app-bar trailing action.; Material `ChoiceChip` with checkmark and outlined unselected state; only \"Tout\" and \"Commandes\" (Commandes = `MERCHANT_ORDER_CREATED` only).; \"Aujourd’hui\" / \"Hier\" / `dd/MM/yyyy` in `labelMedium` onSurfaceVariant, not uppercase outline; reference uses \"Aujourd'hui\" + \"Plus tôt\"."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`order_notification_settings_french`",
+  "route": "`/app/notifications/settings` → `NotificationSettingsScreen`",
+  "status": "`partial_contract_limited`",
+  "work": "Full-bleed permission banner + risk strip, grouped bordered cards, sticky save bar, title \"Paramètres de notification\"; volume slider and repeat-reminder have no alert-engine capability; lock-screen/preview are OS-controlled.",
+  "diff": "Title \"Alertes\" (`notifSettingsScreenTitle`) vs \"Paramètres de notification\"; the Profil row that opens it is labelled \"Paramètres de notification\" (inconsistent). Default app bar, no bottom border.; Permission banner is a `MerchantCard` (radius 16) with permission-state copy; no risk strip.; explanatory note \"Ces interrupteurs contrôlent uniquement…\" and an extra \"Alertes dans l’application\" toggle (real pref `foregroundAlertsEnabled`)."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_settings_french`",
+  "route": "`/app/profile/settings` → `ProfileSettingsScreen`",
+  "status": "`needs_work`",
+  "work": "Rebuild as grouped nav-row cards (Compte / Opérations / Préférences / Support & légal) using only real destinations; icon-left red outlined logout; fix misleading \"Sécurité, langue, déconnexion\" subtitle on Profil hub.",
+  "diff": "Title left-aligned default app bar (not centred 24 bold primary).; avatar initials from merchant name, merchant name, role label, branch — reference shows a person name + store.; \"COMPTE\" card contains read-only text lines (Commerce / Établissement / Rôle) instead of nav rows."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_language_french`",
+  "route": "none post-auth (pre-auth `/language` → `LanguageScreen` only)",
+  "status": "`needs_work`",
+  "work": "Add in-app language screen under `/app/…` reusing `setLocale`; selectable cards + note + sticky \"Appliquer les modifications\". Arabic copy does not exist yet (RTL only) → product decision.",
+  "diff": "No in-app language screen at all; settings has no Langue row.; Pre-auth screen is two buttons, no cards, no preview, no note, no apply step."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_logout_french`",
+  "route": "settings → `AlertDialog` (`_confirmLogout`)",
+  "status": "`needs_work`",
+  "work": "Replace dialog with full-screen confirmation: account card, conditional operational warning from real active-order count + availability, preserved-data note, \"Se déconnecter\" (error fill) + \"Annuler et retourner\".",
+  "diff": "Dialog vs full screen; no account card, no operational warning, no preserved-data note, no icon CTA; destructive action is a text button.; `audit/phase-4-ui/SCREEN_MATRIX.md:45` recorded \"matches: yes\" — this inventory disagrees (structure differs materially)."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_support_french`",
+  "route": "none",
+  "status": "`partial_contract_limited`",
+  "work": "New support screen: \"Nouveau ticket\", active/resolved lists from `GET /merchant/:id/support` (OWNER/MANAGER only). Topic cards, FAQ card and ticket titles have no contract.",
+  "diff": "Screen does not exist."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`staff_and_account_access_french`",
+  "route": "none",
+  "status": "`blocked_contract`",
+  "work": "Read-only roster impossible: only caller's own membership is exposed. Own role already shown in settings. Mutations out of scope (prior instruction).",
+  "diff": "Screen does not exist. Per prior instruction (\"Do not create a staff-management feature\"): only a read-only view of existing membership/role is assessable; Révoquer / Renvoyer / Annuler / Inviter / more menus are out of scope."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`premium_splash_and_session_routing_french`",
+  "route": "`/` → `SplashScreen`",
+  "status": "`exception_approved`",
+  "work": "None (approved). Differences summarized only."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_onboarding_manage_business_unified`",
+  "route": "`/onboarding` page 3",
+  "status": "`exception_approved`",
+  "work": "None (approved)."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_onboarding_manage_preparation_unified`",
+  "route": "`/onboarding` page 2",
+  "status": "`exception_approved`",
+  "work": "None (approved)."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_onboarding_receive_orders_unified`",
+  "route": "`/onboarding` page 1",
+  "status": "`exception_approved`",
+  "work": "None (approved)."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_phone_login_french`",
+  "route": "`/phone` → `PhoneScreen`",
+  "status": "`exception_approved`",
+  "work": "None (Customer-aligned, approved)."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_otp_verification_french`",
+  "route": "`/otp` → `OtpScreen`",
+  "status": "`exception_approved`",
+  "work": "None (Customer-aligned, approved)."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_registration_french`",
+  "route": "`/access/registration` step 1 → `_AccountStep`",
+  "status": "`exception_approved`\\*",
+  "work": "State/routing approved. If visuals are not covered: 2-col role cards, section icons, locked phone field; owner name / e-mail / consent have no contract.",
+  "diff": "Title \"Inscription\" in primary; progress row \"Étape 1 sur 4\" + \"25%\" (not uppercase, no step name), then headline \"Configuration du compte\".; vertical list tiles with subtitle hints (`storefront_outlined` / `badge_outlined`) instead of 2-col icon cards.; plain card with text + hint, not a locked input."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`business_document_upload_french`",
+  "route": "`/access/registration` step 3 → `_DocumentsStep`",
+  "status": "`exception_approved`\\*",
+  "work": "Closest match already. If visuals not covered: third tip, privacy note, header title \"Vérification\". RC/NIF/ID naming and sequential lock not in contract.",
+  "diff": "App bar title \"Inscription\" (shared `_RegScaffold`), no logo.; Document titles are SpeedyGo evidence categories (\"Identité de l’activité\", \"Enregistrement de l’activité\", \"Document complémentaire\") with Obligatoire/Facultatif labels — not RC/NIF/ID.; Attached state shows type icon + check badge (no image thumbnail); \"+ Ajouter\" is `rounded 8` not a pill."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_verification_pending_french`",
+  "route": "`/verification/pending` → `_PendingVerificationBody`",
+  "status": "`exception_approved`\\*",
+  "work": "If visuals not covered: add \"Contacter le support\" (contract exists, no UI), status-card copy; no priority chip, submitted date, step timestamps or SLA/SMS promise (no contract).",
+  "diff": "Header present (icon + brand) but no FR chip.; Headline is merchant name; no person name.; title + \"Référence : <publicReference>\" + guidance text; no priority chip, no submitted date."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_verification_review_french`",
+  "route": "`/access/registration` step 4 → `_ReviewStep`",
+  "status": "`exception_approved`\\*",
+  "work": "If visuals not covered: info banner, section headers with \"Modifier\", doc chips grid, address instead of raw coordinates; owner name, category, customer preview, declaration have no/partial contract.",
+  "diff": "No info banner; title \"Révision\" rendered as headline under shared \"Inscription\" app bar.; \"Informations du commerce\" (merchant name), \"Documents d’entreprise\" (text rows \"Ajouté\"/\"Non fourni\"), \"Détails de l’établissement\" (name, phone, address, raw \"Coordonnées lat, lng\"); no Propriétaire block, no chips grid, no map, no customer preview.; \"Modifier\" as plain `TextButton` without icon."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_verification_approved_french`",
+  "route": "none (ACTIVE → `/app/home` or `/access/need-branch`)",
+  "status": "`exception_approved`\\*",
+  "work": "No interstitial exists. Whether to add a one-time approval screen is an unresolved product decision (routing is inside the exception).",
+  "diff": "No interstitial; user lands on Accueil."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_verification_rejected_french`",
+  "route": "`/verification/rejected` → `_LegacyVerificationBody`",
+  "status": "`exception_approved`\\*",
+  "work": "If visuals not covered: hero + reference badge + guidance + support link + sticky \"Corriger et soumettre\"/\"Se déconnecter\"; per-item reasons and per-document verdicts have no contract.",
+  "diff": "Generic `MerchantScaffold` with title \"Dossier à corriger\"; card with merchant name, \"À corriger\" badge and two stacked generic paragraphs (`verificationRejectedBody` + `regRejectionNoReason`, redundant).; Checklist of evidence states (\"Ajouté\") instead of per-item verdicts.; \"Modifier\" (filled), \"Actualiser le statut\" (outlined), \"Se déconnecter\" (text). No hero, no reference badge, no support link."
+ },
+ {
+  "batch": "F/G",
+  "file": "F_settings_G_auth.md",
+  "ref": "`merchant_verification_resubmission_french`",
+  "route": "REJECTED → `openRegistrationCorrections()` → `RegistrationHostScreen`",
+  "status": "`exception_approved`\\*",
+  "work": "If visuals not covered: correction-mode header \"Correction du dossier\" + \"Action requise\" intro inside the wizard; refusal motifs, NIF previous/new value have no contract.",
+  "diff": "No correction-mode presentation; identical to first-time registration (title, progress, copy).; No motif, no \"Refusé\" chips, no previous value; document replacement uses the normal document cards."
+ }
+]
