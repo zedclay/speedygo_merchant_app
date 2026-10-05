@@ -131,7 +131,7 @@ class LanguageScreen extends ConsumerWidget {
             children: [
               const SizedBox(height: 48),
               Text(
-                'Langue / اللغة',
+                AppStrings.languageBilingualTitle,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               const SizedBox(height: 24),
@@ -148,7 +148,7 @@ class LanguageScreen extends ConsumerWidget {
                         width: 22,
                         child: CircularProgressIndicator(strokeWidth: 2),
                       )
-                    : const Text('Français'),
+                    : Text(AppStrings.languageOptionFrench),
               ),
               const SizedBox(height: 12),
               OutlinedButton(
@@ -158,7 +158,7 @@ class LanguageScreen extends ConsumerWidget {
                     : () => ref
                           .read(sessionControllerProvider.notifier)
                           .setLocale('ar'),
-                child: const Text('العربية'),
+                child: Text(AppStrings.languageOptionArabic),
               ),
               if (session.errorMessage != null) ...[
                 const SizedBox(height: 16),
@@ -208,13 +208,13 @@ class RestoreScreen extends ConsumerWidget {
                   onPressed: () => ref
                       .read(sessionControllerProvider.notifier)
                       .retryRestore(),
-                  child: const Text(AppStrings.restoreRetry),
+                  child: Text(AppStrings.restoreRetry),
                 ),
               TextButton(
                 onPressed: () => ref
                     .read(sessionControllerProvider.notifier)
                     .invalidateLocalSession(),
-                child: const Text(AppStrings.restoreOtherAccount),
+                child: Text(AppStrings.restoreOtherAccount),
               ),
             ],
           ),

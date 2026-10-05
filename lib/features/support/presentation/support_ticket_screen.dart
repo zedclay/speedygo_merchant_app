@@ -100,7 +100,7 @@ class _SupportTicketScreenState extends ConsumerState<SupportTicketScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
-                const Text(AppStrings.supportTicketLoadError),
+                Text(AppStrings.supportTicketLoadError),
                 const SizedBox(height: 12),
                 Align(
                   alignment: Alignment.centerRight,
@@ -108,7 +108,7 @@ class _SupportTicketScreenState extends ConsumerState<SupportTicketScreen> {
                     key: const Key('support-ticket-retry'),
                     onPressed: () =>
                         ref.invalidate(supportTicketProvider(widget.ticketId)),
-                    child: const Text(AppStrings.retry),
+                    child: Text(AppStrings.retry),
                   ),
                 ),
               ],

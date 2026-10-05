@@ -276,7 +276,7 @@ class _ProductFiltersScreenState extends ConsumerState<ProductFiltersScreen> {
         TextButton(
           key: const Key('filters-reset'),
           onPressed: _reset,
-          child: const Text(AppStrings.catalogFiltersReset),
+          child: Text(AppStrings.catalogFiltersReset),
         ),
       ],
       body: _withCatalog(ref, (state) {
@@ -376,7 +376,7 @@ class _ProductFiltersScreenState extends ConsumerState<ProductFiltersScreen> {
                         ),
                       ),
                       Text(
-                        AppStrings.catalogProductsCount(results.length),
+                        AppStrings.catalogProductsCount('${results.length}'),
                         key: const Key('filters-count'),
                         style: theme.textTheme.bodyMedium?.copyWith(
                           color: AppColors.onSurfaceVariant,
@@ -406,7 +406,7 @@ class _ProductFiltersScreenState extends ConsumerState<ProductFiltersScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Flexible(
+                      Flexible(
                         child: Text(AppStrings.catalogFiltersApply),
                       ),
                       const SizedBox(width: 8),
@@ -515,7 +515,7 @@ class _ReorderCategoriesScreenState
     if (!mounted) return;
     if (failed.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text(AppStrings.catalogReorderSaved)),
+        SnackBar(content: Text(AppStrings.catalogReorderSaved)),
       );
       context.pop();
       return;
@@ -543,7 +543,7 @@ class _ReorderCategoriesScreenState
         }
         final order = _order!;
         if (!canManage) {
-          return const Center(child: Text(AppStrings.catalogStaffReadOnly));
+          return Center(child: Text(AppStrings.catalogStaffReadOnly));
         }
         return Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -600,7 +600,7 @@ class _ReorderCategoriesScreenState
                 onPressed: _saving || !_dirty
                     ? null
                     : () => setState(() => _order = List.of(_initial)),
-                child: const Text(AppStrings.catalogFiltersReset, maxLines: 1),
+                child: Text(AppStrings.catalogFiltersReset, maxLines: 1),
               ),
               primary: FilledButton(
                 key: const Key('reorder-save'),
@@ -614,7 +614,7 @@ class _ReorderCategoriesScreenState
                           color: AppColors.onPrimary,
                         ),
                       )
-                    : const Text(
+                    : Text(
                         AppStrings.catalogReorderSave,
                         maxLines: 2,
                         textAlign: TextAlign.center,
@@ -727,9 +727,9 @@ class _BulkAvailabilityScreenState
       SnackBar(
         content: Text(
           failed.isEmpty
-              ? AppStrings.catalogBulkDone(done)
-              : '${AppStrings.catalogBulkDone(done)} '
-                    '${AppStrings.catalogBulkFailed(failed.length)}',
+              ? AppStrings.catalogBulkDone(done.toString())
+              : '${AppStrings.catalogBulkDone(done.toString())} '
+                    '${AppStrings.catalogBulkFailed('${failed.length}')}',
         ),
       ),
     );
@@ -754,7 +754,7 @@ class _BulkAvailabilityScreenState
       ),
       body: _withCatalog(ref, (state) {
         if (!canManage) {
-          return const Center(child: Text(AppStrings.catalogStaffReadOnly));
+          return Center(child: Text(AppStrings.catalogStaffReadOnly));
         }
         final groups = <(String, List<CatalogProduct>)>[
           for (final c in state.categories)
@@ -777,7 +777,7 @@ class _BulkAvailabilityScreenState
               child: ListView(
                 padding: const EdgeInsets.fromLTRB(16, 16, 16, 16),
                 children: [
-                  const _InfoNote(text: AppStrings.catalogBulkNote),
+                  _InfoNote(text: AppStrings.catalogBulkNote),
                   const SizedBox(height: 16),
                   MerchantCard(
                     child: Column(
@@ -836,7 +836,7 @@ class _BulkAvailabilityScreenState
                               ),
                             ),
                           ),
-                          items: const [
+                          items: [
                             DropdownMenuItem(
                               value: true,
                               child: Text(AppStrings.catalogAvailableOption),
@@ -898,7 +898,7 @@ class _BulkAvailabilityScreenState
                         key: const Key('bulk-apply'),
                         onPressed: _saving || _selected.isEmpty ? null : _apply,
                         icon: const Icon(Icons.published_with_changes),
-                        label: const Text(AppStrings.catalogBulkApply),
+                        label: Text(AppStrings.catalogBulkApply),
                       ),
                     ),
                   ),
@@ -1103,7 +1103,7 @@ class CategoryDetailScreen extends ConsumerWidget {
               foregroundColor: AppColors.onPrimary,
               onPressed: () => context.push(AppRoutes.catalogProductNew),
               icon: const Icon(Icons.add),
-              label: const Text(AppStrings.catalogAddProduct),
+              label: Text(AppStrings.catalogAddProduct),
             )
           : null,
       body: _withCatalog(ref, (state) {
@@ -1171,7 +1171,7 @@ class CategoryDetailScreen extends ConsumerWidget {
                             } catch (_) {
                               if (!context.mounted) return;
                               ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
+                                SnackBar(
                                   content: Text(
                                     AppStrings.catalogVisibilityError,
                                   ),
@@ -1200,7 +1200,7 @@ class CategoryDetailScreen extends ConsumerWidget {
                       ),
                       const SizedBox(width: 8),
                       Text(
-                        AppStrings.catalogDisplayOrder(c.sortOrder),
+                        AppStrings.catalogDisplayOrder(c.sortOrder.toString()),
                         style: theme.textTheme.bodyMedium?.copyWith(
                           color: AppColors.onSurfaceVariant,
                         ),
@@ -1219,7 +1219,7 @@ class CategoryDetailScreen extends ConsumerWidget {
             ),
             const SizedBox(height: 12),
             if (products.isEmpty)
-              const Padding(
+              Padding(
                 padding: EdgeInsets.symmetric(vertical: 24),
                 child: Text(
                   AppStrings.catalogCategoryEmpty,
@@ -1307,7 +1307,7 @@ class _CategoryProductRow extends ConsumerWidget {
                         } catch (_) {
                           if (!context.mounted) return;
                           ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
+                            SnackBar(
                               content: Text(
                                 AppStrings.catalogAvailabilityError,
                               ),
@@ -1425,7 +1425,7 @@ class _ProductAvailabilityScreenState
           .toggleAvailability(product.id, choice);
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text(AppStrings.catalogAvailabilitySaved)),
+        SnackBar(content: Text(AppStrings.catalogAvailabilitySaved)),
       );
       context.pop();
     } catch (e) {
@@ -1469,7 +1469,7 @@ class _ProductAvailabilityScreenState
                     caption: _categoryName(state, product.categoryId),
                   ),
                   const SizedBox(height: 24),
-                  const _InfoNote(text: AppStrings.catalogAvailabilityNote),
+                  _InfoNote(text: AppStrings.catalogAvailabilityNote),
                   const SizedBox(height: 24),
                   Text(
                     AppStrings.catalogAvailabilityState,
@@ -1503,7 +1503,7 @@ class _ProductAvailabilityScreenState
                   ],
                   if (!canManage) ...[
                     const SizedBox(height: 16),
-                    const Text(AppStrings.catalogStaffReadOnly),
+                    Text(AppStrings.catalogStaffReadOnly),
                   ],
                 ],
               ),
@@ -1519,7 +1519,7 @@ class _ProductAvailabilityScreenState
                         ? null
                         : () => _save(product),
                     icon: const Icon(Icons.save_outlined),
-                    label: const Text(AppStrings.catalogAvailabilitySave),
+                    label: Text(AppStrings.catalogAvailabilitySave),
                   ),
                 ),
               ),
@@ -1604,7 +1604,7 @@ class _ProductDeleteScreenState extends ConsumerState<ProductDeleteScreen> {
           );
         }
         if (!canManage) {
-          return const Center(child: Text(AppStrings.catalogStaffReadOnly));
+          return Center(child: Text(AppStrings.catalogStaffReadOnly));
         }
         final choice =
             _choice ??
@@ -1619,7 +1619,7 @@ class _ProductDeleteScreenState extends ConsumerState<ProductDeleteScreen> {
                 children: [
                   _ProductSummaryCard(product: product, overline: branch),
                   const SizedBox(height: 24),
-                  const _InfoNote(
+                  _InfoNote(
                     title: AppStrings.catalogDeleteWarningTitle,
                     text: AppStrings.catalogDeleteWarningBody,
                   ),
@@ -1688,7 +1688,7 @@ class _ProductDeleteScreenState extends ConsumerState<ProductDeleteScreen> {
                         shape: const StadiumBorder(),
                       ),
                       onPressed: _saving ? null : () => context.pop(),
-                      child: const Text(AppStrings.cancel),
+                      child: Text(AppStrings.cancel),
                     ),
                   ),
                 ],

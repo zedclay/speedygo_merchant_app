@@ -460,7 +460,7 @@ class CatalogController extends AsyncNotifier<CatalogState> {
         tab: tab,
       ).timeout(kCatalogLoadTimeout);
     } on TimeoutException {
-      throw const NetworkException(
+      throw NetworkException(
         AppStrings.catalogLoadError,
         code: 'CATALOG_TIMEOUT',
       );
@@ -485,7 +485,7 @@ class CatalogController extends AsyncNotifier<CatalogState> {
         merchantId.isEmpty ||
         branchId == null ||
         branchId.isEmpty) {
-      throw const NetworkException(
+      throw NetworkException(
         AppStrings.catalogLoadError,
         code: 'CATALOG_NO_BRANCH',
       );

@@ -1,0 +1,931 @@
+[
+  {
+    "key": "catalogTabProducts",
+    "fr": "Produits",
+    "params": []
+  },
+  {
+    "key": "catalogTabCategories",
+    "fr": "Catégories",
+    "params": []
+  },
+  {
+    "key": "catalogSearchHint",
+    "fr": "Rechercher un produit…",
+    "params": []
+  },
+  {
+    "key": "catalogAllCategories",
+    "fr": "Tous",
+    "params": []
+  },
+  {
+    "key": "catalogEmptyProducts",
+    "fr": "Aucun produit dans ce catalogue.",
+    "params": []
+  },
+  {
+    "key": "catalogEmptyCategories",
+    "fr": "Aucune catégorie pour le moment.",
+    "params": []
+  },
+  {
+    "key": "catalogLoadError",
+    "fr": "Impossible de charger le catalogue.",
+    "params": []
+  },
+  {
+    "key": "catalogInStock",
+    "fr": "En stock",
+    "params": []
+  },
+  {
+    "key": "catalogOutOfStock",
+    "fr": "Rupture",
+    "params": []
+  },
+  {
+    "key": "catalogUnavailableSection",
+    "fr": "La création et l’édition avancées de produits ne sont pas branchées dans cet écran.",
+    "params": []
+  },
+  {
+    "key": "reportsTitle",
+    "fr": "Rapports",
+    "params": []
+  },
+  {
+    "key": "reportsPeriodToday",
+    "fr": "Aujourd’hui",
+    "params": []
+  },
+  {
+    "key": "reportsPeriodYesterday",
+    "fr": "Hier",
+    "params": []
+  },
+  {
+    "key": "reportsPeriodWeek",
+    "fr": "Cette semaine",
+    "params": []
+  },
+  {
+    "key": "reportsPeriodMonth",
+    "fr": "Ce mois",
+    "params": []
+  },
+  {
+    "key": "reportsFinanceTitle",
+    "fr": "Détails financiers",
+    "params": []
+  },
+  {
+    "key": "reportsGrossSales",
+    "fr": "Ventes brutes",
+    "params": []
+  },
+  {
+    "key": "reportsCommission",
+    "fr": "Commission SpeedyGo",
+    "params": []
+  },
+  {
+    "key": "reportsMerchantNet",
+    "fr": "Net commerçant",
+    "params": []
+  },
+  {
+    "key": "reportsDataUnavailable",
+    "fr": "Données indisponibles",
+    "params": []
+  },
+  {
+    "key": "reportsDataUnavailableShort",
+    "fr": "—",
+    "params": []
+  },
+  {
+    "key": "reportsOrdersMetric",
+    "fr": "Commandes",
+    "params": []
+  },
+  {
+    "key": "reportsPrepTimeMetric",
+    "fr": "Temps prép. moy.",
+    "params": []
+  },
+  {
+    "key": "reportsCancellationsMetric",
+    "fr": "Annulations",
+    "params": []
+  },
+  {
+    "key": "reportsTrendTitle",
+    "fr": "Tendance des ventes",
+    "params": []
+  },
+  {
+    "key": "reportsTopProductsTitle",
+    "fr": "Produits les plus vendus",
+    "params": []
+  },
+  {
+    "key": "reportsTopProductsScreenTitle",
+    "fr": "Top produits",
+    "params": []
+  },
+  {
+    "key": "reportsCommissionMixedRates",
+    "fr": "Commission SpeedyGo (taux variables)",
+    "params": []
+  },
+  {
+    "key": "reportsFinanceUnavailable",
+    "fr": "Données indisponibles",
+    "params": []
+  },
+  {
+    "key": "reportsRatingsTitle",
+    "fr": "Notes clients",
+    "params": []
+  },
+  {
+    "key": "reportsRatingsEmpty",
+    "fr": "Aucune note pour le moment.",
+    "params": []
+  },
+  {
+    "key": "reportsRatingsCount",
+    "fr": "avis",
+    "params": []
+  },
+  {
+    "key": "reportsRatingsUnavailable",
+    "fr": "Données indisponibles",
+    "params": []
+  },
+  {
+    "key": "reportsSettlementsTitle",
+    "fr": "Règlements",
+    "params": []
+  },
+  {
+    "key": "reportsSettlementStatus",
+    "fr": "DRAFTBrouillonFINALIZEDFinaliséStatut inconnu",
+    "params": [
+      "status"
+    ]
+  },
+  {
+    "key": "reportsSettlementsEmpty",
+    "fr": "Aucun règlement pour le moment.",
+    "params": []
+  },
+  {
+    "key": "reportsSettlementsForbidden",
+    "fr": "Les règlements sont réservés au propriétaire ou au responsable.",
+    "params": []
+  },
+  {
+    "key": "reportsLoadError",
+    "fr": "Impossible de charger les indicateurs.",
+    "params": []
+  },
+  {
+    "key": "reportsTrendUnavailable",
+    "fr": "Données indisponibles",
+    "params": []
+  },
+  {
+    "key": "reportsTopProductsUnavailable",
+    "fr": "Données indisponibles",
+    "params": []
+  },
+  {
+    "key": "reportsPeriodCustom",
+    "fr": "Personnalisé",
+    "params": []
+  },
+  {
+    "key": "reportsPeriodSelectorLabel",
+    "fr": "Période du rapport",
+    "params": []
+  },
+  {
+    "key": "reportsCustomRangeTooLong",
+    "fr": "La période personnalisée est limitée à 93 jours.",
+    "params": []
+  },
+  {
+    "key": "reportsAverageBasketMetric",
+    "fr": "Panier moyen",
+    "params": []
+  },
+  {
+    "key": "reportsPrepTimeNotTracked",
+    "fr": "Non suivi",
+    "params": []
+  },
+  {
+    "key": "reportsMerchantDiscount",
+    "fr": "Remise commerçant",
+    "params": []
+  },
+  {
+    "key": "reportsFinanceRestricted",
+    "fr": "Commission et net commerçant réservés au propriétaire ou au responsable.",
+    "params": []
+  },
+  {
+    "key": "reportsFinanceMissingSnapshot",
+    "fr": "Données financières indisponibles pour certaines commandes de la période.",
+    "params": []
+  },
+  {
+    "key": "reportsRefundsCompleted",
+    "fr": "Remboursements finalisés",
+    "params": []
+  },
+  {
+    "key": "reportsRefundAdjustments",
+    "fr": "Ajustements enregistrés",
+    "params": []
+  },
+  {
+    "key": "reportsRefundsNote",
+    "fr": "Les remboursements ne réduisent pas les ventes. Seuls les ajustements enregistrés sur vos règlements vous sont imputés.",
+    "params": []
+  },
+  {
+    "key": "reportsTrendEmpty",
+    "fr": "Aucune vente sur la période.",
+    "params": []
+  },
+  {
+    "key": "reportsTopProductsEmpty",
+    "fr": "Aucun produit vendu sur la période.",
+    "params": []
+  },
+  {
+    "key": "reportsSeeAll",
+    "fr": "Voir tout",
+    "params": []
+  },
+  {
+    "key": "reportsSortOrders",
+    "fr": "Commandes",
+    "params": []
+  },
+  {
+    "key": "reportsSortRevenue",
+    "fr": "Chiffre d’affaires",
+    "params": []
+  },
+  {
+    "key": "reportsTopSales",
+    "fr": "Top des ventes",
+    "params": []
+  },
+  {
+    "key": "reportsRankFirst",
+    "fr": "N°1",
+    "params": []
+  },
+  {
+    "key": "reportsDeletedProduct",
+    "fr": "Produit retiré du catalogue",
+    "params": []
+  },
+  {
+    "key": "reportsSalesLoadError",
+    "fr": "Impossible de charger les ventes.",
+    "params": []
+  },
+  {
+    "key": "reportsTopProductsLoadError",
+    "fr": "Impossible de charger les produits.",
+    "params": []
+  },
+  {
+    "key": "reportsLastUpdated",
+    "fr": "Dernière mise à jour : {time}",
+    "params": [
+      "time"
+    ]
+  },
+  {
+    "key": "reportsSyncedAt",
+    "fr": "Synchronisé à {time}",
+    "params": [
+      "time"
+    ]
+  },
+  {
+    "key": "reportsCommissionWithRate",
+    "fr": "Commission SpeedyGo ({rate})",
+    "params": [
+      "rate"
+    ]
+  },
+  {
+    "key": "reportsOrderCount",
+    "fr": "1 commande{count} commandes",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "reportsUnitCount",
+    "fr": "1 unité{count} unités",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "reportsTotalArticles",
+    "fr": "Total : 1 articleTotal : {count} articles",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "reportsTrendSemantics",
+    "fr": "Tendance des ventes : {orders} commandes, {gross}",
+    "params": [
+      "orders",
+      "gross"
+    ]
+  },
+  {
+    "key": "reportsDailySummaryTitle",
+    "fr": "Résumé quotidien",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryShortcut",
+    "fr": "Résumé quotidien",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryLoadError",
+    "fr": "Impossible de charger le résumé quotidien.",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryEmpty",
+    "fr": "Aucune commande créée pour cette journée.",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummarySalesKpi",
+    "fr": "Ventes",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryOrdersKpi",
+    "fr": "Commandes",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryPrepKpi",
+    "fr": "Temps Prép.",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryCancellationsKpi",
+    "fr": "Annulations",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryBreakdownTitle",
+    "fr": "Répartition des commandes",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryDelivered",
+    "fr": "Livrées",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryInProgress",
+    "fr": "En cours",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryCancelled",
+    "fr": "Annulées",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryPrepEfficiencyTitle",
+    "fr": "Efficacité de préparation",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryPrepAverage",
+    "fr": "Moyenne",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryOnTimeRate",
+    "fr": "À l’heure",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryCancellationMotifs",
+    "fr": "Motifs d’annulation",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryViewOrders",
+    "fr": "Voir toutes les commandes du jour",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryMinutes",
+    "fr": "{minutes} min",
+    "params": [
+      "minutes"
+    ]
+  },
+  {
+    "key": "reportsDailySummaryOnTimePercent",
+    "fr": "{percent} à l’heure",
+    "params": [
+      "percent"
+    ]
+  },
+  {
+    "key": "reportsDailySummaryTodayDate",
+    "fr": "Aujourd’hui, {label}",
+    "params": [
+      "label"
+    ]
+  },
+  {
+    "key": "deliveryImpactTitle",
+    "fr": "Impact sur la livraison",
+    "params": []
+  },
+  {
+    "key": "deliveryImpactMayDelayDriverAssignment",
+    "fr": "La préparation peut retarder la recherche d’un livreur.",
+    "params": []
+  },
+  {
+    "key": "deliveryImpactMayDelayPickup",
+    "fr": "Un livreur est assigné; le retrait peut être retardé.",
+    "params": []
+  },
+  {
+    "key": "deliveryImpactDriverWaiting",
+    "fr": "Le livreur attend la commande.",
+    "params": []
+  },
+  {
+    "key": "deliveryImpactTimingUnavailable",
+    "fr": "Impact exact sur la livraison indisponible.",
+    "params": []
+  },
+  {
+    "key": "deliveryImpactLatestRevision",
+    "fr": "Dernier motif : {reason}",
+    "params": [
+      "reason"
+    ]
+  },
+  {
+    "key": "rejectReasonProductUnavailable",
+    "fr": "Indisponibilité produit",
+    "params": []
+  },
+  {
+    "key": "rejectReasonTooBusy",
+    "fr": "Trop occupé",
+    "params": []
+  },
+  {
+    "key": "rejectReasonClosingSoon",
+    "fr": "Fermeture proche",
+    "params": []
+  },
+  {
+    "key": "rejectReasonOther",
+    "fr": "Autre",
+    "params": []
+  },
+  {
+    "key": "rejectReasonTilesHint",
+    "fr": "Sélectionnez un motif puis précisez si nécessaire.",
+    "params": []
+  },
+  {
+    "key": "catalogAddProduct",
+    "fr": "Ajouter un produit",
+    "params": []
+  },
+  {
+    "key": "catalogEditProduct",
+    "fr": "Modifier le produit",
+    "params": []
+  },
+  {
+    "key": "catalogProductDetail",
+    "fr": "Détail du produit",
+    "params": []
+  },
+  {
+    "key": "catalogAddCategory",
+    "fr": "Ajouter une catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogEditCategory",
+    "fr": "Modifier la catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogProductName",
+    "fr": "Nom du produit (Français)",
+    "params": []
+  },
+  {
+    "key": "catalogProductDescription",
+    "fr": "Description (Français)",
+    "params": []
+  },
+  {
+    "key": "catalogProductPrice",
+    "fr": "Prix de base",
+    "params": []
+  },
+  {
+    "key": "catalogProductCategory",
+    "fr": "Catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogProductAvailable",
+    "fr": "Visible dans le menu",
+    "params": []
+  },
+  {
+    "key": "catalogProductAvailableSub",
+    "fr": "Activer pour rendre disponible",
+    "params": []
+  },
+  {
+    "key": "catalogSaveProduct",
+    "fr": "Enregistrer",
+    "params": []
+  },
+  {
+    "key": "catalogSaveProductEdits",
+    "fr": "Enregistrer les modifications",
+    "params": []
+  },
+  {
+    "key": "catalogPreview",
+    "fr": "Aperçu",
+    "params": []
+  },
+  {
+    "key": "catalogPreviewTitle",
+    "fr": "Aperçu du produit",
+    "params": []
+  },
+  {
+    "key": "catalogPreviewUnavailable",
+    "fr": "Aperçu non disponible actuellement.",
+    "params": []
+  },
+  {
+    "key": "catalogFieldRequired",
+    "fr": "Ce champ est obligatoire.",
+    "params": []
+  },
+  {
+    "key": "catalogPriceInvalid",
+    "fr": "Indiquez un prix valide.",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryRequired",
+    "fr": "Choisissez une catégorie.",
+    "params": []
+  },
+  {
+    "key": "catalogSaveRetryHint",
+    "fr": "Enregistrement impossible. Vérifiez la connexion et réessayez.",
+    "params": []
+  },
+  {
+    "key": "catalogSectionInfo",
+    "fr": "Informations",
+    "params": []
+  },
+  {
+    "key": "catalogSectionMedia",
+    "fr": "Médias",
+    "params": []
+  },
+  {
+    "key": "catalogSectionPrice",
+    "fr": "Prix et préparation",
+    "params": []
+  },
+  {
+    "key": "catalogSectionConfig",
+    "fr": "Configuration",
+    "params": []
+  },
+  {
+    "key": "catalogSectionAvailability",
+    "fr": "Disponibilité",
+    "params": []
+  },
+  {
+    "key": "catalogSectionImage",
+    "fr": "Image du produit",
+    "params": []
+  },
+  {
+    "key": "catalogSectionGeneral",
+    "fr": "Informations générales",
+    "params": []
+  },
+  {
+    "key": "catalogSectionPriceDetails",
+    "fr": "Prix et détails",
+    "params": []
+  },
+  {
+    "key": "catalogOnlineBanner",
+    "fr": "Cet article est actuellement en ligne pour les clients.",
+    "params": []
+  },
+  {
+    "key": "catalogOfflineBanner",
+    "fr": "Cet article n’est pas visible pour les clients.",
+    "params": []
+  },
+  {
+    "key": "catalogPriceWarning",
+    "fr": "Les changements de prix et de disponibilité sont appliqués immédiatement aux clients.",
+    "params": []
+  },
+  {
+    "key": "catalogImagePrimary",
+    "fr": "Image principale",
+    "params": []
+  },
+  {
+    "key": "catalogImageAdd",
+    "fr": "Ajouter une photo",
+    "params": []
+  },
+  {
+    "key": "catalogImageHint",
+    "fr": "JPG, PNG (max. 2 Mo, min. 400 px)",
+    "params": []
+  },
+  {
+    "key": "catalogImageChangePhoto",
+    "fr": "Changer la photo",
+    "params": []
+  },
+  {
+    "key": "catalogInStockNow",
+    "fr": "Actuellement en stock",
+    "params": []
+  },
+  {
+    "key": "catalogOutOfStockNow",
+    "fr": "Actuellement indisponible",
+    "params": []
+  },
+  {
+    "key": "catalogCurrencySuffix",
+    "fr": "DZD",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteProduct",
+    "fr": "Supprimer",
+    "params": []
+  },
+  {
+    "key": "catalogNeedCategory",
+    "fr": "Créez d’abord une catégorie pour ajouter un produit.",
+    "params": []
+  },
+  {
+    "key": "catalogImagePick",
+    "fr": "Choisir une image",
+    "params": []
+  },
+  {
+    "key": "catalogImageFromGallery",
+    "fr": "Choisir dans la galerie",
+    "params": []
+  },
+  {
+    "key": "catalogImageFromCamera",
+    "fr": "Prendre une photo",
+    "params": []
+  },
+  {
+    "key": "catalogImagePluginRestart",
+    "fr": "Redémarrez l’application pour activer la sélection de photos.",
+    "params": []
+  },
+  {
+    "key": "catalogImageFormatError",
+    "fr": "Format non pris en charge. Utilisez une photo JPG ou PNG.",
+    "params": []
+  },
+  {
+    "key": "catalogImageTooSmall",
+    "fr": "Image trop petite. Minimum 400 × 400 pixels.",
+    "params": []
+  },
+  {
+    "key": "catalogImageTooLarge",
+    "fr": "Image trop lourde. Maximum 2 Mo après compression.",
+    "params": []
+  },
+  {
+    "key": "catalogImageChange",
+    "fr": "Changer l’image",
+    "params": []
+  },
+  {
+    "key": "catalogImageRemove",
+    "fr": "Retirer l’image",
+    "params": []
+  },
+  {
+    "key": "catalogImageUploadError",
+    "fr": "Impossible d’envoyer l’image.",
+    "params": []
+  },
+  {
+    "key": "catalogImageBindPartial",
+    "fr": "Produit enregistré, mais l’image n’a pas pu être liée. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "catalogImageRemoteUnavailable",
+    "fr": "Aperçu de l’image non disponible actuellement.",
+    "params": []
+  },
+  {
+    "key": "catalogSaveError",
+    "fr": "Enregistrement impossible. Vérifiez la connexion et réessayez.",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteConfirm",
+    "fr": "Supprimer ce produit ? Les commandes historiques sont conservées.",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryName",
+    "fr": "Nom de la catégorie (Français)",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryActive",
+    "fr": "Visibilité dans le menu",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryActiveSub",
+    "fr": "Afficher cette catégorie aux clients",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryDetails",
+    "fr": "Détails de la catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogCategorySettings",
+    "fr": "Paramètres",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryCancel",
+    "fr": "Annuler",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteCategory",
+    "fr": "Supprimer la catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteCategoryConfirm",
+    "fr": "Supprimer cette catégorie ? Elle doit être vide.",
+    "params": []
+  },
+  {
+    "key": "catalogStaffReadOnly",
+    "fr": "Consultation seule — modifications réservées au propriétaire ou responsable.",
+    "params": []
+  },
+  {
+    "key": "catalogCategorySearchHint",
+    "fr": "Rechercher une catégorie…",
+    "params": []
+  },
+  {
+    "key": "catalogFilterTooltip",
+    "fr": "Filtres",
+    "params": []
+  },
+  {
+    "key": "catalogReorder",
+    "fr": "Réorganiser",
+    "params": []
+  },
+  {
+    "key": "catalogVisible",
+    "fr": "Visible",
+    "params": []
+  },
+  {
+    "key": "catalogHidden",
+    "fr": "Masqué",
+    "params": []
+  },
+  {
+    "key": "catalogArticles",
+    "fr": "{n} article{n} articles",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogMenuAvailability",
+    "fr": "Gérer la disponibilité",
+    "params": []
+  },
+  {
+    "key": "catalogMenuDelete",
+    "fr": "Supprimer",
+    "params": []
+  },
+  {
+    "key": "catalogMenuDuplicate",
+    "fr": "Dupliquer",
+    "params": []
+  },
+  {
+    "key": "duplicateTitle",
+    "fr": "Dupliquer le produit",
+    "params": []
+  },
+  {
+    "key": "duplicateSource",
+    "fr": "Source",
+    "params": []
+  },
+  {
+    "key": "duplicateNewName",
+    "fr": "Nouveau nom du produit",
+    "params": []
+  },
+  {
+    "key": "duplicateNewNameHint",
+    "fr": "Veuillez modifier le nom avant de publier la copie.",
+    "params": []
+  },
+  {
+    "key": "duplicateNamePlaceholder",
+    "fr": "Entrez le nouveau nom",
+    "params": []
+  },
+  {
+    "key": "duplicateClearName",
+    "fr": "Effacer le nom",
+    "params": []
+  },
+  {
+    "key": "duplicateDefaultName",
+    "fr": "Copie de {name}",
+    "params": [
+      "name"
+    ]
+  },
+  {
+    "key": "duplicateCopied",
+    "fr": "Éléments copiés",
+    "params": []
+  },
+  {
+    "key": "duplicateImage",
+    "fr": "Image du produit",
+    "params": []
+  }
+]

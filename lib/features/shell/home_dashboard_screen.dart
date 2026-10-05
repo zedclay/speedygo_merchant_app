@@ -484,7 +484,7 @@ class _ShortcutTiles extends StatelessWidget {
             label: AppStrings.homeCountReady,
             onTap: onReady,
           ),
-          const _ShortcutTile(
+          _ShortcutTile(
             keyName: 'home-count-courier',
             value: AppStrings.homeCountCourierUnavailable,
             label: AppStrings.homeCountCourier,

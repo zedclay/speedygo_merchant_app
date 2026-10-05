@@ -73,7 +73,7 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
                 foregroundColor: AppColors.onPrimary,
                 onPressed: () => showTeamInviteSheet(context),
                 icon: const Icon(Icons.person_add),
-                label: const Text(AppStrings.teamInviteMember),
+                label: Text(AppStrings.teamInviteMember),
               ),
             )
           : null,
@@ -162,7 +162,7 @@ class _ErrorState extends StatelessWidget {
             FilledButton(
               key: const Key('team-retry'),
               onPressed: onRetry,
-              child: const Text(AppStrings.retry),
+              child: Text(AppStrings.retry),
             ),
           ],
         ),
@@ -463,14 +463,14 @@ class _MemberCard extends ConsumerWidget {
                     style: _actionStyle(),
                     onPressed: () => showChangeRoleSheet(context, ref, member),
                     icon: const Icon(Icons.swap_horiz, size: 16),
-                    label: const Text(AppStrings.teamChangeRole),
+                    label: Text(AppStrings.teamChangeRole),
                   ),
                   TextButton.icon(
                     key: Key('team-member-revoke-${member.id}'),
                     style: _actionStyle(color: AppColors.error),
                     onPressed: () => confirmRevokeMember(context, ref, member),
                     icon: const Icon(Icons.person_remove_outlined, size: 16),
-                    label: const Text(AppStrings.teamRevoke),
+                    label: Text(AppStrings.teamRevoke),
                   ),
                 ],
               ),
@@ -571,14 +571,14 @@ class _InvitationCard extends ConsumerWidget {
                       ),
                       onPressed: () =>
                           regenerateInvitationCode(context, ref, invitation),
-                      child: const Text(AppStrings.teamRegenerateCode),
+                      child: Text(AppStrings.teamRegenerateCode),
                     ),
                     TextButton(
                       key: Key('team-invite-cancel-${invitation.id}'),
                       style: _actionStyle(color: AppColors.error),
                       onPressed: () =>
                           confirmCancelInvitation(context, ref, invitation),
-                      child: const Text(AppStrings.teamCancelInvitation),
+                      child: Text(AppStrings.teamCancelInvitation),
                     ),
                   ],
                 ),
@@ -627,25 +627,25 @@ class _RolesSummary extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 12),
-          const _SummaryLine(
+          _SummaryLine(
             roleKey: teamRoleOwner,
             role: AppStrings.teamRoleOwner,
             text: AppStrings.teamSummaryOwner,
           ),
           const SizedBox(height: 12),
-          const _SummaryLine(
+          _SummaryLine(
             roleKey: teamRoleManager,
             role: AppStrings.teamRoleManager,
             text: AppStrings.teamSummaryManager,
           ),
           const SizedBox(height: 12),
-          const _SummaryLine(
+          _SummaryLine(
             roleKey: teamRoleStaff,
             role: AppStrings.teamRoleStaff,
             text: AppStrings.teamSummaryStaff,
           ),
           const SizedBox(height: 12),
-          const _SummaryLine(
+          _SummaryLine(
             roleKey: 'SCOPE',
             icon: Icons.storefront_outlined,
             text: AppStrings.teamSummaryScope,

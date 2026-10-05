@@ -76,7 +76,7 @@ Widget _shell(int index, Widget child) {
           unselectedFontSize: 10,
           selectedItemColor: AppColors.primary,
           unselectedItemColor: AppColors.onSurfaceVariant,
-          items: const [
+          items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.home_outlined),
               label: AppStrings.tabHome,

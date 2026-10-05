@@ -1,0 +1,546 @@
+[
+  {
+    "key": "regLocationConfirm",
+    "ar": "تأكيد الموقع"
+  },
+  {
+    "key": "regLocationUseGps",
+    "ar": "استخدام موقعي"
+  },
+  {
+    "key": "regLocationMoveHint",
+    "ar": "حرّك الخريطة لوضع الدبوس على موقع الاستلام، أو استخدم موقعك عبر GPS."
+  },
+  {
+    "key": "regLocationGpsSuggestion",
+    "ar": "موقع GPS مقترح — أكّد فقط إذا كان موقع استلام المنشأة."
+  },
+  {
+    "key": "regLocationDenied",
+    "ar": "رُفض إذن الموقع. ضع الدبوس يدويًا على الخريطة."
+  },
+  {
+    "key": "regLocationDeniedForever",
+    "ar": "الموقع معطّل لتطبيق SpeedyGo. فعّله من الإعدادات، أو ضع الدبوس يدويًا."
+  },
+  {
+    "key": "regLocationServicesDisabled",
+    "ar": "خدمات الموقع معطّلة. ضع الدبوس يدويًا على الخريطة."
+  },
+  {
+    "key": "regLocationUnavailable",
+    "ar": "موقع GPS غير متاح. ضع الدبوس يدويًا على الخريطة."
+  },
+  {
+    "key": "regBranchPhoneLabel",
+    "ar": "رقم الهاتف"
+  },
+  {
+    "key": "regBranchPhoneHint",
+    "ar": "رقم اتصال المنشأة (مختلف عن رقم تسجيل الدخول)."
+  },
+  {
+    "key": "regPreviewLabel",
+    "ar": "معاينة (بيانات مُدخَلة — غير منشورة)"
+  },
+  {
+    "key": "regBranchIncomplete",
+    "ar": "اسم المنشأة ورقم هاتفها وعنوانها مطلوبة."
+  },
+  {
+    "key": "regCoordsInvalid",
+    "ar": "خط العرض (−90…90) وخط الطول (−180…180) غير صالحين."
+  },
+  {
+    "key": "regCoordsConfirmHint",
+    "ar": "حدّد موقع الاستلام على الخريطة، ثم أكّد."
+  },
+  {
+    "key": "regReviewTitle",
+    "ar": "المراجعة"
+  },
+  {
+    "key": "regReviewDocsTitle",
+    "ar": "المستندات القانونية"
+  },
+  {
+    "key": "regReviewBranchTitle",
+    "ar": "المنشأة"
+  },
+  {
+    "key": "regReviewLocation",
+    "ar": "الموقع"
+  },
+  {
+    "key": "regReviewBody",
+    "ar": "يُرجى التحقّق بعناية من معلوماتك قبل الإرسال النهائي لتجنّب أي تأخير في الاعتماد."
+  },
+  {
+    "key": "regSubmit",
+    "ar": "إرسال للتحقق"
+  },
+  {
+    "key": "regCorrectionTitle",
+    "ar": "تصحيح الملف"
+  },
+  {
+    "key": "regCorrectionActionRequired",
+    "ar": "إجراء مطلوب"
+  },
+  {
+    "key": "regCorrectionIntro",
+    "ar": "صحّح العناصر اللازمة ثم أعد الإرسال. سيتم تفعيل منشأتك {merchantName} بعد الاعتماد."
+  },
+  {
+    "key": "regCorrectionDetails",
+    "ar": "تفاصيل الملف"
+  },
+  {
+    "key": "regCorrectionSubmit",
+    "ar": "إرسال التصحيحات"
+  },
+  {
+    "key": "regContinue",
+    "ar": "متابعة"
+  },
+  {
+    "key": "regEdit",
+    "ar": "تعديل"
+  },
+  {
+    "key": "regMissingSteps",
+    "ar": "أكمل ملفك"
+  },
+  {
+    "key": "regRejectionNoReason",
+    "ar": "يلزم إجراء تصحيحات. حدّث المستندات المعنية ثم أعد الإرسال."
+  },
+  {
+    "key": "regApprovedNext",
+    "ar": "تم اعتماد تجارتك. أكمل بعد ذلك ساعات العمل والكتالوج عند توفّرهما."
+  },
+  {
+    "key": "legalSectionTitle",
+    "ar": "الشروط والإقرار"
+  },
+  {
+    "key": "legalSectionBody",
+    "ar": "قبل الإرسال، اقرأ الشروط التالية ووافق عليها. تُسجَّل موافقتك مع الملف."
+  },
+  {
+    "key": "legalTermsLabel",
+    "ar": "لقد قرأتُ وأوافق على الشروط العامة للتاجر SpeedyGo."
+  },
+  {
+    "key": "legalDeclarationLabel",
+    "ar": "أُقرّ بأن معلومات الملف ومستنداته دقيقة وكاملة."
+  },
+  {
+    "key": "legalVersionTag",
+    "ar": "الإصدار {version}"
+  },
+  {
+    "key": "legalLoading",
+    "ar": "جاري تحميل الشروط…"
+  },
+  {
+    "key": "legalLoadFailed",
+    "ar": "تعذّر تحميل الشروط. تحقّق من اتصالك ثم أعد المحاولة."
+  },
+  {
+    "key": "legalIncomplete",
+    "ar": "الشروط غير متاحة حاليًا. أعد المحاولة لاحقًا."
+  },
+  {
+    "key": "legalRetry",
+    "ar": "إعادة المحاولة"
+  },
+  {
+    "key": "legalConsentRequired",
+    "ar": "وافق على الشروط وإقرار الدقّة لإرسال الملف."
+  },
+  {
+    "key": "legalVersionOutdated",
+    "ar": "تم تحديث الشروط. أعد قراءتها ثم وافق عليها مجددًا قبل الإرسال."
+  },
+  {
+    "key": "legalConsentHint",
+    "ar": "ضع علامة على الخانتين لتفعيل الإرسال."
+  },
+  {
+    "key": "legalContentLink",
+    "ar": "مرجع النص"
+  },
+  {
+    "key": "issuesTitle",
+    "ar": "نقاط يجب تصحيحها"
+  },
+  {
+    "key": "issuesApplicationTitle",
+    "ar": "معلومات الملف"
+  },
+  {
+    "key": "issuesDocumentTitle",
+    "ar": "مستندات يجب استبدالها"
+  },
+  {
+    "key": "issuesDocumentConcerned",
+    "ar": "المستند المعني: {documentTitle}"
+  },
+  {
+    "key": "issuesReplaceDocument",
+    "ar": "استبدال هذا المستند"
+  },
+  {
+    "key": "issuesResolved",
+    "ar": "تم التصحيح"
+  },
+  {
+    "key": "issuesFixHint",
+    "ar": "صحّح النقاط أعلاه (واستبدل المستندات المعنية إن وُجدت)، ووافق مجددًا على الشروط، ثم أرسل الملف."
+  },
+  {
+    "key": "issuesRemaining",
+    "ar": "نقطة واحدة متبقية للتصحيح{count} نقاط متبقية للتصحيح"
+  },
+  {
+    "key": "dossierAttemptLabel",
+    "ar": "المحاولة رقم"
+  },
+  {
+    "key": "dossierSubmittedAtLabel",
+    "ar": "أُرسل في"
+  },
+  {
+    "key": "dossierReviewedAtLabel",
+    "ar": "رُوجع في"
+  },
+  {
+    "key": "dossierConsentLabel",
+    "ar": "تم قبول الشروط"
+  },
+  {
+    "key": "dossierConsentVersions",
+    "ar": "الشروط {terms} · الإقرار {declaration}"
+  },
+  {
+    "key": "settingsTeamRow",
+    "ar": "إدارة الفريق"
+  },
+  {
+    "key": "settingsTeamInvitationsRow",
+    "ar": "الدعوات المستلمة"
+  },
+  {
+    "key": "teamTitle",
+    "ar": "الموظفون والصلاحيات"
+  },
+  {
+    "key": "teamStoreContext",
+    "ar": "إدارة الفريق"
+  },
+  {
+    "key": "teamActiveMembers",
+    "ar": "الأعضاء النشطون"
+  },
+  {
+    "key": "teamPendingInvitations",
+    "ar": "الدعوات قيد الانتظار"
+  },
+  {
+    "key": "teamRolesSummary",
+    "ar": "ملخّص الأدوار"
+  },
+  {
+    "key": "teamRoleOwner",
+    "ar": "المالك"
+  },
+  {
+    "key": "teamRoleManager",
+    "ar": "المسؤول"
+  },
+  {
+    "key": "teamRoleStaff",
+    "ar": "الفريق"
+  },
+  {
+    "key": "teamOwnerBadge",
+    "ar": "إداري"
+  },
+  {
+    "key": "teamSelfBadge",
+    "ar": "أنت"
+  },
+  {
+    "key": "teamPhoneUnavailable",
+    "ar": "الرقم غير متاح"
+  },
+  {
+    "key": "teamRevoke",
+    "ar": "إلغاء الصلاحية"
+  },
+  {
+    "key": "teamChangeRole",
+    "ar": "تعديل الدور"
+  },
+  {
+    "key": "teamRegenerateCode",
+    "ar": "إعادة إنشاء الرمز"
+  },
+  {
+    "key": "teamCancelInvitation",
+    "ar": "إلغاء"
+  },
+  {
+    "key": "teamInviteMember",
+    "ar": "دعوة عضو"
+  },
+  {
+    "key": "teamInvitationExpired",
+    "ar": "منتهية"
+  },
+  {
+    "key": "teamRoleLine",
+    "ar": "الدور: {role}"
+  },
+  {
+    "key": "teamExpiresOn",
+    "ar": "تنتهي في {date}"
+  },
+  {
+    "key": "teamEmptyMembers",
+    "ar": "لا يوجد أعضاء نشطون حاليًا."
+  },
+  {
+    "key": "teamEmptyInvitations",
+    "ar": "لا توجد دعوات قيد الانتظار."
+  },
+  {
+    "key": "teamLoadError",
+    "ar": "تعذّر تحميل الفريق. تحقّق من اتصالك ثم أعد المحاولة."
+  },
+  {
+    "key": "teamForbiddenTitle",
+    "ar": "وصول مقيّد"
+  },
+  {
+    "key": "teamForbiddenBody",
+    "ar": "إدارة الفريق مخصّصة للمالكين والمسؤولين."
+  },
+  {
+    "key": "teamSummaryOwner",
+    "ar": "يدعو الأعضاء ويعدّل الأدوار ويلغي صلاحياتهم."
+  },
+  {
+    "key": "teamSummaryManager",
+    "ar": "يطّلع على قائمة الفريق والدعوات. لا يمكنه الدعوة ولا تعديل الأدوار ولا إلغاء الصلاحيات."
+  },
+  {
+    "key": "teamSummaryStaff",
+    "ar": "لا يملك صلاحية إدارة الفريق."
+  },
+  {
+    "key": "teamSummaryScope",
+    "ar": "تغطي الصلاحيات جميع منشآت التجارة: لا يوجد وصول حسب المنشأة."
+  },
+  {
+    "key": "teamInviteTitle",
+    "ar": "دعوة عضو"
+  },
+  {
+    "key": "teamInviteHint",
+    "ar": "لا يُرسل SpeedyGo رسالة SMS ولا بريدًا إلكترونيًا. سيُسلَّم إليك رمز قبول: انقله بنفسك إلى الشخص المدعو."
+  },
+  {
+    "key": "teamInvitePhoneLabel",
+    "ar": "رقم الهاتف"
+  },
+  {
+    "key": "teamInvitePhoneHint",
+    "ar": "550 12 34 56"
+  },
+  {
+    "key": "teamInvitePhoneHelper",
+    "ar": "الرقم الذي يستخدمه الشخص لتسجيل الدخول إلى SpeedyGo."
+  },
+  {
+    "key": "teamInvitePhoneInvalid",
+    "ar": "أدخل رقم هاتف محمول جزائري صالحًا (9 أرقام)."
+  },
+  {
+    "key": "teamInviteRoleLabel",
+    "ar": "الدور"
+  },
+  {
+    "key": "teamInviteCreate",
+    "ar": "إنشاء الدعوة"
+  },
+  {
+    "key": "teamRoleManagerHint",
+    "ar": "يمكنه الاطّلاع على الفريق. بلا صلاحيات إدارة."
+  },
+  {
+    "key": "teamRoleStaffHint",
+    "ar": "وصول تشغيلي، دون صلاحية إدارة الفريق."
+  },
+  {
+    "key": "teamCodeTitle",
+    "ar": "رمز القبول"
+  },
+  {
+    "key": "teamCodeRegeneratedTitle",
+    "ar": "رمز قبول جديد"
+  },
+  {
+    "key": "teamCodeInstruction",
+    "ar": "لا يُرسل SpeedyGo رسالة SMS ولا بريدًا إلكترونيًا. انسخ هذا الرمز وانقله بنفسك إلى {phone}. لن يُعرض مجددًا بعد إغلاق هذه النافذة."
+  },
+  {
+    "key": "teamCodeRegeneratedNote",
+    "ar": "الرمز السابق لم يعد صالحًا."
+  },
+  {
+    "key": "teamCodeCopy",
+    "ar": "نسخ الرمز"
+  },
+  {
+    "key": "teamCodeCopied",
+    "ar": "تم نسخ الرمز."
+  },
+  {
+    "key": "teamCodeDone",
+    "ar": "إنهاء"
+  },
+  {
+    "key": "teamRevokeTitle",
+    "ar": "إلغاء الصلاحية؟"
+  },
+  {
+    "key": "teamRevokeBody",
+    "ar": "سيفقد {phone} الوصول إلى هذه التجارة وتُغلق جلساته. لن يُحذف حسابه على SpeedyGo."
+  },
+  {
+    "key": "teamRevoked",
+    "ar": "تم إلغاء الصلاحية."
+  },
+  {
+    "key": "teamCancelInviteTitle",
+    "ar": "إلغاء الدعوة؟"
+  },
+  {
+    "key": "teamCancelInviteBody",
+    "ar": "رمز القبول الخاص بـ {phone} لن يعود صالحًا."
+  },
+  {
+    "key": "teamCancelInviteConfirm",
+    "ar": "إلغاء الدعوة"
+  },
+  {
+    "key": "teamKeep",
+    "ar": "إبقاء"
+  },
+  {
+    "key": "teamInviteCancelled",
+    "ar": "تم إلغاء الدعوة."
+  },
+  {
+    "key": "teamRoleSheetTitle",
+    "ar": "تعديل الدور"
+  },
+  {
+    "key": "teamRoleSheetHint",
+    "ar": "إذا قلّل الدور من صلاحياته، تُغلق جلسات العضو ويتعيّن عليه إعادة تسجيل الدخول."
+  },
+  {
+    "key": "teamRoleSave",
+    "ar": "حفظ"
+  },
+  {
+    "key": "teamRoleUpdated",
+    "ar": "تم تحديث الدور."
+  },
+  {
+    "key": "teamErrorGeneric",
+    "ar": "تعذّر تنفيذ الإجراء حاليًا. أعد المحاولة."
+  },
+  {
+    "key": "teamErrorConflict",
+    "ar": "تغيّرت القائمة في الأثناء. تم تحديثها الآن: تحقّق ثم أعد المحاولة."
+  },
+  {
+    "key": "teamErrorDuplicateMember",
+    "ar": "هذا الرقم جزء من الفريق بالفعل."
+  },
+  {
+    "key": "teamErrorDuplicateInvite",
+    "ar": "توجد دعوة قيد الانتظار لهذا الرقم بالفعل."
+  },
+  {
+    "key": "teamErrorOwnerProtected",
+    "ar": "لا يمكن تعديل المالك من هنا."
+  },
+  {
+    "key": "teamErrorSelf",
+    "ar": "لا يمكنك تعديل صلاحيتك الخاصة."
+  },
+  {
+    "key": "teamErrorInviteGone",
+    "ar": "هذه الدعوة لم تعد موجودة."
+  },
+  {
+    "key": "teamErrorInviteExpired",
+    "ar": "انتهت صلاحية هذه الدعوة. اطلب رمزًا جديدًا من المالك."
+  },
+  {
+    "key": "teamErrorCodeInvalid",
+    "ar": "الرمز غير صحيح."
+  },
+  {
+    "key": "teamErrorPhoneMismatch",
+    "ar": "هذه الدعوة موجّهة إلى رقم آخر."
+  },
+  {
+    "key": "teamErrorInvalidInput",
+    "ar": "تحقّق من الرقم والدور ثم أعد المحاولة."
+  },
+  {
+    "key": "teamInvitationsTitle",
+    "ar": "الدعوات المستلمة"
+  },
+  {
+    "key": "teamInvitationsHint",
+    "ar": "دعوات موجّهة إلى رقمك. أدخل الرمز الذي قدّمه المالك لقبولها."
+  },
+  {
+    "key": "teamInvitationsEmpty",
+    "ar": "لا توجد دعوات قيد الانتظار لرقمك."
+  },
+  {
+    "key": "teamInvitationsLoadError",
+    "ar": "تعذّر تحميل دعواتك. أعد المحاولة."
+  },
+  {
+    "key": "teamAccept",
+    "ar": "قبول"
+  },
+  {
+    "key": "teamAcceptTitle",
+    "ar": "إدخال رمز القبول"
+  },
+  {
+    "key": "teamAcceptCodeLabel",
+    "ar": "الرمز المقدَّم من المالك"
+  },
+  {
+    "key": "teamAcceptCodeInvalid",
+    "ar": "يتكوّن الرمز من 64 حرفًا (أرقام وحروف من a إلى f)."
+  },
+  {
+    "key": "teamAcceptConfirm",
+    "ar": "قبول الدعوة"
+  },
+  {
+    "key": "teamAccepted",
+    "ar": "تم قبول الدعوة. لديك الآن صلاحية الوصول إلى {merchantName}."
+  }
+]

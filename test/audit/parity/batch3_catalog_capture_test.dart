@@ -682,7 +682,7 @@ void main() {
       await tester.tap(find.byKey(const Key('bulk-apply')));
       await _settle(tester);
       expect(api.availabilityUpdates, ['p1:false', 'p2:false']);
-      expect(find.text(AppStrings.catalogBulkDone(2)), findsOneWidget);
+      expect(find.text(AppStrings.catalogBulkDone('2')), findsOneWidget);
     });
 
     testWidgets('delete refused for historical use explains and offers hide',
@@ -811,12 +811,10 @@ void main() {
       expect(find.byKey(const Key('product-detail-group-g1')), findsOneWidget);
       expect(find.byKey(const Key('product-detail-group-g2')), findsOneWidget);
       expect(
-        find.text(AppStrings.catalogRequiredSummary(
-          AppStrings.catalogSingleChoice,
-        )),
+        find.text(AppStrings.catalogRequiredSummary(AppStrings.catalogSingleChoice, )),
         findsOneWidget,
       );
-      expect(find.text(AppStrings.catalogOptionalSummary(3)), findsOneWidget);
+      expect(find.text(AppStrings.catalogOptionalSummary('3')), findsOneWidget);
       expect(find.byKey(const Key('product-detail-option-o2')), findsOneWidget);
       await tester.tap(
         find.descendant(

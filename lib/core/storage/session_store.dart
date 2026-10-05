@@ -193,8 +193,12 @@ class SecureLaunchStore implements LaunchStore {
       _storage.write(key: _languageKey, value: '1');
 
   @override
-  Future<String> readLocale() async =>
-      await _storage.read(key: _localeKey) ?? 'fr';
+  Future<String> readLocale() async {
+    final stored = await _storage.read(key: _localeKey);
+    if (stored == 'ar' || stored == 'fr') return stored!;
+    // No saved preference: resolve in SessionController via platform locale.
+    return '';
+  }
 
   @override
   Future<void> writeLocale(String locale) =>

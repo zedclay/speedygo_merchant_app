@@ -392,28 +392,37 @@ void main() {
         tester.getRect(find.byKey(const Key('support-ticket-t3'))).top,
         greaterThan(topics.bottom),
       );
-      for (final k in const ['order', 'catalog', 'payment', 'profile']) {
+      for (final k in const [
+        'ORDER_ISSUE',
+        'CATALOGUE_TECH',
+        'PAYMENT_COD',
+        'ACCOUNT_ACCESS',
+      ]) {
         expect(find.byKey(Key('support-topic-$k')), findsOneWidget);
       }
     });
 
-    testWidgets('topic prefills an editable body; sent as body only', (
+    testWidgets('topic tile opens compose with topic preselected', (
       tester,
     ) async {
       final api = _api();
       await pump(tester, const SupportCenterScreen(), api: api);
-      await tester.tap(find.byKey(const Key('support-topic-catalog')));
+      await tester.tap(find.byKey(const Key('support-topic-CATALOGUE_TECH')));
       await tester.pumpAndSettle();
-      TextField field() =>
-          tester.widget<TextField>(find.byKey(const Key('support-compose-body')));
-      expect(field().controller!.text, AppStrings.supportTopicCatalogPrefix);
-      expect(field().autofocus, isTrue);
-      expect(find.textContaining('catégorie'), findsNothing);
+      expect(find.byKey(const Key('support-compose')), findsOneWidget);
+      expect(
+        find.byKey(const Key('support-topic-choice-CATALOGUE_TECH')),
+        findsOneWidget,
+      );
       FilledButton send() => tester.widget<FilledButton>(
         find.byKey(const Key('support-compose-send')),
       );
       expect(send().onPressed, isNull);
 
+      await tester.enterText(
+        find.byKey(const Key('support-compose-subject')),
+        'Prix catalogue',
+      );
       await tester.enterText(
         find.byKey(const Key('support-compose-body')),
         'Prix du couscous incorrect',
@@ -423,24 +432,36 @@ void main() {
       await tester.tap(find.byKey(const Key('support-compose-send')));
       await tester.pumpAndSettle();
       expect(api.supportTickets, [
-        {'body': 'Prix du couscous incorrect', 'orderId': null},
+        {
+          'body': 'Prix du couscous incorrect',
+          'orderId': null,
+          'subject': 'Prix catalogue',
+          'topicCode': 'CATALOGUE_TECH',
+        },
       ]);
     });
 
-    testWidgets('topic prefix can be completed in place', (tester) async {
+    testWidgets('payment topic can be completed with subject and body', (
+      tester,
+    ) async {
       final api = _api();
       await pump(tester, const SupportCenterScreen(), api: api);
-      await tester.tap(find.byKey(const Key('support-topic-payment')));
+      await tester.tap(find.byKey(const Key('support-topic-PAYMENT_COD')));
       await tester.pumpAndSettle();
       await tester.enterText(
+        find.byKey(const Key('support-compose-subject')),
+        'Virement',
+      );
+      await tester.enterText(
         find.byKey(const Key('support-compose-body')),
-        '${AppStrings.supportTopicPaymentPrefix}virement non reçu',
+        'Paiement : virement non reçu',
       );
       await tester.pump();
       await tester.tap(find.byKey(const Key('support-compose-send')));
       await tester.pumpAndSettle();
       expect(api.supportTickets.single['body'], 'Paiement : virement non reçu');
       expect(api.supportTickets.single['orderId'], isNull);
+      expect(api.supportTickets.single['topicCode'], 'PAYMENT_COD');
     });
 
     testWidgets('ticket reply is sent and the field clears', (tester) async {

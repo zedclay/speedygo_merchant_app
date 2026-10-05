@@ -1,0 +1,722 @@
+[
+  {
+    "key": "supportSubjectRequired",
+    "ar": "يرجى إدخال موضوع طلبك."
+  },
+  {
+    "key": "supportFaqTitle",
+    "ar": "الأسئلة الشائعة"
+  },
+  {
+    "key": "supportFaqEmpty",
+    "ar": "لا توجد أسئلة شائعة في الوقت الحالي."
+  },
+  {
+    "key": "supportFaqLoadError",
+    "ar": "تعذّر تحميل الأسئلة الشائعة."
+  },
+  {
+    "key": "supportComposeTitle",
+    "ar": "تذكرة جديدة"
+  },
+  {
+    "key": "supportComposeHint",
+    "ar": "صف طلبك. إذا كان الأمر يتعلق بمشكلة في طلب، استخدم «الإبلاغ عن مشكلة» من صفحة الطلب."
+  },
+  {
+    "key": "supportCreated",
+    "ar": "تم إرسال التذكرة.تم إرسال التذكرة: {reference}"
+  },
+  {
+    "key": "supportTicketTitle",
+    "ar": "تذكرة"
+  },
+  {
+    "key": "supportTicketLoadError",
+    "ar": "تعذّر تحميل هذه التذكرة."
+  },
+  {
+    "key": "supportLinkedOrder",
+    "ar": "الطلب المرتبط"
+  },
+  {
+    "key": "supportYou",
+    "ar": "أنت"
+  },
+  {
+    "key": "supportTeam",
+    "ar": "دعم SpeedyGo"
+  },
+  {
+    "key": "supportReplyHint",
+    "ar": "ردّك"
+  },
+  {
+    "key": "supportReplySend",
+    "ar": "إرسال"
+  },
+  {
+    "key": "supportReplyError",
+    "ar": "تعذّر إرسال الرد."
+  },
+  {
+    "key": "supportTicketFinished",
+    "ar": "هذه التذكرة مغلقة. أنشئ تذكرة جديدة عند الحاجة."
+  },
+  {
+    "key": "supportNoMessages",
+    "ar": "لا توجد رسائل."
+  },
+  {
+    "key": "orderListAcceptNow",
+    "ar": "يجب القبول فورًا"
+  },
+  {
+    "key": "orderDetailsTitle",
+    "ar": "تفاصيل الطلب"
+  },
+  {
+    "key": "orderDetailCancelledTitle",
+    "ar": "طلب ملغى"
+  },
+  {
+    "key": "orderCancelledHeroBody",
+    "ar": "لن يُستكمل هذا الطلب."
+  },
+  {
+    "key": "orderCancelledByCustomer",
+    "ar": "أُلغي من قِبل العميل"
+  },
+  {
+    "key": "orderRejectedByMerchant",
+    "ar": "مرفوض من قِبل المؤسسة"
+  },
+  {
+    "key": "orderReasonLabel",
+    "ar": "السبب"
+  },
+  {
+    "key": "orderCancelledAck",
+    "ar": "حسنًا"
+  },
+  {
+    "key": "orderViewHistory",
+    "ar": "عرض السجل"
+  },
+  {
+    "key": "orderCurrentStatus",
+    "ar": "الحالة الحالية"
+  },
+  {
+    "key": "orderDeliveredOn",
+    "ar": "تم التسليم في {when}"
+  },
+  {
+    "key": "orderCompletedOn",
+    "ar": "اكتمل في {when}"
+  },
+  {
+    "key": "orderReceivedAtLabel",
+    "ar": "استُلم في"
+  },
+  {
+    "key": "orderPaymentLabel",
+    "ar": "الدفع"
+  },
+  {
+    "key": "orderPaymentMethod",
+    "ar": "الطريقة: {method}"
+  },
+  {
+    "key": "orderReadySince",
+    "ar": "جاهز منذ {hhmm}"
+  },
+  {
+    "key": "eventCreated",
+    "ar": "تم استلام الطلب"
+  },
+  {
+    "key": "eventCreatedCaption",
+    "ar": "طلب قدّمه العميل"
+  },
+  {
+    "key": "eventAccepted",
+    "ar": "مقبول"
+  },
+  {
+    "key": "eventAcceptedCaption",
+    "ar": "تم تأكيد الطلب"
+  },
+  {
+    "key": "eventPrepStarted",
+    "ar": "قيد التحضير"
+  },
+  {
+    "key": "eventPrepStartedCaption",
+    "ar": "بدأ التحضير"
+  },
+  {
+    "key": "eventReady",
+    "ar": "جاهز"
+  },
+  {
+    "key": "eventReadyCaption",
+    "ar": "جاهز للاستلام"
+  },
+  {
+    "key": "eventRejected",
+    "ar": "مرفوض"
+  },
+  {
+    "key": "eventCancelled",
+    "ar": "ملغى"
+  },
+  {
+    "key": "eventCompleted",
+    "ar": "مكتمل"
+  },
+  {
+    "key": "eventCompletedCaption",
+    "ar": "تم تسليم الطلب للعميل"
+  },
+  {
+    "key": "eventStatusUpdate",
+    "ar": "تحديث الحالة"
+  },
+  {
+    "key": "orderListLate",
+    "ar": "متأخر"
+  },
+  {
+    "key": "orderListReadyAt",
+    "ar": "جاهز نحو {hhmm}"
+  },
+  {
+    "key": "orderHistoryToday",
+    "ar": "اليوم"
+  },
+  {
+    "key": "orderHistoryYesterday",
+    "ar": "أمس"
+  },
+  {
+    "key": "orderHistoryEarlier",
+    "ar": "سابقًا"
+  },
+  {
+    "key": "orderFulfillmentAccepted",
+    "ar": "مقبول"
+  },
+  {
+    "key": "orderFulfillmentPreparing",
+    "ar": "قيد التحضير"
+  },
+  {
+    "key": "orderFulfillmentReady",
+    "ar": "جاهز"
+  },
+  {
+    "key": "orderStatusCreated",
+    "ar": "جديد"
+  },
+  {
+    "key": "orderStatusConfirmed",
+    "ar": "مؤكد"
+  },
+  {
+    "key": "orderStatusActive",
+    "ar": "نشط"
+  },
+  {
+    "key": "orderStatusCompleted",
+    "ar": "مكتمل"
+  },
+  {
+    "key": "orderStatusCancelled",
+    "ar": "ملغى"
+  },
+  {
+    "key": "orderStatusFailed",
+    "ar": "فشل"
+  },
+  {
+    "key": "orderPaymentCod",
+    "ar": "الدفع عند الاستلام"
+  },
+  {
+    "key": "orderPaymentElectronic",
+    "ar": "دفع إلكتروني"
+  },
+  {
+    "key": "orderCreatedAt",
+    "ar": "أُنشئ في {when}"
+  },
+  {
+    "key": "orderConfirmedAt",
+    "ar": "تأكيد في {when}"
+  },
+  {
+    "key": "orderCancelledAt",
+    "ar": "أُلغي في {when}"
+  },
+  {
+    "key": "orderCreatedShort",
+    "ar": "أُنشئ · {when}"
+  },
+  {
+    "key": "orderListMerchandiseLabel",
+    "ar": "البضائع"
+  },
+  {
+    "key": "orderIncomingBanner",
+    "ar": "طلب جديد"
+  },
+  {
+    "key": "orderReadyBanner",
+    "ar": "الطلب جاهز"
+  },
+  {
+    "key": "orderSegmentActive",
+    "ar": "قيد التنفيذ"
+  },
+  {
+    "key": "orderSegmentHistory",
+    "ar": "السجل"
+  },
+  {
+    "key": "orderReferenceCopy",
+    "ar": "نسخ المرجع"
+  },
+  {
+    "key": "orderReferenceCopied",
+    "ar": "تم نسخ المرجع"
+  },
+  {
+    "key": "orderReferenceShowFull",
+    "ar": "عرض المرجع الكامل"
+  },
+  {
+    "key": "orderItemsTitle",
+    "ar": "الأصناف"
+  },
+  {
+    "key": "orderItemsToPrepareTitle",
+    "ar": "أصناف للتحضير"
+  },
+  {
+    "key": "orderDeliveryAddress",
+    "ar": "عنوان التسليم"
+  },
+  {
+    "key": "orderFinanceTitle",
+    "ar": "التوزيع المالي"
+  },
+  {
+    "key": "orderFinanceGms",
+    "ar": "مجموع البضائع الفرعي"
+  },
+  {
+    "key": "orderFinanceDiscount",
+    "ar": "خصم التاجر"
+  },
+  {
+    "key": "orderFinanceCommission",
+    "ar": "عمولة SpeedyGo ({percent} %)"
+  },
+  {
+    "key": "orderFinanceNet",
+    "ar": "صافي التاجر"
+  },
+  {
+    "key": "orderFinanceCommissionUnavailable",
+    "ar": "عمولة SpeedyGo"
+  },
+  {
+    "key": "orderFinanceRestricted",
+    "ar": "العمولة والخصم وصافي التاجر مخصّصة للمالك أو المسؤول فقط."
+  },
+  {
+    "key": "valueUnavailable",
+    "ar": "—"
+  },
+  {
+    "key": "orderFinanceNetCancelledNote",
+    "ar": "مبالغ تاريخية مثبتة عند إنشاء الطلب — وليست مستحقات للدفع."
+  },
+  {
+    "key": "orderFinanceDeliveryFeeNote",
+    "ar": "رسوم التوصيل (العميل)"
+  },
+  {
+    "key": "orderFinanceDeliveryFeeDisclaimer",
+    "ar": "رسوم التوصيل ليست إيرادًا للتاجر."
+  },
+  {
+    "key": "orderAccept",
+    "ar": "قبول"
+  },
+  {
+    "key": "orderChoosePrepTime",
+    "ar": "اختيار مدة التحضير"
+  },
+  {
+    "key": "orderReject",
+    "ar": "رفض"
+  },
+  {
+    "key": "orderRejectTitle",
+    "ar": "رفض الطلب"
+  },
+  {
+    "key": "orderRejectHint",
+    "ar": "الرفض ممكن فقط قبل القبول. يرجى ذكر السبب."
+  },
+  {
+    "key": "orderRejectReasonLabel",
+    "ar": "سبب الرفض"
+  },
+  {
+    "key": "orderRejectConfirm",
+    "ar": "تأكيد الرفض"
+  },
+  {
+    "key": "orderQuickAlreadyHandled",
+    "ar": "تمت معالجة هذا الطلب مسبقًا. تم تحديث القائمة."
+  },
+  {
+    "key": "orderQuickNotAllowed",
+    "ar": "دورك لا يسمح بهذا الإجراء."
+  },
+  {
+    "key": "orderQuickCheckFailed",
+    "ar": "تعذّر التحقق من الطلب. أعد المحاولة."
+  },
+  {
+    "key": "orderQuickAccepted",
+    "ar": "تم قبول الطلب."
+  },
+  {
+    "key": "orderQuickRejected",
+    "ar": "تم رفض الطلب."
+  },
+  {
+    "key": "prepAcceptTitle",
+    "ar": "قبول الطلب"
+  },
+  {
+    "key": "prepEstimatedTitle",
+    "ar": "مدة التحضير المقدَّرة"
+  },
+  {
+    "key": "prepMinutesLabel",
+    "ar": "{minutes} د"
+  },
+  {
+    "key": "prepConfirmAccept",
+    "ar": "تأكيد وقبول"
+  },
+  {
+    "key": "prepCustomTime",
+    "ar": "مدة مخصّصة"
+  },
+  {
+    "key": "prepCustomEntry",
+    "ar": "إدخال مخصّص"
+  },
+  {
+    "key": "prepCustomRange",
+    "ar": "بين {min} و{max} دقيقة"
+  },
+  {
+    "key": "prepItemCount",
+    "ar": "صنف واحد{n} أصناف"
+  },
+  {
+    "key": "prepInProgress",
+    "ar": "قيد التنفيذ"
+  },
+  {
+    "key": "prepCurrentShort",
+    "ar": "الوقت الحالي"
+  },
+  {
+    "key": "prepNewShort",
+    "ar": "تقدير جديد"
+  },
+  {
+    "key": "prepReasonHint",
+    "ar": "مثال: مشكلة تقنية في المطبخ…"
+  },
+  {
+    "key": "prepRemainingTitle",
+    "ar": "الوقت المتبقي"
+  },
+  {
+    "key": "prepMinutesCaption",
+    "ar": "دقائق"
+  },
+  {
+    "key": "prepSecondsCaption",
+    "ar": "ثوانٍ"
+  },
+  {
+    "key": "prepScheduledAtLocal",
+    "ar": "الوقت المتوقع: {time} (التوقيت المحلي)"
+  },
+  {
+    "key": "prepScheduledOnLocal",
+    "ar": "الوقت المتوقع: يوم {day} الساعة {time} (التوقيت المحلي)"
+  },
+  {
+    "key": "prepLateBy",
+    "ar": "متأخر{minutes} من التأخير"
+  },
+  {
+    "key": "prepLateHint",
+    "ar": "تجاوز التقدير الزمني. حدّث المدة أو علِّم الطلب جاهزًا عندما يصبح كذلك."
+  },
+  {
+    "key": "prepUpdateAction",
+    "ar": "تعديل المدة"
+  },
+  {
+    "key": "prepUpdateTitle",
+    "ar": "تحديث المدة"
+  },
+  {
+    "key": "prepCurrentReady",
+    "ar": "الوقت المتوقع الحالي"
+  },
+  {
+    "key": "prepOriginalReady",
+    "ar": "الابتدائي: {time}"
+  },
+  {
+    "key": "prepOriginalReadyLabel",
+    "ar": "الوقت الابتدائي: {time}"
+  },
+  {
+    "key": "prepBranchLabel",
+    "ar": "المنشأة"
+  },
+  {
+    "key": "prepAddTime",
+    "ar": "إضافة وقت تحضير"
+  },
+  {
+    "key": "prepNewEstimate",
+    "ar": "تقدير جديد: {to} بدلًا من {from}، بزيادة {add} دقيقة"
+  },
+  {
+    "key": "prepClockOnDay",
+    "ar": "يوم {day} الساعة {time}"
+  },
+  {
+    "key": "prepOnDay",
+    "ar": "يوم {day}"
+  },
+  {
+    "key": "prepSpokenClock",
+    "ar": "{time} يوم {day}"
+  },
+  {
+    "key": "prepReasonOptional",
+    "ar": "سبب التأخير (اختياري)"
+  },
+  {
+    "key": "prepReasonShortcutsHint",
+    "ar": "الاختصار يملأ السبب؛ يمكنك تعديله."
+  },
+  {
+    "key": "prepReasonFieldLabel",
+    "ar": "السبب"
+  },
+  {
+    "key": "prepReasonBusy",
+    "ar": "إقبال كثيف"
+  },
+  {
+    "key": "prepReasonLongPrep",
+    "ar": "تحضير طويل"
+  },
+  {
+    "key": "prepReasonMissingIngredient",
+    "ar": "مكون ناقص"
+  },
+  {
+    "key": "prepReasonOther",
+    "ar": "سبب آخر"
+  },
+  {
+    "key": "prepUpdateConfirm",
+    "ar": "تحديث"
+  },
+  {
+    "key": "orderStartPreparation",
+    "ar": "بدء التحضير"
+  },
+  {
+    "key": "orderMarkReady",
+    "ar": "تعيين كجاهز"
+  },
+  {
+    "key": "markReadyPackingTitle",
+    "ar": "قائمة التعبئة"
+  },
+  {
+    "key": "markReadyPackingHint",
+    "ar": "تأكد أن جميع عناصر الطلب معبَّأة جيدًا قبل تعيينه جاهزًا."
+  },
+  {
+    "key": "markReadyConfirm",
+    "ar": "تأكيد وتعيين كجاهز"
+  },
+  {
+    "key": "orderReadyWaitingDelivery",
+    "ar": "في انتظار استلام الطلب للتوصيل."
+  },
+  {
+    "key": "orderDeliveryStatusTitle",
+    "ar": "التوصيل"
+  },
+  {
+    "key": "orderDriverAssigned",
+    "ar": "تم تعيين مندوب توصيل."
+  },
+  {
+    "key": "orderDriverSearchStarted",
+    "ar": "بدأ البحث في {when}"
+  },
+  {
+    "key": "orderDriverSearchStartedAt",
+    "ar": "بدأ البحث الساعة {hhmm}"
+  },
+  {
+    "key": "orderDriverEtaEstimate",
+    "ar": "الوصول المتوقع: {when}"
+  },
+  {
+    "key": "orderDriverCardTitle",
+    "ar": "مندوب التوصيل المعيَّن"
+  },
+  {
+    "key": "orderDriverStatusLabel",
+    "ar": "الحالة"
+  },
+  {
+    "key": "orderDriverEtaLabel",
+    "ar": "الوصول المتوقع"
+  },
+  {
+    "key": "orderDriverEtaUnavailable",
+    "ar": "وقت الوصول غير متاح."
+  },
+  {
+    "key": "orderDriverContactUnavailable",
+    "ar": "بيانات الاتصال بالمندوب غير متاحة."
+  },
+  {
+    "key": "orderDriverCall",
+    "ar": "الاتصال بالمندوب"
+  },
+  {
+    "key": "pickupHandoffTitle",
+    "ar": "رمز الاستلام"
+  },
+  {
+    "key": "pickupHandoffWaiting",
+    "ar": "في انتظار تأكيد المندوب…"
+  },
+  {
+    "key": "pickupHandoffInstruction1",
+    "ar": "أبلغ بهذا الرمز فقط المندوب الظاهر أعلاه."
+  },
+  {
+    "key": "pickupHandoffInstruction2",
+    "ar": "يجب على المندوب إدخال هذا الرمز في تطبيقه لتأكيد الاستلام."
+  },
+  {
+    "key": "pickupHandoffRegenerate",
+    "ar": "إعادة توليد الرمز"
+  },
+  {
+    "key": "pickupHandoffConfirmed",
+    "ar": "تم تأكيد التسليم"
+  },
+  {
+    "key": "pickupHandoffLoadError",
+    "ar": "تعذّر تحميل رمز الاستلام."
+  },
+  {
+    "key": "pickupHandoffRetry",
+    "ar": "إعادة المحاولة"
+  },
+  {
+    "key": "orderHandoffUnsupported",
+    "ar": "تأكيد التسليم الآمن غير متاح للتاجر في هذا الإصدار."
+  },
+  {
+    "key": "orderHistoryTitle",
+    "ar": "سجل الطلب"
+  },
+  {
+    "key": "orderReferenceLabel",
+    "ar": "المرجع"
+  },
+  {
+    "key": "orderCustomerLabel",
+    "ar": "العميل"
+  },
+  {
+    "key": "orderSummaryTitle",
+    "ar": "ملخص الطلب"
+  },
+  {
+    "key": "deliverySearching",
+    "ar": "البحث عن مندوب"
+  },
+  {
+    "key": "deliveryAssigned",
+    "ar": "مندوب معيَّن"
+  },
+  {
+    "key": "deliveryPickedUp",
+    "ar": "تم الاستلام"
+  },
+  {
+    "key": "deliveryArrived",
+    "ar": "وصل إلى العميل"
+  },
+  {
+    "key": "deliveryToPickup",
+    "ar": "المندوب في الطريق إلى المؤسسة"
+  },
+  {
+    "key": "deliveryAtPickup",
+    "ar": "وصل المندوب إلى المؤسسة"
+  },
+  {
+    "key": "deliveryInTransit",
+    "ar": "في الطريق إلى العميل"
+  },
+  {
+    "key": "deliveryFailed",
+    "ar": "فشل التوصيل"
+  },
+  {
+    "key": "deliveryCancelled",
+    "ar": "أُلغي التوصيل"
+  },
+  {
+    "key": "deliveryUnknown",
+    "ar": "حالة التوصيل غير متاحة"
+  },
+  {
+    "key": "deliveryDelivered",
+    "ar": "تم التسليم"
+  },
+  {
+    "key": "catalogTitle",
+    "ar": "كتالوج"
+  }
+]

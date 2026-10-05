@@ -1,0 +1,4918 @@
+{
+  "@@locale": "fr",
+  "appName": "SpeedyGo Merchant",
+  "@appName": {
+    "description": "Merchant UI string appName"
+  },
+  "brandName": "SpeedyGo",
+  "@brandName": {
+    "description": "Merchant UI string brandName"
+  },
+  "splashTagline": "Votre commerce. Simplement.",
+  "@splashTagline": {
+    "description": "Merchant UI string splashTagline"
+  },
+  "splashLegacyTagline": "Espace commerçant",
+  "@splashLegacyTagline": {
+    "description": "Merchant UI string splashLegacyTagline"
+  },
+  "onboardingSkip": "Passer",
+  "@onboardingSkip": {
+    "description": "Merchant UI string onboardingSkip"
+  },
+  "onboardingNext": "Suivant",
+  "@onboardingNext": {
+    "description": "Merchant UI string onboardingNext"
+  },
+  "onboardingStart": "Commencer",
+  "@onboardingStart": {
+    "description": "Merchant UI string onboardingStart"
+  },
+  "onboardingHaveAccount": "J’ai déjà un compte",
+  "@onboardingHaveAccount": {
+    "description": "Merchant UI string onboardingHaveAccount"
+  },
+  "onboardingPage1Title": "Recevez vos commandes",
+  "@onboardingPage1Title": {
+    "description": "Merchant UI string onboardingPage1Title"
+  },
+  "onboardingPage1Body": "Retrouvez les nouvelles commandes et consultez leurs détails.",
+  "@onboardingPage1Body": {
+    "description": "Merchant UI string onboardingPage1Body"
+  },
+  "onboardingPage2Title": "Maîtrisez la préparation",
+  "@onboardingPage2Title": {
+    "description": "Merchant UI string onboardingPage2Title"
+  },
+  "onboardingPage2Body": "Organisez la préparation et indiquez quand une commande est prête.",
+  "@onboardingPage2Body": {
+    "description": "Merchant UI string onboardingPage2Body"
+  },
+  "onboardingPage3Title": "Votre commerce, à portée de main",
+  "@onboardingPage3Title": {
+    "description": "Merchant UI string onboardingPage3Title"
+  },
+  "onboardingPage3Body": "Retrouvez votre catalogue, vos horaires et les informations de votre établissement.",
+  "@onboardingPage3Body": {
+    "description": "Merchant UI string onboardingPage3Body"
+  },
+  "onboardingSaveFailed": "Impossible d’enregistrer l’introduction. Réessayez.",
+  "@onboardingSaveFailed": {
+    "description": "Merchant UI string onboardingSaveFailed"
+  },
+  "onboardingPageSemantics": "Page d’introduction",
+  "@onboardingPageSemantics": {
+    "description": "Merchant UI string onboardingPageSemantics"
+  },
+  "phoneTitle": "Entrez votre numéro de téléphone",
+  "@phoneTitle": {
+    "description": "Merchant UI string phoneTitle"
+  },
+  "phoneSubtitle": "Nous vous enverrons un code de vérification par SMS.",
+  "@phoneSubtitle": {
+    "description": "Merchant UI string phoneSubtitle"
+  },
+  "phoneHint": "555 12 34 56",
+  "@phoneHint": {
+    "description": "Merchant UI string phoneHint"
+  },
+  "phonePrefix": "+213",
+  "@phonePrefix": {
+    "description": "Merchant UI string phonePrefix"
+  },
+  "phoneSmsNote": "Les frais de SMS standard peuvent s’appliquer.",
+  "@phoneSmsNote": {
+    "description": "Merchant UI string phoneSmsNote"
+  },
+  "phoneLabel": "Numéro de téléphone",
+  "@phoneLabel": {
+    "description": "Merchant UI string phoneLabel"
+  },
+  "phoneInvalid": "Saisissez un numéro algérien valide.",
+  "@phoneInvalid": {
+    "description": "Merchant UI string phoneInvalid"
+  },
+  "continueLabel": "Continuer",
+  "@continueLabel": {
+    "description": "Merchant UI string continueLabel"
+  },
+  "needHelp": "Besoin d’aide ?",
+  "@needHelp": {
+    "description": "Merchant UI string needHelp"
+  },
+  "helpUnavailable": "L’assistance sera disponible dans une prochaine version.",
+  "@helpUnavailable": {
+    "description": "Merchant UI string helpUnavailable"
+  },
+  "otpTitle": "Vérification du code",
+  "@otpTitle": {
+    "description": "Merchant UI string otpTitle"
+  },
+  "editNumber": "Modifier",
+  "@editNumber": {
+    "description": "Merchant UI string editNumber"
+  },
+  "verify": "Vérifier",
+  "@verify": {
+    "description": "Merchant UI string verify"
+  },
+  "resend": "Renvoyer le code",
+  "@resend": {
+    "description": "Merchant UI string resend"
+  },
+  "resendIn": "Renvoyer le code dans {clock}",
+  "@resendIn": {
+    "description": "Merchant UI string resendIn",
+    "placeholders": {
+      "clock": {
+        "type": "String"
+      }
+    }
+  },
+  "otpCooldownHint": "Patientez avant de renvoyer un code",
+  "@otpCooldownHint": {
+    "description": "Merchant UI string otpCooldownHint"
+  },
+  "resendCode": "Renvoyer le code",
+  "@resendCode": {
+    "description": "Merchant UI string resendCode"
+  },
+  "otpSubtitle": "Saisissez le code à 6 chiffres envoyé au",
+  "@otpSubtitle": {
+    "description": "Merchant UI string otpSubtitle"
+  },
+  "restoreTitle": "Restauration de la session",
+  "@restoreTitle": {
+    "description": "Merchant UI string restoreTitle"
+  },
+  "restoreLoading": "Connexion en cours…",
+  "@restoreLoading": {
+    "description": "Merchant UI string restoreLoading"
+  },
+  "restoreOffline": "Impossible de joindre le serveur. Vérifiez votre connexion.",
+  "@restoreOffline": {
+    "description": "Merchant UI string restoreOffline"
+  },
+  "restoreRetry": "Réessayer",
+  "@restoreRetry": {
+    "description": "Merchant UI string restoreRetry"
+  },
+  "restoreOtherAccount": "Utiliser un autre compte",
+  "@restoreOtherAccount": {
+    "description": "Merchant UI string restoreOtherAccount"
+  },
+  "sessionExpired": "Votre session a expiré. Connectez-vous.",
+  "@sessionExpired": {
+    "description": "Merchant UI string sessionExpired"
+  },
+  "networkError": "Problème de réseau. Réessayez.",
+  "@networkError": {
+    "description": "Merchant UI string networkError"
+  },
+  "languageSaveFailed": "Impossible d’enregistrer la langue. Réessayez.",
+  "@languageSaveFailed": {
+    "description": "Merchant UI string languageSaveFailed"
+  },
+  "retry": "Réessayer",
+  "@retry": {
+    "description": "Merchant UI string retry"
+  },
+  "refreshStatus": "Actualiser le statut",
+  "@refreshStatus": {
+    "description": "Merchant UI string refreshStatus"
+  },
+  "back": "Retour",
+  "@back": {
+    "description": "Merchant UI string back"
+  },
+  "loading": "Chargement…",
+  "@loading": {
+    "description": "Merchant UI string loading"
+  },
+  "tabHome": "Accueil",
+  "@tabHome": {
+    "description": "Merchant UI string tabHome"
+  },
+  "tabOrders": "Commandes",
+  "@tabOrders": {
+    "description": "Merchant UI string tabOrders"
+  },
+  "tabCatalog": "Catalogue",
+  "@tabCatalog": {
+    "description": "Merchant UI string tabCatalog"
+  },
+  "tabReports": "Rapports",
+  "@tabReports": {
+    "description": "Merchant UI string tabReports"
+  },
+  "tabProfile": "Profil",
+  "@tabProfile": {
+    "description": "Merchant UI string tabProfile"
+  },
+  "navReveal": "Afficher la navigation",
+  "@navReveal": {
+    "description": "Merchant UI string navReveal"
+  },
+  "homeTitle": "Accueil",
+  "@homeTitle": {
+    "description": "Merchant UI string homeTitle"
+  },
+  "selectBranchTitle": "Choisir un établissement",
+  "@selectBranchTitle": {
+    "description": "Merchant UI string selectBranchTitle"
+  },
+  "selectBranchSubtitle": "Sélectionnez l’établissement avec lequel vous souhaitez travailler.",
+  "@selectBranchSubtitle": {
+    "description": "Merchant UI string selectBranchSubtitle"
+  },
+  "noMembershipTitle": "Aucun commerce associé",
+  "@noMembershipTitle": {
+    "description": "Merchant UI string noMembershipTitle"
+  },
+  "noMembershipBody": "Ce compte n’a pas encore d’adhésion commerçant. Vous pouvez créer un profil commerce pour démarrer la vérification.",
+  "@noMembershipBody": {
+    "description": "Merchant UI string noMembershipBody"
+  },
+  "noMembershipInvitationsCta": "J’ai une invitation",
+  "@noMembershipInvitationsCta": {
+    "description": "Merchant UI string noMembershipInvitationsCta"
+  },
+  "createMerchant": "Créer un commerce",
+  "@createMerchant": {
+    "description": "Merchant UI string createMerchant"
+  },
+  "merchantNameLabel": "Nom du commerce",
+  "@merchantNameLabel": {
+    "description": "Merchant UI string merchantNameLabel"
+  },
+  "merchantNameHint": "Ex. Pharmacie du Centre",
+  "@merchantNameHint": {
+    "description": "Merchant UI string merchantNameHint"
+  },
+  "verificationPendingTitle": "Vérification en cours",
+  "@verificationPendingTitle": {
+    "description": "Merchant UI string verificationPendingTitle"
+  },
+  "verificationPendingBody": "Votre commerce est enregistré et en attente de vérification.",
+  "@verificationPendingBody": {
+    "description": "Merchant UI string verificationPendingBody"
+  },
+  "verificationDossierProgress": "Pièces du dossier",
+  "@verificationDossierProgress": {
+    "description": "Merchant UI string verificationDossierProgress"
+  },
+  "verificationSubmittedStep": "Dossier soumis",
+  "@verificationSubmittedStep": {
+    "description": "Merchant UI string verificationSubmittedStep"
+  },
+  "verificationReviewStep": "Examen des documents",
+  "@verificationReviewStep": {
+    "description": "Merchant UI string verificationReviewStep"
+  },
+  "verificationReviewStepBody": "En cours d’examen par SpeedyGo",
+  "@verificationReviewStepBody": {
+    "description": "Merchant UI string verificationReviewStepBody"
+  },
+  "verificationFinalStep": "Validation finale",
+  "@verificationFinalStep": {
+    "description": "Merchant UI string verificationFinalStep"
+  },
+  "verificationFinalStepBody": "En attente de décision",
+  "@verificationFinalStepBody": {
+    "description": "Merchant UI string verificationFinalStepBody"
+  },
+  "verificationTimelineTitle": "Progression du dossier",
+  "@verificationTimelineTitle": {
+    "description": "Merchant UI string verificationTimelineTitle"
+  },
+  "verificationReferenceLabel": "Référence",
+  "@verificationReferenceLabel": {
+    "description": "Merchant UI string verificationReferenceLabel"
+  },
+  "verificationReferenceFull": "Référence du dossier",
+  "@verificationReferenceFull": {
+    "description": "Merchant UI string verificationReferenceFull"
+  },
+  "approvedTitle": "Félicitations !",
+  "@approvedTitle": {
+    "description": "Merchant UI string approvedTitle"
+  },
+  "approvedSubtitle": "Votre établissement est approuvé",
+  "@approvedSubtitle": {
+    "description": "Merchant UI string approvedSubtitle"
+  },
+  "approvedBody": "Pour commencer à recevoir des commandes, assurez-vous que votre magasin est ouvert, que vos horaires sont définis et que vos produits sont disponibles.",
+  "@approvedBody": {
+    "description": "Merchant UI string approvedBody"
+  },
+  "approvedReferenceLabel": "RÉFÉRENCE MERCHANT",
+  "@approvedReferenceLabel": {
+    "description": "Merchant UI string approvedReferenceLabel"
+  },
+  "approvedReferenceFull": "Référence Merchant",
+  "@approvedReferenceFull": {
+    "description": "Merchant UI string approvedReferenceFull"
+  },
+  "approvedBadge": "Approuvé",
+  "@approvedBadge": {
+    "description": "Merchant UI string approvedBadge"
+  },
+  "approvedStepsTitle": "Étapes de configuration",
+  "@approvedStepsTitle": {
+    "description": "Merchant UI string approvedStepsTitle"
+  },
+  "approvedHoursTitle": "Horaires d’ouverture",
+  "@approvedHoursTitle": {
+    "description": "Merchant UI string approvedHoursTitle"
+  },
+  "approvedHoursBody": "Configurez quand vous êtes ouvert",
+  "@approvedHoursBody": {
+    "description": "Merchant UI string approvedHoursBody"
+  },
+  "approvedCatalogTitle": "Catalogue de produits",
+  "@approvedCatalogTitle": {
+    "description": "Merchant UI string approvedCatalogTitle"
+  },
+  "approvedCatalogBody": "Ajoutez vos premiers articles",
+  "@approvedCatalogBody": {
+    "description": "Merchant UI string approvedCatalogBody"
+  },
+  "approvedAlertsTitle": "Alertes et notifications",
+  "@approvedAlertsTitle": {
+    "description": "Merchant UI string approvedAlertsTitle"
+  },
+  "approvedAlertsBody": "Restez informé des commandes",
+  "@approvedAlertsBody": {
+    "description": "Merchant UI string approvedAlertsBody"
+  },
+  "approvedNeedBranchHint": "Disponible après l’ajout d’un établissement",
+  "@approvedNeedBranchHint": {
+    "description": "Merchant UI string approvedNeedBranchHint"
+  },
+  "approvedNotOpenNote": "L’approbation n’ouvre pas votre magasin automatiquement : vérifiez son statut, vos horaires et votre catalogue depuis l’accueil.",
+  "@approvedNotOpenNote": {
+    "description": "Merchant UI string approvedNotOpenNote"
+  },
+  "approvedContinue": "Accéder à l’accueil marchand",
+  "@approvedContinue": {
+    "description": "Merchant UI string approvedContinue"
+  },
+  "verificationRequestIdLabel": "ID DE DEMANDE",
+  "@verificationRequestIdLabel": {
+    "description": "Merchant UI string verificationRequestIdLabel"
+  },
+  "verificationNeedHelp": "Besoin d’aide pour votre dossier ?",
+  "@verificationNeedHelp": {
+    "description": "Merchant UI string verificationNeedHelp"
+  },
+  "verificationCorrectAndSubmit": "Corriger et soumettre",
+  "@verificationCorrectAndSubmit": {
+    "description": "Merchant UI string verificationCorrectAndSubmit"
+  },
+  "verificationRejectedTitle": "Dossier à compléter",
+  "@verificationRejectedTitle": {
+    "description": "Merchant UI string verificationRejectedTitle"
+  },
+  "verificationRejectedBody": "Le dossier a été refusé. Corrigez le profil ou les pièces lorsque l’édition est autorisée, puis soumettez à nouveau.",
+  "@verificationRejectedBody": {
+    "description": "Merchant UI string verificationRejectedBody"
+  },
+  "verificationApprovedTitle": "Commerce approuvé",
+  "@verificationApprovedTitle": {
+    "description": "Merchant UI string verificationApprovedTitle"
+  },
+  "verificationApprovedBody": "Votre commerce est approuvé. Complétez un établissement actif pour l’exploitation.",
+  "@verificationApprovedBody": {
+    "description": "Merchant UI string verificationApprovedBody"
+  },
+  "suspendedTitle": "Compte commerce suspendu",
+  "@suspendedTitle": {
+    "description": "Merchant UI string suspendedTitle"
+  },
+  "suspendedBody": "Ce commerce est suspendu. Contactez le support SpeedyGo si besoin.",
+  "@suspendedBody": {
+    "description": "Merchant UI string suspendedBody"
+  },
+  "checklistTitle": "Pièces du dossier",
+  "@checklistTitle": {
+    "description": "Merchant UI string checklistTitle"
+  },
+  "accessRestrictedTitle": "Accès restreint",
+  "@accessRestrictedTitle": {
+    "description": "Merchant UI string accessRestrictedTitle"
+  },
+  "accessRestrictedBody": "Vous n’avez pas les droits nécessaires pour cette action.",
+  "@accessRestrictedBody": {
+    "description": "Merchant UI string accessRestrictedBody"
+  },
+  "needBranchTitle": "Établissement requis",
+  "@needBranchTitle": {
+    "description": "Merchant UI string needBranchTitle"
+  },
+  "needBranchBody": "Ajoutez au moins un établissement actif pour utiliser l’espace opérationnel.",
+  "@needBranchBody": {
+    "description": "Merchant UI string needBranchBody"
+  },
+  "addBranch": "Ajouter un établissement",
+  "@addBranch": {
+    "description": "Merchant UI string addBranch"
+  },
+  "branchNameLabel": "Nom de l’établissement",
+  "@branchNameLabel": {
+    "description": "Merchant UI string branchNameLabel"
+  },
+  "branchPhoneLabel": "Téléphone",
+  "@branchPhoneLabel": {
+    "description": "Merchant UI string branchPhoneLabel"
+  },
+  "branchAddressLabel": "Adresse",
+  "@branchAddressLabel": {
+    "description": "Merchant UI string branchAddressLabel"
+  },
+  "branchLatLabel": "Latitude",
+  "@branchLatLabel": {
+    "description": "Merchant UI string branchLatLabel"
+  },
+  "branchLngLabel": "Longitude",
+  "@branchLngLabel": {
+    "description": "Merchant UI string branchLngLabel"
+  },
+  "save": "Enregistrer",
+  "@save": {
+    "description": "Merchant UI string save"
+  },
+  "logout": "Se déconnecter",
+  "@logout": {
+    "description": "Merchant UI string logout"
+  },
+  "operationalActive": "Actif",
+  "@operationalActive": {
+    "description": "Merchant UI string operationalActive"
+  },
+  "operationalInactive": "Inactif",
+  "@operationalInactive": {
+    "description": "Merchant UI string operationalInactive"
+  },
+  "operationalSuspended": "Suspendu",
+  "@operationalSuspended": {
+    "description": "Merchant UI string operationalSuspended"
+  },
+  "homeNoMetrics": "Aucun indicateur agrégé n’est fourni par l’API dans cette phase.",
+  "@homeNoMetrics": {
+    "description": "Merchant UI string homeNoMetrics"
+  },
+  "homeOrderCountsTitle": "Commandes en cours",
+  "@homeOrderCountsTitle": {
+    "description": "Merchant UI string homeOrderCountsTitle"
+  },
+  "homeCountIncoming": "Nouveaux",
+  "@homeCountIncoming": {
+    "description": "Merchant UI string homeCountIncoming"
+  },
+  "homeCountPreparing": "En prép.",
+  "@homeCountPreparing": {
+    "description": "Merchant UI string homeCountPreparing"
+  },
+  "homeCountReady": "Prêts",
+  "@homeCountReady": {
+    "description": "Merchant UI string homeCountReady"
+  },
+  "homeCountCourier": "Livreur",
+  "@homeCountCourier": {
+    "description": "Merchant UI string homeCountCourier"
+  },
+  "homeCountCourierUnavailable": "—",
+  "@homeCountCourierUnavailable": {
+    "description": "Merchant UI string homeCountCourierUnavailable"
+  },
+  "homeActiveOrdersTitle": "Commandes actives",
+  "@homeActiveOrdersTitle": {
+    "description": "Merchant UI string homeActiveOrdersTitle"
+  },
+  "homeActiveOrdersEmpty": "Aucune commande active pour le moment.",
+  "@homeActiveOrdersEmpty": {
+    "description": "Merchant UI string homeActiveOrdersEmpty"
+  },
+  "homeTreatOrder": "Traiter la commande",
+  "@homeTreatOrder": {
+    "description": "Merchant UI string homeTreatOrder"
+  },
+  "homeOpenOrder": "Voir la commande",
+  "@homeOpenOrder": {
+    "description": "Merchant UI string homeOpenOrder"
+  },
+  "homeVerificationTitle": "Vérification à finaliser",
+  "@homeVerificationTitle": {
+    "description": "Merchant UI string homeVerificationTitle"
+  },
+  "homeVerificationBody": "Complétez votre dossier pour conserver l’accès complet à votre espace marchand.",
+  "@homeVerificationBody": {
+    "description": "Merchant UI string homeVerificationBody"
+  },
+  "homeKpiSales": "Ventes",
+  "@homeKpiSales": {
+    "description": "Merchant UI string homeKpiSales"
+  },
+  "homeKpiOrders": "Commandes",
+  "@homeKpiOrders": {
+    "description": "Merchant UI string homeKpiOrders"
+  },
+  "homeKpiOrdersUnit": "terminées",
+  "@homeKpiOrdersUnit": {
+    "description": "Merchant UI string homeKpiOrdersUnit"
+  },
+  "homeKpiCurrency": "DZD",
+  "@homeKpiCurrency": {
+    "description": "Merchant UI string homeKpiCurrency"
+  },
+  "homeKpiUnavailable": "—",
+  "@homeKpiUnavailable": {
+    "description": "Merchant UI string homeKpiUnavailable"
+  },
+  "refresh": "Actualiser",
+  "@refresh": {
+    "description": "Merchant UI string refresh"
+  },
+  "ordersEmpty": "Aucune commande pour cet établissement.",
+  "@ordersEmpty": {
+    "description": "Merchant UI string ordersEmpty"
+  },
+  "ordersEmptyIncoming": "Aucune nouvelle commande",
+  "@ordersEmptyIncoming": {
+    "description": "Merchant UI string ordersEmptyIncoming"
+  },
+  "ordersEmptyAccepted": "Aucune commande acceptée",
+  "@ordersEmptyAccepted": {
+    "description": "Merchant UI string ordersEmptyAccepted"
+  },
+  "ordersEmptyPreparing": "Aucune commande en préparation",
+  "@ordersEmptyPreparing": {
+    "description": "Merchant UI string ordersEmptyPreparing"
+  },
+  "ordersEmptyReady": "Aucune commande prête",
+  "@ordersEmptyReady": {
+    "description": "Merchant UI string ordersEmptyReady"
+  },
+  "ordersEmptyCompleted": "Aucune commande terminée",
+  "@ordersEmptyCompleted": {
+    "description": "Merchant UI string ordersEmptyCompleted"
+  },
+  "ordersEmptyCancelled": "Aucune commande annulée",
+  "@ordersEmptyCancelled": {
+    "description": "Merchant UI string ordersEmptyCancelled"
+  },
+  "ordersEmptyFailed": "Aucune commande échouée",
+  "@ordersEmptyFailed": {
+    "description": "Merchant UI string ordersEmptyFailed"
+  },
+  "ordersLoadError": "Impossible de charger les commandes.",
+  "@ordersLoadError": {
+    "description": "Merchant UI string ordersLoadError"
+  },
+  "orderDetailTitle": "Commande",
+  "@orderDetailTitle": {
+    "description": "Merchant UI string orderDetailTitle"
+  },
+  "orderDetailLoadError": "Impossible de charger cette commande.",
+  "@orderDetailLoadError": {
+    "description": "Merchant UI string orderDetailLoadError"
+  },
+  "orderFulfillmentIncoming": "Nouveau",
+  "@orderFulfillmentIncoming": {
+    "description": "Merchant UI string orderFulfillmentIncoming"
+  },
+  "supportReportTitle": "Signaler un problème",
+  "@supportReportTitle": {
+    "description": "Merchant UI string supportReportTitle"
+  },
+  "supportShort": "Support",
+  "@supportShort": {
+    "description": "Merchant UI string supportShort"
+  },
+  "supportContact": "Contacter le support",
+  "@supportContact": {
+    "description": "Merchant UI string supportContact"
+  },
+  "supportOrderLabel": "COMMANDE",
+  "@supportOrderLabel": {
+    "description": "Merchant UI string supportOrderLabel"
+  },
+  "supportCustomerLabel": "CLIENT",
+  "@supportCustomerLabel": {
+    "description": "Merchant UI string supportCustomerLabel"
+  },
+  "supportMerchandiseLabel": "MARCHANDISES",
+  "@supportMerchandiseLabel": {
+    "description": "Merchant UI string supportMerchandiseLabel"
+  },
+  "supportDescriptionLabel": "Description du problème",
+  "@supportDescriptionLabel": {
+    "description": "Merchant UI string supportDescriptionLabel"
+  },
+  "supportDescriptionHint": "Expliquez-nous ce qui s’est passé en détail...",
+  "@supportDescriptionHint": {
+    "description": "Merchant UI string supportDescriptionHint"
+  },
+  "supportSensitiveHint": "Veuillez ne pas inclure de données sensibles (ex : mots de passe).",
+  "@supportSensitiveHint": {
+    "description": "Merchant UI string supportSensitiveHint"
+  },
+  "supportSend": "Envoyer le ticket",
+  "@supportSend": {
+    "description": "Merchant UI string supportSend"
+  },
+  "supportSentTitle": "Signalement envoyé",
+  "@supportSentTitle": {
+    "description": "Merchant UI string supportSentTitle"
+  },
+  "supportSentBodyNoRef": "Votre ticket a été transmis à l’équipe SpeedyGo.",
+  "@supportSentBodyNoRef": {
+    "description": "Merchant UI string supportSentBodyNoRef"
+  },
+  "supportBackToOrder": "Retour à la commande",
+  "@supportBackToOrder": {
+    "description": "Merchant UI string supportBackToOrder"
+  },
+  "supportForbidden": "Seuls le propriétaire et les gérants peuvent contacter le support.",
+  "@supportForbidden": {
+    "description": "Merchant UI string supportForbidden"
+  },
+  "supportSendError": "Le ticket n’a pas pu être envoyé. Réessayez.",
+  "@supportSendError": {
+    "description": "Merchant UI string supportSendError"
+  },
+  "supportCenterTitle": "Support Merchant",
+  "@supportCenterTitle": {
+    "description": "Merchant UI string supportCenterTitle"
+  },
+  "supportNewTicket": "Nouveau ticket",
+  "@supportNewTicket": {
+    "description": "Merchant UI string supportNewTicket"
+  },
+  "supportActiveTickets": "Tickets actifs",
+  "@supportActiveTickets": {
+    "description": "Merchant UI string supportActiveTickets"
+  },
+  "supportResolvedTickets": "Tickets résolus",
+  "@supportResolvedTickets": {
+    "description": "Merchant UI string supportResolvedTickets"
+  },
+  "supportNoTickets": "Aucun ticket pour le moment.",
+  "@supportNoTickets": {
+    "description": "Merchant UI string supportNoTickets"
+  },
+  "supportLoadError": "Impossible de charger vos tickets.",
+  "@supportLoadError": {
+    "description": "Merchant UI string supportLoadError"
+  },
+  "supportTopicsTitle": "Sujets fréquents",
+  "@supportTopicsTitle": {
+    "description": "Merchant UI string supportTopicsTitle"
+  },
+  "supportTopicsHint": "Choisissez un sujet pour ouvrir un nouveau ticket.",
+  "@supportTopicsHint": {
+    "description": "Merchant UI string supportTopicsHint"
+  },
+  "supportTopicsLoadError": "Impossible de charger les sujets.",
+  "@supportTopicsLoadError": {
+    "description": "Merchant UI string supportTopicsLoadError"
+  },
+  "supportTopicsEmpty": "Aucun sujet disponible pour le moment.",
+  "@supportTopicsEmpty": {
+    "description": "Merchant UI string supportTopicsEmpty"
+  },
+  "supportTopicLabel": "Sujet",
+  "@supportTopicLabel": {
+    "description": "Merchant UI string supportTopicLabel"
+  },
+  "supportTopicRequired": "Choisissez un sujet.",
+  "@supportTopicRequired": {
+    "description": "Merchant UI string supportTopicRequired"
+  },
+  "supportSubjectLabel": "Objet",
+  "@supportSubjectLabel": {
+    "description": "Merchant UI string supportSubjectLabel"
+  },
+  "supportSubjectHint": "Résumez votre demande en quelques mots",
+  "@supportSubjectHint": {
+    "description": "Merchant UI string supportSubjectHint"
+  },
+  "supportSubjectRequired": "Indiquez l’objet de votre demande.",
+  "@supportSubjectRequired": {
+    "description": "Merchant UI string supportSubjectRequired"
+  },
+  "supportFaqTitle": "Questions fréquentes",
+  "@supportFaqTitle": {
+    "description": "Merchant UI string supportFaqTitle"
+  },
+  "supportFaqEmpty": "Aucune question fréquente pour le moment.",
+  "@supportFaqEmpty": {
+    "description": "Merchant UI string supportFaqEmpty"
+  },
+  "supportFaqLoadError": "Impossible de charger la FAQ.",
+  "@supportFaqLoadError": {
+    "description": "Merchant UI string supportFaqLoadError"
+  },
+  "supportComposeTitle": "Nouveau ticket",
+  "@supportComposeTitle": {
+    "description": "Merchant UI string supportComposeTitle"
+  },
+  "supportComposeHint": "Décrivez votre demande. Pour un problème sur une commande, utilisez « Signaler un problème » depuis la commande.",
+  "@supportComposeHint": {
+    "description": "Merchant UI string supportComposeHint"
+  },
+  "supportTicketTitle": "Ticket",
+  "@supportTicketTitle": {
+    "description": "Merchant UI string supportTicketTitle"
+  },
+  "supportTicketLoadError": "Impossible de charger ce ticket.",
+  "@supportTicketLoadError": {
+    "description": "Merchant UI string supportTicketLoadError"
+  },
+  "supportLinkedOrder": "Commande liée",
+  "@supportLinkedOrder": {
+    "description": "Merchant UI string supportLinkedOrder"
+  },
+  "supportYou": "Vous",
+  "@supportYou": {
+    "description": "Merchant UI string supportYou"
+  },
+  "supportTeam": "Support SpeedyGo",
+  "@supportTeam": {
+    "description": "Merchant UI string supportTeam"
+  },
+  "supportReplyHint": "Votre réponse",
+  "@supportReplyHint": {
+    "description": "Merchant UI string supportReplyHint"
+  },
+  "supportReplySend": "Envoyer",
+  "@supportReplySend": {
+    "description": "Merchant UI string supportReplySend"
+  },
+  "supportReplyError": "La réponse n’a pas pu être envoyée.",
+  "@supportReplyError": {
+    "description": "Merchant UI string supportReplyError"
+  },
+  "supportTicketFinished": "Ce ticket est clos. Créez un nouveau ticket si besoin.",
+  "@supportTicketFinished": {
+    "description": "Merchant UI string supportTicketFinished"
+  },
+  "supportNoMessages": "Aucun message.",
+  "@supportNoMessages": {
+    "description": "Merchant UI string supportNoMessages"
+  },
+  "orderListAcceptNow": "À accepter immédiatement",
+  "@orderListAcceptNow": {
+    "description": "Merchant UI string orderListAcceptNow"
+  },
+  "orderDetailsTitle": "Détails de la commande",
+  "@orderDetailsTitle": {
+    "description": "Merchant UI string orderDetailsTitle"
+  },
+  "orderDetailCancelledTitle": "Commande annulée",
+  "@orderDetailCancelledTitle": {
+    "description": "Merchant UI string orderDetailCancelledTitle"
+  },
+  "orderCancelledHeroBody": "Cette commande n’aboutira pas.",
+  "@orderCancelledHeroBody": {
+    "description": "Merchant UI string orderCancelledHeroBody"
+  },
+  "orderCancelledByCustomer": "Annulée par le client",
+  "@orderCancelledByCustomer": {
+    "description": "Merchant UI string orderCancelledByCustomer"
+  },
+  "orderRejectedByMerchant": "Refusée par le commerce",
+  "@orderRejectedByMerchant": {
+    "description": "Merchant UI string orderRejectedByMerchant"
+  },
+  "orderReasonLabel": "Raison",
+  "@orderReasonLabel": {
+    "description": "Merchant UI string orderReasonLabel"
+  },
+  "orderCancelledAck": "Compris",
+  "@orderCancelledAck": {
+    "description": "Merchant UI string orderCancelledAck"
+  },
+  "orderViewHistory": "Voir l’historique",
+  "@orderViewHistory": {
+    "description": "Merchant UI string orderViewHistory"
+  },
+  "orderCurrentStatus": "Statut actuel",
+  "@orderCurrentStatus": {
+    "description": "Merchant UI string orderCurrentStatus"
+  },
+  "orderReceivedAtLabel": "Reçue à",
+  "@orderReceivedAtLabel": {
+    "description": "Merchant UI string orderReceivedAtLabel"
+  },
+  "orderPaymentLabel": "Paiement",
+  "@orderPaymentLabel": {
+    "description": "Merchant UI string orderPaymentLabel"
+  },
+  "orderPaymentMethod": "Méthode : {method}",
+  "@orderPaymentMethod": {
+    "description": "Merchant UI string orderPaymentMethod",
+    "placeholders": {
+      "method": {
+        "type": "String"
+      }
+    }
+  },
+  "eventCreated": "Commande reçue",
+  "@eventCreated": {
+    "description": "Merchant UI string eventCreated"
+  },
+  "eventCreatedCaption": "Commande passée par le client",
+  "@eventCreatedCaption": {
+    "description": "Merchant UI string eventCreatedCaption"
+  },
+  "eventAccepted": "Acceptée",
+  "@eventAccepted": {
+    "description": "Merchant UI string eventAccepted"
+  },
+  "eventAcceptedCaption": "Commande confirmée",
+  "@eventAcceptedCaption": {
+    "description": "Merchant UI string eventAcceptedCaption"
+  },
+  "eventPrepStarted": "En préparation",
+  "@eventPrepStarted": {
+    "description": "Merchant UI string eventPrepStarted"
+  },
+  "eventPrepStartedCaption": "Préparation démarrée",
+  "@eventPrepStartedCaption": {
+    "description": "Merchant UI string eventPrepStartedCaption"
+  },
+  "eventReady": "Préparée",
+  "@eventReady": {
+    "description": "Merchant UI string eventReady"
+  },
+  "eventReadyCaption": "Prête pour la collecte",
+  "@eventReadyCaption": {
+    "description": "Merchant UI string eventReadyCaption"
+  },
+  "eventRejected": "Refusée",
+  "@eventRejected": {
+    "description": "Merchant UI string eventRejected"
+  },
+  "eventCancelled": "Annulée",
+  "@eventCancelled": {
+    "description": "Merchant UI string eventCancelled"
+  },
+  "eventCompleted": "Terminée",
+  "@eventCompleted": {
+    "description": "Merchant UI string eventCompleted"
+  },
+  "eventCompletedCaption": "Commande livrée au client",
+  "@eventCompletedCaption": {
+    "description": "Merchant UI string eventCompletedCaption"
+  },
+  "eventStatusUpdate": "Mise à jour du statut",
+  "@eventStatusUpdate": {
+    "description": "Merchant UI string eventStatusUpdate"
+  },
+  "orderListLate": "En retard",
+  "@orderListLate": {
+    "description": "Merchant UI string orderListLate"
+  },
+  "orderHistoryToday": "Aujourd’hui",
+  "@orderHistoryToday": {
+    "description": "Merchant UI string orderHistoryToday"
+  },
+  "orderHistoryYesterday": "Hier",
+  "@orderHistoryYesterday": {
+    "description": "Merchant UI string orderHistoryYesterday"
+  },
+  "orderHistoryEarlier": "Plus tôt",
+  "@orderHistoryEarlier": {
+    "description": "Merchant UI string orderHistoryEarlier"
+  },
+  "orderFulfillmentAccepted": "Acceptée",
+  "@orderFulfillmentAccepted": {
+    "description": "Merchant UI string orderFulfillmentAccepted"
+  },
+  "orderFulfillmentPreparing": "En préparation",
+  "@orderFulfillmentPreparing": {
+    "description": "Merchant UI string orderFulfillmentPreparing"
+  },
+  "orderFulfillmentReady": "Prête",
+  "@orderFulfillmentReady": {
+    "description": "Merchant UI string orderFulfillmentReady"
+  },
+  "orderStatusCreated": "Créée",
+  "@orderStatusCreated": {
+    "description": "Merchant UI string orderStatusCreated"
+  },
+  "orderStatusConfirmed": "Confirmée",
+  "@orderStatusConfirmed": {
+    "description": "Merchant UI string orderStatusConfirmed"
+  },
+  "orderStatusActive": "Active",
+  "@orderStatusActive": {
+    "description": "Merchant UI string orderStatusActive"
+  },
+  "orderStatusCompleted": "Terminée",
+  "@orderStatusCompleted": {
+    "description": "Merchant UI string orderStatusCompleted"
+  },
+  "orderStatusCancelled": "Annulée",
+  "@orderStatusCancelled": {
+    "description": "Merchant UI string orderStatusCancelled"
+  },
+  "orderStatusFailed": "Échouée",
+  "@orderStatusFailed": {
+    "description": "Merchant UI string orderStatusFailed"
+  },
+  "orderPaymentCod": "Paiement à la livraison",
+  "@orderPaymentCod": {
+    "description": "Merchant UI string orderPaymentCod"
+  },
+  "orderPaymentElectronic": "Paiement électronique",
+  "@orderPaymentElectronic": {
+    "description": "Merchant UI string orderPaymentElectronic"
+  },
+  "orderListMerchandiseLabel": "Marchandises",
+  "@orderListMerchandiseLabel": {
+    "description": "Merchant UI string orderListMerchandiseLabel"
+  },
+  "orderIncomingBanner": "Nouvelle commande",
+  "@orderIncomingBanner": {
+    "description": "Merchant UI string orderIncomingBanner"
+  },
+  "orderReadyBanner": "Commande prête",
+  "@orderReadyBanner": {
+    "description": "Merchant UI string orderReadyBanner"
+  },
+  "orderSegmentActive": "En cours",
+  "@orderSegmentActive": {
+    "description": "Merchant UI string orderSegmentActive"
+  },
+  "orderSegmentHistory": "Historique",
+  "@orderSegmentHistory": {
+    "description": "Merchant UI string orderSegmentHistory"
+  },
+  "orderReferenceCopy": "Copier la référence",
+  "@orderReferenceCopy": {
+    "description": "Merchant UI string orderReferenceCopy"
+  },
+  "orderReferenceCopied": "Référence copiée",
+  "@orderReferenceCopied": {
+    "description": "Merchant UI string orderReferenceCopied"
+  },
+  "orderReferenceShowFull": "Afficher la référence complète",
+  "@orderReferenceShowFull": {
+    "description": "Merchant UI string orderReferenceShowFull"
+  },
+  "orderItemsTitle": "Articles",
+  "@orderItemsTitle": {
+    "description": "Merchant UI string orderItemsTitle"
+  },
+  "orderItemsToPrepareTitle": "Articles à préparer",
+  "@orderItemsToPrepareTitle": {
+    "description": "Merchant UI string orderItemsToPrepareTitle"
+  },
+  "orderDeliveryAddress": "Adresse de livraison",
+  "@orderDeliveryAddress": {
+    "description": "Merchant UI string orderDeliveryAddress"
+  },
+  "orderFinanceTitle": "Répartition financière",
+  "@orderFinanceTitle": {
+    "description": "Merchant UI string orderFinanceTitle"
+  },
+  "orderFinanceGms": "Sous-total marchandises",
+  "@orderFinanceGms": {
+    "description": "Merchant UI string orderFinanceGms"
+  },
+  "orderFinanceDiscount": "Remise commerçant",
+  "@orderFinanceDiscount": {
+    "description": "Merchant UI string orderFinanceDiscount"
+  },
+  "orderFinanceNet": "Net commerçant",
+  "@orderFinanceNet": {
+    "description": "Merchant UI string orderFinanceNet"
+  },
+  "orderFinanceCommissionUnavailable": "Commission SpeedyGo",
+  "@orderFinanceCommissionUnavailable": {
+    "description": "Merchant UI string orderFinanceCommissionUnavailable"
+  },
+  "orderFinanceRestricted": "Commission, remise et net commerçant réservés au propriétaire ou au responsable.",
+  "@orderFinanceRestricted": {
+    "description": "Merchant UI string orderFinanceRestricted"
+  },
+  "valueUnavailable": "—",
+  "@valueUnavailable": {
+    "description": "Merchant UI string valueUnavailable"
+  },
+  "orderFinanceNetCancelledNote": "Montants historiques figés au moment de la commande — pas un paiement dû.",
+  "@orderFinanceNetCancelledNote": {
+    "description": "Merchant UI string orderFinanceNetCancelledNote"
+  },
+  "orderFinanceDeliveryFeeNote": "Frais de livraison (client)",
+  "@orderFinanceDeliveryFeeNote": {
+    "description": "Merchant UI string orderFinanceDeliveryFeeNote"
+  },
+  "orderFinanceDeliveryFeeDisclaimer": "Les frais de livraison ne sont pas un revenu commerçant.",
+  "@orderFinanceDeliveryFeeDisclaimer": {
+    "description": "Merchant UI string orderFinanceDeliveryFeeDisclaimer"
+  },
+  "orderAccept": "Accepter",
+  "@orderAccept": {
+    "description": "Merchant UI string orderAccept"
+  },
+  "orderChoosePrepTime": "Choisir le temps de préparation",
+  "@orderChoosePrepTime": {
+    "description": "Merchant UI string orderChoosePrepTime"
+  },
+  "orderReject": "Refuser",
+  "@orderReject": {
+    "description": "Merchant UI string orderReject"
+  },
+  "orderRejectTitle": "Refuser la commande",
+  "@orderRejectTitle": {
+    "description": "Merchant UI string orderRejectTitle"
+  },
+  "orderRejectHint": "Le refus n’est possible qu’avant acceptation. Indiquez un motif.",
+  "@orderRejectHint": {
+    "description": "Merchant UI string orderRejectHint"
+  },
+  "orderRejectReasonLabel": "Motif du refus",
+  "@orderRejectReasonLabel": {
+    "description": "Merchant UI string orderRejectReasonLabel"
+  },
+  "orderRejectConfirm": "Confirmer le refus",
+  "@orderRejectConfirm": {
+    "description": "Merchant UI string orderRejectConfirm"
+  },
+  "orderQuickAlreadyHandled": "Cette commande a déjà été traitée. La liste est actualisée.",
+  "@orderQuickAlreadyHandled": {
+    "description": "Merchant UI string orderQuickAlreadyHandled"
+  },
+  "orderQuickNotAllowed": "Votre rôle ne permet pas cette action.",
+  "@orderQuickNotAllowed": {
+    "description": "Merchant UI string orderQuickNotAllowed"
+  },
+  "orderQuickCheckFailed": "Impossible de vérifier la commande. Réessayez.",
+  "@orderQuickCheckFailed": {
+    "description": "Merchant UI string orderQuickCheckFailed"
+  },
+  "orderQuickAccepted": "Commande acceptée.",
+  "@orderQuickAccepted": {
+    "description": "Merchant UI string orderQuickAccepted"
+  },
+  "orderQuickRejected": "Commande refusée.",
+  "@orderQuickRejected": {
+    "description": "Merchant UI string orderQuickRejected"
+  },
+  "prepAcceptTitle": "Accepter la commande",
+  "@prepAcceptTitle": {
+    "description": "Merchant UI string prepAcceptTitle"
+  },
+  "prepEstimatedTitle": "Temps de préparation estimé",
+  "@prepEstimatedTitle": {
+    "description": "Merchant UI string prepEstimatedTitle"
+  },
+  "prepConfirmAccept": "Confirmer et accepter",
+  "@prepConfirmAccept": {
+    "description": "Merchant UI string prepConfirmAccept"
+  },
+  "prepCustomTime": "Temps personnalisé",
+  "@prepCustomTime": {
+    "description": "Merchant UI string prepCustomTime"
+  },
+  "prepCustomEntry": "Saisie personnalisée",
+  "@prepCustomEntry": {
+    "description": "Merchant UI string prepCustomEntry"
+  },
+  "prepCustomRange": "Entre {min} et {max} minutes",
+  "@prepCustomRange": {
+    "description": "Merchant UI string prepCustomRange",
+    "placeholders": {
+      "min": {
+        "type": "String"
+      },
+      "max": {
+        "type": "String"
+      }
+    }
+  },
+  "prepItemCount": "1 article{n} articles",
+  "@prepItemCount": {
+    "description": "Merchant UI string prepItemCount",
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "prepInProgress": "En cours",
+  "@prepInProgress": {
+    "description": "Merchant UI string prepInProgress"
+  },
+  "prepCurrentShort": "Heure actuelle",
+  "@prepCurrentShort": {
+    "description": "Merchant UI string prepCurrentShort"
+  },
+  "prepNewShort": "Nouvelle estimation",
+  "@prepNewShort": {
+    "description": "Merchant UI string prepNewShort"
+  },
+  "prepReasonHint": "Ex : problème technique en cuisine…",
+  "@prepReasonHint": {
+    "description": "Merchant UI string prepReasonHint"
+  },
+  "prepRemainingTitle": "Temps restant",
+  "@prepRemainingTitle": {
+    "description": "Merchant UI string prepRemainingTitle"
+  },
+  "prepMinutesCaption": "MINUTES",
+  "@prepMinutesCaption": {
+    "description": "Merchant UI string prepMinutesCaption"
+  },
+  "prepSecondsCaption": "SECONDES",
+  "@prepSecondsCaption": {
+    "description": "Merchant UI string prepSecondsCaption"
+  },
+  "prepLateHint": "L’estimation est dépassée. Mettez à jour le temps ou marquez la commande prête quand elle l’est.",
+  "@prepLateHint": {
+    "description": "Merchant UI string prepLateHint"
+  },
+  "prepUpdateAction": "Modifier temps",
+  "@prepUpdateAction": {
+    "description": "Merchant UI string prepUpdateAction"
+  },
+  "prepUpdateTitle": "Mise à jour du temps",
+  "@prepUpdateTitle": {
+    "description": "Merchant UI string prepUpdateTitle"
+  },
+  "prepCurrentReady": "Heure prévue actuelle",
+  "@prepCurrentReady": {
+    "description": "Merchant UI string prepCurrentReady"
+  },
+  "prepOriginalReady": "Initiale : {time}",
+  "@prepOriginalReady": {
+    "description": "Merchant UI string prepOriginalReady",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "prepOriginalReadyLabel": "Heure initiale : {time}",
+  "@prepOriginalReadyLabel": {
+    "description": "Merchant UI string prepOriginalReadyLabel",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "prepBranchLabel": "Établissement",
+  "@prepBranchLabel": {
+    "description": "Merchant UI string prepBranchLabel"
+  },
+  "prepAddTime": "Ajouter du temps de préparation",
+  "@prepAddTime": {
+    "description": "Merchant UI string prepAddTime"
+  },
+  "prepNewEstimate": "Nouvelle estimation : {to} au lieu de {from}, plus {add} minutes",
+  "@prepNewEstimate": {
+    "description": "Merchant UI string prepNewEstimate",
+    "placeholders": {
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      },
+      "add": {
+        "type": "String"
+      }
+    }
+  },
+  "prepClockOnDay": "le {day} à {time}",
+  "@prepClockOnDay": {
+    "description": "Merchant UI string prepClockOnDay",
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "prepOnDay": "le {day}",
+  "@prepOnDay": {
+    "description": "Merchant UI string prepOnDay",
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "prepSpokenClock": "{time} le {day}",
+  "@prepSpokenClock": {
+    "description": "Merchant UI string prepSpokenClock",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "prepReasonOptional": "Raison du retard (optionnel)",
+  "@prepReasonOptional": {
+    "description": "Merchant UI string prepReasonOptional"
+  },
+  "prepReasonShortcutsHint": "Un raccourci remplit le motif ; vous pouvez le modifier.",
+  "@prepReasonShortcutsHint": {
+    "description": "Merchant UI string prepReasonShortcutsHint"
+  },
+  "prepReasonFieldLabel": "Motif",
+  "@prepReasonFieldLabel": {
+    "description": "Merchant UI string prepReasonFieldLabel"
+  },
+  "prepReasonBusy": "Forte affluence",
+  "@prepReasonBusy": {
+    "description": "Merchant UI string prepReasonBusy"
+  },
+  "prepReasonLongPrep": "Préparation longue",
+  "@prepReasonLongPrep": {
+    "description": "Merchant UI string prepReasonLongPrep"
+  },
+  "prepReasonMissingIngredient": "Ingrédient manquant",
+  "@prepReasonMissingIngredient": {
+    "description": "Merchant UI string prepReasonMissingIngredient"
+  },
+  "prepReasonOther": "Autre raison",
+  "@prepReasonOther": {
+    "description": "Merchant UI string prepReasonOther"
+  },
+  "prepUpdateConfirm": "Mettre à jour",
+  "@prepUpdateConfirm": {
+    "description": "Merchant UI string prepUpdateConfirm"
+  },
+  "orderStartPreparation": "Démarrer la préparation",
+  "@orderStartPreparation": {
+    "description": "Merchant UI string orderStartPreparation"
+  },
+  "orderMarkReady": "Marquer comme prête",
+  "@orderMarkReady": {
+    "description": "Merchant UI string orderMarkReady"
+  },
+  "markReadyPackingTitle": "Liste de colisage",
+  "@markReadyPackingTitle": {
+    "description": "Merchant UI string markReadyPackingTitle"
+  },
+  "markReadyPackingHint": "Vérifiez que tous les éléments de la commande sont bien emballés avant de la marquer prête.",
+  "@markReadyPackingHint": {
+    "description": "Merchant UI string markReadyPackingHint"
+  },
+  "markReadyConfirm": "Confirmer et marquer prête",
+  "@markReadyConfirm": {
+    "description": "Merchant UI string markReadyConfirm"
+  },
+  "orderReadyWaitingDelivery": "En attente de prise en charge pour la livraison.",
+  "@orderReadyWaitingDelivery": {
+    "description": "Merchant UI string orderReadyWaitingDelivery"
+  },
+  "orderDeliveryStatusTitle": "Livraison",
+  "@orderDeliveryStatusTitle": {
+    "description": "Merchant UI string orderDeliveryStatusTitle"
+  },
+  "orderDriverAssigned": "Un livreur est assigné.",
+  "@orderDriverAssigned": {
+    "description": "Merchant UI string orderDriverAssigned"
+  },
+  "orderDriverCardTitle": "Livreur assigné",
+  "@orderDriverCardTitle": {
+    "description": "Merchant UI string orderDriverCardTitle"
+  },
+  "orderDriverStatusLabel": "Statut",
+  "@orderDriverStatusLabel": {
+    "description": "Merchant UI string orderDriverStatusLabel"
+  },
+  "orderDriverEtaLabel": "Arrivée estimée",
+  "@orderDriverEtaLabel": {
+    "description": "Merchant UI string orderDriverEtaLabel"
+  },
+  "orderDriverEtaUnavailable": "Heure d’arrivée indisponible.",
+  "@orderDriverEtaUnavailable": {
+    "description": "Merchant UI string orderDriverEtaUnavailable"
+  },
+  "orderDriverContactUnavailable": "Contact du livreur indisponible.",
+  "@orderDriverContactUnavailable": {
+    "description": "Merchant UI string orderDriverContactUnavailable"
+  },
+  "orderDriverCall": "Appeler le livreur",
+  "@orderDriverCall": {
+    "description": "Merchant UI string orderDriverCall"
+  },
+  "pickupHandoffTitle": "Code de retrait",
+  "@pickupHandoffTitle": {
+    "description": "Merchant UI string pickupHandoffTitle"
+  },
+  "pickupHandoffWaiting": "En attente de validation par le livreur…",
+  "@pickupHandoffWaiting": {
+    "description": "Merchant UI string pickupHandoffWaiting"
+  },
+  "pickupHandoffInstruction1": "Communiquez ce code uniquement au livreur affiché ci-dessus.",
+  "@pickupHandoffInstruction1": {
+    "description": "Merchant UI string pickupHandoffInstruction1"
+  },
+  "pickupHandoffInstruction2": "Le livreur doit saisir ce code dans son application pour confirmer la récupération.",
+  "@pickupHandoffInstruction2": {
+    "description": "Merchant UI string pickupHandoffInstruction2"
+  },
+  "pickupHandoffRegenerate": "Régénérer le code",
+  "@pickupHandoffRegenerate": {
+    "description": "Merchant UI string pickupHandoffRegenerate"
+  },
+  "pickupHandoffConfirmed": "Remise confirmée",
+  "@pickupHandoffConfirmed": {
+    "description": "Merchant UI string pickupHandoffConfirmed"
+  },
+  "pickupHandoffLoadError": "Impossible de charger le code de retrait.",
+  "@pickupHandoffLoadError": {
+    "description": "Merchant UI string pickupHandoffLoadError"
+  },
+  "pickupHandoffRetry": "Réessayer",
+  "@pickupHandoffRetry": {
+    "description": "Merchant UI string pickupHandoffRetry"
+  },
+  "orderHandoffUnsupported": "La confirmation de remise sécurisée n’est pas disponible pour le commerçant dans cette version.",
+  "@orderHandoffUnsupported": {
+    "description": "Merchant UI string orderHandoffUnsupported"
+  },
+  "orderHistoryTitle": "Historique de la commande",
+  "@orderHistoryTitle": {
+    "description": "Merchant UI string orderHistoryTitle"
+  },
+  "orderReferenceLabel": "Référence",
+  "@orderReferenceLabel": {
+    "description": "Merchant UI string orderReferenceLabel"
+  },
+  "orderCustomerLabel": "Client",
+  "@orderCustomerLabel": {
+    "description": "Merchant UI string orderCustomerLabel"
+  },
+  "orderSummaryTitle": "Résumé de la commande",
+  "@orderSummaryTitle": {
+    "description": "Merchant UI string orderSummaryTitle"
+  },
+  "deliverySearching": "Recherche de livreur",
+  "@deliverySearching": {
+    "description": "Merchant UI string deliverySearching"
+  },
+  "deliveryAssigned": "Livreur assigné",
+  "@deliveryAssigned": {
+    "description": "Merchant UI string deliveryAssigned"
+  },
+  "deliveryPickedUp": "Récupérée",
+  "@deliveryPickedUp": {
+    "description": "Merchant UI string deliveryPickedUp"
+  },
+  "deliveryArrived": "Arrivé chez le client",
+  "@deliveryArrived": {
+    "description": "Merchant UI string deliveryArrived"
+  },
+  "deliveryToPickup": "Livreur en route vers le commerce",
+  "@deliveryToPickup": {
+    "description": "Merchant UI string deliveryToPickup"
+  },
+  "deliveryAtPickup": "Livreur arrivé au commerce",
+  "@deliveryAtPickup": {
+    "description": "Merchant UI string deliveryAtPickup"
+  },
+  "deliveryInTransit": "En route vers le client",
+  "@deliveryInTransit": {
+    "description": "Merchant UI string deliveryInTransit"
+  },
+  "deliveryFailed": "Livraison échouée",
+  "@deliveryFailed": {
+    "description": "Merchant UI string deliveryFailed"
+  },
+  "deliveryCancelled": "Livraison annulée",
+  "@deliveryCancelled": {
+    "description": "Merchant UI string deliveryCancelled"
+  },
+  "deliveryUnknown": "Statut de livraison indisponible",
+  "@deliveryUnknown": {
+    "description": "Merchant UI string deliveryUnknown"
+  },
+  "deliveryDelivered": "Livrée",
+  "@deliveryDelivered": {
+    "description": "Merchant UI string deliveryDelivered"
+  },
+  "catalogTitle": "Catalogue",
+  "@catalogTitle": {
+    "description": "Merchant UI string catalogTitle"
+  },
+  "catalogTabProducts": "Produits",
+  "@catalogTabProducts": {
+    "description": "Merchant UI string catalogTabProducts"
+  },
+  "catalogTabCategories": "Catégories",
+  "@catalogTabCategories": {
+    "description": "Merchant UI string catalogTabCategories"
+  },
+  "catalogSearchHint": "Rechercher un produit…",
+  "@catalogSearchHint": {
+    "description": "Merchant UI string catalogSearchHint"
+  },
+  "catalogAllCategories": "Tous",
+  "@catalogAllCategories": {
+    "description": "Merchant UI string catalogAllCategories"
+  },
+  "catalogEmptyProducts": "Aucun produit dans ce catalogue.",
+  "@catalogEmptyProducts": {
+    "description": "Merchant UI string catalogEmptyProducts"
+  },
+  "catalogEmptyCategories": "Aucune catégorie pour le moment.",
+  "@catalogEmptyCategories": {
+    "description": "Merchant UI string catalogEmptyCategories"
+  },
+  "catalogLoadError": "Impossible de charger le catalogue.",
+  "@catalogLoadError": {
+    "description": "Merchant UI string catalogLoadError"
+  },
+  "catalogInStock": "En stock",
+  "@catalogInStock": {
+    "description": "Merchant UI string catalogInStock"
+  },
+  "catalogOutOfStock": "Rupture",
+  "@catalogOutOfStock": {
+    "description": "Merchant UI string catalogOutOfStock"
+  },
+  "catalogUnavailableSection": "La création et l’édition avancées de produits ne sont pas branchées dans cet écran.",
+  "@catalogUnavailableSection": {
+    "description": "Merchant UI string catalogUnavailableSection"
+  },
+  "reportsTitle": "Rapports",
+  "@reportsTitle": {
+    "description": "Merchant UI string reportsTitle"
+  },
+  "reportsPeriodToday": "Aujourd’hui",
+  "@reportsPeriodToday": {
+    "description": "Merchant UI string reportsPeriodToday"
+  },
+  "reportsPeriodYesterday": "Hier",
+  "@reportsPeriodYesterday": {
+    "description": "Merchant UI string reportsPeriodYesterday"
+  },
+  "reportsPeriodWeek": "Cette semaine",
+  "@reportsPeriodWeek": {
+    "description": "Merchant UI string reportsPeriodWeek"
+  },
+  "reportsPeriodMonth": "Ce mois",
+  "@reportsPeriodMonth": {
+    "description": "Merchant UI string reportsPeriodMonth"
+  },
+  "reportsFinanceTitle": "Détails financiers",
+  "@reportsFinanceTitle": {
+    "description": "Merchant UI string reportsFinanceTitle"
+  },
+  "reportsGrossSales": "Ventes brutes",
+  "@reportsGrossSales": {
+    "description": "Merchant UI string reportsGrossSales"
+  },
+  "reportsCommission": "Commission SpeedyGo",
+  "@reportsCommission": {
+    "description": "Merchant UI string reportsCommission"
+  },
+  "reportsMerchantNet": "Net commerçant",
+  "@reportsMerchantNet": {
+    "description": "Merchant UI string reportsMerchantNet"
+  },
+  "reportsDataUnavailable": "Données indisponibles",
+  "@reportsDataUnavailable": {
+    "description": "Merchant UI string reportsDataUnavailable"
+  },
+  "reportsDataUnavailableShort": "—",
+  "@reportsDataUnavailableShort": {
+    "description": "Merchant UI string reportsDataUnavailableShort"
+  },
+  "reportsOrdersMetric": "Commandes",
+  "@reportsOrdersMetric": {
+    "description": "Merchant UI string reportsOrdersMetric"
+  },
+  "reportsPrepTimeMetric": "Temps prép. moy.",
+  "@reportsPrepTimeMetric": {
+    "description": "Merchant UI string reportsPrepTimeMetric"
+  },
+  "reportsCancellationsMetric": "Annulations",
+  "@reportsCancellationsMetric": {
+    "description": "Merchant UI string reportsCancellationsMetric"
+  },
+  "reportsTrendTitle": "Tendance des ventes",
+  "@reportsTrendTitle": {
+    "description": "Merchant UI string reportsTrendTitle"
+  },
+  "reportsTopProductsTitle": "Produits les plus vendus",
+  "@reportsTopProductsTitle": {
+    "description": "Merchant UI string reportsTopProductsTitle"
+  },
+  "reportsTopProductsScreenTitle": "Top produits",
+  "@reportsTopProductsScreenTitle": {
+    "description": "Merchant UI string reportsTopProductsScreenTitle"
+  },
+  "reportsCommissionMixedRates": "Commission SpeedyGo (taux variables)",
+  "@reportsCommissionMixedRates": {
+    "description": "Merchant UI string reportsCommissionMixedRates"
+  },
+  "reportsFinanceUnavailable": "Données indisponibles",
+  "@reportsFinanceUnavailable": {
+    "description": "Merchant UI string reportsFinanceUnavailable"
+  },
+  "reportsRatingsTitle": "Notes clients",
+  "@reportsRatingsTitle": {
+    "description": "Merchant UI string reportsRatingsTitle"
+  },
+  "reportsRatingsEmpty": "Aucune note pour le moment.",
+  "@reportsRatingsEmpty": {
+    "description": "Merchant UI string reportsRatingsEmpty"
+  },
+  "reportsRatingsCount": "avis",
+  "@reportsRatingsCount": {
+    "description": "Merchant UI string reportsRatingsCount"
+  },
+  "reportsRatingsUnavailable": "Données indisponibles",
+  "@reportsRatingsUnavailable": {
+    "description": "Merchant UI string reportsRatingsUnavailable"
+  },
+  "reportsSettlementsTitle": "Règlements",
+  "@reportsSettlementsTitle": {
+    "description": "Merchant UI string reportsSettlementsTitle"
+  },
+  "reportsSettlementsEmpty": "Aucun règlement pour le moment.",
+  "@reportsSettlementsEmpty": {
+    "description": "Merchant UI string reportsSettlementsEmpty"
+  },
+  "reportsSettlementsForbidden": "Les règlements sont réservés au propriétaire ou au responsable.",
+  "@reportsSettlementsForbidden": {
+    "description": "Merchant UI string reportsSettlementsForbidden"
+  },
+  "reportsLoadError": "Impossible de charger les indicateurs.",
+  "@reportsLoadError": {
+    "description": "Merchant UI string reportsLoadError"
+  },
+  "reportsTrendUnavailable": "Données indisponibles",
+  "@reportsTrendUnavailable": {
+    "description": "Merchant UI string reportsTrendUnavailable"
+  },
+  "reportsTopProductsUnavailable": "Données indisponibles",
+  "@reportsTopProductsUnavailable": {
+    "description": "Merchant UI string reportsTopProductsUnavailable"
+  },
+  "reportsPeriodCustom": "Personnalisé",
+  "@reportsPeriodCustom": {
+    "description": "Merchant UI string reportsPeriodCustom"
+  },
+  "reportsPeriodSelectorLabel": "Période du rapport",
+  "@reportsPeriodSelectorLabel": {
+    "description": "Merchant UI string reportsPeriodSelectorLabel"
+  },
+  "reportsCustomRangeTooLong": "La période personnalisée est limitée à 93 jours.",
+  "@reportsCustomRangeTooLong": {
+    "description": "Merchant UI string reportsCustomRangeTooLong"
+  },
+  "reportsAverageBasketMetric": "Panier moyen",
+  "@reportsAverageBasketMetric": {
+    "description": "Merchant UI string reportsAverageBasketMetric"
+  },
+  "reportsPrepTimeNotTracked": "Non suivi",
+  "@reportsPrepTimeNotTracked": {
+    "description": "Merchant UI string reportsPrepTimeNotTracked"
+  },
+  "reportsMerchantDiscount": "Remise commerçant",
+  "@reportsMerchantDiscount": {
+    "description": "Merchant UI string reportsMerchantDiscount"
+  },
+  "reportsFinanceRestricted": "Commission et net commerçant réservés au propriétaire ou au responsable.",
+  "@reportsFinanceRestricted": {
+    "description": "Merchant UI string reportsFinanceRestricted"
+  },
+  "reportsFinanceMissingSnapshot": "Données financières indisponibles pour certaines commandes de la période.",
+  "@reportsFinanceMissingSnapshot": {
+    "description": "Merchant UI string reportsFinanceMissingSnapshot"
+  },
+  "reportsRefundsCompleted": "Remboursements finalisés",
+  "@reportsRefundsCompleted": {
+    "description": "Merchant UI string reportsRefundsCompleted"
+  },
+  "reportsRefundAdjustments": "Ajustements enregistrés",
+  "@reportsRefundAdjustments": {
+    "description": "Merchant UI string reportsRefundAdjustments"
+  },
+  "reportsRefundsNote": "Les remboursements ne réduisent pas les ventes. Seuls les ajustements enregistrés sur vos règlements vous sont imputés.",
+  "@reportsRefundsNote": {
+    "description": "Merchant UI string reportsRefundsNote"
+  },
+  "reportsTrendEmpty": "Aucune vente sur la période.",
+  "@reportsTrendEmpty": {
+    "description": "Merchant UI string reportsTrendEmpty"
+  },
+  "reportsTopProductsEmpty": "Aucun produit vendu sur la période.",
+  "@reportsTopProductsEmpty": {
+    "description": "Merchant UI string reportsTopProductsEmpty"
+  },
+  "reportsSeeAll": "Voir tout",
+  "@reportsSeeAll": {
+    "description": "Merchant UI string reportsSeeAll"
+  },
+  "reportsSortOrders": "Commandes",
+  "@reportsSortOrders": {
+    "description": "Merchant UI string reportsSortOrders"
+  },
+  "reportsSortRevenue": "Chiffre d’affaires",
+  "@reportsSortRevenue": {
+    "description": "Merchant UI string reportsSortRevenue"
+  },
+  "reportsTopSales": "Top des ventes",
+  "@reportsTopSales": {
+    "description": "Merchant UI string reportsTopSales"
+  },
+  "reportsRankFirst": "N°1",
+  "@reportsRankFirst": {
+    "description": "Merchant UI string reportsRankFirst"
+  },
+  "reportsDeletedProduct": "Produit retiré du catalogue",
+  "@reportsDeletedProduct": {
+    "description": "Merchant UI string reportsDeletedProduct"
+  },
+  "reportsSalesLoadError": "Impossible de charger les ventes.",
+  "@reportsSalesLoadError": {
+    "description": "Merchant UI string reportsSalesLoadError"
+  },
+  "reportsTopProductsLoadError": "Impossible de charger les produits.",
+  "@reportsTopProductsLoadError": {
+    "description": "Merchant UI string reportsTopProductsLoadError"
+  },
+  "reportsOrderCount": "1 commande{count} commandes",
+  "@reportsOrderCount": {
+    "description": "Merchant UI string reportsOrderCount",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "reportsTrendSemantics": "Tendance des ventes : {orders} commandes, {gross}",
+  "@reportsTrendSemantics": {
+    "description": "Merchant UI string reportsTrendSemantics",
+    "placeholders": {
+      "orders": {
+        "type": "String"
+      },
+      "gross": {
+        "type": "String"
+      }
+    }
+  },
+  "reportsDailySummaryTitle": "Résumé quotidien",
+  "@reportsDailySummaryTitle": {
+    "description": "Merchant UI string reportsDailySummaryTitle"
+  },
+  "reportsDailySummaryShortcut": "Résumé quotidien",
+  "@reportsDailySummaryShortcut": {
+    "description": "Merchant UI string reportsDailySummaryShortcut"
+  },
+  "reportsDailySummaryLoadError": "Impossible de charger le résumé quotidien.",
+  "@reportsDailySummaryLoadError": {
+    "description": "Merchant UI string reportsDailySummaryLoadError"
+  },
+  "reportsDailySummaryEmpty": "Aucune commande créée pour cette journée.",
+  "@reportsDailySummaryEmpty": {
+    "description": "Merchant UI string reportsDailySummaryEmpty"
+  },
+  "reportsDailySummarySalesKpi": "Ventes",
+  "@reportsDailySummarySalesKpi": {
+    "description": "Merchant UI string reportsDailySummarySalesKpi"
+  },
+  "reportsDailySummaryOrdersKpi": "Commandes",
+  "@reportsDailySummaryOrdersKpi": {
+    "description": "Merchant UI string reportsDailySummaryOrdersKpi"
+  },
+  "reportsDailySummaryPrepKpi": "Temps Prép.",
+  "@reportsDailySummaryPrepKpi": {
+    "description": "Merchant UI string reportsDailySummaryPrepKpi"
+  },
+  "reportsDailySummaryCancellationsKpi": "Annulations",
+  "@reportsDailySummaryCancellationsKpi": {
+    "description": "Merchant UI string reportsDailySummaryCancellationsKpi"
+  },
+  "reportsDailySummaryBreakdownTitle": "Répartition des commandes",
+  "@reportsDailySummaryBreakdownTitle": {
+    "description": "Merchant UI string reportsDailySummaryBreakdownTitle"
+  },
+  "reportsDailySummaryDelivered": "Livrées",
+  "@reportsDailySummaryDelivered": {
+    "description": "Merchant UI string reportsDailySummaryDelivered"
+  },
+  "reportsDailySummaryInProgress": "En cours",
+  "@reportsDailySummaryInProgress": {
+    "description": "Merchant UI string reportsDailySummaryInProgress"
+  },
+  "reportsDailySummaryCancelled": "Annulées",
+  "@reportsDailySummaryCancelled": {
+    "description": "Merchant UI string reportsDailySummaryCancelled"
+  },
+  "reportsDailySummaryPrepEfficiencyTitle": "Efficacité de préparation",
+  "@reportsDailySummaryPrepEfficiencyTitle": {
+    "description": "Merchant UI string reportsDailySummaryPrepEfficiencyTitle"
+  },
+  "reportsDailySummaryPrepAverage": "Moyenne",
+  "@reportsDailySummaryPrepAverage": {
+    "description": "Merchant UI string reportsDailySummaryPrepAverage"
+  },
+  "reportsDailySummaryOnTimeRate": "À l’heure",
+  "@reportsDailySummaryOnTimeRate": {
+    "description": "Merchant UI string reportsDailySummaryOnTimeRate"
+  },
+  "reportsDailySummaryCancellationMotifs": "Motifs d’annulation",
+  "@reportsDailySummaryCancellationMotifs": {
+    "description": "Merchant UI string reportsDailySummaryCancellationMotifs"
+  },
+  "reportsDailySummaryViewOrders": "Voir toutes les commandes du jour",
+  "@reportsDailySummaryViewOrders": {
+    "description": "Merchant UI string reportsDailySummaryViewOrders"
+  },
+  "reportsDailySummaryMinutes": "{minutes} min",
+  "@reportsDailySummaryMinutes": {
+    "description": "Merchant UI string reportsDailySummaryMinutes",
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "reportsDailySummaryOnTimePercent": "{percent} à l’heure",
+  "@reportsDailySummaryOnTimePercent": {
+    "description": "Merchant UI string reportsDailySummaryOnTimePercent",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "reportsDailySummaryTodayDate": "Aujourd’hui, {label}",
+  "@reportsDailySummaryTodayDate": {
+    "description": "Merchant UI string reportsDailySummaryTodayDate",
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deliveryImpactTitle": "Impact sur la livraison",
+  "@deliveryImpactTitle": {
+    "description": "Merchant UI string deliveryImpactTitle"
+  },
+  "deliveryImpactMayDelayDriverAssignment": "La préparation peut retarder la recherche d’un livreur.",
+  "@deliveryImpactMayDelayDriverAssignment": {
+    "description": "Merchant UI string deliveryImpactMayDelayDriverAssignment"
+  },
+  "deliveryImpactMayDelayPickup": "Un livreur est assigné; le retrait peut être retardé.",
+  "@deliveryImpactMayDelayPickup": {
+    "description": "Merchant UI string deliveryImpactMayDelayPickup"
+  },
+  "deliveryImpactDriverWaiting": "Le livreur attend la commande.",
+  "@deliveryImpactDriverWaiting": {
+    "description": "Merchant UI string deliveryImpactDriverWaiting"
+  },
+  "deliveryImpactTimingUnavailable": "Impact exact sur la livraison indisponible.",
+  "@deliveryImpactTimingUnavailable": {
+    "description": "Merchant UI string deliveryImpactTimingUnavailable"
+  },
+  "deliveryImpactLatestRevision": "Dernier motif : {reason}",
+  "@deliveryImpactLatestRevision": {
+    "description": "Merchant UI string deliveryImpactLatestRevision",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "rejectReasonProductUnavailable": "Indisponibilité produit",
+  "@rejectReasonProductUnavailable": {
+    "description": "Merchant UI string rejectReasonProductUnavailable"
+  },
+  "rejectReasonTooBusy": "Trop occupé",
+  "@rejectReasonTooBusy": {
+    "description": "Merchant UI string rejectReasonTooBusy"
+  },
+  "rejectReasonClosingSoon": "Fermeture proche",
+  "@rejectReasonClosingSoon": {
+    "description": "Merchant UI string rejectReasonClosingSoon"
+  },
+  "rejectReasonOther": "Autre",
+  "@rejectReasonOther": {
+    "description": "Merchant UI string rejectReasonOther"
+  },
+  "rejectReasonTilesHint": "Sélectionnez un motif puis précisez si nécessaire.",
+  "@rejectReasonTilesHint": {
+    "description": "Merchant UI string rejectReasonTilesHint"
+  },
+  "catalogAddProduct": "Ajouter un produit",
+  "@catalogAddProduct": {
+    "description": "Merchant UI string catalogAddProduct"
+  },
+  "catalogEditProduct": "Modifier le produit",
+  "@catalogEditProduct": {
+    "description": "Merchant UI string catalogEditProduct"
+  },
+  "catalogProductDetail": "Détail du produit",
+  "@catalogProductDetail": {
+    "description": "Merchant UI string catalogProductDetail"
+  },
+  "catalogAddCategory": "Ajouter une catégorie",
+  "@catalogAddCategory": {
+    "description": "Merchant UI string catalogAddCategory"
+  },
+  "catalogEditCategory": "Modifier la catégorie",
+  "@catalogEditCategory": {
+    "description": "Merchant UI string catalogEditCategory"
+  },
+  "catalogProductName": "Nom du produit (Français)",
+  "@catalogProductName": {
+    "description": "Merchant UI string catalogProductName"
+  },
+  "catalogProductDescription": "Description (Français)",
+  "@catalogProductDescription": {
+    "description": "Merchant UI string catalogProductDescription"
+  },
+  "catalogProductPrice": "Prix de base",
+  "@catalogProductPrice": {
+    "description": "Merchant UI string catalogProductPrice"
+  },
+  "catalogProductCategory": "Catégorie",
+  "@catalogProductCategory": {
+    "description": "Merchant UI string catalogProductCategory"
+  },
+  "catalogProductAvailable": "Visible dans le menu",
+  "@catalogProductAvailable": {
+    "description": "Merchant UI string catalogProductAvailable"
+  },
+  "catalogProductAvailableSub": "Activer pour rendre disponible",
+  "@catalogProductAvailableSub": {
+    "description": "Merchant UI string catalogProductAvailableSub"
+  },
+  "catalogSaveProduct": "Enregistrer",
+  "@catalogSaveProduct": {
+    "description": "Merchant UI string catalogSaveProduct"
+  },
+  "catalogSaveProductEdits": "Enregistrer les modifications",
+  "@catalogSaveProductEdits": {
+    "description": "Merchant UI string catalogSaveProductEdits"
+  },
+  "catalogPreview": "Aperçu",
+  "@catalogPreview": {
+    "description": "Merchant UI string catalogPreview"
+  },
+  "catalogPreviewTitle": "Aperçu du produit",
+  "@catalogPreviewTitle": {
+    "description": "Merchant UI string catalogPreviewTitle"
+  },
+  "catalogPreviewUnavailable": "Aperçu non disponible actuellement.",
+  "@catalogPreviewUnavailable": {
+    "description": "Merchant UI string catalogPreviewUnavailable"
+  },
+  "catalogFieldRequired": "Ce champ est obligatoire.",
+  "@catalogFieldRequired": {
+    "description": "Merchant UI string catalogFieldRequired"
+  },
+  "catalogPriceInvalid": "Indiquez un prix valide.",
+  "@catalogPriceInvalid": {
+    "description": "Merchant UI string catalogPriceInvalid"
+  },
+  "catalogCategoryRequired": "Choisissez une catégorie.",
+  "@catalogCategoryRequired": {
+    "description": "Merchant UI string catalogCategoryRequired"
+  },
+  "catalogSaveRetryHint": "Enregistrement impossible. Vérifiez la connexion et réessayez.",
+  "@catalogSaveRetryHint": {
+    "description": "Merchant UI string catalogSaveRetryHint"
+  },
+  "catalogSectionInfo": "Informations",
+  "@catalogSectionInfo": {
+    "description": "Merchant UI string catalogSectionInfo"
+  },
+  "catalogSectionMedia": "Médias",
+  "@catalogSectionMedia": {
+    "description": "Merchant UI string catalogSectionMedia"
+  },
+  "catalogSectionPrice": "Prix et préparation",
+  "@catalogSectionPrice": {
+    "description": "Merchant UI string catalogSectionPrice"
+  },
+  "catalogSectionConfig": "Configuration",
+  "@catalogSectionConfig": {
+    "description": "Merchant UI string catalogSectionConfig"
+  },
+  "catalogSectionAvailability": "Disponibilité",
+  "@catalogSectionAvailability": {
+    "description": "Merchant UI string catalogSectionAvailability"
+  },
+  "catalogSectionImage": "Image du produit",
+  "@catalogSectionImage": {
+    "description": "Merchant UI string catalogSectionImage"
+  },
+  "catalogSectionGeneral": "Informations générales",
+  "@catalogSectionGeneral": {
+    "description": "Merchant UI string catalogSectionGeneral"
+  },
+  "catalogSectionPriceDetails": "Prix et détails",
+  "@catalogSectionPriceDetails": {
+    "description": "Merchant UI string catalogSectionPriceDetails"
+  },
+  "catalogOnlineBanner": "Cet article est actuellement en ligne pour les clients.",
+  "@catalogOnlineBanner": {
+    "description": "Merchant UI string catalogOnlineBanner"
+  },
+  "catalogOfflineBanner": "Cet article n’est pas visible pour les clients.",
+  "@catalogOfflineBanner": {
+    "description": "Merchant UI string catalogOfflineBanner"
+  },
+  "catalogPriceWarning": "Les changements de prix et de disponibilité sont appliqués immédiatement aux clients.",
+  "@catalogPriceWarning": {
+    "description": "Merchant UI string catalogPriceWarning"
+  },
+  "catalogImagePrimary": "Image principale",
+  "@catalogImagePrimary": {
+    "description": "Merchant UI string catalogImagePrimary"
+  },
+  "catalogImageAdd": "Ajouter une photo",
+  "@catalogImageAdd": {
+    "description": "Merchant UI string catalogImageAdd"
+  },
+  "catalogImageHint": "JPG, PNG (max. 2 Mo, min. 400 px)",
+  "@catalogImageHint": {
+    "description": "Merchant UI string catalogImageHint"
+  },
+  "catalogImageChangePhoto": "Changer la photo",
+  "@catalogImageChangePhoto": {
+    "description": "Merchant UI string catalogImageChangePhoto"
+  },
+  "catalogInStockNow": "Actuellement en stock",
+  "@catalogInStockNow": {
+    "description": "Merchant UI string catalogInStockNow"
+  },
+  "catalogOutOfStockNow": "Actuellement indisponible",
+  "@catalogOutOfStockNow": {
+    "description": "Merchant UI string catalogOutOfStockNow"
+  },
+  "catalogCurrencySuffix": "DZD",
+  "@catalogCurrencySuffix": {
+    "description": "Merchant UI string catalogCurrencySuffix"
+  },
+  "catalogDeleteProduct": "Supprimer",
+  "@catalogDeleteProduct": {
+    "description": "Merchant UI string catalogDeleteProduct"
+  },
+  "catalogNeedCategory": "Créez d’abord une catégorie pour ajouter un produit.",
+  "@catalogNeedCategory": {
+    "description": "Merchant UI string catalogNeedCategory"
+  },
+  "catalogImagePick": "Choisir une image",
+  "@catalogImagePick": {
+    "description": "Merchant UI string catalogImagePick"
+  },
+  "catalogImageFromGallery": "Choisir dans la galerie",
+  "@catalogImageFromGallery": {
+    "description": "Merchant UI string catalogImageFromGallery"
+  },
+  "catalogImageFromCamera": "Prendre une photo",
+  "@catalogImageFromCamera": {
+    "description": "Merchant UI string catalogImageFromCamera"
+  },
+  "catalogImagePluginRestart": "Redémarrez l’application pour activer la sélection de photos.",
+  "@catalogImagePluginRestart": {
+    "description": "Merchant UI string catalogImagePluginRestart"
+  },
+  "catalogImageFormatError": "Format non pris en charge. Utilisez une photo JPG ou PNG.",
+  "@catalogImageFormatError": {
+    "description": "Merchant UI string catalogImageFormatError"
+  },
+  "catalogImageTooSmall": "Image trop petite. Minimum 400 × 400 pixels.",
+  "@catalogImageTooSmall": {
+    "description": "Merchant UI string catalogImageTooSmall"
+  },
+  "catalogImageTooLarge": "Image trop lourde. Maximum 2 Mo après compression.",
+  "@catalogImageTooLarge": {
+    "description": "Merchant UI string catalogImageTooLarge"
+  },
+  "catalogImageChange": "Changer l’image",
+  "@catalogImageChange": {
+    "description": "Merchant UI string catalogImageChange"
+  },
+  "catalogImageRemove": "Retirer l’image",
+  "@catalogImageRemove": {
+    "description": "Merchant UI string catalogImageRemove"
+  },
+  "catalogImageUploadError": "Impossible d’envoyer l’image.",
+  "@catalogImageUploadError": {
+    "description": "Merchant UI string catalogImageUploadError"
+  },
+  "catalogImageBindPartial": "Produit enregistré, mais l’image n’a pas pu être liée. Réessayez.",
+  "@catalogImageBindPartial": {
+    "description": "Merchant UI string catalogImageBindPartial"
+  },
+  "catalogImageRemoteUnavailable": "Aperçu de l’image non disponible actuellement.",
+  "@catalogImageRemoteUnavailable": {
+    "description": "Merchant UI string catalogImageRemoteUnavailable"
+  },
+  "catalogSaveError": "Enregistrement impossible. Vérifiez la connexion et réessayez.",
+  "@catalogSaveError": {
+    "description": "Merchant UI string catalogSaveError"
+  },
+  "catalogDeleteConfirm": "Supprimer ce produit ? Les commandes historiques sont conservées.",
+  "@catalogDeleteConfirm": {
+    "description": "Merchant UI string catalogDeleteConfirm"
+  },
+  "catalogCategoryName": "Nom de la catégorie (Français)",
+  "@catalogCategoryName": {
+    "description": "Merchant UI string catalogCategoryName"
+  },
+  "catalogCategoryActive": "Visibilité dans le menu",
+  "@catalogCategoryActive": {
+    "description": "Merchant UI string catalogCategoryActive"
+  },
+  "catalogCategoryActiveSub": "Afficher cette catégorie aux clients",
+  "@catalogCategoryActiveSub": {
+    "description": "Merchant UI string catalogCategoryActiveSub"
+  },
+  "catalogCategoryDetails": "Détails de la catégorie",
+  "@catalogCategoryDetails": {
+    "description": "Merchant UI string catalogCategoryDetails"
+  },
+  "catalogCategorySettings": "Paramètres",
+  "@catalogCategorySettings": {
+    "description": "Merchant UI string catalogCategorySettings"
+  },
+  "catalogCategoryCancel": "Annuler",
+  "@catalogCategoryCancel": {
+    "description": "Merchant UI string catalogCategoryCancel"
+  },
+  "catalogDeleteCategory": "Supprimer la catégorie",
+  "@catalogDeleteCategory": {
+    "description": "Merchant UI string catalogDeleteCategory"
+  },
+  "catalogDeleteCategoryConfirm": "Supprimer cette catégorie ? Elle doit être vide.",
+  "@catalogDeleteCategoryConfirm": {
+    "description": "Merchant UI string catalogDeleteCategoryConfirm"
+  },
+  "catalogStaffReadOnly": "Consultation seule — modifications réservées au propriétaire ou responsable.",
+  "@catalogStaffReadOnly": {
+    "description": "Merchant UI string catalogStaffReadOnly"
+  },
+  "catalogCategorySearchHint": "Rechercher une catégorie…",
+  "@catalogCategorySearchHint": {
+    "description": "Merchant UI string catalogCategorySearchHint"
+  },
+  "catalogFilterTooltip": "Filtres",
+  "@catalogFilterTooltip": {
+    "description": "Merchant UI string catalogFilterTooltip"
+  },
+  "catalogReorder": "Réorganiser",
+  "@catalogReorder": {
+    "description": "Merchant UI string catalogReorder"
+  },
+  "catalogVisible": "Visible",
+  "@catalogVisible": {
+    "description": "Merchant UI string catalogVisible"
+  },
+  "catalogHidden": "Masqué",
+  "@catalogHidden": {
+    "description": "Merchant UI string catalogHidden"
+  },
+  "catalogMenuAvailability": "Gérer la disponibilité",
+  "@catalogMenuAvailability": {
+    "description": "Merchant UI string catalogMenuAvailability"
+  },
+  "catalogMenuDelete": "Supprimer",
+  "@catalogMenuDelete": {
+    "description": "Merchant UI string catalogMenuDelete"
+  },
+  "catalogMenuDuplicate": "Dupliquer",
+  "@catalogMenuDuplicate": {
+    "description": "Merchant UI string catalogMenuDuplicate"
+  },
+  "duplicateTitle": "Dupliquer le produit",
+  "@duplicateTitle": {
+    "description": "Merchant UI string duplicateTitle"
+  },
+  "duplicateSource": "Source",
+  "@duplicateSource": {
+    "description": "Merchant UI string duplicateSource"
+  },
+  "duplicateNewName": "Nouveau nom du produit",
+  "@duplicateNewName": {
+    "description": "Merchant UI string duplicateNewName"
+  },
+  "duplicateNewNameHint": "Veuillez modifier le nom avant de publier la copie.",
+  "@duplicateNewNameHint": {
+    "description": "Merchant UI string duplicateNewNameHint"
+  },
+  "duplicateNamePlaceholder": "Entrez le nouveau nom",
+  "@duplicateNamePlaceholder": {
+    "description": "Merchant UI string duplicateNamePlaceholder"
+  },
+  "duplicateClearName": "Effacer le nom",
+  "@duplicateClearName": {
+    "description": "Merchant UI string duplicateClearName"
+  },
+  "duplicateDefaultName": "Copie de {name}",
+  "@duplicateDefaultName": {
+    "description": "Merchant UI string duplicateDefaultName",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicateCopied": "Éléments copiés",
+  "@duplicateCopied": {
+    "description": "Merchant UI string duplicateCopied"
+  },
+  "duplicateImage": "Image du produit",
+  "@duplicateImage": {
+    "description": "Merchant UI string duplicateImage"
+  },
+  "duplicateNoImage": "Image du produit (aucune image)",
+  "@duplicateNoImage": {
+    "description": "Merchant UI string duplicateNoImage"
+  },
+  "duplicatePrice": "Prix ({price})",
+  "@duplicatePrice": {
+    "description": "Merchant UI string duplicatePrice",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicateOptions": "Options et variantes",
+  "@duplicateOptions": {
+    "description": "Merchant UI string duplicateOptions"
+  },
+  "duplicateSaleUnits": "Unités de vente (non gérées)",
+  "@duplicateSaleUnits": {
+    "description": "Merchant UI string duplicateSaleUnits"
+  },
+  "duplicateNotCopiedLead": "Le statut de disponibilité et l’historique des ventes ",
+  "@duplicateNotCopiedLead": {
+    "description": "Merchant UI string duplicateNotCopiedLead"
+  },
+  "duplicateNotCopiedStrong": "ne seront pas",
+  "@duplicateNotCopiedStrong": {
+    "description": "Merchant UI string duplicateNotCopiedStrong"
+  },
+  "duplicateNotCopiedTail": " copiés vers le nouveau produit.",
+  "@duplicateNotCopiedTail": {
+    "description": "Merchant UI string duplicateNotCopiedTail"
+  },
+  "duplicateUnavailableInfo": "La copie sera créée indisponible afin que vous puissiez la vérifier avant de l’activer.",
+  "@duplicateUnavailableInfo": {
+    "description": "Merchant UI string duplicateUnavailableInfo"
+  },
+  "duplicateCancel": "Annuler",
+  "@duplicateCancel": {
+    "description": "Merchant UI string duplicateCancel"
+  },
+  "duplicateCreate": "Créer la copie",
+  "@duplicateCreate": {
+    "description": "Merchant UI string duplicateCreate"
+  },
+  "duplicateCreating": "Création…",
+  "@duplicateCreating": {
+    "description": "Merchant UI string duplicateCreating"
+  },
+  "duplicateNameRequired": "Le nom ne peut pas être vide.",
+  "@duplicateNameRequired": {
+    "description": "Merchant UI string duplicateNameRequired"
+  },
+  "duplicateNameTooLong": "Maximum 255 caractères.",
+  "@duplicateNameTooLong": {
+    "description": "Merchant UI string duplicateNameTooLong"
+  },
+  "duplicateNetworkError": "Connexion interrompue. Réessayez : la copie ne sera pas créée deux fois.",
+  "@duplicateNetworkError": {
+    "description": "Merchant UI string duplicateNetworkError"
+  },
+  "duplicateError": "La copie n’a pas pu être créée et aucun produit n’a été ajouté. Réessayez.",
+  "@duplicateError": {
+    "description": "Merchant UI string duplicateError"
+  },
+  "duplicateConflict": "Cette demande de copie a déjà servi ailleurs. Rouvrez l’écran puis réessayez.",
+  "@duplicateConflict": {
+    "description": "Merchant UI string duplicateConflict"
+  },
+  "duplicateNotFound": "Produit introuvable. Actualisez le catalogue.",
+  "@duplicateNotFound": {
+    "description": "Merchant UI string duplicateNotFound"
+  },
+  "duplicateCreated": "Copie créée — indisponible jusqu’à votre vérification.",
+  "@duplicateCreated": {
+    "description": "Merchant UI string duplicateCreated"
+  },
+  "duplicateReplayed": "Copie déjà créée — ouverture du produit.",
+  "@duplicateReplayed": {
+    "description": "Merchant UI string duplicateReplayed"
+  },
+  "duplicateForbiddenTitle": "Duplication réservée au propriétaire ou au responsable",
+  "@duplicateForbiddenTitle": {
+    "description": "Merchant UI string duplicateForbiddenTitle"
+  },
+  "duplicateBackToCatalog": "Retour au catalogue",
+  "@duplicateBackToCatalog": {
+    "description": "Merchant UI string duplicateBackToCatalog"
+  },
+  "catalogMenuViewCategory": "Voir la catégorie",
+  "@catalogMenuViewCategory": {
+    "description": "Merchant UI string catalogMenuViewCategory"
+  },
+  "catalogBulkTooltip": "Disponibilité groupée",
+  "@catalogBulkTooltip": {
+    "description": "Merchant UI string catalogBulkTooltip"
+  },
+  "catalogCategoryInUse": "Cette catégorie contient encore des produits. Déplacez-les ou supprimez-les d’abord.",
+  "@catalogCategoryInUse": {
+    "description": "Merchant UI string catalogCategoryInUse"
+  },
+  "catalogProductInUse": "Ce produit figure dans des commandes passées : il ne peut pas être supprimé. Mettez-le en rupture à la place.",
+  "@catalogProductInUse": {
+    "description": "Merchant UI string catalogProductInUse"
+  },
+  "catalogVisibilityError": "Impossible de modifier la visibilité. Réessayez.",
+  "@catalogVisibilityError": {
+    "description": "Merchant UI string catalogVisibilityError"
+  },
+  "catalogAvailabilityError": "Impossible de modifier la disponibilité. Réessayez.",
+  "@catalogAvailabilityError": {
+    "description": "Merchant UI string catalogAvailabilityError"
+  },
+  "catalogNoResults": "Aucun produit ne correspond à ces filtres.",
+  "@catalogNoResults": {
+    "description": "Merchant UI string catalogNoResults"
+  },
+  "catalogNoCategoryResults": "Aucune catégorie ne correspond à cette recherche.",
+  "@catalogNoCategoryResults": {
+    "description": "Merchant UI string catalogNoCategoryResults"
+  },
+  "catalogFiltersTitle": "Recherche et Filtres",
+  "@catalogFiltersTitle": {
+    "description": "Merchant UI string catalogFiltersTitle"
+  },
+  "catalogFiltersReset": "Réinitialiser",
+  "@catalogFiltersReset": {
+    "description": "Merchant UI string catalogFiltersReset"
+  },
+  "catalogFiltersCategories": "Catégories",
+  "@catalogFiltersCategories": {
+    "description": "Merchant UI string catalogFiltersCategories"
+  },
+  "catalogFiltersStatus": "Statut",
+  "@catalogFiltersStatus": {
+    "description": "Merchant UI string catalogFiltersStatus"
+  },
+  "catalogFiltersOutOfStock": "Rupture de stock",
+  "@catalogFiltersOutOfStock": {
+    "description": "Merchant UI string catalogFiltersOutOfStock"
+  },
+  "catalogFiltersQuality": "Contrôle qualité",
+  "@catalogFiltersQuality": {
+    "description": "Merchant UI string catalogFiltersQuality"
+  },
+  "catalogFiltersMissingImage": "Image manquante",
+  "@catalogFiltersMissingImage": {
+    "description": "Merchant UI string catalogFiltersMissingImage"
+  },
+  "catalogFiltersPreview": "Aperçu des résultats",
+  "@catalogFiltersPreview": {
+    "description": "Merchant UI string catalogFiltersPreview"
+  },
+  "catalogProductsCount": "{n} produit{n} produits",
+  "@catalogProductsCount": {
+    "description": "Merchant UI string catalogProductsCount",
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogFiltersApply": "Appliquer les filtres",
+  "@catalogFiltersApply": {
+    "description": "Merchant UI string catalogFiltersApply"
+  },
+  "catalogCategoryDetailTitle": "Détails de la catégorie",
+  "@catalogCategoryDetailTitle": {
+    "description": "Merchant UI string catalogCategoryDetailTitle"
+  },
+  "catalogDisplayOrder": "Ordre d’affichage : {n}",
+  "@catalogDisplayOrder": {
+    "description": "Merchant UI string catalogDisplayOrder",
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogCategoryProducts": "Produits",
+  "@catalogCategoryProducts": {
+    "description": "Merchant UI string catalogCategoryProducts"
+  },
+  "catalogCategoryEmpty": "Aucun produit dans cette catégorie.",
+  "@catalogCategoryEmpty": {
+    "description": "Merchant UI string catalogCategoryEmpty"
+  },
+  "catalogReorderTitle": "Réorganiser les catégories",
+  "@catalogReorderTitle": {
+    "description": "Merchant UI string catalogReorderTitle"
+  },
+  "catalogReorderHint": "Faites glisser pour modifier l’ordre d’affichage.",
+  "@catalogReorderHint": {
+    "description": "Merchant UI string catalogReorderHint"
+  },
+  "catalogReorderSave": "Enregistrer l’ordre",
+  "@catalogReorderSave": {
+    "description": "Merchant UI string catalogReorderSave"
+  },
+  "catalogReorderSaved": "Ordre enregistré.",
+  "@catalogReorderSaved": {
+    "description": "Merchant UI string catalogReorderSaved"
+  },
+  "catalogReorderPartial": "Certaines catégories n’ont pas pu être déplacées. Réessayez.",
+  "@catalogReorderPartial": {
+    "description": "Merchant UI string catalogReorderPartial"
+  },
+  "catalogAvailabilityTitle": "Disponibilité du produit",
+  "@catalogAvailabilityTitle": {
+    "description": "Merchant UI string catalogAvailabilityTitle"
+  },
+  "catalogAvailabilityNote": "Les modifications n’affectent pas les commandes déjà acceptées.",
+  "@catalogAvailabilityNote": {
+    "description": "Merchant UI string catalogAvailabilityNote"
+  },
+  "catalogAvailabilityState": "État de disponibilité",
+  "@catalogAvailabilityState": {
+    "description": "Merchant UI string catalogAvailabilityState"
+  },
+  "catalogAvailableOption": "Disponible",
+  "@catalogAvailableOption": {
+    "description": "Merchant UI string catalogAvailableOption"
+  },
+  "catalogAvailableOptionSub": "Visible et commandable immédiatement.",
+  "@catalogAvailableOptionSub": {
+    "description": "Merchant UI string catalogAvailableOptionSub"
+  },
+  "catalogOutOfStockOptionSub": "Affiché comme indisponible jusqu’à réactivation manuelle.",
+  "@catalogOutOfStockOptionSub": {
+    "description": "Merchant UI string catalogOutOfStockOptionSub"
+  },
+  "catalogAvailabilitySave": "Enregistrer la disponibilité",
+  "@catalogAvailabilitySave": {
+    "description": "Merchant UI string catalogAvailabilitySave"
+  },
+  "catalogAvailabilitySaved": "Disponibilité enregistrée.",
+  "@catalogAvailabilitySaved": {
+    "description": "Merchant UI string catalogAvailabilitySaved"
+  },
+  "catalogBulkTitle": "Disponibilité groupée",
+  "@catalogBulkTitle": {
+    "description": "Merchant UI string catalogBulkTitle"
+  },
+  "catalogBulkNote": "Les modifications s’appliquent immédiatement sur l’application client. Elles n’affectent pas les commandes en cours.",
+  "@catalogBulkNote": {
+    "description": "Merchant UI string catalogBulkNote"
+  },
+  "catalogBulkSelection": "Sélection multiple",
+  "@catalogBulkSelection": {
+    "description": "Merchant UI string catalogBulkSelection"
+  },
+  "catalogBulkNewStatus": "Nouveau statut",
+  "@catalogBulkNewStatus": {
+    "description": "Merchant UI string catalogBulkNewStatus"
+  },
+  "catalogBulkSelectAll": "Tout sélectionner",
+  "@catalogBulkSelectAll": {
+    "description": "Merchant UI string catalogBulkSelectAll"
+  },
+  "catalogBulkClear": "Effacer la sélection",
+  "@catalogBulkClear": {
+    "description": "Merchant UI string catalogBulkClear"
+  },
+  "catalogBulkApply": "Appliquer",
+  "@catalogBulkApply": {
+    "description": "Merchant UI string catalogBulkApply"
+  },
+  "catalogBulkDone": "{n} produit mis à jour.{n} produits mis à jour.",
+  "@catalogBulkDone": {
+    "description": "Merchant UI string catalogBulkDone",
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogBulkFailed": "{n} produit n’a pas pu être mis à jour.{n} produits n’ont pas pu être mis à jour.",
+  "@catalogBulkFailed": {
+    "description": "Merchant UI string catalogBulkFailed",
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogUncategorized": "Sans catégorie",
+  "@catalogUncategorized": {
+    "description": "Merchant UI string catalogUncategorized"
+  },
+  "catalogDeleteTitle": "Supprimer le produit",
+  "@catalogDeleteTitle": {
+    "description": "Merchant UI string catalogDeleteTitle"
+  },
+  "catalogDeleteWarningTitle": "Un produit déjà commandé ne peut pas être supprimé.",
+  "@catalogDeleteWarningTitle": {
+    "description": "Merchant UI string catalogDeleteWarningTitle"
+  },
+  "catalogDeleteWarningBody": "Les commandes passées gardent leur copie du produit. Si la suppression est refusée, mettez le produit en rupture.",
+  "@catalogDeleteWarningBody": {
+    "description": "Merchant UI string catalogDeleteWarningBody"
+  },
+  "catalogDeleteHideOption": "Mettre en rupture",
+  "@catalogDeleteHideOption": {
+    "description": "Merchant UI string catalogDeleteHideOption"
+  },
+  "catalogDeleteHideOptionSub": "Le produit reste enregistré et modifiable, mais n’est plus commandable.",
+  "@catalogDeleteHideOptionSub": {
+    "description": "Merchant UI string catalogDeleteHideOptionSub"
+  },
+  "catalogDeleteRecommended": "Recommandé",
+  "@catalogDeleteRecommended": {
+    "description": "Merchant UI string catalogDeleteRecommended"
+  },
+  "catalogDeleteHardOption": "Supprimer définitivement",
+  "@catalogDeleteHardOption": {
+    "description": "Merchant UI string catalogDeleteHardOption"
+  },
+  "catalogDeleteHardOptionSub": "Retire le produit, ses variantes et suppléments. Impossible s’il figure dans une commande.",
+  "@catalogDeleteHardOptionSub": {
+    "description": "Merchant UI string catalogDeleteHardOptionSub"
+  },
+  "catalogDeleteHardConfirm": "Supprimer définitivement",
+  "@catalogDeleteHardConfirm": {
+    "description": "Merchant UI string catalogDeleteHardConfirm"
+  },
+  "catalogDeleted": "Produit supprimé.",
+  "@catalogDeleted": {
+    "description": "Merchant UI string catalogDeleted"
+  },
+  "catalogMarkedOutOfStock": "Produit mis en rupture.",
+  "@catalogMarkedOutOfStock": {
+    "description": "Merchant UI string catalogMarkedOutOfStock"
+  },
+  "catalogVariantsTitle": "Variantes obligatoires",
+  "@catalogVariantsTitle": {
+    "description": "Merchant UI string catalogVariantsTitle"
+  },
+  "catalogVariantsInfo": "Les variantes obligatoires demandent au client de choisir une option avant d’ajouter le produit au panier.",
+  "@catalogVariantsInfo": {
+    "description": "Merchant UI string catalogVariantsInfo"
+  },
+  "catalogVariantsSubtitle": "Configurez les options requises avant l’ajout au panier.",
+  "@catalogVariantsSubtitle": {
+    "description": "Merchant UI string catalogVariantsSubtitle"
+  },
+  "catalogExtrasTitle": "Suppléments optionnels",
+  "@catalogExtrasTitle": {
+    "description": "Merchant UI string catalogExtrasTitle"
+  },
+  "catalogExtrasSubtitle": "Options facultatives que le client peut ajouter.",
+  "@catalogExtrasSubtitle": {
+    "description": "Merchant UI string catalogExtrasSubtitle"
+  },
+  "catalogRequiredTag": "Obligatoire",
+  "@catalogRequiredTag": {
+    "description": "Merchant UI string catalogRequiredTag"
+  },
+  "catalogSingleChoice": "Sélection unique",
+  "@catalogSingleChoice": {
+    "description": "Merchant UI string catalogSingleChoice"
+  },
+  "catalogAddChoice": "Ajouter un choix",
+  "@catalogAddChoice": {
+    "description": "Merchant UI string catalogAddChoice"
+  },
+  "catalogAddOption": "Ajouter une option",
+  "@catalogAddOption": {
+    "description": "Merchant UI string catalogAddOption"
+  },
+  "catalogAddVariantGroup": "Ajouter un groupe de variantes",
+  "@catalogAddVariantGroup": {
+    "description": "Merchant UI string catalogAddVariantGroup"
+  },
+  "catalogAddExtrasGroup": "Nouveau groupe de suppléments",
+  "@catalogAddExtrasGroup": {
+    "description": "Merchant UI string catalogAddExtrasGroup"
+  },
+  "catalogNewGroup": "Nouveau groupe",
+  "@catalogNewGroup": {
+    "description": "Merchant UI string catalogNewGroup"
+  },
+  "catalogGroupName": "Nom du groupe (Français)",
+  "@catalogGroupName": {
+    "description": "Merchant UI string catalogGroupName"
+  },
+  "catalogGroupNameHint": "ex : Sauce",
+  "@catalogGroupNameHint": {
+    "description": "Merchant UI string catalogGroupNameHint"
+  },
+  "catalogOptionName": "Nom du choix",
+  "@catalogOptionName": {
+    "description": "Merchant UI string catalogOptionName"
+  },
+  "catalogOptionPrice": "Prix (+)",
+  "@catalogOptionPrice": {
+    "description": "Merchant UI string catalogOptionPrice"
+  },
+  "catalogMaxSelectionsLabel": "Sélections maximum",
+  "@catalogMaxSelectionsLabel": {
+    "description": "Merchant UI string catalogMaxSelectionsLabel"
+  },
+  "catalogGroupRequiredSwitch": "Choix obligatoire",
+  "@catalogGroupRequiredSwitch": {
+    "description": "Merchant UI string catalogGroupRequiredSwitch"
+  },
+  "catalogGroupRequiredSub": "Le client doit choisir une option.",
+  "@catalogGroupRequiredSub": {
+    "description": "Merchant UI string catalogGroupRequiredSub"
+  },
+  "catalogGroupSave": "Enregistrer le groupe",
+  "@catalogGroupSave": {
+    "description": "Merchant UI string catalogGroupSave"
+  },
+  "catalogGroupDelete": "Supprimer le groupe",
+  "@catalogGroupDelete": {
+    "description": "Merchant UI string catalogGroupDelete"
+  },
+  "catalogGroupDeleteConfirm": "Supprimer ce groupe et toutes ses options ? Les commandes passées ne sont pas modifiées.",
+  "@catalogGroupDeleteConfirm": {
+    "description": "Merchant UI string catalogGroupDeleteConfirm"
+  },
+  "catalogOptionDelete": "Supprimer l’option",
+  "@catalogOptionDelete": {
+    "description": "Merchant UI string catalogOptionDelete"
+  },
+  "catalogOptionAvailable": "Option disponible",
+  "@catalogOptionAvailable": {
+    "description": "Merchant UI string catalogOptionAvailable"
+  },
+  "catalogOptionsEmpty": "Aucun choix pour le moment.",
+  "@catalogOptionsEmpty": {
+    "description": "Merchant UI string catalogOptionsEmpty"
+  },
+  "catalogGroupsLoadError": "Impossible de charger les options du produit.",
+  "@catalogGroupsLoadError": {
+    "description": "Merchant UI string catalogGroupsLoadError"
+  },
+  "catalogGroupInvalid": "Vérifiez le nombre de sélections (minimum ≤ maximum).",
+  "@catalogGroupInvalid": {
+    "description": "Merchant UI string catalogGroupInvalid"
+  },
+  "catalogSaveFirstForOptions": "Enregistrez le produit pour configurer ses variantes et suppléments.",
+  "@catalogSaveFirstForOptions": {
+    "description": "Merchant UI string catalogSaveFirstForOptions"
+  },
+  "catalogGroupsCount": "Aucun groupe1 groupe{n} groupes",
+  "@catalogGroupsCount": {
+    "description": "Merchant UI string catalogGroupsCount",
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogLastUpdated": "Dernière mise à jour",
+  "@catalogLastUpdated": {
+    "description": "Merchant UI string catalogLastUpdated"
+  },
+  "catalogCustomerPreview": "Aperçu client",
+  "@catalogCustomerPreview": {
+    "description": "Merchant UI string catalogCustomerPreview"
+  },
+  "catalogEditGroup": "Modifier le groupe",
+  "@catalogEditGroup": {
+    "description": "Merchant UI string catalogEditGroup"
+  },
+  "catalogProductDetailTitle": "Détails du Produit",
+  "@catalogProductDetailTitle": {
+    "description": "Merchant UI string catalogProductDetailTitle"
+  },
+  "catalogDetailInfo": "Informations",
+  "@catalogDetailInfo": {
+    "description": "Merchant UI string catalogDetailInfo"
+  },
+  "catalogDetailName": "Nom (Français)",
+  "@catalogDetailName": {
+    "description": "Merchant UI string catalogDetailName"
+  },
+  "catalogDetailPricing": "Tarification",
+  "@catalogDetailPricing": {
+    "description": "Merchant UI string catalogDetailPricing"
+  },
+  "catalogDetailPrice": "Prix de base",
+  "@catalogDetailPrice": {
+    "description": "Merchant UI string catalogDetailPrice"
+  },
+  "catalogDetailAppearance": "Apparence sur l’application",
+  "@catalogDetailAppearance": {
+    "description": "Merchant UI string catalogDetailAppearance"
+  },
+  "catalogDetailAvailable": "Produit disponible",
+  "@catalogDetailAvailable": {
+    "description": "Merchant UI string catalogDetailAvailable"
+  },
+  "catalogDetailNoDescription": "Aucune description.",
+  "@catalogDetailNoDescription": {
+    "description": "Merchant UI string catalogDetailNoDescription"
+  },
+  "catalogDetailNoOptions": "Aucune variante ni supplément configuré.",
+  "@catalogDetailNoOptions": {
+    "description": "Merchant UI string catalogDetailNoOptions"
+  },
+  "catalogRequiredSummary": "Obligatoire · {rule}",
+  "@catalogRequiredSummary": {
+    "description": "Merchant UI string catalogRequiredSummary",
+    "placeholders": {
+      "rule": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogOptionalSummary": "Facultatif · Maximum {max}",
+  "@catalogOptionalSummary": {
+    "description": "Merchant UI string catalogOptionalSummary",
+    "placeholders": {
+      "max": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogCropTitle": "Image du produit",
+  "@catalogCropTitle": {
+    "description": "Merchant UI string catalogCropTitle"
+  },
+  "catalogCropTipsTitle": "Conseils pour une belle photo",
+  "@catalogCropTipsTitle": {
+    "description": "Merchant UI string catalogCropTipsTitle"
+  },
+  "catalogCropTip1": "Utilisez un fond neutre et propre (blanc ou bois clair).",
+  "@catalogCropTip1": {
+    "description": "Merchant UI string catalogCropTip1"
+  },
+  "catalogCropTip2": "Assurez-vous d’avoir un bon éclairage, de préférence naturel.",
+  "@catalogCropTip2": {
+    "description": "Merchant UI string catalogCropTip2"
+  },
+  "catalogCropTip3": "Centrez le produit dans le cadre.Centrez le produit (« {name} ») dans le cadre.",
+  "@catalogCropTip3": {
+    "description": "Merchant UI string catalogCropTip3",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogCropFormat": "Format : JPG, PNG (max. 2 Mo, min. 400 px)",
+  "@catalogCropFormat": {
+    "description": "Merchant UI string catalogCropFormat"
+  },
+  "catalogCropUse": "Utiliser cette image",
+  "@catalogCropUse": {
+    "description": "Merchant UI string catalogCropUse"
+  },
+  "catalogCropRotate": "Pivoter",
+  "@catalogCropRotate": {
+    "description": "Merchant UI string catalogCropRotate"
+  },
+  "catalogCropZoom": "Zoomer",
+  "@catalogCropZoom": {
+    "description": "Merchant UI string catalogCropZoom"
+  },
+  "catalogCropRemove": "Supprimer l’image",
+  "@catalogCropRemove": {
+    "description": "Merchant UI string catalogCropRemove"
+  },
+  "contractFieldUnavailable": "Non disponible actuellement",
+  "@contractFieldUnavailable": {
+    "description": "Merchant UI string contractFieldUnavailable"
+  },
+  "catalogFieldNameAr": "Nom du produit (Arabe)",
+  "@catalogFieldNameAr": {
+    "description": "Merchant UI string catalogFieldNameAr"
+  },
+  "catalogFieldDescAr": "Description (Arabe)",
+  "@catalogFieldDescAr": {
+    "description": "Merchant UI string catalogFieldDescAr"
+  },
+  "catalogFieldPrepTime": "Temps de prép.",
+  "@catalogFieldPrepTime": {
+    "description": "Merchant UI string catalogFieldPrepTime"
+  },
+  "catalogFieldSaleUnit": "Unité de vente",
+  "@catalogFieldSaleUnit": {
+    "description": "Merchant UI string catalogFieldSaleUnit"
+  },
+  "sellingUnitTitle": "Unités de vente",
+  "@sellingUnitTitle": {
+    "description": "Merchant UI string sellingUnitTitle"
+  },
+  "sellingUnitCalloutTitle": "Précision de l’unité",
+  "@sellingUnitCalloutTitle": {
+    "description": "Merchant UI string sellingUnitCalloutTitle"
+  },
+  "sellingUnitCalloutBody": "Choisissez l’unité exacte pour éviter toute confusion lors de la préparation. Cette unité sera affichée aux clients (ex : 1 500 DZD / Plat). Les quantités sont entières : pas de vente au poids.",
+  "@sellingUnitCalloutBody": {
+    "description": "Merchant UI string sellingUnitCalloutBody"
+  },
+  "sellingUnitPreviewLabel": "Aperçu client",
+  "@sellingUnitPreviewLabel": {
+    "description": "Merchant UI string sellingUnitPreviewLabel"
+  },
+  "sellingUnitPreviewNoPrice": "— DZD",
+  "@sellingUnitPreviewNoPrice": {
+    "description": "Merchant UI string sellingUnitPreviewNoPrice"
+  },
+  "sellingUnitCommon": "Unités courantes",
+  "@sellingUnitCommon": {
+    "description": "Merchant UI string sellingUnitCommon"
+  },
+  "sellingUnitPackaging": "Conditionnement",
+  "@sellingUnitPackaging": {
+    "description": "Merchant UI string sellingUnitPackaging"
+  },
+  "sellingUnitNone": "Aucune unité",
+  "@sellingUnitNone": {
+    "description": "Merchant UI string sellingUnitNone"
+  },
+  "sellingUnitNoneSub": "Le prix est affiché sans unité.",
+  "@sellingUnitNoneSub": {
+    "description": "Merchant UI string sellingUnitNoneSub"
+  },
+  "sellingUnitNotSet": "Non définie",
+  "@sellingUnitNotSet": {
+    "description": "Merchant UI string sellingUnitNotSet"
+  },
+  "sellingUnitCustomName": "Nom de l’unité (Français)",
+  "@sellingUnitCustomName": {
+    "description": "Merchant UI string sellingUnitCustomName"
+  },
+  "sellingUnitCustomHint": "ex : Cornet",
+  "@sellingUnitCustomHint": {
+    "description": "Merchant UI string sellingUnitCustomHint"
+  },
+  "sellingUnitApply": "Appliquer l’unité",
+  "@sellingUnitApply": {
+    "description": "Merchant UI string sellingUnitApply"
+  },
+  "sellingUnitReadOnly": "Seuls le propriétaire et les gérants peuvent modifier l’unité de vente.",
+  "@sellingUnitReadOnly": {
+    "description": "Merchant UI string sellingUnitReadOnly"
+  },
+  "catalogFieldVariants": "Variantes obligatoires",
+  "@catalogFieldVariants": {
+    "description": "Merchant UI string catalogFieldVariants"
+  },
+  "catalogFieldExtras": "Suppléments optionnels",
+  "@catalogFieldExtras": {
+    "description": "Merchant UI string catalogFieldExtras"
+  },
+  "catalogFieldCategoryNameAr": "Nom de la catégorie (Arabe)",
+  "@catalogFieldCategoryNameAr": {
+    "description": "Merchant UI string catalogFieldCategoryNameAr"
+  },
+  "catalogFieldCategoryDesc": "Description de la catégorie (Optionnel)",
+  "@catalogFieldCategoryDesc": {
+    "description": "Merchant UI string catalogFieldCategoryDesc"
+  },
+  "storeCoverTitle": "Logo et Couverture",
+  "@storeCoverTitle": {
+    "description": "Merchant UI string storeCoverTitle"
+  },
+  "storeCoverPick": "Choisir une couverture",
+  "@storeCoverPick": {
+    "description": "Merchant UI string storeCoverPick"
+  },
+  "storeCoverReplace": "Remplacer",
+  "@storeCoverReplace": {
+    "description": "Merchant UI string storeCoverReplace"
+  },
+  "storeCoverSave": "Enregistrer les modifications",
+  "@storeCoverSave": {
+    "description": "Merchant UI string storeCoverSave"
+  },
+  "storeCoverRemove": "Supprimer",
+  "@storeCoverRemove": {
+    "description": "Merchant UI string storeCoverRemove"
+  },
+  "storeCoverSection": "Photo de couverture",
+  "@storeCoverSection": {
+    "description": "Merchant UI string storeCoverSection"
+  },
+  "storeCoverSectionHint": "La photo de couverture doit représenter votre établissement.",
+  "@storeCoverSectionHint": {
+    "description": "Merchant UI string storeCoverSectionHint"
+  },
+  "storeLogoSection": "Logo du magasin",
+  "@storeLogoSection": {
+    "description": "Merchant UI string storeLogoSection"
+  },
+  "storeLogoSectionHint": "Le logo doit être lisible même en petit format.",
+  "@storeLogoSectionHint": {
+    "description": "Merchant UI string storeLogoSectionHint"
+  },
+  "storeLogoEdit": "Modifier",
+  "@storeLogoEdit": {
+    "description": "Merchant UI string storeLogoEdit"
+  },
+  "storeLogoAdd": "Ajouter",
+  "@storeLogoAdd": {
+    "description": "Merchant UI string storeLogoAdd"
+  },
+  "storeLogoRemove": "Supprimer",
+  "@storeLogoRemove": {
+    "description": "Merchant UI string storeLogoRemove"
+  },
+  "storeLogoEmpty": "Aucun logo",
+  "@storeLogoEmpty": {
+    "description": "Merchant UI string storeLogoEmpty"
+  },
+  "storeLogoPending": "Nouveau logo sélectionné — enregistrez pour l’appliquer.",
+  "@storeLogoPending": {
+    "description": "Merchant UI string storeLogoPending"
+  },
+  "storeLogoTooSmall": "Logo trop petit. Minimum 128 × 128 pixels.",
+  "@storeLogoTooSmall": {
+    "description": "Merchant UI string storeLogoTooSmall"
+  },
+  "storeLogoTooLarge": "Logo trop lourd. Maximum 1 Mo après compression.",
+  "@storeLogoTooLarge": {
+    "description": "Merchant UI string storeLogoTooLarge"
+  },
+  "storeLogoUploadError": "Impossible d’envoyer le logo.",
+  "@storeLogoUploadError": {
+    "description": "Merchant UI string storeLogoUploadError"
+  },
+  "storeLogoBindPartial": "Envoi réussi, mais le logo n’a pas pu être lié. Réessayez.",
+  "@storeLogoBindPartial": {
+    "description": "Merchant UI string storeLogoBindPartial"
+  },
+  "storeLogoRemoved": "Logo supprimé.",
+  "@storeLogoRemoved": {
+    "description": "Merchant UI string storeLogoRemoved"
+  },
+  "storeLogoRemoveError": "Impossible de supprimer le logo. Réessayez.",
+  "@storeLogoRemoveError": {
+    "description": "Merchant UI string storeLogoRemoveError"
+  },
+  "storeLogoRemoteUnavailable": "Aperçu du logo non disponible actuellement.",
+  "@storeLogoRemoteUnavailable": {
+    "description": "Merchant UI string storeLogoRemoteUnavailable"
+  },
+  "storeMediaPartialSaved": "Le logo est enregistré, mais la couverture a échoué. Réessayez.",
+  "@storeMediaPartialSaved": {
+    "description": "Merchant UI string storeMediaPartialSaved"
+  },
+  "storeCoverHint": "JPEG ou PNG, max. 2 Mo.",
+  "@storeCoverHint": {
+    "description": "Merchant UI string storeCoverHint"
+  },
+  "storeCoverUploadError": "Impossible d’envoyer la couverture.",
+  "@storeCoverUploadError": {
+    "description": "Merchant UI string storeCoverUploadError"
+  },
+  "storeCoverBindPartial": "Envoi réussi, mais la couverture n’a pas pu être liée. Réessayez.",
+  "@storeCoverBindPartial": {
+    "description": "Merchant UI string storeCoverBindPartial"
+  },
+  "storeCoverRemoteUnavailable": "Aperçu de la couverture non disponible actuellement.",
+  "@storeCoverRemoteUnavailable": {
+    "description": "Merchant UI string storeCoverRemoteUnavailable"
+  },
+  "storeCustomerPreviewTitle": "Aperçu client",
+  "@storeCustomerPreviewTitle": {
+    "description": "Merchant UI string storeCustomerPreviewTitle"
+  },
+  "storeCustomerPreviewHint": "Notes et délai estimé non disponibles actuellement.",
+  "@storeCustomerPreviewHint": {
+    "description": "Merchant UI string storeCustomerPreviewHint"
+  },
+  "storeAddressTitle": "Contact et Adresse du magasin",
+  "@storeAddressTitle": {
+    "description": "Merchant UI string storeAddressTitle"
+  },
+  "storeAddressSave": "Enregistrer les modifications",
+  "@storeAddressSave": {
+    "description": "Merchant UI string storeAddressSave"
+  },
+  "storeAddressConfirmMap": "Modifier sur la carte",
+  "@storeAddressConfirmMap": {
+    "description": "Merchant UI string storeAddressConfirmMap"
+  },
+  "storeAddressSaveError": "Enregistrement impossible. Vérifiez la connexion et réessayez.",
+  "@storeAddressSaveError": {
+    "description": "Merchant UI string storeAddressSaveError"
+  },
+  "storeAddressBanner": "La modification de l’adresse peut affecter vos zones de livraison et les opérations en cours.",
+  "@storeAddressBanner": {
+    "description": "Merchant UI string storeAddressBanner"
+  },
+  "storeAddressCoordsSection": "Coordonnées",
+  "@storeAddressCoordsSection": {
+    "description": "Merchant UI string storeAddressCoordsSection"
+  },
+  "storeAddressSection": "Adresse",
+  "@storeAddressSection": {
+    "description": "Merchant UI string storeAddressSection"
+  },
+  "storeAddressPhone": "Numéro de téléphone",
+  "@storeAddressPhone": {
+    "description": "Merchant UI string storeAddressPhone"
+  },
+  "storeAddressPhoneHint": "Numéro communiqué aux livreurs pour le retrait.",
+  "@storeAddressPhoneHint": {
+    "description": "Merchant UI string storeAddressPhoneHint"
+  },
+  "storeAddressDetailed": "Adresse détaillée",
+  "@storeAddressDetailed": {
+    "description": "Merchant UI string storeAddressDetailed"
+  },
+  "storeAddressLocationSummary": "Emplacement confirmé",
+  "@storeAddressLocationSummary": {
+    "description": "Merchant UI string storeAddressLocationSummary"
+  },
+  "storeAddressPublicContact": "Contact public (Optionnel)",
+  "@storeAddressPublicContact": {
+    "description": "Merchant UI string storeAddressPublicContact"
+  },
+  "storeAddressWilaya": "Wilaya",
+  "@storeAddressWilaya": {
+    "description": "Merchant UI string storeAddressWilaya"
+  },
+  "storeAddressCommune": "Commune",
+  "@storeAddressCommune": {
+    "description": "Merchant UI string storeAddressCommune"
+  },
+  "adminLocationChoose": "Sélectionner",
+  "@adminLocationChoose": {
+    "description": "Merchant UI string adminLocationChoose"
+  },
+  "adminLocationSearchHint": "Rechercher…",
+  "@adminLocationSearchHint": {
+    "description": "Merchant UI string adminLocationSearchHint"
+  },
+  "adminLocationEmpty": "Aucun résultat",
+  "@adminLocationEmpty": {
+    "description": "Merchant UI string adminLocationEmpty"
+  },
+  "adminLocationLoadError": "Impossible de charger la liste. Réessayez.",
+  "@adminLocationLoadError": {
+    "description": "Merchant UI string adminLocationLoadError"
+  },
+  "adminLocationRetry": "Réessayer",
+  "@adminLocationRetry": {
+    "description": "Merchant UI string adminLocationRetry"
+  },
+  "adminLocationWilayaRequired": "Sélectionnez d’abord une wilaya.",
+  "@adminLocationWilayaRequired": {
+    "description": "Merchant UI string adminLocationWilayaRequired"
+  },
+  "adminLocationPairRequired": "Wilaya et commune sont obligatoires.",
+  "@adminLocationPairRequired": {
+    "description": "Merchant UI string adminLocationPairRequired"
+  },
+  "storeAddressPickupHints": "Instructions de retrait",
+  "@storeAddressPickupHints": {
+    "description": "Merchant UI string storeAddressPickupHints"
+  },
+  "storeProfileMediaSub": "Logo et photo de couverture",
+  "@storeProfileMediaSub": {
+    "description": "Merchant UI string storeProfileMediaSub"
+  },
+  "storeProfileMediaUnavailable": "Indisponible",
+  "@storeProfileMediaUnavailable": {
+    "description": "Merchant UI string storeProfileMediaUnavailable"
+  },
+  "storeProfilePrepUnavailable": "Indisponible",
+  "@storeProfilePrepUnavailable": {
+    "description": "Merchant UI string storeProfilePrepUnavailable"
+  },
+  "storeProfilePreviewUnavailable": "Aperçu client indisponible.",
+  "@storeProfilePreviewUnavailable": {
+    "description": "Merchant UI string storeProfilePreviewUnavailable"
+  },
+  "profileSettingsTitle": "Paramètres",
+  "@profileSettingsTitle": {
+    "description": "Merchant UI string profileSettingsTitle"
+  },
+  "storeProfileTitle": "Profil magasin",
+  "@storeProfileTitle": {
+    "description": "Merchant UI string storeProfileTitle"
+  },
+  "storeProfileCustomerPreview": "Aperçu client",
+  "@storeProfileCustomerPreview": {
+    "description": "Merchant UI string storeProfileCustomerPreview"
+  },
+  "storeProfileGeneral": "Informations générales",
+  "@storeProfileGeneral": {
+    "description": "Merchant UI string storeProfileGeneral"
+  },
+  "storeProfileGeneralSub": "Nom et statut du commerce",
+  "@storeProfileGeneralSub": {
+    "description": "Merchant UI string storeProfileGeneralSub"
+  },
+  "storeGeneralTitle": "Informations générales",
+  "@storeGeneralTitle": {
+    "description": "Merchant UI string storeGeneralTitle"
+  },
+  "storeGeneralBranchName": "Nom de l’établissement",
+  "@storeGeneralBranchName": {
+    "description": "Merchant UI string storeGeneralBranchName"
+  },
+  "storeGeneralBranchNameHint": "Affiché aux clients pour cet établissement.",
+  "@storeGeneralBranchNameHint": {
+    "description": "Merchant UI string storeGeneralBranchNameHint"
+  },
+  "storeGeneralMerchantName": "Nom du commerce",
+  "@storeGeneralMerchantName": {
+    "description": "Merchant UI string storeGeneralMerchantName"
+  },
+  "storeGeneralMerchantLocked": "Nom vérifié par SpeedyGo : non modifiable ici.",
+  "@storeGeneralMerchantLocked": {
+    "description": "Merchant UI string storeGeneralMerchantLocked"
+  },
+  "storeGeneralReadOnly": "Seuls le propriétaire et le gérant peuvent modifier ces informations.",
+  "@storeGeneralReadOnly": {
+    "description": "Merchant UI string storeGeneralReadOnly"
+  },
+  "storeGeneralPhoneElsewhere": "Le téléphone se modifie dans « Adresse et Emplacement ».",
+  "@storeGeneralPhoneElsewhere": {
+    "description": "Merchant UI string storeGeneralPhoneElsewhere"
+  },
+  "storeGeneralSave": "Enregistrer",
+  "@storeGeneralSave": {
+    "description": "Merchant UI string storeGeneralSave"
+  },
+  "storeGeneralSaved": "Informations de l’établissement enregistrées.",
+  "@storeGeneralSaved": {
+    "description": "Merchant UI string storeGeneralSaved"
+  },
+  "storeGeneralNameAr": "Nom en arabe",
+  "@storeGeneralNameAr": {
+    "description": "Merchant UI string storeGeneralNameAr"
+  },
+  "storeGeneralNameArHint": "Optionnel. Affiché aux clients arabophones.",
+  "@storeGeneralNameArHint": {
+    "description": "Merchant UI string storeGeneralNameArHint"
+  },
+  "storeGeneralDescription": "Description courte",
+  "@storeGeneralDescription": {
+    "description": "Merchant UI string storeGeneralDescription"
+  },
+  "storeGeneralDescriptionHint": "Optionnel. Présentez votre établissement en quelques phrases.",
+  "@storeGeneralDescriptionHint": {
+    "description": "Merchant UI string storeGeneralDescriptionHint"
+  },
+  "storeGeneralPublicEmail": "E-mail public",
+  "@storeGeneralPublicEmail": {
+    "description": "Merchant UI string storeGeneralPublicEmail"
+  },
+  "storeGeneralPublicEmailHint": "Optionnel. Adresse de contact visible par les clients.",
+  "@storeGeneralPublicEmailHint": {
+    "description": "Merchant UI string storeGeneralPublicEmailHint"
+  },
+  "storeGeneralEmailInvalid": "Adresse e-mail invalide.",
+  "@storeGeneralEmailInvalid": {
+    "description": "Merchant UI string storeGeneralEmailInvalid"
+  },
+  "storeGeneralPreviewTitle": "Aperçu client",
+  "@storeGeneralPreviewTitle": {
+    "description": "Merchant UI string storeGeneralPreviewTitle"
+  },
+  "storeGeneralPreviewOpen": "Ouvert",
+  "@storeGeneralPreviewOpen": {
+    "description": "Merchant UI string storeGeneralPreviewOpen"
+  },
+  "storeGeneralPreviewClosed": "Fermé",
+  "@storeGeneralPreviewClosed": {
+    "description": "Merchant UI string storeGeneralPreviewClosed"
+  },
+  "storeProfileCategory": "Catégorie de l’établissement",
+  "@storeProfileCategory": {
+    "description": "Merchant UI string storeProfileCategory"
+  },
+  "storeProfileCategorySub": "Type de commerce affiché aux clients",
+  "@storeProfileCategorySub": {
+    "description": "Merchant UI string storeProfileCategorySub"
+  },
+  "storeCategoryTitle": "Catégorie de l’établissement",
+  "@storeCategoryTitle": {
+    "description": "Merchant UI string storeCategoryTitle"
+  },
+  "storeCategorySubtitle": "Choisissez la catégorie qui décrit le mieux votre activité.",
+  "@storeCategorySubtitle": {
+    "description": "Merchant UI string storeCategorySubtitle"
+  },
+  "storeCategorySearch": "Rechercher une catégorie...",
+  "@storeCategorySearch": {
+    "description": "Merchant UI string storeCategorySearch"
+  },
+  "storeCategoryInfo": "Une seule catégorie par établissement. Elle détermine où il apparaît dans l’application client.",
+  "@storeCategoryInfo": {
+    "description": "Merchant UI string storeCategoryInfo"
+  },
+  "storeCategoryReadOnly": "Seuls le propriétaire et les gérants peuvent modifier la catégorie.",
+  "@storeCategoryReadOnly": {
+    "description": "Merchant UI string storeCategoryReadOnly"
+  },
+  "storeCategorySave": "Enregistrer",
+  "@storeCategorySave": {
+    "description": "Merchant UI string storeCategorySave"
+  },
+  "storeCategoryClear": "Retirer la catégorie",
+  "@storeCategoryClear": {
+    "description": "Merchant UI string storeCategoryClear"
+  },
+  "storeCategorySaved": "Catégorie enregistrée.",
+  "@storeCategorySaved": {
+    "description": "Merchant UI string storeCategorySaved"
+  },
+  "storeCategoryCleared": "Catégorie retirée.",
+  "@storeCategoryCleared": {
+    "description": "Merchant UI string storeCategoryCleared"
+  },
+  "storeCategoryNotSet": "Non définie",
+  "@storeCategoryNotSet": {
+    "description": "Merchant UI string storeCategoryNotSet"
+  },
+  "storeCategoryEmpty": "Aucune catégorie disponible pour le moment.",
+  "@storeCategoryEmpty": {
+    "description": "Merchant UI string storeCategoryEmpty"
+  },
+  "storeCategoryNoMatch": "Aucune catégorie ne correspond.",
+  "@storeCategoryNoMatch": {
+    "description": "Merchant UI string storeCategoryNoMatch"
+  },
+  "storeCategoryLoadError": "Impossible de charger les catégories.",
+  "@storeCategoryLoadError": {
+    "description": "Merchant UI string storeCategoryLoadError"
+  },
+  "storeCategorySaveError": "Enregistrement impossible. Réessayez.",
+  "@storeCategorySaveError": {
+    "description": "Merchant UI string storeCategorySaveError"
+  },
+  "storeCategoryForbidden": "Votre rôle ne permet pas de modifier cet établissement.",
+  "@storeCategoryForbidden": {
+    "description": "Merchant UI string storeCategoryForbidden"
+  },
+  "storeCategoryRestricted": "Le statut du commerce ne permet pas cette modification.",
+  "@storeCategoryRestricted": {
+    "description": "Merchant UI string storeCategoryRestricted"
+  },
+  "storeGeneralNameRequired": "Le nom ne peut pas être vide.",
+  "@storeGeneralNameRequired": {
+    "description": "Merchant UI string storeGeneralNameRequired"
+  },
+  "storeGeneralSaveError": "Enregistrement impossible. Réessayez.",
+  "@storeGeneralSaveError": {
+    "description": "Merchant UI string storeGeneralSaveError"
+  },
+  "storeGeneralForbidden": "Votre rôle ne permet pas de modifier cet établissement.",
+  "@storeGeneralForbidden": {
+    "description": "Merchant UI string storeGeneralForbidden"
+  },
+  "storeGeneralRestricted": "Le statut du commerce ne permet pas cette modification.",
+  "@storeGeneralRestricted": {
+    "description": "Merchant UI string storeGeneralRestricted"
+  },
+  "storeProfileMedia": "Médias et Logos",
+  "@storeProfileMedia": {
+    "description": "Merchant UI string storeProfileMedia"
+  },
+  "storeProfileAddress": "Adresse et Emplacement",
+  "@storeProfileAddress": {
+    "description": "Merchant UI string storeProfileAddress"
+  },
+  "storeProfileAddressSub": "Téléphone, adresse et position GPS",
+  "@storeProfileAddressSub": {
+    "description": "Merchant UI string storeProfileAddressSub"
+  },
+  "storeProfileHours": "Horaires d’ouverture",
+  "@storeProfileHours": {
+    "description": "Merchant UI string storeProfileHours"
+  },
+  "storeProfileHoursSub": "Jours d’ouverture, pauses",
+  "@storeProfileHoursSub": {
+    "description": "Merchant UI string storeProfileHoursSub"
+  },
+  "storeProfilePrep": "Paramètres de préparation",
+  "@storeProfilePrep": {
+    "description": "Merchant UI string storeProfilePrep"
+  },
+  "storeProfileSettings": "Paramètres du compte",
+  "@storeProfileSettings": {
+    "description": "Merchant UI string storeProfileSettings"
+  },
+  "storeProfileSettingsSub": "Compte, préférences, déconnexion",
+  "@storeProfileSettingsSub": {
+    "description": "Merchant UI string storeProfileSettingsSub"
+  },
+  "storeProfileNotifications": "Notifications",
+  "@storeProfileNotifications": {
+    "description": "Merchant UI string storeProfileNotifications"
+  },
+  "storeProfileNotificationsSub": "Centre d’alertes",
+  "@storeProfileNotificationsSub": {
+    "description": "Merchant UI string storeProfileNotificationsSub"
+  },
+  "openingHoursTitle": "Horaires d’ouverture",
+  "@openingHoursTitle": {
+    "description": "Merchant UI string openingHoursTitle"
+  },
+  "openingHoursEmpty": "Aucun horaire configuré pour cet établissement.",
+  "@openingHoursEmpty": {
+    "description": "Merchant UI string openingHoursEmpty"
+  },
+  "openingHoursSave": "Enregistrer les horaires",
+  "@openingHoursSave": {
+    "description": "Merchant UI string openingHoursSave"
+  },
+  "openingHoursSaved": "Horaires enregistrés.",
+  "@openingHoursSaved": {
+    "description": "Merchant UI string openingHoursSaved"
+  },
+  "openingHoursLoadError": "Impossible de charger les horaires.",
+  "@openingHoursLoadError": {
+    "description": "Merchant UI string openingHoursLoadError"
+  },
+  "openingHoursSaveError": "Impossible d’enregistrer les horaires.",
+  "@openingHoursSaveError": {
+    "description": "Merchant UI string openingHoursSaveError"
+  },
+  "openingHoursInvalid": "Horaires refusés : vérifiez les chevauchements, y compris après minuit.",
+  "@openingHoursInvalid": {
+    "description": "Merchant UI string openingHoursInvalid"
+  },
+  "openingHoursConflict": "Les horaires ont changé ailleurs. Rechargement effectué — vérifiez puis réessayez.",
+  "@openingHoursConflict": {
+    "description": "Merchant UI string openingHoursConflict"
+  },
+  "openingHoursClosed": "Fermé",
+  "@openingHoursClosed": {
+    "description": "Merchant UI string openingHoursClosed"
+  },
+  "openingHoursUsual": "Horaires habituels",
+  "@openingHoursUsual": {
+    "description": "Merchant UI string openingHoursUsual"
+  },
+  "openingHoursNotConfigured": "Aucun horaire configuré",
+  "@openingHoursNotConfigured": {
+    "description": "Merchant UI string openingHoursNotConfigured"
+  },
+  "openingHoursOpenNow": "Ouvert actuellement",
+  "@openingHoursOpenNow": {
+    "description": "Merchant UI string openingHoursOpenNow"
+  },
+  "openingHoursClosedNow": "Fermé actuellement",
+  "@openingHoursClosedNow": {
+    "description": "Merchant UI string openingHoursClosedNow"
+  },
+  "openingHoursInfo": "Les clients peuvent commander uniquement pendant vos heures d’ouverture. Les modifications sont appliquées dès l’enregistrement.",
+  "@openingHoursInfo": {
+    "description": "Merchant UI string openingHoursInfo"
+  },
+  "openingHoursStaffReadOnly": "Lecture seule : seuls le propriétaire et les gérants peuvent modifier les horaires.",
+  "@openingHoursStaffReadOnly": {
+    "description": "Merchant UI string openingHoursStaffReadOnly"
+  },
+  "openingHoursOpens": "Ouverture",
+  "@openingHoursOpens": {
+    "description": "Merchant UI string openingHoursOpens"
+  },
+  "openingHoursCloses": "Fermeture",
+  "@openingHoursCloses": {
+    "description": "Merchant UI string openingHoursCloses"
+  },
+  "openingHoursEditorHint": "Jusqu’à 3 plages par jour. Une fermeture avant l’ouverture se termine le lendemain.",
+  "@openingHoursEditorHint": {
+    "description": "Merchant UI string openingHoursEditorHint"
+  },
+  "openingHoursAddRange": "Ajouter une plage",
+  "@openingHoursAddRange": {
+    "description": "Merchant UI string openingHoursAddRange"
+  },
+  "openingHoursRemoveRange": "Supprimer la plage",
+  "@openingHoursRemoveRange": {
+    "description": "Merchant UI string openingHoursRemoveRange"
+  },
+  "openingHoursApply": "Appliquer",
+  "@openingHoursApply": {
+    "description": "Merchant UI string openingHoursApply"
+  },
+  "openingHoursNextDay": "Se termine le lendemain",
+  "@openingHoursNextDay": {
+    "description": "Merchant UI string openingHoursNextDay"
+  },
+  "openingHoursAllDay": "Ouvert 24 h/24",
+  "@openingHoursAllDay": {
+    "description": "Merchant UI string openingHoursAllDay"
+  },
+  "openingHoursDayClosedHint": "Aucune plage : le jour sera fermé.",
+  "@openingHoursDayClosedHint": {
+    "description": "Merchant UI string openingHoursDayClosedHint"
+  },
+  "openingHoursIssueOverlap": "Les plages se chevauchent.",
+  "@openingHoursIssueOverlap": {
+    "description": "Merchant UI string openingHoursIssueOverlap"
+  },
+  "openingHoursIssueZero": "L’ouverture et la fermeture doivent être différentes (00:00–00:00 pour 24 h).",
+  "@openingHoursIssueZero": {
+    "description": "Merchant UI string openingHoursIssueZero"
+  },
+  "openingHoursIssueTooMany": "Maximum 3 plages par jour.",
+  "@openingHoursIssueTooMany": {
+    "description": "Merchant UI string openingHoursIssueTooMany"
+  },
+  "hoursExceptionsTitle": "Horaires exceptionnels",
+  "@hoursExceptionsTitle": {
+    "description": "Merchant UI string hoursExceptionsTitle"
+  },
+  "hoursExceptionsNavSub": "Jours fériés, fermetures ponctuelles",
+  "@hoursExceptionsNavSub": {
+    "description": "Merchant UI string hoursExceptionsNavSub"
+  },
+  "hoursExceptionsBanner": "Ces horaires remplacent vos horaires habituels uniquement pour les dates sélectionnées.",
+  "@hoursExceptionsBanner": {
+    "description": "Merchant UI string hoursExceptionsBanner"
+  },
+  "hoursExceptionsUpcoming": "Exceptions à venir",
+  "@hoursExceptionsUpcoming": {
+    "description": "Merchant UI string hoursExceptionsUpcoming"
+  },
+  "hoursExceptionsEmpty": "Aucune exception à venir.",
+  "@hoursExceptionsEmpty": {
+    "description": "Merchant UI string hoursExceptionsEmpty"
+  },
+  "hoursExceptionsAdd": "Ajouter une exception",
+  "@hoursExceptionsAdd": {
+    "description": "Merchant UI string hoursExceptionsAdd"
+  },
+  "hoursExceptionsEdit": "Modifier l’exception",
+  "@hoursExceptionsEdit": {
+    "description": "Merchant UI string hoursExceptionsEdit"
+  },
+  "hoursExceptionsDate": "Date",
+  "@hoursExceptionsDate": {
+    "description": "Merchant UI string hoursExceptionsDate"
+  },
+  "hoursExceptionsDateHint": "Sélectionner une date",
+  "@hoursExceptionsDateHint": {
+    "description": "Merchant UI string hoursExceptionsDateHint"
+  },
+  "hoursExceptionsDateTaken": "Cette date a déjà une exception : l’enregistrement la remplacera.",
+  "@hoursExceptionsDateTaken": {
+    "description": "Merchant UI string hoursExceptionsDateTaken"
+  },
+  "hoursExceptionsStatus": "Statut",
+  "@hoursExceptionsStatus": {
+    "description": "Merchant UI string hoursExceptionsStatus"
+  },
+  "hoursExceptionsOpen": "Ouvert",
+  "@hoursExceptionsOpen": {
+    "description": "Merchant UI string hoursExceptionsOpen"
+  },
+  "hoursExceptionsClosed": "Fermé",
+  "@hoursExceptionsClosed": {
+    "description": "Merchant UI string hoursExceptionsClosed"
+  },
+  "hoursExceptionsHours": "Horaires modifiés",
+  "@hoursExceptionsHours": {
+    "description": "Merchant UI string hoursExceptionsHours"
+  },
+  "hoursExceptionsTo": "à",
+  "@hoursExceptionsTo": {
+    "description": "Merchant UI string hoursExceptionsTo"
+  },
+  "hoursExceptionsLabel": "Motif",
+  "@hoursExceptionsLabel": {
+    "description": "Merchant UI string hoursExceptionsLabel"
+  },
+  "hoursExceptionsLabelHint": "ex : Jour férié, Travaux…",
+  "@hoursExceptionsLabelHint": {
+    "description": "Merchant UI string hoursExceptionsLabelHint"
+  },
+  "hoursExceptionsMessage": "Message pour les clients (Optionnel)",
+  "@hoursExceptionsMessage": {
+    "description": "Merchant UI string hoursExceptionsMessage"
+  },
+  "hoursExceptionsMessageHint": "Enregistré avec l’exception. Pas encore affiché dans l’application client.",
+  "@hoursExceptionsMessageHint": {
+    "description": "Merchant UI string hoursExceptionsMessageHint"
+  },
+  "hoursExceptionsCancel": "Annuler",
+  "@hoursExceptionsCancel": {
+    "description": "Merchant UI string hoursExceptionsCancel"
+  },
+  "hoursExceptionsSave": "Enregistrer les horaires",
+  "@hoursExceptionsSave": {
+    "description": "Merchant UI string hoursExceptionsSave"
+  },
+  "hoursExceptionsSaved": "Exception enregistrée.",
+  "@hoursExceptionsSaved": {
+    "description": "Merchant UI string hoursExceptionsSaved"
+  },
+  "hoursExceptionsDeleted": "Exception supprimée.",
+  "@hoursExceptionsDeleted": {
+    "description": "Merchant UI string hoursExceptionsDeleted"
+  },
+  "hoursExceptionsDeleteTitle": "Supprimer l’exception ?",
+  "@hoursExceptionsDeleteTitle": {
+    "description": "Merchant UI string hoursExceptionsDeleteTitle"
+  },
+  "hoursExceptionsDeleteBody": "Le {date} reprendra vos horaires habituels.",
+  "@hoursExceptionsDeleteBody": {
+    "description": "Merchant UI string hoursExceptionsDeleteBody",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "hoursExceptionsDeleteConfirm": "Supprimer",
+  "@hoursExceptionsDeleteConfirm": {
+    "description": "Merchant UI string hoursExceptionsDeleteConfirm"
+  },
+  "hoursExceptionsLoadError": "Impossible de charger les horaires exceptionnels.",
+  "@hoursExceptionsLoadError": {
+    "description": "Merchant UI string hoursExceptionsLoadError"
+  },
+  "hoursExceptionsSaveError": "Impossible d’enregistrer l’exception. Vos saisies sont conservées.",
+  "@hoursExceptionsSaveError": {
+    "description": "Merchant UI string hoursExceptionsSaveError"
+  },
+  "hoursExceptionsDeleteError": "Impossible de supprimer l’exception. Réessayez.",
+  "@hoursExceptionsDeleteError": {
+    "description": "Merchant UI string hoursExceptionsDeleteError"
+  },
+  "hoursExceptionsConflict": "Cette date a été modifiée ailleurs. La liste a été rechargée : vérifiez puis enregistrez à nouveau.",
+  "@hoursExceptionsConflict": {
+    "description": "Merchant UI string hoursExceptionsConflict"
+  },
+  "hoursExceptionsInvalid": "Exception refusée : vérifiez la date (aujourd’hui à +365 jours) et les plages.",
+  "@hoursExceptionsInvalid": {
+    "description": "Merchant UI string hoursExceptionsInvalid"
+  },
+  "hoursExceptionsWeeklyRequired": "Configurez d’abord les horaires habituels.",
+  "@hoursExceptionsWeeklyRequired": {
+    "description": "Merchant UI string hoursExceptionsWeeklyRequired"
+  },
+  "hoursExceptionsTooMany": "Trop d’exceptions à venir (100 maximum).",
+  "@hoursExceptionsTooMany": {
+    "description": "Merchant UI string hoursExceptionsTooMany"
+  },
+  "hoursExceptionsStaffReadOnly": "Lecture seule : seuls le propriétaire et les gérants peuvent modifier les horaires exceptionnels.",
+  "@hoursExceptionsStaffReadOnly": {
+    "description": "Merchant UI string hoursExceptionsStaffReadOnly"
+  },
+  "hoursExceptionsDateRequired": "Sélectionnez une date.",
+  "@hoursExceptionsDateRequired": {
+    "description": "Merchant UI string hoursExceptionsDateRequired"
+  },
+  "hoursExceptionsLabelRequired": "Indiquez un motif.",
+  "@hoursExceptionsLabelRequired": {
+    "description": "Merchant UI string hoursExceptionsLabelRequired"
+  },
+  "hoursExceptionsIntervalsRequired": "Ajoutez au moins une plage horaire.",
+  "@hoursExceptionsIntervalsRequired": {
+    "description": "Merchant UI string hoursExceptionsIntervalsRequired"
+  },
+  "hoursExceptionsSameDay": "Chaque plage doit finir le même jour (00:00 = minuit).",
+  "@hoursExceptionsSameDay": {
+    "description": "Merchant UI string hoursExceptionsSameDay"
+  },
+  "hoursExceptionsHelpTitle": "Ordre d’application",
+  "@hoursExceptionsHelpTitle": {
+    "description": "Merchant UI string hoursExceptionsHelpTitle"
+  },
+  "hoursExceptionsHelpBody": "Une fermeture forcée ou temporaire de l’établissement s’applique toujours en premier. Sinon, une exception remplace les horaires habituels pour sa date (heure d’Alger). Les autres jours suivent les horaires habituels.",
+  "@hoursExceptionsHelpBody": {
+    "description": "Merchant UI string hoursExceptionsHelpBody"
+  },
+  "hoursExceptionsHelpOk": "Compris",
+  "@hoursExceptionsHelpOk": {
+    "description": "Merchant UI string hoursExceptionsHelpOk"
+  },
+  "hoursExceptionsToday": "Exception aujourd’hui : {label}",
+  "@hoursExceptionsToday": {
+    "description": "Merchant UI string hoursExceptionsToday",
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "availabilityTitle": "État du magasin",
+  "@availabilityTitle": {
+    "description": "Merchant UI string availabilityTitle"
+  },
+  "availabilityEstablishment": "Établissement",
+  "@availabilityEstablishment": {
+    "description": "Merchant UI string availabilityEstablishment"
+  },
+  "availabilityOpen": "Ouvert",
+  "@availabilityOpen": {
+    "description": "Merchant UI string availabilityOpen"
+  },
+  "availabilityClosed": "Fermé",
+  "@availabilityClosed": {
+    "description": "Merchant UI string availabilityClosed"
+  },
+  "availabilityFollowSchedule": "Selon les horaires",
+  "@availabilityFollowSchedule": {
+    "description": "Merchant UI string availabilityFollowSchedule"
+  },
+  "availabilityForceClosed": "Fermé",
+  "@availabilityForceClosed": {
+    "description": "Merchant UI string availabilityForceClosed"
+  },
+  "availabilitySave": "Enregistrer les modifications",
+  "@availabilitySave": {
+    "description": "Merchant UI string availabilitySave"
+  },
+  "availabilitySaving": "Enregistrement…",
+  "@availabilitySaving": {
+    "description": "Merchant UI string availabilitySaving"
+  },
+  "availabilitySaved": "État du magasin enregistré.",
+  "@availabilitySaved": {
+    "description": "Merchant UI string availabilitySaved"
+  },
+  "availabilityClosureSaved": "Fermeture enregistrée.",
+  "@availabilityClosureSaved": {
+    "description": "Merchant UI string availabilityClosureSaved"
+  },
+  "availabilityLoadError": "Impossible de charger l’état du magasin.",
+  "@availabilityLoadError": {
+    "description": "Merchant UI string availabilityLoadError"
+  },
+  "availabilitySaveError": "Impossible d’enregistrer l’état du magasin.",
+  "@availabilitySaveError": {
+    "description": "Merchant UI string availabilitySaveError"
+  },
+  "availabilityConflict": "L’état a changé ailleurs. Rechargement effectué — vérifiez puis réessayez.",
+  "@availabilityConflict": {
+    "description": "Merchant UI string availabilityConflict"
+  },
+  "availabilityReopenTitle": "Rouvrir selon les horaires",
+  "@availabilityReopenTitle": {
+    "description": "Merchant UI string availabilityReopenTitle"
+  },
+  "availabilityReopenOutsideHoursBody": "Vous êtes hors des horaires hebdomadaires. Le magasin restera Fermé jusqu’à la prochaine ouverture prévue.",
+  "@availabilityReopenOutsideHoursBody": {
+    "description": "Merchant UI string availabilityReopenOutsideHoursBody"
+  },
+  "availabilityConfirmReopen": "Confirmer",
+  "@availabilityConfirmReopen": {
+    "description": "Merchant UI string availabilityConfirmReopen"
+  },
+  "availabilityToday": "Aujourd’hui",
+  "@availabilityToday": {
+    "description": "Merchant UI string availabilityToday"
+  },
+  "availabilityClosedToday": "Fermé aujourd’hui",
+  "@availabilityClosedToday": {
+    "description": "Merchant UI string availabilityClosedToday"
+  },
+  "availabilityModifyHours": "Modifier",
+  "@availabilityModifyHours": {
+    "description": "Merchant UI string availabilityModifyHours"
+  },
+  "availabilityQuickPause": "Pause rapide",
+  "@availabilityQuickPause": {
+    "description": "Merchant UI string availabilityQuickPause"
+  },
+  "availabilityQuickPauseHint": "Fermer temporairement pour un rush en cuisine.",
+  "@availabilityQuickPauseHint": {
+    "description": "Merchant UI string availabilityQuickPauseHint"
+  },
+  "availabilityPause30": "30 MIN",
+  "@availabilityPause30": {
+    "description": "Merchant UI string availabilityPause30"
+  },
+  "availabilityPause60": "1 HEURE",
+  "@availabilityPause60": {
+    "description": "Merchant UI string availabilityPause60"
+  },
+  "availabilityActiveOrdersUnknown": "Commandes en cours",
+  "@availabilityActiveOrdersUnknown": {
+    "description": "Merchant UI string availabilityActiveOrdersUnknown"
+  },
+  "availabilityCloseWarningTitle": "Attention : fermeture immédiate",
+  "@availabilityCloseWarningTitle": {
+    "description": "Merchant UI string availabilityCloseWarningTitle"
+  },
+  "availabilityStaffReadOnly": "Lecture seule : seuls le propriétaire et les gérants peuvent modifier l’état du magasin.",
+  "@availabilityStaffReadOnly": {
+    "description": "Merchant UI string availabilityStaffReadOnly"
+  },
+  "availabilityBannerOpenTitle": "Magasin en ligne",
+  "@availabilityBannerOpenTitle": {
+    "description": "Merchant UI string availabilityBannerOpenTitle"
+  },
+  "availabilityBannerOpenBody": "Les clients peuvent passer commande et voir votre menu normalement.",
+  "@availabilityBannerOpenBody": {
+    "description": "Merchant UI string availabilityBannerOpenBody"
+  },
+  "availabilityBannerClosedTitle": "Magasin hors ligne",
+  "@availabilityBannerClosedTitle": {
+    "description": "Merchant UI string availabilityBannerClosedTitle"
+  },
+  "availabilityBannerClosedBody": "Les clients ne peuvent plus passer de nouvelles commandes.",
+  "@availabilityBannerClosedBody": {
+    "description": "Merchant UI string availabilityBannerClosedBody"
+  },
+  "availabilityBannerScheduleClosedTitle": "Selon les horaires — actuellement fermé",
+  "@availabilityBannerScheduleClosedTitle": {
+    "description": "Merchant UI string availabilityBannerScheduleClosedTitle"
+  },
+  "availabilityBannerScheduleClosedBody": "Le magasin suit le planning. Il s’ouvrira automatiquement aux prochaines heures.",
+  "@availabilityBannerScheduleClosedBody": {
+    "description": "Merchant UI string availabilityBannerScheduleClosedBody"
+  },
+  "availabilityReasonPeak": "Forte charge (cuisine)",
+  "@availabilityReasonPeak": {
+    "description": "Merchant UI string availabilityReasonPeak"
+  },
+  "availabilityReasonTechnical": "Problème technique",
+  "@availabilityReasonTechnical": {
+    "description": "Merchant UI string availabilityReasonTechnical"
+  },
+  "availabilityReasonStock": "Rupture de stock",
+  "@availabilityReasonStock": {
+    "description": "Merchant UI string availabilityReasonStock"
+  },
+  "availabilityReasonLunch": "Pause déjeuner",
+  "@availabilityReasonLunch": {
+    "description": "Merchant UI string availabilityReasonLunch"
+  },
+  "temporaryClosureTitle": "Fermeture temporaire",
+  "@temporaryClosureTitle": {
+    "description": "Merchant UI string temporaryClosureTitle"
+  },
+  "temporaryClosureActionRequired": "Action requise",
+  "@temporaryClosureActionRequired": {
+    "description": "Merchant UI string temporaryClosureActionRequired"
+  },
+  "temporaryClosureImpactLead": "La fermeture suspendra l’acceptation de nouvelles commandes. ",
+  "@temporaryClosureImpactLead": {
+    "description": "Merchant UI string temporaryClosureImpactLead"
+  },
+  "temporaryClosureImpactNone": "Aucune commande en cours.",
+  "@temporaryClosureImpactNone": {
+    "description": "Merchant UI string temporaryClosureImpactNone"
+  },
+  "temporaryClosureImpactUnknown": "Les commandes en cours seront maintenues et doivent être préparées.",
+  "@temporaryClosureImpactUnknown": {
+    "description": "Merchant UI string temporaryClosureImpactUnknown"
+  },
+  "temporaryClosureReason": "Motif de la fermeture",
+  "@temporaryClosureReason": {
+    "description": "Merchant UI string temporaryClosureReason"
+  },
+  "temporaryClosureReopen": "Réouverture prévue",
+  "@temporaryClosureReopen": {
+    "description": "Merchant UI string temporaryClosureReopen"
+  },
+  "temporaryClosure30m": "Dans 30 minutes",
+  "@temporaryClosure30m": {
+    "description": "Merchant UI string temporaryClosure30m"
+  },
+  "temporaryClosure1h": "Dans 1 heure",
+  "@temporaryClosure1h": {
+    "description": "Merchant UI string temporaryClosure1h"
+  },
+  "temporaryClosurePickTime": "Choisir une heure…",
+  "@temporaryClosurePickTime": {
+    "description": "Merchant UI string temporaryClosurePickTime"
+  },
+  "temporaryClosureIndefinite": "Indéfinie (Manuel)",
+  "@temporaryClosureIndefinite": {
+    "description": "Merchant UI string temporaryClosureIndefinite"
+  },
+  "temporaryClosureImageImpact": "Impact sur votre visibilité : Les clients verront votre établissement comme « Fermé temporairement ».",
+  "@temporaryClosureImageImpact": {
+    "description": "Merchant UI string temporaryClosureImageImpact"
+  },
+  "temporaryClosureStaffReadOnly": "Seuls le propriétaire et les gérants peuvent fermer le magasin.",
+  "@temporaryClosureStaffReadOnly": {
+    "description": "Merchant UI string temporaryClosureStaffReadOnly"
+  },
+  "temporaryClosurePastTime": "L’heure de réouverture est déjà passée. Choisissez une nouvelle heure.",
+  "@temporaryClosurePastTime": {
+    "description": "Merchant UI string temporaryClosurePastTime"
+  },
+  "temporaryClosureMessage": "Message client",
+  "@temporaryClosureMessage": {
+    "description": "Merchant UI string temporaryClosureMessage"
+  },
+  "temporaryClosureOptional": "Facultatif",
+  "@temporaryClosureOptional": {
+    "description": "Merchant UI string temporaryClosureOptional"
+  },
+  "temporaryClosureMessageHint": "Ex: Nous sommes complets pour le moment, revenez dans 30 minutes !",
+  "@temporaryClosureMessageHint": {
+    "description": "Merchant UI string temporaryClosureMessageHint"
+  },
+  "temporaryClosureManualReopenHint": "Vous pourrez rouvrir manuellement à tout moment.",
+  "@temporaryClosureManualReopenHint": {
+    "description": "Merchant UI string temporaryClosureManualReopenHint"
+  },
+  "temporaryClosureConfirm": "Confirmer la fermeture",
+  "@temporaryClosureConfirm": {
+    "description": "Merchant UI string temporaryClosureConfirm"
+  },
+  "storeProfileAvailability": "État du magasin",
+  "@storeProfileAvailability": {
+    "description": "Merchant UI string storeProfileAvailability"
+  },
+  "storeProfileAvailabilitySub": "Selon les horaires, fermeture, pause",
+  "@storeProfileAvailabilitySub": {
+    "description": "Merchant UI string storeProfileAvailabilitySub"
+  },
+  "notificationsTitle": "Notifications",
+  "@notificationsTitle": {
+    "description": "Merchant UI string notificationsTitle"
+  },
+  "notificationsEmpty": "Aucune notification pour le moment.",
+  "@notificationsEmpty": {
+    "description": "Merchant UI string notificationsEmpty"
+  },
+  "notificationsLoadError": "Impossible de charger les notifications.",
+  "@notificationsLoadError": {
+    "description": "Merchant UI string notificationsLoadError"
+  },
+  "notificationsToday": "Aujourd’hui",
+  "@notificationsToday": {
+    "description": "Merchant UI string notificationsToday"
+  },
+  "notificationsYesterday": "Hier",
+  "@notificationsYesterday": {
+    "description": "Merchant UI string notificationsYesterday"
+  },
+  "notificationsJustNow": "À l’instant",
+  "@notificationsJustNow": {
+    "description": "Merchant UI string notificationsJustNow"
+  },
+  "notificationsMarkAllRead": "Tout marquer comme lu",
+  "@notificationsMarkAllRead": {
+    "description": "Merchant UI string notificationsMarkAllRead"
+  },
+  "notificationsFilterAll": "Tout",
+  "@notificationsFilterAll": {
+    "description": "Merchant UI string notificationsFilterAll"
+  },
+  "notificationsFilterOrders": "Commandes",
+  "@notificationsFilterOrders": {
+    "description": "Merchant UI string notificationsFilterOrders"
+  },
+  "notificationsOpenDetails": "Détails",
+  "@notificationsOpenDetails": {
+    "description": "Merchant UI string notificationsOpenDetails"
+  },
+  "notificationsOrderStale": "Cette commande n’est plus en attente d’acceptation.",
+  "@notificationsOrderStale": {
+    "description": "Merchant UI string notificationsOrderStale"
+  },
+  "alertNewOrder": "NOUVELLE COMMANDE",
+  "@alertNewOrder": {
+    "description": "Merchant UI string alertNewOrder"
+  },
+  "alertReceivedAt": "Reçue à",
+  "@alertReceivedAt": {
+    "description": "Merchant UI string alertReceivedAt"
+  },
+  "alertPayment": "Paiement",
+  "@alertPayment": {
+    "description": "Merchant UI string alertPayment"
+  },
+  "alertViewDetails": "Voir les détails",
+  "@alertViewDetails": {
+    "description": "Merchant UI string alertViewDetails"
+  },
+  "alertRefuse": "Refuser",
+  "@alertRefuse": {
+    "description": "Merchant UI string alertRefuse"
+  },
+  "alertItems": "Articles",
+  "@alertItems": {
+    "description": "Merchant UI string alertItems"
+  },
+  "alertOrderTotal": "Sous-total marchandises",
+  "@alertOrderTotal": {
+    "description": "Merchant UI string alertOrderTotal"
+  },
+  "alertOrderLabel": "Commande",
+  "@alertOrderLabel": {
+    "description": "Merchant UI string alertOrderLabel"
+  },
+  "alertDismiss": "Fermer",
+  "@alertDismiss": {
+    "description": "Merchant UI string alertDismiss"
+  },
+  "alertSeeList": "Voir la liste",
+  "@alertSeeList": {
+    "description": "Merchant UI string alertSeeList"
+  },
+  "notifSettingsTitle": "Paramètres de notification",
+  "@notifSettingsTitle": {
+    "description": "Merchant UI string notifSettingsTitle"
+  },
+  "notifSettingsScreenTitle": "Alertes",
+  "@notifSettingsScreenTitle": {
+    "description": "Merchant UI string notifSettingsScreenTitle"
+  },
+  "notifSettingsOsEnabled": "Permission iOS autorisée. Le Push natif n’est pas encore actif.",
+  "@notifSettingsOsEnabled": {
+    "description": "Merchant UI string notifSettingsOsEnabled"
+  },
+  "notifSettingsOsDenied": "Permission iOS refusée (modifiable dans Réglages). Le Push natif n’est pas encore actif.",
+  "@notifSettingsOsDenied": {
+    "description": "Merchant UI string notifSettingsOsDenied"
+  },
+  "notifSettingsOsNotAsked": "Permission de notification : pas encore autorisée.",
+  "@notifSettingsOsNotAsked": {
+    "description": "Merchant UI string notifSettingsOsNotAsked"
+  },
+  "notifSettingsOsOpen": "Paramètres système",
+  "@notifSettingsOsOpen": {
+    "description": "Merchant UI string notifSettingsOsOpen"
+  },
+  "notifSettingsSwitchesNote": "Uniquement quand l’application est ouverte.",
+  "@notifSettingsSwitchesNote": {
+    "description": "Merchant UI string notifSettingsSwitchesNote"
+  },
+  "notifSettingsInAppSection": "DANS L’APPLICATION",
+  "@notifSettingsInAppSection": {
+    "description": "Merchant UI string notifSettingsInAppSection"
+  },
+  "notifSettingsCriticalWarning": "Les commandes entrantes critiques ne peuvent pas être totalement réduites au silence sans risque de retard.",
+  "@notifSettingsCriticalWarning": {
+    "description": "Merchant UI string notifSettingsCriticalWarning"
+  },
+  "notifSettingsPushNotConfigured": "Non configuré",
+  "@notifSettingsPushNotConfigured": {
+    "description": "Merchant UI string notifSettingsPushNotConfigured"
+  },
+  "notifSettingsSoundSection": "ALERTES SONORES",
+  "@notifSettingsSoundSection": {
+    "description": "Merchant UI string notifSettingsSoundSection"
+  },
+  "notifSettingsSound": "Sonnerie des nouvelles commandes",
+  "@notifSettingsSound": {
+    "description": "Merchant UI string notifSettingsSound"
+  },
+  "notifSettingsVibrationSection": "VIBRATIONS",
+  "@notifSettingsVibrationSection": {
+    "description": "Merchant UI string notifSettingsVibrationSection"
+  },
+  "notifSettingsVibration": "Vibration lors d’une commande",
+  "@notifSettingsVibration": {
+    "description": "Merchant UI string notifSettingsVibration"
+  },
+  "notifSettingsPushSection": "ALERTES PUSH",
+  "@notifSettingsPushSection": {
+    "description": "Merchant UI string notifSettingsPushSection"
+  },
+  "notifSettingsOsEnabledPush": "Permission de notification : autorisée.",
+  "@notifSettingsOsEnabledPush": {
+    "description": "Merchant UI string notifSettingsOsEnabledPush"
+  },
+  "notifSettingsOsDeniedPush": "Permission de notification refusée : activez-la dans les réglages système.",
+  "@notifSettingsOsDeniedPush": {
+    "description": "Merchant UI string notifSettingsOsDeniedPush"
+  },
+  "notifSettingsNativePush": "Notifications hors application",
+  "@notifSettingsNativePush": {
+    "description": "Merchant UI string notifSettingsNativePush"
+  },
+  "notifSettingsNativePushSub": "Application fermée ou en arrière-plan.",
+  "@notifSettingsNativePushSub": {
+    "description": "Merchant UI string notifSettingsNativePushSub"
+  },
+  "notifSettingsLockScreenNote": "Aperçu sur l’écran verrouillé : selon les réglages système.",
+  "@notifSettingsLockScreenNote": {
+    "description": "Merchant UI string notifSettingsLockScreenNote"
+  },
+  "notifPushStatusRegistered": "Cet appareil est enregistré pour les notifications.",
+  "@notifPushStatusRegistered": {
+    "description": "Merchant UI string notifPushStatusRegistered"
+  },
+  "notifPushStatusPending": "Enregistrement de l’appareil…",
+  "@notifPushStatusPending": {
+    "description": "Merchant UI string notifPushStatusPending"
+  },
+  "notifPushStatusDenied": "Permission refusée : pas de notification hors application.",
+  "@notifPushStatusDenied": {
+    "description": "Merchant UI string notifPushStatusDenied"
+  },
+  "notifPushStatusDisabled": "Désactivées sur cet appareil.",
+  "@notifPushStatusDisabled": {
+    "description": "Merchant UI string notifPushStatusDisabled"
+  },
+  "notifPushStatusTokenUnavailable": "Jeton de notification indisponible sur cet appareil.",
+  "@notifPushStatusTokenUnavailable": {
+    "description": "Merchant UI string notifPushStatusTokenUnavailable"
+  },
+  "notifPushStatusFailed": "Enregistrement impossible pour le moment. Réessayez plus tard.",
+  "@notifPushStatusFailed": {
+    "description": "Merchant UI string notifPushStatusFailed"
+  },
+  "pushOrderInaccessible": "Cette commande n’est pas accessible avec ce compte.",
+  "@pushOrderInaccessible": {
+    "description": "Merchant UI string pushOrderInaccessible"
+  },
+  "notifSettingsForeground": "Alertes dans l’application",
+  "@notifSettingsForeground": {
+    "description": "Merchant UI string notifSettingsForeground"
+  },
+  "notifSettingsPushUnavailable": "Les notifications hors application ne sont pas encore disponibles.",
+  "@notifSettingsPushUnavailable": {
+    "description": "Merchant UI string notifSettingsPushUnavailable"
+  },
+  "notifSettingsPushBlocked": "Push natif (APNs/FCM) non configuré : la permission iOS ne suffit pas.",
+  "@notifSettingsPushBlocked": {
+    "description": "Merchant UI string notifSettingsPushBlocked"
+  },
+  "notifSettingsSave": "Enregistrer les paramètres",
+  "@notifSettingsSave": {
+    "description": "Merchant UI string notifSettingsSave"
+  },
+  "notifSettingsSaved": "Paramètres enregistrés.",
+  "@notifSettingsSaved": {
+    "description": "Merchant UI string notifSettingsSaved"
+  },
+  "profileRole": "Rôle",
+  "@profileRole": {
+    "description": "Merchant UI string profileRole"
+  },
+  "profileMerchant": "Commerce",
+  "@profileMerchant": {
+    "description": "Merchant UI string profileMerchant"
+  },
+  "profileBranch": "Établissement",
+  "@profileBranch": {
+    "description": "Merchant UI string profileBranch"
+  },
+  "profileRoleOwner": "Propriétaire",
+  "@profileRoleOwner": {
+    "description": "Merchant UI string profileRoleOwner"
+  },
+  "profileRoleManager": "Responsable",
+  "@profileRoleManager": {
+    "description": "Merchant UI string profileRoleManager"
+  },
+  "profileRoleStaff": "Équipe",
+  "@profileRoleStaff": {
+    "description": "Merchant UI string profileRoleStaff"
+  },
+  "profileSectionAccount": "Compte",
+  "@profileSectionAccount": {
+    "description": "Merchant UI string profileSectionAccount"
+  },
+  "profileSectionStore": "Établissement",
+  "@profileSectionStore": {
+    "description": "Merchant UI string profileSectionStore"
+  },
+  "profileSectionOps": "Opérations du magasin",
+  "@profileSectionOps": {
+    "description": "Merchant UI string profileSectionOps"
+  },
+  "profileSectionPrefs": "Préférences",
+  "@profileSectionPrefs": {
+    "description": "Merchant UI string profileSectionPrefs"
+  },
+  "profileSectionSupport": "Support & légal",
+  "@profileSectionSupport": {
+    "description": "Merchant UI string profileSectionSupport"
+  },
+  "profileInfoReadonly": "Informations du commerce",
+  "@profileInfoReadonly": {
+    "description": "Merchant UI string profileInfoReadonly"
+  },
+  "profileBranchStatus": "Statut opérationnel",
+  "@profileBranchStatus": {
+    "description": "Merchant UI string profileBranchStatus"
+  },
+  "profileUnavailableItem": "Non disponible dans cette version",
+  "@profileUnavailableItem": {
+    "description": "Merchant UI string profileUnavailableItem"
+  },
+  "switchBranch": "Changer d’établissement",
+  "@switchBranch": {
+    "description": "Merchant UI string switchBranch"
+  },
+  "logoutConfirmTitle": "Déconnexion",
+  "@logoutConfirmTitle": {
+    "description": "Merchant UI string logoutConfirmTitle"
+  },
+  "logoutConfirmBody": "Voulez-vous vraiment vous déconnecter de SpeedyGo Merchant ?",
+  "@logoutConfirmBody": {
+    "description": "Merchant UI string logoutConfirmBody"
+  },
+  "logoutConfirmAction": "Déconnexion",
+  "@logoutConfirmAction": {
+    "description": "Merchant UI string logoutConfirmAction"
+  },
+  "settingsProfileRow": "Profil",
+  "@settingsProfileRow": {
+    "description": "Merchant UI string settingsProfileRow"
+  },
+  "settingsNotificationsOff": "Désactivé",
+  "@settingsNotificationsOff": {
+    "description": "Merchant UI string settingsNotificationsOff"
+  },
+  "settingsSupportSection": "Support",
+  "@settingsSupportSection": {
+    "description": "Merchant UI string settingsSupportSection"
+  },
+  "settingsHelpCenter": "Centre d’aide",
+  "@settingsHelpCenter": {
+    "description": "Merchant UI string settingsHelpCenter"
+  },
+  "logoutConnected": "Connecté",
+  "@logoutConnected": {
+    "description": "Merchant UI string logoutConnected"
+  },
+  "logoutWarningTitle": "Attention aux opérations en cours",
+  "@logoutWarningTitle": {
+    "description": "Merchant UI string logoutWarningTitle"
+  },
+  "logoutActiveOrders": "Commandes en cours",
+  "@logoutActiveOrders": {
+    "description": "Merchant UI string logoutActiveOrders"
+  },
+  "logoutStoreState": "État du magasin",
+  "@logoutStoreState": {
+    "description": "Merchant UI string logoutStoreState"
+  },
+  "logoutStoreOpen": "Ouvert",
+  "@logoutStoreOpen": {
+    "description": "Merchant UI string logoutStoreOpen"
+  },
+  "logoutStoreClosed": "Fermé",
+  "@logoutStoreClosed": {
+    "description": "Merchant UI string logoutStoreClosed"
+  },
+  "logoutHandoverAdvice": "Assurez-vous qu’un autre gestionnaire est disponible pour traiter les commandes avant de vous déconnecter.",
+  "@logoutHandoverAdvice": {
+    "description": "Merchant UI string logoutHandoverAdvice"
+  },
+  "logoutDataPreserved": "Vos données, le catalogue et l’historique des commandes seront préservés.",
+  "@logoutDataPreserved": {
+    "description": "Merchant UI string logoutDataPreserved"
+  },
+  "logoutCancel": "Annuler et retourner",
+  "@logoutCancel": {
+    "description": "Merchant UI string logoutCancel"
+  },
+  "cancel": "Annuler",
+  "@cancel": {
+    "description": "Merchant UI string cancel"
+  },
+  "attentionRequired": "Certaines pièces nécessitent votre attention.",
+  "@attentionRequired": {
+    "description": "Merchant UI string attentionRequired"
+  },
+  "submitVerification": "Soumettre le dossier",
+  "@submitVerification": {
+    "description": "Merchant UI string submitVerification"
+  },
+  "submitVerificationUnavailable": "La soumission n’est pas encore possible : des pièces obligatoires manquent ou sont incomplètes.",
+  "@submitVerificationUnavailable": {
+    "description": "Merchant UI string submitVerificationUnavailable"
+  },
+  "permissionDenied": "Permission refusée par le serveur.",
+  "@permissionDenied": {
+    "description": "Merchant UI string permissionDenied"
+  },
+  "regTitle": "Inscription",
+  "@regTitle": {
+    "description": "Merchant UI string regTitle"
+  },
+  "regStepOf": "Étape",
+  "@regStepOf": {
+    "description": "Merchant UI string regStepOf"
+  },
+  "regAccountTitle": "Configuration du compte",
+  "@regAccountTitle": {
+    "description": "Merchant UI string regAccountTitle"
+  },
+  "regRoleLabel": "Rôle",
+  "@regRoleLabel": {
+    "description": "Merchant UI string regRoleLabel"
+  },
+  "regOwner": "Propriétaire",
+  "@regOwner": {
+    "description": "Merchant UI string regOwner"
+  },
+  "regOperator": "Opérateur",
+  "@regOperator": {
+    "description": "Merchant UI string regOperator"
+  },
+  "regOwnerHint": "Créez et gérez votre commerce en tant que propriétaire.",
+  "@regOwnerHint": {
+    "description": "Merchant UI string regOwnerHint"
+  },
+  "regOperatorHint": "Rejoindre un commerce existant nécessite une invitation et le code remis par le propriétaire.",
+  "@regOperatorHint": {
+    "description": "Merchant UI string regOperatorHint"
+  },
+  "regOperatorUnsupported": "Pour rejoindre un commerce, ouvrez vos invitations reçues et saisissez le code remis par le propriétaire. SpeedyGo n’envoie pas de SMS.",
+  "@regOperatorUnsupported": {
+    "description": "Merchant UI string regOperatorUnsupported"
+  },
+  "regOperatorOpenInvitations": "Voir mes invitations",
+  "@regOperatorOpenInvitations": {
+    "description": "Merchant UI string regOperatorOpenInvitations"
+  },
+  "regSelectRole": "Choisissez un rôle pour continuer.",
+  "@regSelectRole": {
+    "description": "Merchant UI string regSelectRole"
+  },
+  "regContactTitle": "Contact",
+  "@regContactTitle": {
+    "description": "Merchant UI string regContactTitle"
+  },
+  "regAccountContinue": "Continuer l’inscription",
+  "@regAccountContinue": {
+    "description": "Merchant UI string regAccountContinue"
+  },
+  "regVerifiedPhone": "Numéro de téléphone (vérifié)",
+  "@regVerifiedPhone": {
+    "description": "Merchant UI string regVerifiedPhone"
+  },
+  "regVerifiedPhoneHint": "Ce numéro a été vérifié lors de la connexion. Il n’est pas modifiable ici.",
+  "@regVerifiedPhoneHint": {
+    "description": "Merchant UI string regVerifiedPhoneHint"
+  },
+  "regEmailUnsupported": "L’e-mail ne peut pas être enregistré à cette étape.",
+  "@regEmailUnsupported": {
+    "description": "Merchant UI string regEmailUnsupported"
+  },
+  "regConsentUnsupported": "Consultez les conditions générales et la politique de confidentialité SpeedyGo avant de continuer.",
+  "@regConsentUnsupported": {
+    "description": "Merchant UI string regConsentUnsupported"
+  },
+  "regActivityTitle": "Informations du commerce",
+  "@regActivityTitle": {
+    "description": "Merchant UI string regActivityTitle"
+  },
+  "regActivityBody": "Indiquez le nom sous lequel votre commerce sera identifié.",
+  "@regActivityBody": {
+    "description": "Merchant UI string regActivityBody"
+  },
+  "regLegalIdUnsupported": "Les pièces d’identité professionnelle se déposent à l’étape Documents.",
+  "@regLegalIdUnsupported": {
+    "description": "Merchant UI string regLegalIdUnsupported"
+  },
+  "regDocsTitle": "Documents d’entreprise",
+  "@regDocsTitle": {
+    "description": "Merchant UI string regDocsTitle"
+  },
+  "regDocsBody": "Ajoutez les documents demandés.",
+  "@regDocsBody": {
+    "description": "Merchant UI string regDocsBody"
+  },
+  "regDocsRequired": "Téléversez toutes les pièces obligatoires avant de continuer.",
+  "@regDocsRequired": {
+    "description": "Merchant UI string regDocsRequired"
+  },
+  "regDocsTipsTitle": "Conseils pour une capture nette",
+  "@regDocsTipsTitle": {
+    "description": "Merchant UI string regDocsTipsTitle"
+  },
+  "regDocsTipLight": "Privilégiez un éclairage naturel et uniforme pour éviter les zones d’ombre.",
+  "@regDocsTipLight": {
+    "description": "Merchant UI string regDocsTipLight"
+  },
+  "regDocsTipFrame": "Cadrez bien le document : tous les coins doivent être visibles.",
+  "@regDocsTipFrame": {
+    "description": "Merchant UI string regDocsTipFrame"
+  },
+  "regDocsFormats": "Formats acceptés : PDF, JPEG ou PNG (10 Mo max).",
+  "@regDocsFormats": {
+    "description": "Merchant UI string regDocsFormats"
+  },
+  "regDocsContinue": "Continuer",
+  "@regDocsContinue": {
+    "description": "Merchant UI string regDocsContinue"
+  },
+  "regDocsContinueFinal": "Continuer vers l’étape finale",
+  "@regDocsContinueFinal": {
+    "description": "Merchant UI string regDocsContinueFinal"
+  },
+  "regDocsAppBar": "Vérification",
+  "@regDocsAppBar": {
+    "description": "Merchant UI string regDocsAppBar"
+  },
+  "regDocsTipFlash": "Désactivez le flash pour éviter les reflets sur les surfaces plastifiées.",
+  "@regDocsTipFlash": {
+    "description": "Merchant UI string regDocsTipFlash"
+  },
+  "regDocsPrivacy": "Vos documents sont transmis à SpeedyGo uniquement pour la vérification de votre commerce.",
+  "@regDocsPrivacy": {
+    "description": "Merchant UI string regDocsPrivacy"
+  },
+  "regFileTooLarge": "Fichier trop volumineux (max. 10 Mo).",
+  "@regFileTooLarge": {
+    "description": "Merchant UI string regFileTooLarge"
+  },
+  "regFileTypeUnsupported": "Format non accepté. Utilisez PDF, JPEG ou PNG.",
+  "@regFileTypeUnsupported": {
+    "description": "Merchant UI string regFileTypeUnsupported"
+  },
+  "regPickerUnavailable": "Impossible d’ouvrir le sélecteur de fichiers. Réessayez après avoir relancé l’application.",
+  "@regPickerUnavailable": {
+    "description": "Merchant UI string regPickerUnavailable"
+  },
+  "regPickDocument": "Ajouter",
+  "@regPickDocument": {
+    "description": "Merchant UI string regPickDocument"
+  },
+  "regReplaceDocument": "Remplacer",
+  "@regReplaceDocument": {
+    "description": "Merchant UI string regReplaceDocument"
+  },
+  "regEstablishmentTitle": "Détails de l’établissement",
+  "@regEstablishmentTitle": {
+    "description": "Merchant UI string regEstablishmentTitle"
+  },
+  "regEstablishmentBody": "Renseignez les informations de votre établissement.",
+  "@regEstablishmentBody": {
+    "description": "Merchant UI string regEstablishmentBody"
+  },
+  "regIdentitySection": "Nom de l’établissement",
+  "@regIdentitySection": {
+    "description": "Merchant UI string regIdentitySection"
+  },
+  "regBranchNameFrLabel": "Nom de l’établissement",
+  "@regBranchNameFrLabel": {
+    "description": "Merchant UI string regBranchNameFrLabel"
+  },
+  "regCommerceContext": "Commerce",
+  "@regCommerceContext": {
+    "description": "Merchant UI string regCommerceContext"
+  },
+  "regContactSection": "Contact de l’établissement",
+  "@regContactSection": {
+    "description": "Merchant UI string regContactSection"
+  },
+  "regCategorySection": "Catégorie",
+  "@regCategorySection": {
+    "description": "Merchant UI string regCategorySection"
+  },
+  "regCategoryReadonly": "La catégorie sera attribuée après vérification.",
+  "@regCategoryReadonly": {
+    "description": "Merchant UI string regCategoryReadonly"
+  },
+  "regAddressSection": "Adresse et emplacement",
+  "@regAddressSection": {
+    "description": "Merchant UI string regAddressSection"
+  },
+  "regAddressGuidance": "Saisissez l’adresse de votre établissement.",
+  "@regAddressGuidance": {
+    "description": "Merchant UI string regAddressGuidance"
+  },
+  "regAddressExactLabel": "Adresse exacte",
+  "@regAddressExactLabel": {
+    "description": "Merchant UI string regAddressExactLabel"
+  },
+  "regPickupPlace": "Lieu de retrait",
+  "@regPickupPlace": {
+    "description": "Merchant UI string regPickupPlace"
+  },
+  "regChooseOnMap": "Choisir sur la carte",
+  "@regChooseOnMap": {
+    "description": "Merchant UI string regChooseOnMap"
+  },
+  "regLocationConfirmed": "Position confirmée",
+  "@regLocationConfirmed": {
+    "description": "Merchant UI string regLocationConfirmed"
+  },
+  "regLocationEdit": "Modifier",
+  "@regLocationEdit": {
+    "description": "Merchant UI string regLocationEdit"
+  },
+  "regLocationRequired": "Confirmez le lieu de retrait sur la carte avant de continuer.",
+  "@regLocationRequired": {
+    "description": "Merchant UI string regLocationRequired"
+  },
+  "regLocationPickerTitle": "Position du magasin",
+  "@regLocationPickerTitle": {
+    "description": "Merchant UI string regLocationPickerTitle"
+  },
+  "regLocationConfirm": "Confirmer l’emplacement",
+  "@regLocationConfirm": {
+    "description": "Merchant UI string regLocationConfirm"
+  },
+  "regLocationUseGps": "Utiliser ma position",
+  "@regLocationUseGps": {
+    "description": "Merchant UI string regLocationUseGps"
+  },
+  "regLocationMoveHint": "Déplacez la carte pour placer le pin sur le lieu de retrait, ou utilisez votre position GPS.",
+  "@regLocationMoveHint": {
+    "description": "Merchant UI string regLocationMoveHint"
+  },
+  "regLocationGpsSuggestion": "Position GPS proposée — confirmez uniquement si c’est le lieu de retrait de l’établissement.",
+  "@regLocationGpsSuggestion": {
+    "description": "Merchant UI string regLocationGpsSuggestion"
+  },
+  "regLocationDenied": "Autorisation de localisation refusée. Placez le pin manuellement sur la carte.",
+  "@regLocationDenied": {
+    "description": "Merchant UI string regLocationDenied"
+  },
+  "regLocationDeniedForever": "Localisation désactivée pour SpeedyGo. Activez-la dans Réglages, ou placez le pin manuellement.",
+  "@regLocationDeniedForever": {
+    "description": "Merchant UI string regLocationDeniedForever"
+  },
+  "regLocationServicesDisabled": "Les services de localisation sont désactivés. Placez le pin manuellement sur la carte.",
+  "@regLocationServicesDisabled": {
+    "description": "Merchant UI string regLocationServicesDisabled"
+  },
+  "regLocationUnavailable": "Position GPS indisponible. Placez le pin manuellement sur la carte.",
+  "@regLocationUnavailable": {
+    "description": "Merchant UI string regLocationUnavailable"
+  },
+  "regBranchPhoneLabel": "Numéro de téléphone",
+  "@regBranchPhoneLabel": {
+    "description": "Merchant UI string regBranchPhoneLabel"
+  },
+  "regBranchPhoneHint": "Numéro de contact de l’établissement (distinct du numéro de connexion).",
+  "@regBranchPhoneHint": {
+    "description": "Merchant UI string regBranchPhoneHint"
+  },
+  "regPreviewLabel": "Aperçu (données saisies — non publié)",
+  "@regPreviewLabel": {
+    "description": "Merchant UI string regPreviewLabel"
+  },
+  "regBranchIncomplete": "Nom, téléphone et adresse de l’établissement sont requis.",
+  "@regBranchIncomplete": {
+    "description": "Merchant UI string regBranchIncomplete"
+  },
+  "regCoordsInvalid": "Latitude (−90…90) et longitude (−180…180) invalides.",
+  "@regCoordsInvalid": {
+    "description": "Merchant UI string regCoordsInvalid"
+  },
+  "regCoordsConfirmHint": "Indiquez le lieu de retrait sur la carte, puis confirmez.",
+  "@regCoordsConfirmHint": {
+    "description": "Merchant UI string regCoordsConfirmHint"
+  },
+  "regReviewTitle": "Révision",
+  "@regReviewTitle": {
+    "description": "Merchant UI string regReviewTitle"
+  },
+  "regReviewDocsTitle": "Documents légaux",
+  "@regReviewDocsTitle": {
+    "description": "Merchant UI string regReviewDocsTitle"
+  },
+  "regReviewBranchTitle": "Établissement",
+  "@regReviewBranchTitle": {
+    "description": "Merchant UI string regReviewBranchTitle"
+  },
+  "regReviewLocation": "Localisation",
+  "@regReviewLocation": {
+    "description": "Merchant UI string regReviewLocation"
+  },
+  "regReviewBody": "Veuillez vérifier attentivement vos informations avant la soumission finale pour éviter tout retard de validation.",
+  "@regReviewBody": {
+    "description": "Merchant UI string regReviewBody"
+  },
+  "regSubmit": "Soumettre pour vérification",
+  "@regSubmit": {
+    "description": "Merchant UI string regSubmit"
+  },
+  "regCorrectionTitle": "Correction du dossier",
+  "@regCorrectionTitle": {
+    "description": "Merchant UI string regCorrectionTitle"
+  },
+  "regCorrectionActionRequired": "Action requise",
+  "@regCorrectionActionRequired": {
+    "description": "Merchant UI string regCorrectionActionRequired"
+  },
+  "regCorrectionDetails": "Détails du dossier",
+  "@regCorrectionDetails": {
+    "description": "Merchant UI string regCorrectionDetails"
+  },
+  "regCorrectionSubmit": "Soumettre les corrections",
+  "@regCorrectionSubmit": {
+    "description": "Merchant UI string regCorrectionSubmit"
+  },
+  "regContinue": "Continuer",
+  "@regContinue": {
+    "description": "Merchant UI string regContinue"
+  },
+  "regEdit": "Modifier",
+  "@regEdit": {
+    "description": "Merchant UI string regEdit"
+  },
+  "regMissingSteps": "Complétez votre dossier",
+  "@regMissingSteps": {
+    "description": "Merchant UI string regMissingSteps"
+  },
+  "regRejectionNoReason": "Des corrections sont nécessaires. Mettez à jour les pièces concernées puis soumettez à nouveau.",
+  "@regRejectionNoReason": {
+    "description": "Merchant UI string regRejectionNoReason"
+  },
+  "regApprovedNext": "Votre commerce est approuvé. Complétez ensuite horaires et catalogue lorsque disponibles.",
+  "@regApprovedNext": {
+    "description": "Merchant UI string regApprovedNext"
+  },
+  "legalSectionTitle": "Conditions et déclaration",
+  "@legalSectionTitle": {
+    "description": "Merchant UI string legalSectionTitle"
+  },
+  "legalSectionBody": "Avant de soumettre, lisez et acceptez les conditions suivantes. Votre acceptation est enregistrée avec le dossier.",
+  "@legalSectionBody": {
+    "description": "Merchant UI string legalSectionBody"
+  },
+  "legalTermsLabel": "J’ai lu et j’accepte les conditions générales marchand SpeedyGo.",
+  "@legalTermsLabel": {
+    "description": "Merchant UI string legalTermsLabel"
+  },
+  "legalDeclarationLabel": "Je certifie que les informations et les documents du dossier sont exacts et complets.",
+  "@legalDeclarationLabel": {
+    "description": "Merchant UI string legalDeclarationLabel"
+  },
+  "legalVersionTag": "Version {version}",
+  "@legalVersionTag": {
+    "description": "Merchant UI string legalVersionTag",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "legalLoading": "Chargement des conditions…",
+  "@legalLoading": {
+    "description": "Merchant UI string legalLoading"
+  },
+  "legalLoadFailed": "Impossible de charger les conditions. Vérifiez votre connexion puis réessayez.",
+  "@legalLoadFailed": {
+    "description": "Merchant UI string legalLoadFailed"
+  },
+  "legalIncomplete": "Les conditions ne sont pas disponibles pour le moment. Réessayez plus tard.",
+  "@legalIncomplete": {
+    "description": "Merchant UI string legalIncomplete"
+  },
+  "legalRetry": "Réessayer",
+  "@legalRetry": {
+    "description": "Merchant UI string legalRetry"
+  },
+  "legalConsentRequired": "Acceptez les conditions et la déclaration d’exactitude pour soumettre le dossier.",
+  "@legalConsentRequired": {
+    "description": "Merchant UI string legalConsentRequired"
+  },
+  "legalVersionOutdated": "Les conditions ont été mises à jour. Relisez-les puis acceptez à nouveau avant de soumettre.",
+  "@legalVersionOutdated": {
+    "description": "Merchant UI string legalVersionOutdated"
+  },
+  "legalConsentHint": "Cochez les deux cases pour activer la soumission.",
+  "@legalConsentHint": {
+    "description": "Merchant UI string legalConsentHint"
+  },
+  "legalContentLink": "Référence du texte",
+  "@legalContentLink": {
+    "description": "Merchant UI string legalContentLink"
+  },
+  "issuesTitle": "Points à corriger",
+  "@issuesTitle": {
+    "description": "Merchant UI string issuesTitle"
+  },
+  "issuesApplicationTitle": "Informations du dossier",
+  "@issuesApplicationTitle": {
+    "description": "Merchant UI string issuesApplicationTitle"
+  },
+  "issuesDocumentTitle": "Documents à remplacer",
+  "@issuesDocumentTitle": {
+    "description": "Merchant UI string issuesDocumentTitle"
+  },
+  "issuesReplaceDocument": "Remplacer ce document",
+  "@issuesReplaceDocument": {
+    "description": "Merchant UI string issuesReplaceDocument"
+  },
+  "issuesResolved": "Corrigé",
+  "@issuesResolved": {
+    "description": "Merchant UI string issuesResolved"
+  },
+  "issuesFixHint": "Corrigez les points ci-dessus (remplacez les documents concernés si indiqué), acceptez à nouveau les conditions, puis soumettez le dossier.",
+  "@issuesFixHint": {
+    "description": "Merchant UI string issuesFixHint"
+  },
+  "issuesRemaining": "1 point restant à corriger{count} points restants à corriger",
+  "@issuesRemaining": {
+    "description": "Merchant UI string issuesRemaining",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dossierAttemptLabel": "Tentative n°",
+  "@dossierAttemptLabel": {
+    "description": "Merchant UI string dossierAttemptLabel"
+  },
+  "dossierSubmittedAtLabel": "Soumis le",
+  "@dossierSubmittedAtLabel": {
+    "description": "Merchant UI string dossierSubmittedAtLabel"
+  },
+  "dossierReviewedAtLabel": "Examiné le",
+  "@dossierReviewedAtLabel": {
+    "description": "Merchant UI string dossierReviewedAtLabel"
+  },
+  "dossierConsentLabel": "Conditions acceptées",
+  "@dossierConsentLabel": {
+    "description": "Merchant UI string dossierConsentLabel"
+  },
+  "dossierConsentVersions": "Conditions {terms} · Déclaration {declaration}",
+  "@dossierConsentVersions": {
+    "description": "Merchant UI string dossierConsentVersions",
+    "placeholders": {
+      "terms": {
+        "type": "String"
+      },
+      "declaration": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsTeamRow": "Gestion de l’équipe",
+  "@settingsTeamRow": {
+    "description": "Merchant UI string settingsTeamRow"
+  },
+  "settingsTeamInvitationsRow": "Invitations reçues",
+  "@settingsTeamInvitationsRow": {
+    "description": "Merchant UI string settingsTeamInvitationsRow"
+  },
+  "teamTitle": "Personnel et Accès",
+  "@teamTitle": {
+    "description": "Merchant UI string teamTitle"
+  },
+  "teamStoreContext": "Gestion de l’équipe",
+  "@teamStoreContext": {
+    "description": "Merchant UI string teamStoreContext"
+  },
+  "teamActiveMembers": "Membres actifs",
+  "@teamActiveMembers": {
+    "description": "Merchant UI string teamActiveMembers"
+  },
+  "teamPendingInvitations": "Invitations en attente",
+  "@teamPendingInvitations": {
+    "description": "Merchant UI string teamPendingInvitations"
+  },
+  "teamRolesSummary": "Résumé des rôles",
+  "@teamRolesSummary": {
+    "description": "Merchant UI string teamRolesSummary"
+  },
+  "teamRoleOwner": "Propriétaire",
+  "@teamRoleOwner": {
+    "description": "Merchant UI string teamRoleOwner"
+  },
+  "teamRoleManager": "Gestionnaire",
+  "@teamRoleManager": {
+    "description": "Merchant UI string teamRoleManager"
+  },
+  "teamRoleStaff": "Équipe",
+  "@teamRoleStaff": {
+    "description": "Merchant UI string teamRoleStaff"
+  },
+  "teamOwnerBadge": "Admin",
+  "@teamOwnerBadge": {
+    "description": "Merchant UI string teamOwnerBadge"
+  },
+  "teamSelfBadge": "Vous",
+  "@teamSelfBadge": {
+    "description": "Merchant UI string teamSelfBadge"
+  },
+  "teamPhoneUnavailable": "Numéro indisponible",
+  "@teamPhoneUnavailable": {
+    "description": "Merchant UI string teamPhoneUnavailable"
+  },
+  "teamRevoke": "Révoquer",
+  "@teamRevoke": {
+    "description": "Merchant UI string teamRevoke"
+  },
+  "teamChangeRole": "Modifier le rôle",
+  "@teamChangeRole": {
+    "description": "Merchant UI string teamChangeRole"
+  },
+  "teamRegenerateCode": "Régénérer le code",
+  "@teamRegenerateCode": {
+    "description": "Merchant UI string teamRegenerateCode"
+  },
+  "teamCancelInvitation": "Annuler",
+  "@teamCancelInvitation": {
+    "description": "Merchant UI string teamCancelInvitation"
+  },
+  "teamInviteMember": "Inviter un membre",
+  "@teamInviteMember": {
+    "description": "Merchant UI string teamInviteMember"
+  },
+  "teamInvitationExpired": "Expirée",
+  "@teamInvitationExpired": {
+    "description": "Merchant UI string teamInvitationExpired"
+  },
+  "teamRoleLine": "Rôle : {role}",
+  "@teamRoleLine": {
+    "description": "Merchant UI string teamRoleLine",
+    "placeholders": {
+      "role": {
+        "type": "String"
+      }
+    }
+  },
+  "teamExpiresOn": "Expire le {date}",
+  "@teamExpiresOn": {
+    "description": "Merchant UI string teamExpiresOn",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "teamEmptyMembers": "Aucun membre actif pour le moment.",
+  "@teamEmptyMembers": {
+    "description": "Merchant UI string teamEmptyMembers"
+  },
+  "teamEmptyInvitations": "Aucune invitation en attente.",
+  "@teamEmptyInvitations": {
+    "description": "Merchant UI string teamEmptyInvitations"
+  },
+  "teamLoadError": "Impossible de charger l’équipe. Vérifiez votre connexion puis réessayez.",
+  "@teamLoadError": {
+    "description": "Merchant UI string teamLoadError"
+  },
+  "teamForbiddenTitle": "Accès réservé",
+  "@teamForbiddenTitle": {
+    "description": "Merchant UI string teamForbiddenTitle"
+  },
+  "teamForbiddenBody": "La gestion de l’équipe est réservée aux propriétaires et aux gestionnaires.",
+  "@teamForbiddenBody": {
+    "description": "Merchant UI string teamForbiddenBody"
+  },
+  "teamSummaryOwner": "Invite, modifie les rôles et révoque l’accès des membres.",
+  "@teamSummaryOwner": {
+    "description": "Merchant UI string teamSummaryOwner"
+  },
+  "teamSummaryManager": "Consulte la liste de l’équipe et les invitations. Ne peut ni inviter, ni modifier les rôles, ni révoquer.",
+  "@teamSummaryManager": {
+    "description": "Merchant UI string teamSummaryManager"
+  },
+  "teamSummaryStaff": "N’a pas accès à la gestion de l’équipe.",
+  "@teamSummaryStaff": {
+    "description": "Merchant UI string teamSummaryStaff"
+  },
+  "teamSummaryScope": "Les accès couvrent tous les établissements du commerce : il n’existe pas d’accès par établissement.",
+  "@teamSummaryScope": {
+    "description": "Merchant UI string teamSummaryScope"
+  },
+  "teamInviteTitle": "Inviter un membre",
+  "@teamInviteTitle": {
+    "description": "Merchant UI string teamInviteTitle"
+  },
+  "teamInviteHint": "Aucun SMS ni e-mail n’est émis par SpeedyGo. Un code d’acceptation vous sera remis : transmettez-le vous-même à la personne invitée.",
+  "@teamInviteHint": {
+    "description": "Merchant UI string teamInviteHint"
+  },
+  "teamInvitePhoneLabel": "Numéro de téléphone",
+  "@teamInvitePhoneLabel": {
+    "description": "Merchant UI string teamInvitePhoneLabel"
+  },
+  "teamInvitePhoneHint": "550 12 34 56",
+  "@teamInvitePhoneHint": {
+    "description": "Merchant UI string teamInvitePhoneHint"
+  },
+  "teamInvitePhoneHelper": "Numéro avec lequel la personne se connecte à SpeedyGo.",
+  "@teamInvitePhoneHelper": {
+    "description": "Merchant UI string teamInvitePhoneHelper"
+  },
+  "teamInvitePhoneInvalid": "Saisissez un numéro mobile algérien valide (9 chiffres).",
+  "@teamInvitePhoneInvalid": {
+    "description": "Merchant UI string teamInvitePhoneInvalid"
+  },
+  "teamInviteRoleLabel": "Rôle",
+  "@teamInviteRoleLabel": {
+    "description": "Merchant UI string teamInviteRoleLabel"
+  },
+  "teamInviteCreate": "Créer l’invitation",
+  "@teamInviteCreate": {
+    "description": "Merchant UI string teamInviteCreate"
+  },
+  "teamRoleManagerHint": "Peut consulter l’équipe. Aucun droit de gestion.",
+  "@teamRoleManagerHint": {
+    "description": "Merchant UI string teamRoleManagerHint"
+  },
+  "teamRoleStaffHint": "Accès opérationnel, sans accès à la gestion de l’équipe.",
+  "@teamRoleStaffHint": {
+    "description": "Merchant UI string teamRoleStaffHint"
+  },
+  "teamCodeTitle": "Code d’acceptation",
+  "@teamCodeTitle": {
+    "description": "Merchant UI string teamCodeTitle"
+  },
+  "teamCodeRegeneratedTitle": "Nouveau code d’acceptation",
+  "@teamCodeRegeneratedTitle": {
+    "description": "Merchant UI string teamCodeRegeneratedTitle"
+  },
+  "teamCodeRegeneratedNote": "L’ancien code ne fonctionne plus.",
+  "@teamCodeRegeneratedNote": {
+    "description": "Merchant UI string teamCodeRegeneratedNote"
+  },
+  "teamCodeCopy": "Copier le code",
+  "@teamCodeCopy": {
+    "description": "Merchant UI string teamCodeCopy"
+  },
+  "teamCodeCopied": "Code copié.",
+  "@teamCodeCopied": {
+    "description": "Merchant UI string teamCodeCopied"
+  },
+  "teamCodeDone": "Terminer",
+  "@teamCodeDone": {
+    "description": "Merchant UI string teamCodeDone"
+  },
+  "teamRevokeTitle": "Révoquer l’accès ?",
+  "@teamRevokeTitle": {
+    "description": "Merchant UI string teamRevokeTitle"
+  },
+  "teamRevoked": "Accès révoqué.",
+  "@teamRevoked": {
+    "description": "Merchant UI string teamRevoked"
+  },
+  "teamCancelInviteTitle": "Annuler l’invitation ?",
+  "@teamCancelInviteTitle": {
+    "description": "Merchant UI string teamCancelInviteTitle"
+  },
+  "teamCancelInviteBody": "Le code d’acceptation de {phone} ne fonctionnera plus.",
+  "@teamCancelInviteBody": {
+    "description": "Merchant UI string teamCancelInviteBody",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "teamCancelInviteConfirm": "Annuler l’invitation",
+  "@teamCancelInviteConfirm": {
+    "description": "Merchant UI string teamCancelInviteConfirm"
+  },
+  "teamKeep": "Conserver",
+  "@teamKeep": {
+    "description": "Merchant UI string teamKeep"
+  },
+  "teamInviteCancelled": "Invitation annulée.",
+  "@teamInviteCancelled": {
+    "description": "Merchant UI string teamInviteCancelled"
+  },
+  "teamRoleSheetTitle": "Modifier le rôle",
+  "@teamRoleSheetTitle": {
+    "description": "Merchant UI string teamRoleSheetTitle"
+  },
+  "teamRoleSheetHint": "Si le rôle réduit ses droits, les sessions du membre sont fermées et il devra se reconnecter.",
+  "@teamRoleSheetHint": {
+    "description": "Merchant UI string teamRoleSheetHint"
+  },
+  "teamRoleSave": "Enregistrer",
+  "@teamRoleSave": {
+    "description": "Merchant UI string teamRoleSave"
+  },
+  "teamRoleUpdated": "Rôle mis à jour.",
+  "@teamRoleUpdated": {
+    "description": "Merchant UI string teamRoleUpdated"
+  },
+  "teamErrorGeneric": "Action impossible pour le moment. Réessayez.",
+  "@teamErrorGeneric": {
+    "description": "Merchant UI string teamErrorGeneric"
+  },
+  "teamErrorConflict": "La liste a changé entre-temps. Elle vient d’être actualisée : vérifiez puis réessayez.",
+  "@teamErrorConflict": {
+    "description": "Merchant UI string teamErrorConflict"
+  },
+  "teamErrorDuplicateMember": "Ce numéro fait déjà partie de l’équipe.",
+  "@teamErrorDuplicateMember": {
+    "description": "Merchant UI string teamErrorDuplicateMember"
+  },
+  "teamErrorDuplicateInvite": "Une invitation est déjà en attente pour ce numéro.",
+  "@teamErrorDuplicateInvite": {
+    "description": "Merchant UI string teamErrorDuplicateInvite"
+  },
+  "teamErrorOwnerProtected": "Le propriétaire ne peut pas être modifié ici.",
+  "@teamErrorOwnerProtected": {
+    "description": "Merchant UI string teamErrorOwnerProtected"
+  },
+  "teamErrorSelf": "Vous ne pouvez pas modifier votre propre accès.",
+  "@teamErrorSelf": {
+    "description": "Merchant UI string teamErrorSelf"
+  },
+  "teamErrorInviteGone": "Cette invitation n’existe plus.",
+  "@teamErrorInviteGone": {
+    "description": "Merchant UI string teamErrorInviteGone"
+  },
+  "teamErrorInviteExpired": "Cette invitation a expiré. Demandez un nouveau code au propriétaire.",
+  "@teamErrorInviteExpired": {
+    "description": "Merchant UI string teamErrorInviteExpired"
+  },
+  "teamErrorCodeInvalid": "Code incorrect.",
+  "@teamErrorCodeInvalid": {
+    "description": "Merchant UI string teamErrorCodeInvalid"
+  },
+  "teamErrorPhoneMismatch": "Cette invitation est destinée à un autre numéro.",
+  "@teamErrorPhoneMismatch": {
+    "description": "Merchant UI string teamErrorPhoneMismatch"
+  },
+  "teamErrorInvalidInput": "Vérifiez le numéro et le rôle puis réessayez.",
+  "@teamErrorInvalidInput": {
+    "description": "Merchant UI string teamErrorInvalidInput"
+  },
+  "teamInvitationsTitle": "Invitations reçues",
+  "@teamInvitationsTitle": {
+    "description": "Merchant UI string teamInvitationsTitle"
+  },
+  "teamInvitationsHint": "Invitations adressées à votre numéro. Saisissez le code remis par le propriétaire pour les accepter.",
+  "@teamInvitationsHint": {
+    "description": "Merchant UI string teamInvitationsHint"
+  },
+  "teamInvitationsEmpty": "Aucune invitation en attente pour votre numéro.",
+  "@teamInvitationsEmpty": {
+    "description": "Merchant UI string teamInvitationsEmpty"
+  },
+  "teamInvitationsLoadError": "Impossible de charger vos invitations. Réessayez.",
+  "@teamInvitationsLoadError": {
+    "description": "Merchant UI string teamInvitationsLoadError"
+  },
+  "teamAccept": "Accepter",
+  "@teamAccept": {
+    "description": "Merchant UI string teamAccept"
+  },
+  "teamAcceptTitle": "Saisir le code d’acceptation",
+  "@teamAcceptTitle": {
+    "description": "Merchant UI string teamAcceptTitle"
+  },
+  "teamAcceptCodeLabel": "Code remis par le propriétaire",
+  "@teamAcceptCodeLabel": {
+    "description": "Merchant UI string teamAcceptCodeLabel"
+  },
+  "teamAcceptCodeInvalid": "Le code comporte 64 caractères (chiffres et lettres a à f).",
+  "@teamAcceptCodeInvalid": {
+    "description": "Merchant UI string teamAcceptCodeInvalid"
+  },
+  "teamAcceptConfirm": "Accepter l’invitation",
+  "@teamAcceptConfirm": {
+    "description": "Merchant UI string teamAcceptConfirm"
+  },
+  "settingsLanguageRow": "Langue",
+  "@settingsLanguageRow": {
+    "description": "Merchant UI string settingsLanguageRow"
+  },
+  "languageSettingsTitle": "Langue",
+  "@languageSettingsTitle": {
+    "description": "Merchant UI string languageSettingsTitle"
+  },
+  "languageSettingsSubtitle": "Choisissez la langue de l’application. Le changement s’applique immédiatement.",
+  "@languageSettingsSubtitle": {
+    "description": "Merchant UI string languageSettingsSubtitle"
+  },
+  "languageOptionFrench": "Français",
+  "@languageOptionFrench": {
+    "description": "Merchant UI string languageOptionFrench"
+  },
+  "languageOptionArabic": "العربية",
+  "@languageOptionArabic": {
+    "description": "Merchant UI string languageOptionArabic"
+  },
+  "languageApply": "Appliquer les modifications",
+  "@languageApply": {
+    "description": "Merchant UI string languageApply"
+  },
+  "languageApplied": "Langue mise à jour.",
+  "@languageApplied": {
+    "description": "Merchant UI string languageApplied"
+  },
+  "languageBilingualTitle": "Langue / اللغة",
+  "@languageBilingualTitle": {
+    "description": "Merchant UI string languageBilingualTitle"
+  },
+  "languagePreviewNote": "Les textes de l’interface basculent entre le français et l’arabe. Les données métier restent inchangées.",
+  "@languagePreviewNote": {
+    "description": "Merchant UI string languagePreviewNote"
+  }
+}

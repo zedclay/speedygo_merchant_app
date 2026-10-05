@@ -366,7 +366,7 @@ class _StoreAddressScreenState extends ConsumerState<StoreAddressScreen> {
                           AppStrings.storeAddressPhone,
                         ),
                       ),
-                      const MerchantContractGapRow(
+                      MerchantContractGapRow(
                         label: AppStrings.storeAddressPublicContact,
                       ),
                       Text(
@@ -400,7 +400,7 @@ class _StoreAddressScreenState extends ConsumerState<StoreAddressScreen> {
                                 onPressed: _wilayasLoading
                                     ? null
                                     : _loadWilayas,
-                                child: const Text(
+                                child: Text(
                                   AppStrings.adminLocationRetry,
                                 ),
                               ),
@@ -436,7 +436,7 @@ class _StoreAddressScreenState extends ConsumerState<StoreAddressScreen> {
                                     ? null
                                     : () =>
                                           _loadCommunes(_selectedWilaya!.code),
-                                child: const Text(
+                                child: Text(
                                   AppStrings.adminLocationRetry,
                                 ),
                               ),
@@ -465,7 +465,7 @@ class _StoreAddressScreenState extends ConsumerState<StoreAddressScreen> {
                           AppStrings.storeAddressDetailed,
                         ),
                       ),
-                      const MerchantContractGapRow(
+                      MerchantContractGapRow(
                         label: AppStrings.storeAddressPickupHints,
                       ),
                     ],
@@ -565,7 +565,7 @@ class _StoreAddressScreenState extends ConsumerState<StoreAddressScreen> {
                         ),
                         onPressed: canManage && !_saving ? _openMap : null,
                         icon: const Icon(Icons.map_outlined, size: 20),
-                        label: const Text(AppStrings.storeAddressConfirmMap),
+                        label: Text(AppStrings.storeAddressConfirmMap),
                       ),
                     ],
                   ),
@@ -601,7 +601,7 @@ class _StoreAddressScreenState extends ConsumerState<StoreAddressScreen> {
                           height: 22,
                           child: CircularProgressIndicator(strokeWidth: 2),
                         )
-                      : const Text(
+                      : Text(
                           AppStrings.storeAddressSave,
                           maxLines: 2,
                           textAlign: TextAlign.center,

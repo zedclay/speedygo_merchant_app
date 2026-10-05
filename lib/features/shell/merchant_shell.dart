@@ -31,7 +31,7 @@ class MerchantShell extends ConsumerStatefulWidget {
   /// Injected visibility controller for widget tests.
   final MerchantNavVisibilityController? debugVisibility;
 
-  static const tabRoutes = [
+  static final tabRoutes = [
     AppRoutes.home,
     AppRoutes.orders,
     AppRoutes.catalog,

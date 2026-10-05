@@ -170,9 +170,7 @@ class _AcceptPrepSheetState extends State<_AcceptPrepSheet> {
                                             ),
                                       ),
                                     Text(
-                                      AppStrings.prepItemCount(
-                                        widget.itemCount,
-                                      ),
+                                      AppStrings.prepItemCount(widget.itemCount.toString(), ),
                                       style: theme.textTheme.bodyMedium
                                           ?.copyWith(
                                             color: AppColors.onSurfaceVariant,
@@ -283,17 +281,11 @@ class _AcceptPrepSheetState extends State<_AcceptPrepSheet> {
                       onChanged: (_) => setState(() {}),
                       decoration: InputDecoration(
                         suffixText: 'min',
-                        helperText: AppStrings.prepCustomRange(
-                          prepCustomMinMinutes,
-                          prepCustomMaxMinutes,
-                        ),
+                        helperText: AppStrings.prepCustomRange(prepCustomMinMinutes.toString(), prepCustomMaxMinutes.toString(), ),
                         errorText:
                             _customController.text.isNotEmpty &&
                                 _customValue == null
-                            ? AppStrings.prepCustomRange(
-                                prepCustomMinMinutes,
-                                prepCustomMaxMinutes,
-                              )
+                            ? AppStrings.prepCustomRange(prepCustomMinMinutes.toString(), prepCustomMaxMinutes.toString(), )
                             : null,
                       ),
                     ),
@@ -312,7 +304,7 @@ class _AcceptPrepSheetState extends State<_AcceptPrepSheet> {
                       ? null
                       : () => Navigator.pop(context, _value),
                   icon: const Icon(Icons.check_circle),
-                  label: const Text(AppStrings.prepConfirmAccept),
+                  label: Text(AppStrings.prepConfirmAccept),
                 ),
               ),
               const SizedBox(height: 8),
@@ -320,7 +312,7 @@ class _AcceptPrepSheetState extends State<_AcceptPrepSheet> {
                 height: 48,
                 child: TextButton(
                   onPressed: () => Navigator.pop(context),
-                  child: const Text(AppStrings.cancel),
+                  child: Text(AppStrings.cancel),
                 ),
               ),
             ],
@@ -441,7 +433,7 @@ class _UpdatePrepSheetState extends State<_UpdatePrepSheet> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const _SheetHeader(
+          _SheetHeader(
             title: AppStrings.prepUpdateTitle,
             closeLeading: true,
           ),
@@ -513,10 +505,7 @@ class _UpdatePrepSheetState extends State<_UpdatePrepSheet> {
                               Text(
                                 preview.fromDay == null
                                     ? preview.from
-                                    : AppStrings.prepClockOnDay(
-                                        preview.fromDay!,
-                                        preview.from,
-                                      ),
+                                    : AppStrings.prepClockOnDay(preview.fromDay!, preview.from.toString(), ),
                                 key: const Key('prep-update-current-ready'),
                                 style: theme.textTheme.titleMedium?.copyWith(
                                   fontWeight: FontWeight.w700,
@@ -586,7 +575,7 @@ class _UpdatePrepSheetState extends State<_UpdatePrepSheet> {
                       key: const Key('prep-add-custom-open'),
                       onPressed: () => setState(() => _custom = !_custom),
                       icon: const Icon(Icons.edit, size: 18),
-                      label: const Text(AppStrings.prepCustomEntry),
+                      label: Text(AppStrings.prepCustomEntry),
                     ),
                   ),
                   if (_custom) ...[
@@ -599,14 +588,11 @@ class _UpdatePrepSheetState extends State<_UpdatePrepSheet> {
                       decoration: InputDecoration(
                         prefixText: '+ ',
                         suffixText: 'min',
-                        helperText: AppStrings.prepCustomRange(
-                          1,
-                          prepAddCustomMax,
-                        ),
+                        helperText: AppStrings.prepCustomRange('1', prepAddCustomMax.toString(), ),
                         errorText:
                             _customController.text.isNotEmpty &&
                                 _customValue == null
-                            ? AppStrings.prepCustomRange(1, prepAddCustomMax)
+                            ? AppStrings.prepCustomRange('1', prepAddCustomMax.toString())
                             : null,
                       ),
                     ),
@@ -652,7 +638,7 @@ class _UpdatePrepSheetState extends State<_UpdatePrepSheet> {
                       maxLength: 255,
                       minLines: 3,
                       maxLines: 3,
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
                         hintText: AppStrings.prepReasonHint,
                       ),
                     ),
@@ -669,7 +655,7 @@ class _UpdatePrepSheetState extends State<_UpdatePrepSheet> {
                   height: 48,
                   child: OutlinedButton(
                     onPressed: () => Navigator.pop(context),
-                    child: const Text(AppStrings.cancel),
+                    child: Text(AppStrings.cancel),
                   ),
                 ),
                 confirm: SizedBox(
@@ -685,7 +671,7 @@ class _UpdatePrepSheetState extends State<_UpdatePrepSheet> {
                                 : _reason.text.trim(),
                           )),
                     icon: const Icon(Icons.update),
-                    label: const Text(AppStrings.prepUpdateConfirm),
+                    label: Text(AppStrings.prepUpdateConfirm),
                   ),
                 ),
               ),
@@ -699,7 +685,7 @@ class _UpdatePrepSheetState extends State<_UpdatePrepSheet> {
 
 /// Text shortcuts for the free-text revision reason. They only fill the
 /// editable field; the API stores free text, not a reason category.
-const prepReasonPresets = [
+List<String> get prepReasonPresets => [
   AppStrings.prepReasonBusy,
   AppStrings.prepReasonLongPrep,
   AppStrings.prepReasonMissingIngredient,
@@ -1154,8 +1140,7 @@ class _ComparisonCard extends StatelessWidget {
     );
     return Semantics(
       container: true,
-      label: AppStrings.prepNewEstimate(
-        AppStrings.prepSpokenClock(from, fromDay),
+      label: AppStrings.prepNewEstimate(AppStrings.prepSpokenClock(from, fromDay),
         AppStrings.prepSpokenClock(to, toDay),
         add,
       ),
@@ -1436,7 +1421,7 @@ class _PreparationCountdownBannerState
           if (originalClock != null && originalClock != revisedClock) ...[
             const SizedBox(height: 2),
             Text(
-              AppStrings.prepOriginalReadyLabel(originalClock),
+              AppStrings.prepOriginalReadyLabel(originalClock.toString()),
               textAlign: TextAlign.center,
               style: theme.textTheme.bodySmall?.copyWith(
                 color: AppColors.onSurfaceVariant,
@@ -1459,7 +1444,7 @@ class _PreparationCountdownBannerState
               key: const Key('prep-update-open'),
               onPressed: widget.onUpdate,
               icon: const Icon(Icons.schedule, size: 20),
-              label: const Text(AppStrings.prepUpdateAction),
+              label: Text(AppStrings.prepUpdateAction),
             ),
           ],
         ],

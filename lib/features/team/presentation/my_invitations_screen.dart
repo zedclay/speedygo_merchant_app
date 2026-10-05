@@ -46,7 +46,7 @@ class MyInvitationsScreen extends ConsumerWidget {
                 onPressed: () => ref
                     .read(myTeamInvitationsControllerProvider.notifier)
                     .reload(),
-                child: const Text(AppStrings.retry),
+                child: Text(AppStrings.retry),
               ),
             ],
           ),
@@ -152,7 +152,7 @@ class _MyInvitationCard extends ConsumerWidget {
     if (accepted == true && context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(AppStrings.teamAccepted(invitation.merchantName)),
+          content: Text(AppStrings.teamAccepted(invitation.merchantName.toString())),
         ),
       );
       // Re-resolve merchant access so a new membership can enter the shell

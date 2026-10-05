@@ -1,0 +1,929 @@
+[
+  {
+    "key": "duplicateNoImage",
+    "fr": "Image du produit (aucune image)",
+    "params": []
+  },
+  {
+    "key": "duplicatePrice",
+    "fr": "Prix ({price})",
+    "params": [
+      "price"
+    ]
+  },
+  {
+    "key": "duplicateOptions",
+    "fr": "Options et variantes",
+    "params": []
+  },
+  {
+    "key": "duplicateSaleUnits",
+    "fr": "Unités de vente (non gérées)",
+    "params": []
+  },
+  {
+    "key": "duplicateNotCopiedLead",
+    "fr": "Le statut de disponibilité et l’historique des ventes ",
+    "params": []
+  },
+  {
+    "key": "duplicateNotCopiedStrong",
+    "fr": "ne seront pas",
+    "params": []
+  },
+  {
+    "key": "duplicateNotCopiedTail",
+    "fr": " copiés vers le nouveau produit.",
+    "params": []
+  },
+  {
+    "key": "duplicateUnavailableInfo",
+    "fr": "La copie sera créée indisponible afin que vous puissiez la vérifier avant de l’activer.",
+    "params": []
+  },
+  {
+    "key": "duplicateCancel",
+    "fr": "Annuler",
+    "params": []
+  },
+  {
+    "key": "duplicateCreate",
+    "fr": "Créer la copie",
+    "params": []
+  },
+  {
+    "key": "duplicateCreating",
+    "fr": "Création…",
+    "params": []
+  },
+  {
+    "key": "duplicateNameRequired",
+    "fr": "Le nom ne peut pas être vide.",
+    "params": []
+  },
+  {
+    "key": "duplicateNameTooLong",
+    "fr": "Maximum 255 caractères.",
+    "params": []
+  },
+  {
+    "key": "duplicateNetworkError",
+    "fr": "Connexion interrompue. Réessayez : la copie ne sera pas créée deux fois.",
+    "params": []
+  },
+  {
+    "key": "duplicateError",
+    "fr": "La copie n’a pas pu être créée et aucun produit n’a été ajouté. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "duplicateConflict",
+    "fr": "Cette demande de copie a déjà servi ailleurs. Rouvrez l’écran puis réessayez.",
+    "params": []
+  },
+  {
+    "key": "duplicateNotFound",
+    "fr": "Produit introuvable. Actualisez le catalogue.",
+    "params": []
+  },
+  {
+    "key": "duplicateCreated",
+    "fr": "Copie créée — indisponible jusqu’à votre vérification.",
+    "params": []
+  },
+  {
+    "key": "duplicateReplayed",
+    "fr": "Copie déjà créée — ouverture du produit.",
+    "params": []
+  },
+  {
+    "key": "duplicateForbiddenTitle",
+    "fr": "Duplication réservée au propriétaire ou au responsable",
+    "params": []
+  },
+  {
+    "key": "duplicateBackToCatalog",
+    "fr": "Retour au catalogue",
+    "params": []
+  },
+  {
+    "key": "catalogMenuViewCategory",
+    "fr": "Voir la catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogBulkTooltip",
+    "fr": "Disponibilité groupée",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryInUse",
+    "fr": "Cette catégorie contient encore des produits. Déplacez-les ou supprimez-les d’abord.",
+    "params": []
+  },
+  {
+    "key": "catalogProductInUse",
+    "fr": "Ce produit figure dans des commandes passées : il ne peut pas être supprimé. Mettez-le en rupture à la place.",
+    "params": []
+  },
+  {
+    "key": "catalogVisibilityError",
+    "fr": "Impossible de modifier la visibilité. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "catalogAvailabilityError",
+    "fr": "Impossible de modifier la disponibilité. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "catalogNoResults",
+    "fr": "Aucun produit ne correspond à ces filtres.",
+    "params": []
+  },
+  {
+    "key": "catalogNoCategoryResults",
+    "fr": "Aucune catégorie ne correspond à cette recherche.",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersTitle",
+    "fr": "Recherche et Filtres",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersReset",
+    "fr": "Réinitialiser",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersCategories",
+    "fr": "Catégories",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersStatus",
+    "fr": "Statut",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersOutOfStock",
+    "fr": "Rupture de stock",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersQuality",
+    "fr": "Contrôle qualité",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersMissingImage",
+    "fr": "Image manquante",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersPreview",
+    "fr": "Aperçu des résultats",
+    "params": []
+  },
+  {
+    "key": "catalogProductsCount",
+    "fr": "{n} produit{n} produits",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogFiltersApply",
+    "fr": "Appliquer les filtres",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryDetailTitle",
+    "fr": "Détails de la catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogDisplayOrder",
+    "fr": "Ordre d’affichage : {n}",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogCategoryProducts",
+    "fr": "Produits",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryEmpty",
+    "fr": "Aucun produit dans cette catégorie.",
+    "params": []
+  },
+  {
+    "key": "catalogReorderTitle",
+    "fr": "Réorganiser les catégories",
+    "params": []
+  },
+  {
+    "key": "catalogCategoriesCount",
+    "fr": "{n} catégorie{n} catégories",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogReorderHint",
+    "fr": "Faites glisser pour modifier l’ordre d’affichage.",
+    "params": []
+  },
+  {
+    "key": "catalogReorderSave",
+    "fr": "Enregistrer l’ordre",
+    "params": []
+  },
+  {
+    "key": "catalogReorderSaved",
+    "fr": "Ordre enregistré.",
+    "params": []
+  },
+  {
+    "key": "catalogReorderPartial",
+    "fr": "Certaines catégories n’ont pas pu être déplacées. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "catalogAvailabilityTitle",
+    "fr": "Disponibilité du produit",
+    "params": []
+  },
+  {
+    "key": "catalogAvailabilityNote",
+    "fr": "Les modifications n’affectent pas les commandes déjà acceptées.",
+    "params": []
+  },
+  {
+    "key": "catalogAvailabilityState",
+    "fr": "État de disponibilité",
+    "params": []
+  },
+  {
+    "key": "catalogAvailableOption",
+    "fr": "Disponible",
+    "params": []
+  },
+  {
+    "key": "catalogAvailableOptionSub",
+    "fr": "Visible et commandable immédiatement.",
+    "params": []
+  },
+  {
+    "key": "catalogOutOfStockOptionSub",
+    "fr": "Affiché comme indisponible jusqu’à réactivation manuelle.",
+    "params": []
+  },
+  {
+    "key": "catalogAvailabilitySave",
+    "fr": "Enregistrer la disponibilité",
+    "params": []
+  },
+  {
+    "key": "catalogAvailabilitySaved",
+    "fr": "Disponibilité enregistrée.",
+    "params": []
+  },
+  {
+    "key": "catalogBulkTitle",
+    "fr": "Disponibilité groupée",
+    "params": []
+  },
+  {
+    "key": "catalogBulkNote",
+    "fr": "Les modifications s’appliquent immédiatement sur l’application client. Elles n’affectent pas les commandes en cours.",
+    "params": []
+  },
+  {
+    "key": "catalogBulkSelection",
+    "fr": "Sélection multiple",
+    "params": []
+  },
+  {
+    "key": "catalogBulkSelected",
+    "fr": "{n} produit sélectionné{n} produits sélectionnés",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogBulkNewStatus",
+    "fr": "Nouveau statut",
+    "params": []
+  },
+  {
+    "key": "catalogBulkSelectAll",
+    "fr": "Tout sélectionner",
+    "params": []
+  },
+  {
+    "key": "catalogBulkClear",
+    "fr": "Effacer la sélection",
+    "params": []
+  },
+  {
+    "key": "catalogBulkApply",
+    "fr": "Appliquer",
+    "params": []
+  },
+  {
+    "key": "catalogBulkDone",
+    "fr": "{n} produit mis à jour.{n} produits mis à jour.",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogBulkFailed",
+    "fr": "{n} produit n’a pas pu être mis à jour.{n} produits n’ont pas pu être mis à jour.",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogUncategorized",
+    "fr": "Sans catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteTitle",
+    "fr": "Supprimer le produit",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteWarningTitle",
+    "fr": "Un produit déjà commandé ne peut pas être supprimé.",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteWarningBody",
+    "fr": "Les commandes passées gardent leur copie du produit. Si la suppression est refusée, mettez le produit en rupture.",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteHideOption",
+    "fr": "Mettre en rupture",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteHideOptionSub",
+    "fr": "Le produit reste enregistré et modifiable, mais n’est plus commandable.",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteRecommended",
+    "fr": "Recommandé",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteHardOption",
+    "fr": "Supprimer définitivement",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteHardOptionSub",
+    "fr": "Retire le produit, ses variantes et suppléments. Impossible s’il figure dans une commande.",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteHardConfirm",
+    "fr": "Supprimer définitivement",
+    "params": []
+  },
+  {
+    "key": "catalogDeleted",
+    "fr": "Produit supprimé.",
+    "params": []
+  },
+  {
+    "key": "catalogMarkedOutOfStock",
+    "fr": "Produit mis en rupture.",
+    "params": []
+  },
+  {
+    "key": "catalogVariantsTitle",
+    "fr": "Variantes obligatoires",
+    "params": []
+  },
+  {
+    "key": "catalogVariantsInfo",
+    "fr": "Les variantes obligatoires demandent au client de choisir une option avant d’ajouter le produit au panier.",
+    "params": []
+  },
+  {
+    "key": "catalogVariantsSubtitle",
+    "fr": "Configurez les options requises avant l’ajout au panier.",
+    "params": []
+  },
+  {
+    "key": "catalogExtrasTitle",
+    "fr": "Suppléments optionnels",
+    "params": []
+  },
+  {
+    "key": "catalogExtrasSubtitle",
+    "fr": "Options facultatives que le client peut ajouter.",
+    "params": []
+  },
+  {
+    "key": "catalogRequiredTag",
+    "fr": "Obligatoire",
+    "params": []
+  },
+  {
+    "key": "catalogSingleChoice",
+    "fr": "Sélection unique",
+    "params": []
+  },
+  {
+    "key": "catalogChoiceRange",
+    "fr": "{min} choixEntre {min} et {max} choix",
+    "params": [
+      "min",
+      "max"
+    ]
+  },
+  {
+    "key": "catalogMaxSelections",
+    "fr": "Maximum 1 sélectionMaximum {n} sélections",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogAddChoice",
+    "fr": "Ajouter un choix",
+    "params": []
+  },
+  {
+    "key": "catalogAddOption",
+    "fr": "Ajouter une option",
+    "params": []
+  },
+  {
+    "key": "catalogAddVariantGroup",
+    "fr": "Ajouter un groupe de variantes",
+    "params": []
+  },
+  {
+    "key": "catalogAddExtrasGroup",
+    "fr": "Nouveau groupe de suppléments",
+    "params": []
+  },
+  {
+    "key": "catalogNewGroup",
+    "fr": "Nouveau groupe",
+    "params": []
+  },
+  {
+    "key": "catalogGroupName",
+    "fr": "Nom du groupe (Français)",
+    "params": []
+  },
+  {
+    "key": "catalogGroupNameHint",
+    "fr": "ex : Sauce",
+    "params": []
+  },
+  {
+    "key": "catalogOptionName",
+    "fr": "Nom du choix",
+    "params": []
+  },
+  {
+    "key": "catalogOptionPrice",
+    "fr": "Prix (+)",
+    "params": []
+  },
+  {
+    "key": "catalogMaxSelectionsLabel",
+    "fr": "Sélections maximum",
+    "params": []
+  },
+  {
+    "key": "catalogGroupRequiredSwitch",
+    "fr": "Choix obligatoire",
+    "params": []
+  },
+  {
+    "key": "catalogGroupRequiredSub",
+    "fr": "Le client doit choisir une option.",
+    "params": []
+  },
+  {
+    "key": "catalogGroupSave",
+    "fr": "Enregistrer le groupe",
+    "params": []
+  },
+  {
+    "key": "catalogGroupDelete",
+    "fr": "Supprimer le groupe",
+    "params": []
+  },
+  {
+    "key": "catalogGroupDeleteConfirm",
+    "fr": "Supprimer ce groupe et toutes ses options ? Les commandes passées ne sont pas modifiées.",
+    "params": []
+  },
+  {
+    "key": "catalogOptionDelete",
+    "fr": "Supprimer l’option",
+    "params": []
+  },
+  {
+    "key": "catalogOptionAvailable",
+    "fr": "Option disponible",
+    "params": []
+  },
+  {
+    "key": "catalogOptionsEmpty",
+    "fr": "Aucun choix pour le moment.",
+    "params": []
+  },
+  {
+    "key": "catalogGroupsLoadError",
+    "fr": "Impossible de charger les options du produit.",
+    "params": []
+  },
+  {
+    "key": "catalogGroupInvalid",
+    "fr": "Vérifiez le nombre de sélections (minimum ≤ maximum).",
+    "params": []
+  },
+  {
+    "key": "catalogSaveFirstForOptions",
+    "fr": "Enregistrez le produit pour configurer ses variantes et suppléments.",
+    "params": []
+  },
+  {
+    "key": "catalogGroupsCount",
+    "fr": "Aucun groupe1 groupe{n} groupes",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogLastUpdated",
+    "fr": "Dernière mise à jour",
+    "params": []
+  },
+  {
+    "key": "catalogCustomerPreview",
+    "fr": "Aperçu client",
+    "params": []
+  },
+  {
+    "key": "catalogEditGroup",
+    "fr": "Modifier le groupe",
+    "params": []
+  },
+  {
+    "key": "catalogProductDetailTitle",
+    "fr": "Détails du Produit",
+    "params": []
+  },
+  {
+    "key": "catalogDetailInfo",
+    "fr": "Informations",
+    "params": []
+  },
+  {
+    "key": "catalogDetailName",
+    "fr": "Nom (Français)",
+    "params": []
+  },
+  {
+    "key": "catalogDetailPricing",
+    "fr": "Tarification",
+    "params": []
+  },
+  {
+    "key": "catalogDetailPrice",
+    "fr": "Prix de base",
+    "params": []
+  },
+  {
+    "key": "catalogDetailAppearance",
+    "fr": "Apparence sur l’application",
+    "params": []
+  },
+  {
+    "key": "catalogDetailAvailable",
+    "fr": "Produit disponible",
+    "params": []
+  },
+  {
+    "key": "catalogDetailNoDescription",
+    "fr": "Aucune description.",
+    "params": []
+  },
+  {
+    "key": "catalogDetailNoOptions",
+    "fr": "Aucune variante ni supplément configuré.",
+    "params": []
+  },
+  {
+    "key": "catalogRequiredSummary",
+    "fr": "Obligatoire · {rule}",
+    "params": [
+      "rule"
+    ]
+  },
+  {
+    "key": "catalogOptionalSummary",
+    "fr": "Facultatif · Maximum {max}",
+    "params": [
+      "max"
+    ]
+  },
+  {
+    "key": "catalogCropTitle",
+    "fr": "Image du produit",
+    "params": []
+  },
+  {
+    "key": "catalogCropTipsTitle",
+    "fr": "Conseils pour une belle photo",
+    "params": []
+  },
+  {
+    "key": "catalogCropTip1",
+    "fr": "Utilisez un fond neutre et propre (blanc ou bois clair).",
+    "params": []
+  },
+  {
+    "key": "catalogCropTip2",
+    "fr": "Assurez-vous d’avoir un bon éclairage, de préférence naturel.",
+    "params": []
+  },
+  {
+    "key": "catalogCropTip3",
+    "fr": "Centrez le produit dans le cadre.Centrez le produit (« {name} ») dans le cadre.",
+    "params": [
+      "name"
+    ]
+  },
+  {
+    "key": "catalogCropFormat",
+    "fr": "Format : JPG, PNG (max. 2 Mo, min. 400 px)",
+    "params": []
+  },
+  {
+    "key": "catalogCropUse",
+    "fr": "Utiliser cette image",
+    "params": []
+  },
+  {
+    "key": "catalogCropRotate",
+    "fr": "Pivoter",
+    "params": []
+  },
+  {
+    "key": "catalogCropZoom",
+    "fr": "Zoomer",
+    "params": []
+  },
+  {
+    "key": "catalogCropRemove",
+    "fr": "Supprimer l’image",
+    "params": []
+  },
+  {
+    "key": "contractFieldUnavailable",
+    "fr": "Non disponible actuellement",
+    "params": []
+  },
+  {
+    "key": "catalogFieldNameAr",
+    "fr": "Nom du produit (Arabe)",
+    "params": []
+  },
+  {
+    "key": "catalogFieldDescAr",
+    "fr": "Description (Arabe)",
+    "params": []
+  },
+  {
+    "key": "catalogFieldPrepTime",
+    "fr": "Temps de prép.",
+    "params": []
+  },
+  {
+    "key": "catalogFieldSaleUnit",
+    "fr": "Unité de vente",
+    "params": []
+  },
+  {
+    "key": "sellingUnitTitle",
+    "fr": "Unités de vente",
+    "params": []
+  },
+  {
+    "key": "sellingUnitCalloutTitle",
+    "fr": "Précision de l’unité",
+    "params": []
+  },
+  {
+    "key": "sellingUnitCalloutBody",
+    "fr": "Choisissez l’unité exacte pour éviter toute confusion lors de la préparation. Cette unité sera affichée aux clients (ex : 1 500 DZD / Plat). Les quantités sont entières : pas de vente au poids.",
+    "params": []
+  },
+  {
+    "key": "sellingUnitPreviewLabel",
+    "fr": "Aperçu client",
+    "params": []
+  },
+  {
+    "key": "sellingUnitPreviewNoPrice",
+    "fr": "— DZD",
+    "params": []
+  },
+  {
+    "key": "sellingUnitCommon",
+    "fr": "Unités courantes",
+    "params": []
+  },
+  {
+    "key": "sellingUnitPackaging",
+    "fr": "Conditionnement",
+    "params": []
+  },
+  {
+    "key": "sellingUnitNone",
+    "fr": "Aucune unité",
+    "params": []
+  },
+  {
+    "key": "sellingUnitNoneSub",
+    "fr": "Le prix est affiché sans unité.",
+    "params": []
+  },
+  {
+    "key": "sellingUnitNotSet",
+    "fr": "Non définie",
+    "params": []
+  },
+  {
+    "key": "sellingUnitCustomName",
+    "fr": "Nom de l’unité (Français)",
+    "params": []
+  },
+  {
+    "key": "sellingUnitCustomHint",
+    "fr": "ex : Cornet",
+    "params": []
+  },
+  {
+    "key": "sellingUnitApply",
+    "fr": "Appliquer l’unité",
+    "params": []
+  },
+  {
+    "key": "sellingUnitReadOnly",
+    "fr": "Seuls le propriétaire et les gérants peuvent modifier l’unité de vente.",
+    "params": []
+  },
+  {
+    "key": "catalogFieldVariants",
+    "fr": "Variantes obligatoires",
+    "params": []
+  },
+  {
+    "key": "catalogFieldExtras",
+    "fr": "Suppléments optionnels",
+    "params": []
+  },
+  {
+    "key": "catalogFieldCategoryNameAr",
+    "fr": "Nom de la catégorie (Arabe)",
+    "params": []
+  },
+  {
+    "key": "catalogFieldCategoryDesc",
+    "fr": "Description de la catégorie (Optionnel)",
+    "params": []
+  },
+  {
+    "key": "storeCoverTitle",
+    "fr": "Logo et Couverture",
+    "params": []
+  },
+  {
+    "key": "storeCoverPick",
+    "fr": "Choisir une couverture",
+    "params": []
+  },
+  {
+    "key": "storeCoverReplace",
+    "fr": "Remplacer",
+    "params": []
+  },
+  {
+    "key": "storeCoverSave",
+    "fr": "Enregistrer les modifications",
+    "params": []
+  },
+  {
+    "key": "storeCoverRemove",
+    "fr": "Supprimer",
+    "params": []
+  },
+  {
+    "key": "storeCoverSection",
+    "fr": "Photo de couverture",
+    "params": []
+  },
+  {
+    "key": "storeCoverSectionHint",
+    "fr": "La photo de couverture doit représenter votre établissement.",
+    "params": []
+  },
+  {
+    "key": "storeLogoSection",
+    "fr": "Logo du magasin",
+    "params": []
+  },
+  {
+    "key": "storeLogoSectionHint",
+    "fr": "Le logo doit être lisible même en petit format.",
+    "params": []
+  },
+  {
+    "key": "storeLogoEdit",
+    "fr": "Modifier",
+    "params": []
+  },
+  {
+    "key": "storeLogoAdd",
+    "fr": "Ajouter",
+    "params": []
+  },
+  {
+    "key": "storeLogoRemove",
+    "fr": "Supprimer",
+    "params": []
+  },
+  {
+    "key": "storeLogoEmpty",
+    "fr": "Aucun logo",
+    "params": []
+  },
+  {
+    "key": "storeLogoPending",
+    "fr": "Nouveau logo sélectionné — enregistrez pour l’appliquer.",
+    "params": []
+  },
+  {
+    "key": "storeLogoTooSmall",
+    "fr": "Logo trop petit. Minimum 128 × 128 pixels.",
+    "params": []
+  },
+  {
+    "key": "storeLogoTooLarge",
+    "fr": "Logo trop lourd. Maximum 1 Mo après compression.",
+    "params": []
+  },
+  {
+    "key": "storeLogoUploadError",
+    "fr": "Impossible d’envoyer le logo.",
+    "params": []
+  },
+  {
+    "key": "storeLogoBindPartial",
+    "fr": "Envoi réussi, mais le logo n’a pas pu être lié. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "storeLogoRemoved",
+    "fr": "Logo supprimé.",
+    "params": []
+  },
+  {
+    "key": "storeLogoRemoveError",
+    "fr": "Impossible de supprimer le logo. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "storeLogoRemoteUnavailable",
+    "fr": "Aperçu du logo non disponible actuellement.",
+    "params": []
+  },
+  {
+    "key": "storeMediaPartialSaved",
+    "fr": "Le logo est enregistré, mais la couverture a échoué. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "storeCoverHint",
+    "fr": "JPEG ou PNG, max. 2 Mo.",
+    "params": []
+  }
+]

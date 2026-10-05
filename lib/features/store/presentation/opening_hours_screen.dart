@@ -91,7 +91,7 @@ class _OpeningHoursScreenState extends ConsumerState<OpeningHoursScreen> {
       if (!mounted) return;
       setState(() => _draft = null);
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text(AppStrings.openingHoursSaved)),
+        SnackBar(content: Text(AppStrings.openingHoursSaved)),
       );
     } catch (e) {
       if (!mounted) return;
@@ -179,9 +179,7 @@ class _OpeningHoursScreenState extends ConsumerState<OpeningHoursScreen> {
                         title: AppStrings.hoursExceptionsTitle,
                         subtitle: todayException == null
                             ? AppStrings.hoursExceptionsNavSub
-                            : AppStrings.hoursExceptionsToday(
-                                todayException.label,
-                              ),
+                            : AppStrings.hoursExceptionsToday(todayException.label.toString(), ),
                         onTap: _saving
                             ? null
                             : () => context.push(
@@ -191,14 +189,14 @@ class _OpeningHoursScreenState extends ConsumerState<OpeningHoursScreen> {
                     ),
                     const SizedBox(height: 24),
                     if (!canManage) ...[
-                      const _Note(
+                      _Note(
                         key: Key('opening-hours-readonly'),
                         icon: Icons.lock_outline,
                         text: AppStrings.openingHoursStaffReadOnly,
                       ),
                       const SizedBox(height: 12),
                     ],
-                    const _Note(
+                    _Note(
                       icon: Icons.info_outline,
                       text: AppStrings.openingHoursInfo,
                     ),
@@ -670,7 +668,7 @@ class _DayEditorSheetState extends State<_DayEditorSheet> {
                       ? null
                       : _add,
                   icon: const Icon(Icons.add),
-                  label: const Text(AppStrings.openingHoursAddRange),
+                  label: Text(AppStrings.openingHoursAddRange),
                 ),
               ),
               if (_issue != null) ...[
@@ -693,7 +691,7 @@ class _DayEditorSheetState extends State<_DayEditorSheet> {
                     ),
                   ),
                   onPressed: _apply,
-                  child: const Text(AppStrings.openingHoursApply),
+                  child: Text(AppStrings.openingHoursApply),
                 ),
               ),
             ],

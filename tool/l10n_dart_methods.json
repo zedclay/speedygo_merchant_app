@@ -1,0 +1,397 @@
+[
+  {
+    "key": "otpSentTo",
+    "kind": "method",
+    "fr": "Code envoyé au {masked}",
+    "params": [
+      "masked"
+    ]
+  },
+  {
+    "key": "verificationRejectedGreeting",
+    "kind": "method",
+    "fr": "Bonjour, le dossier de {merchantName} nécessite des corrections.",
+    "params": [
+      "merchantName"
+    ]
+  },
+  {
+    "key": "homeLastSync",
+    "kind": "method",
+    "fr": "Dernière synchro : {hhmm}",
+    "params": [
+      "hhmm"
+    ]
+  },
+  {
+    "key": "supportSentBody",
+    "kind": "method",
+    "fr": "Votre ticket {ref} a été transmis à l’équipe SpeedyGo.",
+    "params": [
+      "ref"
+    ]
+  },
+  {
+    "key": "supportUpdated",
+    "kind": "complex",
+    "fr": null,
+    "params": [
+      "updatedAt",
+      "now"
+    ]
+  },
+  {
+    "key": "supportDate",
+    "kind": "method",
+    "fr": "_ddMmYyyy(at)",
+    "params": [
+      "at"
+    ]
+  },
+  {
+    "key": "_ddMmYyyy",
+    "kind": "complex",
+    "fr": null,
+    "params": [
+      "at"
+    ]
+  },
+  {
+    "key": "supportShowingLatest",
+    "kind": "method",
+    "fr": "{shown} tickets les plus récents affichés sur {total}.",
+    "params": [
+      "shown",
+      "total"
+    ]
+  },
+  {
+    "key": "supportStatus",
+    "kind": "method",
+    "fr": "openOuvertinProgressEn courswaitingCustomerRéponse attendueresolvedRésoluclosedFerméStatut inconnu",
+    "params": [
+      "code"
+    ]
+  },
+  {
+    "key": "supportCreated",
+    "kind": "method",
+    "fr": "Ticket envoyé.Ticket envoyé : {reference}",
+    "params": [
+      "reference"
+    ]
+  },
+  {
+    "key": "orderDeliveredOn",
+    "kind": "method",
+    "fr": "Livrée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderCompletedOn",
+    "kind": "method",
+    "fr": "Terminée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderReadySince",
+    "kind": "method",
+    "fr": "Prête depuis {hhmm}",
+    "params": [
+      "hhmm"
+    ]
+  },
+  {
+    "key": "orderListReadyAt",
+    "kind": "method",
+    "fr": "Prête vers {hhmm}",
+    "params": [
+      "hhmm"
+    ]
+  },
+  {
+    "key": "orderCreatedAt",
+    "kind": "method",
+    "fr": "Créée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderConfirmedAt",
+    "kind": "method",
+    "fr": "Confirmée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderCancelledAt",
+    "kind": "method",
+    "fr": "Annulée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderCreatedShort",
+    "kind": "method",
+    "fr": "Créée · {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderFinanceCommission",
+    "kind": "method",
+    "fr": "Commission SpeedyGo ({percent} %)",
+    "params": [
+      "percent"
+    ]
+  },
+  {
+    "key": "prepSelectHint",
+    "kind": "complex",
+    "fr": null,
+    "params": [
+      "itemCount"
+    ]
+  },
+  {
+    "key": "prepScheduledAtLocal",
+    "kind": "method",
+    "fr": "Heure prévue : {time} (heure locale)",
+    "params": [
+      "time"
+    ]
+  },
+  {
+    "key": "prepScheduledOnLocal",
+    "kind": "method",
+    "fr": "Heure prévue : le {day} à {time} (heure locale)",
+    "params": [
+      "day",
+      "time"
+    ]
+  },
+  {
+    "key": "prepLateBy",
+    "kind": "method",
+    "fr": "En retard${durationFr(minutes)} de retard",
+    "params": [
+      "minutes"
+    ]
+  },
+  {
+    "key": "durationFr",
+    "kind": "complex",
+    "fr": null,
+    "params": [
+      "minutes"
+    ]
+  },
+  {
+    "key": "orderDriverSearchStarted",
+    "kind": "method",
+    "fr": "Recherche démarrée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderDriverSearchStartedAt",
+    "kind": "method",
+    "fr": "Recherche démarrée à {hhmm}",
+    "params": [
+      "hhmm"
+    ]
+  },
+  {
+    "key": "orderDriverEtaEstimate",
+    "kind": "method",
+    "fr": "Arrivée estimée : {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "reportsSettlementStatus",
+    "kind": "method",
+    "fr": "DRAFTBrouillonFINALIZEDFinaliséStatut inconnu",
+    "params": [
+      "status"
+    ]
+  },
+  {
+    "key": "reportsLastUpdated",
+    "kind": "method",
+    "fr": "Dernière mise à jour : {time}",
+    "params": [
+      "time"
+    ]
+  },
+  {
+    "key": "reportsSyncedAt",
+    "kind": "method",
+    "fr": "Synchronisé à {time}",
+    "params": [
+      "time"
+    ]
+  },
+  {
+    "key": "reportsCommissionWithRate",
+    "kind": "method",
+    "fr": "Commission SpeedyGo ({rate})",
+    "params": [
+      "rate"
+    ]
+  },
+  {
+    "key": "reportsUnitCount",
+    "kind": "method",
+    "fr": "1 unité{count} unités",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "reportsTotalArticles",
+    "kind": "method",
+    "fr": "Total : 1 articleTotal : {count} articles",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "catalogCategoriesCount",
+    "kind": "method",
+    "fr": "{n} catégorie{n} catégories",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogBulkSelected",
+    "kind": "method",
+    "fr": "{n} produit sélectionné{n} produits sélectionnés",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogChoiceRange",
+    "kind": "method",
+    "fr": "{min} choixEntre {min} et {max} choix",
+    "params": [
+      "min",
+      "max"
+    ]
+  },
+  {
+    "key": "catalogMaxSelections",
+    "kind": "method",
+    "fr": "Maximum 1 sélectionMaximum {n} sélections",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "sellingUnitCustomMaxLength",
+    "kind": "int",
+    "fr": "40",
+    "params": []
+  },
+  {
+    "key": "availabilityLastUpdate",
+    "kind": "complex",
+    "fr": null,
+    "params": [
+      "updatedAt",
+      "now"
+    ]
+  },
+  {
+    "key": "availabilityCloseWarningBody",
+    "kind": "method",
+    "fr": "Toutes les nouvelles commandes seront rejetées. Les commandes actives doivent toujours être traitées.Toutes les nouvelles commandes seront rejetées. Aucune commande active en cours.Toutes les nouvelles commandes seront rejetées. Vous devez toujours traiter ${count == 1 ?  : }.",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "availabilityActiveOrders",
+    "kind": "method",
+    "fr": "{count} commande${count == 1 ?  : } en cours",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "temporaryClosureImpactCount",
+    "kind": "method",
+    "fr": "La commande en coursLes {count} commandes en cours",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "temporaryClosureImpactTail",
+    "kind": "method",
+    "fr": " sera maintenue et doit être préparée. seront maintenues et doivent être préparées.",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "regCorrectionIntro",
+    "kind": "method",
+    "fr": "Corrigez les éléments nécessaires puis soumettez à nouveau. Votre établissement {merchantName} sera activé après validation.",
+    "params": [
+      "merchantName"
+    ]
+  },
+  {
+    "key": "issuesDocumentConcerned",
+    "kind": "method",
+    "fr": "Pièce concernée : {documentTitle}",
+    "params": [
+      "documentTitle"
+    ]
+  },
+  {
+    "key": "teamCodeInstruction",
+    "kind": "method",
+    "fr": "Aucun SMS ni e-mail n’est émis par SpeedyGo. Copiez ce code et transmettez-le vous-même à {phone}. Il ne sera plus affiché après la fermeture de cette fenêtre.",
+    "params": [
+      "phone"
+    ]
+  },
+  {
+    "key": "teamRevokeBody",
+    "kind": "method",
+    "fr": "{phone} perdra l’accès à ce commerce et ses sessions seront fermées. Son compte SpeedyGo n’est pas supprimé.",
+    "params": [
+      "phone"
+    ]
+  },
+  {
+    "key": "teamAccepted",
+    "kind": "method",
+    "fr": "Invitation acceptée. Vous avez maintenant accès à {merchantName}.",
+    "params": [
+      "merchantName"
+    ]
+  },
+  {
+    "key": "errorForCode",
+    "kind": "complex",
+    "fr": null,
+    "params": [
+      "code"
+    ]
+  }
+]

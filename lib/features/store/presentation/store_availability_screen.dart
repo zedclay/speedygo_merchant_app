@@ -51,16 +51,16 @@ class _StoreAvailabilityScreenState
       final ok = await showDialog<bool>(
         context: context,
         builder: (ctx) => AlertDialog(
-          title: const Text(AppStrings.availabilityReopenTitle),
-          content: const Text(AppStrings.availabilityReopenOutsideHoursBody),
+          title: Text(AppStrings.availabilityReopenTitle),
+          content: Text(AppStrings.availabilityReopenOutsideHoursBody),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(ctx, false),
-              child: const Text(AppStrings.cancel),
+              child: Text(AppStrings.cancel),
             ),
             FilledButton(
               onPressed: () => Navigator.pop(ctx, true),
-              child: const Text(AppStrings.availabilityConfirmReopen),
+              child: Text(AppStrings.availabilityConfirmReopen),
             ),
           ],
         ),
@@ -78,7 +78,7 @@ class _StoreAvailabilityScreenState
           .save(mode: mode);
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text(AppStrings.availabilitySaved)),
+        SnackBar(content: Text(AppStrings.availabilitySaved)),
       );
     } catch (e) {
       if (!mounted) return;
@@ -632,7 +632,7 @@ class _TodayCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const _CardLabel(
+          _CardLabel(
             icon: Icons.schedule,
             text: AppStrings.availabilityToday,
           ),
@@ -706,7 +706,7 @@ class _QuickPauseCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const _CardLabel(
+          _CardLabel(
             icon: Icons.pause_circle_outline,
             text: AppStrings.availabilityQuickPause,
           ),

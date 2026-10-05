@@ -89,7 +89,7 @@ void main() {
       );
       await tester.pumpWidget(
         _app(
-          const Scaffold(
+          Scaffold(
             body: Center(
               child: OrderPublicReferenceLine(
                 reference: _longReference,
@@ -144,7 +144,7 @@ void main() {
   });
 
   group('app-bar titles', () {
-    const titles = [
+    final titles = [
       AppStrings.storeAddressTitle,
       AppStrings.orderDetailsTitle,
       AppStrings.catalogCategoryDetailTitle,

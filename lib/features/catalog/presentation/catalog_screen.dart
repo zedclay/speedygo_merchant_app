@@ -42,7 +42,7 @@ class CatalogScreen extends ConsumerStatefulWidget {
     }
     if (current == null || current.categories.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text(AppStrings.catalogNeedCategory)),
+        SnackBar(content: Text(AppStrings.catalogNeedCategory)),
       );
       context.push(AppRoutes.catalogCategoryNew);
       return;
@@ -97,7 +97,7 @@ class _CatalogScreenState extends ConsumerState<CatalogScreen> {
           TextButton(
             key: const Key('catalog-reorder'),
             onPressed: () => context.push(AppRoutes.catalogReorder),
-            child: const Text(AppStrings.catalogReorder),
+            child: Text(AppStrings.catalogReorder),
           ),
         if (canManage &&
             state != null &&
@@ -431,7 +431,7 @@ List<Widget> _productSlivers(
         child: Column(
           children: [
             const SizedBox(height: 64),
-            const Center(
+            Center(
               child: Text(
                 AppStrings.catalogEmptyProducts,
                 key: Key('catalog-empty-products'),
@@ -446,7 +446,7 @@ List<Widget> _productSlivers(
                     key: const Key('catalog-empty-add-product'),
                     onPressed: () => CatalogScreen._add(context, ref),
                     icon: const Icon(Icons.add),
-                    label: const Text(AppStrings.catalogAddProduct),
+                    label: Text(AppStrings.catalogAddProduct),
                   ),
                 ),
               ),
@@ -457,7 +457,7 @@ List<Widget> _productSlivers(
     ];
   }
   if (products.isEmpty) {
-    return const [
+    return [
       SliverToBoxAdapter(
         child: Padding(
           padding: EdgeInsets.only(top: 48),
@@ -508,7 +508,7 @@ class CatalogProductCard extends ConsumerWidget {
     } catch (_) {
       if (!context.mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text(AppStrings.catalogAvailabilityError)),
+        SnackBar(content: Text(AppStrings.catalogAvailabilityError)),
       );
     }
   }
@@ -708,7 +708,7 @@ List<Widget> _categorySlivers(
         child: Column(
           children: [
             const SizedBox(height: 64),
-            const Center(
+            Center(
               child: Text(
                 AppStrings.catalogEmptyCategories,
                 key: Key('catalog-empty-categories'),
@@ -722,7 +722,7 @@ List<Widget> _categorySlivers(
                   key: const Key('catalog-empty-add-category'),
                   onPressed: () => context.push(AppRoutes.catalogCategoryNew),
                   icon: const Icon(Icons.add),
-                  label: const Text(AppStrings.catalogAddCategory),
+                  label: Text(AppStrings.catalogAddCategory),
                 ),
               ),
             ],
@@ -733,7 +733,7 @@ List<Widget> _categorySlivers(
   }
   final categories = state.visibleCategories;
   if (categories.isEmpty) {
-    return const [
+    return [
       SliverToBoxAdapter(
         child: Padding(
           padding: EdgeInsets.only(top: 48),
@@ -789,7 +789,7 @@ class _CategoryCard extends ConsumerWidget {
     } catch (_) {
       if (!context.mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text(AppStrings.catalogVisibilityError)),
+        SnackBar(content: Text(AppStrings.catalogVisibilityError)),
       );
     }
   }
@@ -798,17 +798,17 @@ class _CategoryCard extends ConsumerWidget {
     final ok = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text(AppStrings.catalogDeleteCategory),
-        content: const Text(AppStrings.catalogDeleteCategoryConfirm),
+        title: Text(AppStrings.catalogDeleteCategory),
+        content: Text(AppStrings.catalogDeleteCategoryConfirm),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx, false),
-            child: const Text(AppStrings.cancel),
+            child: Text(AppStrings.cancel),
           ),
           FilledButton(
             style: FilledButton.styleFrom(backgroundColor: AppColors.error),
             onPressed: () => Navigator.pop(ctx, true),
-            child: const Text(AppStrings.catalogDeleteCategory),
+            child: Text(AppStrings.catalogDeleteCategory),
           ),
         ],
       ),
@@ -935,7 +935,7 @@ class _CategoryCard extends ConsumerWidget {
                     }
                   },
                   itemBuilder: (_) => [
-                    const PopupMenuItem(
+                    PopupMenuItem(
                       value: 'view',
                       child: ListTile(
                         leading: Icon(
@@ -946,7 +946,7 @@ class _CategoryCard extends ConsumerWidget {
                         contentPadding: EdgeInsets.zero,
                       ),
                     ),
-                    const PopupMenuItem(
+                    PopupMenuItem(
                       value: 'edit',
                       child: ListTile(
                         leading: Icon(
@@ -961,7 +961,7 @@ class _CategoryCard extends ConsumerWidget {
                     PopupMenuItem(
                       key: Key('catalog-category-delete-${category.id}'),
                       value: 'delete',
-                      child: const ListTile(
+                      child: ListTile(
                         leading: Icon(
                           Icons.delete_outline,
                           color: AppColors.error,

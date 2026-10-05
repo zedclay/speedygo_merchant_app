@@ -26,19 +26,19 @@ Future<void> confirmRevokeMember(
     context: context,
     builder: (dialog) => AlertDialog(
       key: const Key('team-revoke-dialog'),
-      title: const Text(AppStrings.teamRevokeTitle),
+      title: Text(AppStrings.teamRevokeTitle),
       content: Text(AppStrings.teamRevokeBody(_memberLabel(member))),
       actions: [
         TextButton(
           key: const Key('team-revoke-keep'),
           onPressed: () => Navigator.of(dialog).pop(false),
-          child: const Text(AppStrings.teamKeep),
+          child: Text(AppStrings.teamKeep),
         ),
         TextButton(
           key: const Key('team-revoke-confirm'),
           style: TextButton.styleFrom(foregroundColor: AppColors.error),
           onPressed: () => Navigator.of(dialog).pop(true),
-          child: const Text(AppStrings.teamRevoke),
+          child: Text(AppStrings.teamRevoke),
         ),
       ],
     ),
@@ -186,7 +186,7 @@ Future<void> confirmCancelInvitation(
     context: context,
     builder: (dialog) => AlertDialog(
       key: const Key('team-cancel-invite-dialog'),
-      title: const Text(AppStrings.teamCancelInviteTitle),
+      title: Text(AppStrings.teamCancelInviteTitle),
       content: Text(
         AppStrings.teamCancelInviteBody(formatTeamPhone(invitation.phone)),
       ),
@@ -194,13 +194,13 @@ Future<void> confirmCancelInvitation(
         TextButton(
           key: const Key('team-cancel-invite-keep'),
           onPressed: () => Navigator.of(dialog).pop(false),
-          child: const Text(AppStrings.teamKeep),
+          child: Text(AppStrings.teamKeep),
         ),
         TextButton(
           key: const Key('team-cancel-invite-confirm'),
           style: TextButton.styleFrom(foregroundColor: AppColors.error),
           onPressed: () => Navigator.of(dialog).pop(true),
-          child: const Text(AppStrings.teamCancelInviteConfirm),
+          child: Text(AppStrings.teamCancelInviteConfirm),
         ),
       ],
     ),

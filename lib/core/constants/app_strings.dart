@@ -1,1169 +1,1425 @@
-/// French UI copy for Phase 1. Arabic uses the same keys via locale direction;
-/// content stays French until ARB extraction (RTL layout is supported).
+// GENERATED facade — source of truth: lib/l10n/app_*.arb (+ complex helpers below).
+import 'package:flutter/widgets.dart';
+import 'package:speedygo_merchant_app/l10n/app_localizations.dart';
+
+/// Localized Merchant UI strings. Call [bind] from the app shell on rebuild.
 class AppStrings {
   const AppStrings._();
 
-  static const appName = 'SpeedyGo Merchant';
-  static const brandName = 'SpeedyGo';
-  static const splashTagline = 'Votre commerce. Simplement.';
-  static const splashLegacyTagline = 'Espace commerçant';
-  static const onboardingSkip = 'Passer';
-  static const onboardingNext = 'Suivant';
-  static const onboardingStart = 'Commencer';
-  static const onboardingHaveAccount = 'J’ai déjà un compte';
-  static const onboardingPage1Title = 'Recevez vos commandes';
-  static const onboardingPage1Body =
-      'Retrouvez les nouvelles commandes et consultez leurs détails.';
-  static const onboardingPage2Title = 'Maîtrisez la préparation';
-  static const onboardingPage2Body =
-      'Organisez la préparation et indiquez quand une commande est prête.';
-  static const onboardingPage3Title = 'Votre commerce, à portée de main';
-  static const onboardingPage3Body =
-      'Retrouvez votre catalogue, vos horaires et les informations de votre établissement.';
-  static const onboardingSaveFailed =
-      'Impossible d’enregistrer l’introduction. Réessayez.';
-  static const onboardingPageSemantics = 'Page d’introduction';
-  static const phoneTitle = 'Entrez votre numéro de téléphone';
-  static const phoneSubtitle =
-      'Nous vous enverrons un code de vérification par SMS.';
-  static const phoneHint = '555 12 34 56';
-  static const phonePrefix = '+213';
-  static const phoneSmsNote = 'Les frais de SMS standard peuvent s’appliquer.';
-  static const phoneLabel = 'Numéro de téléphone';
-  static const phoneInvalid = 'Saisissez un numéro algérien valide.';
-  static const continueLabel = 'Continuer';
-  static const needHelp = 'Besoin d’aide ?';
-  static const helpUnavailable =
-      'L’assistance sera disponible dans une prochaine version.';
-  static const otpTitle = 'Vérification du code';
-  static String otpSentTo(String masked) => 'Code envoyé au $masked';
-  static const editNumber = 'Modifier';
-  static const verify = 'Vérifier';
-  static const resend = 'Renvoyer le code';
-  static String resendIn(String clock) => 'Renvoyer le code dans $clock';
-  static const otpCooldownHint = 'Patientez avant de renvoyer un code';
-  static const resendCode = 'Renvoyer le code';
-  static const otpSubtitle = 'Saisissez le code à 6 chiffres envoyé au';
-  static const restoreTitle = 'Restauration de la session';
-  static const restoreLoading = 'Connexion en cours…';
-  static const restoreOffline =
-      'Impossible de joindre le serveur. Vérifiez votre connexion.';
-  static const restoreRetry = 'Réessayer';
-  static const restoreOtherAccount = 'Utiliser un autre compte';
-  static const sessionExpired = 'Votre session a expiré. Connectez-vous.';
-  static const networkError = 'Problème de réseau. Réessayez.';
-  static const languageSaveFailed =
-      'Impossible d’enregistrer la langue. Réessayez.';
-  static const retry = 'Réessayer';
-  static const refreshStatus = 'Actualiser le statut';
-  static const back = 'Retour';
-  static const loading = 'Chargement…';
-  static const tabHome = 'Accueil';
-  static const tabOrders = 'Commandes';
-  static const tabCatalog = 'Catalogue';
-  static const tabReports = 'Rapports';
-  static const tabProfile = 'Profil';
-  static const navReveal = 'Afficher la navigation';
-  static const homeTitle = 'Accueil';
-  static const selectBranchTitle = 'Choisir un établissement';
-  static const selectBranchSubtitle =
-      'Sélectionnez l’établissement avec lequel vous souhaitez travailler.';
-  static const noMembershipTitle = 'Aucun commerce associé';
-  static const noMembershipBody =
-      'Ce compte n’a pas encore d’adhésion commerçant. Vous pouvez créer un profil commerce pour démarrer la vérification.';
-  static const noMembershipInvitationsCta = 'J’ai une invitation';
-  static const createMerchant = 'Créer un commerce';
-  static const merchantNameLabel = 'Nom du commerce';
-  static const merchantNameHint = 'Ex. Pharmacie du Centre';
-  static const verificationPendingTitle = 'Vérification en cours';
-  static const verificationPendingBody =
-      'Votre commerce est enregistré et en attente de vérification.';
-  static const verificationDossierProgress = 'Pièces du dossier';
-  static const verificationSubmittedStep = 'Dossier soumis';
-  static const verificationReviewStep = 'Examen des documents';
-  static const verificationReviewStepBody = 'En cours d’examen par SpeedyGo';
-  static const verificationFinalStep = 'Validation finale';
-  static const verificationFinalStepBody = 'En attente de décision';
-  static const verificationTimelineTitle = 'Progression du dossier';
-  static const verificationReferenceLabel = 'Référence';
-  static const verificationReferenceFull = 'Référence du dossier';
-  static const approvedTitle = 'Félicitations !';
-  static const approvedSubtitle = 'Votre établissement est approuvé';
-  static const approvedBody =
-      'Pour commencer à recevoir des commandes, assurez-vous que votre '
-      'magasin est ouvert, que vos horaires sont définis et que vos produits '
-      'sont disponibles.';
-  static const approvedReferenceLabel = 'RÉFÉRENCE MERCHANT';
-  static const approvedReferenceFull = 'Référence Merchant';
-  static const approvedBadge = 'Approuvé';
-  static const approvedStepsTitle = 'Étapes de configuration';
-  static const approvedHoursTitle = 'Horaires d’ouverture';
-  static const approvedHoursBody = 'Configurez quand vous êtes ouvert';
-  static const approvedCatalogTitle = 'Catalogue de produits';
-  static const approvedCatalogBody = 'Ajoutez vos premiers articles';
-  static const approvedAlertsTitle = 'Alertes et notifications';
-  static const approvedAlertsBody = 'Restez informé des commandes';
-  static const approvedNeedBranchHint =
-      'Disponible après l’ajout d’un établissement';
-  static const approvedNotOpenNote =
-      'L’approbation n’ouvre pas votre magasin automatiquement : vérifiez '
-      'son statut, vos horaires et votre catalogue depuis l’accueil.';
-  static const approvedContinue = 'Accéder à l’accueil marchand';
-  static const verificationRequestIdLabel = 'ID DE DEMANDE';
-  static const verificationNeedHelp = 'Besoin d’aide pour votre dossier ?';
-  static const verificationCorrectAndSubmit = 'Corriger et soumettre';
-  static String verificationRejectedGreeting(String merchantName) =>
-      'Bonjour, le dossier de $merchantName nécessite des corrections.';
-  static const verificationRejectedTitle = 'Dossier à compléter';
-  static const verificationRejectedBody =
-      'Le dossier a été refusé. Corrigez le profil ou les pièces lorsque l’édition est autorisée, puis soumettez à nouveau.';
-  static const verificationApprovedTitle = 'Commerce approuvé';
-  static const verificationApprovedBody =
-      'Votre commerce est approuvé. Complétez un établissement actif pour l’exploitation.';
-  static const suspendedTitle = 'Compte commerce suspendu';
-  static const suspendedBody =
-      'Ce commerce est suspendu. Contactez le support SpeedyGo si besoin.';
-  static const checklistTitle = 'Pièces du dossier';
-  static const accessRestrictedTitle = 'Accès restreint';
-  static const accessRestrictedBody =
-      'Vous n’avez pas les droits nécessaires pour cette action.';
-  static const needBranchTitle = 'Établissement requis';
-  static const needBranchBody =
-      'Ajoutez au moins un établissement actif pour utiliser l’espace opérationnel.';
-  static const addBranch = 'Ajouter un établissement';
-  static const branchNameLabel = 'Nom de l’établissement';
-  static const branchPhoneLabel = 'Téléphone';
-  static const branchAddressLabel = 'Adresse';
-  static const branchLatLabel = 'Latitude';
-  static const branchLngLabel = 'Longitude';
-  static const save = 'Enregistrer';
-  static const logout = 'Se déconnecter';
-  static const operationalActive = 'Actif';
-  static const operationalInactive = 'Inactif';
-  static const operationalSuspended = 'Suspendu';
-  static const homeNoMetrics =
-      'Aucun indicateur agrégé n’est fourni par l’API dans cette phase.';
-  static const homeOrderCountsTitle = 'Commandes en cours';
-  static const homeCountIncoming = 'Nouveaux';
-  static const homeCountPreparing = 'En prép.';
-  static const homeCountReady = 'Prêts';
-  static const homeCountCourier = 'Livreur';
-  static const homeCountCourierUnavailable = '—';
-  static const homeActiveOrdersTitle = 'Commandes actives';
-  static const homeActiveOrdersEmpty = 'Aucune commande active pour le moment.';
-  static const homeTreatOrder = 'Traiter la commande';
-  static const homeOpenOrder = 'Voir la commande';
-  static const homeVerificationTitle = 'Vérification à finaliser';
-  static const homeVerificationBody =
-      'Complétez votre dossier pour conserver l’accès complet à votre espace marchand.';
-  static const homeKpiSales = 'Ventes';
-  static const homeKpiOrders = 'Commandes';
-  static const homeKpiOrdersUnit = 'terminées';
-  static const homeKpiCurrency = 'DZD';
-  static const homeKpiUnavailable = '—';
-  static String homeLastSync(String hhmm) => 'Dernière synchro : $hhmm';
-  static const refresh = 'Actualiser';
-  static const ordersEmpty = 'Aucune commande pour cet établissement.';
-  static const ordersEmptyIncoming = 'Aucune nouvelle commande';
-  static const ordersEmptyAccepted = 'Aucune commande acceptée';
-  static const ordersEmptyPreparing = 'Aucune commande en préparation';
-  static const ordersEmptyReady = 'Aucune commande prête';
-  static const ordersEmptyCompleted = 'Aucune commande terminée';
-  static const ordersEmptyCancelled = 'Aucune commande annulée';
-  static const ordersEmptyFailed = 'Aucune commande échouée';
-  static const ordersLoadError = 'Impossible de charger les commandes.';
-  static const orderDetailTitle = 'Commande';
-  static const orderDetailLoadError = 'Impossible de charger cette commande.';
-  static const orderFulfillmentIncoming = 'Nouveau';
-  static const supportReportTitle = 'Signaler un problème';
-  static const supportShort = 'Support';
-  static const supportContact = 'Contacter le support';
-  static const supportOrderLabel = 'COMMANDE';
-  static const supportCustomerLabel = 'CLIENT';
-  static const supportMerchandiseLabel = 'MARCHANDISES';
-  static const supportDescriptionLabel = 'Description du problème';
-  static const supportDescriptionHint =
-      'Expliquez-nous ce qui s’est passé en détail...';
-  static const supportSensitiveHint =
-      'Veuillez ne pas inclure de données sensibles (ex : mots de passe).';
-  static const supportSend = 'Envoyer le ticket';
-  static const supportSentTitle = 'Signalement envoyé';
-  static String supportSentBody(String ref) =>
-      'Votre ticket $ref a été transmis à l’équipe SpeedyGo.';
-  static const supportSentBodyNoRef =
-      'Votre ticket a été transmis à l’équipe SpeedyGo.';
-  static const supportBackToOrder = 'Retour à la commande';
-  static const supportForbidden =
-      'Seuls le propriétaire et les gérants peuvent contacter le support.';
-  static const supportSendError =
-      'Le ticket n’a pas pu être envoyé. Réessayez.';
-  static const supportCenterTitle = 'Support Merchant';
-  static const supportNewTicket = 'Nouveau ticket';
-  static const supportActiveTickets = 'Tickets actifs';
-  static const supportResolvedTickets = 'Tickets résolus';
-  static const supportNoTickets = 'Aucun ticket pour le moment.';
-  static const supportLoadError = 'Impossible de charger vos tickets.';
-  static String supportUpdated(DateTime updatedAt, DateTime now) {
-    final diff = now.difference(updatedAt);
-    if (diff.inMinutes < 1) return 'Mis à jour à l’instant';
-    if (diff.inMinutes < 60) return 'Mis à jour il y a ${diff.inMinutes} min';
-    if (diff.inHours < 24) return 'Mis à jour il y a ${diff.inHours} h';
-    return 'Mis à jour le ${_ddMmYyyy(updatedAt)}';
+  static AppLocalizations? _l10n;
+  static String _code = 'fr';
+
+  static void bind(AppLocalizations l10n, String languageCode) {
+    _l10n = l10n;
+    _code = languageCode == 'ar' ? 'ar' : 'fr';
   }
 
-  static String supportDate(DateTime at) => _ddMmYyyy(at);
+  static AppLocalizations get l10n =>
+      _l10n ?? lookupAppLocalizations(const Locale('fr'));
+
+  static bool get isArabic => _code == 'ar';
+
+  static const sellingUnitCustomMaxLength = 40;
+
+  static String get accessRestrictedBody => l10n.accessRestrictedBody;
+  static String get accessRestrictedTitle => l10n.accessRestrictedTitle;
+  static String get addBranch => l10n.addBranch;
+  static String get adminLocationChoose => l10n.adminLocationChoose;
+  static String get adminLocationEmpty => l10n.adminLocationEmpty;
+  static String get adminLocationLoadError => l10n.adminLocationLoadError;
+  static String get adminLocationPairRequired => l10n.adminLocationPairRequired;
+  static String get adminLocationRetry => l10n.adminLocationRetry;
+  static String get adminLocationSearchHint => l10n.adminLocationSearchHint;
+  static String get adminLocationWilayaRequired => l10n.adminLocationWilayaRequired;
+  static String get alertDismiss => l10n.alertDismiss;
+  static String get alertItems => l10n.alertItems;
+  static String get alertNewOrder => l10n.alertNewOrder;
+  static String get alertOrderLabel => l10n.alertOrderLabel;
+  static String get alertOrderTotal => l10n.alertOrderTotal;
+  static String get alertPayment => l10n.alertPayment;
+  static String get alertReceivedAt => l10n.alertReceivedAt;
+  static String get alertRefuse => l10n.alertRefuse;
+  static String get alertSeeList => l10n.alertSeeList;
+  static String get alertViewDetails => l10n.alertViewDetails;
+  static String get appName => l10n.appName;
+  static String get approvedAlertsBody => l10n.approvedAlertsBody;
+  static String get approvedAlertsTitle => l10n.approvedAlertsTitle;
+  static String get approvedBadge => l10n.approvedBadge;
+  static String get approvedBody => l10n.approvedBody;
+  static String get approvedCatalogBody => l10n.approvedCatalogBody;
+  static String get approvedCatalogTitle => l10n.approvedCatalogTitle;
+  static String get approvedContinue => l10n.approvedContinue;
+  static String get approvedHoursBody => l10n.approvedHoursBody;
+  static String get approvedHoursTitle => l10n.approvedHoursTitle;
+  static String get approvedNeedBranchHint => l10n.approvedNeedBranchHint;
+  static String get approvedNotOpenNote => l10n.approvedNotOpenNote;
+  static String get approvedReferenceFull => l10n.approvedReferenceFull;
+  static String get approvedReferenceLabel => l10n.approvedReferenceLabel;
+  static String get approvedStepsTitle => l10n.approvedStepsTitle;
+  static String get approvedSubtitle => l10n.approvedSubtitle;
+  static String get approvedTitle => l10n.approvedTitle;
+  static String get attentionRequired => l10n.attentionRequired;
+  static String get availabilityActiveOrdersUnknown => l10n.availabilityActiveOrdersUnknown;
+  static String get availabilityBannerClosedBody => l10n.availabilityBannerClosedBody;
+  static String get availabilityBannerClosedTitle => l10n.availabilityBannerClosedTitle;
+  static String get availabilityBannerOpenBody => l10n.availabilityBannerOpenBody;
+  static String get availabilityBannerOpenTitle => l10n.availabilityBannerOpenTitle;
+  static String get availabilityBannerScheduleClosedBody => l10n.availabilityBannerScheduleClosedBody;
+  static String get availabilityBannerScheduleClosedTitle => l10n.availabilityBannerScheduleClosedTitle;
+  static String get availabilityCloseWarningTitle => l10n.availabilityCloseWarningTitle;
+  static String get availabilityClosed => l10n.availabilityClosed;
+  static String get availabilityClosedToday => l10n.availabilityClosedToday;
+  static String get availabilityClosureSaved => l10n.availabilityClosureSaved;
+  static String get availabilityConfirmReopen => l10n.availabilityConfirmReopen;
+  static String get availabilityConflict => l10n.availabilityConflict;
+  static String get availabilityEstablishment => l10n.availabilityEstablishment;
+  static String get availabilityFollowSchedule => l10n.availabilityFollowSchedule;
+  static String get availabilityForceClosed => l10n.availabilityForceClosed;
+  static String get availabilityLoadError => l10n.availabilityLoadError;
+  static String get availabilityModifyHours => l10n.availabilityModifyHours;
+  static String get availabilityOpen => l10n.availabilityOpen;
+  static String get availabilityPause30 => l10n.availabilityPause30;
+  static String get availabilityPause60 => l10n.availabilityPause60;
+  static String get availabilityQuickPause => l10n.availabilityQuickPause;
+  static String get availabilityQuickPauseHint => l10n.availabilityQuickPauseHint;
+  static String get availabilityReasonLunch => l10n.availabilityReasonLunch;
+  static String get availabilityReasonPeak => l10n.availabilityReasonPeak;
+  static String get availabilityReasonStock => l10n.availabilityReasonStock;
+  static String get availabilityReasonTechnical => l10n.availabilityReasonTechnical;
+  static String get availabilityReopenOutsideHoursBody => l10n.availabilityReopenOutsideHoursBody;
+  static String get availabilityReopenTitle => l10n.availabilityReopenTitle;
+  static String get availabilitySave => l10n.availabilitySave;
+  static String get availabilitySaveError => l10n.availabilitySaveError;
+  static String get availabilitySaved => l10n.availabilitySaved;
+  static String get availabilitySaving => l10n.availabilitySaving;
+  static String get availabilityStaffReadOnly => l10n.availabilityStaffReadOnly;
+  static String get availabilityTitle => l10n.availabilityTitle;
+  static String get availabilityToday => l10n.availabilityToday;
+  static String get back => l10n.back;
+  static String get branchAddressLabel => l10n.branchAddressLabel;
+  static String get branchLatLabel => l10n.branchLatLabel;
+  static String get branchLngLabel => l10n.branchLngLabel;
+  static String get branchNameLabel => l10n.branchNameLabel;
+  static String get branchPhoneLabel => l10n.branchPhoneLabel;
+  static String get brandName => l10n.brandName;
+  static String get cancel => l10n.cancel;
+  static String get catalogAddCategory => l10n.catalogAddCategory;
+  static String get catalogAddChoice => l10n.catalogAddChoice;
+  static String get catalogAddExtrasGroup => l10n.catalogAddExtrasGroup;
+  static String get catalogAddOption => l10n.catalogAddOption;
+  static String get catalogAddProduct => l10n.catalogAddProduct;
+  static String get catalogAddVariantGroup => l10n.catalogAddVariantGroup;
+  static String get catalogAllCategories => l10n.catalogAllCategories;
+  static String get catalogAvailabilityError => l10n.catalogAvailabilityError;
+  static String get catalogAvailabilityNote => l10n.catalogAvailabilityNote;
+  static String get catalogAvailabilitySave => l10n.catalogAvailabilitySave;
+  static String get catalogAvailabilitySaved => l10n.catalogAvailabilitySaved;
+  static String get catalogAvailabilityState => l10n.catalogAvailabilityState;
+  static String get catalogAvailabilityTitle => l10n.catalogAvailabilityTitle;
+  static String get catalogAvailableOption => l10n.catalogAvailableOption;
+  static String get catalogAvailableOptionSub => l10n.catalogAvailableOptionSub;
+  static String get catalogBulkApply => l10n.catalogBulkApply;
+  static String get catalogBulkClear => l10n.catalogBulkClear;
+  static String catalogBulkDone(String n) => l10n.catalogBulkDone(n);
+  static String catalogBulkFailed(String n) => l10n.catalogBulkFailed(n);
+  static String get catalogBulkNewStatus => l10n.catalogBulkNewStatus;
+  static String get catalogBulkNote => l10n.catalogBulkNote;
+  static String get catalogBulkSelectAll => l10n.catalogBulkSelectAll;
+  static String get catalogBulkSelection => l10n.catalogBulkSelection;
+  static String get catalogBulkTitle => l10n.catalogBulkTitle;
+  static String get catalogBulkTooltip => l10n.catalogBulkTooltip;
+  static String get catalogCategoryActive => l10n.catalogCategoryActive;
+  static String get catalogCategoryActiveSub => l10n.catalogCategoryActiveSub;
+  static String get catalogCategoryCancel => l10n.catalogCategoryCancel;
+  static String get catalogCategoryDetailTitle => l10n.catalogCategoryDetailTitle;
+  static String get catalogCategoryDetails => l10n.catalogCategoryDetails;
+  static String get catalogCategoryEmpty => l10n.catalogCategoryEmpty;
+  static String get catalogCategoryInUse => l10n.catalogCategoryInUse;
+  static String get catalogCategoryName => l10n.catalogCategoryName;
+  static String get catalogCategoryProducts => l10n.catalogCategoryProducts;
+  static String get catalogCategoryRequired => l10n.catalogCategoryRequired;
+  static String get catalogCategorySearchHint => l10n.catalogCategorySearchHint;
+  static String get catalogCategorySettings => l10n.catalogCategorySettings;
+  static String get catalogCropFormat => l10n.catalogCropFormat;
+  static String get catalogCropRemove => l10n.catalogCropRemove;
+  static String get catalogCropRotate => l10n.catalogCropRotate;
+  static String get catalogCropTip1 => l10n.catalogCropTip1;
+  static String get catalogCropTip2 => l10n.catalogCropTip2;
+  static String catalogCropTip3(String name) => l10n.catalogCropTip3(name);
+  static String get catalogCropTipsTitle => l10n.catalogCropTipsTitle;
+  static String get catalogCropTitle => l10n.catalogCropTitle;
+  static String get catalogCropUse => l10n.catalogCropUse;
+  static String get catalogCropZoom => l10n.catalogCropZoom;
+  static String get catalogCurrencySuffix => l10n.catalogCurrencySuffix;
+  static String get catalogCustomerPreview => l10n.catalogCustomerPreview;
+  static String get catalogDeleteCategory => l10n.catalogDeleteCategory;
+  static String get catalogDeleteCategoryConfirm => l10n.catalogDeleteCategoryConfirm;
+  static String get catalogDeleteConfirm => l10n.catalogDeleteConfirm;
+  static String get catalogDeleteHardConfirm => l10n.catalogDeleteHardConfirm;
+  static String get catalogDeleteHardOption => l10n.catalogDeleteHardOption;
+  static String get catalogDeleteHardOptionSub => l10n.catalogDeleteHardOptionSub;
+  static String get catalogDeleteHideOption => l10n.catalogDeleteHideOption;
+  static String get catalogDeleteHideOptionSub => l10n.catalogDeleteHideOptionSub;
+  static String get catalogDeleteProduct => l10n.catalogDeleteProduct;
+  static String get catalogDeleteRecommended => l10n.catalogDeleteRecommended;
+  static String get catalogDeleteTitle => l10n.catalogDeleteTitle;
+  static String get catalogDeleteWarningBody => l10n.catalogDeleteWarningBody;
+  static String get catalogDeleteWarningTitle => l10n.catalogDeleteWarningTitle;
+  static String get catalogDeleted => l10n.catalogDeleted;
+  static String get catalogDetailAppearance => l10n.catalogDetailAppearance;
+  static String get catalogDetailAvailable => l10n.catalogDetailAvailable;
+  static String get catalogDetailInfo => l10n.catalogDetailInfo;
+  static String get catalogDetailName => l10n.catalogDetailName;
+  static String get catalogDetailNoDescription => l10n.catalogDetailNoDescription;
+  static String get catalogDetailNoOptions => l10n.catalogDetailNoOptions;
+  static String get catalogDetailPrice => l10n.catalogDetailPrice;
+  static String get catalogDetailPricing => l10n.catalogDetailPricing;
+  static String catalogDisplayOrder(String n) => l10n.catalogDisplayOrder(n);
+  static String get catalogEditCategory => l10n.catalogEditCategory;
+  static String get catalogEditGroup => l10n.catalogEditGroup;
+  static String get catalogEditProduct => l10n.catalogEditProduct;
+  static String get catalogEmptyCategories => l10n.catalogEmptyCategories;
+  static String get catalogEmptyProducts => l10n.catalogEmptyProducts;
+  static String get catalogExtrasSubtitle => l10n.catalogExtrasSubtitle;
+  static String get catalogExtrasTitle => l10n.catalogExtrasTitle;
+  static String get catalogFieldCategoryDesc => l10n.catalogFieldCategoryDesc;
+  static String get catalogFieldCategoryNameAr => l10n.catalogFieldCategoryNameAr;
+  static String get catalogFieldDescAr => l10n.catalogFieldDescAr;
+  static String get catalogFieldExtras => l10n.catalogFieldExtras;
+  static String get catalogFieldNameAr => l10n.catalogFieldNameAr;
+  static String get catalogFieldPrepTime => l10n.catalogFieldPrepTime;
+  static String get catalogFieldRequired => l10n.catalogFieldRequired;
+  static String get catalogFieldSaleUnit => l10n.catalogFieldSaleUnit;
+  static String get catalogFieldVariants => l10n.catalogFieldVariants;
+  static String get catalogFilterTooltip => l10n.catalogFilterTooltip;
+  static String get catalogFiltersApply => l10n.catalogFiltersApply;
+  static String get catalogFiltersCategories => l10n.catalogFiltersCategories;
+  static String get catalogFiltersMissingImage => l10n.catalogFiltersMissingImage;
+  static String get catalogFiltersOutOfStock => l10n.catalogFiltersOutOfStock;
+  static String get catalogFiltersPreview => l10n.catalogFiltersPreview;
+  static String get catalogFiltersQuality => l10n.catalogFiltersQuality;
+  static String get catalogFiltersReset => l10n.catalogFiltersReset;
+  static String get catalogFiltersStatus => l10n.catalogFiltersStatus;
+  static String get catalogFiltersTitle => l10n.catalogFiltersTitle;
+  static String get catalogGroupDelete => l10n.catalogGroupDelete;
+  static String get catalogGroupDeleteConfirm => l10n.catalogGroupDeleteConfirm;
+  static String get catalogGroupInvalid => l10n.catalogGroupInvalid;
+  static String get catalogGroupName => l10n.catalogGroupName;
+  static String get catalogGroupNameHint => l10n.catalogGroupNameHint;
+  static String get catalogGroupRequiredSub => l10n.catalogGroupRequiredSub;
+  static String get catalogGroupRequiredSwitch => l10n.catalogGroupRequiredSwitch;
+  static String get catalogGroupSave => l10n.catalogGroupSave;
+  static String get catalogGroupsLoadError => l10n.catalogGroupsLoadError;
+  static String get catalogHidden => l10n.catalogHidden;
+  static String get catalogImageAdd => l10n.catalogImageAdd;
+  static String get catalogImageBindPartial => l10n.catalogImageBindPartial;
+  static String get catalogImageChange => l10n.catalogImageChange;
+  static String get catalogImageChangePhoto => l10n.catalogImageChangePhoto;
+  static String get catalogImageFormatError => l10n.catalogImageFormatError;
+  static String get catalogImageFromCamera => l10n.catalogImageFromCamera;
+  static String get catalogImageFromGallery => l10n.catalogImageFromGallery;
+  static String get catalogImageHint => l10n.catalogImageHint;
+  static String get catalogImagePick => l10n.catalogImagePick;
+  static String get catalogImagePluginRestart => l10n.catalogImagePluginRestart;
+  static String get catalogImagePrimary => l10n.catalogImagePrimary;
+  static String get catalogImageRemoteUnavailable => l10n.catalogImageRemoteUnavailable;
+  static String get catalogImageRemove => l10n.catalogImageRemove;
+  static String get catalogImageTooLarge => l10n.catalogImageTooLarge;
+  static String get catalogImageTooSmall => l10n.catalogImageTooSmall;
+  static String get catalogImageUploadError => l10n.catalogImageUploadError;
+  static String get catalogInStock => l10n.catalogInStock;
+  static String get catalogInStockNow => l10n.catalogInStockNow;
+  static String get catalogLastUpdated => l10n.catalogLastUpdated;
+  static String get catalogLoadError => l10n.catalogLoadError;
+  static String get catalogMarkedOutOfStock => l10n.catalogMarkedOutOfStock;
+  static String get catalogMaxSelectionsLabel => l10n.catalogMaxSelectionsLabel;
+  static String get catalogMenuAvailability => l10n.catalogMenuAvailability;
+  static String get catalogMenuDelete => l10n.catalogMenuDelete;
+  static String get catalogMenuDuplicate => l10n.catalogMenuDuplicate;
+  static String get catalogMenuViewCategory => l10n.catalogMenuViewCategory;
+  static String get catalogNeedCategory => l10n.catalogNeedCategory;
+  static String get catalogNewGroup => l10n.catalogNewGroup;
+  static String get catalogNoCategoryResults => l10n.catalogNoCategoryResults;
+  static String get catalogNoResults => l10n.catalogNoResults;
+  static String get catalogOfflineBanner => l10n.catalogOfflineBanner;
+  static String get catalogOnlineBanner => l10n.catalogOnlineBanner;
+  static String get catalogOptionAvailable => l10n.catalogOptionAvailable;
+  static String get catalogOptionDelete => l10n.catalogOptionDelete;
+  static String get catalogOptionName => l10n.catalogOptionName;
+  static String get catalogOptionPrice => l10n.catalogOptionPrice;
+  static String catalogOptionalSummary(String max) => l10n.catalogOptionalSummary(max);
+  static String get catalogOptionsEmpty => l10n.catalogOptionsEmpty;
+  static String get catalogOutOfStock => l10n.catalogOutOfStock;
+  static String get catalogOutOfStockNow => l10n.catalogOutOfStockNow;
+  static String get catalogOutOfStockOptionSub => l10n.catalogOutOfStockOptionSub;
+  static String get catalogPreview => l10n.catalogPreview;
+  static String get catalogPreviewTitle => l10n.catalogPreviewTitle;
+  static String get catalogPreviewUnavailable => l10n.catalogPreviewUnavailable;
+  static String get catalogPriceInvalid => l10n.catalogPriceInvalid;
+  static String get catalogPriceWarning => l10n.catalogPriceWarning;
+  static String get catalogProductAvailable => l10n.catalogProductAvailable;
+  static String get catalogProductAvailableSub => l10n.catalogProductAvailableSub;
+  static String get catalogProductCategory => l10n.catalogProductCategory;
+  static String get catalogProductDescription => l10n.catalogProductDescription;
+  static String get catalogProductDetail => l10n.catalogProductDetail;
+  static String get catalogProductDetailTitle => l10n.catalogProductDetailTitle;
+  static String get catalogProductInUse => l10n.catalogProductInUse;
+  static String get catalogProductName => l10n.catalogProductName;
+  static String get catalogProductPrice => l10n.catalogProductPrice;
+  static String catalogProductsCount(String n) => l10n.catalogProductsCount(n);
+  static String get catalogReorder => l10n.catalogReorder;
+  static String get catalogReorderHint => l10n.catalogReorderHint;
+  static String get catalogReorderPartial => l10n.catalogReorderPartial;
+  static String get catalogReorderSave => l10n.catalogReorderSave;
+  static String get catalogReorderSaved => l10n.catalogReorderSaved;
+  static String get catalogReorderTitle => l10n.catalogReorderTitle;
+  static String catalogRequiredSummary(String rule) => l10n.catalogRequiredSummary(rule);
+  static String get catalogRequiredTag => l10n.catalogRequiredTag;
+  static String get catalogSaveError => l10n.catalogSaveError;
+  static String get catalogSaveFirstForOptions => l10n.catalogSaveFirstForOptions;
+  static String get catalogSaveProduct => l10n.catalogSaveProduct;
+  static String get catalogSaveProductEdits => l10n.catalogSaveProductEdits;
+  static String get catalogSaveRetryHint => l10n.catalogSaveRetryHint;
+  static String get catalogSearchHint => l10n.catalogSearchHint;
+  static String get catalogSectionAvailability => l10n.catalogSectionAvailability;
+  static String get catalogSectionConfig => l10n.catalogSectionConfig;
+  static String get catalogSectionGeneral => l10n.catalogSectionGeneral;
+  static String get catalogSectionImage => l10n.catalogSectionImage;
+  static String get catalogSectionInfo => l10n.catalogSectionInfo;
+  static String get catalogSectionMedia => l10n.catalogSectionMedia;
+  static String get catalogSectionPrice => l10n.catalogSectionPrice;
+  static String get catalogSectionPriceDetails => l10n.catalogSectionPriceDetails;
+  static String get catalogSingleChoice => l10n.catalogSingleChoice;
+  static String get catalogStaffReadOnly => l10n.catalogStaffReadOnly;
+  static String get catalogTabCategories => l10n.catalogTabCategories;
+  static String get catalogTabProducts => l10n.catalogTabProducts;
+  static String get catalogTitle => l10n.catalogTitle;
+  static String get catalogUnavailableSection => l10n.catalogUnavailableSection;
+  static String get catalogUncategorized => l10n.catalogUncategorized;
+  static String get catalogVariantsInfo => l10n.catalogVariantsInfo;
+  static String get catalogVariantsSubtitle => l10n.catalogVariantsSubtitle;
+  static String get catalogVariantsTitle => l10n.catalogVariantsTitle;
+  static String get catalogVisibilityError => l10n.catalogVisibilityError;
+  static String get catalogVisible => l10n.catalogVisible;
+  static String get checklistTitle => l10n.checklistTitle;
+  static String get continueLabel => l10n.continueLabel;
+  static String get contractFieldUnavailable => l10n.contractFieldUnavailable;
+  static String get createMerchant => l10n.createMerchant;
+  static String get deliveryArrived => l10n.deliveryArrived;
+  static String get deliveryAssigned => l10n.deliveryAssigned;
+  static String get deliveryAtPickup => l10n.deliveryAtPickup;
+  static String get deliveryCancelled => l10n.deliveryCancelled;
+  static String get deliveryDelivered => l10n.deliveryDelivered;
+  static String get deliveryFailed => l10n.deliveryFailed;
+  static String get deliveryImpactDriverWaiting => l10n.deliveryImpactDriverWaiting;
+  static String deliveryImpactLatestRevision(String reason) => l10n.deliveryImpactLatestRevision(reason);
+  static String get deliveryImpactMayDelayDriverAssignment => l10n.deliveryImpactMayDelayDriverAssignment;
+  static String get deliveryImpactMayDelayPickup => l10n.deliveryImpactMayDelayPickup;
+  static String get deliveryImpactTimingUnavailable => l10n.deliveryImpactTimingUnavailable;
+  static String get deliveryImpactTitle => l10n.deliveryImpactTitle;
+  static String get deliveryInTransit => l10n.deliveryInTransit;
+  static String get deliveryPickedUp => l10n.deliveryPickedUp;
+  static String get deliverySearching => l10n.deliverySearching;
+  static String get deliveryToPickup => l10n.deliveryToPickup;
+  static String get deliveryUnknown => l10n.deliveryUnknown;
+  static String get dossierAttemptLabel => l10n.dossierAttemptLabel;
+  static String get dossierConsentLabel => l10n.dossierConsentLabel;
+  static String dossierConsentVersions(String terms, String declaration) => l10n.dossierConsentVersions(terms, declaration);
+  static String get dossierReviewedAtLabel => l10n.dossierReviewedAtLabel;
+  static String get dossierSubmittedAtLabel => l10n.dossierSubmittedAtLabel;
+  static String get duplicateBackToCatalog => l10n.duplicateBackToCatalog;
+  static String get duplicateCancel => l10n.duplicateCancel;
+  static String get duplicateClearName => l10n.duplicateClearName;
+  static String get duplicateConflict => l10n.duplicateConflict;
+  static String get duplicateCopied => l10n.duplicateCopied;
+  static String get duplicateCreate => l10n.duplicateCreate;
+  static String get duplicateCreated => l10n.duplicateCreated;
+  static String get duplicateCreating => l10n.duplicateCreating;
+  static String duplicateDefaultName(String name) => l10n.duplicateDefaultName(name);
+  static String get duplicateError => l10n.duplicateError;
+  static String get duplicateForbiddenTitle => l10n.duplicateForbiddenTitle;
+  static String get duplicateImage => l10n.duplicateImage;
+  static String get duplicateNamePlaceholder => l10n.duplicateNamePlaceholder;
+  static String get duplicateNameRequired => l10n.duplicateNameRequired;
+  static String get duplicateNameTooLong => l10n.duplicateNameTooLong;
+  static String get duplicateNetworkError => l10n.duplicateNetworkError;
+  static String get duplicateNewName => l10n.duplicateNewName;
+  static String get duplicateNewNameHint => l10n.duplicateNewNameHint;
+  static String get duplicateNoImage => l10n.duplicateNoImage;
+  static String get duplicateNotCopiedLead => l10n.duplicateNotCopiedLead;
+  static String get duplicateNotCopiedStrong => l10n.duplicateNotCopiedStrong;
+  static String get duplicateNotCopiedTail => l10n.duplicateNotCopiedTail;
+  static String get duplicateNotFound => l10n.duplicateNotFound;
+  static String get duplicateOptions => l10n.duplicateOptions;
+  static String duplicatePrice(String price) => l10n.duplicatePrice(price);
+  static String get duplicateReplayed => l10n.duplicateReplayed;
+  static String get duplicateSaleUnits => l10n.duplicateSaleUnits;
+  static String get duplicateSource => l10n.duplicateSource;
+  static String get duplicateTitle => l10n.duplicateTitle;
+  static String get duplicateUnavailableInfo => l10n.duplicateUnavailableInfo;
+  static String get editNumber => l10n.editNumber;
+  static String get eventAccepted => l10n.eventAccepted;
+  static String get eventAcceptedCaption => l10n.eventAcceptedCaption;
+  static String get eventCancelled => l10n.eventCancelled;
+  static String get eventCompleted => l10n.eventCompleted;
+  static String get eventCompletedCaption => l10n.eventCompletedCaption;
+  static String get eventCreated => l10n.eventCreated;
+  static String get eventCreatedCaption => l10n.eventCreatedCaption;
+  static String get eventPrepStarted => l10n.eventPrepStarted;
+  static String get eventPrepStartedCaption => l10n.eventPrepStartedCaption;
+  static String get eventReady => l10n.eventReady;
+  static String get eventReadyCaption => l10n.eventReadyCaption;
+  static String get eventRejected => l10n.eventRejected;
+  static String get eventStatusUpdate => l10n.eventStatusUpdate;
+  static String get helpUnavailable => l10n.helpUnavailable;
+  static String get homeActiveOrdersEmpty => l10n.homeActiveOrdersEmpty;
+  static String get homeActiveOrdersTitle => l10n.homeActiveOrdersTitle;
+  static String get homeCountCourier => l10n.homeCountCourier;
+  static String get homeCountCourierUnavailable => l10n.homeCountCourierUnavailable;
+  static String get homeCountIncoming => l10n.homeCountIncoming;
+  static String get homeCountPreparing => l10n.homeCountPreparing;
+  static String get homeCountReady => l10n.homeCountReady;
+  static String get homeKpiCurrency => l10n.homeKpiCurrency;
+  static String get homeKpiOrders => l10n.homeKpiOrders;
+  static String get homeKpiOrdersUnit => l10n.homeKpiOrdersUnit;
+  static String get homeKpiSales => l10n.homeKpiSales;
+  static String get homeKpiUnavailable => l10n.homeKpiUnavailable;
+  static String get homeNoMetrics => l10n.homeNoMetrics;
+  static String get homeOpenOrder => l10n.homeOpenOrder;
+  static String get homeOrderCountsTitle => l10n.homeOrderCountsTitle;
+  static String get homeTitle => l10n.homeTitle;
+  static String get homeTreatOrder => l10n.homeTreatOrder;
+  static String get homeVerificationBody => l10n.homeVerificationBody;
+  static String get homeVerificationTitle => l10n.homeVerificationTitle;
+  static String get hoursExceptionsAdd => l10n.hoursExceptionsAdd;
+  static String get hoursExceptionsBanner => l10n.hoursExceptionsBanner;
+  static String get hoursExceptionsCancel => l10n.hoursExceptionsCancel;
+  static String get hoursExceptionsClosed => l10n.hoursExceptionsClosed;
+  static String get hoursExceptionsConflict => l10n.hoursExceptionsConflict;
+  static String get hoursExceptionsDate => l10n.hoursExceptionsDate;
+  static String get hoursExceptionsDateHint => l10n.hoursExceptionsDateHint;
+  static String get hoursExceptionsDateRequired => l10n.hoursExceptionsDateRequired;
+  static String get hoursExceptionsDateTaken => l10n.hoursExceptionsDateTaken;
+  static String hoursExceptionsDeleteBody(String date) => l10n.hoursExceptionsDeleteBody(date);
+  static String get hoursExceptionsDeleteConfirm => l10n.hoursExceptionsDeleteConfirm;
+  static String get hoursExceptionsDeleteError => l10n.hoursExceptionsDeleteError;
+  static String get hoursExceptionsDeleteTitle => l10n.hoursExceptionsDeleteTitle;
+  static String get hoursExceptionsDeleted => l10n.hoursExceptionsDeleted;
+  static String get hoursExceptionsEdit => l10n.hoursExceptionsEdit;
+  static String get hoursExceptionsEmpty => l10n.hoursExceptionsEmpty;
+  static String get hoursExceptionsHelpBody => l10n.hoursExceptionsHelpBody;
+  static String get hoursExceptionsHelpOk => l10n.hoursExceptionsHelpOk;
+  static String get hoursExceptionsHelpTitle => l10n.hoursExceptionsHelpTitle;
+  static String get hoursExceptionsHours => l10n.hoursExceptionsHours;
+  static String get hoursExceptionsIntervalsRequired => l10n.hoursExceptionsIntervalsRequired;
+  static String get hoursExceptionsInvalid => l10n.hoursExceptionsInvalid;
+  static String get hoursExceptionsLabel => l10n.hoursExceptionsLabel;
+  static String get hoursExceptionsLabelHint => l10n.hoursExceptionsLabelHint;
+  static String get hoursExceptionsLabelRequired => l10n.hoursExceptionsLabelRequired;
+  static String get hoursExceptionsLoadError => l10n.hoursExceptionsLoadError;
+  static String get hoursExceptionsMessage => l10n.hoursExceptionsMessage;
+  static String get hoursExceptionsMessageHint => l10n.hoursExceptionsMessageHint;
+  static String get hoursExceptionsNavSub => l10n.hoursExceptionsNavSub;
+  static String get hoursExceptionsOpen => l10n.hoursExceptionsOpen;
+  static String get hoursExceptionsSameDay => l10n.hoursExceptionsSameDay;
+  static String get hoursExceptionsSave => l10n.hoursExceptionsSave;
+  static String get hoursExceptionsSaveError => l10n.hoursExceptionsSaveError;
+  static String get hoursExceptionsSaved => l10n.hoursExceptionsSaved;
+  static String get hoursExceptionsStaffReadOnly => l10n.hoursExceptionsStaffReadOnly;
+  static String get hoursExceptionsStatus => l10n.hoursExceptionsStatus;
+  static String get hoursExceptionsTitle => l10n.hoursExceptionsTitle;
+  static String get hoursExceptionsTo => l10n.hoursExceptionsTo;
+  static String hoursExceptionsToday(String label) => l10n.hoursExceptionsToday(label);
+  static String get hoursExceptionsTooMany => l10n.hoursExceptionsTooMany;
+  static String get hoursExceptionsUpcoming => l10n.hoursExceptionsUpcoming;
+  static String get hoursExceptionsWeeklyRequired => l10n.hoursExceptionsWeeklyRequired;
+  static String get issuesApplicationTitle => l10n.issuesApplicationTitle;
+  static String get issuesDocumentTitle => l10n.issuesDocumentTitle;
+  static String get issuesFixHint => l10n.issuesFixHint;
+  static String issuesRemaining(String count) {
+    final n = int.tryParse(count) ?? 0;
+    if (isArabic) {
+      return n == 1
+          ? 'نقطة واحدة متبقية للتصحيح'
+          : '$count نقاط متبقية للتصحيح';
+    }
+    return n == 1
+        ? '1 point restant à corriger'
+        : '$count points restants à corriger';
+  }
+  static String get issuesReplaceDocument => l10n.issuesReplaceDocument;
+  static String get issuesResolved => l10n.issuesResolved;
+  static String get issuesTitle => l10n.issuesTitle;
+  static String get languageApplied => l10n.languageApplied;
+  static String get languageApply => l10n.languageApply;
+  static String get languageBilingualTitle => l10n.languageBilingualTitle;
+  static String get languageOptionArabic => l10n.languageOptionArabic;
+  static String get languageOptionFrench => l10n.languageOptionFrench;
+  static String get languagePreviewNote => l10n.languagePreviewNote;
+  static String get languageSaveFailed => l10n.languageSaveFailed;
+  static String get languageSettingsSubtitle => l10n.languageSettingsSubtitle;
+  static String get languageSettingsTitle => l10n.languageSettingsTitle;
+  static String get legalConsentHint => l10n.legalConsentHint;
+  static String get legalConsentRequired => l10n.legalConsentRequired;
+  static String get legalContentLink => l10n.legalContentLink;
+  static String get legalDeclarationLabel => l10n.legalDeclarationLabel;
+  static String get legalIncomplete => l10n.legalIncomplete;
+  static String get legalLoadFailed => l10n.legalLoadFailed;
+  static String get legalLoading => l10n.legalLoading;
+  static String get legalRetry => l10n.legalRetry;
+  static String get legalSectionBody => l10n.legalSectionBody;
+  static String get legalSectionTitle => l10n.legalSectionTitle;
+  static String get legalTermsLabel => l10n.legalTermsLabel;
+  static String get legalVersionOutdated => l10n.legalVersionOutdated;
+  static String legalVersionTag(String version) => l10n.legalVersionTag(version);
+  static String get loading => l10n.loading;
+  static String get logout => l10n.logout;
+  static String get logoutActiveOrders => l10n.logoutActiveOrders;
+  static String get logoutCancel => l10n.logoutCancel;
+  static String get logoutConfirmAction => l10n.logoutConfirmAction;
+  static String get logoutConfirmBody => l10n.logoutConfirmBody;
+  static String get logoutConfirmTitle => l10n.logoutConfirmTitle;
+  static String get logoutConnected => l10n.logoutConnected;
+  static String get logoutDataPreserved => l10n.logoutDataPreserved;
+  static String get logoutHandoverAdvice => l10n.logoutHandoverAdvice;
+  static String get logoutStoreClosed => l10n.logoutStoreClosed;
+  static String get logoutStoreOpen => l10n.logoutStoreOpen;
+  static String get logoutStoreState => l10n.logoutStoreState;
+  static String get logoutWarningTitle => l10n.logoutWarningTitle;
+  static String get markReadyConfirm => l10n.markReadyConfirm;
+  static String get markReadyPackingHint => l10n.markReadyPackingHint;
+  static String get markReadyPackingTitle => l10n.markReadyPackingTitle;
+  static String get merchantNameHint => l10n.merchantNameHint;
+  static String get merchantNameLabel => l10n.merchantNameLabel;
+  static String get navReveal => l10n.navReveal;
+  static String get needBranchBody => l10n.needBranchBody;
+  static String get needBranchTitle => l10n.needBranchTitle;
+  static String get needHelp => l10n.needHelp;
+  static String get networkError => l10n.networkError;
+  static String get noMembershipBody => l10n.noMembershipBody;
+  static String get noMembershipInvitationsCta => l10n.noMembershipInvitationsCta;
+  static String get noMembershipTitle => l10n.noMembershipTitle;
+  static String get notifPushStatusDenied => l10n.notifPushStatusDenied;
+  static String get notifPushStatusDisabled => l10n.notifPushStatusDisabled;
+  static String get notifPushStatusFailed => l10n.notifPushStatusFailed;
+  static String get notifPushStatusPending => l10n.notifPushStatusPending;
+  static String get notifPushStatusRegistered => l10n.notifPushStatusRegistered;
+  static String get notifPushStatusTokenUnavailable => l10n.notifPushStatusTokenUnavailable;
+  static String get notifSettingsCriticalWarning => l10n.notifSettingsCriticalWarning;
+  static String get notifSettingsForeground => l10n.notifSettingsForeground;
+  static String get notifSettingsInAppSection => l10n.notifSettingsInAppSection;
+  static String get notifSettingsLockScreenNote => l10n.notifSettingsLockScreenNote;
+  static String get notifSettingsNativePush => l10n.notifSettingsNativePush;
+  static String get notifSettingsNativePushSub => l10n.notifSettingsNativePushSub;
+  static String get notifSettingsOsDenied => l10n.notifSettingsOsDenied;
+  static String get notifSettingsOsDeniedPush => l10n.notifSettingsOsDeniedPush;
+  static String get notifSettingsOsEnabled => l10n.notifSettingsOsEnabled;
+  static String get notifSettingsOsEnabledPush => l10n.notifSettingsOsEnabledPush;
+  static String get notifSettingsOsNotAsked => l10n.notifSettingsOsNotAsked;
+  static String get notifSettingsOsOpen => l10n.notifSettingsOsOpen;
+  static String get notifSettingsPushBlocked => l10n.notifSettingsPushBlocked;
+  static String get notifSettingsPushNotConfigured => l10n.notifSettingsPushNotConfigured;
+  static String get notifSettingsPushSection => l10n.notifSettingsPushSection;
+  static String get notifSettingsPushUnavailable => l10n.notifSettingsPushUnavailable;
+  static String get notifSettingsSave => l10n.notifSettingsSave;
+  static String get notifSettingsSaved => l10n.notifSettingsSaved;
+  static String get notifSettingsScreenTitle => l10n.notifSettingsScreenTitle;
+  static String get notifSettingsSound => l10n.notifSettingsSound;
+  static String get notifSettingsSoundSection => l10n.notifSettingsSoundSection;
+  static String get notifSettingsSwitchesNote => l10n.notifSettingsSwitchesNote;
+  static String get notifSettingsTitle => l10n.notifSettingsTitle;
+  static String get notifSettingsVibration => l10n.notifSettingsVibration;
+  static String get notifSettingsVibrationSection => l10n.notifSettingsVibrationSection;
+  static String get notificationsEmpty => l10n.notificationsEmpty;
+  static String get notificationsFilterAll => l10n.notificationsFilterAll;
+  static String get notificationsFilterOrders => l10n.notificationsFilterOrders;
+  static String get notificationsJustNow => l10n.notificationsJustNow;
+  static String get notificationsLoadError => l10n.notificationsLoadError;
+  static String get notificationsMarkAllRead => l10n.notificationsMarkAllRead;
+  static String get notificationsOpenDetails => l10n.notificationsOpenDetails;
+  static String get notificationsOrderStale => l10n.notificationsOrderStale;
+  static String get notificationsTitle => l10n.notificationsTitle;
+  static String get notificationsToday => l10n.notificationsToday;
+  static String get notificationsYesterday => l10n.notificationsYesterday;
+  static String get onboardingHaveAccount => l10n.onboardingHaveAccount;
+  static String get onboardingNext => l10n.onboardingNext;
+  static String get onboardingPage1Body => l10n.onboardingPage1Body;
+  static String get onboardingPage1Title => l10n.onboardingPage1Title;
+  static String get onboardingPage2Body => l10n.onboardingPage2Body;
+  static String get onboardingPage2Title => l10n.onboardingPage2Title;
+  static String get onboardingPage3Body => l10n.onboardingPage3Body;
+  static String get onboardingPage3Title => l10n.onboardingPage3Title;
+  static String get onboardingPageSemantics => l10n.onboardingPageSemantics;
+  static String get onboardingSaveFailed => l10n.onboardingSaveFailed;
+  static String get onboardingSkip => l10n.onboardingSkip;
+  static String get onboardingStart => l10n.onboardingStart;
+  static String get openingHoursAddRange => l10n.openingHoursAddRange;
+  static String get openingHoursAllDay => l10n.openingHoursAllDay;
+  static String get openingHoursApply => l10n.openingHoursApply;
+  static String get openingHoursClosed => l10n.openingHoursClosed;
+  static String get openingHoursClosedNow => l10n.openingHoursClosedNow;
+  static String get openingHoursCloses => l10n.openingHoursCloses;
+  static String get openingHoursConflict => l10n.openingHoursConflict;
+  static String get openingHoursDayClosedHint => l10n.openingHoursDayClosedHint;
+  static String get openingHoursEditorHint => l10n.openingHoursEditorHint;
+  static String get openingHoursEmpty => l10n.openingHoursEmpty;
+  static String get openingHoursInfo => l10n.openingHoursInfo;
+  static String get openingHoursInvalid => l10n.openingHoursInvalid;
+  static String get openingHoursIssueOverlap => l10n.openingHoursIssueOverlap;
+  static String get openingHoursIssueTooMany => l10n.openingHoursIssueTooMany;
+  static String get openingHoursIssueZero => l10n.openingHoursIssueZero;
+  static String get openingHoursLoadError => l10n.openingHoursLoadError;
+  static String get openingHoursNextDay => l10n.openingHoursNextDay;
+  static String get openingHoursNotConfigured => l10n.openingHoursNotConfigured;
+  static String get openingHoursOpenNow => l10n.openingHoursOpenNow;
+  static String get openingHoursOpens => l10n.openingHoursOpens;
+  static String get openingHoursRemoveRange => l10n.openingHoursRemoveRange;
+  static String get openingHoursSave => l10n.openingHoursSave;
+  static String get openingHoursSaveError => l10n.openingHoursSaveError;
+  static String get openingHoursSaved => l10n.openingHoursSaved;
+  static String get openingHoursStaffReadOnly => l10n.openingHoursStaffReadOnly;
+  static String get openingHoursTitle => l10n.openingHoursTitle;
+  static String get openingHoursUsual => l10n.openingHoursUsual;
+  static String get operationalActive => l10n.operationalActive;
+  static String get operationalInactive => l10n.operationalInactive;
+  static String get operationalSuspended => l10n.operationalSuspended;
+  static String get orderAccept => l10n.orderAccept;
+  static String get orderCancelledAck => l10n.orderCancelledAck;
+  static String get orderCancelledByCustomer => l10n.orderCancelledByCustomer;
+  static String get orderCancelledHeroBody => l10n.orderCancelledHeroBody;
+  static String get orderChoosePrepTime => l10n.orderChoosePrepTime;
+  static String get orderCurrentStatus => l10n.orderCurrentStatus;
+  static String get orderCustomerLabel => l10n.orderCustomerLabel;
+  static String get orderDeliveryAddress => l10n.orderDeliveryAddress;
+  static String get orderDeliveryStatusTitle => l10n.orderDeliveryStatusTitle;
+  static String get orderDetailCancelledTitle => l10n.orderDetailCancelledTitle;
+  static String get orderDetailLoadError => l10n.orderDetailLoadError;
+  static String get orderDetailTitle => l10n.orderDetailTitle;
+  static String get orderDetailsTitle => l10n.orderDetailsTitle;
+  static String get orderDriverAssigned => l10n.orderDriverAssigned;
+  static String get orderDriverCall => l10n.orderDriverCall;
+  static String get orderDriverCardTitle => l10n.orderDriverCardTitle;
+  static String get orderDriverContactUnavailable => l10n.orderDriverContactUnavailable;
+  static String get orderDriverEtaLabel => l10n.orderDriverEtaLabel;
+  static String get orderDriverEtaUnavailable => l10n.orderDriverEtaUnavailable;
+  static String get orderDriverStatusLabel => l10n.orderDriverStatusLabel;
+  static String get orderFinanceCommissionUnavailable => l10n.orderFinanceCommissionUnavailable;
+  static String get orderFinanceDeliveryFeeDisclaimer => l10n.orderFinanceDeliveryFeeDisclaimer;
+  static String get orderFinanceDeliveryFeeNote => l10n.orderFinanceDeliveryFeeNote;
+  static String get orderFinanceDiscount => l10n.orderFinanceDiscount;
+  static String get orderFinanceGms => l10n.orderFinanceGms;
+  static String get orderFinanceNet => l10n.orderFinanceNet;
+  static String get orderFinanceNetCancelledNote => l10n.orderFinanceNetCancelledNote;
+  static String get orderFinanceRestricted => l10n.orderFinanceRestricted;
+  static String get orderFinanceTitle => l10n.orderFinanceTitle;
+  static String get orderFulfillmentAccepted => l10n.orderFulfillmentAccepted;
+  static String get orderFulfillmentIncoming => l10n.orderFulfillmentIncoming;
+  static String get orderFulfillmentPreparing => l10n.orderFulfillmentPreparing;
+  static String get orderFulfillmentReady => l10n.orderFulfillmentReady;
+  static String get orderHandoffUnsupported => l10n.orderHandoffUnsupported;
+  static String get orderHistoryEarlier => l10n.orderHistoryEarlier;
+  static String get orderHistoryTitle => l10n.orderHistoryTitle;
+  static String get orderHistoryToday => l10n.orderHistoryToday;
+  static String get orderHistoryYesterday => l10n.orderHistoryYesterday;
+  static String get orderIncomingBanner => l10n.orderIncomingBanner;
+  static String get orderItemsTitle => l10n.orderItemsTitle;
+  static String get orderItemsToPrepareTitle => l10n.orderItemsToPrepareTitle;
+  static String get orderListAcceptNow => l10n.orderListAcceptNow;
+  static String get orderListLate => l10n.orderListLate;
+  static String get orderListMerchandiseLabel => l10n.orderListMerchandiseLabel;
+  static String get orderMarkReady => l10n.orderMarkReady;
+  static String get orderPaymentCod => l10n.orderPaymentCod;
+  static String get orderPaymentElectronic => l10n.orderPaymentElectronic;
+  static String get orderPaymentLabel => l10n.orderPaymentLabel;
+  static String orderPaymentMethod(String method) => l10n.orderPaymentMethod(method);
+  static String get orderQuickAccepted => l10n.orderQuickAccepted;
+  static String get orderQuickAlreadyHandled => l10n.orderQuickAlreadyHandled;
+  static String get orderQuickCheckFailed => l10n.orderQuickCheckFailed;
+  static String get orderQuickNotAllowed => l10n.orderQuickNotAllowed;
+  static String get orderQuickRejected => l10n.orderQuickRejected;
+  static String get orderReadyBanner => l10n.orderReadyBanner;
+  static String get orderReadyWaitingDelivery => l10n.orderReadyWaitingDelivery;
+  static String get orderReasonLabel => l10n.orderReasonLabel;
+  static String get orderReceivedAtLabel => l10n.orderReceivedAtLabel;
+  static String get orderReferenceCopied => l10n.orderReferenceCopied;
+  static String get orderReferenceCopy => l10n.orderReferenceCopy;
+  static String get orderReferenceLabel => l10n.orderReferenceLabel;
+  static String get orderReferenceShowFull => l10n.orderReferenceShowFull;
+  static String get orderReject => l10n.orderReject;
+  static String get orderRejectConfirm => l10n.orderRejectConfirm;
+  static String get orderRejectHint => l10n.orderRejectHint;
+  static String get orderRejectReasonLabel => l10n.orderRejectReasonLabel;
+  static String get orderRejectTitle => l10n.orderRejectTitle;
+  static String get orderRejectedByMerchant => l10n.orderRejectedByMerchant;
+  static String get orderSegmentActive => l10n.orderSegmentActive;
+  static String get orderSegmentHistory => l10n.orderSegmentHistory;
+  static String get orderStartPreparation => l10n.orderStartPreparation;
+  static String get orderStatusActive => l10n.orderStatusActive;
+  static String get orderStatusCancelled => l10n.orderStatusCancelled;
+  static String get orderStatusCompleted => l10n.orderStatusCompleted;
+  static String get orderStatusConfirmed => l10n.orderStatusConfirmed;
+  static String get orderStatusCreated => l10n.orderStatusCreated;
+  static String get orderStatusFailed => l10n.orderStatusFailed;
+  static String get orderSummaryTitle => l10n.orderSummaryTitle;
+  static String get orderViewHistory => l10n.orderViewHistory;
+  static String get ordersEmpty => l10n.ordersEmpty;
+  static String get ordersEmptyAccepted => l10n.ordersEmptyAccepted;
+  static String get ordersEmptyCancelled => l10n.ordersEmptyCancelled;
+  static String get ordersEmptyCompleted => l10n.ordersEmptyCompleted;
+  static String get ordersEmptyFailed => l10n.ordersEmptyFailed;
+  static String get ordersEmptyIncoming => l10n.ordersEmptyIncoming;
+  static String get ordersEmptyPreparing => l10n.ordersEmptyPreparing;
+  static String get ordersEmptyReady => l10n.ordersEmptyReady;
+  static String get ordersLoadError => l10n.ordersLoadError;
+  static String get otpCooldownHint => l10n.otpCooldownHint;
+  static String get otpSubtitle => l10n.otpSubtitle;
+  static String get otpTitle => l10n.otpTitle;
+  static String get permissionDenied => l10n.permissionDenied;
+  static String get phoneHint => l10n.phoneHint;
+  static String get phoneInvalid => l10n.phoneInvalid;
+  static String get phoneLabel => l10n.phoneLabel;
+  static String get phonePrefix => l10n.phonePrefix;
+  static String get phoneSmsNote => l10n.phoneSmsNote;
+  static String get phoneSubtitle => l10n.phoneSubtitle;
+  static String get phoneTitle => l10n.phoneTitle;
+  static String get pickupHandoffConfirmed => l10n.pickupHandoffConfirmed;
+  static String get pickupHandoffInstruction1 => l10n.pickupHandoffInstruction1;
+  static String get pickupHandoffInstruction2 => l10n.pickupHandoffInstruction2;
+  static String get pickupHandoffLoadError => l10n.pickupHandoffLoadError;
+  static String get pickupHandoffRegenerate => l10n.pickupHandoffRegenerate;
+  static String get pickupHandoffRetry => l10n.pickupHandoffRetry;
+  static String get pickupHandoffTitle => l10n.pickupHandoffTitle;
+  static String get pickupHandoffWaiting => l10n.pickupHandoffWaiting;
+  static String get prepAcceptTitle => l10n.prepAcceptTitle;
+  static String get prepAddTime => l10n.prepAddTime;
+  static String get prepBranchLabel => l10n.prepBranchLabel;
+  static String prepClockOnDay(String day, String time) => l10n.prepClockOnDay(day, time);
+  static String get prepConfirmAccept => l10n.prepConfirmAccept;
+  static String get prepCurrentReady => l10n.prepCurrentReady;
+  static String get prepCurrentShort => l10n.prepCurrentShort;
+  static String get prepCustomEntry => l10n.prepCustomEntry;
+  static String prepCustomRange(String min, String max) => l10n.prepCustomRange(min, max);
+  static String get prepCustomTime => l10n.prepCustomTime;
+  static String get prepEstimatedTitle => l10n.prepEstimatedTitle;
+  static String get prepInProgress => l10n.prepInProgress;
+  static String prepItemCount(String n) {
+    final count = int.tryParse(n) ?? 0;
+    if (isArabic) {
+      return count <= 1 ? 'صنف واحد' : '$n أصناف';
+    }
+    return count <= 1 ? '1 article' : '$n articles';
+  }
+  static String get prepLateHint => l10n.prepLateHint;
+  static String get prepMinutesCaption => l10n.prepMinutesCaption;
+  static String get prepNewShort => l10n.prepNewShort;
+  static String prepOnDay(String day) => l10n.prepOnDay(day);
+  static String prepOriginalReady(String time) => l10n.prepOriginalReady(time);
+  static String prepOriginalReadyLabel(String time) => l10n.prepOriginalReadyLabel(time);
+  static String get prepReasonBusy => l10n.prepReasonBusy;
+  static String get prepReasonFieldLabel => l10n.prepReasonFieldLabel;
+  static String get prepReasonHint => l10n.prepReasonHint;
+  static String get prepReasonLongPrep => l10n.prepReasonLongPrep;
+  static String get prepReasonMissingIngredient => l10n.prepReasonMissingIngredient;
+  static String get prepReasonOptional => l10n.prepReasonOptional;
+  static String get prepReasonOther => l10n.prepReasonOther;
+  static String get prepReasonShortcutsHint => l10n.prepReasonShortcutsHint;
+  static String get prepRemainingTitle => l10n.prepRemainingTitle;
+  static String get prepSecondsCaption => l10n.prepSecondsCaption;
+  static String get prepUpdateAction => l10n.prepUpdateAction;
+  static String get prepUpdateConfirm => l10n.prepUpdateConfirm;
+  static String get prepUpdateTitle => l10n.prepUpdateTitle;
+  static String get profileBranch => l10n.profileBranch;
+  static String get profileBranchStatus => l10n.profileBranchStatus;
+  static String get profileInfoReadonly => l10n.profileInfoReadonly;
+  static String get profileMerchant => l10n.profileMerchant;
+  static String get profileRole => l10n.profileRole;
+  static String get profileRoleManager => l10n.profileRoleManager;
+  static String get profileRoleOwner => l10n.profileRoleOwner;
+  static String get profileRoleStaff => l10n.profileRoleStaff;
+  static String get profileSectionAccount => l10n.profileSectionAccount;
+  static String get profileSectionOps => l10n.profileSectionOps;
+  static String get profileSectionPrefs => l10n.profileSectionPrefs;
+  static String get profileSectionStore => l10n.profileSectionStore;
+  static String get profileSectionSupport => l10n.profileSectionSupport;
+  static String get profileSettingsTitle => l10n.profileSettingsTitle;
+  static String get profileUnavailableItem => l10n.profileUnavailableItem;
+  static String get pushOrderInaccessible => l10n.pushOrderInaccessible;
+  static String get refresh => l10n.refresh;
+  static String get refreshStatus => l10n.refreshStatus;
+  static String get regAccountContinue => l10n.regAccountContinue;
+  static String get regAccountTitle => l10n.regAccountTitle;
+  static String get regActivityBody => l10n.regActivityBody;
+  static String get regActivityTitle => l10n.regActivityTitle;
+  static String get regAddressExactLabel => l10n.regAddressExactLabel;
+  static String get regAddressGuidance => l10n.regAddressGuidance;
+  static String get regAddressSection => l10n.regAddressSection;
+  static String get regApprovedNext => l10n.regApprovedNext;
+  static String get regBranchIncomplete => l10n.regBranchIncomplete;
+  static String get regBranchNameFrLabel => l10n.regBranchNameFrLabel;
+  static String get regBranchPhoneHint => l10n.regBranchPhoneHint;
+  static String get regBranchPhoneLabel => l10n.regBranchPhoneLabel;
+  static String get regCategoryReadonly => l10n.regCategoryReadonly;
+  static String get regCategorySection => l10n.regCategorySection;
+  static String get regChooseOnMap => l10n.regChooseOnMap;
+  static String get regCommerceContext => l10n.regCommerceContext;
+  static String get regConsentUnsupported => l10n.regConsentUnsupported;
+  static String get regContactSection => l10n.regContactSection;
+  static String get regContactTitle => l10n.regContactTitle;
+  static String get regContinue => l10n.regContinue;
+  static String get regCoordsConfirmHint => l10n.regCoordsConfirmHint;
+  static String get regCoordsInvalid => l10n.regCoordsInvalid;
+  static String get regCorrectionActionRequired => l10n.regCorrectionActionRequired;
+  static String get regCorrectionDetails => l10n.regCorrectionDetails;
+  static String get regCorrectionSubmit => l10n.regCorrectionSubmit;
+  static String get regCorrectionTitle => l10n.regCorrectionTitle;
+  static String get regDocsAppBar => l10n.regDocsAppBar;
+  static String get regDocsBody => l10n.regDocsBody;
+  static String get regDocsContinue => l10n.regDocsContinue;
+  static String get regDocsContinueFinal => l10n.regDocsContinueFinal;
+  static String get regDocsFormats => l10n.regDocsFormats;
+  static String get regDocsPrivacy => l10n.regDocsPrivacy;
+  static String get regDocsRequired => l10n.regDocsRequired;
+  static String get regDocsTipFlash => l10n.regDocsTipFlash;
+  static String get regDocsTipFrame => l10n.regDocsTipFrame;
+  static String get regDocsTipLight => l10n.regDocsTipLight;
+  static String get regDocsTipsTitle => l10n.regDocsTipsTitle;
+  static String get regDocsTitle => l10n.regDocsTitle;
+  static String get regEdit => l10n.regEdit;
+  static String get regEmailUnsupported => l10n.regEmailUnsupported;
+  static String get regEstablishmentBody => l10n.regEstablishmentBody;
+  static String get regEstablishmentTitle => l10n.regEstablishmentTitle;
+  static String get regFileTooLarge => l10n.regFileTooLarge;
+  static String get regFileTypeUnsupported => l10n.regFileTypeUnsupported;
+  static String get regIdentitySection => l10n.regIdentitySection;
+  static String get regLegalIdUnsupported => l10n.regLegalIdUnsupported;
+  static String get regLocationConfirm => l10n.regLocationConfirm;
+  static String get regLocationConfirmed => l10n.regLocationConfirmed;
+  static String get regLocationDenied => l10n.regLocationDenied;
+  static String get regLocationDeniedForever => l10n.regLocationDeniedForever;
+  static String get regLocationEdit => l10n.regLocationEdit;
+  static String get regLocationGpsSuggestion => l10n.regLocationGpsSuggestion;
+  static String get regLocationMoveHint => l10n.regLocationMoveHint;
+  static String get regLocationPickerTitle => l10n.regLocationPickerTitle;
+  static String get regLocationRequired => l10n.regLocationRequired;
+  static String get regLocationServicesDisabled => l10n.regLocationServicesDisabled;
+  static String get regLocationUnavailable => l10n.regLocationUnavailable;
+  static String get regLocationUseGps => l10n.regLocationUseGps;
+  static String get regMissingSteps => l10n.regMissingSteps;
+  static String get regOperator => l10n.regOperator;
+  static String get regOperatorHint => l10n.regOperatorHint;
+  static String get regOperatorOpenInvitations => l10n.regOperatorOpenInvitations;
+  static String get regOperatorUnsupported => l10n.regOperatorUnsupported;
+  static String get regOwner => l10n.regOwner;
+  static String get regOwnerHint => l10n.regOwnerHint;
+  static String get regPickDocument => l10n.regPickDocument;
+  static String get regPickerUnavailable => l10n.regPickerUnavailable;
+  static String get regPickupPlace => l10n.regPickupPlace;
+  static String get regPreviewLabel => l10n.regPreviewLabel;
+  static String get regRejectionNoReason => l10n.regRejectionNoReason;
+  static String get regReplaceDocument => l10n.regReplaceDocument;
+  static String get regReviewBody => l10n.regReviewBody;
+  static String get regReviewBranchTitle => l10n.regReviewBranchTitle;
+  static String get regReviewDocsTitle => l10n.regReviewDocsTitle;
+  static String get regReviewLocation => l10n.regReviewLocation;
+  static String get regReviewTitle => l10n.regReviewTitle;
+  static String get regRoleLabel => l10n.regRoleLabel;
+  static String get regSelectRole => l10n.regSelectRole;
+  static String get regStepOf => l10n.regStepOf;
+  static String get regSubmit => l10n.regSubmit;
+  static String get regTitle => l10n.regTitle;
+  static String get regVerifiedPhone => l10n.regVerifiedPhone;
+  static String get regVerifiedPhoneHint => l10n.regVerifiedPhoneHint;
+  static String get rejectReasonClosingSoon => l10n.rejectReasonClosingSoon;
+  static String get rejectReasonOther => l10n.rejectReasonOther;
+  static String get rejectReasonProductUnavailable => l10n.rejectReasonProductUnavailable;
+  static String get rejectReasonTilesHint => l10n.rejectReasonTilesHint;
+  static String get rejectReasonTooBusy => l10n.rejectReasonTooBusy;
+  static String get reportsAverageBasketMetric => l10n.reportsAverageBasketMetric;
+  static String get reportsCancellationsMetric => l10n.reportsCancellationsMetric;
+  static String get reportsCommission => l10n.reportsCommission;
+  static String get reportsCommissionMixedRates => l10n.reportsCommissionMixedRates;
+  static String get reportsCustomRangeTooLong => l10n.reportsCustomRangeTooLong;
+  static String get reportsDailySummaryBreakdownTitle => l10n.reportsDailySummaryBreakdownTitle;
+  static String get reportsDailySummaryCancellationMotifs => l10n.reportsDailySummaryCancellationMotifs;
+  static String get reportsDailySummaryCancellationsKpi => l10n.reportsDailySummaryCancellationsKpi;
+  static String get reportsDailySummaryCancelled => l10n.reportsDailySummaryCancelled;
+  static String get reportsDailySummaryDelivered => l10n.reportsDailySummaryDelivered;
+  static String get reportsDailySummaryEmpty => l10n.reportsDailySummaryEmpty;
+  static String get reportsDailySummaryInProgress => l10n.reportsDailySummaryInProgress;
+  static String get reportsDailySummaryLoadError => l10n.reportsDailySummaryLoadError;
+  static String reportsDailySummaryOnTimePercent(String percent) => l10n.reportsDailySummaryOnTimePercent(percent);
+  static String get reportsDailySummaryOnTimeRate => l10n.reportsDailySummaryOnTimeRate;
+  static String get reportsDailySummaryOrdersKpi => l10n.reportsDailySummaryOrdersKpi;
+  static String get reportsDailySummaryPrepAverage => l10n.reportsDailySummaryPrepAverage;
+  static String get reportsDailySummaryPrepEfficiencyTitle => l10n.reportsDailySummaryPrepEfficiencyTitle;
+  static String get reportsDailySummaryPrepKpi => l10n.reportsDailySummaryPrepKpi;
+  static String get reportsDailySummarySalesKpi => l10n.reportsDailySummarySalesKpi;
+  static String get reportsDailySummaryShortcut => l10n.reportsDailySummaryShortcut;
+  static String get reportsDailySummaryTitle => l10n.reportsDailySummaryTitle;
+  static String reportsDailySummaryTodayDate(String label) => l10n.reportsDailySummaryTodayDate(label);
+  static String get reportsDailySummaryViewOrders => l10n.reportsDailySummaryViewOrders;
+  static String get reportsDataUnavailable => l10n.reportsDataUnavailable;
+  static String get reportsDataUnavailableShort => l10n.reportsDataUnavailableShort;
+  static String get reportsDeletedProduct => l10n.reportsDeletedProduct;
+  static String get reportsFinanceMissingSnapshot => l10n.reportsFinanceMissingSnapshot;
+  static String get reportsFinanceRestricted => l10n.reportsFinanceRestricted;
+  static String get reportsFinanceTitle => l10n.reportsFinanceTitle;
+  static String get reportsFinanceUnavailable => l10n.reportsFinanceUnavailable;
+  static String get reportsGrossSales => l10n.reportsGrossSales;
+  static String get reportsLoadError => l10n.reportsLoadError;
+  static String get reportsMerchantDiscount => l10n.reportsMerchantDiscount;
+  static String get reportsMerchantNet => l10n.reportsMerchantNet;
+  static String reportsOrderCount(String count) {
+    final n = int.tryParse(count) ?? 0;
+    if (isArabic) {
+      return n == 1 ? 'طلب واحد' : '$count طلبات';
+    }
+    return n == 1 ? '1 commande' : '$count commandes';
+  }
+  static String get reportsOrdersMetric => l10n.reportsOrdersMetric;
+  static String get reportsPeriodCustom => l10n.reportsPeriodCustom;
+  static String get reportsPeriodMonth => l10n.reportsPeriodMonth;
+  static String get reportsPeriodSelectorLabel => l10n.reportsPeriodSelectorLabel;
+  static String get reportsPeriodToday => l10n.reportsPeriodToday;
+  static String get reportsPeriodWeek => l10n.reportsPeriodWeek;
+  static String get reportsPeriodYesterday => l10n.reportsPeriodYesterday;
+  static String get reportsPrepTimeMetric => l10n.reportsPrepTimeMetric;
+  static String get reportsPrepTimeNotTracked => l10n.reportsPrepTimeNotTracked;
+  static String get reportsRankFirst => l10n.reportsRankFirst;
+  static String get reportsRatingsCount => l10n.reportsRatingsCount;
+  static String get reportsRatingsEmpty => l10n.reportsRatingsEmpty;
+  static String get reportsRatingsTitle => l10n.reportsRatingsTitle;
+  static String get reportsRatingsUnavailable => l10n.reportsRatingsUnavailable;
+  static String get reportsRefundAdjustments => l10n.reportsRefundAdjustments;
+  static String get reportsRefundsCompleted => l10n.reportsRefundsCompleted;
+  static String get reportsRefundsNote => l10n.reportsRefundsNote;
+  static String get reportsSalesLoadError => l10n.reportsSalesLoadError;
+  static String get reportsSeeAll => l10n.reportsSeeAll;
+  static String get reportsSettlementsEmpty => l10n.reportsSettlementsEmpty;
+  static String get reportsSettlementsForbidden => l10n.reportsSettlementsForbidden;
+  static String get reportsSettlementsTitle => l10n.reportsSettlementsTitle;
+  static String get reportsSortOrders => l10n.reportsSortOrders;
+  static String get reportsSortRevenue => l10n.reportsSortRevenue;
+  static String get reportsTitle => l10n.reportsTitle;
+  static String get reportsTopProductsEmpty => l10n.reportsTopProductsEmpty;
+  static String get reportsTopProductsLoadError => l10n.reportsTopProductsLoadError;
+  static String get reportsTopProductsScreenTitle => l10n.reportsTopProductsScreenTitle;
+  static String get reportsTopProductsTitle => l10n.reportsTopProductsTitle;
+  static String get reportsTopProductsUnavailable => l10n.reportsTopProductsUnavailable;
+  static String get reportsTopSales => l10n.reportsTopSales;
+  static String get reportsTrendEmpty => l10n.reportsTrendEmpty;
+  static String reportsTrendSemantics(String orders, String gross) => l10n.reportsTrendSemantics(orders, gross);
+  static String get reportsTrendTitle => l10n.reportsTrendTitle;
+  static String get reportsTrendUnavailable => l10n.reportsTrendUnavailable;
+  static String get resend => l10n.resend;
+  static String get resendCode => l10n.resendCode;
+  static String resendIn(String clock) => l10n.resendIn(clock);
+  static String get restoreLoading => l10n.restoreLoading;
+  static String get restoreOffline => l10n.restoreOffline;
+  static String get restoreOtherAccount => l10n.restoreOtherAccount;
+  static String get restoreRetry => l10n.restoreRetry;
+  static String get restoreTitle => l10n.restoreTitle;
+  static String get retry => l10n.retry;
+  static String get save => l10n.save;
+  static String get selectBranchSubtitle => l10n.selectBranchSubtitle;
+  static String get selectBranchTitle => l10n.selectBranchTitle;
+  static String get sellingUnitApply => l10n.sellingUnitApply;
+  static String get sellingUnitCalloutBody => l10n.sellingUnitCalloutBody;
+  static String get sellingUnitCalloutTitle => l10n.sellingUnitCalloutTitle;
+  static String get sellingUnitCommon => l10n.sellingUnitCommon;
+  static String get sellingUnitCustomHint => l10n.sellingUnitCustomHint;
+  static String get sellingUnitCustomName => l10n.sellingUnitCustomName;
+  static String get sellingUnitNone => l10n.sellingUnitNone;
+  static String get sellingUnitNoneSub => l10n.sellingUnitNoneSub;
+  static String get sellingUnitNotSet => l10n.sellingUnitNotSet;
+  static String get sellingUnitPackaging => l10n.sellingUnitPackaging;
+  static String get sellingUnitPreviewLabel => l10n.sellingUnitPreviewLabel;
+  static String get sellingUnitPreviewNoPrice => l10n.sellingUnitPreviewNoPrice;
+  static String get sellingUnitReadOnly => l10n.sellingUnitReadOnly;
+  static String get sellingUnitTitle => l10n.sellingUnitTitle;
+  static String get sessionExpired => l10n.sessionExpired;
+  static String get settingsHelpCenter => l10n.settingsHelpCenter;
+  static String get settingsLanguageRow => l10n.settingsLanguageRow;
+  static String get settingsNotificationsOff => l10n.settingsNotificationsOff;
+  static String get settingsProfileRow => l10n.settingsProfileRow;
+  static String get settingsSupportSection => l10n.settingsSupportSection;
+  static String get settingsTeamInvitationsRow => l10n.settingsTeamInvitationsRow;
+  static String get settingsTeamRow => l10n.settingsTeamRow;
+  static String get splashLegacyTagline => l10n.splashLegacyTagline;
+  static String get splashTagline => l10n.splashTagline;
+  static String get storeAddressBanner => l10n.storeAddressBanner;
+  static String get storeAddressCommune => l10n.storeAddressCommune;
+  static String get storeAddressConfirmMap => l10n.storeAddressConfirmMap;
+  static String get storeAddressCoordsSection => l10n.storeAddressCoordsSection;
+  static String get storeAddressDetailed => l10n.storeAddressDetailed;
+  static String get storeAddressLocationSummary => l10n.storeAddressLocationSummary;
+  static String get storeAddressPhone => l10n.storeAddressPhone;
+  static String get storeAddressPhoneHint => l10n.storeAddressPhoneHint;
+  static String get storeAddressPickupHints => l10n.storeAddressPickupHints;
+  static String get storeAddressPublicContact => l10n.storeAddressPublicContact;
+  static String get storeAddressSave => l10n.storeAddressSave;
+  static String get storeAddressSaveError => l10n.storeAddressSaveError;
+  static String get storeAddressSection => l10n.storeAddressSection;
+  static String get storeAddressTitle => l10n.storeAddressTitle;
+  static String get storeAddressWilaya => l10n.storeAddressWilaya;
+  static String get storeCategoryClear => l10n.storeCategoryClear;
+  static String get storeCategoryCleared => l10n.storeCategoryCleared;
+  static String get storeCategoryEmpty => l10n.storeCategoryEmpty;
+  static String get storeCategoryForbidden => l10n.storeCategoryForbidden;
+  static String get storeCategoryInfo => l10n.storeCategoryInfo;
+  static String get storeCategoryLoadError => l10n.storeCategoryLoadError;
+  static String get storeCategoryNoMatch => l10n.storeCategoryNoMatch;
+  static String get storeCategoryNotSet => l10n.storeCategoryNotSet;
+  static String get storeCategoryReadOnly => l10n.storeCategoryReadOnly;
+  static String get storeCategoryRestricted => l10n.storeCategoryRestricted;
+  static String get storeCategorySave => l10n.storeCategorySave;
+  static String get storeCategorySaveError => l10n.storeCategorySaveError;
+  static String get storeCategorySaved => l10n.storeCategorySaved;
+  static String get storeCategorySearch => l10n.storeCategorySearch;
+  static String get storeCategorySubtitle => l10n.storeCategorySubtitle;
+  static String get storeCategoryTitle => l10n.storeCategoryTitle;
+  static String get storeCoverBindPartial => l10n.storeCoverBindPartial;
+  static String get storeCoverHint => l10n.storeCoverHint;
+  static String get storeCoverPick => l10n.storeCoverPick;
+  static String get storeCoverRemoteUnavailable => l10n.storeCoverRemoteUnavailable;
+  static String get storeCoverRemove => l10n.storeCoverRemove;
+  static String get storeCoverReplace => l10n.storeCoverReplace;
+  static String get storeCoverSave => l10n.storeCoverSave;
+  static String get storeCoverSection => l10n.storeCoverSection;
+  static String get storeCoverSectionHint => l10n.storeCoverSectionHint;
+  static String get storeCoverTitle => l10n.storeCoverTitle;
+  static String get storeCoverUploadError => l10n.storeCoverUploadError;
+  static String get storeCustomerPreviewHint => l10n.storeCustomerPreviewHint;
+  static String get storeCustomerPreviewTitle => l10n.storeCustomerPreviewTitle;
+  static String get storeGeneralBranchName => l10n.storeGeneralBranchName;
+  static String get storeGeneralBranchNameHint => l10n.storeGeneralBranchNameHint;
+  static String get storeGeneralDescription => l10n.storeGeneralDescription;
+  static String get storeGeneralDescriptionHint => l10n.storeGeneralDescriptionHint;
+  static String get storeGeneralEmailInvalid => l10n.storeGeneralEmailInvalid;
+  static String get storeGeneralForbidden => l10n.storeGeneralForbidden;
+  static String get storeGeneralMerchantLocked => l10n.storeGeneralMerchantLocked;
+  static String get storeGeneralMerchantName => l10n.storeGeneralMerchantName;
+  static String get storeGeneralNameAr => l10n.storeGeneralNameAr;
+  static String get storeGeneralNameArHint => l10n.storeGeneralNameArHint;
+  static String get storeGeneralNameRequired => l10n.storeGeneralNameRequired;
+  static String get storeGeneralPhoneElsewhere => l10n.storeGeneralPhoneElsewhere;
+  static String get storeGeneralPreviewClosed => l10n.storeGeneralPreviewClosed;
+  static String get storeGeneralPreviewOpen => l10n.storeGeneralPreviewOpen;
+  static String get storeGeneralPreviewTitle => l10n.storeGeneralPreviewTitle;
+  static String get storeGeneralPublicEmail => l10n.storeGeneralPublicEmail;
+  static String get storeGeneralPublicEmailHint => l10n.storeGeneralPublicEmailHint;
+  static String get storeGeneralReadOnly => l10n.storeGeneralReadOnly;
+  static String get storeGeneralRestricted => l10n.storeGeneralRestricted;
+  static String get storeGeneralSave => l10n.storeGeneralSave;
+  static String get storeGeneralSaveError => l10n.storeGeneralSaveError;
+  static String get storeGeneralSaved => l10n.storeGeneralSaved;
+  static String get storeGeneralTitle => l10n.storeGeneralTitle;
+  static String get storeLogoAdd => l10n.storeLogoAdd;
+  static String get storeLogoBindPartial => l10n.storeLogoBindPartial;
+  static String get storeLogoEdit => l10n.storeLogoEdit;
+  static String get storeLogoEmpty => l10n.storeLogoEmpty;
+  static String get storeLogoPending => l10n.storeLogoPending;
+  static String get storeLogoRemoteUnavailable => l10n.storeLogoRemoteUnavailable;
+  static String get storeLogoRemove => l10n.storeLogoRemove;
+  static String get storeLogoRemoveError => l10n.storeLogoRemoveError;
+  static String get storeLogoRemoved => l10n.storeLogoRemoved;
+  static String get storeLogoSection => l10n.storeLogoSection;
+  static String get storeLogoSectionHint => l10n.storeLogoSectionHint;
+  static String get storeLogoTooLarge => l10n.storeLogoTooLarge;
+  static String get storeLogoTooSmall => l10n.storeLogoTooSmall;
+  static String get storeLogoUploadError => l10n.storeLogoUploadError;
+  static String get storeMediaPartialSaved => l10n.storeMediaPartialSaved;
+  static String get storeProfileAddress => l10n.storeProfileAddress;
+  static String get storeProfileAddressSub => l10n.storeProfileAddressSub;
+  static String get storeProfileAvailability => l10n.storeProfileAvailability;
+  static String get storeProfileAvailabilitySub => l10n.storeProfileAvailabilitySub;
+  static String get storeProfileCategory => l10n.storeProfileCategory;
+  static String get storeProfileCategorySub => l10n.storeProfileCategorySub;
+  static String get storeProfileCustomerPreview => l10n.storeProfileCustomerPreview;
+  static String get storeProfileGeneral => l10n.storeProfileGeneral;
+  static String get storeProfileGeneralSub => l10n.storeProfileGeneralSub;
+  static String get storeProfileHours => l10n.storeProfileHours;
+  static String get storeProfileHoursSub => l10n.storeProfileHoursSub;
+  static String get storeProfileMedia => l10n.storeProfileMedia;
+  static String get storeProfileMediaSub => l10n.storeProfileMediaSub;
+  static String get storeProfileMediaUnavailable => l10n.storeProfileMediaUnavailable;
+  static String get storeProfileNotifications => l10n.storeProfileNotifications;
+  static String get storeProfileNotificationsSub => l10n.storeProfileNotificationsSub;
+  static String get storeProfilePrep => l10n.storeProfilePrep;
+  static String get storeProfilePrepUnavailable => l10n.storeProfilePrepUnavailable;
+  static String get storeProfilePreviewUnavailable => l10n.storeProfilePreviewUnavailable;
+  static String get storeProfileSettings => l10n.storeProfileSettings;
+  static String get storeProfileSettingsSub => l10n.storeProfileSettingsSub;
+  static String get storeProfileTitle => l10n.storeProfileTitle;
+  static String get submitVerification => l10n.submitVerification;
+  static String get submitVerificationUnavailable => l10n.submitVerificationUnavailable;
+  static String get supportActiveTickets => l10n.supportActiveTickets;
+  static String get supportBackToOrder => l10n.supportBackToOrder;
+  static String get supportCenterTitle => l10n.supportCenterTitle;
+  static String get supportComposeHint => l10n.supportComposeHint;
+  static String get supportComposeTitle => l10n.supportComposeTitle;
+  static String get supportContact => l10n.supportContact;
+  static String get supportCustomerLabel => l10n.supportCustomerLabel;
+  static String get supportDescriptionHint => l10n.supportDescriptionHint;
+  static String get supportDescriptionLabel => l10n.supportDescriptionLabel;
+  static String get supportFaqEmpty => l10n.supportFaqEmpty;
+  static String get supportFaqLoadError => l10n.supportFaqLoadError;
+  static String get supportFaqTitle => l10n.supportFaqTitle;
+  static String get supportForbidden => l10n.supportForbidden;
+  static String get supportLinkedOrder => l10n.supportLinkedOrder;
+  static String get supportLoadError => l10n.supportLoadError;
+  static String get supportMerchandiseLabel => l10n.supportMerchandiseLabel;
+  static String get supportNewTicket => l10n.supportNewTicket;
+  static String get supportNoMessages => l10n.supportNoMessages;
+  static String get supportNoTickets => l10n.supportNoTickets;
+  static String get supportOrderLabel => l10n.supportOrderLabel;
+  static String get supportReplyError => l10n.supportReplyError;
+  static String get supportReplyHint => l10n.supportReplyHint;
+  static String get supportReplySend => l10n.supportReplySend;
+  static String get supportReportTitle => l10n.supportReportTitle;
+  static String get supportResolvedTickets => l10n.supportResolvedTickets;
+  static String get supportSend => l10n.supportSend;
+  static String get supportSendError => l10n.supportSendError;
+  static String get supportSensitiveHint => l10n.supportSensitiveHint;
+  static String get supportSentBodyNoRef => l10n.supportSentBodyNoRef;
+  static String get supportSentTitle => l10n.supportSentTitle;
+  static String get supportShort => l10n.supportShort;
+  static String get supportSubjectHint => l10n.supportSubjectHint;
+  static String get supportSubjectLabel => l10n.supportSubjectLabel;
+  static String get supportSubjectRequired => l10n.supportSubjectRequired;
+  static String get supportTeam => l10n.supportTeam;
+  static String get supportTicketFinished => l10n.supportTicketFinished;
+  static String get supportTicketLoadError => l10n.supportTicketLoadError;
+  static String get supportTicketTitle => l10n.supportTicketTitle;
+  static String get supportTopicLabel => l10n.supportTopicLabel;
+  static String get supportTopicRequired => l10n.supportTopicRequired;
+  static String get supportTopicsEmpty => l10n.supportTopicsEmpty;
+  static String get supportTopicsHint => l10n.supportTopicsHint;
+  static String get supportTopicsLoadError => l10n.supportTopicsLoadError;
+  static String get supportTopicsTitle => l10n.supportTopicsTitle;
+  /// Editable body prefixes for the legacy topic-tile compose sheet (D-G6).
+  static String get supportTopicCatalogPrefix =>
+      isArabic ? 'الكتالوج: ' : 'Catalogue : ';
+  static String get supportTopicPaymentPrefix =>
+      isArabic ? 'الدفع: ' : 'Paiement : ';
+  static String get supportYou => l10n.supportYou;
+  static String get suspendedBody => l10n.suspendedBody;
+  static String get suspendedTitle => l10n.suspendedTitle;
+  static String get switchBranch => l10n.switchBranch;
+  static String get tabCatalog => l10n.tabCatalog;
+  static String get tabHome => l10n.tabHome;
+  static String get tabOrders => l10n.tabOrders;
+  static String get tabProfile => l10n.tabProfile;
+  static String get tabReports => l10n.tabReports;
+  static String get teamAccept => l10n.teamAccept;
+  static String get teamAcceptCodeInvalid => l10n.teamAcceptCodeInvalid;
+  static String get teamAcceptCodeLabel => l10n.teamAcceptCodeLabel;
+  static String get teamAcceptConfirm => l10n.teamAcceptConfirm;
+  static String get teamAcceptTitle => l10n.teamAcceptTitle;
+  static String get teamActiveMembers => l10n.teamActiveMembers;
+  static String get teamCancelInvitation => l10n.teamCancelInvitation;
+  static String teamCancelInviteBody(String phone) => l10n.teamCancelInviteBody(phone);
+  static String get teamCancelInviteConfirm => l10n.teamCancelInviteConfirm;
+  static String get teamCancelInviteTitle => l10n.teamCancelInviteTitle;
+  static String get teamChangeRole => l10n.teamChangeRole;
+  static String get teamCodeCopied => l10n.teamCodeCopied;
+  static String get teamCodeCopy => l10n.teamCodeCopy;
+  static String get teamCodeDone => l10n.teamCodeDone;
+  static String get teamCodeRegeneratedNote => l10n.teamCodeRegeneratedNote;
+  static String get teamCodeRegeneratedTitle => l10n.teamCodeRegeneratedTitle;
+  static String get teamCodeTitle => l10n.teamCodeTitle;
+  static String get teamEmptyInvitations => l10n.teamEmptyInvitations;
+  static String get teamEmptyMembers => l10n.teamEmptyMembers;
+  static String get teamErrorCodeInvalid => l10n.teamErrorCodeInvalid;
+  static String get teamErrorConflict => l10n.teamErrorConflict;
+  static String get teamErrorDuplicateInvite => l10n.teamErrorDuplicateInvite;
+  static String get teamErrorDuplicateMember => l10n.teamErrorDuplicateMember;
+  static String get teamErrorGeneric => l10n.teamErrorGeneric;
+  static String get teamErrorInvalidInput => l10n.teamErrorInvalidInput;
+  static String get teamErrorInviteExpired => l10n.teamErrorInviteExpired;
+  static String get teamErrorInviteGone => l10n.teamErrorInviteGone;
+  static String get teamErrorOwnerProtected => l10n.teamErrorOwnerProtected;
+  static String get teamErrorPhoneMismatch => l10n.teamErrorPhoneMismatch;
+  static String get teamErrorSelf => l10n.teamErrorSelf;
+  static String teamExpiresOn(String date) => l10n.teamExpiresOn(date);
+  static String get teamForbiddenBody => l10n.teamForbiddenBody;
+  static String get teamForbiddenTitle => l10n.teamForbiddenTitle;
+  static String get teamInvitationExpired => l10n.teamInvitationExpired;
+  static String get teamInvitationsEmpty => l10n.teamInvitationsEmpty;
+  static String get teamInvitationsHint => l10n.teamInvitationsHint;
+  static String get teamInvitationsLoadError => l10n.teamInvitationsLoadError;
+  static String get teamInvitationsTitle => l10n.teamInvitationsTitle;
+  static String get teamInviteCancelled => l10n.teamInviteCancelled;
+  static String get teamInviteCreate => l10n.teamInviteCreate;
+  static String get teamInviteHint => l10n.teamInviteHint;
+  static String get teamInviteMember => l10n.teamInviteMember;
+  static String get teamInvitePhoneHelper => l10n.teamInvitePhoneHelper;
+  static String get teamInvitePhoneHint => l10n.teamInvitePhoneHint;
+  static String get teamInvitePhoneInvalid => l10n.teamInvitePhoneInvalid;
+  static String get teamInvitePhoneLabel => l10n.teamInvitePhoneLabel;
+  static String get teamInviteRoleLabel => l10n.teamInviteRoleLabel;
+  static String get teamInviteTitle => l10n.teamInviteTitle;
+  static String get teamKeep => l10n.teamKeep;
+  static String get teamLoadError => l10n.teamLoadError;
+  static String get teamOwnerBadge => l10n.teamOwnerBadge;
+  static String get teamPendingInvitations => l10n.teamPendingInvitations;
+  static String get teamPhoneUnavailable => l10n.teamPhoneUnavailable;
+  static String get teamRegenerateCode => l10n.teamRegenerateCode;
+  static String get teamRevoke => l10n.teamRevoke;
+  static String get teamRevokeTitle => l10n.teamRevokeTitle;
+  static String get teamRevoked => l10n.teamRevoked;
+  static String teamRoleLine(String role) => l10n.teamRoleLine(role);
+  static String get teamRoleManager => l10n.teamRoleManager;
+  static String get teamRoleManagerHint => l10n.teamRoleManagerHint;
+  static String get teamRoleOwner => l10n.teamRoleOwner;
+  static String get teamRoleSave => l10n.teamRoleSave;
+  static String get teamRoleSheetHint => l10n.teamRoleSheetHint;
+  static String get teamRoleSheetTitle => l10n.teamRoleSheetTitle;
+  static String get teamRoleStaff => l10n.teamRoleStaff;
+  static String get teamRoleStaffHint => l10n.teamRoleStaffHint;
+  static String get teamRoleUpdated => l10n.teamRoleUpdated;
+  static String get teamRolesSummary => l10n.teamRolesSummary;
+  static String get teamSelfBadge => l10n.teamSelfBadge;
+  static String get teamStoreContext => l10n.teamStoreContext;
+  static String get teamSummaryManager => l10n.teamSummaryManager;
+  static String get teamSummaryOwner => l10n.teamSummaryOwner;
+  static String get teamSummaryScope => l10n.teamSummaryScope;
+  static String get teamSummaryStaff => l10n.teamSummaryStaff;
+  static String get teamTitle => l10n.teamTitle;
+  static String get temporaryClosure1h => l10n.temporaryClosure1h;
+  static String get temporaryClosure30m => l10n.temporaryClosure30m;
+  static String get temporaryClosureActionRequired => l10n.temporaryClosureActionRequired;
+  static String get temporaryClosureConfirm => l10n.temporaryClosureConfirm;
+  static String get temporaryClosureImageImpact => l10n.temporaryClosureImageImpact;
+  static String get temporaryClosureImpactLead => l10n.temporaryClosureImpactLead;
+  static String get temporaryClosureImpactNone => l10n.temporaryClosureImpactNone;
+  static String get temporaryClosureImpactUnknown => l10n.temporaryClosureImpactUnknown;
+  static String get temporaryClosureIndefinite => l10n.temporaryClosureIndefinite;
+  static String get temporaryClosureManualReopenHint => l10n.temporaryClosureManualReopenHint;
+  static String get temporaryClosureMessage => l10n.temporaryClosureMessage;
+  static String get temporaryClosureMessageHint => l10n.temporaryClosureMessageHint;
+  static String get temporaryClosureOptional => l10n.temporaryClosureOptional;
+  static String get temporaryClosurePastTime => l10n.temporaryClosurePastTime;
+  static String get temporaryClosurePickTime => l10n.temporaryClosurePickTime;
+  static String get temporaryClosureReason => l10n.temporaryClosureReason;
+  static String get temporaryClosureReopen => l10n.temporaryClosureReopen;
+  static String get temporaryClosureStaffReadOnly => l10n.temporaryClosureStaffReadOnly;
+  static String get temporaryClosureTitle => l10n.temporaryClosureTitle;
+  static String get valueUnavailable => l10n.valueUnavailable;
+  static String get verificationApprovedBody => l10n.verificationApprovedBody;
+  static String get verificationApprovedTitle => l10n.verificationApprovedTitle;
+  static String get verificationCorrectAndSubmit => l10n.verificationCorrectAndSubmit;
+  static String get verificationDossierProgress => l10n.verificationDossierProgress;
+  static String get verificationFinalStep => l10n.verificationFinalStep;
+  static String get verificationFinalStepBody => l10n.verificationFinalStepBody;
+  static String get verificationNeedHelp => l10n.verificationNeedHelp;
+  static String get verificationPendingBody => l10n.verificationPendingBody;
+  static String get verificationPendingTitle => l10n.verificationPendingTitle;
+  static String get verificationReferenceFull => l10n.verificationReferenceFull;
+  static String get verificationReferenceLabel => l10n.verificationReferenceLabel;
+  static String get verificationRejectedBody => l10n.verificationRejectedBody;
+  static String get verificationRejectedTitle => l10n.verificationRejectedTitle;
+  static String get verificationRequestIdLabel => l10n.verificationRequestIdLabel;
+  static String get verificationReviewStep => l10n.verificationReviewStep;
+  static String get verificationReviewStepBody => l10n.verificationReviewStepBody;
+  static String get verificationSubmittedStep => l10n.verificationSubmittedStep;
+  static String get verificationTimelineTitle => l10n.verificationTimelineTitle;
+  static String get verify => l10n.verify;
+
+  // Complex helpers
+
+
+  static String otpSentTo(String masked) =>
+      isArabic ? 'تم إرسال الرمز إلى $masked' : 'Code envoyé au $masked';
+
+  static String verificationRejectedGreeting(String merchantName) => isArabic
+      ? 'مرحبًا، ملف $merchantName يحتاج إلى تصحيحات.'
+      : 'Bonjour, le dossier de $merchantName nécessite des corrections.';
+
+  static String homeLastSync(String hhmm) =>
+      isArabic ? 'آخر مزامنة: $hhmm' : 'Dernière sync : $hhmm';
+
+  static String supportSentBody(String ref) => isArabic
+      ? 'تم إرسال تذكرتك $ref إلى فريق SpeedyGo.'
+      : 'Votre ticket $ref a été transmis à l’équipe SpeedyGo.';
+
+  static String supportShowingLatest(int shown, int total) => isArabic
+      ? 'عرض أحدث $shown تذاكر من أصل $total.'
+      : '$shown tickets les plus récents sur $total.';
+
+  static String supportCreated(String reference) =>
+      isArabic ? 'تم إرسال التذكرة: $reference' : 'Ticket envoyé : $reference';
+
+  static String orderDeliveredOn(String when) =>
+      isArabic ? 'تم التسليم في $when' : 'Livrée le $when';
+  static String orderCompletedOn(String when) =>
+      isArabic ? 'اكتمل في $when' : 'Terminée le $when';
+  static String orderReadySince(String hhmm) =>
+      isArabic ? 'جاهز منذ $hhmm' : 'Prête depuis $hhmm';
+  static String orderListReadyAt(String hhmm) =>
+      isArabic ? 'جاهز نحو $hhmm' : 'Prête vers $hhmm';
+  static String orderCreatedAt(String when) =>
+      isArabic ? 'أُنشئ في $when' : 'Créée le $when';
+  static String orderConfirmedAt(String when) =>
+      isArabic ? 'تم التأكيد في $when' : 'Confirmée le $when';
+  static String orderCancelledAt(String when) =>
+      isArabic ? 'أُلغي في $when' : 'Annulée le $when';
+  static String orderCreatedShort(String when) =>
+      isArabic ? 'أُنشئ $when' : 'Créée $when';
+  static String orderFinanceCommission(String amount) =>
+      isArabic ? 'العمولة: $amount' : 'Commission : $amount';
+
+  static String orderDriverSearchStarted(String when) =>
+      isArabic ? 'بدأ البحث عن سائق في $when' : 'Recherche livreur démarrée à $when';
+  static String orderDriverSearchStartedAt(String hhmm) =>
+      isArabic ? 'بدأ البحث عند $hhmm' : 'Recherche démarrée à $hhmm';
+  static String orderDriverEtaEstimate(String minutes) =>
+      isArabic ? 'وصول تقديري خلال $minutes د' : 'ETA estimée : $minutes min';
+  static String reportsLastUpdated(String when) =>
+      isArabic ? 'آخر تحديث: $when' : 'Dernière mise à jour : $when';
+  static String reportsSyncedAt(String when) =>
+      isArabic ? 'آخر مزامنة: $when' : 'Synchronisé à $when';
+  static String reportsUnitCount(int count) {
+    if (isArabic) {
+      return count == 1 ? 'وحدة واحدة' : '$count وحدات';
+    }
+    return count == 1 ? '1 unité' : '$count unités';
+  }
+  static String catalogCategoriesCount(int count) =>
+      isArabic ? '$count فئة' : '$count catégorie${count == 1 ? '' : 's'}';
+  static String catalogBulkSelected(int count) =>
+      isArabic ? '$count محدد' : '$count sélectionné${count == 1 ? '' : 's'}';
+  static String catalogChoiceRange(int min, int max) =>
+      isArabic ? 'من $min إلى $max' : 'De $min à $max';
+  static String regCorrectionIntro(String merchantName) => isArabic
+      ? 'صحّح العناصر المطلوبة ثم أعد الإرسال. سيتم تفعيل مؤسستك $merchantName بعد التحقق.'
+      : 'Corrigez les éléments nécessaires puis soumettez à nouveau. Votre établissement $merchantName sera activé après validation.';
+  static String issuesDocumentConcerned(String label) =>
+      isArabic ? 'المستند المعني: $label' : 'Pièce concernée : $label';
+  static String teamCodeInstruction(String phone) => isArabic
+      ? 'لا ترسل SpeedyGo رسالة SMS أو بريدًا. انسخ هذا الرمز وسلّمه بنفسك إلى $phone. لن يُعرض مرة أخرى.'
+      : 'Aucun SMS ni e-mail n’est émis par SpeedyGo. Copiez ce code et transmettez-le vous-même à $phone. Il ne sera plus affiché.';
+  static String teamRevokeBody(String phone) => isArabic
+      ? 'سيفقد $phone الوصول إلى هذا المتجر وتُغلق جلساته. حساب SpeedyGo الخاص به لا يُحذف.'
+      : '$phone perdra l’accès à ce commerce et ses sessions seront fermées. Son compte SpeedyGo n’est pas supprimé.';
+  static String teamAccepted(String merchantName) => isArabic
+      ? 'تم قبول الدعوة. لديك الآن صلاحية الوصول إلى $merchantName.'
+      : 'Invitation acceptée. Vous avez maintenant accès à $merchantName.';
+  static String temporaryClosureImpactTail(int count) {
+    if (isArabic) {
+      return count == 1
+          ? ' سيُبقى ويجب تحضيره.'
+          : ' ستُبقى ويجب تحضيرها.';
+    }
+    return count == 1
+        ? ' sera maintenue et doit être préparée.'
+        : ' seront maintenues et doivent être préparées.';
+  }
+
+  static String supportStatus(String code) {
+    if (isArabic) {
+      return switch (code) {
+        'open' || 'OPEN' => 'مفتوح',
+        'inProgress' || 'IN_PROGRESS' => 'قيد المعالجة',
+        'waitingCustomer' || 'WAITING_CUSTOMER' => 'بانتظار الرد',
+        'resolved' || 'RESOLVED' => 'تم الحل',
+        'closed' || 'CLOSED' => 'مغلق',
+        _ => 'حالة غير معروفة',
+      };
+    }
+    return switch (code) {
+      'open' || 'OPEN' => 'Ouvert',
+      'inProgress' || 'IN_PROGRESS' => 'En cours',
+      'waitingCustomer' || 'WAITING_CUSTOMER' => 'Réponse attendue',
+      'resolved' || 'RESOLVED' => 'Résolu',
+      'closed' || 'CLOSED' => 'Fermé',
+      _ => 'Statut inconnu',
+    };
+  }
+
+  static String reportsSettlementStatus(String code) {
+    if (isArabic) {
+      return switch (code.toUpperCase()) {
+        'DRAFT' => 'مسودة',
+        'FINALIZED' => 'نهائي',
+        _ => 'حالة غير معروفة',
+      };
+    }
+    return switch (code.toUpperCase()) {
+      'DRAFT' => 'Brouillon',
+      'FINALIZED' => 'Finalisé',
+      _ => 'Statut inconnu',
+    };
+  }
+
   static String _ddMmYyyy(DateTime at) {
     final l = at.toUtc().add(const Duration(hours: 1));
     String two(int v) => v.toString().padLeft(2, '0');
     return '${two(l.day)}/${two(l.month)}/${l.year}';
   }
 
-  static String supportShowingLatest(int shown, int total) =>
-      '$shown tickets les plus récents affichés sur $total.';
-  static String supportStatus(String code) => switch (code) {
-    'open' => 'Ouvert',
-    'inProgress' => 'En cours',
-    'waitingCustomer' => 'Réponse attendue',
-    'resolved' => 'Résolu',
-    'closed' => 'Fermé',
-    _ => 'Statut inconnu',
-  };
-  static const supportTopicsTitle = 'Sujets fréquents';
-  static const supportTopicsHint =
-      'Choisissez un sujet pour ouvrir un nouveau ticket.';
-  static const supportTopicsLoadError = 'Impossible de charger les sujets.';
-  static const supportTopicsEmpty = 'Aucun sujet disponible pour le moment.';
-  static const supportTopicLabel = 'Sujet';
-  static const supportTopicRequired = 'Choisissez un sujet.';
-  static const supportSubjectLabel = 'Objet';
-  static const supportSubjectHint = 'Résumez votre demande en quelques mots';
-  static const supportSubjectRequired = 'Indiquez l’objet de votre demande.';
-  static const supportFaqTitle = 'Questions fréquentes';
-  static const supportFaqEmpty = 'Aucune question fréquente pour le moment.';
-  static const supportFaqLoadError = 'Impossible de charger la FAQ.';
-  static const supportComposeTitle = 'Nouveau ticket';
-  static const supportComposeHint =
-      'Décrivez votre demande. Pour un problème sur une commande, utilisez « Signaler un problème » depuis la commande.';
-  static String supportCreated(String reference) =>
-      reference.isEmpty ? 'Ticket envoyé.' : 'Ticket envoyé : $reference';
-  static const supportTicketTitle = 'Ticket';
-  static const supportTicketLoadError = 'Impossible de charger ce ticket.';
-  static const supportLinkedOrder = 'Commande liée';
-  static const supportYou = 'Vous';
-  static const supportTeam = 'Support SpeedyGo';
-  static const supportReplyHint = 'Votre réponse';
-  static const supportReplySend = 'Envoyer';
-  static const supportReplyError = 'La réponse n’a pas pu être envoyée.';
-  static const supportTicketFinished =
-      'Ce ticket est clos. Créez un nouveau ticket si besoin.';
-  static const supportNoMessages = 'Aucun message.';
-  static const orderListAcceptNow = 'À accepter immédiatement';
-  static const orderDetailsTitle = 'Détails de la commande';
-  static const orderDetailCancelledTitle = 'Commande annulée';
-  static const orderCancelledHeroBody = 'Cette commande n’aboutira pas.';
-  static const orderCancelledByCustomer = 'Annulée par le client';
-  static const orderRejectedByMerchant = 'Refusée par le commerce';
-  static const orderReasonLabel = 'Raison';
-  static const orderCancelledAck = 'Compris';
-  static const orderViewHistory = 'Voir l’historique';
-  static const orderCurrentStatus = 'Statut actuel';
-  static String orderDeliveredOn(String when) => 'Livrée le $when';
-  static String orderCompletedOn(String when) => 'Terminée le $when';
-  static const orderReceivedAtLabel = 'Reçue à';
-  static const orderPaymentLabel = 'Paiement';
-  static String orderPaymentMethod(String method) => 'Méthode : $method';
-  static String orderReadySince(String hhmm) => 'Prête depuis $hhmm';
-  static const eventCreated = 'Commande reçue';
-  static const eventCreatedCaption = 'Commande passée par le client';
-  static const eventAccepted = 'Acceptée';
-  static const eventAcceptedCaption = 'Commande confirmée';
-  static const eventPrepStarted = 'En préparation';
-  static const eventPrepStartedCaption = 'Préparation démarrée';
-  static const eventReady = 'Préparée';
-  static const eventReadyCaption = 'Prête pour la collecte';
-  static const eventRejected = 'Refusée';
-  static const eventCancelled = 'Annulée';
-  static const eventCompleted = 'Terminée';
-  static const eventCompletedCaption = 'Commande livrée au client';
-  static const eventStatusUpdate = 'Mise à jour du statut';
-  static const orderListLate = 'En retard';
-  static String orderListReadyAt(String hhmm) => 'Prête vers $hhmm';
-  static const orderHistoryToday = 'Aujourd’hui';
-  static const orderHistoryYesterday = 'Hier';
-  static const orderHistoryEarlier = 'Plus tôt';
-  static const orderFulfillmentAccepted = 'Acceptée';
-  static const orderFulfillmentPreparing = 'En préparation';
-  static const orderFulfillmentReady = 'Prête';
-  static const orderStatusCreated = 'Créée';
-  static const orderStatusConfirmed = 'Confirmée';
-  static const orderStatusActive = 'Active';
-  static const orderStatusCompleted = 'Terminée';
-  static const orderStatusCancelled = 'Annulée';
-  static const orderStatusFailed = 'Échouée';
-  static const orderPaymentCod = 'Paiement à la livraison';
-  static const orderPaymentElectronic = 'Paiement électronique';
-  static String orderCreatedAt(String when) => 'Créée le $when';
-  static String orderConfirmedAt(String when) => 'Confirmée le $when';
-  static String orderCancelledAt(String when) => 'Annulée le $when';
-  static String orderCreatedShort(String when) => 'Créée · $when';
-  static const orderListMerchandiseLabel = 'Marchandises';
-  static const orderIncomingBanner = 'Nouvelle commande';
-  static const orderReadyBanner = 'Commande prête';
-  static const orderSegmentActive = 'En cours';
-  static const orderSegmentHistory = 'Historique';
-  static const orderReferenceCopy = 'Copier la référence';
-  static const orderReferenceCopied = 'Référence copiée';
-  static const orderReferenceShowFull = 'Afficher la référence complète';
-  static const orderItemsTitle = 'Articles';
-  static const orderItemsToPrepareTitle = 'Articles à préparer';
-  static const orderDeliveryAddress = 'Adresse de livraison';
-  static const orderFinanceTitle = 'Répartition financière';
-  static const orderFinanceGms = 'Sous-total marchandises';
-  static const orderFinanceDiscount = 'Remise commerçant';
-  static String orderFinanceCommission(String percent) =>
-      'Commission SpeedyGo ($percent %)';
-  static const orderFinanceNet = 'Net commerçant';
-  static const orderFinanceCommissionUnavailable = 'Commission SpeedyGo';
-  static const orderFinanceRestricted =
-      'Commission, remise et net commerçant réservés au propriétaire ou au responsable.';
-  static const valueUnavailable = '—';
-  static const orderFinanceNetCancelledNote =
-      'Montants historiques figés au moment de la commande — pas un paiement dû.';
-  static const orderFinanceDeliveryFeeNote = 'Frais de livraison (client)';
-  static const orderFinanceDeliveryFeeDisclaimer =
-      'Les frais de livraison ne sont pas un revenu commerçant.';
-  static const orderAccept = 'Accepter';
-  static const orderChoosePrepTime = 'Choisir le temps de préparation';
-  static const orderReject = 'Refuser';
-  static const orderRejectTitle = 'Refuser la commande';
-  static const orderRejectHint =
-      'Le refus n’est possible qu’avant acceptation. Indiquez un motif.';
-  static const orderRejectReasonLabel = 'Motif du refus';
-  static const orderRejectConfirm = 'Confirmer le refus';
-  static const orderQuickAlreadyHandled =
-      'Cette commande a déjà été traitée. La liste est actualisée.';
-  static const orderQuickNotAllowed = 'Votre rôle ne permet pas cette action.';
-  static const orderQuickCheckFailed =
-      'Impossible de vérifier la commande. Réessayez.';
-  static const orderQuickAccepted = 'Commande acceptée.';
-  static const orderQuickRejected = 'Commande refusée.';
-  static const prepAcceptTitle = 'Accepter la commande';
-  static const prepEstimatedTitle = 'Temps de préparation estimé';
+  static String supportDate(DateTime at) => _ddMmYyyy(at);
+
+  static String supportUpdated(DateTime updatedAt, DateTime now) {
+    final diff = now.difference(updatedAt);
+    if (isArabic) {
+      if (diff.inMinutes < 1) return 'تم التحديث للتو';
+      if (diff.inMinutes < 60) return 'تم التحديث منذ ${diff.inMinutes} د';
+      if (diff.inHours < 24) return 'تم التحديث منذ ${diff.inHours} س';
+      return 'تم التحديث في ${_ddMmYyyy(updatedAt)}';
+    }
+    if (diff.inMinutes < 1) return 'Mis à jour à l’instant';
+    if (diff.inMinutes < 60) return 'Mis à jour il y a ${diff.inMinutes} min';
+    if (diff.inHours < 24) return 'Mis à jour il y a ${diff.inHours} h';
+    return 'Mis à jour le ${_ddMmYyyy(updatedAt)}';
+  }
+
   static String prepSelectHint(int itemCount) {
+    if (isArabic) {
+      if (itemCount <= 1) return 'حدد الوقت اللازم لتحضير المنتج.';
+      return 'حدد الوقت اللازم لتحضير الـ $itemCount منتجات.';
+    }
     if (itemCount <= 1) {
       return 'Sélectionnez le temps nécessaire pour préparer l’article.';
     }
     return 'Sélectionnez le temps nécessaire pour préparer les $itemCount articles.';
   }
 
-  static String prepMinutesLabel(int minutes) => '$minutes min';
-  static const prepConfirmAccept = 'Confirmer et accepter';
-  static const prepCustomTime = 'Temps personnalisé';
-  static const prepCustomEntry = 'Saisie personnalisée';
-  static String prepCustomRange(int min, int max) =>
-      'Entre $min et $max minutes';
-  static String prepItemCount(int n) => n <= 1 ? '1 article' : '$n articles';
-  static const prepInProgress = 'En cours';
-  static const prepCurrentShort = 'Heure actuelle';
-  static const prepNewShort = 'Nouvelle estimation';
-  static const prepReasonHint = 'Ex : problème technique en cuisine…';
-  static const prepRemainingTitle = 'Temps restant';
-  static const prepMinutesCaption = 'MINUTES';
-  static const prepSecondsCaption = 'SECONDES';
-  static String prepScheduledAtLocal(String time) =>
-      'Heure prévue : $time (heure locale)';
-  static String prepScheduledOnLocal(String day, String time) =>
-      'Heure prévue : le $day à $time (heure locale)';
-  static String prepLateBy(int minutes) =>
-      minutes <= 0 ? 'En retard' : '${durationFr(minutes)} de retard';
-
-  /// "45 min", "2 h 5 min", "1 j 23 h" (zero parts omitted; minutes are
-  /// dropped once the duration reaches a day).
   static String durationFr(int minutes) {
-    if (minutes < 60) return '$minutes min';
+    if (minutes < 60) return isArabic ? '$minutes د' : '$minutes min';
     final days = minutes ~/ (24 * 60);
     final hours = (minutes % (24 * 60)) ~/ 60;
     final rest = minutes % 60;
+    if (isArabic) {
+      if (days > 0) return hours > 0 ? '$days ي $hours س' : '$days ي';
+      return rest > 0 ? '$hours س $rest د' : '$hours س';
+    }
     if (days > 0) return hours > 0 ? '$days j $hours h' : '$days j';
     return rest > 0 ? '$hours h $rest min' : '$hours h';
   }
 
-  static const prepLateHint =
-      'L’estimation est dépassée. Mettez à jour le temps ou marquez la commande prête quand elle l’est.';
-  static const prepUpdateAction = 'Modifier temps';
-  static const prepUpdateTitle = 'Mise à jour du temps';
-  static const prepCurrentReady = 'Heure prévue actuelle';
-  static String prepOriginalReady(String time) => 'Initiale : $time';
-  static String prepOriginalReadyLabel(String time) => 'Heure initiale : $time';
-  static const prepBranchLabel = 'Établissement';
-  static const prepAddTime = 'Ajouter du temps de préparation';
-  static String prepNewEstimate(String from, String to, int add) =>
-      'Nouvelle estimation : $to au lieu de $from, plus $add minutes';
-  static String prepClockOnDay(String day, String time) => 'le $day à $time';
-  static String prepOnDay(String day) => 'le $day';
-  static String prepSpokenClock(String time, String? day) =>
-      day == null ? time : '$time le $day';
-  static const prepReasonOptional = 'Raison du retard (optionnel)';
-  static const prepReasonShortcutsHint =
-      'Un raccourci remplit le motif ; vous pouvez le modifier.';
-  static const prepReasonFieldLabel = 'Motif';
-  static const prepReasonBusy = 'Forte affluence';
-  static const prepReasonLongPrep = 'Préparation longue';
-  static const prepReasonMissingIngredient = 'Ingrédient manquant';
-  static const prepReasonOther = 'Autre raison';
-  static const prepUpdateConfirm = 'Mettre à jour';
-  static const orderStartPreparation = 'Démarrer la préparation';
-  static const orderMarkReady = 'Marquer comme prête';
-  static const markReadyPackingTitle = 'Liste de colisage';
-  static const markReadyPackingHint =
-      'Vérifiez que tous les éléments de la commande sont bien emballés avant de la marquer prête.';
-  static const markReadyConfirm = 'Confirmer et marquer prête';
-  static const orderReadyWaitingDelivery =
-      'En attente de prise en charge pour la livraison.';
-  static const orderDeliveryStatusTitle = 'Livraison';
-  static const orderDriverAssigned = 'Un livreur est assigné.';
-  static String orderDriverSearchStarted(String when) =>
-      'Recherche démarrée le $when';
-  static String orderDriverSearchStartedAt(String hhmm) =>
-      'Recherche démarrée à $hhmm';
-  static String orderDriverEtaEstimate(String when) =>
-      'Arrivée estimée : $when';
-  static const orderDriverCardTitle = 'Livreur assigné';
-  static const orderDriverStatusLabel = 'Statut';
-  static const orderDriverEtaLabel = 'Arrivée estimée';
-  static const orderDriverEtaUnavailable = 'Heure d’arrivée indisponible.';
-  static const orderDriverContactUnavailable =
-      'Contact du livreur indisponible.';
-  static const orderDriverCall = 'Appeler le livreur';
-  static const pickupHandoffTitle = 'Code de retrait';
-  static const pickupHandoffWaiting =
-      'En attente de validation par le livreur…';
-  static const pickupHandoffInstruction1 =
-      'Communiquez ce code uniquement au livreur affiché ci-dessus.';
-  static const pickupHandoffInstruction2 =
-      'Le livreur doit saisir ce code dans son application pour confirmer la récupération.';
-  static const pickupHandoffRegenerate = 'Régénérer le code';
-  static const pickupHandoffConfirmed = 'Remise confirmée';
-  static const pickupHandoffLoadError =
-      'Impossible de charger le code de retrait.';
-  static const pickupHandoffRetry = 'Réessayer';
-  static const orderHandoffUnsupported =
-      'La confirmation de remise sécurisée n’est pas disponible pour le commerçant dans cette version.';
-  static const orderHistoryTitle = 'Historique de la commande';
-  static const orderReferenceLabel = 'Référence';
-  static const orderCustomerLabel = 'Client';
-  static const orderSummaryTitle = 'Résumé de la commande';
-  static const deliverySearching = 'Recherche de livreur';
-  static const deliveryAssigned = 'Livreur assigné';
-  static const deliveryPickedUp = 'Récupérée';
-  static const deliveryArrived = 'Arrivé chez le client';
-  static const deliveryToPickup = 'Livreur en route vers le commerce';
-  static const deliveryAtPickup = 'Livreur arrivé au commerce';
-  static const deliveryInTransit = 'En route vers le client';
-  static const deliveryFailed = 'Livraison échouée';
-  static const deliveryCancelled = 'Livraison annulée';
-  static const deliveryUnknown = 'Statut de livraison indisponible';
-  static const deliveryDelivered = 'Livrée';
-  static const catalogTitle = 'Catalogue';
-  static const catalogTabProducts = 'Produits';
-  static const catalogTabCategories = 'Catégories';
-  static const catalogSearchHint = 'Rechercher un produit…';
-  static const catalogAllCategories = 'Tous';
-  static const catalogEmptyProducts = 'Aucun produit dans ce catalogue.';
-  static const catalogEmptyCategories = 'Aucune catégorie pour le moment.';
-  static const catalogLoadError = 'Impossible de charger le catalogue.';
-  static const catalogInStock = 'En stock';
-  static const catalogOutOfStock = 'Rupture';
-  static const catalogUnavailableSection =
-      'La création et l’édition avancées de produits ne sont pas branchées dans cet écran.';
-  static const reportsTitle = 'Rapports';
-  static const reportsPeriodToday = 'Aujourd’hui';
-  static const reportsPeriodYesterday = 'Hier';
-  static const reportsPeriodWeek = 'Cette semaine';
-  static const reportsPeriodMonth = 'Ce mois';
-  static const reportsFinanceTitle = 'Détails financiers';
-  static const reportsGrossSales = 'Ventes brutes';
-  static const reportsCommission = 'Commission SpeedyGo';
-  static const reportsMerchantNet = 'Net commerçant';
-  static const reportsDataUnavailable = 'Données indisponibles';
-  static const reportsDataUnavailableShort = '—';
-  static const reportsOrdersMetric = 'Commandes';
-  static const reportsPrepTimeMetric = 'Temps prép. moy.';
-  static const reportsCancellationsMetric = 'Annulations';
-  static const reportsTrendTitle = 'Tendance des ventes';
-  static const reportsTopProductsTitle = 'Produits les plus vendus';
-  static const reportsTopProductsScreenTitle = 'Top produits';
-  static const reportsCommissionMixedRates =
-      'Commission SpeedyGo (taux variables)';
-  static const reportsFinanceUnavailable = 'Données indisponibles';
-  static const reportsRatingsTitle = 'Notes clients';
-  static const reportsRatingsEmpty = 'Aucune note pour le moment.';
-  static const reportsRatingsCount = 'avis';
-  static const reportsRatingsUnavailable = 'Données indisponibles';
-  static const reportsSettlementsTitle = 'Règlements';
-  static String reportsSettlementStatus(String status) =>
-      switch (status.toUpperCase()) {
-        'DRAFT' => 'Brouillon',
-        'FINALIZED' => 'Finalisé',
-        _ => 'Statut inconnu',
-      };
-  static const reportsSettlementsEmpty = 'Aucun règlement pour le moment.';
-  static const reportsSettlementsForbidden =
-      'Les règlements sont réservés au propriétaire ou au responsable.';
-  static const reportsLoadError = 'Impossible de charger les indicateurs.';
-  static const reportsTrendUnavailable = 'Données indisponibles';
-  static const reportsTopProductsUnavailable = 'Données indisponibles';
-  static const reportsPeriodCustom = 'Personnalisé';
-  static const reportsPeriodSelectorLabel = 'Période du rapport';
-  static const reportsCustomRangeTooLong =
-      'La période personnalisée est limitée à 93 jours.';
-  static const reportsAverageBasketMetric = 'Panier moyen';
-  static const reportsPrepTimeNotTracked = 'Non suivi';
-  static const reportsMerchantDiscount = 'Remise commerçant';
-  static const reportsFinanceRestricted =
-      'Commission et net commerçant réservés au propriétaire ou au responsable.';
-  static const reportsFinanceMissingSnapshot =
-      'Données financières indisponibles pour certaines commandes de la période.';
-  static const reportsRefundsCompleted = 'Remboursements finalisés';
-  static const reportsRefundAdjustments = 'Ajustements enregistrés';
-  static const reportsRefundsNote =
-      'Les remboursements ne réduisent pas les ventes. Seuls les ajustements enregistrés sur vos règlements vous sont imputés.';
-  static const reportsTrendEmpty = 'Aucune vente sur la période.';
-  static const reportsTopProductsEmpty = 'Aucun produit vendu sur la période.';
-  static const reportsSeeAll = 'Voir tout';
-  static const reportsSortOrders = 'Commandes';
-  static const reportsSortRevenue = 'Chiffre d’affaires';
-  static const reportsTopSales = 'Top des ventes';
-  static const reportsRankFirst = 'N°1';
-  static const reportsDeletedProduct = 'Produit retiré du catalogue';
-  static const reportsSalesLoadError = 'Impossible de charger les ventes.';
-  static const reportsTopProductsLoadError =
-      'Impossible de charger les produits.';
-  static String reportsLastUpdated(String time) =>
-      'Dernière mise à jour : $time';
-  static String reportsSyncedAt(String time) => 'Synchronisé à $time';
-  static String reportsCommissionWithRate(String rate) =>
-      'Commission SpeedyGo ($rate)';
-  static String reportsOrderCount(int count) =>
-      count == 1 ? '1 commande' : '$count commandes';
-  static String reportsUnitCount(int count) =>
-      count == 1 ? '1 unité' : '$count unités';
-  static String reportsTotalArticles(int count) =>
-      count == 1 ? 'Total : 1 article' : 'Total : $count articles';
-  static String reportsTrendSemantics(int orders, String gross) =>
-      'Tendance des ventes : $orders commandes, $gross';
-  static const reportsDailySummaryTitle = 'Résumé quotidien';
-  static const reportsDailySummaryShortcut = 'Résumé quotidien';
-  static const reportsDailySummaryLoadError =
-      'Impossible de charger le résumé quotidien.';
-  static const reportsDailySummaryEmpty =
-      'Aucune commande créée pour cette journée.';
-  static const reportsDailySummarySalesKpi = 'Ventes';
-  static const reportsDailySummaryOrdersKpi = 'Commandes';
-  static const reportsDailySummaryPrepKpi = 'Temps Prép.';
-  static const reportsDailySummaryCancellationsKpi = 'Annulations';
-  static const reportsDailySummaryBreakdownTitle = 'Répartition des commandes';
-  static const reportsDailySummaryDelivered = 'Livrées';
-  static const reportsDailySummaryInProgress = 'En cours';
-  static const reportsDailySummaryCancelled = 'Annulées';
-  static const reportsDailySummaryPrepEfficiencyTitle =
-      'Efficacité de préparation';
-  static const reportsDailySummaryPrepAverage = 'Moyenne';
-  static const reportsDailySummaryOnTimeRate = 'À l’heure';
-  static const reportsDailySummaryCancellationMotifs = 'Motifs d’annulation';
-  static const reportsDailySummaryViewOrders =
-      'Voir toutes les commandes du jour';
-  static String reportsDailySummaryMinutes(int minutes) => '$minutes min';
-  static String reportsDailySummaryOnTimePercent(String percent) =>
-      '$percent à l’heure';
-  static String reportsDailySummaryTodayDate(String label) =>
-      'Aujourd’hui, $label';
-  static const deliveryImpactTitle = 'Impact sur la livraison';
-  static const deliveryImpactMayDelayDriverAssignment =
-      'La préparation peut retarder la recherche d’un livreur.';
-  static const deliveryImpactMayDelayPickup =
-      'Un livreur est assigné; le retrait peut être retardé.';
-  static const deliveryImpactDriverWaiting = 'Le livreur attend la commande.';
-  static const deliveryImpactTimingUnavailable =
-      'Impact exact sur la livraison indisponible.';
-  static String deliveryImpactLatestRevision(String reason) =>
-      'Dernier motif : $reason';
-  static const rejectReasonProductUnavailable = 'Indisponibilité produit';
-  static const rejectReasonTooBusy = 'Trop occupé';
-  static const rejectReasonClosingSoon = 'Fermeture proche';
-  static const rejectReasonOther = 'Autre';
-  static const rejectReasonTilesHint =
-      'Sélectionnez un motif puis précisez si nécessaire.';
-  static const catalogAddProduct = 'Ajouter un produit';
-  static const catalogEditProduct = 'Modifier le produit';
-  static const catalogProductDetail = 'Détail du produit';
-  static const catalogAddCategory = 'Ajouter une catégorie';
-  static const catalogEditCategory = 'Modifier la catégorie';
-  static const catalogProductName = 'Nom du produit (Français)';
-  static const catalogProductDescription = 'Description (Français)';
-  static const catalogProductPrice = 'Prix de base';
-  static const catalogProductCategory = 'Catégorie';
-  static const catalogProductAvailable = 'Visible dans le menu';
-  static const catalogProductAvailableSub = 'Activer pour rendre disponible';
-  static const catalogSaveProduct = 'Enregistrer';
-  static const catalogSaveProductEdits = 'Enregistrer les modifications';
-  static const catalogPreview = 'Aperçu';
-  static const catalogPreviewTitle = 'Aperçu du produit';
-  static const catalogPreviewUnavailable =
-      'Aperçu non disponible actuellement.';
-  static const catalogFieldRequired = 'Ce champ est obligatoire.';
-  static const catalogPriceInvalid = 'Indiquez un prix valide.';
-  static const catalogCategoryRequired = 'Choisissez une catégorie.';
-  static const catalogSaveRetryHint =
-      'Enregistrement impossible. Vérifiez la connexion et réessayez.';
-  static const catalogSectionInfo = 'Informations';
-  static const catalogSectionMedia = 'Médias';
-  static const catalogSectionPrice = 'Prix et préparation';
-  static const catalogSectionConfig = 'Configuration';
-  static const catalogSectionAvailability = 'Disponibilité';
-  static const catalogSectionImage = 'Image du produit';
-  static const catalogSectionGeneral = 'Informations générales';
-  static const catalogSectionPriceDetails = 'Prix et détails';
-  static const catalogOnlineBanner =
-      'Cet article est actuellement en ligne pour les clients.';
-  static const catalogOfflineBanner =
-      'Cet article n’est pas visible pour les clients.';
-  static const catalogPriceWarning =
-      'Les changements de prix et de disponibilité sont appliqués immédiatement aux clients.';
-  static const catalogImagePrimary = 'Image principale';
-  static const catalogImageAdd = 'Ajouter une photo';
-  static const catalogImageHint = 'JPG, PNG (max. 2 Mo, min. 400 px)';
-  static const catalogImageChangePhoto = 'Changer la photo';
-  static const catalogInStockNow = 'Actuellement en stock';
-  static const catalogOutOfStockNow = 'Actuellement indisponible';
-  static const catalogCurrencySuffix = 'DZD';
-  static const catalogDeleteProduct = 'Supprimer';
-  static const catalogNeedCategory =
-      'Créez d’abord une catégorie pour ajouter un produit.';
-  static const catalogImagePick = 'Choisir une image';
-  static const catalogImageFromGallery = 'Choisir dans la galerie';
-  static const catalogImageFromCamera = 'Prendre une photo';
-  static const catalogImagePluginRestart =
-      'Redémarrez l’application pour activer la sélection de photos.';
-  static const catalogImageFormatError =
-      'Format non pris en charge. Utilisez une photo JPG ou PNG.';
-  static const catalogImageTooSmall =
-      'Image trop petite. Minimum 400 × 400 pixels.';
-  static const catalogImageTooLarge =
-      'Image trop lourde. Maximum 2 Mo après compression.';
-  static const catalogImageChange = 'Changer l’image';
-  static const catalogImageRemove = 'Retirer l’image';
-  static const catalogImageUploadError = 'Impossible d’envoyer l’image.';
-  static const catalogImageBindPartial =
-      'Produit enregistré, mais l’image n’a pas pu être liée. Réessayez.';
-  static const catalogImageRemoteUnavailable =
-      'Aperçu de l’image non disponible actuellement.';
-  static const catalogSaveError = catalogSaveRetryHint;
-  static const catalogDeleteConfirm =
-      'Supprimer ce produit ? Les commandes historiques sont conservées.';
-  static const catalogCategoryName = 'Nom de la catégorie (Français)';
-  static const catalogCategoryActive = 'Visibilité dans le menu';
-  static const catalogCategoryActiveSub =
-      'Afficher cette catégorie aux clients';
-  static const catalogCategoryDetails = 'Détails de la catégorie';
-  static const catalogCategorySettings = 'Paramètres';
-  static const catalogCategoryCancel = 'Annuler';
-  static const catalogDeleteCategory = 'Supprimer la catégorie';
-  static const catalogDeleteCategoryConfirm =
-      'Supprimer cette catégorie ? Elle doit être vide.';
-  static const catalogStaffReadOnly =
-      'Consultation seule — modifications réservées au propriétaire ou responsable.';
-  static const catalogCategorySearchHint = 'Rechercher une catégorie…';
-  static const catalogFilterTooltip = 'Filtres';
-  static const catalogReorder = 'Réorganiser';
-  static const catalogVisible = 'Visible';
-  static const catalogHidden = 'Masqué';
-  static String catalogArticles(int n) => n <= 1 ? '$n article' : '$n articles';
-  static const catalogMenuAvailability = 'Gérer la disponibilité';
-  static const catalogMenuDelete = 'Supprimer';
-  static const catalogMenuDuplicate = 'Dupliquer';
-  static const duplicateTitle = 'Dupliquer le produit';
-  static const duplicateSource = 'Source';
-  static const duplicateNewName = 'Nouveau nom du produit';
-  static const duplicateNewNameHint =
-      'Veuillez modifier le nom avant de publier la copie.';
-  static const duplicateNamePlaceholder = 'Entrez le nouveau nom';
-  static const duplicateClearName = 'Effacer le nom';
-  static String duplicateDefaultName(String name) => 'Copie de $name';
-  static const duplicateCopied = 'Éléments copiés';
-  static const duplicateImage = 'Image du produit';
-  static const duplicateNoImage = 'Image du produit (aucune image)';
-  static String duplicatePrice(String price) => 'Prix ($price)';
-  static const duplicateOptions = 'Options et variantes';
-  static const duplicateSaleUnits = 'Unités de vente (non gérées)';
-  static const duplicateNotCopiedLead =
-      'Le statut de disponibilité et l’historique des ventes ';
-  static const duplicateNotCopiedStrong = 'ne seront pas';
-  static const duplicateNotCopiedTail = ' copiés vers le nouveau produit.';
-  static const duplicateUnavailableInfo =
-      'La copie sera créée indisponible afin que vous puissiez la vérifier avant de l’activer.';
-  static const duplicateCancel = 'Annuler';
-  static const duplicateCreate = 'Créer la copie';
-  static const duplicateCreating = 'Création…';
-  static const duplicateNameRequired = 'Le nom ne peut pas être vide.';
-  static const duplicateNameTooLong = 'Maximum 255 caractères.';
-  static const duplicateNetworkError =
-      'Connexion interrompue. Réessayez : la copie ne sera pas créée deux fois.';
-  static const duplicateError =
-      'La copie n’a pas pu être créée et aucun produit n’a été ajouté. Réessayez.';
-  static const duplicateConflict =
-      'Cette demande de copie a déjà servi ailleurs. Rouvrez l’écran puis réessayez.';
-  static const duplicateNotFound =
-      'Produit introuvable. Actualisez le catalogue.';
-  static const duplicateCreated =
-      'Copie créée — indisponible jusqu’à votre vérification.';
-  static const duplicateReplayed = 'Copie déjà créée — ouverture du produit.';
-  static const duplicateForbiddenTitle =
-      'Duplication réservée au propriétaire ou au responsable';
-  static const duplicateBackToCatalog = 'Retour au catalogue';
-  static const catalogMenuViewCategory = 'Voir la catégorie';
-  static const catalogBulkTooltip = 'Disponibilité groupée';
-  static const catalogCategoryInUse =
-      'Cette catégorie contient encore des produits. Déplacez-les ou supprimez-les d’abord.';
-  static const catalogProductInUse =
-      'Ce produit figure dans des commandes passées : il ne peut pas être supprimé. Mettez-le en rupture à la place.';
-  static const catalogVisibilityError =
-      'Impossible de modifier la visibilité. Réessayez.';
-  static const catalogAvailabilityError =
-      'Impossible de modifier la disponibilité. Réessayez.';
-  static const catalogNoResults = 'Aucun produit ne correspond à ces filtres.';
-  static const catalogNoCategoryResults =
-      'Aucune catégorie ne correspond à cette recherche.';
-  // Filters screen
-  static const catalogFiltersTitle = 'Recherche et Filtres';
-  static const catalogFiltersReset = 'Réinitialiser';
-  static const catalogFiltersCategories = 'Catégories';
-  static const catalogFiltersStatus = 'Statut';
-  static const catalogFiltersOutOfStock = 'Rupture de stock';
-  static const catalogFiltersQuality = 'Contrôle qualité';
-  static const catalogFiltersMissingImage = 'Image manquante';
-  static const catalogFiltersPreview = 'Aperçu des résultats';
-  static String catalogProductsCount(int n) =>
-      n <= 1 ? '$n produit' : '$n produits';
-  static const catalogFiltersApply = 'Appliquer les filtres';
-  // Category detail
-  static const catalogCategoryDetailTitle = 'Détails de la catégorie';
-  static String catalogDisplayOrder(int n) => 'Ordre d’affichage : $n';
-  static const catalogCategoryProducts = 'Produits';
-  static const catalogCategoryEmpty = 'Aucun produit dans cette catégorie.';
-  // Reorder
-  static const catalogReorderTitle = 'Réorganiser les catégories';
-  static String catalogCategoriesCount(int n) =>
-      n <= 1 ? '$n catégorie' : '$n catégories';
-  static const catalogReorderHint =
-      'Faites glisser pour modifier l’ordre d’affichage.';
-  static const catalogReorderSave = 'Enregistrer l’ordre';
-  static const catalogReorderSaved = 'Ordre enregistré.';
-  static const catalogReorderPartial =
-      'Certaines catégories n’ont pas pu être déplacées. Réessayez.';
-  // Product availability
-  static const catalogAvailabilityTitle = 'Disponibilité du produit';
-  static const catalogAvailabilityNote =
-      'Les modifications n’affectent pas les commandes déjà acceptées.';
-  static const catalogAvailabilityState = 'État de disponibilité';
-  static const catalogAvailableOption = 'Disponible';
-  static const catalogAvailableOptionSub =
-      'Visible et commandable immédiatement.';
-  static const catalogOutOfStockOptionSub =
-      'Affiché comme indisponible jusqu’à réactivation manuelle.';
-  static const catalogAvailabilitySave = 'Enregistrer la disponibilité';
-  static const catalogAvailabilitySaved = 'Disponibilité enregistrée.';
-  // Bulk availability
-  static const catalogBulkTitle = 'Disponibilité groupée';
-  static const catalogBulkNote =
-      'Les modifications s’appliquent immédiatement sur l’application client. Elles n’affectent pas les commandes en cours.';
-  static const catalogBulkSelection = 'Sélection multiple';
-  static String catalogBulkSelected(int n) =>
-      n <= 1 ? '$n produit sélectionné' : '$n produits sélectionnés';
-  static const catalogBulkNewStatus = 'Nouveau statut';
-  static const catalogBulkSelectAll = 'Tout sélectionner';
-  static const catalogBulkClear = 'Effacer la sélection';
-  static const catalogBulkApply = 'Appliquer';
-  static String catalogBulkDone(int n) =>
-      n <= 1 ? '$n produit mis à jour.' : '$n produits mis à jour.';
-  static String catalogBulkFailed(int n) => n <= 1
-      ? '$n produit n’a pas pu être mis à jour.'
-      : '$n produits n’ont pas pu être mis à jour.';
-  static const catalogUncategorized = 'Sans catégorie';
-  // Delete product
-  static const catalogDeleteTitle = 'Supprimer le produit';
-  static const catalogDeleteWarningTitle =
-      'Un produit déjà commandé ne peut pas être supprimé.';
-  static const catalogDeleteWarningBody =
-      'Les commandes passées gardent leur copie du produit. Si la suppression est refusée, mettez le produit en rupture.';
-  static const catalogDeleteHideOption = 'Mettre en rupture';
-  static const catalogDeleteHideOptionSub =
-      'Le produit reste enregistré et modifiable, mais n’est plus commandable.';
-  static const catalogDeleteRecommended = 'Recommandé';
-  static const catalogDeleteHardOption = 'Supprimer définitivement';
-  static const catalogDeleteHardOptionSub =
-      'Retire le produit, ses variantes et suppléments. Impossible s’il figure dans une commande.';
-  static const catalogDeleteHardConfirm = 'Supprimer définitivement';
-  static const catalogDeleted = 'Produit supprimé.';
-  static const catalogMarkedOutOfStock = 'Produit mis en rupture.';
-  // Option groups
-  static const catalogVariantsTitle = 'Variantes obligatoires';
-  static const catalogVariantsInfo =
-      'Les variantes obligatoires demandent au client de choisir une option avant d’ajouter le produit au panier.';
-  static const catalogVariantsSubtitle =
-      'Configurez les options requises avant l’ajout au panier.';
-  static const catalogExtrasTitle = 'Suppléments optionnels';
-  static const catalogExtrasSubtitle =
-      'Options facultatives que le client peut ajouter.';
-  static const catalogRequiredTag = 'Obligatoire';
-  static const catalogSingleChoice = 'Sélection unique';
-  static String catalogChoiceRange(int min, int max) =>
-      min == max ? '$min choix' : 'Entre $min et $max choix';
-  static String catalogMaxSelections(int n) =>
-      n <= 1 ? 'Maximum 1 sélection' : 'Maximum $n sélections';
-  static const catalogAddChoice = 'Ajouter un choix';
-  static const catalogAddOption = 'Ajouter une option';
-  static const catalogAddVariantGroup = 'Ajouter un groupe de variantes';
-  static const catalogAddExtrasGroup = 'Nouveau groupe de suppléments';
-  static const catalogNewGroup = 'Nouveau groupe';
-  static const catalogGroupName = 'Nom du groupe (Français)';
-  static const catalogGroupNameHint = 'ex : Sauce';
-  static const catalogOptionName = 'Nom du choix';
-  static const catalogOptionPrice = 'Prix (+)';
-  static const catalogMaxSelectionsLabel = 'Sélections maximum';
-  static const catalogGroupRequiredSwitch = 'Choix obligatoire';
-  static const catalogGroupRequiredSub = 'Le client doit choisir une option.';
-  static const catalogGroupSave = 'Enregistrer le groupe';
-  static const catalogGroupDelete = 'Supprimer le groupe';
-  static const catalogGroupDeleteConfirm =
-      'Supprimer ce groupe et toutes ses options ? Les commandes passées ne sont pas modifiées.';
-  static const catalogOptionDelete = 'Supprimer l’option';
-  static const catalogOptionAvailable = 'Option disponible';
-  static const catalogOptionsEmpty = 'Aucun choix pour le moment.';
-  static const catalogGroupsLoadError =
-      'Impossible de charger les options du produit.';
-  static const catalogGroupInvalid =
-      'Vérifiez le nombre de sélections (minimum ≤ maximum).';
-  static const catalogSaveFirstForOptions =
-      'Enregistrez le produit pour configurer ses variantes et suppléments.';
-  static String catalogGroupsCount(int n) =>
-      n == 0 ? 'Aucun groupe' : (n == 1 ? '1 groupe' : '$n groupes');
-  static const catalogLastUpdated = 'Dernière mise à jour';
-  static const catalogCustomerPreview = 'Aperçu client';
-  static const catalogEditGroup = 'Modifier le groupe';
-  // Product detail (read-only)
-  static const catalogProductDetailTitle = 'Détails du Produit';
-  static const catalogDetailInfo = 'Informations';
-  static const catalogDetailName = 'Nom (Français)';
-  static const catalogDetailPricing = 'Tarification';
-  static const catalogDetailPrice = 'Prix de base';
-  static const catalogDetailAppearance = 'Apparence sur l’application';
-  static const catalogDetailAvailable = 'Produit disponible';
-  static const catalogDetailNoDescription = 'Aucune description.';
-  static const catalogDetailNoOptions =
-      'Aucune variante ni supplément configuré.';
-  static String catalogRequiredSummary(String rule) => 'Obligatoire · $rule';
-  static String catalogOptionalSummary(int max) => 'Facultatif · Maximum $max';
-  // Image crop
-  static const catalogCropTitle = 'Image du produit';
-  static const catalogCropTipsTitle = 'Conseils pour une belle photo';
-  static const catalogCropTip1 =
-      'Utilisez un fond neutre et propre (blanc ou bois clair).';
-  static const catalogCropTip2 =
-      'Assurez-vous d’avoir un bon éclairage, de préférence naturel.';
-  static String catalogCropTip3(String? name) => name == null || name.isEmpty
-      ? 'Centrez le produit dans le cadre.'
-      : 'Centrez le produit (« $name ») dans le cadre.';
-  static const catalogCropFormat = 'Format : JPG, PNG (max. 2 Mo, min. 400 px)';
-  static const catalogCropUse = 'Utiliser cette image';
-  static const catalogCropRotate = 'Pivoter';
-  static const catalogCropZoom = 'Zoomer';
-  static const catalogCropRemove = 'Supprimer l’image';
-  static const contractFieldUnavailable = 'Non disponible actuellement';
-  static const catalogFieldNameAr = 'Nom du produit (Arabe)';
-  static const catalogFieldDescAr = 'Description (Arabe)';
-  static const catalogFieldPrepTime = 'Temps de prép.';
-  static const catalogFieldSaleUnit = 'Unité de vente';
-  static const sellingUnitTitle = 'Unités de vente';
-  static const sellingUnitCalloutTitle = 'Précision de l’unité';
-  static const sellingUnitCalloutBody =
-      'Choisissez l’unité exacte pour éviter toute confusion lors de la préparation. Cette unité sera affichée aux clients (ex : 1 500 DZD / Plat). Les quantités sont entières : pas de vente au poids.';
-  static const sellingUnitPreviewLabel = 'Aperçu client';
-  static const sellingUnitPreviewNoPrice = '— DZD';
-  static const sellingUnitCommon = 'Unités courantes';
-  static const sellingUnitPackaging = 'Conditionnement';
-  static const sellingUnitNone = 'Aucune unité';
-  static const sellingUnitNoneSub = 'Le prix est affiché sans unité.';
-  static const sellingUnitNotSet = 'Non définie';
-  static const sellingUnitCustomName = 'Nom de l’unité (Français)';
-  static const sellingUnitCustomHint = 'ex : Cornet';
-  static const sellingUnitCustomMaxLength = 40;
-  static const sellingUnitApply = 'Appliquer l’unité';
-  static const sellingUnitReadOnly =
-      'Seuls le propriétaire et les gérants peuvent modifier l’unité de vente.';
-  static const catalogFieldVariants = 'Variantes obligatoires';
-  static const catalogFieldExtras = 'Suppléments optionnels';
-  static const catalogFieldCategoryNameAr = 'Nom de la catégorie (Arabe)';
-  static const catalogFieldCategoryDesc =
-      'Description de la catégorie (Optionnel)';
-  static const storeCoverTitle = 'Logo et Couverture';
-  static const storeCoverPick = 'Choisir une couverture';
-  static const storeCoverReplace = 'Remplacer';
-  static const storeCoverSave = 'Enregistrer les modifications';
-  static const storeCoverRemove = 'Supprimer';
-  static const storeCoverSection = 'Photo de couverture';
-  static const storeCoverSectionHint =
-      'La photo de couverture doit représenter votre établissement.';
-  static const storeLogoSection = 'Logo du magasin';
-  static const storeLogoSectionHint =
-      'Le logo doit être lisible même en petit format.';
-  static const storeLogoEdit = 'Modifier';
-  static const storeLogoAdd = 'Ajouter';
-  static const storeLogoRemove = 'Supprimer';
-  static const storeLogoEmpty = 'Aucun logo';
-  static const storeLogoPending =
-      'Nouveau logo sélectionné — enregistrez pour l’appliquer.';
-  static const storeLogoTooSmall = 'Logo trop petit. Minimum 128 × 128 pixels.';
-  static const storeLogoTooLarge =
-      'Logo trop lourd. Maximum 1 Mo après compression.';
-  static const storeLogoUploadError = 'Impossible d’envoyer le logo.';
-  static const storeLogoBindPartial =
-      'Envoi réussi, mais le logo n’a pas pu être lié. Réessayez.';
-  static const storeLogoRemoved = 'Logo supprimé.';
-  static const storeLogoRemoveError =
-      'Impossible de supprimer le logo. Réessayez.';
-  static const storeLogoRemoteUnavailable =
-      'Aperçu du logo non disponible actuellement.';
-  static const storeMediaPartialSaved =
-      'Le logo est enregistré, mais la couverture a échoué. Réessayez.';
-  static const storeCoverHint = 'JPEG ou PNG, max. 2 Mo.';
-  static const storeCoverUploadError = 'Impossible d’envoyer la couverture.';
-  static const storeCoverBindPartial =
-      'Envoi réussi, mais la couverture n’a pas pu être liée. Réessayez.';
-  static const storeCoverRemoteUnavailable =
-      'Aperçu de la couverture non disponible actuellement.';
-  static const storeCustomerPreviewTitle = 'Aperçu client';
-  static const storeCustomerPreviewHint =
-      'Notes et délai estimé non disponibles actuellement.';
-  static const storeAddressTitle = 'Contact et Adresse du magasin';
-  static const storeAddressSave = 'Enregistrer les modifications';
-  static const storeAddressConfirmMap = 'Modifier sur la carte';
-  static const storeAddressSaveError =
-      'Enregistrement impossible. Vérifiez la connexion et réessayez.';
-  static const storeAddressBanner =
-      'La modification de l’adresse peut affecter vos zones de livraison et les opérations en cours.';
-  static const storeAddressCoordsSection = 'Coordonnées';
-  static const storeAddressSection = 'Adresse';
-  static const storeAddressPhone = 'Numéro de téléphone';
-  static const storeAddressPhoneHint =
-      'Numéro communiqué aux livreurs pour le retrait.';
-  static const storeAddressDetailed = 'Adresse détaillée';
-  static const storeAddressLocationSummary = 'Emplacement confirmé';
-  static const storeAddressPublicContact = 'Contact public (Optionnel)';
-  static const storeAddressWilaya = 'Wilaya';
-  static const storeAddressCommune = 'Commune';
-  static const adminLocationChoose = 'Sélectionner';
-  static const adminLocationSearchHint = 'Rechercher…';
-  static const adminLocationEmpty = 'Aucun résultat';
-  static const adminLocationLoadError =
-      'Impossible de charger la liste. Réessayez.';
-  static const adminLocationRetry = 'Réessayer';
-  static const adminLocationWilayaRequired = 'Sélectionnez d’abord une wilaya.';
-  static const adminLocationPairRequired =
-      'Wilaya et commune sont obligatoires.';
-  static const storeAddressPickupHints = 'Instructions de retrait';
-  static const storeProfileMediaSub = 'Logo et photo de couverture';
-  static const storeProfileMediaUnavailable = 'Indisponible';
-  static const storeProfilePrepUnavailable = 'Indisponible';
-  static const storeProfilePreviewUnavailable = 'Aperçu client indisponible.';
-  static const profileSettingsTitle = 'Paramètres';
-  static const storeProfileTitle = 'Profil magasin';
-  static const storeProfileCustomerPreview = 'Aperçu client';
-  static const storeProfileGeneral = 'Informations générales';
-  static const storeProfileGeneralSub = 'Nom et statut du commerce';
-  static const storeGeneralTitle = 'Informations générales';
-  static const storeGeneralBranchName = 'Nom de l’établissement';
-  static const storeGeneralBranchNameHint =
-      'Affiché aux clients pour cet établissement.';
-  static const storeGeneralMerchantName = 'Nom du commerce';
-  static const storeGeneralMerchantLocked =
-      'Nom vérifié par SpeedyGo : non modifiable ici.';
-  static const storeGeneralReadOnly =
-      'Seuls le propriétaire et le gérant peuvent modifier ces informations.';
-  static const storeGeneralPhoneElsewhere =
-      'Le téléphone se modifie dans « Adresse et Emplacement ».';
-  static const storeGeneralSave = 'Enregistrer';
-  static const storeGeneralSaved =
-      'Informations de l’établissement enregistrées.';
-  static const storeGeneralNameAr = 'Nom en arabe';
-  static const storeGeneralNameArHint =
-      'Optionnel. Affiché aux clients arabophones.';
-  static const storeGeneralDescription = 'Description courte';
-  static const storeGeneralDescriptionHint =
-      'Optionnel. Présentez votre établissement en quelques phrases.';
-  static const storeGeneralPublicEmail = 'E-mail public';
-  static const storeGeneralPublicEmailHint =
-      'Optionnel. Adresse de contact visible par les clients.';
-  static const storeGeneralEmailInvalid = 'Adresse e-mail invalide.';
-  static const storeGeneralPreviewTitle = 'Aperçu client';
-  static const storeGeneralPreviewOpen = 'Ouvert';
-  static const storeGeneralPreviewClosed = 'Fermé';
-  static const storeProfileCategory = 'Catégorie de l’établissement';
-  static const storeProfileCategorySub = 'Type de commerce affiché aux clients';
-  static const storeCategoryTitle = 'Catégorie de l’établissement';
-  static const storeCategorySubtitle =
-      'Choisissez la catégorie qui décrit le mieux votre activité.';
-  static const storeCategorySearch = 'Rechercher une catégorie...';
-  static const storeCategoryInfo =
-      'Une seule catégorie par établissement. Elle détermine où il apparaît dans l’application client.';
-  static const storeCategoryReadOnly =
-      'Seuls le propriétaire et les gérants peuvent modifier la catégorie.';
-  static const storeCategorySave = 'Enregistrer';
-  static const storeCategoryClear = 'Retirer la catégorie';
-  static const storeCategorySaved = 'Catégorie enregistrée.';
-  static const storeCategoryCleared = 'Catégorie retirée.';
-  static const storeCategoryNotSet = 'Non définie';
-  static const storeCategoryEmpty =
-      'Aucune catégorie disponible pour le moment.';
-  static const storeCategoryNoMatch = 'Aucune catégorie ne correspond.';
-  static const storeCategoryLoadError = 'Impossible de charger les catégories.';
-  static const storeCategorySaveError = 'Enregistrement impossible. Réessayez.';
-  static const storeCategoryForbidden =
-      'Votre rôle ne permet pas de modifier cet établissement.';
-  static const storeCategoryRestricted =
-      'Le statut du commerce ne permet pas cette modification.';
-  static const storeGeneralNameRequired = 'Le nom ne peut pas être vide.';
-  static const storeGeneralSaveError = 'Enregistrement impossible. Réessayez.';
-  static const storeGeneralForbidden =
-      'Votre rôle ne permet pas de modifier cet établissement.';
-  static const storeGeneralRestricted =
-      'Le statut du commerce ne permet pas cette modification.';
-  static const storeProfileMedia = 'Médias et Logos';
-  static const storeProfileAddress = 'Adresse et Emplacement';
-  static const storeProfileAddressSub = 'Téléphone, adresse et position GPS';
-  static const storeProfileHours = 'Horaires d’ouverture';
-  static const storeProfileHoursSub = 'Jours d’ouverture, pauses';
-  static const storeProfilePrep = 'Paramètres de préparation';
-  static const storeProfileSettings = 'Paramètres du compte';
-  static const storeProfileSettingsSub = 'Compte, préférences, déconnexion';
-  static const storeProfileNotifications = 'Notifications';
-  static const storeProfileNotificationsSub = 'Centre d’alertes';
-  static const openingHoursTitle = 'Horaires d’ouverture';
-  static const openingHoursEmpty =
-      'Aucun horaire configuré pour cet établissement.';
-  static const openingHoursSave = 'Enregistrer les horaires';
-  static const openingHoursSaved = 'Horaires enregistrés.';
-  static const openingHoursLoadError = 'Impossible de charger les horaires.';
-  static const openingHoursSaveError = 'Impossible d’enregistrer les horaires.';
-  static const openingHoursInvalid =
-      'Horaires refusés : vérifiez les chevauchements, y compris après minuit.';
-  static const openingHoursConflict =
-      'Les horaires ont changé ailleurs. Rechargement effectué — vérifiez puis réessayez.';
-  static const openingHoursClosed = 'Fermé';
-  static const openingHoursUsual = 'Horaires habituels';
-  static const openingHoursNotConfigured = 'Aucun horaire configuré';
-  static const openingHoursOpenNow = 'Ouvert actuellement';
-  static const openingHoursClosedNow = 'Fermé actuellement';
-  static const openingHoursInfo =
-      'Les clients peuvent commander uniquement pendant vos heures d’ouverture. Les modifications sont appliquées dès l’enregistrement.';
-  static const openingHoursStaffReadOnly =
-      'Lecture seule : seuls le propriétaire et les gérants peuvent modifier les horaires.';
-  static const openingHoursOpens = 'Ouverture';
-  static const openingHoursCloses = 'Fermeture';
-  static const openingHoursEditorHint =
-      'Jusqu’à 3 plages par jour. Une fermeture avant l’ouverture se termine le lendemain.';
-  static const openingHoursAddRange = 'Ajouter une plage';
-  static const openingHoursRemoveRange = 'Supprimer la plage';
-  static const openingHoursApply = 'Appliquer';
-  static const openingHoursNextDay = 'Se termine le lendemain';
-  static const openingHoursAllDay = 'Ouvert 24 h/24';
-  static const openingHoursDayClosedHint = 'Aucune plage : le jour sera fermé.';
-  static const openingHoursIssueOverlap = 'Les plages se chevauchent.';
-  static const openingHoursIssueZero =
-      'L’ouverture et la fermeture doivent être différentes (00:00–00:00 pour 24 h).';
-  static const openingHoursIssueTooMany = 'Maximum 3 plages par jour.';
-  static const hoursExceptionsTitle = 'Horaires exceptionnels';
-  static const hoursExceptionsNavSub = 'Jours fériés, fermetures ponctuelles';
-  static const hoursExceptionsBanner =
-      'Ces horaires remplacent vos horaires habituels uniquement pour les dates sélectionnées.';
-  static const hoursExceptionsUpcoming = 'Exceptions à venir';
-  static const hoursExceptionsEmpty = 'Aucune exception à venir.';
-  static const hoursExceptionsAdd = 'Ajouter une exception';
-  static const hoursExceptionsEdit = 'Modifier l’exception';
-  static const hoursExceptionsDate = 'Date';
-  static const hoursExceptionsDateHint = 'Sélectionner une date';
-  static const hoursExceptionsDateTaken =
-      'Cette date a déjà une exception : l’enregistrement la remplacera.';
-  static const hoursExceptionsStatus = 'Statut';
-  static const hoursExceptionsOpen = 'Ouvert';
-  static const hoursExceptionsClosed = 'Fermé';
-  static const hoursExceptionsHours = 'Horaires modifiés';
-  static const hoursExceptionsTo = 'à';
-  static const hoursExceptionsLabel = 'Motif';
-  static const hoursExceptionsLabelHint = 'ex : Jour férié, Travaux…';
-  static const hoursExceptionsMessage = 'Message pour les clients (Optionnel)';
-  static const hoursExceptionsMessageHint =
-      'Enregistré avec l’exception. Pas encore affiché dans l’application client.';
-  static const hoursExceptionsCancel = 'Annuler';
-  static const hoursExceptionsSave = 'Enregistrer les horaires';
-  static const hoursExceptionsSaved = 'Exception enregistrée.';
-  static const hoursExceptionsDeleted = 'Exception supprimée.';
-  static const hoursExceptionsDeleteTitle = 'Supprimer l’exception ?';
-  static String hoursExceptionsDeleteBody(String date) =>
-      'Le $date reprendra vos horaires habituels.';
-  static const hoursExceptionsDeleteConfirm = 'Supprimer';
-  static const hoursExceptionsLoadError =
-      'Impossible de charger les horaires exceptionnels.';
-  static const hoursExceptionsSaveError =
-      'Impossible d’enregistrer l’exception. Vos saisies sont conservées.';
-  static const hoursExceptionsDeleteError =
-      'Impossible de supprimer l’exception. Réessayez.';
-  static const hoursExceptionsConflict =
-      'Cette date a été modifiée ailleurs. La liste a été rechargée : vérifiez puis enregistrez à nouveau.';
-  static const hoursExceptionsInvalid =
-      'Exception refusée : vérifiez la date (aujourd’hui à +365 jours) et les plages.';
-  static const hoursExceptionsWeeklyRequired =
-      'Configurez d’abord les horaires habituels.';
-  static const hoursExceptionsTooMany =
-      'Trop d’exceptions à venir (100 maximum).';
-  static const hoursExceptionsStaffReadOnly =
-      'Lecture seule : seuls le propriétaire et les gérants peuvent modifier les horaires exceptionnels.';
-  static const hoursExceptionsDateRequired = 'Sélectionnez une date.';
-  static const hoursExceptionsLabelRequired = 'Indiquez un motif.';
-  static const hoursExceptionsIntervalsRequired =
-      'Ajoutez au moins une plage horaire.';
-  static const hoursExceptionsSameDay =
-      'Chaque plage doit finir le même jour (00:00 = minuit).';
-  static const hoursExceptionsHelpTitle = 'Ordre d’application';
-  static const hoursExceptionsHelpBody =
-      'Une fermeture forcée ou temporaire de l’établissement s’applique toujours en premier. '
-      'Sinon, une exception remplace les horaires habituels pour sa date (heure d’Alger). '
-      'Les autres jours suivent les horaires habituels.';
-  static const hoursExceptionsHelpOk = 'Compris';
-  static String hoursExceptionsToday(String label) =>
-      'Exception aujourd’hui : $label';
-  static const availabilityTitle = 'État du magasin';
-  static const availabilityEstablishment = 'Établissement';
-  static const availabilityOpen = 'Ouvert';
-  static const availabilityClosed = 'Fermé';
-  static const availabilityFollowSchedule = 'Selon les horaires';
-  static const availabilityForceClosed = 'Fermé';
-  static const availabilitySave = 'Enregistrer les modifications';
-  static const availabilitySaving = 'Enregistrement…';
-  static const availabilitySaved = 'État du magasin enregistré.';
-  static const availabilityClosureSaved = 'Fermeture enregistrée.';
-  static const availabilityLoadError =
-      'Impossible de charger l’état du magasin.';
-  static const availabilitySaveError =
-      'Impossible d’enregistrer l’état du magasin.';
-  static const availabilityConflict =
-      'L’état a changé ailleurs. Rechargement effectué — vérifiez puis réessayez.';
-  static const availabilityReopenTitle = 'Rouvrir selon les horaires';
-  static const availabilityReopenOutsideHoursBody =
-      'Vous êtes hors des horaires hebdomadaires. Le magasin restera Fermé jusqu’à la prochaine ouverture prévue.';
-  static const availabilityConfirmReopen = 'Confirmer';
+  static String prepLateBy(int minutes) {
+    if (minutes <= 0) return isArabic ? 'متأخر' : 'En retard';
+    return isArabic
+        ? 'متأخر ${durationFr(minutes)}'
+        : '${durationFr(minutes)} de retard';
+  }
+
   static String availabilityLastUpdate(DateTime updatedAt, DateTime now) {
     final minutes = now.difference(updatedAt).inMinutes;
+    if (isArabic) {
+      final String when;
+      if (minutes < 1) {
+        when = 'الآن';
+      } else if (minutes < 60) {
+        when = 'منذ $minutes د';
+      } else if (minutes < 24 * 60) {
+        when = 'منذ ${minutes ~/ 60} س';
+      } else {
+        when = 'في ${_ddMmYyyy(updatedAt)}';
+      }
+      return 'آخر تحديث: $when';
+    }
     final String when;
     if (minutes < 1) {
       when = 'à l’instant';
@@ -1172,501 +1428,158 @@ class AppStrings {
     } else if (minutes < 24 * 60) {
       when = 'il y a ${minutes ~/ 60} h';
     } else {
-      final local = updatedAt.toUtc().add(const Duration(hours: 1));
-      String two(int v) => v.toString().padLeft(2, '0');
-      when =
-          'le ${two(local.day)}/${two(local.month)} à '
-          '${two(local.hour)}:${two(local.minute)}';
+      when = 'le ${_ddMmYyyy(updatedAt)}';
     }
     return 'Dernière mise à jour : $when';
   }
 
-  static const availabilityToday = 'Aujourd’hui';
-  static const availabilityClosedToday = 'Fermé aujourd’hui';
-  static const availabilityModifyHours = 'Modifier';
-  static const availabilityQuickPause = 'Pause rapide';
-  static const availabilityQuickPauseHint =
-      'Fermer temporairement pour un rush en cuisine.';
-  static const availabilityPause30 = '30 MIN';
-  static const availabilityPause60 = '1 HEURE';
-  static const availabilityActiveOrdersUnknown = 'Commandes en cours';
-  static const availabilityCloseWarningTitle =
-      'Attention : fermeture immédiate';
-  static String availabilityCloseWarningBody(int? count) => count == null
-      ? 'Toutes les nouvelles commandes seront rejetées. Les commandes actives doivent toujours être traitées.'
-      : count == 0
-      ? 'Toutes les nouvelles commandes seront rejetées. Aucune commande active en cours.'
-      : 'Toutes les nouvelles commandes seront rejetées. Vous devez toujours traiter ${count == 1 ? 'la commande active' : 'les $count commandes actives'}.';
-  static const availabilityStaffReadOnly =
-      'Lecture seule : seuls le propriétaire et les gérants peuvent modifier l’état du magasin.';
-  static const availabilityBannerOpenTitle = 'Magasin en ligne';
-  static const availabilityBannerOpenBody =
-      'Les clients peuvent passer commande et voir votre menu normalement.';
-  static const availabilityBannerClosedTitle = 'Magasin hors ligne';
-  static const availabilityBannerClosedBody =
-      'Les clients ne peuvent plus passer de nouvelles commandes.';
-  static const availabilityBannerScheduleClosedTitle =
-      'Selon les horaires — actuellement fermé';
-  static const availabilityBannerScheduleClosedBody =
-      'Le magasin suit le planning. Il s’ouvrira automatiquement aux prochaines heures.';
-  static String availabilityActiveOrders(int count) =>
-      '$count commande${count == 1 ? '' : 's'} en cours';
-  static const availabilityReasonPeak = 'Forte charge (cuisine)';
-  static const availabilityReasonTechnical = 'Problème technique';
-  static const availabilityReasonStock = 'Rupture de stock';
-  static const availabilityReasonLunch = 'Pause déjeuner';
-  static const temporaryClosureTitle = 'Fermeture temporaire';
-  static const temporaryClosureActionRequired = 'Action requise';
-  static const temporaryClosureImpactLead =
-      'La fermeture suspendra l’acceptation de nouvelles commandes. ';
-  static String temporaryClosureImpactCount(int count) =>
-      count == 1 ? 'La commande en cours' : 'Les $count commandes en cours';
-  static String temporaryClosureImpactTail(int count) => count == 1
-      ? ' sera maintenue et doit être préparée.'
-      : ' seront maintenues et doivent être préparées.';
-  static const temporaryClosureImpactNone = 'Aucune commande en cours.';
-  static const temporaryClosureImpactUnknown =
-      'Les commandes en cours seront maintenues et doivent être préparées.';
-  static const temporaryClosureReason = 'Motif de la fermeture';
-  static const temporaryClosureReopen = 'Réouverture prévue';
-  static const temporaryClosure30m = 'Dans 30 minutes';
-  static const temporaryClosure1h = 'Dans 1 heure';
-  static const temporaryClosurePickTime = 'Choisir une heure…';
+  static String availabilityCloseWarningBody(int? count) {
+    if (isArabic) {
+      if (count == null) {
+        return 'سيتم رفض جميع الطلبات الجديدة. يجب متابعة معالجة الطلبات النشطة.';
+      }
+      if (count == 0) {
+        return 'سيتم رفض جميع الطلبات الجديدة. لا توجد طلبات نشطة قيد المعالجة.';
+      }
+      if (count == 1) {
+        return 'سيتم رفض جميع الطلبات الجديدة. يجب متابعة معالجة الطلب النشط.';
+      }
+      return 'سيتم رفض جميع الطلبات الجديدة. يجب متابعة معالجة الـ $count طلبات النشطة.';
+    }
+    if (count == null) {
+      return 'Toutes les nouvelles commandes seront rejetées. Les commandes actives doivent toujours être traitées.';
+    }
+    if (count == 0) {
+      return 'Toutes les nouvelles commandes seront rejetées. Aucune commande active en cours.';
+    }
+    return 'Toutes les nouvelles commandes seront rejetées. Vous devez toujours traiter '
+        '${count == 1 ? 'la commande active' : 'les $count commandes actives'}.';
+  }
+
+  static String availabilityActiveOrders(int count) {
+    if (isArabic) {
+      return count == 1 ? 'طلب واحد قيد التنفيذ' : '$count طلبات قيد التنفيذ';
+    }
+    return count == 1 ? '1 commande en cours' : '$count commandes en cours';
+  }
+
+  static String temporaryClosureImpactCount(int count) {
+    if (isArabic) {
+      return count == 1 ? 'الطلب الجاري' : 'الـ $count طلبات الجارية';
+    }
+    return count == 1 ? 'La commande en cours' : 'Les $count commandes en cours';
+  }
+
+  static String reportsTotalArticles(int count) {
+    if (isArabic) {
+      return count == 1 ? 'المجموع: منتج واحد' : 'المجموع: $count منتجات';
+    }
+    return count == 1 ? 'Total : 1 article' : 'Total : $count articles';
+  }
+
+  static String catalogMaxSelections(int n) {
+    if (isArabic) {
+      return n == 1 ? 'اختيار واحد كحد أقصى' : 'حد أقصى $n اختيارات';
+    }
+    return n == 1 ? 'Maximum 1 sélection' : 'Maximum $n sélections';
+  }
+
+
+  static String prepMinutesLabel(int minutes) =>
+      isArabic ? '$minutes د' : '$minutes min';
+
+  static String catalogArticles(int n) {
+    if (isArabic) {
+      return n <= 1 ? '$n منتج' : '$n منتجات';
+    }
+    return n <= 1 ? '$n article' : '$n articles';
+  }
+
   static String temporaryClosureAt({
     required bool today,
     required String hhmm,
-  }) => '${today ? 'Aujourd’hui' : 'Demain'} à $hhmm';
-  static const temporaryClosureIndefinite = 'Indéfinie (Manuel)';
-  static const temporaryClosureImageImpact =
-      'Impact sur votre visibilité : Les clients verront votre établissement comme « Fermé temporairement ».';
-  static const temporaryClosureStaffReadOnly =
-      'Seuls le propriétaire et les gérants peuvent fermer le magasin.';
-  static const temporaryClosurePastTime =
-      'L’heure de réouverture est déjà passée. Choisissez une nouvelle heure.';
-  static const temporaryClosureMessage = 'Message client';
-  static const temporaryClosureOptional = 'Facultatif';
-  static const temporaryClosureMessageHint =
-      'Ex: Nous sommes complets pour le moment, revenez dans 30 minutes !';
-  static const temporaryClosureManualReopenHint =
-      'Vous pourrez rouvrir manuellement à tout moment.';
-  static const temporaryClosureConfirm = 'Confirmer la fermeture';
-  static const storeProfileAvailability = 'État du magasin';
-  static const storeProfileAvailabilitySub =
-      'Selon les horaires, fermeture, pause';
-  static const notificationsTitle = 'Notifications';
-  static const notificationsEmpty = 'Aucune notification pour le moment.';
-  static const notificationsLoadError =
-      'Impossible de charger les notifications.';
-  static const notificationsToday = 'Aujourd’hui';
-  static const notificationsYesterday = 'Hier';
-  static const notificationsJustNow = 'À l’instant';
-  static const notificationsMarkAllRead = 'Tout marquer comme lu';
-  static const notificationsFilterAll = 'Tout';
-  static const notificationsFilterOrders = 'Commandes';
-  static const notificationsOpenDetails = 'Détails';
-  static const notificationsOrderStale =
-      'Cette commande n’est plus en attente d’acceptation.';
-  static const alertNewOrder = 'NOUVELLE COMMANDE';
-  static const alertReceivedAt = 'Reçue à';
-  static const alertPayment = 'Paiement';
-  static const alertViewDetails = 'Voir les détails';
-  static const alertRefuse = 'Refuser';
-  static const alertItems = 'Articles';
-  static const alertOrderTotal = 'Sous-total marchandises';
-  static const alertOrderLabel = 'Commande';
-  static const alertDismiss = 'Fermer';
-  static const alertSeeList = 'Voir la liste';
-  static const notifSettingsTitle = 'Paramètres de notification';
-  static const notifSettingsScreenTitle = 'Alertes';
-  static const notifSettingsOsEnabled =
-      'Permission iOS autorisée. Le Push natif n’est pas encore actif.';
-  static const notifSettingsOsDenied =
-      'Permission iOS refusée (modifiable dans Réglages). Le Push natif n’est pas encore actif.';
-  static const notifSettingsOsNotAsked =
-      'Permission de notification : pas encore autorisée.';
-  static const notifSettingsOsOpen = 'Paramètres système';
-  static const notifSettingsSwitchesNote =
-      'Uniquement quand l’application est ouverte.';
-  static const notifSettingsInAppSection = 'DANS L’APPLICATION';
-  static const notifSettingsCriticalWarning =
-      'Les commandes entrantes critiques ne peuvent pas être totalement réduites au silence sans risque de retard.';
-  static const notifSettingsPushNotConfigured = 'Non configuré';
-  static const notifSettingsSoundSection = 'ALERTES SONORES';
-  static const notifSettingsSound = 'Sonnerie des nouvelles commandes';
-  static const notifSettingsVibrationSection = 'VIBRATIONS';
-  static const notifSettingsVibration = 'Vibration lors d’une commande';
-  static const notifSettingsPushSection = 'ALERTES PUSH';
-  static const notifSettingsOsEnabledPush =
-      'Permission de notification : autorisée.';
-  static const notifSettingsOsDeniedPush =
-      'Permission de notification refusée : activez-la dans les réglages système.';
-  static const notifSettingsNativePush = 'Notifications hors application';
-  static const notifSettingsNativePushSub =
-      'Application fermée ou en arrière-plan.';
-  static const notifSettingsLockScreenNote =
-      'Aperçu sur l’écran verrouillé : selon les réglages système.';
-  static const notifPushStatusRegistered =
-      'Cet appareil est enregistré pour les notifications.';
-  static const notifPushStatusPending = 'Enregistrement de l’appareil…';
-  static const notifPushStatusDenied =
-      'Permission refusée : pas de notification hors application.';
-  static const notifPushStatusDisabled = 'Désactivées sur cet appareil.';
-  static const notifPushStatusTokenUnavailable =
-      'Jeton de notification indisponible sur cet appareil.';
-  static const notifPushStatusFailed =
-      'Enregistrement impossible pour le moment. Réessayez plus tard.';
-  static const pushOrderInaccessible =
-      'Cette commande n’est pas accessible avec ce compte.';
-  static const notifSettingsForeground = 'Alertes dans l’application';
-  static const notifSettingsPushUnavailable =
-      'Les notifications hors application ne sont pas encore disponibles.';
-  static const notifSettingsPushBlocked =
-      'Push natif (APNs/FCM) non configuré : la permission iOS ne suffit pas.';
-  static const notifSettingsSave = 'Enregistrer les paramètres';
-  static const notifSettingsSaved = 'Paramètres enregistrés.';
-  static const profileRole = 'Rôle';
-  static const profileMerchant = 'Commerce';
-  static const profileBranch = 'Établissement';
-  static const profileRoleOwner = 'Propriétaire';
-  static const profileRoleManager = 'Responsable';
-  static const profileRoleStaff = 'Équipe';
-  static const profileSectionAccount = 'Compte';
-  static const profileSectionStore = 'Établissement';
-  static const profileSectionOps = 'Opérations du magasin';
-  static const profileSectionPrefs = 'Préférences';
-  static const profileSectionSupport = 'Support & légal';
-  static const profileInfoReadonly = 'Informations du commerce';
-  static const profileBranchStatus = 'Statut opérationnel';
-  static const profileUnavailableItem = 'Non disponible dans cette version';
-  static const switchBranch = 'Changer d’établissement';
-  static const logoutConfirmTitle = 'Déconnexion';
-  static const logoutConfirmBody =
-      'Voulez-vous vraiment vous déconnecter de SpeedyGo Merchant ?';
-  static const logoutConfirmAction = 'Déconnexion';
-  static const settingsProfileRow = 'Profil';
-  static const settingsNotificationsOff = 'Désactivé';
-  static const settingsSupportSection = 'Support';
-  static const settingsHelpCenter = 'Centre d’aide';
-  static const logoutConnected = 'Connecté';
-  static const logoutWarningTitle = 'Attention aux opérations en cours';
+  }) {
+    if (isArabic) {
+      return '${today ? 'اليوم' : 'غدًا'} في $hhmm';
+    }
+    return '${today ? 'Aujourd’hui' : 'Demain'} à $hhmm';
+  }
+
   static String logoutWarningBody({
     required bool hasActiveOrders,
     required bool storeOpen,
-  }) => switch ((hasActiveOrders, storeOpen)) {
-    (true, true) =>
-      'Vous avez des commandes actives et le magasin est actuellement ouvert.',
-    (true, false) => 'Vous avez des commandes actives.',
-    _ => 'Le magasin est actuellement ouvert.',
-  };
-  static const logoutActiveOrders = 'Commandes en cours';
-  static const logoutStoreState = 'État du magasin';
-  static const logoutStoreOpen = 'Ouvert';
-  static const logoutStoreClosed = 'Fermé';
-  static const logoutHandoverAdvice =
-      'Assurez-vous qu’un autre gestionnaire est disponible pour traiter les commandes avant de vous déconnecter.';
-  static const logoutDataPreserved =
-      'Vos données, le catalogue et l’historique des commandes seront préservés.';
-  static const logoutCancel = 'Annuler et retourner';
-  static const cancel = 'Annuler';
-  static const attentionRequired =
-      'Certaines pièces nécessitent votre attention.';
-  static const submitVerification = 'Soumettre le dossier';
-  static const submitVerificationUnavailable =
-      'La soumission n’est pas encore possible : des pièces obligatoires manquent ou sont incomplètes.';
-  static const permissionDenied = 'Permission refusée par le serveur.';
+  }) {
+    if (isArabic) {
+      return switch ((hasActiveOrders, storeOpen)) {
+        (true, true) =>
+          'لديك طلبات نشطة والمتجر مفتوح حاليًا.',
+        (true, false) => 'لديك طلبات نشطة.',
+        _ => 'المتجر مفتوح حاليًا.',
+      };
+    }
+    return switch ((hasActiveOrders, storeOpen)) {
+      (true, true) =>
+        'Vous avez des commandes actives et le magasin est actuellement ouvert.',
+      (true, false) => 'Vous avez des commandes actives.',
+      _ => 'Le magasin est actuellement ouvert.',
+    };
+  }
 
-  static const regTitle = 'Inscription';
-  static const regStepOf = 'Étape';
-  static const regAccountTitle = 'Configuration du compte';
-  static const regRoleLabel = 'Rôle';
-  static const regOwner = 'Propriétaire';
-  static const regOperator = 'Opérateur';
-  static const regOwnerHint =
-      'Créez et gérez votre commerce en tant que propriétaire.';
-  static const regOperatorHint =
-      'Rejoindre un commerce existant nécessite une invitation et le code remis par le propriétaire.';
-  static const regOperatorUnsupported =
-      'Pour rejoindre un commerce, ouvrez vos invitations reçues et saisissez le code remis par le propriétaire. SpeedyGo n’envoie pas de SMS.';
-  static const regOperatorOpenInvitations = 'Voir mes invitations';
-  static const regSelectRole = 'Choisissez un rôle pour continuer.';
-  static const regContactTitle = 'Contact';
-  static const regAccountContinue = 'Continuer l’inscription';
-  static const regVerifiedPhone = 'Numéro de téléphone (vérifié)';
-  static const regVerifiedPhoneHint =
-      'Ce numéro a été vérifié lors de la connexion. Il n’est pas modifiable ici.';
-  static const regEmailUnsupported =
-      'L’e-mail ne peut pas être enregistré à cette étape.';
-  static const regConsentUnsupported =
-      'Consultez les conditions générales et la politique de confidentialité SpeedyGo avant de continuer.';
-  static const regActivityTitle = 'Informations du commerce';
-  static const regActivityBody =
-      'Indiquez le nom sous lequel votre commerce sera identifié.';
-  static const regLegalIdUnsupported =
-      'Les pièces d’identité professionnelle se déposent à l’étape Documents.';
-  static const regDocsTitle = 'Documents d’entreprise';
-  static const regDocsBody = 'Ajoutez les documents demandés.';
-  static const regDocsRequired =
-      'Téléversez toutes les pièces obligatoires avant de continuer.';
-  static const regDocsTipsTitle = 'Conseils pour une capture nette';
-  static const regDocsTipLight =
-      'Privilégiez un éclairage naturel et uniforme pour éviter les zones d’ombre.';
-  static const regDocsTipFrame =
-      'Cadrez bien le document : tous les coins doivent être visibles.';
-  static const regDocsFormats =
-      'Formats acceptés : PDF, JPEG ou PNG (10 Mo max).';
-  static const regDocsContinue = 'Continuer';
-  static const regDocsContinueFinal = 'Continuer vers l’étape finale';
-  static const regDocsAppBar = 'Vérification';
-  static const regDocsTipFlash =
-      'Désactivez le flash pour éviter les reflets sur les surfaces plastifiées.';
-  static const regDocsPrivacy =
-      'Vos documents sont transmis à SpeedyGo uniquement pour la vérification de votre commerce.';
-  static const regFileTooLarge = 'Fichier trop volumineux (max. 10 Mo).';
-  static const regFileTypeUnsupported =
-      'Format non accepté. Utilisez PDF, JPEG ou PNG.';
-  static const regPickerUnavailable =
-      'Impossible d’ouvrir le sélecteur de fichiers. Réessayez après avoir relancé l’application.';
-  static const regPickDocument = 'Ajouter';
-  static const regReplaceDocument = 'Remplacer';
-  static const regEstablishmentTitle = 'Détails de l’établissement';
-  static const regEstablishmentBody =
-      'Renseignez les informations de votre établissement.';
-  static const regIdentitySection = 'Nom de l’établissement';
-  static const regBranchNameFrLabel = 'Nom de l’établissement';
-  static const regCommerceContext = 'Commerce';
-  static const regContactSection = 'Contact de l’établissement';
-  static const regCategorySection = 'Catégorie';
-  static const regCategoryReadonly =
-      'La catégorie sera attribuée après vérification.';
-  static const regAddressSection = 'Adresse et emplacement';
-  static const regAddressGuidance =
-      'Saisissez l’adresse de votre établissement.';
-  static const regAddressExactLabel = 'Adresse exacte';
-  static const regPickupPlace = 'Lieu de retrait';
-  static const regChooseOnMap = 'Choisir sur la carte';
-  static const regLocationConfirmed = 'Position confirmée';
-  static const regLocationEdit = 'Modifier';
-  static const regLocationRequired =
-      'Confirmez le lieu de retrait sur la carte avant de continuer.';
-  static const regLocationPickerTitle = 'Position du magasin';
-  static const regLocationConfirm = 'Confirmer l’emplacement';
-  static const regLocationUseGps = 'Utiliser ma position';
-  static const regLocationMoveHint =
-      'Déplacez la carte pour placer le pin sur le lieu de retrait, ou utilisez votre position GPS.';
-  static const regLocationGpsSuggestion =
-      'Position GPS proposée — confirmez uniquement si c’est le lieu de retrait de l’établissement.';
-  static const regLocationDenied =
-      'Autorisation de localisation refusée. Placez le pin manuellement sur la carte.';
-  static const regLocationDeniedForever =
-      'Localisation désactivée pour SpeedyGo. Activez-la dans Réglages, ou placez le pin manuellement.';
-  static const regLocationServicesDisabled =
-      'Les services de localisation sont désactivés. Placez le pin manuellement sur la carte.';
-  static const regLocationUnavailable =
-      'Position GPS indisponible. Placez le pin manuellement sur la carte.';
-  static const regBranchPhoneLabel = 'Numéro de téléphone';
-  static const regBranchPhoneHint =
-      'Numéro de contact de l’établissement (distinct du numéro de connexion).';
-  static const regPreviewLabel = 'Aperçu (données saisies — non publié)';
-  static const regBranchIncomplete =
-      'Nom, téléphone et adresse de l’établissement sont requis.';
-  static const regCoordsInvalid =
-      'Latitude (−90…90) et longitude (−180…180) invalides.';
-  static const regCoordsConfirmHint =
-      'Indiquez le lieu de retrait sur la carte, puis confirmez.';
-  static const regReviewTitle = 'Révision';
-  static const regReviewDocsTitle = 'Documents légaux';
-  static const regReviewBranchTitle = 'Établissement';
-  static const regReviewLocation = 'Localisation';
-  static const regReviewBody =
-      'Veuillez vérifier attentivement vos informations avant la soumission finale pour éviter tout retard de validation.';
-  static const regSubmit = 'Soumettre pour vérification';
-  static const regCorrectionTitle = 'Correction du dossier';
-  static const regCorrectionActionRequired = 'Action requise';
-  static String regCorrectionIntro(String merchantName) =>
-      'Corrigez les éléments nécessaires puis soumettez à nouveau. '
-      'Votre établissement $merchantName sera activé après validation.';
-  static const regCorrectionDetails = 'Détails du dossier';
-  static const regCorrectionSubmit = 'Soumettre les corrections';
-  static const regContinue = 'Continuer';
-  static const regEdit = 'Modifier';
-  static const regMissingSteps = 'Complétez votre dossier';
-  static const regRejectionNoReason =
-      'Des corrections sont nécessaires. Mettez à jour les pièces concernées puis soumettez à nouveau.';
-  static const regApprovedNext =
-      'Votre commerce est approuvé. Complétez ensuite horaires et catalogue lorsque disponibles.';
 
-  static const legalSectionTitle = 'Conditions et déclaration';
-  static const legalSectionBody =
-      'Avant de soumettre, lisez et acceptez les conditions suivantes. '
-      'Votre acceptation est enregistrée avec le dossier.';
-  static const legalTermsLabel =
-      'J’ai lu et j’accepte les conditions générales marchand SpeedyGo.';
-  static const legalDeclarationLabel =
-      'Je certifie que les informations et les documents du dossier sont exacts et complets.';
-  static String legalVersionTag(String version) => 'Version $version';
-  static const legalLoading = 'Chargement des conditions…';
-  static const legalLoadFailed =
-      'Impossible de charger les conditions. Vérifiez votre connexion puis réessayez.';
-  static const legalIncomplete =
-      'Les conditions ne sont pas disponibles pour le moment. Réessayez plus tard.';
-  static const legalRetry = 'Réessayer';
-  static const legalConsentRequired =
-      'Acceptez les conditions et la déclaration d’exactitude pour soumettre le dossier.';
-  static const legalVersionOutdated =
-      'Les conditions ont été mises à jour. Relisez-les puis acceptez à nouveau avant de soumettre.';
-  static const legalConsentHint =
-      'Cochez les deux cases pour activer la soumission.';
-  static const legalContentLink = 'Référence du texte';
+  static String catalogGroupsCount(int n) {
+    if (isArabic) {
+      if (n <= 0) return "لا توجد مجموعات";
+      if (n == 1) return "مجموعة";
+      return "$n مجموعات";
+    }
+    if (n <= 0) return "Aucun groupe";
+    if (n == 1) return "1 groupe";
+    return "$n groupes";
+  }
 
-  static const issuesTitle = 'Points à corriger';
-  static const issuesApplicationTitle = 'Informations du dossier';
-  static const issuesDocumentTitle = 'Documents à remplacer';
-  static String issuesDocumentConcerned(String documentTitle) =>
-      'Pièce concernée : $documentTitle';
-  static const issuesReplaceDocument = 'Remplacer ce document';
-  static const issuesResolved = 'Corrigé';
-  static const issuesFixHint =
-      'Corrigez les points ci-dessus (remplacez les documents concernés si indiqué), acceptez à nouveau les conditions, puis soumettez le dossier.';
-  static String issuesRemaining(int count) => count == 1
-      ? '1 point restant à corriger'
-      : '$count points restants à corriger';
+  static String prepScheduledAtLocal(String time) => isArabic
+      ? 'الوقت المتوقع: $time (التوقيت المحلي)'
+      : 'Heure prévue : $time (heure locale)';
 
-  static const dossierAttemptLabel = 'Tentative n°';
-  static const dossierSubmittedAtLabel = 'Soumis le';
-  static const dossierReviewedAtLabel = 'Examiné le';
-  static const dossierConsentLabel = 'Conditions acceptées';
-  static String dossierConsentVersions(String terms, String declaration) =>
-      'Conditions $terms · Déclaration $declaration';
+  static String prepScheduledOnLocal(String day, String time) => isArabic
+      ? 'الوقت المتوقع: يوم $day عند $time (التوقيت المحلي)'
+      : 'Heure prévue : le $day à $time (heure locale)';
 
-  // Personnel et Accès (`staff_and_account_access_french`). Members are known
-  // by phone only; no SMS or e-mail is ever sent, the owner shares a code.
-  static const settingsTeamRow = 'Gestion de l’équipe';
-  static const settingsTeamInvitationsRow = 'Invitations reçues';
-  static const teamTitle = 'Personnel et Accès';
-  static const teamStoreContext = 'Gestion de l’équipe';
-  static const teamActiveMembers = 'Membres actifs';
-  static const teamPendingInvitations = 'Invitations en attente';
-  static const teamRolesSummary = 'Résumé des rôles';
-  static const teamRoleOwner = 'Propriétaire';
-  static const teamRoleManager = 'Gestionnaire';
-  static const teamRoleStaff = 'Équipe';
-  static const teamOwnerBadge = 'Admin';
-  static const teamSelfBadge = 'Vous';
-  static const teamPhoneUnavailable = 'Numéro indisponible';
-  static const teamRevoke = 'Révoquer';
-  static const teamChangeRole = 'Modifier le rôle';
-  static const teamRegenerateCode = 'Régénérer le code';
-  static const teamCancelInvitation = 'Annuler';
-  static const teamInviteMember = 'Inviter un membre';
-  static const teamInvitationExpired = 'Expirée';
-  static String teamRoleLine(String role) => 'Rôle : $role';
-  static String teamExpiresOn(String date) => 'Expire le $date';
-  static const teamEmptyMembers = 'Aucun membre actif pour le moment.';
-  static const teamEmptyInvitations = 'Aucune invitation en attente.';
-  static const teamLoadError =
-      'Impossible de charger l’équipe. Vérifiez votre connexion puis réessayez.';
-  static const teamForbiddenTitle = 'Accès réservé';
-  static const teamForbiddenBody =
-      'La gestion de l’équipe est réservée aux propriétaires et aux gestionnaires.';
-  static const teamSummaryOwner =
-      'Invite, modifie les rôles et révoque l’accès des membres.';
-  static const teamSummaryManager =
-      'Consulte la liste de l’équipe et les invitations. Ne peut ni inviter, ni modifier les rôles, ni révoquer.';
-  static const teamSummaryStaff = 'N’a pas accès à la gestion de l’équipe.';
-  static const teamSummaryScope =
-      'Les accès couvrent tous les établissements du commerce : il n’existe pas d’accès par établissement.';
+  static String prepNewEstimate(String from, String to, int add) => isArabic
+      ? "تقدير جديد: $to بدلًا من $from، بزيادة $add د"
+      : "Nouvelle estimation : $to au lieu de $from, plus $add minutes";
 
-  static const teamInviteTitle = 'Inviter un membre';
-  static const teamInviteHint =
-      'Aucun SMS ni e-mail n’est émis par SpeedyGo. Un code d’acceptation vous sera remis : transmettez-le vous-même à la personne invitée.';
-  static const teamInvitePhoneLabel = 'Numéro de téléphone';
-  static const teamInvitePhoneHint = '550 12 34 56';
-  static const teamInvitePhoneHelper =
-      'Numéro avec lequel la personne se connecte à SpeedyGo.';
-  static const teamInvitePhoneInvalid =
-      'Saisissez un numéro mobile algérien valide (9 chiffres).';
-  static const teamInviteRoleLabel = 'Rôle';
-  static const teamInviteCreate = 'Créer l’invitation';
-  static const teamRoleManagerHint =
-      'Peut consulter l’équipe. Aucun droit de gestion.';
-  static const teamRoleStaffHint =
-      'Accès opérationnel, sans accès à la gestion de l’équipe.';
+  static String prepSpokenClock(String time, String? day) {
+    if (day == null || day.isEmpty) return time;
+    return isArabic ? "$time يوم $day" : "$time le $day";
+  }
 
-  static const teamCodeTitle = 'Code d’acceptation';
-  static const teamCodeRegeneratedTitle = 'Nouveau code d’acceptation';
-  static String teamCodeInstruction(String phone) =>
-      'Aucun SMS ni e-mail n’est émis par SpeedyGo. Copiez ce code et transmettez-le vous-même à $phone. Il ne sera plus affiché après la fermeture de cette fenêtre.';
-  static const teamCodeRegeneratedNote = 'L’ancien code ne fonctionne plus.';
-  static const teamCodeCopy = 'Copier le code';
-  static const teamCodeCopied = 'Code copié.';
-  static const teamCodeDone = 'Terminer';
+  static String reportsCommissionWithRate(String rate) =>
+      isArabic ? 'عمولة SpeedyGo ($rate)' : 'Commission SpeedyGo ($rate)';
 
-  static const teamRevokeTitle = 'Révoquer l’accès ?';
-  static String teamRevokeBody(String phone) =>
-      '$phone perdra l’accès à ce commerce et ses sessions seront fermées. Son compte SpeedyGo n’est pas supprimé.';
-  static const teamRevoked = 'Accès révoqué.';
-  static const teamCancelInviteTitle = 'Annuler l’invitation ?';
-  static String teamCancelInviteBody(String phone) =>
-      'Le code d’acceptation de $phone ne fonctionnera plus.';
-  static const teamCancelInviteConfirm = 'Annuler l’invitation';
-  static const teamKeep = 'Conserver';
-  static const teamInviteCancelled = 'Invitation annulée.';
-  static const teamRoleSheetTitle = 'Modifier le rôle';
-  static const teamRoleSheetHint =
-      'Si le rôle réduit ses droits, les sessions du membre sont fermées et il devra se reconnecter.';
-  static const teamRoleSave = 'Enregistrer';
-  static const teamRoleUpdated = 'Rôle mis à jour.';
+  static String reportsDailySummaryMinutes(int minutes) =>
+      isArabic ? "$minutes د" : "$minutes min";
 
-  static const teamErrorGeneric =
-      'Action impossible pour le moment. Réessayez.';
-  static const teamErrorConflict =
-      'La liste a changé entre-temps. Elle vient d’être actualisée : vérifiez puis réessayez.';
-  static const teamErrorDuplicateMember =
-      'Ce numéro fait déjà partie de l’équipe.';
-  static const teamErrorDuplicateInvite =
-      'Une invitation est déjà en attente pour ce numéro.';
-  static const teamErrorOwnerProtected =
-      'Le propriétaire ne peut pas être modifié ici.';
-  static const teamErrorSelf =
-      'Vous ne pouvez pas modifier votre propre accès.';
-  static const teamErrorInviteGone = 'Cette invitation n’existe plus.';
-  static const teamErrorInviteExpired =
-      'Cette invitation a expiré. Demandez un nouveau code au propriétaire.';
-  static const teamErrorCodeInvalid = 'Code incorrect.';
-  static const teamErrorPhoneMismatch =
-      'Cette invitation est destinée à un autre numéro.';
-  static const teamErrorInvalidInput =
-      'Vérifiez le numéro et le rôle puis réessayez.';
-
-  static const teamInvitationsTitle = 'Invitations reçues';
-  static const teamInvitationsHint =
-      'Invitations adressées à votre numéro. Saisissez le code remis par le propriétaire pour les accepter.';
-  static const teamInvitationsEmpty =
-      'Aucune invitation en attente pour votre numéro.';
-  static const teamInvitationsLoadError =
-      'Impossible de charger vos invitations. Réessayez.';
-  static const teamAccept = 'Accepter';
-  static const teamAcceptTitle = 'Saisir le code d’acceptation';
-  static const teamAcceptCodeLabel = 'Code remis par le propriétaire';
-  static const teamAcceptCodeInvalid =
-      'Le code comporte 64 caractères (chiffres et lettres a à f).';
-  static const teamAcceptConfirm = 'Accepter l’invitation';
-  static String teamAccepted(String merchantName) =>
-      'Invitation acceptée. Vous avez maintenant accès à $merchantName.';
 
   static String errorForCode(String? code) {
     switch (code) {
       case 'AUTH_INVALID_OTP':
-        return 'Code incorrect.';
+        return isArabic ? 'رمز غير صحيح.' : 'Code incorrect.';
       case 'AUTH_OTP_EXPIRED':
-        return 'Code expiré. Demandez-en un nouveau.';
+        return isArabic
+            ? 'انتهت صلاحية الرمز. اطلب رمزًا جديدًا.'
+            : 'Code expiré. Demandez-en un nouveau.';
       case 'AUTH_OTP_ATTEMPTS_EXCEEDED':
-        return 'Trop de tentatives. Demandez un nouveau code.';
+        return isArabic
+            ? 'محاولات كثيرة. اطلب رمزًا جديدًا.'
+            : 'Trop de tentatives. Demandez un nouveau code.';
       case 'AUTH_RATE_LIMITED':
-        return 'Trop de demandes. Réessayez plus tard.';
+        return isArabic
+            ? 'طلبات كثيرة. أعد المحاولة لاحقًا.'
+            : 'Trop de demandes. Réessayez plus tard.';
       case 'AUTH_ACCOUNT_SUSPENDED':
       case 'AUTH_ACCOUNT_DISABLED':
-        return 'Compte indisponible.';
+        return isArabic ? 'الحساب غير متاح.' : 'Compte indisponible.';
       case 'AUTH_INVALID_TOKEN':
       case 'AUTH_SESSION_REVOKED':
       case 'AUTH_SESSION_EXPIRED':
@@ -1676,23 +1589,37 @@ class AppStrings {
       case 'MERCHANT_STATUS_RESTRICTED':
         return accessRestrictedBody;
       case 'MERCHANT_NOT_FOUND':
-        return 'Commerce introuvable.';
+        return isArabic ? 'التجارة غير موجودة.' : 'Commerce introuvable.';
       case 'MERCHANT_ORDER_NOT_FOUND':
-        return 'Commande introuvable.';
+        return isArabic ? 'الطلب غير موجود.' : 'Commande introuvable.';
       case 'MERCHANT_ORDER_ALREADY_ACCEPTED':
-        return 'Cette commande a déjà été acceptée.';
+        return isArabic
+            ? 'تم قبول هذا الطلب مسبقًا.'
+            : 'Cette commande a déjà été acceptée.';
       case 'MERCHANT_ORDER_NOT_REJECTABLE':
-        return 'Cette commande ne peut plus être refusée.';
+        return isArabic
+            ? 'لم يعد بالإمكان رفض هذا الطلب.'
+            : 'Cette commande ne peut plus être refusée.';
       case 'MERCHANT_ORDER_INVALID_TRANSITION':
-        return 'Cette action n’est plus possible pour l’état actuel.';
+        return isArabic
+            ? 'هذا الإجراء لم يعد ممكنًا للحالة الحالية.'
+            : 'Cette action n’est plus possible pour l’état actuel.';
       case 'MERCHANT_ORDER_PAYMENT_NOT_READY':
-        return 'Le paiement n’est pas encore prêt pour démarrer la préparation.';
+        return isArabic
+            ? 'الدفع غير جاهز بعد لبدء التحضير.'
+            : 'Le paiement n’est pas encore prêt pour démarrer la préparation.';
       case 'MERCHANT_ORDER_PREP_ESTIMATE_INVALID':
-        return 'Temps de préparation invalide.';
+        return isArabic
+            ? 'وقت التحضير غير صالح.'
+            : 'Temps de préparation invalide.';
       case 'MERCHANT_ORDER_PREP_ESTIMATE_CONFLICT':
-        return 'L’estimation a changé. Actualisez puis réessayez.';
+        return isArabic
+            ? 'تغيّر التقدير. حدّث ثم أعد المحاولة.'
+            : 'L’estimation a changé. Actualisez puis réessayez.';
       case 'MERCHANT_ORDER_PREP_ESTIMATE_NOT_ALLOWED':
-        return 'La mise à jour du temps n’est plus possible pour cet état.';
+        return isArabic
+            ? 'لم يعد تحديث الوقت ممكنًا لهذه الحالة.'
+            : 'La mise à jour du temps n’est plus possible pour cet état.';
       case 'MERCHANT_VERIFICATION_NOT_READY':
         return submitVerificationUnavailable;
       case 'LEGAL_ACCEPTANCE_REQUIRED':

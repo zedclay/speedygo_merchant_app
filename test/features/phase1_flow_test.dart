@@ -1600,21 +1600,27 @@ class FakeMerchantApi implements MerchantClient {
     required String body,
     String? orderId,
   }) async {
+    final reference = supportTicketHandler != null
+        ? await supportTicketHandler!(body: body, orderId: orderId)
+        : 'sgt_test';
     supportTickets.add({
       'body': body,
       'orderId': orderId,
       'subject': subject,
       'topicCode': topicCode,
     });
-    if (supportTicketHandler != null) {
-      return supportTicketHandler!(body: body, orderId: orderId);
-    }
-    return 'sgt_test';
+    return reference;
   }
 
   List<SupportTopic> supportTopics = const [
     SupportTopic(code: 'ORDER_ISSUE', labelFr: 'Problème de commande'),
-    SupportTopic(code: 'CATALOGUE_TECH', labelFr: 'Catalogue / technique'),
+    SupportTopic(code: 'PAYMENT_COD', labelFr: 'Paiement et espèces (COD)'),
+    SupportTopic(code: 'ACCOUNT_ACCESS', labelFr: 'Accès au compte'),
+    SupportTopic(
+      code: 'CATALOGUE_TECH',
+      labelFr: 'Catalogue ou problème technique',
+    ),
+    SupportTopic(code: 'OTHER', labelFr: 'Autre demande'),
   ];
   List<SupportFaqArticle> supportFaq = const [
     SupportFaqArticle(

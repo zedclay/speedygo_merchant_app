@@ -153,7 +153,7 @@ class _ReportsBody extends ConsumerWidget {
               ),
             ],
             data: (state) => state == null
-                ? const [
+                ? [
                     MerchantCard(
                       child: Text(AppStrings.reportsDataUnavailable),
                     ),
@@ -218,8 +218,7 @@ class _FinanceSection extends StatelessWidget {
     final rate = finance?.uniformCommissionRateBps;
     final String commissionLabel;
     if (granted && rate != null) {
-      commissionLabel = AppStrings.reportsCommissionWithRate(
-        MoneyFormat.basisPointsPercent(rate),
+      commissionLabel = AppStrings.reportsCommissionWithRate(MoneyFormat.basisPointsPercent(rate),
       );
     } else if (granted &&
         summary.dataComplete &&
@@ -471,7 +470,7 @@ class _OpsMetrics extends StatelessWidget {
         icon: Icons.receipt_long_outlined,
         value: '${summary.completedOrderCount}',
       ),
-      const _OpsMetricCard(
+      _OpsMetricCard(
         key: Key('reports-metric-prep'),
         title: AppStrings.reportsPrepTimeMetric,
         icon: Icons.timer_outlined,
@@ -735,9 +734,7 @@ class _TrendBars extends StatelessWidget {
     final middle = buckets.length ~/ 2;
 
     return Semantics(
-      label: AppStrings.reportsTrendSemantics(
-        totalOrders,
-        MoneyFormat.dzdOrEmpty(totalGross),
+      label: AppStrings.reportsTrendSemantics(totalOrders.toString(), MoneyFormat.dzdOrEmpty(totalGross),
       ),
       child: ExcludeSemantics(
         child: Column(
@@ -832,7 +829,7 @@ class _TopProductsSection extends StatelessWidget {
               TextButton(
                 key: const Key('reports-top-products-see-all'),
                 onPressed: () => context.push(AppRoutes.reportsTopProducts),
-                child: const Text(AppStrings.reportsSeeAll),
+                child: Text(AppStrings.reportsSeeAll),
               ),
           ],
         ),
@@ -893,7 +890,7 @@ class _TopProductsSection extends StatelessWidget {
                     ),
                     const SizedBox(height: 2),
                     Text(
-                      AppStrings.reportsOrderCount(item.orderCount),
+                      AppStrings.reportsOrderCount('${item.orderCount}'),
                       style: theme.textTheme.bodyMedium?.copyWith(
                         color: AppColors.onSurfaceVariant,
                       ),
@@ -1070,7 +1067,7 @@ class _SettlementTile extends StatelessWidget {
                 ),
                 const SizedBox(height: 2),
                 Text(
-                  AppStrings.reportsSettlementStatus(settlement.status),
+                  AppStrings.reportsSettlementStatus(settlement.status.toString()),
                   key: const Key('reports-settlement-status'),
                   style: theme.textTheme.bodySmall?.copyWith(
                     color: AppColors.onSurfaceVariant,

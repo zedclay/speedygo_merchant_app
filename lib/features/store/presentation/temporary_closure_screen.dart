@@ -32,24 +32,28 @@ class _TemporaryClosureScreenState
   bool _saving = false;
   String? _error;
 
-  static const _reasons = <(String, String, IconData)>[
-    (
-      'PEAK_KITCHEN',
-      AppStrings.availabilityReasonPeak,
-      Icons.restaurant_outlined,
-    ),
-    (
-      'TECHNICAL',
-      AppStrings.availabilityReasonTechnical,
-      Icons.engineering_outlined,
-    ),
-    (
-      'OUT_OF_STOCK',
-      AppStrings.availabilityReasonStock,
-      Icons.inventory_2_outlined,
-    ),
-    ('LUNCH_BREAK', AppStrings.availabilityReasonLunch, Icons.timer_outlined),
-  ];
+  static List<(String, String, IconData)> get _reasons => [
+        (
+          'PEAK_KITCHEN',
+          AppStrings.availabilityReasonPeak,
+          Icons.restaurant_outlined,
+        ),
+        (
+          'TECHNICAL',
+          AppStrings.availabilityReasonTechnical,
+          Icons.engineering_outlined,
+        ),
+        (
+          'OUT_OF_STOCK',
+          AppStrings.availabilityReasonStock,
+          Icons.inventory_2_outlined,
+        ),
+        (
+          'LUNCH_BREAK',
+          AppStrings.availabilityReasonLunch,
+          Icons.timer_outlined,
+        ),
+      ];
 
   @override
   void initState() {
@@ -170,7 +174,7 @@ class _TemporaryClosureScreenState
       }
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text(AppStrings.availabilityClosureSaved)),
+        SnackBar(content: Text(AppStrings.availabilityClosureSaved)),
       );
       context.pop();
     } catch (e) {
@@ -237,7 +241,7 @@ class _TemporaryClosureScreenState
                     children: [
                       _ImpactCard(activeCount: activeCount),
                       const SizedBox(height: 24),
-                      const _SectionTitle(AppStrings.temporaryClosureReason),
+                      _SectionTitle(AppStrings.temporaryClosureReason),
                       const SizedBox(height: 12),
                       for (final r in _reasons) ...[
                         _ReasonTile(
@@ -250,7 +254,7 @@ class _TemporaryClosureScreenState
                         const SizedBox(height: 12),
                       ],
                       const SizedBox(height: 12),
-                      const _SectionTitle(AppStrings.temporaryClosureReopen),
+                      _SectionTitle(AppStrings.temporaryClosureReopen),
                       const SizedBox(height: 12),
                       _ReopenField(
                         kind: _kind,
@@ -271,7 +275,7 @@ class _TemporaryClosureScreenState
                       const SizedBox(height: 24),
                       Row(
                         children: [
-                          const Expanded(
+                          Expanded(
                             child: _SectionTitle(
                               AppStrings.temporaryClosureMessage,
                             ),
@@ -315,7 +319,7 @@ class _TemporaryClosureScreenState
                         const SizedBox(height: 12),
                         Row(
                           children: [
-                            const Expanded(
+                            Expanded(
                               child: Text(
                                 AppStrings.availabilityLoadError,
                                 style: TextStyle(color: AppColors.error),
@@ -329,7 +333,7 @@ class _TemporaryClosureScreenState
                                         .notifier,
                                   )
                                   .reload(),
-                              child: const Text(AppStrings.retry),
+                              child: Text(AppStrings.retry),
                             ),
                           ],
                         ),
@@ -474,15 +478,15 @@ class _ImpactCard extends StatelessWidget {
                   TextSpan(
                     style: body,
                     children: [
-                      const TextSpan(
+                      TextSpan(
                         text: AppStrings.temporaryClosureImpactLead,
                       ),
                       if (count == null)
-                        const TextSpan(
+                        TextSpan(
                           text: AppStrings.temporaryClosureImpactUnknown,
                         )
                       else if (count == 0)
-                        const TextSpan(
+                        TextSpan(
                           text: AppStrings.temporaryClosureImpactNone,
                         )
                       else ...[
@@ -553,11 +557,11 @@ class _ReopenField extends StatelessWidget {
         enabledBorder: border,
       ),
       items: [
-        const DropdownMenuItem(
+        DropdownMenuItem(
           value: _ReopenKind.minutes30,
           child: Text(AppStrings.temporaryClosure30m),
         ),
-        const DropdownMenuItem(
+        DropdownMenuItem(
           value: _ReopenKind.minutes60,
           child: Text(AppStrings.temporaryClosure1h),
         ),
@@ -566,7 +570,7 @@ class _ReopenField extends StatelessWidget {
           value: _ReopenKind.custom,
           child: Text(customLabel, overflow: TextOverflow.ellipsis),
         ),
-        const DropdownMenuItem(
+        DropdownMenuItem(
           value: _ReopenKind.indefinite,
           child: Text(AppStrings.temporaryClosureIndefinite),
         ),

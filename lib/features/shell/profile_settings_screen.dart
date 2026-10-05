@@ -6,6 +6,7 @@ import 'package:speedygo_merchant_app/core/constants/app_strings.dart';
 import 'package:speedygo_merchant_app/core/navigation/app_routes.dart';
 import 'package:speedygo_merchant_app/core/widgets/merchant_ui.dart';
 import 'package:speedygo_merchant_app/features/access/application/access_controller.dart';
+import 'package:speedygo_merchant_app/features/auth/application/session_controller.dart';
 import 'package:speedygo_merchant_app/features/auth/application/session_providers.dart';
 import 'package:speedygo_merchant_app/features/notifications/application/merchant_push_controller.dart';
 import 'package:speedygo_merchant_app/features/notifications/data/push_messaging_gateway.dart';
@@ -14,7 +15,7 @@ import 'package:speedygo_merchant_app/features/team/data/team_models.dart';
 
 /// Settings hub aligned with `merchant_settings_french`. Only rows with a
 /// live destination are listed (no security, exceptional hours, delivery zone,
-/// language or legal rows: no screen or contract yet). Team management is
+/// language or legal rows: Sécurité / Zone / Conditions have no route yet). Team management is
 /// OWNER/MANAGER only; received team invitations are open to every role.
 class ProfileSettingsScreen extends ConsumerWidget {
   const ProfileSettingsScreen({super.key});
@@ -189,12 +190,26 @@ class ProfileSettingsScreen extends ConsumerWidget {
             title: AppStrings.profileSectionPrefs,
             rows: [
               _SettingsRow(
+                key: const Key('settings-language'),
+                icon: Icons.language,
+                label: AppStrings.settingsLanguageRow,
+                trailing: Text(
+                  ref.watch(sessionControllerProvider).locale == 'ar'
+                      ? AppStrings.languageOptionArabic
+                      : AppStrings.languageOptionFrench,
+                  style: theme.textTheme.bodyMedium?.copyWith(
+                    color: AppColors.onSurfaceVariant,
+                  ),
+                ),
+                onTap: () => context.push(AppRoutes.languageSettings),
+              ),
+              _SettingsRow(
                 key: const Key('settings-notifications'),
                 icon: Icons.notifications_outlined,
                 label: AppStrings.notificationsTitle,
                 trailing: notificationsOff
-                    ? const StatusBadge(
-                        key: Key('settings-notifications-off'),
+                    ? StatusBadge(
+                        key: const Key('settings-notifications-off'),
                         label: AppStrings.settingsNotificationsOff,
                         tone: StatusTone.error,
                       )
@@ -235,7 +250,7 @@ class ProfileSettingsScreen extends ConsumerWidget {
               ),
               onPressed: () => context.push(AppRoutes.logout),
               icon: const Icon(Icons.logout),
-              label: const Text(AppStrings.logoutConfirmTitle),
+              label: Text(AppStrings.logoutConfirmTitle),
             ),
           ),
         ],

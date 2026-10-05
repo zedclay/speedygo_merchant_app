@@ -157,6 +157,7 @@ class StoreApi extends FakeMerchantApi {
     double? longitude,
     String? wilayaCode,
     int? communeId,
+    Map<String, String?>? publicInfo,
   }) async {
     branchUpdates.add({
       'name': name,
@@ -166,6 +167,7 @@ class StoreApi extends FakeMerchantApi {
       'longitude': longitude,
       'wilayaCode': wilayaCode,
       'communeId': communeId,
+      'publicInfo': publicInfo,
     });
     final error = branchError;
     if (error != null) throw error;
@@ -1044,6 +1046,7 @@ void main() {
             'longitude': null,
             'wilayaCode': null,
             'communeId': null,
+            'publicInfo': null,
           },
         ]);
         expect(find.byKey(const Key('test-hub')), findsOneWidget);
@@ -1084,7 +1087,7 @@ void main() {
       expect(find.text(AppStrings.storeGeneralNameRequired), findsOneWidget);
     });
 
-    for (final (status, message) in const [
+    for (final (status, message) in [
       (403, AppStrings.storeGeneralForbidden),
       (409, AppStrings.storeGeneralRestricted),
       (500, AppStrings.storeGeneralSaveError),

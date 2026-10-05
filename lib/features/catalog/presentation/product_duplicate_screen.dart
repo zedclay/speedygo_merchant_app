@@ -47,7 +47,7 @@ class _ProductDuplicateScreenState
   void _seedName(CatalogProduct product) {
     if (_seeded) return;
     _seeded = true;
-    final name = AppStrings.duplicateDefaultName(product.name);
+    final name = AppStrings.duplicateDefaultName(product.name.toString());
     _nameCtl.text = name.characters.take(_nameMax).toString();
   }
 
@@ -170,7 +170,7 @@ class _ProductDuplicateScreenState
             if (p.id == widget.productId) product = p;
           }
           if (product == null) {
-            return const Center(
+            return Center(
               key: Key('duplicate-not-found'),
               child: Padding(
                 padding: EdgeInsets.all(24),
@@ -239,7 +239,7 @@ class _ProductDuplicateScreenState
                             shape: const StadiumBorder(),
                           ),
                           onPressed: _running ? null : _leave,
-                          child: const Text(
+                          child: Text(
                             AppStrings.duplicateCancel,
                             maxLines: 2,
                             textAlign: TextAlign.center,
@@ -347,7 +347,7 @@ class _ForbiddenScaffold extends StatelessWidget {
                   ),
                   onPressed: () => context.go(AppRoutes.catalog),
                   icon: const Icon(Icons.inventory_2_outlined, size: 20),
-                  label: const Text(
+                  label: Text(
                     AppStrings.duplicateBackToCatalog,
                     textAlign: TextAlign.center,
                   ),
@@ -582,7 +582,7 @@ class _CopiedChecklist extends StatelessWidget {
                 key: const Key('duplicate-copied-image'),
               ),
               row(
-                AppStrings.duplicatePrice(price),
+                AppStrings.duplicatePrice('${price}'),
                 key: const Key('duplicate-copied-price'),
               ),
               row(
@@ -626,7 +626,7 @@ class _NotCopiedBanner extends StatelessWidget {
             child: Text.rich(
               TextSpan(
                 style: style,
-                children: const [
+                children: [
                   TextSpan(text: AppStrings.duplicateNotCopiedLead),
                   TextSpan(
                     text: AppStrings.duplicateNotCopiedStrong,

@@ -57,7 +57,7 @@ class SupportTopicPicker extends ConsumerWidget {
               ),
               TextButton(
                 onPressed: () => ref.invalidate(supportTopicsProvider),
-                child: const Text(AppStrings.retry),
+                child: Text(AppStrings.retry),
               ),
             ],
           ),

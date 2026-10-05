@@ -97,7 +97,7 @@ class TopProductsScreen extends ConsumerWidget {
                   ],
                   data: (top) {
                     if (top == null) {
-                      return const [
+                      return [
                         MerchantCard(
                           child: Text(AppStrings.reportsDataUnavailable),
                         ),
@@ -290,7 +290,7 @@ class _RankedProductCard extends StatelessWidget {
       fontWeight: FontWeight.w700,
     );
     final counts =
-        '${AppStrings.reportsOrderCount(item.orderCount)} • '
+        '${AppStrings.reportsOrderCount('${item.orderCount}')} • '
         '${AppStrings.reportsUnitCount(item.quantity)}';
     final name = Text(
       item.name,

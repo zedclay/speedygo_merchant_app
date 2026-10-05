@@ -304,7 +304,7 @@ class _OrderDetailScreenState extends ConsumerState<OrderDetailScreen> {
                         }
                       },
                       icon: const Icon(Icons.check),
-                      label: const Text(AppStrings.orderCancelledAck),
+                      label: Text(AppStrings.orderCancelledAck),
                     ),
                   ),
                 if (isCompleted && footerSupport)
@@ -809,7 +809,7 @@ class _CancelledActions extends StatelessWidget {
       onPressed: onHistory,
       style: style,
       icon: const Icon(Icons.history, size: 20),
-      label: const Text(AppStrings.orderViewHistory),
+      label: Text(AppStrings.orderViewHistory),
     );
     if (!canSupport) return history;
     final support = OutlinedButton.icon(
@@ -817,7 +817,7 @@ class _CancelledActions extends StatelessWidget {
       onPressed: () => context.push(AppRoutes.orderSupport(orderId)),
       style: style,
       icon: const Icon(Icons.support_agent, size: 20),
-      label: const Text(AppStrings.supportContact),
+      label: Text(AppStrings.supportContact),
     );
     if (MediaQuery.textScalerOf(context).scale(1) >= 1.25) {
       return Column(
@@ -1160,8 +1160,7 @@ class _ReadyStatusSection extends StatelessWidget {
                     const SizedBox(width: 4),
                     Flexible(
                       child: Text(
-                        AppStrings.orderDriverSearchStartedAt(
-                          formatPrepClockIso(searchStarted),
+                        AppStrings.orderDriverSearchStartedAt(formatPrepClockIso(searchStarted),
                         ),
                         style: theme.textTheme.bodyMedium?.copyWith(
                           color: AppColors.onSurfaceVariant,
@@ -1437,8 +1436,7 @@ class _FinanceCard extends StatelessWidget {
             _FinanceRow(
               label: f.merchantCommissionRateBps == null
                   ? AppStrings.orderFinanceCommissionUnavailable
-                  : AppStrings.orderFinanceCommission(
-                      _formatBpsPercent(f.merchantCommissionRateBps!),
+                  : AppStrings.orderFinanceCommission(_formatBpsPercent(f.merchantCommissionRateBps!),
                     ),
               value: commission.isEmpty
                   ? AppStrings.valueUnavailable
@@ -1484,8 +1482,7 @@ class _FinanceCard extends StatelessWidget {
                 const SizedBox(width: 6),
                 Flexible(
                   child: Text(
-                    AppStrings.orderPaymentMethod(
-                      orderPaymentLabel(order.payment.method),
+                    AppStrings.orderPaymentMethod(orderPaymentLabel(order.payment.method),
                     ),
                     style: theme.textTheme.labelMedium?.copyWith(
                       color: AppColors.onSurfaceVariant,
@@ -1603,8 +1600,7 @@ class _CancellationCard extends StatelessWidget {
                                 style: theme.textTheme.labelLarge,
                               ),
                               Text(
-                                AppStrings.orderCancelledAt(
-                                  _formatIso(cancellation.cancelledAt),
+                                AppStrings.orderCancelledAt(_formatIso(cancellation.cancelledAt),
                                 ),
                                 key: const Key('order-cancellation-at'),
                                 style: theme.textTheme.bodySmall?.copyWith(
@@ -1721,8 +1717,7 @@ class _DeliveryStatusCard extends StatelessWidget {
                 if (delivery.driverSearchStartedAt != null) ...[
                   const SizedBox(height: 6),
                   Text(
-                    AppStrings.orderDriverSearchStarted(
-                      _formatIso(delivery.driverSearchStartedAt!),
+                    AppStrings.orderDriverSearchStarted(_formatIso(delivery.driverSearchStartedAt!),
                     ),
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: AppColors.onSurfaceVariant,
@@ -1732,8 +1727,7 @@ class _DeliveryStatusCard extends StatelessWidget {
                 if (delivery.estimatedArrivalAt != null) ...[
                   const SizedBox(height: 4),
                   Text(
-                    AppStrings.orderDriverEtaEstimate(
-                      _formatIso(delivery.estimatedArrivalAt!),
+                    AppStrings.orderDriverEtaEstimate(_formatIso(delivery.estimatedArrivalAt!),
                     ),
                     style: theme.textTheme.bodySmall,
                   ),
@@ -1977,7 +1971,7 @@ class _PickupHandoffSection extends StatelessWidget {
             OutlinedButton(
               key: const Key('pickup-handoff-retry'),
               onPressed: onRetry,
-              child: const Text(AppStrings.pickupHandoffRetry),
+              child: Text(AppStrings.pickupHandoffRetry),
             ),
           ],
         ),
@@ -2097,7 +2091,7 @@ class _PickupHandoffSection extends StatelessWidget {
               key: const Key('pickup-handoff-regenerate'),
               onPressed: regenerating ? null : onRegenerate,
               icon: const Icon(Icons.refresh),
-              label: const Text(AppStrings.pickupHandoffRegenerate),
+              label: Text(AppStrings.pickupHandoffRegenerate),
             ),
           ),
         ],
@@ -2297,7 +2291,7 @@ class _SupportButton extends StatelessWidget {
         side: const BorderSide(color: AppColors.primary),
       ),
       icon: const Icon(Icons.support_agent),
-      label: const Text(AppStrings.supportContact),
+      label: Text(AppStrings.supportContact),
     );
   }
 }
@@ -2386,7 +2380,7 @@ class _StickyActions extends StatelessWidget {
                       foregroundColor: AppColors.error,
                       side: const BorderSide(color: AppColors.error),
                     ),
-                    child: const Text(AppStrings.orderReject),
+                    child: Text(AppStrings.orderReject),
                   ),
                 ],
               ],
@@ -2443,7 +2437,7 @@ class _SecondaryActionRow extends StatelessWidget {
           onPressed: onUpdatePrep,
           style: style,
           icon: const Icon(Icons.schedule, size: 20),
-          label: const Text(AppStrings.prepUpdateAction),
+          label: Text(AppStrings.prepUpdateAction),
         ),
       if (supportOrderId != null)
         OutlinedButton.icon(
@@ -2452,7 +2446,7 @@ class _SecondaryActionRow extends StatelessWidget {
               context.push(AppRoutes.orderSupport(supportOrderId!)),
           style: style,
           icon: const Icon(Icons.help_outline, size: 20),
-          label: const Text(AppStrings.supportShort),
+          label: Text(AppStrings.supportShort),
         ),
     ];
     if (MediaQuery.textScalerOf(context).scale(1) >= 1.25 ||
@@ -2511,7 +2505,7 @@ class _IncomingActionRow extends StatelessWidget {
               foregroundColor: AppColors.error,
               side: const BorderSide(color: AppColors.error),
             ),
-            child: const Text(AppStrings.orderReject),
+            child: Text(AppStrings.orderReject),
           ),
         ],
       );
@@ -2527,7 +2521,7 @@ class _IncomingActionRow extends StatelessWidget {
               foregroundColor: AppColors.error,
               side: const BorderSide(color: AppColors.error),
             ),
-            child: const Text(AppStrings.orderReject),
+            child: Text(AppStrings.orderReject),
           ),
         ),
         const SizedBox(width: 12),

@@ -130,7 +130,7 @@ class TeamController extends AsyncNotifier<MerchantTeam?> {
   ) async {
     final scope = ref.read(merchantDataScopeProvider);
     if (scope == null) {
-      throw const ApiException(
+      throw ApiException(
         AppStrings.teamErrorGeneric,
         code: 'MERCHANT_NOT_FOUND',
         statusCode: 404,

@@ -8,6 +8,8 @@ analyzer:
     - build/**
     - android/**
     - ios/**
+    - audit/**
+    - tool/**
 
 linter:
   rules:

@@ -170,7 +170,7 @@ class _LegalRetry extends StatelessWidget {
           key: const Key('merchant-legal-retry'),
           onPressed: onRetry,
           icon: const Icon(Icons.refresh, size: 18),
-          label: const Text(AppStrings.legalRetry),
+          label: Text(AppStrings.legalRetry),
         ),
       ],
     );
@@ -220,7 +220,7 @@ class _ConsentTile extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              AppStrings.legalVersionTag(version.version),
+              AppStrings.legalVersionTag('${version.version}'),
               style: theme.textTheme.labelMedium?.copyWith(
                 color: AppColors.onSurfaceVariant,
               ),
@@ -287,7 +287,7 @@ class VerificationIssuesList extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            AppStrings.issuesRemaining(remaining),
+            AppStrings.issuesRemaining(remaining.toString()),
             key: const Key('merchant-issues-count'),
             style: theme.textTheme.labelLarge?.copyWith(
               color: AppColors.onSurfaceVariant,
@@ -295,7 +295,7 @@ class VerificationIssuesList extends StatelessWidget {
           ),
           if (application.isNotEmpty) ...[
             const SizedBox(height: 16),
-            const _GroupTitle(
+            _GroupTitle(
               key: Key('merchant-issues-application-title'),
               text: AppStrings.issuesApplicationTitle,
             ),
@@ -307,7 +307,7 @@ class VerificationIssuesList extends StatelessWidget {
           ],
           if (documents.isNotEmpty) ...[
             const SizedBox(height: 16),
-            const _GroupTitle(
+            _GroupTitle(
               key: Key('merchant-issues-document-title'),
               text: AppStrings.issuesDocumentTitle,
             ),
@@ -390,8 +390,7 @@ class _IssueRow extends StatelessWidget {
                 if (issue.isDocument && type != null) ...[
                   const SizedBox(height: 2),
                   Text(
-                    AppStrings.issuesDocumentConcerned(
-                      EvidencePresentation.documentTitle(type),
+                    AppStrings.issuesDocumentConcerned(EvidencePresentation.documentTitle(type),
                     ),
                     style: theme.textTheme.labelMedium?.copyWith(
                       color: AppColors.onSurfaceVariant,
@@ -410,7 +409,7 @@ class _IssueRow extends StatelessWidget {
                         alignment: Alignment.centerLeft,
                       ),
                       icon: const Icon(Icons.upload_file_outlined, size: 18),
-                      label: const Text(AppStrings.issuesReplaceDocument),
+                      label: Text(AppStrings.issuesReplaceDocument),
                     ),
                 ],
               ],
@@ -515,10 +514,7 @@ class VerificationDossierInfo extends StatelessWidget {
               const Key('merchant-dossier-consent'),
               AppStrings.dossierConsentLabel,
               [
-                AppStrings.dossierConsentVersions(
-                  acceptance.termsVersion,
-                  acceptance.declarationVersion,
-                ),
+                AppStrings.dossierConsentVersions('${acceptance.termsVersion}', '${acceptance.declarationVersion}', ),
                 ?acceptedAt,
               ].join('\n'),
             ),

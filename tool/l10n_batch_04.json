@@ -1,0 +1,906 @@
+[
+  {
+    "key": "storeCoverUploadError",
+    "fr": "Impossible d’envoyer la couverture.",
+    "params": []
+  },
+  {
+    "key": "storeCoverBindPartial",
+    "fr": "Envoi réussi, mais la couverture n’a pas pu être liée. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "storeCoverRemoteUnavailable",
+    "fr": "Aperçu de la couverture non disponible actuellement.",
+    "params": []
+  },
+  {
+    "key": "storeCustomerPreviewTitle",
+    "fr": "Aperçu client",
+    "params": []
+  },
+  {
+    "key": "storeCustomerPreviewHint",
+    "fr": "Notes et délai estimé non disponibles actuellement.",
+    "params": []
+  },
+  {
+    "key": "storeAddressTitle",
+    "fr": "Contact et Adresse du magasin",
+    "params": []
+  },
+  {
+    "key": "storeAddressSave",
+    "fr": "Enregistrer les modifications",
+    "params": []
+  },
+  {
+    "key": "storeAddressConfirmMap",
+    "fr": "Modifier sur la carte",
+    "params": []
+  },
+  {
+    "key": "storeAddressSaveError",
+    "fr": "Enregistrement impossible. Vérifiez la connexion et réessayez.",
+    "params": []
+  },
+  {
+    "key": "storeAddressBanner",
+    "fr": "La modification de l’adresse peut affecter vos zones de livraison et les opérations en cours.",
+    "params": []
+  },
+  {
+    "key": "storeAddressCoordsSection",
+    "fr": "Coordonnées",
+    "params": []
+  },
+  {
+    "key": "storeAddressSection",
+    "fr": "Adresse",
+    "params": []
+  },
+  {
+    "key": "storeAddressPhone",
+    "fr": "Numéro de téléphone",
+    "params": []
+  },
+  {
+    "key": "storeAddressPhoneHint",
+    "fr": "Numéro communiqué aux livreurs pour le retrait.",
+    "params": []
+  },
+  {
+    "key": "storeAddressDetailed",
+    "fr": "Adresse détaillée",
+    "params": []
+  },
+  {
+    "key": "storeAddressLocationSummary",
+    "fr": "Emplacement confirmé",
+    "params": []
+  },
+  {
+    "key": "storeAddressPublicContact",
+    "fr": "Contact public (Optionnel)",
+    "params": []
+  },
+  {
+    "key": "storeAddressWilaya",
+    "fr": "Wilaya",
+    "params": []
+  },
+  {
+    "key": "storeAddressCommune",
+    "fr": "Commune",
+    "params": []
+  },
+  {
+    "key": "adminLocationChoose",
+    "fr": "Sélectionner",
+    "params": []
+  },
+  {
+    "key": "adminLocationSearchHint",
+    "fr": "Rechercher…",
+    "params": []
+  },
+  {
+    "key": "adminLocationEmpty",
+    "fr": "Aucun résultat",
+    "params": []
+  },
+  {
+    "key": "adminLocationLoadError",
+    "fr": "Impossible de charger la liste. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "adminLocationRetry",
+    "fr": "Réessayer",
+    "params": []
+  },
+  {
+    "key": "adminLocationWilayaRequired",
+    "fr": "Sélectionnez d’abord une wilaya.",
+    "params": []
+  },
+  {
+    "key": "adminLocationPairRequired",
+    "fr": "Wilaya et commune sont obligatoires.",
+    "params": []
+  },
+  {
+    "key": "storeAddressPickupHints",
+    "fr": "Instructions de retrait",
+    "params": []
+  },
+  {
+    "key": "storeProfileMediaSub",
+    "fr": "Logo et photo de couverture",
+    "params": []
+  },
+  {
+    "key": "storeProfileMediaUnavailable",
+    "fr": "Indisponible",
+    "params": []
+  },
+  {
+    "key": "storeProfilePrepUnavailable",
+    "fr": "Indisponible",
+    "params": []
+  },
+  {
+    "key": "storeProfilePreviewUnavailable",
+    "fr": "Aperçu client indisponible.",
+    "params": []
+  },
+  {
+    "key": "profileSettingsTitle",
+    "fr": "Paramètres",
+    "params": []
+  },
+  {
+    "key": "storeProfileTitle",
+    "fr": "Profil magasin",
+    "params": []
+  },
+  {
+    "key": "storeProfileCustomerPreview",
+    "fr": "Aperçu client",
+    "params": []
+  },
+  {
+    "key": "storeProfileGeneral",
+    "fr": "Informations générales",
+    "params": []
+  },
+  {
+    "key": "storeProfileGeneralSub",
+    "fr": "Nom et statut du commerce",
+    "params": []
+  },
+  {
+    "key": "storeGeneralTitle",
+    "fr": "Informations générales",
+    "params": []
+  },
+  {
+    "key": "storeGeneralBranchName",
+    "fr": "Nom de l’établissement",
+    "params": []
+  },
+  {
+    "key": "storeGeneralBranchNameHint",
+    "fr": "Affiché aux clients pour cet établissement.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralMerchantName",
+    "fr": "Nom du commerce",
+    "params": []
+  },
+  {
+    "key": "storeGeneralMerchantLocked",
+    "fr": "Nom vérifié par SpeedyGo : non modifiable ici.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralReadOnly",
+    "fr": "Seuls le propriétaire et le gérant peuvent modifier ces informations.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralPhoneElsewhere",
+    "fr": "Le téléphone se modifie dans « Adresse et Emplacement ».",
+    "params": []
+  },
+  {
+    "key": "storeGeneralSave",
+    "fr": "Enregistrer",
+    "params": []
+  },
+  {
+    "key": "storeGeneralSaved",
+    "fr": "Informations de l’établissement enregistrées.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralNameAr",
+    "fr": "Nom en arabe",
+    "params": []
+  },
+  {
+    "key": "storeGeneralNameArHint",
+    "fr": "Optionnel. Affiché aux clients arabophones.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralDescription",
+    "fr": "Description courte",
+    "params": []
+  },
+  {
+    "key": "storeGeneralDescriptionHint",
+    "fr": "Optionnel. Présentez votre établissement en quelques phrases.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralPublicEmail",
+    "fr": "E-mail public",
+    "params": []
+  },
+  {
+    "key": "storeGeneralPublicEmailHint",
+    "fr": "Optionnel. Adresse de contact visible par les clients.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralEmailInvalid",
+    "fr": "Adresse e-mail invalide.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralPreviewTitle",
+    "fr": "Aperçu client",
+    "params": []
+  },
+  {
+    "key": "storeGeneralPreviewOpen",
+    "fr": "Ouvert",
+    "params": []
+  },
+  {
+    "key": "storeGeneralPreviewClosed",
+    "fr": "Fermé",
+    "params": []
+  },
+  {
+    "key": "storeProfileCategory",
+    "fr": "Catégorie de l’établissement",
+    "params": []
+  },
+  {
+    "key": "storeProfileCategorySub",
+    "fr": "Type de commerce affiché aux clients",
+    "params": []
+  },
+  {
+    "key": "storeCategoryTitle",
+    "fr": "Catégorie de l’établissement",
+    "params": []
+  },
+  {
+    "key": "storeCategorySubtitle",
+    "fr": "Choisissez la catégorie qui décrit le mieux votre activité.",
+    "params": []
+  },
+  {
+    "key": "storeCategorySearch",
+    "fr": "Rechercher une catégorie...",
+    "params": []
+  },
+  {
+    "key": "storeCategoryInfo",
+    "fr": "Une seule catégorie par établissement. Elle détermine où il apparaît dans l’application client.",
+    "params": []
+  },
+  {
+    "key": "storeCategoryReadOnly",
+    "fr": "Seuls le propriétaire et les gérants peuvent modifier la catégorie.",
+    "params": []
+  },
+  {
+    "key": "storeCategorySave",
+    "fr": "Enregistrer",
+    "params": []
+  },
+  {
+    "key": "storeCategoryClear",
+    "fr": "Retirer la catégorie",
+    "params": []
+  },
+  {
+    "key": "storeCategorySaved",
+    "fr": "Catégorie enregistrée.",
+    "params": []
+  },
+  {
+    "key": "storeCategoryCleared",
+    "fr": "Catégorie retirée.",
+    "params": []
+  },
+  {
+    "key": "storeCategoryNotSet",
+    "fr": "Non définie",
+    "params": []
+  },
+  {
+    "key": "storeCategoryEmpty",
+    "fr": "Aucune catégorie disponible pour le moment.",
+    "params": []
+  },
+  {
+    "key": "storeCategoryNoMatch",
+    "fr": "Aucune catégorie ne correspond.",
+    "params": []
+  },
+  {
+    "key": "storeCategoryLoadError",
+    "fr": "Impossible de charger les catégories.",
+    "params": []
+  },
+  {
+    "key": "storeCategorySaveError",
+    "fr": "Enregistrement impossible. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "storeCategoryForbidden",
+    "fr": "Votre rôle ne permet pas de modifier cet établissement.",
+    "params": []
+  },
+  {
+    "key": "storeCategoryRestricted",
+    "fr": "Le statut du commerce ne permet pas cette modification.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralNameRequired",
+    "fr": "Le nom ne peut pas être vide.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralSaveError",
+    "fr": "Enregistrement impossible. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralForbidden",
+    "fr": "Votre rôle ne permet pas de modifier cet établissement.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralRestricted",
+    "fr": "Le statut du commerce ne permet pas cette modification.",
+    "params": []
+  },
+  {
+    "key": "storeProfileMedia",
+    "fr": "Médias et Logos",
+    "params": []
+  },
+  {
+    "key": "storeProfileAddress",
+    "fr": "Adresse et Emplacement",
+    "params": []
+  },
+  {
+    "key": "storeProfileAddressSub",
+    "fr": "Téléphone, adresse et position GPS",
+    "params": []
+  },
+  {
+    "key": "storeProfileHours",
+    "fr": "Horaires d’ouverture",
+    "params": []
+  },
+  {
+    "key": "storeProfileHoursSub",
+    "fr": "Jours d’ouverture, pauses",
+    "params": []
+  },
+  {
+    "key": "storeProfilePrep",
+    "fr": "Paramètres de préparation",
+    "params": []
+  },
+  {
+    "key": "storeProfileSettings",
+    "fr": "Paramètres du compte",
+    "params": []
+  },
+  {
+    "key": "storeProfileSettingsSub",
+    "fr": "Compte, préférences, déconnexion",
+    "params": []
+  },
+  {
+    "key": "storeProfileNotifications",
+    "fr": "Notifications",
+    "params": []
+  },
+  {
+    "key": "storeProfileNotificationsSub",
+    "fr": "Centre d’alertes",
+    "params": []
+  },
+  {
+    "key": "openingHoursTitle",
+    "fr": "Horaires d’ouverture",
+    "params": []
+  },
+  {
+    "key": "openingHoursEmpty",
+    "fr": "Aucun horaire configuré pour cet établissement.",
+    "params": []
+  },
+  {
+    "key": "openingHoursSave",
+    "fr": "Enregistrer les horaires",
+    "params": []
+  },
+  {
+    "key": "openingHoursSaved",
+    "fr": "Horaires enregistrés.",
+    "params": []
+  },
+  {
+    "key": "openingHoursLoadError",
+    "fr": "Impossible de charger les horaires.",
+    "params": []
+  },
+  {
+    "key": "openingHoursSaveError",
+    "fr": "Impossible d’enregistrer les horaires.",
+    "params": []
+  },
+  {
+    "key": "openingHoursInvalid",
+    "fr": "Horaires refusés : vérifiez les chevauchements, y compris après minuit.",
+    "params": []
+  },
+  {
+    "key": "openingHoursConflict",
+    "fr": "Les horaires ont changé ailleurs. Rechargement effectué — vérifiez puis réessayez.",
+    "params": []
+  },
+  {
+    "key": "openingHoursClosed",
+    "fr": "Fermé",
+    "params": []
+  },
+  {
+    "key": "openingHoursUsual",
+    "fr": "Horaires habituels",
+    "params": []
+  },
+  {
+    "key": "openingHoursNotConfigured",
+    "fr": "Aucun horaire configuré",
+    "params": []
+  },
+  {
+    "key": "openingHoursOpenNow",
+    "fr": "Ouvert actuellement",
+    "params": []
+  },
+  {
+    "key": "openingHoursClosedNow",
+    "fr": "Fermé actuellement",
+    "params": []
+  },
+  {
+    "key": "openingHoursInfo",
+    "fr": "Les clients peuvent commander uniquement pendant vos heures d’ouverture. Les modifications sont appliquées dès l’enregistrement.",
+    "params": []
+  },
+  {
+    "key": "openingHoursStaffReadOnly",
+    "fr": "Lecture seule : seuls le propriétaire et les gérants peuvent modifier les horaires.",
+    "params": []
+  },
+  {
+    "key": "openingHoursOpens",
+    "fr": "Ouverture",
+    "params": []
+  },
+  {
+    "key": "openingHoursCloses",
+    "fr": "Fermeture",
+    "params": []
+  },
+  {
+    "key": "openingHoursEditorHint",
+    "fr": "Jusqu’à 3 plages par jour. Une fermeture avant l’ouverture se termine le lendemain.",
+    "params": []
+  },
+  {
+    "key": "openingHoursAddRange",
+    "fr": "Ajouter une plage",
+    "params": []
+  },
+  {
+    "key": "openingHoursRemoveRange",
+    "fr": "Supprimer la plage",
+    "params": []
+  },
+  {
+    "key": "openingHoursApply",
+    "fr": "Appliquer",
+    "params": []
+  },
+  {
+    "key": "openingHoursNextDay",
+    "fr": "Se termine le lendemain",
+    "params": []
+  },
+  {
+    "key": "openingHoursAllDay",
+    "fr": "Ouvert 24 h/24",
+    "params": []
+  },
+  {
+    "key": "openingHoursDayClosedHint",
+    "fr": "Aucune plage : le jour sera fermé.",
+    "params": []
+  },
+  {
+    "key": "openingHoursIssueOverlap",
+    "fr": "Les plages se chevauchent.",
+    "params": []
+  },
+  {
+    "key": "openingHoursIssueZero",
+    "fr": "L’ouverture et la fermeture doivent être différentes (00:00–00:00 pour 24 h).",
+    "params": []
+  },
+  {
+    "key": "openingHoursIssueTooMany",
+    "fr": "Maximum 3 plages par jour.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsTitle",
+    "fr": "Horaires exceptionnels",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsNavSub",
+    "fr": "Jours fériés, fermetures ponctuelles",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsBanner",
+    "fr": "Ces horaires remplacent vos horaires habituels uniquement pour les dates sélectionnées.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsUpcoming",
+    "fr": "Exceptions à venir",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsEmpty",
+    "fr": "Aucune exception à venir.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsAdd",
+    "fr": "Ajouter une exception",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsEdit",
+    "fr": "Modifier l’exception",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDate",
+    "fr": "Date",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDateHint",
+    "fr": "Sélectionner une date",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDateTaken",
+    "fr": "Cette date a déjà une exception : l’enregistrement la remplacera.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsStatus",
+    "fr": "Statut",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsOpen",
+    "fr": "Ouvert",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsClosed",
+    "fr": "Fermé",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsHours",
+    "fr": "Horaires modifiés",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsTo",
+    "fr": "à",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsLabel",
+    "fr": "Motif",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsLabelHint",
+    "fr": "ex : Jour férié, Travaux…",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsMessage",
+    "fr": "Message pour les clients (Optionnel)",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsMessageHint",
+    "fr": "Enregistré avec l’exception. Pas encore affiché dans l’application client.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsCancel",
+    "fr": "Annuler",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsSave",
+    "fr": "Enregistrer les horaires",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsSaved",
+    "fr": "Exception enregistrée.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDeleted",
+    "fr": "Exception supprimée.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDeleteTitle",
+    "fr": "Supprimer l’exception ?",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDeleteBody",
+    "fr": "Le {date} reprendra vos horaires habituels.",
+    "params": [
+      "date"
+    ]
+  },
+  {
+    "key": "hoursExceptionsDeleteConfirm",
+    "fr": "Supprimer",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsLoadError",
+    "fr": "Impossible de charger les horaires exceptionnels.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsSaveError",
+    "fr": "Impossible d’enregistrer l’exception. Vos saisies sont conservées.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDeleteError",
+    "fr": "Impossible de supprimer l’exception. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsConflict",
+    "fr": "Cette date a été modifiée ailleurs. La liste a été rechargée : vérifiez puis enregistrez à nouveau.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsInvalid",
+    "fr": "Exception refusée : vérifiez la date (aujourd’hui à +365 jours) et les plages.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsWeeklyRequired",
+    "fr": "Configurez d’abord les horaires habituels.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsTooMany",
+    "fr": "Trop d’exceptions à venir (100 maximum).",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsStaffReadOnly",
+    "fr": "Lecture seule : seuls le propriétaire et les gérants peuvent modifier les horaires exceptionnels.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDateRequired",
+    "fr": "Sélectionnez une date.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsLabelRequired",
+    "fr": "Indiquez un motif.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsIntervalsRequired",
+    "fr": "Ajoutez au moins une plage horaire.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsSameDay",
+    "fr": "Chaque plage doit finir le même jour (00:00 = minuit).",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsHelpTitle",
+    "fr": "Ordre d’application",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsHelpBody",
+    "fr": "Une fermeture forcée ou temporaire de l’établissement s’applique toujours en premier. Sinon, une exception remplace les horaires habituels pour sa date (heure d’Alger). Les autres jours suivent les horaires habituels.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsHelpOk",
+    "fr": "Compris",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsToday",
+    "fr": "Exception aujourd’hui : {label}",
+    "params": [
+      "label"
+    ]
+  },
+  {
+    "key": "availabilityTitle",
+    "fr": "État du magasin",
+    "params": []
+  },
+  {
+    "key": "availabilityEstablishment",
+    "fr": "Établissement",
+    "params": []
+  },
+  {
+    "key": "availabilityOpen",
+    "fr": "Ouvert",
+    "params": []
+  },
+  {
+    "key": "availabilityClosed",
+    "fr": "Fermé",
+    "params": []
+  },
+  {
+    "key": "availabilityFollowSchedule",
+    "fr": "Selon les horaires",
+    "params": []
+  },
+  {
+    "key": "availabilityForceClosed",
+    "fr": "Fermé",
+    "params": []
+  },
+  {
+    "key": "availabilitySave",
+    "fr": "Enregistrer les modifications",
+    "params": []
+  },
+  {
+    "key": "availabilitySaving",
+    "fr": "Enregistrement…",
+    "params": []
+  },
+  {
+    "key": "availabilitySaved",
+    "fr": "État du magasin enregistré.",
+    "params": []
+  },
+  {
+    "key": "availabilityClosureSaved",
+    "fr": "Fermeture enregistrée.",
+    "params": []
+  },
+  {
+    "key": "availabilityLoadError",
+    "fr": "Impossible de charger l’état du magasin.",
+    "params": []
+  },
+  {
+    "key": "availabilitySaveError",
+    "fr": "Impossible d’enregistrer l’état du magasin.",
+    "params": []
+  },
+  {
+    "key": "availabilityConflict",
+    "fr": "L’état a changé ailleurs. Rechargement effectué — vérifiez puis réessayez.",
+    "params": []
+  },
+  {
+    "key": "availabilityReopenTitle",
+    "fr": "Rouvrir selon les horaires",
+    "params": []
+  },
+  {
+    "key": "availabilityReopenOutsideHoursBody",
+    "fr": "Vous êtes hors des horaires hebdomadaires. Le magasin restera Fermé jusqu’à la prochaine ouverture prévue.",
+    "params": []
+  },
+  {
+    "key": "availabilityConfirmReopen",
+    "fr": "Confirmer",
+    "params": []
+  },
+  {
+    "key": "availabilityToday",
+    "fr": "Aujourd’hui",
+    "params": []
+  },
+  {
+    "key": "availabilityClosedToday",
+    "fr": "Fermé aujourd’hui",
+    "params": []
+  },
+  {
+    "key": "availabilityModifyHours",
+    "fr": "Modifier",
+    "params": []
+  },
+  {
+    "key": "availabilityQuickPause",
+    "fr": "Pause rapide",
+    "params": []
+  },
+  {
+    "key": "availabilityQuickPauseHint",
+    "fr": "Fermer temporairement pour un rush en cuisine.",
+    "params": []
+  },
+  {
+    "key": "availabilityPause30",
+    "fr": "30 MIN",
+    "params": []
+  },
+  {
+    "key": "availabilityPause60",
+    "fr": "1 HEURE",
+    "params": []
+  },
+  {
+    "key": "availabilityActiveOrdersUnknown",
+    "fr": "Commandes en cours",
+    "params": []
+  }
+]

@@ -352,7 +352,7 @@ void main() {
       expect(find.byKey(const Key('merchant-verification-rejected')),
           findsOneWidget);
       expect(find.byKey(const Key('merchant-issues-list')), findsOneWidget);
-      expect(find.text(AppStrings.issuesRemaining(2)), findsOneWidget);
+      expect(find.text(AppStrings.issuesRemaining('2')), findsOneWidget);
       expect(
         find.byKey(const Key('merchant-issues-application-title')),
         findsOneWidget,

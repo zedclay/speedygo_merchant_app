@@ -160,7 +160,7 @@ class _StoreCoverScreenState extends ConsumerState<StoreCoverScreen> {
         _removingLogo = false;
       });
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text(AppStrings.storeLogoRemoved)),
+        SnackBar(content: Text(AppStrings.storeLogoRemoved)),
       );
     } catch (_) {
       if (!mounted) return;
@@ -392,7 +392,7 @@ class _StoreCoverScreenState extends ConsumerState<StoreCoverScreen> {
         _removing = false;
       });
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text(AppStrings.storeCoverRemove)),
+        SnackBar(content: Text(AppStrings.storeCoverRemove)),
       );
     } catch (_) {
       if (!mounted) return;
@@ -641,7 +641,7 @@ class _StoreCoverScreenState extends ConsumerState<StoreCoverScreen> {
                                               ),
                                               onPressed: _loadRemoteCover,
                                               icon: const Icon(Icons.refresh),
-                                              label: const Text(
+                                              label: Text(
                                                 AppStrings.retry,
                                               ),
                                             ),

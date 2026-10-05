@@ -25,6 +25,7 @@ import 'package:speedygo_merchant_app/features/reports/presentation/daily_summar
 import 'package:speedygo_merchant_app/features/reports/presentation/top_products_screen.dart';
 import 'package:speedygo_merchant_app/features/shell/home_dashboard_screen.dart';
 import 'package:speedygo_merchant_app/features/shell/merchant_shell.dart';
+import 'package:speedygo_merchant_app/features/shell/language_settings_screen.dart';
 import 'package:speedygo_merchant_app/features/shell/profile_settings_screen.dart';
 import 'package:speedygo_merchant_app/features/shell/logout_screen.dart';
 import 'package:speedygo_merchant_app/features/support/presentation/support_center_screen.dart';
@@ -227,6 +228,11 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         path: AppRoutes.settings,
         parentNavigatorKey: _rootKey,
         builder: (_, _) => const ProfileSettingsScreen(),
+      ),
+      GoRoute(
+        path: AppRoutes.languageSettings,
+        parentNavigatorKey: _rootKey,
+        builder: (_, _) => const LanguageSettingsScreen(),
       ),
       GoRoute(
         path: AppRoutes.logout,

@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:speedygo_merchant_app/core/constants/app_constants.dart';
 import 'package:speedygo_merchant_app/core/constants/app_strings.dart';
 import 'package:speedygo_merchant_app/core/errors/app_exception.dart';
+import 'package:speedygo_merchant_app/core/locale/locale_support.dart';
 import 'package:speedygo_merchant_app/core/storage/session_store.dart';
 import 'package:speedygo_merchant_app/core/utils/phone_input.dart';
 import 'package:speedygo_merchant_app/features/auth/application/auth_infrastructure.dart';
@@ -45,7 +46,10 @@ class SessionController extends Notifier<SessionState> {
     final generation = state.generation;
     try {
       final languageSeen = await _launch.readLanguageSeen();
-      final locale = await _launch.readLocale();
+      final storedLocale = await _launch.readLocale();
+      final locale = resolveInitialLanguageCode(
+        stored: storedLocale.isEmpty ? null : storedLocale,
+      );
       final onboardingSeen = await _launch.readOnboardingSeen();
       final stored = await _store.read();
       if (!_isCurrent(generation)) return;
@@ -241,7 +245,7 @@ class SessionController extends Notifier<SessionState> {
   }
 
   Future<void> setLocale(String locale) async {
-    final sanitized = locale == 'ar' ? 'ar' : 'fr';
+    final sanitized = sanitizeLanguageCode(locale);
     if (state.busy) return;
     final generation = state.generation;
     state = state.copyWith(busy: true, clearError: true);

@@ -188,7 +188,7 @@ void main() {
         required merchantId,
         required branchId,
       }) async {
-        throw const NetworkException(
+        throw NetworkException(
           AppStrings.networkError,
           code: 'NETWORK',
         );
@@ -276,7 +276,7 @@ void main() {
       }) async {
         calls += 1;
         if (calls == 1) {
-          throw const NetworkException(
+          throw NetworkException(
             AppStrings.networkError,
             code: 'NETWORK',
           );

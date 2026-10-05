@@ -114,16 +114,16 @@ class _CategoryEditorScreenState extends ConsumerState<CategoryEditorScreen> {
     final ok = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text(AppStrings.catalogDeleteCategory),
-        content: const Text(AppStrings.catalogDeleteCategoryConfirm),
+        title: Text(AppStrings.catalogDeleteCategory),
+        content: Text(AppStrings.catalogDeleteCategoryConfirm),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx, false),
-            child: const Text(AppStrings.cancel),
+            child: Text(AppStrings.cancel),
           ),
           FilledButton(
             onPressed: () => Navigator.pop(ctx, true),
-            child: const Text(AppStrings.catalogDeleteCategory),
+            child: Text(AppStrings.catalogDeleteCategory),
           ),
         ],
       ),
@@ -188,7 +188,7 @@ class _CategoryEditorScreenState extends ConsumerState<CategoryEditorScreen> {
                           decoration: _decoration(),
                         ),
                       ),
-                      const MerchantContractGapRow(
+                      MerchantContractGapRow(
                         label: AppStrings.catalogFieldCategoryNameAr,
                       ),
                     ],
@@ -200,7 +200,7 @@ class _CategoryEditorScreenState extends ConsumerState<CategoryEditorScreen> {
                     children: [
                       Row(
                         children: [
-                          const Expanded(
+                          Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -223,14 +223,14 @@ class _CategoryEditorScreenState extends ConsumerState<CategoryEditorScreen> {
                           ),
                         ],
                       ),
-                      const MerchantContractGapRow(
+                      MerchantContractGapRow(
                         label: AppStrings.catalogFieldCategoryDesc,
                       ),
                       if (!widget.isCreate && canManage)
                         OutlinedButton(
                           key: const Key('category-editor-delete'),
                           onPressed: _saving ? null : _delete,
-                          child: const Text(AppStrings.catalogDeleteCategory),
+                          child: Text(AppStrings.catalogDeleteCategory),
                         ),
                     ],
                   ),
@@ -251,7 +251,7 @@ class _CategoryEditorScreenState extends ConsumerState<CategoryEditorScreen> {
               secondary: OutlinedButton(
                 key: const Key('category-editor-cancel'),
                 onPressed: _saving ? null : () => context.pop(),
-                child: const Text(
+                child: Text(
                   AppStrings.catalogCategoryCancel,
                   maxLines: 1,
                 ),

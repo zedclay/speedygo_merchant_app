@@ -1,0 +1,919 @@
+[
+  {
+    "key": "appName",
+    "fr": "SpeedyGo Merchant",
+    "params": []
+  },
+  {
+    "key": "brandName",
+    "fr": "SpeedyGo",
+    "params": []
+  },
+  {
+    "key": "splashTagline",
+    "fr": "Votre commerce. Simplement.",
+    "params": []
+  },
+  {
+    "key": "splashLegacyTagline",
+    "fr": "Espace commerçant",
+    "params": []
+  },
+  {
+    "key": "onboardingSkip",
+    "fr": "Passer",
+    "params": []
+  },
+  {
+    "key": "onboardingNext",
+    "fr": "Suivant",
+    "params": []
+  },
+  {
+    "key": "onboardingStart",
+    "fr": "Commencer",
+    "params": []
+  },
+  {
+    "key": "onboardingHaveAccount",
+    "fr": "J’ai déjà un compte",
+    "params": []
+  },
+  {
+    "key": "onboardingPage1Title",
+    "fr": "Recevez vos commandes",
+    "params": []
+  },
+  {
+    "key": "onboardingPage1Body",
+    "fr": "Retrouvez les nouvelles commandes et consultez leurs détails.",
+    "params": []
+  },
+  {
+    "key": "onboardingPage2Title",
+    "fr": "Maîtrisez la préparation",
+    "params": []
+  },
+  {
+    "key": "onboardingPage2Body",
+    "fr": "Organisez la préparation et indiquez quand une commande est prête.",
+    "params": []
+  },
+  {
+    "key": "onboardingPage3Title",
+    "fr": "Votre commerce, à portée de main",
+    "params": []
+  },
+  {
+    "key": "onboardingPage3Body",
+    "fr": "Retrouvez votre catalogue, vos horaires et les informations de votre établissement.",
+    "params": []
+  },
+  {
+    "key": "onboardingSaveFailed",
+    "fr": "Impossible d’enregistrer l’introduction. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "onboardingPageSemantics",
+    "fr": "Page d’introduction",
+    "params": []
+  },
+  {
+    "key": "phoneTitle",
+    "fr": "Entrez votre numéro de téléphone",
+    "params": []
+  },
+  {
+    "key": "phoneSubtitle",
+    "fr": "Nous vous enverrons un code de vérification par SMS.",
+    "params": []
+  },
+  {
+    "key": "phoneHint",
+    "fr": "555 12 34 56",
+    "params": []
+  },
+  {
+    "key": "phonePrefix",
+    "fr": "+213",
+    "params": []
+  },
+  {
+    "key": "phoneSmsNote",
+    "fr": "Les frais de SMS standard peuvent s’appliquer.",
+    "params": []
+  },
+  {
+    "key": "phoneLabel",
+    "fr": "Numéro de téléphone",
+    "params": []
+  },
+  {
+    "key": "phoneInvalid",
+    "fr": "Saisissez un numéro algérien valide.",
+    "params": []
+  },
+  {
+    "key": "continueLabel",
+    "fr": "Continuer",
+    "params": []
+  },
+  {
+    "key": "needHelp",
+    "fr": "Besoin d’aide ?",
+    "params": []
+  },
+  {
+    "key": "helpUnavailable",
+    "fr": "L’assistance sera disponible dans une prochaine version.",
+    "params": []
+  },
+  {
+    "key": "otpTitle",
+    "fr": "Vérification du code",
+    "params": []
+  },
+  {
+    "key": "otpSentTo",
+    "fr": "Code envoyé au {masked}",
+    "params": [
+      "masked"
+    ]
+  },
+  {
+    "key": "editNumber",
+    "fr": "Modifier",
+    "params": []
+  },
+  {
+    "key": "verify",
+    "fr": "Vérifier",
+    "params": []
+  },
+  {
+    "key": "resend",
+    "fr": "Renvoyer le code",
+    "params": []
+  },
+  {
+    "key": "resendIn",
+    "fr": "Renvoyer le code dans {clock}",
+    "params": [
+      "clock"
+    ]
+  },
+  {
+    "key": "otpCooldownHint",
+    "fr": "Patientez avant de renvoyer un code",
+    "params": []
+  },
+  {
+    "key": "resendCode",
+    "fr": "Renvoyer le code",
+    "params": []
+  },
+  {
+    "key": "otpSubtitle",
+    "fr": "Saisissez le code à 6 chiffres envoyé au",
+    "params": []
+  },
+  {
+    "key": "restoreTitle",
+    "fr": "Restauration de la session",
+    "params": []
+  },
+  {
+    "key": "restoreLoading",
+    "fr": "Connexion en cours…",
+    "params": []
+  },
+  {
+    "key": "restoreOffline",
+    "fr": "Impossible de joindre le serveur. Vérifiez votre connexion.",
+    "params": []
+  },
+  {
+    "key": "restoreRetry",
+    "fr": "Réessayer",
+    "params": []
+  },
+  {
+    "key": "restoreOtherAccount",
+    "fr": "Utiliser un autre compte",
+    "params": []
+  },
+  {
+    "key": "sessionExpired",
+    "fr": "Votre session a expiré. Connectez-vous.",
+    "params": []
+  },
+  {
+    "key": "networkError",
+    "fr": "Problème de réseau. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "languageSaveFailed",
+    "fr": "Impossible d’enregistrer la langue. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "retry",
+    "fr": "Réessayer",
+    "params": []
+  },
+  {
+    "key": "refreshStatus",
+    "fr": "Actualiser le statut",
+    "params": []
+  },
+  {
+    "key": "back",
+    "fr": "Retour",
+    "params": []
+  },
+  {
+    "key": "loading",
+    "fr": "Chargement…",
+    "params": []
+  },
+  {
+    "key": "tabHome",
+    "fr": "Accueil",
+    "params": []
+  },
+  {
+    "key": "tabOrders",
+    "fr": "Commandes",
+    "params": []
+  },
+  {
+    "key": "tabCatalog",
+    "fr": "Catalogue",
+    "params": []
+  },
+  {
+    "key": "tabReports",
+    "fr": "Rapports",
+    "params": []
+  },
+  {
+    "key": "tabProfile",
+    "fr": "Profil",
+    "params": []
+  },
+  {
+    "key": "navReveal",
+    "fr": "Afficher la navigation",
+    "params": []
+  },
+  {
+    "key": "homeTitle",
+    "fr": "Accueil",
+    "params": []
+  },
+  {
+    "key": "selectBranchTitle",
+    "fr": "Choisir un établissement",
+    "params": []
+  },
+  {
+    "key": "selectBranchSubtitle",
+    "fr": "Sélectionnez l’établissement avec lequel vous souhaitez travailler.",
+    "params": []
+  },
+  {
+    "key": "noMembershipTitle",
+    "fr": "Aucun commerce associé",
+    "params": []
+  },
+  {
+    "key": "noMembershipBody",
+    "fr": "Ce compte n’a pas encore d’adhésion commerçant. Vous pouvez créer un profil commerce pour démarrer la vérification.",
+    "params": []
+  },
+  {
+    "key": "noMembershipInvitationsCta",
+    "fr": "J’ai une invitation",
+    "params": []
+  },
+  {
+    "key": "createMerchant",
+    "fr": "Créer un commerce",
+    "params": []
+  },
+  {
+    "key": "merchantNameLabel",
+    "fr": "Nom du commerce",
+    "params": []
+  },
+  {
+    "key": "merchantNameHint",
+    "fr": "Ex. Pharmacie du Centre",
+    "params": []
+  },
+  {
+    "key": "verificationPendingTitle",
+    "fr": "Vérification en cours",
+    "params": []
+  },
+  {
+    "key": "verificationPendingBody",
+    "fr": "Votre commerce est enregistré et en attente de vérification.",
+    "params": []
+  },
+  {
+    "key": "verificationDossierProgress",
+    "fr": "Pièces du dossier",
+    "params": []
+  },
+  {
+    "key": "verificationSubmittedStep",
+    "fr": "Dossier soumis",
+    "params": []
+  },
+  {
+    "key": "verificationReviewStep",
+    "fr": "Examen des documents",
+    "params": []
+  },
+  {
+    "key": "verificationReviewStepBody",
+    "fr": "En cours d’examen par SpeedyGo",
+    "params": []
+  },
+  {
+    "key": "verificationFinalStep",
+    "fr": "Validation finale",
+    "params": []
+  },
+  {
+    "key": "verificationFinalStepBody",
+    "fr": "En attente de décision",
+    "params": []
+  },
+  {
+    "key": "verificationTimelineTitle",
+    "fr": "Progression du dossier",
+    "params": []
+  },
+  {
+    "key": "verificationReferenceLabel",
+    "fr": "Référence",
+    "params": []
+  },
+  {
+    "key": "verificationReferenceFull",
+    "fr": "Référence du dossier",
+    "params": []
+  },
+  {
+    "key": "approvedTitle",
+    "fr": "Félicitations !",
+    "params": []
+  },
+  {
+    "key": "approvedSubtitle",
+    "fr": "Votre établissement est approuvé",
+    "params": []
+  },
+  {
+    "key": "approvedBody",
+    "fr": "Pour commencer à recevoir des commandes, assurez-vous que votre magasin est ouvert, que vos horaires sont définis et que vos produits sont disponibles.",
+    "params": []
+  },
+  {
+    "key": "approvedReferenceLabel",
+    "fr": "RÉFÉRENCE MERCHANT",
+    "params": []
+  },
+  {
+    "key": "approvedReferenceFull",
+    "fr": "Référence Merchant",
+    "params": []
+  },
+  {
+    "key": "approvedBadge",
+    "fr": "Approuvé",
+    "params": []
+  },
+  {
+    "key": "approvedStepsTitle",
+    "fr": "Étapes de configuration",
+    "params": []
+  },
+  {
+    "key": "approvedHoursTitle",
+    "fr": "Horaires d’ouverture",
+    "params": []
+  },
+  {
+    "key": "approvedHoursBody",
+    "fr": "Configurez quand vous êtes ouvert",
+    "params": []
+  },
+  {
+    "key": "approvedCatalogTitle",
+    "fr": "Catalogue de produits",
+    "params": []
+  },
+  {
+    "key": "approvedCatalogBody",
+    "fr": "Ajoutez vos premiers articles",
+    "params": []
+  },
+  {
+    "key": "approvedAlertsTitle",
+    "fr": "Alertes et notifications",
+    "params": []
+  },
+  {
+    "key": "approvedAlertsBody",
+    "fr": "Restez informé des commandes",
+    "params": []
+  },
+  {
+    "key": "approvedNeedBranchHint",
+    "fr": "Disponible après l’ajout d’un établissement",
+    "params": []
+  },
+  {
+    "key": "approvedNotOpenNote",
+    "fr": "L’approbation n’ouvre pas votre magasin automatiquement : vérifiez son statut, vos horaires et votre catalogue depuis l’accueil.",
+    "params": []
+  },
+  {
+    "key": "approvedContinue",
+    "fr": "Accéder à l’accueil marchand",
+    "params": []
+  },
+  {
+    "key": "verificationRequestIdLabel",
+    "fr": "ID DE DEMANDE",
+    "params": []
+  },
+  {
+    "key": "verificationNeedHelp",
+    "fr": "Besoin d’aide pour votre dossier ?",
+    "params": []
+  },
+  {
+    "key": "verificationCorrectAndSubmit",
+    "fr": "Corriger et soumettre",
+    "params": []
+  },
+  {
+    "key": "verificationRejectedGreeting",
+    "fr": "Bonjour, le dossier de {merchantName} nécessite des corrections.",
+    "params": [
+      "merchantName"
+    ]
+  },
+  {
+    "key": "verificationRejectedTitle",
+    "fr": "Dossier à compléter",
+    "params": []
+  },
+  {
+    "key": "verificationRejectedBody",
+    "fr": "Le dossier a été refusé. Corrigez le profil ou les pièces lorsque l’édition est autorisée, puis soumettez à nouveau.",
+    "params": []
+  },
+  {
+    "key": "verificationApprovedTitle",
+    "fr": "Commerce approuvé",
+    "params": []
+  },
+  {
+    "key": "verificationApprovedBody",
+    "fr": "Votre commerce est approuvé. Complétez un établissement actif pour l’exploitation.",
+    "params": []
+  },
+  {
+    "key": "suspendedTitle",
+    "fr": "Compte commerce suspendu",
+    "params": []
+  },
+  {
+    "key": "suspendedBody",
+    "fr": "Ce commerce est suspendu. Contactez le support SpeedyGo si besoin.",
+    "params": []
+  },
+  {
+    "key": "checklistTitle",
+    "fr": "Pièces du dossier",
+    "params": []
+  },
+  {
+    "key": "accessRestrictedTitle",
+    "fr": "Accès restreint",
+    "params": []
+  },
+  {
+    "key": "accessRestrictedBody",
+    "fr": "Vous n’avez pas les droits nécessaires pour cette action.",
+    "params": []
+  },
+  {
+    "key": "needBranchTitle",
+    "fr": "Établissement requis",
+    "params": []
+  },
+  {
+    "key": "needBranchBody",
+    "fr": "Ajoutez au moins un établissement actif pour utiliser l’espace opérationnel.",
+    "params": []
+  },
+  {
+    "key": "addBranch",
+    "fr": "Ajouter un établissement",
+    "params": []
+  },
+  {
+    "key": "branchNameLabel",
+    "fr": "Nom de l’établissement",
+    "params": []
+  },
+  {
+    "key": "branchPhoneLabel",
+    "fr": "Téléphone",
+    "params": []
+  },
+  {
+    "key": "branchAddressLabel",
+    "fr": "Adresse",
+    "params": []
+  },
+  {
+    "key": "branchLatLabel",
+    "fr": "Latitude",
+    "params": []
+  },
+  {
+    "key": "branchLngLabel",
+    "fr": "Longitude",
+    "params": []
+  },
+  {
+    "key": "save",
+    "fr": "Enregistrer",
+    "params": []
+  },
+  {
+    "key": "logout",
+    "fr": "Se déconnecter",
+    "params": []
+  },
+  {
+    "key": "operationalActive",
+    "fr": "Actif",
+    "params": []
+  },
+  {
+    "key": "operationalInactive",
+    "fr": "Inactif",
+    "params": []
+  },
+  {
+    "key": "operationalSuspended",
+    "fr": "Suspendu",
+    "params": []
+  },
+  {
+    "key": "homeNoMetrics",
+    "fr": "Aucun indicateur agrégé n’est fourni par l’API dans cette phase.",
+    "params": []
+  },
+  {
+    "key": "homeOrderCountsTitle",
+    "fr": "Commandes en cours",
+    "params": []
+  },
+  {
+    "key": "homeCountIncoming",
+    "fr": "Nouveaux",
+    "params": []
+  },
+  {
+    "key": "homeCountPreparing",
+    "fr": "En prép.",
+    "params": []
+  },
+  {
+    "key": "homeCountReady",
+    "fr": "Prêts",
+    "params": []
+  },
+  {
+    "key": "homeCountCourier",
+    "fr": "Livreur",
+    "params": []
+  },
+  {
+    "key": "homeCountCourierUnavailable",
+    "fr": "—",
+    "params": []
+  },
+  {
+    "key": "homeActiveOrdersTitle",
+    "fr": "Commandes actives",
+    "params": []
+  },
+  {
+    "key": "homeActiveOrdersEmpty",
+    "fr": "Aucune commande active pour le moment.",
+    "params": []
+  },
+  {
+    "key": "homeTreatOrder",
+    "fr": "Traiter la commande",
+    "params": []
+  },
+  {
+    "key": "homeOpenOrder",
+    "fr": "Voir la commande",
+    "params": []
+  },
+  {
+    "key": "homeVerificationTitle",
+    "fr": "Vérification à finaliser",
+    "params": []
+  },
+  {
+    "key": "homeVerificationBody",
+    "fr": "Complétez votre dossier pour conserver l’accès complet à votre espace marchand.",
+    "params": []
+  },
+  {
+    "key": "homeKpiSales",
+    "fr": "Ventes",
+    "params": []
+  },
+  {
+    "key": "homeKpiOrders",
+    "fr": "Commandes",
+    "params": []
+  },
+  {
+    "key": "homeKpiOrdersUnit",
+    "fr": "terminées",
+    "params": []
+  },
+  {
+    "key": "homeKpiCurrency",
+    "fr": "DZD",
+    "params": []
+  },
+  {
+    "key": "homeKpiUnavailable",
+    "fr": "—",
+    "params": []
+  },
+  {
+    "key": "homeLastSync",
+    "fr": "Dernière synchro : {hhmm}",
+    "params": [
+      "hhmm"
+    ]
+  },
+  {
+    "key": "refresh",
+    "fr": "Actualiser",
+    "params": []
+  },
+  {
+    "key": "ordersEmpty",
+    "fr": "Aucune commande pour cet établissement.",
+    "params": []
+  },
+  {
+    "key": "ordersEmptyIncoming",
+    "fr": "Aucune nouvelle commande",
+    "params": []
+  },
+  {
+    "key": "ordersEmptyAccepted",
+    "fr": "Aucune commande acceptée",
+    "params": []
+  },
+  {
+    "key": "ordersEmptyPreparing",
+    "fr": "Aucune commande en préparation",
+    "params": []
+  },
+  {
+    "key": "ordersEmptyReady",
+    "fr": "Aucune commande prête",
+    "params": []
+  },
+  {
+    "key": "ordersEmptyCompleted",
+    "fr": "Aucune commande terminée",
+    "params": []
+  },
+  {
+    "key": "ordersEmptyCancelled",
+    "fr": "Aucune commande annulée",
+    "params": []
+  },
+  {
+    "key": "ordersEmptyFailed",
+    "fr": "Aucune commande échouée",
+    "params": []
+  },
+  {
+    "key": "ordersLoadError",
+    "fr": "Impossible de charger les commandes.",
+    "params": []
+  },
+  {
+    "key": "orderDetailTitle",
+    "fr": "Commande",
+    "params": []
+  },
+  {
+    "key": "orderDetailLoadError",
+    "fr": "Impossible de charger cette commande.",
+    "params": []
+  },
+  {
+    "key": "orderFulfillmentIncoming",
+    "fr": "Nouveau",
+    "params": []
+  },
+  {
+    "key": "supportReportTitle",
+    "fr": "Signaler un problème",
+    "params": []
+  },
+  {
+    "key": "supportShort",
+    "fr": "Support",
+    "params": []
+  },
+  {
+    "key": "supportContact",
+    "fr": "Contacter le support",
+    "params": []
+  },
+  {
+    "key": "supportOrderLabel",
+    "fr": "COMMANDE",
+    "params": []
+  },
+  {
+    "key": "supportCustomerLabel",
+    "fr": "CLIENT",
+    "params": []
+  },
+  {
+    "key": "supportMerchandiseLabel",
+    "fr": "MARCHANDISES",
+    "params": []
+  },
+  {
+    "key": "supportDescriptionLabel",
+    "fr": "Description du problème",
+    "params": []
+  },
+  {
+    "key": "supportDescriptionHint",
+    "fr": "Expliquez-nous ce qui s’est passé en détail...",
+    "params": []
+  },
+  {
+    "key": "supportSensitiveHint",
+    "fr": "Veuillez ne pas inclure de données sensibles (ex : mots de passe).",
+    "params": []
+  },
+  {
+    "key": "supportSend",
+    "fr": "Envoyer le ticket",
+    "params": []
+  },
+  {
+    "key": "supportSentTitle",
+    "fr": "Signalement envoyé",
+    "params": []
+  },
+  {
+    "key": "supportSentBody",
+    "fr": "Votre ticket {ref} a été transmis à l’équipe SpeedyGo.",
+    "params": [
+      "ref"
+    ]
+  },
+  {
+    "key": "supportSentBodyNoRef",
+    "fr": "Votre ticket a été transmis à l’équipe SpeedyGo.",
+    "params": []
+  },
+  {
+    "key": "supportBackToOrder",
+    "fr": "Retour à la commande",
+    "params": []
+  },
+  {
+    "key": "supportForbidden",
+    "fr": "Seuls le propriétaire et les gérants peuvent contacter le support.",
+    "params": []
+  },
+  {
+    "key": "supportSendError",
+    "fr": "Le ticket n’a pas pu être envoyé. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "supportCenterTitle",
+    "fr": "Support Merchant",
+    "params": []
+  },
+  {
+    "key": "supportNewTicket",
+    "fr": "Nouveau ticket",
+    "params": []
+  },
+  {
+    "key": "supportActiveTickets",
+    "fr": "Tickets actifs",
+    "params": []
+  },
+  {
+    "key": "supportResolvedTickets",
+    "fr": "Tickets résolus",
+    "params": []
+  },
+  {
+    "key": "supportNoTickets",
+    "fr": "Aucun ticket pour le moment.",
+    "params": []
+  },
+  {
+    "key": "supportLoadError",
+    "fr": "Impossible de charger vos tickets.",
+    "params": []
+  },
+  {
+    "key": "supportDate",
+    "fr": "_ddMmYyyy(at)",
+    "params": [
+      "at"
+    ]
+  },
+  {
+    "key": "supportShowingLatest",
+    "fr": "{shown} tickets les plus récents affichés sur {total}.",
+    "params": [
+      "shown",
+      "total"
+    ]
+  },
+  {
+    "key": "supportStatus",
+    "fr": "openOuvertinProgressEn courswaitingCustomerRéponse attendueresolvedRésoluclosedFerméStatut inconnu",
+    "params": [
+      "code"
+    ]
+  },
+  {
+    "key": "supportTopicsTitle",
+    "fr": "Sujets fréquents",
+    "params": []
+  },
+  {
+    "key": "supportTopicsHint",
+    "fr": "Choisissez un sujet pour ouvrir un nouveau ticket.",
+    "params": []
+  },
+  {
+    "key": "supportTopicsLoadError",
+    "fr": "Impossible de charger les sujets.",
+    "params": []
+  },
+  {
+    "key": "supportTopicsEmpty",
+    "fr": "Aucun sujet disponible pour le moment.",
+    "params": []
+  },
+  {
+    "key": "supportTopicLabel",
+    "fr": "Sujet",
+    "params": []
+  },
+  {
+    "key": "supportTopicRequired",
+    "fr": "Choisissez un sujet.",
+    "params": []
+  },
+  {
+    "key": "supportSubjectLabel",
+    "fr": "Objet",
+    "params": []
+  },
+  {
+    "key": "supportSubjectHint",
+    "fr": "Résumez votre demande en quelques mots",
+    "params": []
+  }
+]

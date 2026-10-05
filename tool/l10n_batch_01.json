@@ -1,0 +1,960 @@
+[
+  {
+    "key": "supportSubjectRequired",
+    "fr": "Indiquez l’objet de votre demande.",
+    "params": []
+  },
+  {
+    "key": "supportFaqTitle",
+    "fr": "Questions fréquentes",
+    "params": []
+  },
+  {
+    "key": "supportFaqEmpty",
+    "fr": "Aucune question fréquente pour le moment.",
+    "params": []
+  },
+  {
+    "key": "supportFaqLoadError",
+    "fr": "Impossible de charger la FAQ.",
+    "params": []
+  },
+  {
+    "key": "supportComposeTitle",
+    "fr": "Nouveau ticket",
+    "params": []
+  },
+  {
+    "key": "supportComposeHint",
+    "fr": "Décrivez votre demande. Pour un problème sur une commande, utilisez « Signaler un problème » depuis la commande.",
+    "params": []
+  },
+  {
+    "key": "supportCreated",
+    "fr": "Ticket envoyé.Ticket envoyé : {reference}",
+    "params": [
+      "reference"
+    ]
+  },
+  {
+    "key": "supportTicketTitle",
+    "fr": "Ticket",
+    "params": []
+  },
+  {
+    "key": "supportTicketLoadError",
+    "fr": "Impossible de charger ce ticket.",
+    "params": []
+  },
+  {
+    "key": "supportLinkedOrder",
+    "fr": "Commande liée",
+    "params": []
+  },
+  {
+    "key": "supportYou",
+    "fr": "Vous",
+    "params": []
+  },
+  {
+    "key": "supportTeam",
+    "fr": "Support SpeedyGo",
+    "params": []
+  },
+  {
+    "key": "supportReplyHint",
+    "fr": "Votre réponse",
+    "params": []
+  },
+  {
+    "key": "supportReplySend",
+    "fr": "Envoyer",
+    "params": []
+  },
+  {
+    "key": "supportReplyError",
+    "fr": "La réponse n’a pas pu être envoyée.",
+    "params": []
+  },
+  {
+    "key": "supportTicketFinished",
+    "fr": "Ce ticket est clos. Créez un nouveau ticket si besoin.",
+    "params": []
+  },
+  {
+    "key": "supportNoMessages",
+    "fr": "Aucun message.",
+    "params": []
+  },
+  {
+    "key": "orderListAcceptNow",
+    "fr": "À accepter immédiatement",
+    "params": []
+  },
+  {
+    "key": "orderDetailsTitle",
+    "fr": "Détails de la commande",
+    "params": []
+  },
+  {
+    "key": "orderDetailCancelledTitle",
+    "fr": "Commande annulée",
+    "params": []
+  },
+  {
+    "key": "orderCancelledHeroBody",
+    "fr": "Cette commande n’aboutira pas.",
+    "params": []
+  },
+  {
+    "key": "orderCancelledByCustomer",
+    "fr": "Annulée par le client",
+    "params": []
+  },
+  {
+    "key": "orderRejectedByMerchant",
+    "fr": "Refusée par le commerce",
+    "params": []
+  },
+  {
+    "key": "orderReasonLabel",
+    "fr": "Raison",
+    "params": []
+  },
+  {
+    "key": "orderCancelledAck",
+    "fr": "Compris",
+    "params": []
+  },
+  {
+    "key": "orderViewHistory",
+    "fr": "Voir l’historique",
+    "params": []
+  },
+  {
+    "key": "orderCurrentStatus",
+    "fr": "Statut actuel",
+    "params": []
+  },
+  {
+    "key": "orderDeliveredOn",
+    "fr": "Livrée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderCompletedOn",
+    "fr": "Terminée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderReceivedAtLabel",
+    "fr": "Reçue à",
+    "params": []
+  },
+  {
+    "key": "orderPaymentLabel",
+    "fr": "Paiement",
+    "params": []
+  },
+  {
+    "key": "orderPaymentMethod",
+    "fr": "Méthode : {method}",
+    "params": [
+      "method"
+    ]
+  },
+  {
+    "key": "orderReadySince",
+    "fr": "Prête depuis {hhmm}",
+    "params": [
+      "hhmm"
+    ]
+  },
+  {
+    "key": "eventCreated",
+    "fr": "Commande reçue",
+    "params": []
+  },
+  {
+    "key": "eventCreatedCaption",
+    "fr": "Commande passée par le client",
+    "params": []
+  },
+  {
+    "key": "eventAccepted",
+    "fr": "Acceptée",
+    "params": []
+  },
+  {
+    "key": "eventAcceptedCaption",
+    "fr": "Commande confirmée",
+    "params": []
+  },
+  {
+    "key": "eventPrepStarted",
+    "fr": "En préparation",
+    "params": []
+  },
+  {
+    "key": "eventPrepStartedCaption",
+    "fr": "Préparation démarrée",
+    "params": []
+  },
+  {
+    "key": "eventReady",
+    "fr": "Préparée",
+    "params": []
+  },
+  {
+    "key": "eventReadyCaption",
+    "fr": "Prête pour la collecte",
+    "params": []
+  },
+  {
+    "key": "eventRejected",
+    "fr": "Refusée",
+    "params": []
+  },
+  {
+    "key": "eventCancelled",
+    "fr": "Annulée",
+    "params": []
+  },
+  {
+    "key": "eventCompleted",
+    "fr": "Terminée",
+    "params": []
+  },
+  {
+    "key": "eventCompletedCaption",
+    "fr": "Commande livrée au client",
+    "params": []
+  },
+  {
+    "key": "eventStatusUpdate",
+    "fr": "Mise à jour du statut",
+    "params": []
+  },
+  {
+    "key": "orderListLate",
+    "fr": "En retard",
+    "params": []
+  },
+  {
+    "key": "orderListReadyAt",
+    "fr": "Prête vers {hhmm}",
+    "params": [
+      "hhmm"
+    ]
+  },
+  {
+    "key": "orderHistoryToday",
+    "fr": "Aujourd’hui",
+    "params": []
+  },
+  {
+    "key": "orderHistoryYesterday",
+    "fr": "Hier",
+    "params": []
+  },
+  {
+    "key": "orderHistoryEarlier",
+    "fr": "Plus tôt",
+    "params": []
+  },
+  {
+    "key": "orderFulfillmentAccepted",
+    "fr": "Acceptée",
+    "params": []
+  },
+  {
+    "key": "orderFulfillmentPreparing",
+    "fr": "En préparation",
+    "params": []
+  },
+  {
+    "key": "orderFulfillmentReady",
+    "fr": "Prête",
+    "params": []
+  },
+  {
+    "key": "orderStatusCreated",
+    "fr": "Créée",
+    "params": []
+  },
+  {
+    "key": "orderStatusConfirmed",
+    "fr": "Confirmée",
+    "params": []
+  },
+  {
+    "key": "orderStatusActive",
+    "fr": "Active",
+    "params": []
+  },
+  {
+    "key": "orderStatusCompleted",
+    "fr": "Terminée",
+    "params": []
+  },
+  {
+    "key": "orderStatusCancelled",
+    "fr": "Annulée",
+    "params": []
+  },
+  {
+    "key": "orderStatusFailed",
+    "fr": "Échouée",
+    "params": []
+  },
+  {
+    "key": "orderPaymentCod",
+    "fr": "Paiement à la livraison",
+    "params": []
+  },
+  {
+    "key": "orderPaymentElectronic",
+    "fr": "Paiement électronique",
+    "params": []
+  },
+  {
+    "key": "orderCreatedAt",
+    "fr": "Créée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderConfirmedAt",
+    "fr": "Confirmée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderCancelledAt",
+    "fr": "Annulée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderCreatedShort",
+    "fr": "Créée · {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderListMerchandiseLabel",
+    "fr": "Marchandises",
+    "params": []
+  },
+  {
+    "key": "orderIncomingBanner",
+    "fr": "Nouvelle commande",
+    "params": []
+  },
+  {
+    "key": "orderReadyBanner",
+    "fr": "Commande prête",
+    "params": []
+  },
+  {
+    "key": "orderSegmentActive",
+    "fr": "En cours",
+    "params": []
+  },
+  {
+    "key": "orderSegmentHistory",
+    "fr": "Historique",
+    "params": []
+  },
+  {
+    "key": "orderReferenceCopy",
+    "fr": "Copier la référence",
+    "params": []
+  },
+  {
+    "key": "orderReferenceCopied",
+    "fr": "Référence copiée",
+    "params": []
+  },
+  {
+    "key": "orderReferenceShowFull",
+    "fr": "Afficher la référence complète",
+    "params": []
+  },
+  {
+    "key": "orderItemsTitle",
+    "fr": "Articles",
+    "params": []
+  },
+  {
+    "key": "orderItemsToPrepareTitle",
+    "fr": "Articles à préparer",
+    "params": []
+  },
+  {
+    "key": "orderDeliveryAddress",
+    "fr": "Adresse de livraison",
+    "params": []
+  },
+  {
+    "key": "orderFinanceTitle",
+    "fr": "Répartition financière",
+    "params": []
+  },
+  {
+    "key": "orderFinanceGms",
+    "fr": "Sous-total marchandises",
+    "params": []
+  },
+  {
+    "key": "orderFinanceDiscount",
+    "fr": "Remise commerçant",
+    "params": []
+  },
+  {
+    "key": "orderFinanceCommission",
+    "fr": "Commission SpeedyGo ({percent} %)",
+    "params": [
+      "percent"
+    ]
+  },
+  {
+    "key": "orderFinanceNet",
+    "fr": "Net commerçant",
+    "params": []
+  },
+  {
+    "key": "orderFinanceCommissionUnavailable",
+    "fr": "Commission SpeedyGo",
+    "params": []
+  },
+  {
+    "key": "orderFinanceRestricted",
+    "fr": "Commission, remise et net commerçant réservés au propriétaire ou au responsable.",
+    "params": []
+  },
+  {
+    "key": "valueUnavailable",
+    "fr": "—",
+    "params": []
+  },
+  {
+    "key": "orderFinanceNetCancelledNote",
+    "fr": "Montants historiques figés au moment de la commande — pas un paiement dû.",
+    "params": []
+  },
+  {
+    "key": "orderFinanceDeliveryFeeNote",
+    "fr": "Frais de livraison (client)",
+    "params": []
+  },
+  {
+    "key": "orderFinanceDeliveryFeeDisclaimer",
+    "fr": "Les frais de livraison ne sont pas un revenu commerçant.",
+    "params": []
+  },
+  {
+    "key": "orderAccept",
+    "fr": "Accepter",
+    "params": []
+  },
+  {
+    "key": "orderChoosePrepTime",
+    "fr": "Choisir le temps de préparation",
+    "params": []
+  },
+  {
+    "key": "orderReject",
+    "fr": "Refuser",
+    "params": []
+  },
+  {
+    "key": "orderRejectTitle",
+    "fr": "Refuser la commande",
+    "params": []
+  },
+  {
+    "key": "orderRejectHint",
+    "fr": "Le refus n’est possible qu’avant acceptation. Indiquez un motif.",
+    "params": []
+  },
+  {
+    "key": "orderRejectReasonLabel",
+    "fr": "Motif du refus",
+    "params": []
+  },
+  {
+    "key": "orderRejectConfirm",
+    "fr": "Confirmer le refus",
+    "params": []
+  },
+  {
+    "key": "orderQuickAlreadyHandled",
+    "fr": "Cette commande a déjà été traitée. La liste est actualisée.",
+    "params": []
+  },
+  {
+    "key": "orderQuickNotAllowed",
+    "fr": "Votre rôle ne permet pas cette action.",
+    "params": []
+  },
+  {
+    "key": "orderQuickCheckFailed",
+    "fr": "Impossible de vérifier la commande. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "orderQuickAccepted",
+    "fr": "Commande acceptée.",
+    "params": []
+  },
+  {
+    "key": "orderQuickRejected",
+    "fr": "Commande refusée.",
+    "params": []
+  },
+  {
+    "key": "prepAcceptTitle",
+    "fr": "Accepter la commande",
+    "params": []
+  },
+  {
+    "key": "prepEstimatedTitle",
+    "fr": "Temps de préparation estimé",
+    "params": []
+  },
+  {
+    "key": "prepMinutesLabel",
+    "fr": "{minutes} min",
+    "params": [
+      "minutes"
+    ]
+  },
+  {
+    "key": "prepConfirmAccept",
+    "fr": "Confirmer et accepter",
+    "params": []
+  },
+  {
+    "key": "prepCustomTime",
+    "fr": "Temps personnalisé",
+    "params": []
+  },
+  {
+    "key": "prepCustomEntry",
+    "fr": "Saisie personnalisée",
+    "params": []
+  },
+  {
+    "key": "prepCustomRange",
+    "fr": "Entre {min} et {max} minutes",
+    "params": [
+      "min",
+      "max"
+    ]
+  },
+  {
+    "key": "prepItemCount",
+    "fr": "1 article{n} articles",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "prepInProgress",
+    "fr": "En cours",
+    "params": []
+  },
+  {
+    "key": "prepCurrentShort",
+    "fr": "Heure actuelle",
+    "params": []
+  },
+  {
+    "key": "prepNewShort",
+    "fr": "Nouvelle estimation",
+    "params": []
+  },
+  {
+    "key": "prepReasonHint",
+    "fr": "Ex : problème technique en cuisine…",
+    "params": []
+  },
+  {
+    "key": "prepRemainingTitle",
+    "fr": "Temps restant",
+    "params": []
+  },
+  {
+    "key": "prepMinutesCaption",
+    "fr": "MINUTES",
+    "params": []
+  },
+  {
+    "key": "prepSecondsCaption",
+    "fr": "SECONDES",
+    "params": []
+  },
+  {
+    "key": "prepScheduledAtLocal",
+    "fr": "Heure prévue : {time} (heure locale)",
+    "params": [
+      "time"
+    ]
+  },
+  {
+    "key": "prepScheduledOnLocal",
+    "fr": "Heure prévue : le {day} à {time} (heure locale)",
+    "params": [
+      "day",
+      "time"
+    ]
+  },
+  {
+    "key": "prepLateBy",
+    "fr": "En retard${durationFr(minutes)} de retard",
+    "params": [
+      "minutes"
+    ]
+  },
+  {
+    "key": "prepLateHint",
+    "fr": "L’estimation est dépassée. Mettez à jour le temps ou marquez la commande prête quand elle l’est.",
+    "params": []
+  },
+  {
+    "key": "prepUpdateAction",
+    "fr": "Modifier temps",
+    "params": []
+  },
+  {
+    "key": "prepUpdateTitle",
+    "fr": "Mise à jour du temps",
+    "params": []
+  },
+  {
+    "key": "prepCurrentReady",
+    "fr": "Heure prévue actuelle",
+    "params": []
+  },
+  {
+    "key": "prepOriginalReady",
+    "fr": "Initiale : {time}",
+    "params": [
+      "time"
+    ]
+  },
+  {
+    "key": "prepOriginalReadyLabel",
+    "fr": "Heure initiale : {time}",
+    "params": [
+      "time"
+    ]
+  },
+  {
+    "key": "prepBranchLabel",
+    "fr": "Établissement",
+    "params": []
+  },
+  {
+    "key": "prepAddTime",
+    "fr": "Ajouter du temps de préparation",
+    "params": []
+  },
+  {
+    "key": "prepNewEstimate",
+    "fr": "Nouvelle estimation : {to} au lieu de {from}, plus {add} minutes",
+    "params": [
+      "from",
+      "to",
+      "add"
+    ]
+  },
+  {
+    "key": "prepClockOnDay",
+    "fr": "le {day} à {time}",
+    "params": [
+      "day",
+      "time"
+    ]
+  },
+  {
+    "key": "prepOnDay",
+    "fr": "le {day}",
+    "params": [
+      "day"
+    ]
+  },
+  {
+    "key": "prepSpokenClock",
+    "fr": "{time} le {day}",
+    "params": [
+      "time",
+      "day"
+    ]
+  },
+  {
+    "key": "prepReasonOptional",
+    "fr": "Raison du retard (optionnel)",
+    "params": []
+  },
+  {
+    "key": "prepReasonShortcutsHint",
+    "fr": "Un raccourci remplit le motif ; vous pouvez le modifier.",
+    "params": []
+  },
+  {
+    "key": "prepReasonFieldLabel",
+    "fr": "Motif",
+    "params": []
+  },
+  {
+    "key": "prepReasonBusy",
+    "fr": "Forte affluence",
+    "params": []
+  },
+  {
+    "key": "prepReasonLongPrep",
+    "fr": "Préparation longue",
+    "params": []
+  },
+  {
+    "key": "prepReasonMissingIngredient",
+    "fr": "Ingrédient manquant",
+    "params": []
+  },
+  {
+    "key": "prepReasonOther",
+    "fr": "Autre raison",
+    "params": []
+  },
+  {
+    "key": "prepUpdateConfirm",
+    "fr": "Mettre à jour",
+    "params": []
+  },
+  {
+    "key": "orderStartPreparation",
+    "fr": "Démarrer la préparation",
+    "params": []
+  },
+  {
+    "key": "orderMarkReady",
+    "fr": "Marquer comme prête",
+    "params": []
+  },
+  {
+    "key": "markReadyPackingTitle",
+    "fr": "Liste de colisage",
+    "params": []
+  },
+  {
+    "key": "markReadyPackingHint",
+    "fr": "Vérifiez que tous les éléments de la commande sont bien emballés avant de la marquer prête.",
+    "params": []
+  },
+  {
+    "key": "markReadyConfirm",
+    "fr": "Confirmer et marquer prête",
+    "params": []
+  },
+  {
+    "key": "orderReadyWaitingDelivery",
+    "fr": "En attente de prise en charge pour la livraison.",
+    "params": []
+  },
+  {
+    "key": "orderDeliveryStatusTitle",
+    "fr": "Livraison",
+    "params": []
+  },
+  {
+    "key": "orderDriverAssigned",
+    "fr": "Un livreur est assigné.",
+    "params": []
+  },
+  {
+    "key": "orderDriverSearchStarted",
+    "fr": "Recherche démarrée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderDriverSearchStartedAt",
+    "fr": "Recherche démarrée à {hhmm}",
+    "params": [
+      "hhmm"
+    ]
+  },
+  {
+    "key": "orderDriverEtaEstimate",
+    "fr": "Arrivée estimée : {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderDriverCardTitle",
+    "fr": "Livreur assigné",
+    "params": []
+  },
+  {
+    "key": "orderDriverStatusLabel",
+    "fr": "Statut",
+    "params": []
+  },
+  {
+    "key": "orderDriverEtaLabel",
+    "fr": "Arrivée estimée",
+    "params": []
+  },
+  {
+    "key": "orderDriverEtaUnavailable",
+    "fr": "Heure d’arrivée indisponible.",
+    "params": []
+  },
+  {
+    "key": "orderDriverContactUnavailable",
+    "fr": "Contact du livreur indisponible.",
+    "params": []
+  },
+  {
+    "key": "orderDriverCall",
+    "fr": "Appeler le livreur",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffTitle",
+    "fr": "Code de retrait",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffWaiting",
+    "fr": "En attente de validation par le livreur…",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffInstruction1",
+    "fr": "Communiquez ce code uniquement au livreur affiché ci-dessus.",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffInstruction2",
+    "fr": "Le livreur doit saisir ce code dans son application pour confirmer la récupération.",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffRegenerate",
+    "fr": "Régénérer le code",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffConfirmed",
+    "fr": "Remise confirmée",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffLoadError",
+    "fr": "Impossible de charger le code de retrait.",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffRetry",
+    "fr": "Réessayer",
+    "params": []
+  },
+  {
+    "key": "orderHandoffUnsupported",
+    "fr": "La confirmation de remise sécurisée n’est pas disponible pour le commerçant dans cette version.",
+    "params": []
+  },
+  {
+    "key": "orderHistoryTitle",
+    "fr": "Historique de la commande",
+    "params": []
+  },
+  {
+    "key": "orderReferenceLabel",
+    "fr": "Référence",
+    "params": []
+  },
+  {
+    "key": "orderCustomerLabel",
+    "fr": "Client",
+    "params": []
+  },
+  {
+    "key": "orderSummaryTitle",
+    "fr": "Résumé de la commande",
+    "params": []
+  },
+  {
+    "key": "deliverySearching",
+    "fr": "Recherche de livreur",
+    "params": []
+  },
+  {
+    "key": "deliveryAssigned",
+    "fr": "Livreur assigné",
+    "params": []
+  },
+  {
+    "key": "deliveryPickedUp",
+    "fr": "Récupérée",
+    "params": []
+  },
+  {
+    "key": "deliveryArrived",
+    "fr": "Arrivé chez le client",
+    "params": []
+  },
+  {
+    "key": "deliveryToPickup",
+    "fr": "Livreur en route vers le commerce",
+    "params": []
+  },
+  {
+    "key": "deliveryAtPickup",
+    "fr": "Livreur arrivé au commerce",
+    "params": []
+  },
+  {
+    "key": "deliveryInTransit",
+    "fr": "En route vers le client",
+    "params": []
+  },
+  {
+    "key": "deliveryFailed",
+    "fr": "Livraison échouée",
+    "params": []
+  },
+  {
+    "key": "deliveryCancelled",
+    "fr": "Livraison annulée",
+    "params": []
+  },
+  {
+    "key": "deliveryUnknown",
+    "fr": "Statut de livraison indisponible",
+    "params": []
+  },
+  {
+    "key": "deliveryDelivered",
+    "fr": "Livrée",
+    "params": []
+  },
+  {
+    "key": "catalogTitle",
+    "fr": "Catalogue",
+    "params": []
+  }
+]

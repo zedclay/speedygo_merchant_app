@@ -1,0 +1,722 @@
+[
+  {
+    "key": "availabilityCloseWarningTitle",
+    "ar": "تنبيه: إغلاق فوري"
+  },
+  {
+    "key": "availabilityCloseWarningBody",
+    "ar": "سيتم رفض جميع الطلبات الجديدة. يجب متابعة معالجة الطلبات النشطة. سيتم رفض جميع الطلبات الجديدة. لا توجد طلبات نشطة قيد المعالجة. سيتم رفض جميع الطلبات الجديدة. يجب عليك متابعة معالجة الطلبات النشطة ({count})."
+  },
+  {
+    "key": "availabilityStaffReadOnly",
+    "ar": "للقراءة فقط: يمكن للمالك والمديرين فقط تعديل حالة المتجر."
+  },
+  {
+    "key": "availabilityBannerOpenTitle",
+    "ar": "المتجر متصل"
+  },
+  {
+    "key": "availabilityBannerOpenBody",
+    "ar": "يمكن للعملاء تقديم الطلبات وعرض قائمتك بشكل طبيعي."
+  },
+  {
+    "key": "availabilityBannerClosedTitle",
+    "ar": "المتجر غير متصل"
+  },
+  {
+    "key": "availabilityBannerClosedBody",
+    "ar": "لم يعد بإمكان العملاء تقديم طلبات جديدة."
+  },
+  {
+    "key": "availabilityBannerScheduleClosedTitle",
+    "ar": "حسب أوقات العمل — مغلق حالياً"
+  },
+  {
+    "key": "availabilityBannerScheduleClosedBody",
+    "ar": "يتبع المتجر الجدول الزمني. سيفتح تلقائياً في الساعات القادمة."
+  },
+  {
+    "key": "availabilityActiveOrders",
+    "ar": "{count} طلب قيد المعالجة"
+  },
+  {
+    "key": "availabilityReasonPeak",
+    "ar": "ضغط مرتفع (المطبخ)"
+  },
+  {
+    "key": "availabilityReasonTechnical",
+    "ar": "مشكلة تقنية"
+  },
+  {
+    "key": "availabilityReasonStock",
+    "ar": "نفاد المخزون"
+  },
+  {
+    "key": "availabilityReasonLunch",
+    "ar": "استراحة الغداء"
+  },
+  {
+    "key": "temporaryClosureTitle",
+    "ar": "إغلاق مؤقت"
+  },
+  {
+    "key": "temporaryClosureActionRequired",
+    "ar": "إجراء مطلوب"
+  },
+  {
+    "key": "temporaryClosureImpactLead",
+    "ar": "سيؤدي الإغلاق إلى تعليق قبول الطلبات الجديدة. "
+  },
+  {
+    "key": "temporaryClosureImpactCount",
+    "ar": "الطلب قيد المعالجةالـ {count} طلبات قيد المعالجة"
+  },
+  {
+    "key": "temporaryClosureImpactTail",
+    "ar": " سيُبقى ويجب تحضيره. ستُبقى ويجب تحضيرها."
+  },
+  {
+    "key": "temporaryClosureImpactNone",
+    "ar": "لا توجد طلبات قيد المعالجة."
+  },
+  {
+    "key": "temporaryClosureImpactUnknown",
+    "ar": "ستُبقى الطلبات قيد المعالجة ويجب تحضيرها."
+  },
+  {
+    "key": "temporaryClosureReason",
+    "ar": "سبب الإغلاق"
+  },
+  {
+    "key": "temporaryClosureReopen",
+    "ar": "إعادة الفتح المخططة"
+  },
+  {
+    "key": "temporaryClosure30m",
+    "ar": "خلال 30 دقيقة"
+  },
+  {
+    "key": "temporaryClosure1h",
+    "ar": "خلال ساعة واحدة"
+  },
+  {
+    "key": "temporaryClosurePickTime",
+    "ar": "اختر وقتاً…"
+  },
+  {
+    "key": "temporaryClosureIndefinite",
+    "ar": "غير محدد (يدوي)"
+  },
+  {
+    "key": "temporaryClosureImageImpact",
+    "ar": "التأثير على ظهورك: سيرى العملاء منشأتك على أنها «مغلق مؤقتاً»."
+  },
+  {
+    "key": "temporaryClosureStaffReadOnly",
+    "ar": "يمكن للمالك والمديرين فقط إغلاق المتجر."
+  },
+  {
+    "key": "temporaryClosurePastTime",
+    "ar": "وقت إعادة الفتح قد مضى. اختر وقتاً جديداً."
+  },
+  {
+    "key": "temporaryClosureMessage",
+    "ar": "رسالة للعميل"
+  },
+  {
+    "key": "temporaryClosureOptional",
+    "ar": "اختياري"
+  },
+  {
+    "key": "temporaryClosureMessageHint",
+    "ar": "مثال: نحن ممتلئون حالياً، عد إلينا بعد 30 دقيقة!"
+  },
+  {
+    "key": "temporaryClosureManualReopenHint",
+    "ar": "يمكنك إعادة الفتح يدوياً في أي وقت."
+  },
+  {
+    "key": "temporaryClosureConfirm",
+    "ar": "تأكيد الإغلاق"
+  },
+  {
+    "key": "storeProfileAvailability",
+    "ar": "حالة المتجر"
+  },
+  {
+    "key": "storeProfileAvailabilitySub",
+    "ar": "حسب أوقات العمل، الإغلاق، والاستراحة"
+  },
+  {
+    "key": "notificationsTitle",
+    "ar": "الإشعارات"
+  },
+  {
+    "key": "notificationsEmpty",
+    "ar": "لا توجد إشعارات حالياً."
+  },
+  {
+    "key": "notificationsLoadError",
+    "ar": "تعذّر تحميل الإشعارات."
+  },
+  {
+    "key": "notificationsToday",
+    "ar": "اليوم"
+  },
+  {
+    "key": "notificationsYesterday",
+    "ar": "أمس"
+  },
+  {
+    "key": "notificationsJustNow",
+    "ar": "الآن"
+  },
+  {
+    "key": "notificationsMarkAllRead",
+    "ar": "تعليم الكل كمقروء"
+  },
+  {
+    "key": "notificationsFilterAll",
+    "ar": "الكل"
+  },
+  {
+    "key": "notificationsFilterOrders",
+    "ar": "الطلبات"
+  },
+  {
+    "key": "notificationsOpenDetails",
+    "ar": "التفاصيل"
+  },
+  {
+    "key": "notificationsOrderStale",
+    "ar": "هذا الطلب لم يعد بانتظار القبول."
+  },
+  {
+    "key": "alertNewOrder",
+    "ar": "طلب جديد"
+  },
+  {
+    "key": "alertReceivedAt",
+    "ar": "استُلم في"
+  },
+  {
+    "key": "alertPayment",
+    "ar": "الدفع"
+  },
+  {
+    "key": "alertViewDetails",
+    "ar": "عرض التفاصيل"
+  },
+  {
+    "key": "alertRefuse",
+    "ar": "رفض"
+  },
+  {
+    "key": "alertItems",
+    "ar": "الأصناف"
+  },
+  {
+    "key": "alertOrderTotal",
+    "ar": "المجموع الفرعي للبضائع"
+  },
+  {
+    "key": "alertOrderLabel",
+    "ar": "طلب"
+  },
+  {
+    "key": "alertDismiss",
+    "ar": "إغلاق"
+  },
+  {
+    "key": "alertSeeList",
+    "ar": "عرض القائمة"
+  },
+  {
+    "key": "notifSettingsTitle",
+    "ar": "إعدادات الإشعارات"
+  },
+  {
+    "key": "notifSettingsScreenTitle",
+    "ar": "التنبيهات"
+  },
+  {
+    "key": "notifSettingsOsEnabled",
+    "ar": "إذن iOS مفعّل. الإشعارات الفورية الأصلية غير مفعّلة بعد."
+  },
+  {
+    "key": "notifSettingsOsDenied",
+    "ar": "إذن iOS مرفوض (يمكن تعديله من الإعدادات). الإشعارات الفورية الأصلية غير مفعّلة بعد."
+  },
+  {
+    "key": "notifSettingsOsNotAsked",
+    "ar": "إذن الإشعارات: لم يُمنح بعد."
+  },
+  {
+    "key": "notifSettingsOsOpen",
+    "ar": "إعدادات النظام"
+  },
+  {
+    "key": "notifSettingsSwitchesNote",
+    "ar": "فقط عندما يكون التطبيق مفتوحاً."
+  },
+  {
+    "key": "notifSettingsInAppSection",
+    "ar": "داخل التطبيق"
+  },
+  {
+    "key": "notifSettingsCriticalWarning",
+    "ar": "لا يمكن كتم تنبيهات الطلبات الواردة الحرجة بالكامل دون خطر التأخير."
+  },
+  {
+    "key": "notifSettingsPushNotConfigured",
+    "ar": "غير مهيأ"
+  },
+  {
+    "key": "notifSettingsSoundSection",
+    "ar": "التنبيهات الصوتية"
+  },
+  {
+    "key": "notifSettingsSound",
+    "ar": "نغمة الطلبات الجديدة"
+  },
+  {
+    "key": "notifSettingsVibrationSection",
+    "ar": "الاهتزاز"
+  },
+  {
+    "key": "notifSettingsVibration",
+    "ar": "اهتزاز عند ورود طلب"
+  },
+  {
+    "key": "notifSettingsPushSection",
+    "ar": "تنبيهات Push"
+  },
+  {
+    "key": "notifSettingsOsEnabledPush",
+    "ar": "إذن الإشعارات: مفعّل."
+  },
+  {
+    "key": "notifSettingsOsDeniedPush",
+    "ar": "إذن الإشعارات مرفوض: فعّله من إعدادات النظام."
+  },
+  {
+    "key": "notifSettingsNativePush",
+    "ar": "الإشعارات خارج التطبيق"
+  },
+  {
+    "key": "notifSettingsNativePushSub",
+    "ar": "التطبيق مغلق أو في الخلفية."
+  },
+  {
+    "key": "notifSettingsLockScreenNote",
+    "ar": "المعاينة على شاشة القفل: حسب إعدادات النظام."
+  },
+  {
+    "key": "notifPushStatusRegistered",
+    "ar": "هذا الجهاز مسجّل لاستلام الإشعارات."
+  },
+  {
+    "key": "notifPushStatusPending",
+    "ar": "جاري تسجيل الجهاز…"
+  },
+  {
+    "key": "notifPushStatusDenied",
+    "ar": "الإذن مرفوض: لا إشعارات خارج التطبيق."
+  },
+  {
+    "key": "notifPushStatusDisabled",
+    "ar": "معطّلة على هذا الجهاز."
+  },
+  {
+    "key": "notifPushStatusTokenUnavailable",
+    "ar": "رمز الإشعار غير متاح على هذا الجهاز."
+  },
+  {
+    "key": "notifPushStatusFailed",
+    "ar": "تعذّر التسجيل حالياً. أعد المحاولة لاحقاً."
+  },
+  {
+    "key": "pushOrderInaccessible",
+    "ar": "هذا الطلب غير متاح لهذا الحساب."
+  },
+  {
+    "key": "notifSettingsForeground",
+    "ar": "التنبيهات داخل التطبيق"
+  },
+  {
+    "key": "notifSettingsPushUnavailable",
+    "ar": "الإشعارات خارج التطبيق غير متاحة بعد."
+  },
+  {
+    "key": "notifSettingsPushBlocked",
+    "ar": "الإشعارات الفورية الأصلية (APNs/FCM) غير مهيأة: إذن iOS وحده لا يكفي."
+  },
+  {
+    "key": "notifSettingsSave",
+    "ar": "حفظ الإعدادات"
+  },
+  {
+    "key": "notifSettingsSaved",
+    "ar": "تم حفظ الإعدادات."
+  },
+  {
+    "key": "profileRole",
+    "ar": "الدور"
+  },
+  {
+    "key": "profileMerchant",
+    "ar": "التجارة"
+  },
+  {
+    "key": "profileBranch",
+    "ar": "المنشأة"
+  },
+  {
+    "key": "profileRoleOwner",
+    "ar": "المالك"
+  },
+  {
+    "key": "profileRoleManager",
+    "ar": "المسؤول"
+  },
+  {
+    "key": "profileRoleStaff",
+    "ar": "الفريق"
+  },
+  {
+    "key": "profileSectionAccount",
+    "ar": "الحساب"
+  },
+  {
+    "key": "profileSectionStore",
+    "ar": "المنشأة"
+  },
+  {
+    "key": "profileSectionOps",
+    "ar": "عمليات المتجر"
+  },
+  {
+    "key": "profileSectionPrefs",
+    "ar": "التفضيلات"
+  },
+  {
+    "key": "profileSectionSupport",
+    "ar": "الدعم والشؤون القانونية"
+  },
+  {
+    "key": "profileInfoReadonly",
+    "ar": "معلومات التجارة"
+  },
+  {
+    "key": "profileBranchStatus",
+    "ar": "الحالة التشغيلية"
+  },
+  {
+    "key": "profileUnavailableItem",
+    "ar": "غير متاح في هذا الإصدار"
+  },
+  {
+    "key": "switchBranch",
+    "ar": "تغيير المنشأة"
+  },
+  {
+    "key": "logoutConfirmTitle",
+    "ar": "تسجيل الخروج"
+  },
+  {
+    "key": "logoutConfirmBody",
+    "ar": "هل تريد فعلاً تسجيل الخروج من SpeedyGo Merchant؟"
+  },
+  {
+    "key": "logoutConfirmAction",
+    "ar": "تسجيل الخروج"
+  },
+  {
+    "key": "settingsProfileRow",
+    "ar": "الملف الشخصي"
+  },
+  {
+    "key": "settingsNotificationsOff",
+    "ar": "معطّل"
+  },
+  {
+    "key": "settingsSupportSection",
+    "ar": "الدعم"
+  },
+  {
+    "key": "settingsHelpCenter",
+    "ar": "مركز المساعدة"
+  },
+  {
+    "key": "logoutConnected",
+    "ar": "متصل"
+  },
+  {
+    "key": "logoutWarningTitle",
+    "ar": "تنبيه بشأن العمليات الجارية"
+  },
+  {
+    "key": "logoutActiveOrders",
+    "ar": "الطلبات قيد المعالجة"
+  },
+  {
+    "key": "logoutStoreState",
+    "ar": "حالة المتجر"
+  },
+  {
+    "key": "logoutStoreOpen",
+    "ar": "مفتوح"
+  },
+  {
+    "key": "logoutStoreClosed",
+    "ar": "مغلق"
+  },
+  {
+    "key": "logoutHandoverAdvice",
+    "ar": "تأكد من توفر مسؤول آخر لمعالجة الطلبات قبل تسجيل الخروج."
+  },
+  {
+    "key": "logoutDataPreserved",
+    "ar": "ستُحفظ بياناتك والكتالوج وسجل الطلبات."
+  },
+  {
+    "key": "logoutCancel",
+    "ar": "إلغاء والرجوع"
+  },
+  {
+    "key": "cancel",
+    "ar": "إلغاء"
+  },
+  {
+    "key": "attentionRequired",
+    "ar": "بعض المستندات تتطلب انتباهك."
+  },
+  {
+    "key": "submitVerification",
+    "ar": "إرسال الملف"
+  },
+  {
+    "key": "submitVerificationUnavailable",
+    "ar": "الإرسال غير ممكن بعد: مستندات إلزامية ناقصة أو غير مكتملة."
+  },
+  {
+    "key": "permissionDenied",
+    "ar": "رُفض الإذن من الخادم."
+  },
+  {
+    "key": "regTitle",
+    "ar": "التسجيل"
+  },
+  {
+    "key": "regStepOf",
+    "ar": "الخطوة"
+  },
+  {
+    "key": "regAccountTitle",
+    "ar": "إعداد الحساب"
+  },
+  {
+    "key": "regRoleLabel",
+    "ar": "الدور"
+  },
+  {
+    "key": "regOwner",
+    "ar": "المالك"
+  },
+  {
+    "key": "regOperator",
+    "ar": "المشغّل"
+  },
+  {
+    "key": "regOwnerHint",
+    "ar": "أنشئ تجارتك وأدرها بصفتك المالك."
+  },
+  {
+    "key": "regOperatorHint",
+    "ar": "الانضمام إلى تجارة قائمة يتطلب دعوة والرمز الذي يقدّمه المالك."
+  },
+  {
+    "key": "regOperatorUnsupported",
+    "ar": "للانضمام إلى تجارة، افتح الدعوات المستلمة وأدخل الرمز الذي قدّمه المالك. SpeedyGo لا يرسل رسائل SMS."
+  },
+  {
+    "key": "regOperatorOpenInvitations",
+    "ar": "عرض دعواتي"
+  },
+  {
+    "key": "regSelectRole",
+    "ar": "اختر دوراً للمتابعة."
+  },
+  {
+    "key": "regContactTitle",
+    "ar": "بيانات الاتصال"
+  },
+  {
+    "key": "regAccountContinue",
+    "ar": "متابعة التسجيل"
+  },
+  {
+    "key": "regVerifiedPhone",
+    "ar": "رقم الهاتف (موثَّق)"
+  },
+  {
+    "key": "regVerifiedPhoneHint",
+    "ar": "تم التحقق من هذا الرقم عند تسجيل الدخول. لا يمكن تعديله هنا."
+  },
+  {
+    "key": "regEmailUnsupported",
+    "ar": "لا يمكن تسجيل البريد الإلكتروني في هذه المرحلة."
+  },
+  {
+    "key": "regConsentUnsupported",
+    "ar": "اطّلع على الشروط العامة وسياسة الخصوصية لـ SpeedyGo قبل المتابعة."
+  },
+  {
+    "key": "regActivityTitle",
+    "ar": "معلومات التجارة"
+  },
+  {
+    "key": "regActivityBody",
+    "ar": "أدخل الاسم الذي ستُعرَّف به تجارتك."
+  },
+  {
+    "key": "regLegalIdUnsupported",
+    "ar": "تُرفع وثائق الهوية المهنية في مرحلة المستندات."
+  },
+  {
+    "key": "regDocsTitle",
+    "ar": "مستندات المؤسسة"
+  },
+  {
+    "key": "regDocsBody",
+    "ar": "أضف المستندات المطلوبة."
+  },
+  {
+    "key": "regDocsRequired",
+    "ar": "ارفع جميع المستندات الإلزامية قبل المتابعة."
+  },
+  {
+    "key": "regDocsTipsTitle",
+    "ar": "نصائح لالتقاط واضح"
+  },
+  {
+    "key": "regDocsTipLight",
+    "ar": "فضّل إضاءة طبيعية ومتساوية لتجنب الظلال."
+  },
+  {
+    "key": "regDocsTipFrame",
+    "ar": "حدّد إطار المستند جيداً: يجب أن تظهر جميع الزوايا."
+  },
+  {
+    "key": "regDocsFormats",
+    "ar": "الصيغ المقبولة: PDF أو JPEG أو PNG (10 ميغابايت كحد أقصى)."
+  },
+  {
+    "key": "regDocsContinue",
+    "ar": "متابعة"
+  },
+  {
+    "key": "regDocsContinueFinal",
+    "ar": "المتابعة إلى المرحلة الأخيرة"
+  },
+  {
+    "key": "regDocsAppBar",
+    "ar": "التحقق"
+  },
+  {
+    "key": "regDocsTipFlash",
+    "ar": "عطّل الفلاش لتجنب الانعكاسات على الأسطح البلاستيكية."
+  },
+  {
+    "key": "regDocsPrivacy",
+    "ar": "تُرسل مستنداتك إلى SpeedyGo فقط للتحقق من تجارتك."
+  },
+  {
+    "key": "regFileTooLarge",
+    "ar": "الملف كبير جداً (الحد الأقصى 10 ميغابايت)."
+  },
+  {
+    "key": "regFileTypeUnsupported",
+    "ar": "صيغة غير مقبولة. استخدم PDF أو JPEG أو PNG."
+  },
+  {
+    "key": "regPickerUnavailable",
+    "ar": "تعذّر فتح منتقي الملفات. أعد المحاولة بعد إعادة تشغيل التطبيق."
+  },
+  {
+    "key": "regPickDocument",
+    "ar": "إضافة"
+  },
+  {
+    "key": "regReplaceDocument",
+    "ar": "استبدال"
+  },
+  {
+    "key": "regEstablishmentTitle",
+    "ar": "تفاصيل المنشأة"
+  },
+  {
+    "key": "regEstablishmentBody",
+    "ar": "أدخل معلومات منشأتك."
+  },
+  {
+    "key": "regIdentitySection",
+    "ar": "اسم المنشأة"
+  },
+  {
+    "key": "regBranchNameFrLabel",
+    "ar": "اسم المنشأة"
+  },
+  {
+    "key": "regCommerceContext",
+    "ar": "التجارة"
+  },
+  {
+    "key": "regContactSection",
+    "ar": "جهة اتصال المنشأة"
+  },
+  {
+    "key": "regCategorySection",
+    "ar": "الفئة"
+  },
+  {
+    "key": "regCategoryReadonly",
+    "ar": "ستُحدَّد الفئة بعد التحقق."
+  },
+  {
+    "key": "regAddressSection",
+    "ar": "العنوان والموقع"
+  },
+  {
+    "key": "regAddressGuidance",
+    "ar": "أدخل عنوان منشأتك."
+  },
+  {
+    "key": "regAddressExactLabel",
+    "ar": "العنوان الدقيق"
+  },
+  {
+    "key": "regPickupPlace",
+    "ar": "موقع الاستلام"
+  },
+  {
+    "key": "regChooseOnMap",
+    "ar": "اختيار على الخريطة"
+  },
+  {
+    "key": "regLocationConfirmed",
+    "ar": "تم تأكيد الموقع"
+  },
+  {
+    "key": "regLocationEdit",
+    "ar": "تعديل"
+  },
+  {
+    "key": "regLocationRequired",
+    "ar": "أكّد موقع الاستلام على الخريطة قبل المتابعة."
+  },
+  {
+    "key": "regLocationPickerTitle",
+    "ar": "موقع المتجر"
+  }
+]

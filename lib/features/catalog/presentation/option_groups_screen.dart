@@ -321,7 +321,7 @@ class _OptionGroupsScreenState extends ConsumerState<OptionGroupsScreen> {
                   key: const Key('option-groups-preview'),
                   onPressed: () => _preview(product, groups),
                   icon: const Icon(Icons.preview_outlined),
-                  label: const Text(AppStrings.catalogCustomerPreview),
+                  label: Text(AppStrings.catalogCustomerPreview),
                 ),
               ),
             ),
@@ -483,7 +483,7 @@ class _GroupCard extends StatelessWidget {
                             key: Key('option-add-${group.id}'),
                             onPressed: onAddOption,
                             icon: const Icon(Icons.add),
-                            label: const Text(AppStrings.catalogAddChoice),
+                            label: Text(AppStrings.catalogAddChoice),
                           ),
                         )
                       : _DashedAction(
@@ -776,17 +776,17 @@ class _GroupSheetState extends State<_GroupSheet> {
     final ok = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text(AppStrings.catalogGroupDelete),
-        content: const Text(AppStrings.catalogGroupDeleteConfirm),
+        title: Text(AppStrings.catalogGroupDelete),
+        content: Text(AppStrings.catalogGroupDeleteConfirm),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx, false),
-            child: const Text(AppStrings.cancel),
+            child: Text(AppStrings.cancel),
           ),
           FilledButton(
             style: FilledButton.styleFrom(backgroundColor: AppColors.error),
             onPressed: () => Navigator.pop(ctx, true),
-            child: const Text(AppStrings.catalogGroupDelete),
+            child: Text(AppStrings.catalogGroupDelete),
           ),
         ],
       ),
@@ -912,7 +912,7 @@ class _GroupSheetState extends State<_GroupSheet> {
                         delete: false,
                       ))
                     : null,
-                child: const Text(AppStrings.catalogGroupSave),
+                child: Text(AppStrings.catalogGroupSave),
               ),
             ),
           ],
@@ -1017,7 +1017,7 @@ class _OptionSheetState extends State<_OptionSheet> {
             SwitchListTile(
               key: const Key('option-available'),
               contentPadding: EdgeInsets.zero,
-              title: const Text(AppStrings.catalogOptionAvailable),
+              title: Text(AppStrings.catalogOptionAvailable),
               value: _available,
               onChanged: (v) => setState(() => _available = v),
             ),
@@ -1039,7 +1039,7 @@ class _OptionSheetState extends State<_OptionSheet> {
                           available: false,
                           delete: true,
                         )),
-                        child: const Text(AppStrings.catalogOptionDelete),
+                        child: Text(AppStrings.catalogOptionDelete),
                       ),
                     ),
                   ),
@@ -1058,7 +1058,7 @@ class _OptionSheetState extends State<_OptionSheet> {
                               delete: false,
                             ))
                           : null,
-                      child: const Text(AppStrings.catalogSaveProduct),
+                      child: Text(AppStrings.catalogSaveProduct),
                     ),
                   ),
                 ),

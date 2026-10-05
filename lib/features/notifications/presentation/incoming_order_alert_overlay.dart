@@ -55,7 +55,7 @@ class IncomingOrderAlertOverlay extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       if (!stillIncoming) ...[
-                        const MerchantStatusBanner(
+                        MerchantStatusBanner(
                           message: AppStrings.notificationsOrderStale,
                         ),
                         const SizedBox(height: 16),
@@ -269,7 +269,7 @@ class IncomingOrderAlertOverlay extends StatelessWidget {
                         key: const Key('incoming-alert-details'),
                         onPressed: onViewDetails,
                         icon: const Icon(Icons.visibility),
-                        label: const Text(AppStrings.alertViewDetails),
+                        label: Text(AppStrings.alertViewDetails),
                         style: FilledButton.styleFrom(
                           backgroundColor: AppColors.primary,
                           shape: RoundedRectangleBorder(
@@ -286,7 +286,7 @@ class IncomingOrderAlertOverlay extends StatelessWidget {
                           key: const Key('incoming-alert-refuse'),
                           onPressed: stillIncoming ? onRefuse : null,
                           icon: const Icon(Icons.cancel_outlined),
-                          label: const Text(AppStrings.alertRefuse),
+                          label: Text(AppStrings.alertRefuse),
                           style: OutlinedButton.styleFrom(
                             foregroundColor: AppColors.error,
                             side: const BorderSide(color: AppColors.error),

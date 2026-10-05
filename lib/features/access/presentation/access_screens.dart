@@ -51,7 +51,7 @@ class _NoMembershipScreenState extends ConsumerState<NoMembershipScreen> {
           TextField(
             key: const Key('merchant-create-name'),
             controller: _name,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               hintText: AppStrings.merchantNameHint,
             ),
           ),
@@ -70,18 +70,18 @@ class _NoMembershipScreenState extends ConsumerState<NoMembershipScreen> {
                 : () => ref
                       .read(accessControllerProvider.notifier)
                       .createMerchantProfile(_name.text),
-            child: const Text(AppStrings.createMerchant),
+            child: Text(AppStrings.createMerchant),
           ),
           const SizedBox(height: 8),
           OutlinedButton(
             key: const Key('merchant-no-membership-invitations'),
             onPressed: () => context.push(AppRoutes.accessTeamInvitations),
-            child: const Text(AppStrings.noMembershipInvitationsCta),
+            child: Text(AppStrings.noMembershipInvitationsCta),
           ),
           TextButton(
             onPressed: () =>
                 ref.read(sessionControllerProvider.notifier).logout(),
-            child: const Text(AppStrings.logout),
+            child: Text(AppStrings.logout),
           ),
         ],
       ),
@@ -172,7 +172,7 @@ class _NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
           TextField(
             key: const Key('branch-name'),
             controller: _name,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: AppStrings.branchNameLabel,
             ),
           ),
@@ -180,7 +180,7 @@ class _NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
           TextField(
             key: const Key('branch-phone'),
             controller: _phone,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: AppStrings.branchPhoneLabel,
             ),
           ),
@@ -188,7 +188,7 @@ class _NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
           TextField(
             key: const Key('branch-address'),
             controller: _address,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: AppStrings.branchAddressLabel,
             ),
           ),
@@ -196,7 +196,7 @@ class _NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
           TextField(
             controller: _lat,
             keyboardType: TextInputType.number,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: AppStrings.branchLatLabel,
             ),
           ),
@@ -204,7 +204,7 @@ class _NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
           TextField(
             controller: _lng,
             keyboardType: TextInputType.number,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: AppStrings.branchLngLabel,
             ),
           ),
@@ -233,7 +233,7 @@ class _NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
                         wilayaCode: '16',
                         communeId: 556,
                       ),
-            child: const Text(AppStrings.addBranch),
+            child: Text(AppStrings.addBranch),
           ),
         ],
       ),
@@ -258,13 +258,14 @@ class VerificationScreen extends ConsumerWidget {
 }
 
 class _VerificationHeader extends StatelessWidget {
-  const _VerificationHeader({this.title = AppStrings.appName, this.trailing});
+  const _VerificationHeader({this.title, this.trailing});
 
-  final String title;
+  final String? title;
   final Widget? trailing;
 
   @override
   Widget build(BuildContext context) {
+    final resolvedTitle = title ?? AppStrings.appName;
     return DecoratedBox(
       decoration: const BoxDecoration(
         color: AppColors.surface,
@@ -288,7 +289,7 @@ class _VerificationHeader extends StatelessWidget {
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
-                    title,
+                    resolvedTitle,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
@@ -459,7 +460,7 @@ class _PendingVerificationBody extends ConsumerWidget {
       backgroundColor: AppColors.background,
       body: Column(
         children: [
-          const _VerificationHeader(),
+          _VerificationHeader(),
           Expanded(
             child: Stack(
               children: [
@@ -568,19 +569,19 @@ class _PendingVerificationBody extends ConsumerWidget {
                                 ),
                               ),
                               const SizedBox(height: 16),
-                              const _ProgressRow(
+                              _ProgressRow(
                                 done: true,
                                 active: false,
                                 title: AppStrings.verificationSubmittedStep,
                                 subtitle: null,
                               ),
-                              const _ProgressRow(
+                              _ProgressRow(
                                 done: false,
                                 active: true,
                                 title: AppStrings.verificationReviewStep,
                                 subtitle: AppStrings.verificationReviewStepBody,
                               ),
-                              const _ProgressRow(
+                              _ProgressRow(
                                 done: false,
                                 active: false,
                                 title: AppStrings.verificationFinalStep,
@@ -706,7 +707,7 @@ class _PendingVerificationBody extends ConsumerWidget {
                           onPressed: () => ref
                               .read(accessControllerProvider.notifier)
                               .openRegistrationCorrections(),
-                          child: const Text(AppStrings.submitVerification),
+                          child: Text(AppStrings.submitVerification),
                         ),
                       ),
                     DecoratedBox(
@@ -737,7 +738,7 @@ class _PendingVerificationBody extends ConsumerWidget {
                                 ),
                               )
                             : const Icon(Icons.refresh),
-                        label: const Text(AppStrings.refreshStatus),
+                        label: Text(AppStrings.refreshStatus),
                       ),
                     ),
                     if (canContactSupport) ...[
@@ -757,7 +758,7 @@ class _PendingVerificationBody extends ConsumerWidget {
                         ),
                         onPressed: () => showSupportCompose(context, ref),
                         icon: const Icon(Icons.contact_support_outlined),
-                        label: const Text(AppStrings.supportContact),
+                        label: Text(AppStrings.supportContact),
                       ),
                     ],
                     const SizedBox(height: 4),
@@ -771,7 +772,7 @@ class _PendingVerificationBody extends ConsumerWidget {
                             .read(sessionControllerProvider.notifier)
                             .logout(),
                         icon: const Icon(Icons.logout, size: 18),
-                        label: const Text(AppStrings.logout),
+                        label: Text(AppStrings.logout),
                       ),
                     ),
                   ],
@@ -976,7 +977,7 @@ class _RejectedVerificationBody extends ConsumerWidget {
                   if (merchantName.isNotEmpty) ...[
                     const SizedBox(height: 6),
                     Text(
-                      AppStrings.verificationRejectedGreeting(merchantName),
+                      AppStrings.verificationRejectedGreeting(merchantName.toString()),
                       key: const Key('merchant-verification-greeting'),
                       textAlign: TextAlign.center,
                       style: text.bodyMedium?.copyWith(
@@ -1119,7 +1120,7 @@ class _RejectedVerificationBody extends ConsumerWidget {
                         ),
                         onPressed: () => showSupportCompose(context, ref),
                         icon: const Icon(Icons.support_agent, size: 20),
-                        label: const Text(AppStrings.supportContact),
+                        label: Text(AppStrings.supportContact),
                       ),
                     ),
                   ],
@@ -1150,7 +1151,7 @@ class _RejectedVerificationBody extends ConsumerWidget {
                           .read(accessControllerProvider.notifier)
                           .openRegistrationCorrections(),
                       icon: const Icon(Icons.send_outlined),
-                      label: const Text(
+                      label: Text(
                         AppStrings.verificationCorrectAndSubmit,
                       ),
                     ),
@@ -1164,7 +1165,7 @@ class _RejectedVerificationBody extends ConsumerWidget {
                             .read(sessionControllerProvider.notifier)
                             .logout(),
                         icon: const Icon(Icons.logout, size: 18),
-                        label: const Text(AppStrings.logout),
+                        label: Text(AppStrings.logout),
                       ),
                     ),
                   ],
@@ -1239,7 +1240,7 @@ class _LegacyVerificationBody extends ConsumerWidget {
                       if (membership?.verificationAttentionRequired ==
                           true) ...[
                         const SizedBox(height: 12),
-                        const Text(AppStrings.attentionRequired),
+                        Text(AppStrings.attentionRequired),
                       ],
                       if (kind == AccessDestination.verificationRejected) ...[
                         const SizedBox(height: 12),
@@ -1313,7 +1314,7 @@ class _LegacyVerificationBody extends ConsumerWidget {
               onPressed: () => ref
                   .read(accessControllerProvider.notifier)
                   .openRegistrationCorrections(),
-              child: const Text(AppStrings.regEdit),
+              child: Text(AppStrings.regEdit),
             ),
           const SizedBox(height: 8),
           OutlinedButton(
@@ -1329,12 +1330,12 @@ class _LegacyVerificationBody extends ConsumerWidget {
                     height: 18,
                     child: CircularProgressIndicator(strokeWidth: 2),
                   )
-                : const Text(AppStrings.refreshStatus),
+                : Text(AppStrings.refreshStatus),
           ),
           TextButton(
             onPressed: () =>
                 ref.read(sessionControllerProvider.notifier).logout(),
-            child: const Text(AppStrings.logout),
+            child: Text(AppStrings.logout),
           ),
         ],
       ),
@@ -1452,7 +1453,7 @@ class VerificationApprovedScreen extends ConsumerWidget {
       backgroundColor: AppColors.background,
       body: Column(
         children: [
-          const _VerificationHeader(),
+          _VerificationHeader(),
           Expanded(
             child: SingleChildScrollView(
               padding: const EdgeInsets.fromLTRB(16, 32, 16, 24),
@@ -1762,7 +1763,7 @@ class PermissionDeniedScreen extends ConsumerWidget {
           FilledButton(
             onPressed: () =>
                 ref.read(sessionControllerProvider.notifier).logout(),
-            child: const Text(AppStrings.logout),
+            child: Text(AppStrings.logout),
           ),
         ],
       ),
@@ -1791,7 +1792,7 @@ class AccessLoadingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MerchantScaffold(
+    return MerchantScaffold(
       title: AppStrings.appName,
       body: LoadingBody(),
     );

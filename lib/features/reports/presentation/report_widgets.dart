@@ -156,7 +156,7 @@ class ReportPeriodChips extends ConsumerWidget {
         scrollDirection: Axis.horizontal,
         child: Row(
           children: [
-            for (final (period, label) in const [
+            for (final (period, label) in [
               (ReportPeriod.today, AppStrings.reportsPeriodToday),
               (ReportPeriod.yesterday, AppStrings.reportsPeriodYesterday),
               (ReportPeriod.thisWeek, AppStrings.reportsPeriodWeek),
@@ -219,7 +219,7 @@ class ReportPeriodChips extends ConsumerWidget {
     if (days > reportsMaxCustomDays) {
       if (context.mounted) {
         ScaffoldMessenger.maybeOf(context)?.showSnackBar(
-          const SnackBar(content: Text(AppStrings.reportsCustomRangeTooLong)),
+          SnackBar(content: Text(AppStrings.reportsCustomRangeTooLong)),
         );
       }
       return;
@@ -338,7 +338,7 @@ class ReportErrorCard extends StatelessWidget {
             child: FilledButton(
               key: retryKey,
               onPressed: onRetry,
-              child: const Text(AppStrings.retry),
+              child: Text(AppStrings.retry),
             ),
           ),
         ],

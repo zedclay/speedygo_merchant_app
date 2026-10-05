@@ -624,6 +624,7 @@ class _FailCreateCaptureApi extends _EditorCaptureApi {
     String? description,
     required int priceMinor,
     bool available = true,
+    SellingUnitSelection? sellingUnit,
   }) async {
     throw Exception('create failed');
   }

@@ -855,6 +855,12 @@ void main() {
       await tester.pump();
       expect(merchant.supportTickets, isEmpty);
 
+      await tester.tap(find.byKey(const Key('support-topic-choice-ORDER_ISSUE')));
+      await tester.pumpAndSettle();
+      await tester.enterText(
+        find.byKey(const Key('support-subject')),
+        'Livraison incomplète',
+      );
       await tester.enterText(
         find.byKey(const Key('support-body')),
         'Le livreur est reparti sans la boisson.',
@@ -865,7 +871,12 @@ void main() {
         await tester.pump(const Duration(milliseconds: 50));
       }
       expect(merchant.supportTickets, [
-        {'body': 'Le livreur est reparti sans la boisson.', 'orderId': 'o1'},
+        {
+          'body': 'Le livreur est reparti sans la boisson.',
+          'orderId': 'o1',
+          'subject': 'Livraison incomplète',
+          'topicCode': 'ORDER_ISSUE',
+        },
       ]);
       expect(find.byKey(const Key('support-sent')), findsOneWidget);
       expect(find.textContaining('sgt_42ab'), findsOneWidget);
@@ -884,12 +895,18 @@ void main() {
         height: 844,
         child: const OrderSupportScreen(orderId: 'o1'),
       );
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const Key('support-topic-choice-ORDER_ISSUE')));
+      await tester.pumpAndSettle();
+      await tester.enterText(
+        find.byKey(const Key('support-subject')),
+        'Test',
+      );
       await tester.enterText(find.byKey(const Key('support-body')), 'Test');
-      await tester.pump();
+      await tester.pumpAndSettle();
+      await tester.ensureVisible(find.byKey(const Key('support-send')));
       await tester.tap(find.byKey(const Key('support-send')));
-      for (var i = 0; i < 10; i++) {
-        await tester.pump(const Duration(milliseconds: 50));
-      }
+      await tester.pumpAndSettle();
       expect(find.byKey(const Key('support-error')), findsOneWidget);
       expect(find.text(AppStrings.supportForbidden), findsOneWidget);
       expect(find.byKey(const Key('support-sent')), findsNothing);
@@ -1113,7 +1130,7 @@ void main() {
       );
       await tester.tap(find.byKey(const Key('order-reject-confirm')));
       await tester.pumpAndSettle();
-      expect(s.api.mutationCalls, ['reject:a1842:Rupture de semoule']);
+      expect(s.api.mutationCalls, ['reject:a1842:OTHER:Rupture de semoule']);
       expect(find.text(AppStrings.orderQuickRejected), findsOneWidget);
     });
 

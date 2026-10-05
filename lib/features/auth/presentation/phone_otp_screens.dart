@@ -221,7 +221,7 @@ class _PhoneScreenState extends ConsumerState<PhoneScreen> {
                                 FilteringTextInputFormatter.digitsOnly,
                                 LengthLimitingTextInputFormatter(10),
                               ],
-                              decoration: const InputDecoration(
+                              decoration: InputDecoration(
                                 hintText: AppStrings.phoneHint,
                                 border: InputBorder.none,
                                 enabledBorder: InputBorder.none,
@@ -330,7 +330,7 @@ class _PhoneScreenState extends ConsumerState<PhoneScreen> {
                         TextButton(
                           onPressed: () {
                             ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(
+                              SnackBar(
                                 content: Text(AppStrings.helpUnavailable),
                               ),
                             );
@@ -345,7 +345,7 @@ class _PhoneScreenState extends ConsumerState<PhoneScreen> {
                                   height: 20 / 14,
                                 ),
                           ),
-                          child: const Text(AppStrings.needHelp),
+                          child: Text(AppStrings.needHelp),
                         ),
                       ],
                     ),
@@ -431,7 +431,7 @@ class _OtpScreenState extends ConsumerState<OtpScreen> {
                       tooltip: AppStrings.needHelp,
                       onPressed: () {
                         ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
+                          SnackBar(
                             content: Text(AppStrings.helpUnavailable),
                           ),
                         );
@@ -465,7 +465,7 @@ class _OtpScreenState extends ConsumerState<OtpScreen> {
                     spacing: 8,
                     children: [
                       Text(
-                        AppStrings.otpSentTo(masked),
+                        AppStrings.otpSentTo(masked.toString()),
                         style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                           color: AppColors.onSurfaceVariant,
                           fontSize: 16,
@@ -487,7 +487,7 @@ class _OtpScreenState extends ConsumerState<OtpScreen> {
                                 height: 24 / 16,
                               ),
                         ),
-                        child: const Text(AppStrings.editNumber),
+                        child: Text(AppStrings.editNumber),
                       ),
                     ],
                   ),
@@ -541,7 +541,7 @@ class _OtpScreenState extends ConsumerState<OtpScreen> {
                   seconds > 0
                       ? Builder(
                           builder: (context) {
-                            final label = AppStrings.resendIn(clock);
+                            final label = AppStrings.resendIn(clock.toString());
                             final prefixLen = label.length - clock.length;
                             return Row(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -595,7 +595,7 @@ class _OtpScreenState extends ConsumerState<OtpScreen> {
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
-                            child: const Text(AppStrings.resend),
+                            child: Text(AppStrings.resend),
                           ),
                         ),
                   if (session.errorMessage != null) ...[

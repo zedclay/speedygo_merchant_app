@@ -13,7 +13,7 @@ class OrderPublicReferenceLine extends StatelessWidget {
     this.maxLines = 1,
     this.emphasized = false,
     this.color,
-    this.label = AppStrings.orderReferenceLabel,
+    this.label,
     this.prefix,
     this.textStyle,
     this.iconSize = 16,
@@ -31,7 +31,7 @@ class OrderPublicReferenceLine extends StatelessWidget {
   final Color? color;
 
   /// Title of the full-reference sheet and accessible label.
-  final String label;
+  final String? label;
 
   /// Shown before the compact reference (e.g. "Référence : ").
   final String? prefix;
@@ -43,6 +43,7 @@ class OrderPublicReferenceLine extends StatelessWidget {
   final Key openKey;
 
   Future<void> _openFull(BuildContext context) async {
+    final resolvedLabel = label ?? AppStrings.orderReferenceLabel;
     await showModalBottomSheet<void>(
       context: context,
       isScrollControlled: true,
@@ -55,7 +56,7 @@ class OrderPublicReferenceLine extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(
-                  label,
+                  resolvedLabel,
                   style: Theme.of(ctx).textTheme.titleMedium
                       ?.copyWith(fontWeight: FontWeight.w700),
                 ),
@@ -73,14 +74,14 @@ class OrderPublicReferenceLine extends StatelessWidget {
                     if (ctx.mounted) {
                       Navigator.of(ctx).pop();
                       ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
+                        SnackBar(
                           content: Text(AppStrings.orderReferenceCopied),
                         ),
                       );
                     }
                   },
                   icon: const Icon(Icons.copy_outlined, size: 18),
-                  label: const Text(AppStrings.orderReferenceCopy),
+                  label: Text(AppStrings.orderReferenceCopy),
                 ),
               ],
             ),
@@ -100,9 +101,10 @@ class OrderPublicReferenceLine extends StatelessWidget {
           fontWeight: emphasized ? FontWeight.w700 : FontWeight.w500,
           fontSize: 12,
         );
+    final resolvedLabel = label ?? AppStrings.orderReferenceLabel;
     return Semantics(
       button: true,
-      label: '$label: $reference. ${AppStrings.orderReferenceShowFull}',
+      label: '$resolvedLabel: $reference. ${AppStrings.orderReferenceShowFull}',
       child: InkWell(
         key: openKey,
         onTap: () => _openFull(context),

@@ -276,7 +276,7 @@ void main() {
 
   testWidgets('each active tab keeps a selected destination', (tester) async {
     await _pumpShell(tester);
-    const labels = [
+    final labels = [
       AppStrings.tabHome,
       AppStrings.tabOrders,
       AppStrings.tabCatalog,

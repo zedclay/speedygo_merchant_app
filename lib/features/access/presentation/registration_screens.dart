@@ -65,7 +65,7 @@ class _RegScaffold extends StatelessWidget {
     this.title,
     this.subtitle,
     this.onBack,
-    this.appBarTitle = AppStrings.regTitle,
+    this.appBarTitle,
     this.appBarTitleColor = AppColors.primary,
     this.appBarActions,
     this.progressStyle = _RegProgressStyle.percent,
@@ -78,7 +78,7 @@ class _RegScaffold extends StatelessWidget {
   final Widget? subtitle;
   final Widget child;
   final VoidCallback? onBack;
-  final String appBarTitle;
+  final String? appBarTitle;
   final Color appBarTitleColor;
   final List<Widget>? appBarActions;
   final _RegProgressStyle progressStyle;
@@ -106,7 +106,7 @@ class _RegScaffold extends StatelessWidget {
                 icon: const Icon(Icons.arrow_back, color: AppColors.primary),
               ),
         title: Text(
-          appBarTitle,
+          appBarTitle ?? AppStrings.regTitle,
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: theme.textTheme.titleLarge?.copyWith(
@@ -575,7 +575,7 @@ class _ActivityStepState extends ConsumerState<_ActivityStep> {
                   onChanged: (v) => ref
                       .read(registrationControllerProvider.notifier)
                       .updateMerchantNameDraft(v),
-                  decoration: const InputDecoration(
+                  decoration: InputDecoration(
                     labelText: AppStrings.merchantNameLabel,
                     hintText: AppStrings.merchantNameHint,
                   ),
@@ -1276,7 +1276,7 @@ class _EstablishmentStepState extends ConsumerState<_EstablishmentStep> {
                           controller: _phone,
                           onChanged: (_) => _sync(),
                           keyboardType: TextInputType.phone,
-                          decoration: const InputDecoration(
+                          decoration: InputDecoration(
                             prefixText: '+213  ',
                             hintText: '555 12 34 56',
                             helperText: AppStrings.regBranchPhoneHint,
@@ -1368,7 +1368,7 @@ class _EstablishmentStepState extends ConsumerState<_EstablishmentStep> {
                               key: const Key('merchant-reg-choose-on-map'),
                               onPressed: _openLocationPicker,
                               icon: const Icon(Icons.map_outlined),
-                              label: const Text(AppStrings.regChooseOnMap),
+                              label: Text(AppStrings.regChooseOnMap),
                               style: OutlinedButton.styleFrom(
                                 minimumSize: const Size.fromHeight(52),
                                 foregroundColor: AppColors.primary,
@@ -1619,7 +1619,7 @@ class _ConfirmedLocationCard extends StatelessWidget {
                   key: const Key('merchant-reg-location-edit'),
                   onPressed: onEdit,
                   icon: const Icon(Icons.edit_location_alt_outlined, size: 18),
-                  label: const Text(AppStrings.regLocationEdit),
+                  label: Text(AppStrings.regLocationEdit),
                 ),
               ],
             ),
@@ -1752,8 +1752,7 @@ class _ReviewStep extends ConsumerWidget {
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        AppStrings.regCorrectionIntro(
-                          m?.merchantName.trim().ifEmpty('—') ?? '—',
+                        AppStrings.regCorrectionIntro(m?.merchantName.trim().ifEmpty('—') ?? '—',
                         ),
                         style: theme.textTheme.bodyMedium?.copyWith(
                           color: AppColors.onSurface,
@@ -2089,7 +2088,7 @@ class _ReviewSection extends StatelessWidget {
                 textStyle: theme.textTheme.labelLarge,
               ),
               icon: const Icon(Icons.edit_outlined, size: 18),
-              label: const Text(AppStrings.regEdit),
+              label: Text(AppStrings.regEdit),
             ),
           ],
         ),
@@ -2420,7 +2419,7 @@ class _RegAdminLocationFieldsState
                 ),
                 TextButton(
                   onPressed: _wilayasLoading ? null : _ensureWilayas,
-                  child: const Text(AppStrings.adminLocationRetry),
+                  child: Text(AppStrings.adminLocationRetry),
                 ),
               ],
             ),

@@ -9,7 +9,7 @@ AppException mapDioError(Object error) {
         error.type == DioExceptionType.receiveTimeout ||
         error.type == DioExceptionType.sendTimeout ||
         error.type == DioExceptionType.connectionError) {
-      return const NetworkException(AppStrings.networkError, code: 'NETWORK');
+      return NetworkException(AppStrings.networkError, code: 'NETWORK');
     }
     final data = error.response?.data;
     String? code;

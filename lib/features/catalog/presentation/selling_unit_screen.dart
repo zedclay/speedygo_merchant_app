@@ -5,13 +5,13 @@ import 'package:speedygo_merchant_app/core/money/money_format.dart';
 import 'package:speedygo_merchant_app/core/widgets/merchant_ui.dart';
 import 'package:speedygo_merchant_app/features/catalog/data/catalog_models.dart';
 
-const _commonUnits = [
+final _commonUnits = [
   SellingUnit.plat,
   SellingUnit.piece,
   SellingUnit.portion,
   SellingUnit.boite,
 ];
-const _packagingUnits = [SellingUnit.pack, SellingUnit.plateau];
+final _packagingUnits = [SellingUnit.pack, SellingUnit.plateau];
 
 /// "Unités de vente" (`selling_units_french`): single choice among the
 /// allowlisted units, or a custom French label. Pops with the chosen
@@ -149,7 +149,7 @@ class _SellingUnitScreenState extends State<SellingUnitScreen> {
                         enabled: !widget.readOnly,
                         maxLength: AppStrings.sellingUnitCustomMaxLength,
                         textInputAction: TextInputAction.done,
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                           hintText: AppStrings.sellingUnitCustomHint,
                         ),
                       ),
@@ -183,7 +183,7 @@ class _SellingUnitScreenState extends State<SellingUnitScreen> {
                       : null,
                   icon: const Icon(Icons.check, size: 18),
                   iconAlignment: IconAlignment.end,
-                  label: const Text(AppStrings.sellingUnitApply),
+                  label: Text(AppStrings.sellingUnitApply),
                 ),
               ),
             ),

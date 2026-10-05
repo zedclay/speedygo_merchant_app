@@ -867,6 +867,7 @@ class _CatalogFixtureApi extends FakeMerchantApi {
     String? description,
     required int priceMinor,
     bool available = true,
+    SellingUnitSelection? sellingUnit,
   }) async {
     createProductCalls += 1;
     if (failCreateProduct) throw Exception('create failed');
@@ -878,6 +879,8 @@ class _CatalogFixtureApi extends FakeMerchantApi {
       description: description,
       priceMinor: '$priceMinor',
       available: available,
+      sellingUnitCode: sellingUnit?.code,
+      sellingUnitLabelFr: sellingUnit?.labelFr,
     );
   }
 
@@ -997,6 +1000,7 @@ class _CatalogFixtureApi extends FakeMerchantApi {
     double? longitude,
     String? wilayaCode,
     int? communeId,
+    Map<String, String?>? publicInfo,
   }) async {
     updateBranchCalls += 1;
     lastAddress = addressText;
@@ -1012,6 +1016,9 @@ class _CatalogFixtureApi extends FakeMerchantApi {
       operationalStatus: 'ACTIVE',
       wilayaCode: wilayaCode,
       communeId: communeId,
+      description: publicInfo?['description'],
+      nameAr: publicInfo?['nameAr'],
+      publicEmail: publicInfo?['publicEmail'],
     );
   }
 }

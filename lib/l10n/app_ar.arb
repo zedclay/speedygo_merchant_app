@@ -1,0 +1,4918 @@
+{
+  "@@locale": "ar",
+  "appName": "SpeedyGo Merchant",
+  "@appName": {
+    "description": "Merchant UI string appName"
+  },
+  "brandName": "SpeedyGo",
+  "@brandName": {
+    "description": "Merchant UI string brandName"
+  },
+  "splashTagline": "مؤسستك. ببساطة.",
+  "@splashTagline": {
+    "description": "Merchant UI string splashTagline"
+  },
+  "splashLegacyTagline": "فضاء التاجر",
+  "@splashLegacyTagline": {
+    "description": "Merchant UI string splashLegacyTagline"
+  },
+  "onboardingSkip": "تخطي",
+  "@onboardingSkip": {
+    "description": "Merchant UI string onboardingSkip"
+  },
+  "onboardingNext": "التالي",
+  "@onboardingNext": {
+    "description": "Merchant UI string onboardingNext"
+  },
+  "onboardingStart": "ابدأ",
+  "@onboardingStart": {
+    "description": "Merchant UI string onboardingStart"
+  },
+  "onboardingHaveAccount": "لدي حساب بالفعل",
+  "@onboardingHaveAccount": {
+    "description": "Merchant UI string onboardingHaveAccount"
+  },
+  "onboardingPage1Title": "استقبل طلباتك",
+  "@onboardingPage1Title": {
+    "description": "Merchant UI string onboardingPage1Title"
+  },
+  "onboardingPage1Body": "اطّلع على الطلبات الجديدة وتفاصيلها.",
+  "@onboardingPage1Body": {
+    "description": "Merchant UI string onboardingPage1Body"
+  },
+  "onboardingPage2Title": "أتقن التحضير",
+  "@onboardingPage2Title": {
+    "description": "Merchant UI string onboardingPage2Title"
+  },
+  "onboardingPage2Body": "نظّم التحضير وأشر عندما يصبح الطلب جاهزًا.",
+  "@onboardingPage2Body": {
+    "description": "Merchant UI string onboardingPage2Body"
+  },
+  "onboardingPage3Title": "مؤسستك في متناول يدك",
+  "@onboardingPage3Title": {
+    "description": "Merchant UI string onboardingPage3Title"
+  },
+  "onboardingPage3Body": "اطّلع على كتالوجك وساعات العمل ومعلومات مؤسستك.",
+  "@onboardingPage3Body": {
+    "description": "Merchant UI string onboardingPage3Body"
+  },
+  "onboardingSaveFailed": "تعذّر حفظ المقدمة. أعد المحاولة.",
+  "@onboardingSaveFailed": {
+    "description": "Merchant UI string onboardingSaveFailed"
+  },
+  "onboardingPageSemantics": "صفحة المقدمة",
+  "@onboardingPageSemantics": {
+    "description": "Merchant UI string onboardingPageSemantics"
+  },
+  "phoneTitle": "أدخل رقم هاتفك",
+  "@phoneTitle": {
+    "description": "Merchant UI string phoneTitle"
+  },
+  "phoneSubtitle": "سنرسل إليك رمز تحقق عبر رسالة قصيرة.",
+  "@phoneSubtitle": {
+    "description": "Merchant UI string phoneSubtitle"
+  },
+  "phoneHint": "555 12 34 56",
+  "@phoneHint": {
+    "description": "Merchant UI string phoneHint"
+  },
+  "phonePrefix": "+213",
+  "@phonePrefix": {
+    "description": "Merchant UI string phonePrefix"
+  },
+  "phoneSmsNote": "قد تُطبَّق رسوم الرسائل القصيرة المعتادة.",
+  "@phoneSmsNote": {
+    "description": "Merchant UI string phoneSmsNote"
+  },
+  "phoneLabel": "رقم الهاتف",
+  "@phoneLabel": {
+    "description": "Merchant UI string phoneLabel"
+  },
+  "phoneInvalid": "أدخل رقم هاتف جزائري صالحًا.",
+  "@phoneInvalid": {
+    "description": "Merchant UI string phoneInvalid"
+  },
+  "continueLabel": "متابعة",
+  "@continueLabel": {
+    "description": "Merchant UI string continueLabel"
+  },
+  "needHelp": "هل تحتاج مساعدة؟",
+  "@needHelp": {
+    "description": "Merchant UI string needHelp"
+  },
+  "helpUnavailable": "ستتوفر المساعدة في إصدار لاحق.",
+  "@helpUnavailable": {
+    "description": "Merchant UI string helpUnavailable"
+  },
+  "otpTitle": "التحقق من الرمز",
+  "@otpTitle": {
+    "description": "Merchant UI string otpTitle"
+  },
+  "editNumber": "تعديل",
+  "@editNumber": {
+    "description": "Merchant UI string editNumber"
+  },
+  "verify": "تحقق",
+  "@verify": {
+    "description": "Merchant UI string verify"
+  },
+  "resend": "إعادة إرسال الرمز",
+  "@resend": {
+    "description": "Merchant UI string resend"
+  },
+  "resendIn": "إعادة إرسال الرمز خلال {clock}",
+  "@resendIn": {
+    "description": "Merchant UI string resendIn",
+    "placeholders": {
+      "clock": {
+        "type": "String"
+      }
+    }
+  },
+  "otpCooldownHint": "يُرجى الانتظار قبل إعادة إرسال رمز",
+  "@otpCooldownHint": {
+    "description": "Merchant UI string otpCooldownHint"
+  },
+  "resendCode": "إعادة إرسال الرمز",
+  "@resendCode": {
+    "description": "Merchant UI string resendCode"
+  },
+  "otpSubtitle": "أدخل الرمز المكوّن من 6 أرقام المُرسل إلى",
+  "@otpSubtitle": {
+    "description": "Merchant UI string otpSubtitle"
+  },
+  "restoreTitle": "استعادة الجلسة",
+  "@restoreTitle": {
+    "description": "Merchant UI string restoreTitle"
+  },
+  "restoreLoading": "جاري الاتصال…",
+  "@restoreLoading": {
+    "description": "Merchant UI string restoreLoading"
+  },
+  "restoreOffline": "تعذّر الاتصال بالخادم. تحقّق من اتصالك.",
+  "@restoreOffline": {
+    "description": "Merchant UI string restoreOffline"
+  },
+  "restoreRetry": "إعادة المحاولة",
+  "@restoreRetry": {
+    "description": "Merchant UI string restoreRetry"
+  },
+  "restoreOtherAccount": "استخدام حساب آخر",
+  "@restoreOtherAccount": {
+    "description": "Merchant UI string restoreOtherAccount"
+  },
+  "sessionExpired": "انتهت جلستك. سجّل الدخول.",
+  "@sessionExpired": {
+    "description": "Merchant UI string sessionExpired"
+  },
+  "networkError": "مشكلة في الشبكة. أعد المحاولة.",
+  "@networkError": {
+    "description": "Merchant UI string networkError"
+  },
+  "languageSaveFailed": "تعذّر حفظ اللغة. أعد المحاولة.",
+  "@languageSaveFailed": {
+    "description": "Merchant UI string languageSaveFailed"
+  },
+  "retry": "إعادة المحاولة",
+  "@retry": {
+    "description": "Merchant UI string retry"
+  },
+  "refreshStatus": "تحديث الحالة",
+  "@refreshStatus": {
+    "description": "Merchant UI string refreshStatus"
+  },
+  "back": "رجوع",
+  "@back": {
+    "description": "Merchant UI string back"
+  },
+  "loading": "جاري التحميل…",
+  "@loading": {
+    "description": "Merchant UI string loading"
+  },
+  "tabHome": "الرئيسية",
+  "@tabHome": {
+    "description": "Merchant UI string tabHome"
+  },
+  "tabOrders": "الطلبات",
+  "@tabOrders": {
+    "description": "Merchant UI string tabOrders"
+  },
+  "tabCatalog": "الكتالوج",
+  "@tabCatalog": {
+    "description": "Merchant UI string tabCatalog"
+  },
+  "tabReports": "التقارير",
+  "@tabReports": {
+    "description": "Merchant UI string tabReports"
+  },
+  "tabProfile": "الملف الشخصي",
+  "@tabProfile": {
+    "description": "Merchant UI string tabProfile"
+  },
+  "navReveal": "إظهار التنقّل",
+  "@navReveal": {
+    "description": "Merchant UI string navReveal"
+  },
+  "homeTitle": "الرئيسية",
+  "@homeTitle": {
+    "description": "Merchant UI string homeTitle"
+  },
+  "selectBranchTitle": "اختر مؤسسة",
+  "@selectBranchTitle": {
+    "description": "Merchant UI string selectBranchTitle"
+  },
+  "selectBranchSubtitle": "حدّد المؤسسة التي ترغب في العمل بها.",
+  "@selectBranchSubtitle": {
+    "description": "Merchant UI string selectBranchSubtitle"
+  },
+  "noMembershipTitle": "لا توجد مؤسسة مرتبطة",
+  "@noMembershipTitle": {
+    "description": "Merchant UI string noMembershipTitle"
+  },
+  "noMembershipBody": "هذا الحساب لا يملك عضوية تاجر بعد. يمكنك إنشاء ملف مؤسسة لبدء التحقق.",
+  "@noMembershipBody": {
+    "description": "Merchant UI string noMembershipBody"
+  },
+  "noMembershipInvitationsCta": "لدي دعوة",
+  "@noMembershipInvitationsCta": {
+    "description": "Merchant UI string noMembershipInvitationsCta"
+  },
+  "createMerchant": "إنشاء مؤسسة",
+  "@createMerchant": {
+    "description": "Merchant UI string createMerchant"
+  },
+  "merchantNameLabel": "اسم المؤسسة",
+  "@merchantNameLabel": {
+    "description": "Merchant UI string merchantNameLabel"
+  },
+  "merchantNameHint": "مثال: صيدلية الوسط",
+  "@merchantNameHint": {
+    "description": "Merchant UI string merchantNameHint"
+  },
+  "verificationPendingTitle": "التحقق جارٍ",
+  "@verificationPendingTitle": {
+    "description": "Merchant UI string verificationPendingTitle"
+  },
+  "verificationPendingBody": "تم تسجيل مؤسستك وهي بانتظار التحقق.",
+  "@verificationPendingBody": {
+    "description": "Merchant UI string verificationPendingBody"
+  },
+  "verificationDossierProgress": "وثائق الملف",
+  "@verificationDossierProgress": {
+    "description": "Merchant UI string verificationDossierProgress"
+  },
+  "verificationSubmittedStep": "تم تقديم الملف",
+  "@verificationSubmittedStep": {
+    "description": "Merchant UI string verificationSubmittedStep"
+  },
+  "verificationReviewStep": "مراجعة المستندات",
+  "@verificationReviewStep": {
+    "description": "Merchant UI string verificationReviewStep"
+  },
+  "verificationReviewStepBody": "قيد المراجعة من SpeedyGo",
+  "@verificationReviewStepBody": {
+    "description": "Merchant UI string verificationReviewStepBody"
+  },
+  "verificationFinalStep": "الاعتماد النهائي",
+  "@verificationFinalStep": {
+    "description": "Merchant UI string verificationFinalStep"
+  },
+  "verificationFinalStepBody": "بانتظار القرار",
+  "@verificationFinalStepBody": {
+    "description": "Merchant UI string verificationFinalStepBody"
+  },
+  "verificationTimelineTitle": "تقدّم الملف",
+  "@verificationTimelineTitle": {
+    "description": "Merchant UI string verificationTimelineTitle"
+  },
+  "verificationReferenceLabel": "المرجع",
+  "@verificationReferenceLabel": {
+    "description": "Merchant UI string verificationReferenceLabel"
+  },
+  "verificationReferenceFull": "مرجع الملف",
+  "@verificationReferenceFull": {
+    "description": "Merchant UI string verificationReferenceFull"
+  },
+  "approvedTitle": "تهانينا!",
+  "@approvedTitle": {
+    "description": "Merchant UI string approvedTitle"
+  },
+  "approvedSubtitle": "تم اعتماد مؤسستك",
+  "@approvedSubtitle": {
+    "description": "Merchant UI string approvedSubtitle"
+  },
+  "approvedBody": "لبدء استقبال الطلبات، تأكّد من أن متجرك مفتوح، وأن ساعات العمل محدّدة، وأن منتجاتك متاحة.",
+  "@approvedBody": {
+    "description": "Merchant UI string approvedBody"
+  },
+  "approvedReferenceLabel": "مرجع التاجر",
+  "@approvedReferenceLabel": {
+    "description": "Merchant UI string approvedReferenceLabel"
+  },
+  "approvedReferenceFull": "مرجع التاجر",
+  "@approvedReferenceFull": {
+    "description": "Merchant UI string approvedReferenceFull"
+  },
+  "approvedBadge": "معتمد",
+  "@approvedBadge": {
+    "description": "Merchant UI string approvedBadge"
+  },
+  "approvedStepsTitle": "خطوات الإعداد",
+  "@approvedStepsTitle": {
+    "description": "Merchant UI string approvedStepsTitle"
+  },
+  "approvedHoursTitle": "ساعات العمل",
+  "@approvedHoursTitle": {
+    "description": "Merchant UI string approvedHoursTitle"
+  },
+  "approvedHoursBody": "حدّد أوقات فتح متجرك",
+  "@approvedHoursBody": {
+    "description": "Merchant UI string approvedHoursBody"
+  },
+  "approvedCatalogTitle": "كتالوج المنتجات",
+  "@approvedCatalogTitle": {
+    "description": "Merchant UI string approvedCatalogTitle"
+  },
+  "approvedCatalogBody": "أضف أول منتجاتك",
+  "@approvedCatalogBody": {
+    "description": "Merchant UI string approvedCatalogBody"
+  },
+  "approvedAlertsTitle": "التنبيهات والإشعارات",
+  "@approvedAlertsTitle": {
+    "description": "Merchant UI string approvedAlertsTitle"
+  },
+  "approvedAlertsBody": "ابقَ على اطّلاع بالطلبات",
+  "@approvedAlertsBody": {
+    "description": "Merchant UI string approvedAlertsBody"
+  },
+  "approvedNeedBranchHint": "متاح بعد إضافة مؤسسة",
+  "@approvedNeedBranchHint": {
+    "description": "Merchant UI string approvedNeedBranchHint"
+  },
+  "approvedNotOpenNote": "الاعتماد لا يفتح متجرك تلقائيًا: تحقّق من حالته وساعات العمل والكتالوج من الرئيسية.",
+  "@approvedNotOpenNote": {
+    "description": "Merchant UI string approvedNotOpenNote"
+  },
+  "approvedContinue": "الانتقال إلى الرئيسية",
+  "@approvedContinue": {
+    "description": "Merchant UI string approvedContinue"
+  },
+  "verificationRequestIdLabel": "معرّف الطلب",
+  "@verificationRequestIdLabel": {
+    "description": "Merchant UI string verificationRequestIdLabel"
+  },
+  "verificationNeedHelp": "هل تحتاج مساعدة بخصوص ملفك؟",
+  "@verificationNeedHelp": {
+    "description": "Merchant UI string verificationNeedHelp"
+  },
+  "verificationCorrectAndSubmit": "تصحيح وإعادة الإرسال",
+  "@verificationCorrectAndSubmit": {
+    "description": "Merchant UI string verificationCorrectAndSubmit"
+  },
+  "verificationRejectedTitle": "ملف بحاجة إلى استكمال",
+  "@verificationRejectedTitle": {
+    "description": "Merchant UI string verificationRejectedTitle"
+  },
+  "verificationRejectedBody": "رُفض الملف. صحّح الملف الشخصي أو الوثائق عندما يُسمح بالتعديل، ثم أعد الإرسال.",
+  "@verificationRejectedBody": {
+    "description": "Merchant UI string verificationRejectedBody"
+  },
+  "verificationApprovedTitle": "تم اعتماد المؤسسة",
+  "@verificationApprovedTitle": {
+    "description": "Merchant UI string verificationApprovedTitle"
+  },
+  "verificationApprovedBody": "تم اعتماد مؤسستك. أكمل إضافة مؤسسة نشطة لبدء التشغيل.",
+  "@verificationApprovedBody": {
+    "description": "Merchant UI string verificationApprovedBody"
+  },
+  "suspendedTitle": "حساب المؤسسة معلّق",
+  "@suspendedTitle": {
+    "description": "Merchant UI string suspendedTitle"
+  },
+  "suspendedBody": "هذه المؤسسة معلّقة. تواصل مع دعم SpeedyGo عند الحاجة.",
+  "@suspendedBody": {
+    "description": "Merchant UI string suspendedBody"
+  },
+  "checklistTitle": "وثائق الملف",
+  "@checklistTitle": {
+    "description": "Merchant UI string checklistTitle"
+  },
+  "accessRestrictedTitle": "وصول مقيّد",
+  "@accessRestrictedTitle": {
+    "description": "Merchant UI string accessRestrictedTitle"
+  },
+  "accessRestrictedBody": "ليست لديك الصلاحيات اللازمة لهذا الإجراء.",
+  "@accessRestrictedBody": {
+    "description": "Merchant UI string accessRestrictedBody"
+  },
+  "needBranchTitle": "يلزم وجود مؤسسة",
+  "@needBranchTitle": {
+    "description": "Merchant UI string needBranchTitle"
+  },
+  "needBranchBody": "أضف مؤسسة نشطة واحدة على الأقل لاستخدام الفضاء التشغيلي.",
+  "@needBranchBody": {
+    "description": "Merchant UI string needBranchBody"
+  },
+  "addBranch": "إضافة مؤسسة",
+  "@addBranch": {
+    "description": "Merchant UI string addBranch"
+  },
+  "branchNameLabel": "اسم المؤسسة",
+  "@branchNameLabel": {
+    "description": "Merchant UI string branchNameLabel"
+  },
+  "branchPhoneLabel": "الهاتف",
+  "@branchPhoneLabel": {
+    "description": "Merchant UI string branchPhoneLabel"
+  },
+  "branchAddressLabel": "العنوان",
+  "@branchAddressLabel": {
+    "description": "Merchant UI string branchAddressLabel"
+  },
+  "branchLatLabel": "خط العرض",
+  "@branchLatLabel": {
+    "description": "Merchant UI string branchLatLabel"
+  },
+  "branchLngLabel": "خط الطول",
+  "@branchLngLabel": {
+    "description": "Merchant UI string branchLngLabel"
+  },
+  "save": "حفظ",
+  "@save": {
+    "description": "Merchant UI string save"
+  },
+  "logout": "تسجيل الخروج",
+  "@logout": {
+    "description": "Merchant UI string logout"
+  },
+  "operationalActive": "نشط",
+  "@operationalActive": {
+    "description": "Merchant UI string operationalActive"
+  },
+  "operationalInactive": "غير نشط",
+  "@operationalInactive": {
+    "description": "Merchant UI string operationalInactive"
+  },
+  "operationalSuspended": "معلّق",
+  "@operationalSuspended": {
+    "description": "Merchant UI string operationalSuspended"
+  },
+  "homeNoMetrics": "لا تتوفر مؤشرات مجمّعة من واجهة البرمجة في هذه المرحلة.",
+  "@homeNoMetrics": {
+    "description": "Merchant UI string homeNoMetrics"
+  },
+  "homeOrderCountsTitle": "الطلبات الجارية",
+  "@homeOrderCountsTitle": {
+    "description": "Merchant UI string homeOrderCountsTitle"
+  },
+  "homeCountIncoming": "جديدة",
+  "@homeCountIncoming": {
+    "description": "Merchant UI string homeCountIncoming"
+  },
+  "homeCountPreparing": "قيد التحضير",
+  "@homeCountPreparing": {
+    "description": "Merchant UI string homeCountPreparing"
+  },
+  "homeCountReady": "جاهزة",
+  "@homeCountReady": {
+    "description": "Merchant UI string homeCountReady"
+  },
+  "homeCountCourier": "الموصل",
+  "@homeCountCourier": {
+    "description": "Merchant UI string homeCountCourier"
+  },
+  "homeCountCourierUnavailable": "—",
+  "@homeCountCourierUnavailable": {
+    "description": "Merchant UI string homeCountCourierUnavailable"
+  },
+  "homeActiveOrdersTitle": "الطلبات النشطة",
+  "@homeActiveOrdersTitle": {
+    "description": "Merchant UI string homeActiveOrdersTitle"
+  },
+  "homeActiveOrdersEmpty": "لا توجد طلبات نشطة حاليًا.",
+  "@homeActiveOrdersEmpty": {
+    "description": "Merchant UI string homeActiveOrdersEmpty"
+  },
+  "homeTreatOrder": "معالجة الطلب",
+  "@homeTreatOrder": {
+    "description": "Merchant UI string homeTreatOrder"
+  },
+  "homeOpenOrder": "عرض الطلب",
+  "@homeOpenOrder": {
+    "description": "Merchant UI string homeOpenOrder"
+  },
+  "homeVerificationTitle": "تحقق بانتظار الإكمال",
+  "@homeVerificationTitle": {
+    "description": "Merchant UI string homeVerificationTitle"
+  },
+  "homeVerificationBody": "أكمل ملفك للحفاظ على الوصول الكامل إلى فضاء التاجر.",
+  "@homeVerificationBody": {
+    "description": "Merchant UI string homeVerificationBody"
+  },
+  "homeKpiSales": "المبيعات",
+  "@homeKpiSales": {
+    "description": "Merchant UI string homeKpiSales"
+  },
+  "homeKpiOrders": "الطلبات",
+  "@homeKpiOrders": {
+    "description": "Merchant UI string homeKpiOrders"
+  },
+  "homeKpiOrdersUnit": "مكتملة",
+  "@homeKpiOrdersUnit": {
+    "description": "Merchant UI string homeKpiOrdersUnit"
+  },
+  "homeKpiCurrency": "DZD",
+  "@homeKpiCurrency": {
+    "description": "Merchant UI string homeKpiCurrency"
+  },
+  "homeKpiUnavailable": "—",
+  "@homeKpiUnavailable": {
+    "description": "Merchant UI string homeKpiUnavailable"
+  },
+  "refresh": "تحديث",
+  "@refresh": {
+    "description": "Merchant UI string refresh"
+  },
+  "ordersEmpty": "لا توجد طلبات لهذه المؤسسة.",
+  "@ordersEmpty": {
+    "description": "Merchant UI string ordersEmpty"
+  },
+  "ordersEmptyIncoming": "لا توجد طلبات جديدة",
+  "@ordersEmptyIncoming": {
+    "description": "Merchant UI string ordersEmptyIncoming"
+  },
+  "ordersEmptyAccepted": "لا توجد طلبات مقبولة",
+  "@ordersEmptyAccepted": {
+    "description": "Merchant UI string ordersEmptyAccepted"
+  },
+  "ordersEmptyPreparing": "لا توجد طلبات قيد التحضير",
+  "@ordersEmptyPreparing": {
+    "description": "Merchant UI string ordersEmptyPreparing"
+  },
+  "ordersEmptyReady": "لا توجد طلبات جاهزة",
+  "@ordersEmptyReady": {
+    "description": "Merchant UI string ordersEmptyReady"
+  },
+  "ordersEmptyCompleted": "لا توجد طلبات مكتملة",
+  "@ordersEmptyCompleted": {
+    "description": "Merchant UI string ordersEmptyCompleted"
+  },
+  "ordersEmptyCancelled": "لا توجد طلبات ملغاة",
+  "@ordersEmptyCancelled": {
+    "description": "Merchant UI string ordersEmptyCancelled"
+  },
+  "ordersEmptyFailed": "لا توجد طلبات فاشلة",
+  "@ordersEmptyFailed": {
+    "description": "Merchant UI string ordersEmptyFailed"
+  },
+  "ordersLoadError": "تعذّر تحميل الطلبات.",
+  "@ordersLoadError": {
+    "description": "Merchant UI string ordersLoadError"
+  },
+  "orderDetailTitle": "طلب",
+  "@orderDetailTitle": {
+    "description": "Merchant UI string orderDetailTitle"
+  },
+  "orderDetailLoadError": "تعذّر تحميل هذا الطلب.",
+  "@orderDetailLoadError": {
+    "description": "Merchant UI string orderDetailLoadError"
+  },
+  "orderFulfillmentIncoming": "جديد",
+  "@orderFulfillmentIncoming": {
+    "description": "Merchant UI string orderFulfillmentIncoming"
+  },
+  "supportReportTitle": "الإبلاغ عن مشكلة",
+  "@supportReportTitle": {
+    "description": "Merchant UI string supportReportTitle"
+  },
+  "supportShort": "الدعم",
+  "@supportShort": {
+    "description": "Merchant UI string supportShort"
+  },
+  "supportContact": "التواصل مع الدعم",
+  "@supportContact": {
+    "description": "Merchant UI string supportContact"
+  },
+  "supportOrderLabel": "الطلب",
+  "@supportOrderLabel": {
+    "description": "Merchant UI string supportOrderLabel"
+  },
+  "supportCustomerLabel": "العميل",
+  "@supportCustomerLabel": {
+    "description": "Merchant UI string supportCustomerLabel"
+  },
+  "supportMerchandiseLabel": "البضائع",
+  "@supportMerchandiseLabel": {
+    "description": "Merchant UI string supportMerchandiseLabel"
+  },
+  "supportDescriptionLabel": "وصف المشكلة",
+  "@supportDescriptionLabel": {
+    "description": "Merchant UI string supportDescriptionLabel"
+  },
+  "supportDescriptionHint": "اشرح لنا ما حدث بالتفصيل...",
+  "@supportDescriptionHint": {
+    "description": "Merchant UI string supportDescriptionHint"
+  },
+  "supportSensitiveHint": "يُرجى عدم تضمين بيانات حسّاسة (مثل كلمات المرور).",
+  "@supportSensitiveHint": {
+    "description": "Merchant UI string supportSensitiveHint"
+  },
+  "supportSend": "إرسال التذكرة",
+  "@supportSend": {
+    "description": "Merchant UI string supportSend"
+  },
+  "supportSentTitle": "تم إرسال البلاغ",
+  "@supportSentTitle": {
+    "description": "Merchant UI string supportSentTitle"
+  },
+  "supportSentBodyNoRef": "تم إرسال تذكرتك إلى فريق SpeedyGo.",
+  "@supportSentBodyNoRef": {
+    "description": "Merchant UI string supportSentBodyNoRef"
+  },
+  "supportBackToOrder": "العودة إلى الطلب",
+  "@supportBackToOrder": {
+    "description": "Merchant UI string supportBackToOrder"
+  },
+  "supportForbidden": "يمكن للمالك والمديرين فقط التواصل مع الدعم.",
+  "@supportForbidden": {
+    "description": "Merchant UI string supportForbidden"
+  },
+  "supportSendError": "تعذّر إرسال التذكرة. أعد المحاولة.",
+  "@supportSendError": {
+    "description": "Merchant UI string supportSendError"
+  },
+  "supportCenterTitle": "دعم Merchant",
+  "@supportCenterTitle": {
+    "description": "Merchant UI string supportCenterTitle"
+  },
+  "supportNewTicket": "تذكرة جديدة",
+  "@supportNewTicket": {
+    "description": "Merchant UI string supportNewTicket"
+  },
+  "supportActiveTickets": "التذاكر النشطة",
+  "@supportActiveTickets": {
+    "description": "Merchant UI string supportActiveTickets"
+  },
+  "supportResolvedTickets": "التذاكر المحلولة",
+  "@supportResolvedTickets": {
+    "description": "Merchant UI string supportResolvedTickets"
+  },
+  "supportNoTickets": "لا توجد تذاكر حاليًا.",
+  "@supportNoTickets": {
+    "description": "Merchant UI string supportNoTickets"
+  },
+  "supportLoadError": "تعذّر تحميل تذاكرك.",
+  "@supportLoadError": {
+    "description": "Merchant UI string supportLoadError"
+  },
+  "supportTopicsTitle": "مواضيع شائعة",
+  "@supportTopicsTitle": {
+    "description": "Merchant UI string supportTopicsTitle"
+  },
+  "supportTopicsHint": "اختر موضوعًا لفتح تذكرة جديدة.",
+  "@supportTopicsHint": {
+    "description": "Merchant UI string supportTopicsHint"
+  },
+  "supportTopicsLoadError": "تعذّر تحميل المواضيع.",
+  "@supportTopicsLoadError": {
+    "description": "Merchant UI string supportTopicsLoadError"
+  },
+  "supportTopicsEmpty": "لا توجد مواضيع متاحة حاليًا.",
+  "@supportTopicsEmpty": {
+    "description": "Merchant UI string supportTopicsEmpty"
+  },
+  "supportTopicLabel": "الموضوع",
+  "@supportTopicLabel": {
+    "description": "Merchant UI string supportTopicLabel"
+  },
+  "supportTopicRequired": "اختر موضوعًا.",
+  "@supportTopicRequired": {
+    "description": "Merchant UI string supportTopicRequired"
+  },
+  "supportSubjectLabel": "العنوان",
+  "@supportSubjectLabel": {
+    "description": "Merchant UI string supportSubjectLabel"
+  },
+  "supportSubjectHint": "لخّص طلبك في بضع كلمات",
+  "@supportSubjectHint": {
+    "description": "Merchant UI string supportSubjectHint"
+  },
+  "supportSubjectRequired": "يرجى إدخال موضوع طلبك.",
+  "@supportSubjectRequired": {
+    "description": "Merchant UI string supportSubjectRequired"
+  },
+  "supportFaqTitle": "الأسئلة الشائعة",
+  "@supportFaqTitle": {
+    "description": "Merchant UI string supportFaqTitle"
+  },
+  "supportFaqEmpty": "لا توجد أسئلة شائعة في الوقت الحالي.",
+  "@supportFaqEmpty": {
+    "description": "Merchant UI string supportFaqEmpty"
+  },
+  "supportFaqLoadError": "تعذّر تحميل الأسئلة الشائعة.",
+  "@supportFaqLoadError": {
+    "description": "Merchant UI string supportFaqLoadError"
+  },
+  "supportComposeTitle": "تذكرة جديدة",
+  "@supportComposeTitle": {
+    "description": "Merchant UI string supportComposeTitle"
+  },
+  "supportComposeHint": "صف طلبك. إذا كان الأمر يتعلق بمشكلة في طلب، استخدم «الإبلاغ عن مشكلة» من صفحة الطلب.",
+  "@supportComposeHint": {
+    "description": "Merchant UI string supportComposeHint"
+  },
+  "supportTicketTitle": "تذكرة",
+  "@supportTicketTitle": {
+    "description": "Merchant UI string supportTicketTitle"
+  },
+  "supportTicketLoadError": "تعذّر تحميل هذه التذكرة.",
+  "@supportTicketLoadError": {
+    "description": "Merchant UI string supportTicketLoadError"
+  },
+  "supportLinkedOrder": "الطلب المرتبط",
+  "@supportLinkedOrder": {
+    "description": "Merchant UI string supportLinkedOrder"
+  },
+  "supportYou": "أنت",
+  "@supportYou": {
+    "description": "Merchant UI string supportYou"
+  },
+  "supportTeam": "دعم SpeedyGo",
+  "@supportTeam": {
+    "description": "Merchant UI string supportTeam"
+  },
+  "supportReplyHint": "ردّك",
+  "@supportReplyHint": {
+    "description": "Merchant UI string supportReplyHint"
+  },
+  "supportReplySend": "إرسال",
+  "@supportReplySend": {
+    "description": "Merchant UI string supportReplySend"
+  },
+  "supportReplyError": "تعذّر إرسال الرد.",
+  "@supportReplyError": {
+    "description": "Merchant UI string supportReplyError"
+  },
+  "supportTicketFinished": "هذه التذكرة مغلقة. أنشئ تذكرة جديدة عند الحاجة.",
+  "@supportTicketFinished": {
+    "description": "Merchant UI string supportTicketFinished"
+  },
+  "supportNoMessages": "لا توجد رسائل.",
+  "@supportNoMessages": {
+    "description": "Merchant UI string supportNoMessages"
+  },
+  "orderListAcceptNow": "يجب القبول فورًا",
+  "@orderListAcceptNow": {
+    "description": "Merchant UI string orderListAcceptNow"
+  },
+  "orderDetailsTitle": "تفاصيل الطلب",
+  "@orderDetailsTitle": {
+    "description": "Merchant UI string orderDetailsTitle"
+  },
+  "orderDetailCancelledTitle": "طلب ملغى",
+  "@orderDetailCancelledTitle": {
+    "description": "Merchant UI string orderDetailCancelledTitle"
+  },
+  "orderCancelledHeroBody": "لن يُستكمل هذا الطلب.",
+  "@orderCancelledHeroBody": {
+    "description": "Merchant UI string orderCancelledHeroBody"
+  },
+  "orderCancelledByCustomer": "أُلغي من قِبل العميل",
+  "@orderCancelledByCustomer": {
+    "description": "Merchant UI string orderCancelledByCustomer"
+  },
+  "orderRejectedByMerchant": "مرفوض من قِبل المؤسسة",
+  "@orderRejectedByMerchant": {
+    "description": "Merchant UI string orderRejectedByMerchant"
+  },
+  "orderReasonLabel": "السبب",
+  "@orderReasonLabel": {
+    "description": "Merchant UI string orderReasonLabel"
+  },
+  "orderCancelledAck": "حسنًا",
+  "@orderCancelledAck": {
+    "description": "Merchant UI string orderCancelledAck"
+  },
+  "orderViewHistory": "عرض السجل",
+  "@orderViewHistory": {
+    "description": "Merchant UI string orderViewHistory"
+  },
+  "orderCurrentStatus": "الحالة الحالية",
+  "@orderCurrentStatus": {
+    "description": "Merchant UI string orderCurrentStatus"
+  },
+  "orderReceivedAtLabel": "استُلم في",
+  "@orderReceivedAtLabel": {
+    "description": "Merchant UI string orderReceivedAtLabel"
+  },
+  "orderPaymentLabel": "الدفع",
+  "@orderPaymentLabel": {
+    "description": "Merchant UI string orderPaymentLabel"
+  },
+  "orderPaymentMethod": "الطريقة: {method}",
+  "@orderPaymentMethod": {
+    "description": "Merchant UI string orderPaymentMethod",
+    "placeholders": {
+      "method": {
+        "type": "String"
+      }
+    }
+  },
+  "eventCreated": "تم استلام الطلب",
+  "@eventCreated": {
+    "description": "Merchant UI string eventCreated"
+  },
+  "eventCreatedCaption": "طلب قدّمه العميل",
+  "@eventCreatedCaption": {
+    "description": "Merchant UI string eventCreatedCaption"
+  },
+  "eventAccepted": "مقبول",
+  "@eventAccepted": {
+    "description": "Merchant UI string eventAccepted"
+  },
+  "eventAcceptedCaption": "تم تأكيد الطلب",
+  "@eventAcceptedCaption": {
+    "description": "Merchant UI string eventAcceptedCaption"
+  },
+  "eventPrepStarted": "قيد التحضير",
+  "@eventPrepStarted": {
+    "description": "Merchant UI string eventPrepStarted"
+  },
+  "eventPrepStartedCaption": "بدأ التحضير",
+  "@eventPrepStartedCaption": {
+    "description": "Merchant UI string eventPrepStartedCaption"
+  },
+  "eventReady": "جاهز",
+  "@eventReady": {
+    "description": "Merchant UI string eventReady"
+  },
+  "eventReadyCaption": "جاهز للاستلام",
+  "@eventReadyCaption": {
+    "description": "Merchant UI string eventReadyCaption"
+  },
+  "eventRejected": "مرفوض",
+  "@eventRejected": {
+    "description": "Merchant UI string eventRejected"
+  },
+  "eventCancelled": "ملغى",
+  "@eventCancelled": {
+    "description": "Merchant UI string eventCancelled"
+  },
+  "eventCompleted": "مكتمل",
+  "@eventCompleted": {
+    "description": "Merchant UI string eventCompleted"
+  },
+  "eventCompletedCaption": "تم تسليم الطلب للعميل",
+  "@eventCompletedCaption": {
+    "description": "Merchant UI string eventCompletedCaption"
+  },
+  "eventStatusUpdate": "تحديث الحالة",
+  "@eventStatusUpdate": {
+    "description": "Merchant UI string eventStatusUpdate"
+  },
+  "orderListLate": "متأخر",
+  "@orderListLate": {
+    "description": "Merchant UI string orderListLate"
+  },
+  "orderHistoryToday": "اليوم",
+  "@orderHistoryToday": {
+    "description": "Merchant UI string orderHistoryToday"
+  },
+  "orderHistoryYesterday": "أمس",
+  "@orderHistoryYesterday": {
+    "description": "Merchant UI string orderHistoryYesterday"
+  },
+  "orderHistoryEarlier": "سابقًا",
+  "@orderHistoryEarlier": {
+    "description": "Merchant UI string orderHistoryEarlier"
+  },
+  "orderFulfillmentAccepted": "مقبول",
+  "@orderFulfillmentAccepted": {
+    "description": "Merchant UI string orderFulfillmentAccepted"
+  },
+  "orderFulfillmentPreparing": "قيد التحضير",
+  "@orderFulfillmentPreparing": {
+    "description": "Merchant UI string orderFulfillmentPreparing"
+  },
+  "orderFulfillmentReady": "جاهز",
+  "@orderFulfillmentReady": {
+    "description": "Merchant UI string orderFulfillmentReady"
+  },
+  "orderStatusCreated": "جديد",
+  "@orderStatusCreated": {
+    "description": "Merchant UI string orderStatusCreated"
+  },
+  "orderStatusConfirmed": "مؤكد",
+  "@orderStatusConfirmed": {
+    "description": "Merchant UI string orderStatusConfirmed"
+  },
+  "orderStatusActive": "نشط",
+  "@orderStatusActive": {
+    "description": "Merchant UI string orderStatusActive"
+  },
+  "orderStatusCompleted": "مكتمل",
+  "@orderStatusCompleted": {
+    "description": "Merchant UI string orderStatusCompleted"
+  },
+  "orderStatusCancelled": "ملغى",
+  "@orderStatusCancelled": {
+    "description": "Merchant UI string orderStatusCancelled"
+  },
+  "orderStatusFailed": "فشل",
+  "@orderStatusFailed": {
+    "description": "Merchant UI string orderStatusFailed"
+  },
+  "orderPaymentCod": "الدفع عند الاستلام",
+  "@orderPaymentCod": {
+    "description": "Merchant UI string orderPaymentCod"
+  },
+  "orderPaymentElectronic": "دفع إلكتروني",
+  "@orderPaymentElectronic": {
+    "description": "Merchant UI string orderPaymentElectronic"
+  },
+  "orderListMerchandiseLabel": "البضائع",
+  "@orderListMerchandiseLabel": {
+    "description": "Merchant UI string orderListMerchandiseLabel"
+  },
+  "orderIncomingBanner": "طلب جديد",
+  "@orderIncomingBanner": {
+    "description": "Merchant UI string orderIncomingBanner"
+  },
+  "orderReadyBanner": "الطلب جاهز",
+  "@orderReadyBanner": {
+    "description": "Merchant UI string orderReadyBanner"
+  },
+  "orderSegmentActive": "قيد التنفيذ",
+  "@orderSegmentActive": {
+    "description": "Merchant UI string orderSegmentActive"
+  },
+  "orderSegmentHistory": "السجل",
+  "@orderSegmentHistory": {
+    "description": "Merchant UI string orderSegmentHistory"
+  },
+  "orderReferenceCopy": "نسخ المرجع",
+  "@orderReferenceCopy": {
+    "description": "Merchant UI string orderReferenceCopy"
+  },
+  "orderReferenceCopied": "تم نسخ المرجع",
+  "@orderReferenceCopied": {
+    "description": "Merchant UI string orderReferenceCopied"
+  },
+  "orderReferenceShowFull": "عرض المرجع الكامل",
+  "@orderReferenceShowFull": {
+    "description": "Merchant UI string orderReferenceShowFull"
+  },
+  "orderItemsTitle": "الأصناف",
+  "@orderItemsTitle": {
+    "description": "Merchant UI string orderItemsTitle"
+  },
+  "orderItemsToPrepareTitle": "أصناف للتحضير",
+  "@orderItemsToPrepareTitle": {
+    "description": "Merchant UI string orderItemsToPrepareTitle"
+  },
+  "orderDeliveryAddress": "عنوان التسليم",
+  "@orderDeliveryAddress": {
+    "description": "Merchant UI string orderDeliveryAddress"
+  },
+  "orderFinanceTitle": "التوزيع المالي",
+  "@orderFinanceTitle": {
+    "description": "Merchant UI string orderFinanceTitle"
+  },
+  "orderFinanceGms": "مجموع البضائع الفرعي",
+  "@orderFinanceGms": {
+    "description": "Merchant UI string orderFinanceGms"
+  },
+  "orderFinanceDiscount": "خصم التاجر",
+  "@orderFinanceDiscount": {
+    "description": "Merchant UI string orderFinanceDiscount"
+  },
+  "orderFinanceNet": "صافي التاجر",
+  "@orderFinanceNet": {
+    "description": "Merchant UI string orderFinanceNet"
+  },
+  "orderFinanceCommissionUnavailable": "عمولة SpeedyGo",
+  "@orderFinanceCommissionUnavailable": {
+    "description": "Merchant UI string orderFinanceCommissionUnavailable"
+  },
+  "orderFinanceRestricted": "العمولة والخصم وصافي التاجر مخصّصة للمالك أو المسؤول فقط.",
+  "@orderFinanceRestricted": {
+    "description": "Merchant UI string orderFinanceRestricted"
+  },
+  "valueUnavailable": "—",
+  "@valueUnavailable": {
+    "description": "Merchant UI string valueUnavailable"
+  },
+  "orderFinanceNetCancelledNote": "مبالغ تاريخية مثبتة عند إنشاء الطلب — وليست مستحقات للدفع.",
+  "@orderFinanceNetCancelledNote": {
+    "description": "Merchant UI string orderFinanceNetCancelledNote"
+  },
+  "orderFinanceDeliveryFeeNote": "رسوم التوصيل (العميل)",
+  "@orderFinanceDeliveryFeeNote": {
+    "description": "Merchant UI string orderFinanceDeliveryFeeNote"
+  },
+  "orderFinanceDeliveryFeeDisclaimer": "رسوم التوصيل ليست إيرادًا للتاجر.",
+  "@orderFinanceDeliveryFeeDisclaimer": {
+    "description": "Merchant UI string orderFinanceDeliveryFeeDisclaimer"
+  },
+  "orderAccept": "قبول",
+  "@orderAccept": {
+    "description": "Merchant UI string orderAccept"
+  },
+  "orderChoosePrepTime": "اختيار مدة التحضير",
+  "@orderChoosePrepTime": {
+    "description": "Merchant UI string orderChoosePrepTime"
+  },
+  "orderReject": "رفض",
+  "@orderReject": {
+    "description": "Merchant UI string orderReject"
+  },
+  "orderRejectTitle": "رفض الطلب",
+  "@orderRejectTitle": {
+    "description": "Merchant UI string orderRejectTitle"
+  },
+  "orderRejectHint": "الرفض ممكن فقط قبل القبول. يرجى ذكر السبب.",
+  "@orderRejectHint": {
+    "description": "Merchant UI string orderRejectHint"
+  },
+  "orderRejectReasonLabel": "سبب الرفض",
+  "@orderRejectReasonLabel": {
+    "description": "Merchant UI string orderRejectReasonLabel"
+  },
+  "orderRejectConfirm": "تأكيد الرفض",
+  "@orderRejectConfirm": {
+    "description": "Merchant UI string orderRejectConfirm"
+  },
+  "orderQuickAlreadyHandled": "تمت معالجة هذا الطلب مسبقًا. تم تحديث القائمة.",
+  "@orderQuickAlreadyHandled": {
+    "description": "Merchant UI string orderQuickAlreadyHandled"
+  },
+  "orderQuickNotAllowed": "دورك لا يسمح بهذا الإجراء.",
+  "@orderQuickNotAllowed": {
+    "description": "Merchant UI string orderQuickNotAllowed"
+  },
+  "orderQuickCheckFailed": "تعذّر التحقق من الطلب. أعد المحاولة.",
+  "@orderQuickCheckFailed": {
+    "description": "Merchant UI string orderQuickCheckFailed"
+  },
+  "orderQuickAccepted": "تم قبول الطلب.",
+  "@orderQuickAccepted": {
+    "description": "Merchant UI string orderQuickAccepted"
+  },
+  "orderQuickRejected": "تم رفض الطلب.",
+  "@orderQuickRejected": {
+    "description": "Merchant UI string orderQuickRejected"
+  },
+  "prepAcceptTitle": "قبول الطلب",
+  "@prepAcceptTitle": {
+    "description": "Merchant UI string prepAcceptTitle"
+  },
+  "prepEstimatedTitle": "مدة التحضير المقدَّرة",
+  "@prepEstimatedTitle": {
+    "description": "Merchant UI string prepEstimatedTitle"
+  },
+  "prepConfirmAccept": "تأكيد وقبول",
+  "@prepConfirmAccept": {
+    "description": "Merchant UI string prepConfirmAccept"
+  },
+  "prepCustomTime": "مدة مخصّصة",
+  "@prepCustomTime": {
+    "description": "Merchant UI string prepCustomTime"
+  },
+  "prepCustomEntry": "إدخال مخصّص",
+  "@prepCustomEntry": {
+    "description": "Merchant UI string prepCustomEntry"
+  },
+  "prepCustomRange": "بين {min} و{max} دقيقة",
+  "@prepCustomRange": {
+    "description": "Merchant UI string prepCustomRange",
+    "placeholders": {
+      "min": {
+        "type": "String"
+      },
+      "max": {
+        "type": "String"
+      }
+    }
+  },
+  "prepItemCount": "صنف واحد{n} أصناف",
+  "@prepItemCount": {
+    "description": "Merchant UI string prepItemCount",
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "prepInProgress": "قيد التنفيذ",
+  "@prepInProgress": {
+    "description": "Merchant UI string prepInProgress"
+  },
+  "prepCurrentShort": "الوقت الحالي",
+  "@prepCurrentShort": {
+    "description": "Merchant UI string prepCurrentShort"
+  },
+  "prepNewShort": "تقدير جديد",
+  "@prepNewShort": {
+    "description": "Merchant UI string prepNewShort"
+  },
+  "prepReasonHint": "مثال: مشكلة تقنية في المطبخ…",
+  "@prepReasonHint": {
+    "description": "Merchant UI string prepReasonHint"
+  },
+  "prepRemainingTitle": "الوقت المتبقي",
+  "@prepRemainingTitle": {
+    "description": "Merchant UI string prepRemainingTitle"
+  },
+  "prepMinutesCaption": "دقائق",
+  "@prepMinutesCaption": {
+    "description": "Merchant UI string prepMinutesCaption"
+  },
+  "prepSecondsCaption": "ثوانٍ",
+  "@prepSecondsCaption": {
+    "description": "Merchant UI string prepSecondsCaption"
+  },
+  "prepLateHint": "تجاوز التقدير الزمني. حدّث المدة أو علِّم الطلب جاهزًا عندما يصبح كذلك.",
+  "@prepLateHint": {
+    "description": "Merchant UI string prepLateHint"
+  },
+  "prepUpdateAction": "تعديل المدة",
+  "@prepUpdateAction": {
+    "description": "Merchant UI string prepUpdateAction"
+  },
+  "prepUpdateTitle": "تحديث المدة",
+  "@prepUpdateTitle": {
+    "description": "Merchant UI string prepUpdateTitle"
+  },
+  "prepCurrentReady": "الوقت المتوقع الحالي",
+  "@prepCurrentReady": {
+    "description": "Merchant UI string prepCurrentReady"
+  },
+  "prepOriginalReady": "الابتدائي: {time}",
+  "@prepOriginalReady": {
+    "description": "Merchant UI string prepOriginalReady",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "prepOriginalReadyLabel": "الوقت الابتدائي: {time}",
+  "@prepOriginalReadyLabel": {
+    "description": "Merchant UI string prepOriginalReadyLabel",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "prepBranchLabel": "المنشأة",
+  "@prepBranchLabel": {
+    "description": "Merchant UI string prepBranchLabel"
+  },
+  "prepAddTime": "إضافة وقت تحضير",
+  "@prepAddTime": {
+    "description": "Merchant UI string prepAddTime"
+  },
+  "prepNewEstimate": "تقدير جديد: {to} بدلًا من {from}، بزيادة {add} دقيقة",
+  "@prepNewEstimate": {
+    "description": "Merchant UI string prepNewEstimate",
+    "placeholders": {
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      },
+      "add": {
+        "type": "String"
+      }
+    }
+  },
+  "prepClockOnDay": "يوم {day} الساعة {time}",
+  "@prepClockOnDay": {
+    "description": "Merchant UI string prepClockOnDay",
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "prepOnDay": "يوم {day}",
+  "@prepOnDay": {
+    "description": "Merchant UI string prepOnDay",
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "prepSpokenClock": "{time} يوم {day}",
+  "@prepSpokenClock": {
+    "description": "Merchant UI string prepSpokenClock",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "prepReasonOptional": "سبب التأخير (اختياري)",
+  "@prepReasonOptional": {
+    "description": "Merchant UI string prepReasonOptional"
+  },
+  "prepReasonShortcutsHint": "الاختصار يملأ السبب؛ يمكنك تعديله.",
+  "@prepReasonShortcutsHint": {
+    "description": "Merchant UI string prepReasonShortcutsHint"
+  },
+  "prepReasonFieldLabel": "السبب",
+  "@prepReasonFieldLabel": {
+    "description": "Merchant UI string prepReasonFieldLabel"
+  },
+  "prepReasonBusy": "إقبال كثيف",
+  "@prepReasonBusy": {
+    "description": "Merchant UI string prepReasonBusy"
+  },
+  "prepReasonLongPrep": "تحضير طويل",
+  "@prepReasonLongPrep": {
+    "description": "Merchant UI string prepReasonLongPrep"
+  },
+  "prepReasonMissingIngredient": "مكون ناقص",
+  "@prepReasonMissingIngredient": {
+    "description": "Merchant UI string prepReasonMissingIngredient"
+  },
+  "prepReasonOther": "سبب آخر",
+  "@prepReasonOther": {
+    "description": "Merchant UI string prepReasonOther"
+  },
+  "prepUpdateConfirm": "تحديث",
+  "@prepUpdateConfirm": {
+    "description": "Merchant UI string prepUpdateConfirm"
+  },
+  "orderStartPreparation": "بدء التحضير",
+  "@orderStartPreparation": {
+    "description": "Merchant UI string orderStartPreparation"
+  },
+  "orderMarkReady": "تعيين كجاهز",
+  "@orderMarkReady": {
+    "description": "Merchant UI string orderMarkReady"
+  },
+  "markReadyPackingTitle": "قائمة التعبئة",
+  "@markReadyPackingTitle": {
+    "description": "Merchant UI string markReadyPackingTitle"
+  },
+  "markReadyPackingHint": "تأكد أن جميع عناصر الطلب معبَّأة جيدًا قبل تعيينه جاهزًا.",
+  "@markReadyPackingHint": {
+    "description": "Merchant UI string markReadyPackingHint"
+  },
+  "markReadyConfirm": "تأكيد وتعيين كجاهز",
+  "@markReadyConfirm": {
+    "description": "Merchant UI string markReadyConfirm"
+  },
+  "orderReadyWaitingDelivery": "في انتظار استلام الطلب للتوصيل.",
+  "@orderReadyWaitingDelivery": {
+    "description": "Merchant UI string orderReadyWaitingDelivery"
+  },
+  "orderDeliveryStatusTitle": "التوصيل",
+  "@orderDeliveryStatusTitle": {
+    "description": "Merchant UI string orderDeliveryStatusTitle"
+  },
+  "orderDriverAssigned": "تم تعيين مندوب توصيل.",
+  "@orderDriverAssigned": {
+    "description": "Merchant UI string orderDriverAssigned"
+  },
+  "orderDriverCardTitle": "مندوب التوصيل المعيَّن",
+  "@orderDriverCardTitle": {
+    "description": "Merchant UI string orderDriverCardTitle"
+  },
+  "orderDriverStatusLabel": "الحالة",
+  "@orderDriverStatusLabel": {
+    "description": "Merchant UI string orderDriverStatusLabel"
+  },
+  "orderDriverEtaLabel": "الوصول المتوقع",
+  "@orderDriverEtaLabel": {
+    "description": "Merchant UI string orderDriverEtaLabel"
+  },
+  "orderDriverEtaUnavailable": "وقت الوصول غير متاح.",
+  "@orderDriverEtaUnavailable": {
+    "description": "Merchant UI string orderDriverEtaUnavailable"
+  },
+  "orderDriverContactUnavailable": "بيانات الاتصال بالمندوب غير متاحة.",
+  "@orderDriverContactUnavailable": {
+    "description": "Merchant UI string orderDriverContactUnavailable"
+  },
+  "orderDriverCall": "الاتصال بالمندوب",
+  "@orderDriverCall": {
+    "description": "Merchant UI string orderDriverCall"
+  },
+  "pickupHandoffTitle": "رمز الاستلام",
+  "@pickupHandoffTitle": {
+    "description": "Merchant UI string pickupHandoffTitle"
+  },
+  "pickupHandoffWaiting": "في انتظار تأكيد المندوب…",
+  "@pickupHandoffWaiting": {
+    "description": "Merchant UI string pickupHandoffWaiting"
+  },
+  "pickupHandoffInstruction1": "أبلغ بهذا الرمز فقط المندوب الظاهر أعلاه.",
+  "@pickupHandoffInstruction1": {
+    "description": "Merchant UI string pickupHandoffInstruction1"
+  },
+  "pickupHandoffInstruction2": "يجب على المندوب إدخال هذا الرمز في تطبيقه لتأكيد الاستلام.",
+  "@pickupHandoffInstruction2": {
+    "description": "Merchant UI string pickupHandoffInstruction2"
+  },
+  "pickupHandoffRegenerate": "إعادة توليد الرمز",
+  "@pickupHandoffRegenerate": {
+    "description": "Merchant UI string pickupHandoffRegenerate"
+  },
+  "pickupHandoffConfirmed": "تم تأكيد التسليم",
+  "@pickupHandoffConfirmed": {
+    "description": "Merchant UI string pickupHandoffConfirmed"
+  },
+  "pickupHandoffLoadError": "تعذّر تحميل رمز الاستلام.",
+  "@pickupHandoffLoadError": {
+    "description": "Merchant UI string pickupHandoffLoadError"
+  },
+  "pickupHandoffRetry": "إعادة المحاولة",
+  "@pickupHandoffRetry": {
+    "description": "Merchant UI string pickupHandoffRetry"
+  },
+  "orderHandoffUnsupported": "تأكيد التسليم الآمن غير متاح للتاجر في هذا الإصدار.",
+  "@orderHandoffUnsupported": {
+    "description": "Merchant UI string orderHandoffUnsupported"
+  },
+  "orderHistoryTitle": "سجل الطلب",
+  "@orderHistoryTitle": {
+    "description": "Merchant UI string orderHistoryTitle"
+  },
+  "orderReferenceLabel": "المرجع",
+  "@orderReferenceLabel": {
+    "description": "Merchant UI string orderReferenceLabel"
+  },
+  "orderCustomerLabel": "العميل",
+  "@orderCustomerLabel": {
+    "description": "Merchant UI string orderCustomerLabel"
+  },
+  "orderSummaryTitle": "ملخص الطلب",
+  "@orderSummaryTitle": {
+    "description": "Merchant UI string orderSummaryTitle"
+  },
+  "deliverySearching": "البحث عن مندوب",
+  "@deliverySearching": {
+    "description": "Merchant UI string deliverySearching"
+  },
+  "deliveryAssigned": "مندوب معيَّن",
+  "@deliveryAssigned": {
+    "description": "Merchant UI string deliveryAssigned"
+  },
+  "deliveryPickedUp": "تم الاستلام",
+  "@deliveryPickedUp": {
+    "description": "Merchant UI string deliveryPickedUp"
+  },
+  "deliveryArrived": "وصل إلى العميل",
+  "@deliveryArrived": {
+    "description": "Merchant UI string deliveryArrived"
+  },
+  "deliveryToPickup": "المندوب في الطريق إلى المؤسسة",
+  "@deliveryToPickup": {
+    "description": "Merchant UI string deliveryToPickup"
+  },
+  "deliveryAtPickup": "وصل المندوب إلى المؤسسة",
+  "@deliveryAtPickup": {
+    "description": "Merchant UI string deliveryAtPickup"
+  },
+  "deliveryInTransit": "في الطريق إلى العميل",
+  "@deliveryInTransit": {
+    "description": "Merchant UI string deliveryInTransit"
+  },
+  "deliveryFailed": "فشل التوصيل",
+  "@deliveryFailed": {
+    "description": "Merchant UI string deliveryFailed"
+  },
+  "deliveryCancelled": "أُلغي التوصيل",
+  "@deliveryCancelled": {
+    "description": "Merchant UI string deliveryCancelled"
+  },
+  "deliveryUnknown": "حالة التوصيل غير متاحة",
+  "@deliveryUnknown": {
+    "description": "Merchant UI string deliveryUnknown"
+  },
+  "deliveryDelivered": "تم التسليم",
+  "@deliveryDelivered": {
+    "description": "Merchant UI string deliveryDelivered"
+  },
+  "catalogTitle": "كتالوج",
+  "@catalogTitle": {
+    "description": "Merchant UI string catalogTitle"
+  },
+  "catalogTabProducts": "المنتجات",
+  "@catalogTabProducts": {
+    "description": "Merchant UI string catalogTabProducts"
+  },
+  "catalogTabCategories": "الفئات",
+  "@catalogTabCategories": {
+    "description": "Merchant UI string catalogTabCategories"
+  },
+  "catalogSearchHint": "البحث عن منتج…",
+  "@catalogSearchHint": {
+    "description": "Merchant UI string catalogSearchHint"
+  },
+  "catalogAllCategories": "الكل",
+  "@catalogAllCategories": {
+    "description": "Merchant UI string catalogAllCategories"
+  },
+  "catalogEmptyProducts": "لا يوجد أي منتج في هذا الكتالوج.",
+  "@catalogEmptyProducts": {
+    "description": "Merchant UI string catalogEmptyProducts"
+  },
+  "catalogEmptyCategories": "لا توجد أي فئة حالياً.",
+  "@catalogEmptyCategories": {
+    "description": "Merchant UI string catalogEmptyCategories"
+  },
+  "catalogLoadError": "تعذّر تحميل الكتالوج.",
+  "@catalogLoadError": {
+    "description": "Merchant UI string catalogLoadError"
+  },
+  "catalogInStock": "متوفر",
+  "@catalogInStock": {
+    "description": "Merchant UI string catalogInStock"
+  },
+  "catalogOutOfStock": "نفاد",
+  "@catalogOutOfStock": {
+    "description": "Merchant UI string catalogOutOfStock"
+  },
+  "catalogUnavailableSection": "إنشاء المنتجات وتحريرها المتقدم غير مفعّلين في هذه الشاشة.",
+  "@catalogUnavailableSection": {
+    "description": "Merchant UI string catalogUnavailableSection"
+  },
+  "reportsTitle": "التقارير",
+  "@reportsTitle": {
+    "description": "Merchant UI string reportsTitle"
+  },
+  "reportsPeriodToday": "اليوم",
+  "@reportsPeriodToday": {
+    "description": "Merchant UI string reportsPeriodToday"
+  },
+  "reportsPeriodYesterday": "أمس",
+  "@reportsPeriodYesterday": {
+    "description": "Merchant UI string reportsPeriodYesterday"
+  },
+  "reportsPeriodWeek": "هذا الأسبوع",
+  "@reportsPeriodWeek": {
+    "description": "Merchant UI string reportsPeriodWeek"
+  },
+  "reportsPeriodMonth": "هذا الشهر",
+  "@reportsPeriodMonth": {
+    "description": "Merchant UI string reportsPeriodMonth"
+  },
+  "reportsFinanceTitle": "التفاصيل المالية",
+  "@reportsFinanceTitle": {
+    "description": "Merchant UI string reportsFinanceTitle"
+  },
+  "reportsGrossSales": "المبيعات الإجمالية",
+  "@reportsGrossSales": {
+    "description": "Merchant UI string reportsGrossSales"
+  },
+  "reportsCommission": "عمولة SpeedyGo",
+  "@reportsCommission": {
+    "description": "Merchant UI string reportsCommission"
+  },
+  "reportsMerchantNet": "صافي التاجر",
+  "@reportsMerchantNet": {
+    "description": "Merchant UI string reportsMerchantNet"
+  },
+  "reportsDataUnavailable": "البيانات غير متاحة",
+  "@reportsDataUnavailable": {
+    "description": "Merchant UI string reportsDataUnavailable"
+  },
+  "reportsDataUnavailableShort": "—",
+  "@reportsDataUnavailableShort": {
+    "description": "Merchant UI string reportsDataUnavailableShort"
+  },
+  "reportsOrdersMetric": "الطلبات",
+  "@reportsOrdersMetric": {
+    "description": "Merchant UI string reportsOrdersMetric"
+  },
+  "reportsPrepTimeMetric": "متوسط وقت التحضير",
+  "@reportsPrepTimeMetric": {
+    "description": "Merchant UI string reportsPrepTimeMetric"
+  },
+  "reportsCancellationsMetric": "الإلغاءات",
+  "@reportsCancellationsMetric": {
+    "description": "Merchant UI string reportsCancellationsMetric"
+  },
+  "reportsTrendTitle": "اتجاه المبيعات",
+  "@reportsTrendTitle": {
+    "description": "Merchant UI string reportsTrendTitle"
+  },
+  "reportsTopProductsTitle": "المنتجات الأكثر مبيعاً",
+  "@reportsTopProductsTitle": {
+    "description": "Merchant UI string reportsTopProductsTitle"
+  },
+  "reportsTopProductsScreenTitle": "أفضل المنتجات",
+  "@reportsTopProductsScreenTitle": {
+    "description": "Merchant UI string reportsTopProductsScreenTitle"
+  },
+  "reportsCommissionMixedRates": "عمولة SpeedyGo (معدلات متغيرة)",
+  "@reportsCommissionMixedRates": {
+    "description": "Merchant UI string reportsCommissionMixedRates"
+  },
+  "reportsFinanceUnavailable": "البيانات غير متاحة",
+  "@reportsFinanceUnavailable": {
+    "description": "Merchant UI string reportsFinanceUnavailable"
+  },
+  "reportsRatingsTitle": "تقييمات العملاء",
+  "@reportsRatingsTitle": {
+    "description": "Merchant UI string reportsRatingsTitle"
+  },
+  "reportsRatingsEmpty": "لا يوجد أي تقييم حالياً.",
+  "@reportsRatingsEmpty": {
+    "description": "Merchant UI string reportsRatingsEmpty"
+  },
+  "reportsRatingsCount": "تقييم",
+  "@reportsRatingsCount": {
+    "description": "Merchant UI string reportsRatingsCount"
+  },
+  "reportsRatingsUnavailable": "البيانات غير متاحة",
+  "@reportsRatingsUnavailable": {
+    "description": "Merchant UI string reportsRatingsUnavailable"
+  },
+  "reportsSettlementsTitle": "التسويات",
+  "@reportsSettlementsTitle": {
+    "description": "Merchant UI string reportsSettlementsTitle"
+  },
+  "reportsSettlementsEmpty": "لا توجد أي تسوية حالياً.",
+  "@reportsSettlementsEmpty": {
+    "description": "Merchant UI string reportsSettlementsEmpty"
+  },
+  "reportsSettlementsForbidden": "التسويات مخصّصة للمالك أو المسؤول.",
+  "@reportsSettlementsForbidden": {
+    "description": "Merchant UI string reportsSettlementsForbidden"
+  },
+  "reportsLoadError": "تعذّر تحميل المؤشرات.",
+  "@reportsLoadError": {
+    "description": "Merchant UI string reportsLoadError"
+  },
+  "reportsTrendUnavailable": "البيانات غير متاحة",
+  "@reportsTrendUnavailable": {
+    "description": "Merchant UI string reportsTrendUnavailable"
+  },
+  "reportsTopProductsUnavailable": "البيانات غير متاحة",
+  "@reportsTopProductsUnavailable": {
+    "description": "Merchant UI string reportsTopProductsUnavailable"
+  },
+  "reportsPeriodCustom": "مخصّص",
+  "@reportsPeriodCustom": {
+    "description": "Merchant UI string reportsPeriodCustom"
+  },
+  "reportsPeriodSelectorLabel": "فترة التقرير",
+  "@reportsPeriodSelectorLabel": {
+    "description": "Merchant UI string reportsPeriodSelectorLabel"
+  },
+  "reportsCustomRangeTooLong": "الفترة المخصّصة محدودة بـ 93 يوماً.",
+  "@reportsCustomRangeTooLong": {
+    "description": "Merchant UI string reportsCustomRangeTooLong"
+  },
+  "reportsAverageBasketMetric": "متوسط سلة الشراء",
+  "@reportsAverageBasketMetric": {
+    "description": "Merchant UI string reportsAverageBasketMetric"
+  },
+  "reportsPrepTimeNotTracked": "غير متتبَّع",
+  "@reportsPrepTimeNotTracked": {
+    "description": "Merchant UI string reportsPrepTimeNotTracked"
+  },
+  "reportsMerchantDiscount": "خصم التاجر",
+  "@reportsMerchantDiscount": {
+    "description": "Merchant UI string reportsMerchantDiscount"
+  },
+  "reportsFinanceRestricted": "العمولة وصافي التاجر مخصّصان للمالك أو المسؤول.",
+  "@reportsFinanceRestricted": {
+    "description": "Merchant UI string reportsFinanceRestricted"
+  },
+  "reportsFinanceMissingSnapshot": "البيانات المالية غير متاحة لبعض طلبات الفترة.",
+  "@reportsFinanceMissingSnapshot": {
+    "description": "Merchant UI string reportsFinanceMissingSnapshot"
+  },
+  "reportsRefundsCompleted": "الاستردادات المُنجَزة",
+  "@reportsRefundsCompleted": {
+    "description": "Merchant UI string reportsRefundsCompleted"
+  },
+  "reportsRefundAdjustments": "التعديلات المسجّلة",
+  "@reportsRefundAdjustments": {
+    "description": "Merchant UI string reportsRefundAdjustments"
+  },
+  "reportsRefundsNote": "الاستردادات لا تخفّض المبيعات. لا تُحتسب عليكم سوى التعديلات المسجّلة على تسوياتكم.",
+  "@reportsRefundsNote": {
+    "description": "Merchant UI string reportsRefundsNote"
+  },
+  "reportsTrendEmpty": "لا توجد مبيعات خلال الفترة.",
+  "@reportsTrendEmpty": {
+    "description": "Merchant UI string reportsTrendEmpty"
+  },
+  "reportsTopProductsEmpty": "لم يُبَع أي منتج خلال الفترة.",
+  "@reportsTopProductsEmpty": {
+    "description": "Merchant UI string reportsTopProductsEmpty"
+  },
+  "reportsSeeAll": "عرض الكل",
+  "@reportsSeeAll": {
+    "description": "Merchant UI string reportsSeeAll"
+  },
+  "reportsSortOrders": "الطلبات",
+  "@reportsSortOrders": {
+    "description": "Merchant UI string reportsSortOrders"
+  },
+  "reportsSortRevenue": "رقم الأعمال",
+  "@reportsSortRevenue": {
+    "description": "Merchant UI string reportsSortRevenue"
+  },
+  "reportsTopSales": "أعلى المبيعات",
+  "@reportsTopSales": {
+    "description": "Merchant UI string reportsTopSales"
+  },
+  "reportsRankFirst": "رقم 1",
+  "@reportsRankFirst": {
+    "description": "Merchant UI string reportsRankFirst"
+  },
+  "reportsDeletedProduct": "منتج محذوف من الكتالوج",
+  "@reportsDeletedProduct": {
+    "description": "Merchant UI string reportsDeletedProduct"
+  },
+  "reportsSalesLoadError": "تعذّر تحميل المبيعات.",
+  "@reportsSalesLoadError": {
+    "description": "Merchant UI string reportsSalesLoadError"
+  },
+  "reportsTopProductsLoadError": "تعذّر تحميل المنتجات.",
+  "@reportsTopProductsLoadError": {
+    "description": "Merchant UI string reportsTopProductsLoadError"
+  },
+  "reportsOrderCount": "طلب واحد{count} طلبات",
+  "@reportsOrderCount": {
+    "description": "Merchant UI string reportsOrderCount",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "reportsTrendSemantics": "اتجاه المبيعات: {orders} طلبات، {gross}",
+  "@reportsTrendSemantics": {
+    "description": "Merchant UI string reportsTrendSemantics",
+    "placeholders": {
+      "orders": {
+        "type": "String"
+      },
+      "gross": {
+        "type": "String"
+      }
+    }
+  },
+  "reportsDailySummaryTitle": "الملخص اليومي",
+  "@reportsDailySummaryTitle": {
+    "description": "Merchant UI string reportsDailySummaryTitle"
+  },
+  "reportsDailySummaryShortcut": "الملخص اليومي",
+  "@reportsDailySummaryShortcut": {
+    "description": "Merchant UI string reportsDailySummaryShortcut"
+  },
+  "reportsDailySummaryLoadError": "تعذّر تحميل الملخص اليومي.",
+  "@reportsDailySummaryLoadError": {
+    "description": "Merchant UI string reportsDailySummaryLoadError"
+  },
+  "reportsDailySummaryEmpty": "لم يُنشأ أي طلب في هذا اليوم.",
+  "@reportsDailySummaryEmpty": {
+    "description": "Merchant UI string reportsDailySummaryEmpty"
+  },
+  "reportsDailySummarySalesKpi": "المبيعات",
+  "@reportsDailySummarySalesKpi": {
+    "description": "Merchant UI string reportsDailySummarySalesKpi"
+  },
+  "reportsDailySummaryOrdersKpi": "الطلبات",
+  "@reportsDailySummaryOrdersKpi": {
+    "description": "Merchant UI string reportsDailySummaryOrdersKpi"
+  },
+  "reportsDailySummaryPrepKpi": "وقت التحضير",
+  "@reportsDailySummaryPrepKpi": {
+    "description": "Merchant UI string reportsDailySummaryPrepKpi"
+  },
+  "reportsDailySummaryCancellationsKpi": "الإلغاءات",
+  "@reportsDailySummaryCancellationsKpi": {
+    "description": "Merchant UI string reportsDailySummaryCancellationsKpi"
+  },
+  "reportsDailySummaryBreakdownTitle": "توزيع الطلبات",
+  "@reportsDailySummaryBreakdownTitle": {
+    "description": "Merchant UI string reportsDailySummaryBreakdownTitle"
+  },
+  "reportsDailySummaryDelivered": "مُسلَّمة",
+  "@reportsDailySummaryDelivered": {
+    "description": "Merchant UI string reportsDailySummaryDelivered"
+  },
+  "reportsDailySummaryInProgress": "قيد التنفيذ",
+  "@reportsDailySummaryInProgress": {
+    "description": "Merchant UI string reportsDailySummaryInProgress"
+  },
+  "reportsDailySummaryCancelled": "ملغاة",
+  "@reportsDailySummaryCancelled": {
+    "description": "Merchant UI string reportsDailySummaryCancelled"
+  },
+  "reportsDailySummaryPrepEfficiencyTitle": "كفاءة التحضير",
+  "@reportsDailySummaryPrepEfficiencyTitle": {
+    "description": "Merchant UI string reportsDailySummaryPrepEfficiencyTitle"
+  },
+  "reportsDailySummaryPrepAverage": "المتوسط",
+  "@reportsDailySummaryPrepAverage": {
+    "description": "Merchant UI string reportsDailySummaryPrepAverage"
+  },
+  "reportsDailySummaryOnTimeRate": "في الوقت",
+  "@reportsDailySummaryOnTimeRate": {
+    "description": "Merchant UI string reportsDailySummaryOnTimeRate"
+  },
+  "reportsDailySummaryCancellationMotifs": "أسباب الإلغاء",
+  "@reportsDailySummaryCancellationMotifs": {
+    "description": "Merchant UI string reportsDailySummaryCancellationMotifs"
+  },
+  "reportsDailySummaryViewOrders": "عرض كل طلبات اليوم",
+  "@reportsDailySummaryViewOrders": {
+    "description": "Merchant UI string reportsDailySummaryViewOrders"
+  },
+  "reportsDailySummaryMinutes": "{minutes} د",
+  "@reportsDailySummaryMinutes": {
+    "description": "Merchant UI string reportsDailySummaryMinutes",
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "reportsDailySummaryOnTimePercent": "{percent} في الوقت",
+  "@reportsDailySummaryOnTimePercent": {
+    "description": "Merchant UI string reportsDailySummaryOnTimePercent",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "reportsDailySummaryTodayDate": "اليوم، {label}",
+  "@reportsDailySummaryTodayDate": {
+    "description": "Merchant UI string reportsDailySummaryTodayDate",
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deliveryImpactTitle": "التأثير على التوصيل",
+  "@deliveryImpactTitle": {
+    "description": "Merchant UI string deliveryImpactTitle"
+  },
+  "deliveryImpactMayDelayDriverAssignment": "قد يؤخّر التحضير البحث عن سائق.",
+  "@deliveryImpactMayDelayDriverAssignment": {
+    "description": "Merchant UI string deliveryImpactMayDelayDriverAssignment"
+  },
+  "deliveryImpactMayDelayPickup": "تمّ تعيين سائق؛ قد يتأخّر الاستلام.",
+  "@deliveryImpactMayDelayPickup": {
+    "description": "Merchant UI string deliveryImpactMayDelayPickup"
+  },
+  "deliveryImpactDriverWaiting": "السائق بانتظار الطلب.",
+  "@deliveryImpactDriverWaiting": {
+    "description": "Merchant UI string deliveryImpactDriverWaiting"
+  },
+  "deliveryImpactTimingUnavailable": "التأثير الدقيق على التوصيل غير متاح.",
+  "@deliveryImpactTimingUnavailable": {
+    "description": "Merchant UI string deliveryImpactTimingUnavailable"
+  },
+  "deliveryImpactLatestRevision": "آخر سبب: {reason}",
+  "@deliveryImpactLatestRevision": {
+    "description": "Merchant UI string deliveryImpactLatestRevision",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "rejectReasonProductUnavailable": "عدم توفّر المنتج",
+  "@rejectReasonProductUnavailable": {
+    "description": "Merchant UI string rejectReasonProductUnavailable"
+  },
+  "rejectReasonTooBusy": "ازدحام شديد",
+  "@rejectReasonTooBusy": {
+    "description": "Merchant UI string rejectReasonTooBusy"
+  },
+  "rejectReasonClosingSoon": "اقتراب الإغلاق",
+  "@rejectReasonClosingSoon": {
+    "description": "Merchant UI string rejectReasonClosingSoon"
+  },
+  "rejectReasonOther": "أخرى",
+  "@rejectReasonOther": {
+    "description": "Merchant UI string rejectReasonOther"
+  },
+  "rejectReasonTilesHint": "اختر سبباً ثم وضّح عند الحاجة.",
+  "@rejectReasonTilesHint": {
+    "description": "Merchant UI string rejectReasonTilesHint"
+  },
+  "catalogAddProduct": "إضافة منتج",
+  "@catalogAddProduct": {
+    "description": "Merchant UI string catalogAddProduct"
+  },
+  "catalogEditProduct": "تعديل المنتج",
+  "@catalogEditProduct": {
+    "description": "Merchant UI string catalogEditProduct"
+  },
+  "catalogProductDetail": "تفاصيل المنتج",
+  "@catalogProductDetail": {
+    "description": "Merchant UI string catalogProductDetail"
+  },
+  "catalogAddCategory": "إضافة فئة",
+  "@catalogAddCategory": {
+    "description": "Merchant UI string catalogAddCategory"
+  },
+  "catalogEditCategory": "تعديل الفئة",
+  "@catalogEditCategory": {
+    "description": "Merchant UI string catalogEditCategory"
+  },
+  "catalogProductName": "اسم المنتج (الفرنسية)",
+  "@catalogProductName": {
+    "description": "Merchant UI string catalogProductName"
+  },
+  "catalogProductDescription": "الوصف (الفرنسية)",
+  "@catalogProductDescription": {
+    "description": "Merchant UI string catalogProductDescription"
+  },
+  "catalogProductPrice": "السعر الأساسي",
+  "@catalogProductPrice": {
+    "description": "Merchant UI string catalogProductPrice"
+  },
+  "catalogProductCategory": "الفئة",
+  "@catalogProductCategory": {
+    "description": "Merchant UI string catalogProductCategory"
+  },
+  "catalogProductAvailable": "ظاهر في القائمة",
+  "@catalogProductAvailable": {
+    "description": "Merchant UI string catalogProductAvailable"
+  },
+  "catalogProductAvailableSub": "فعّل لإتاحة المنتج",
+  "@catalogProductAvailableSub": {
+    "description": "Merchant UI string catalogProductAvailableSub"
+  },
+  "catalogSaveProduct": "حفظ",
+  "@catalogSaveProduct": {
+    "description": "Merchant UI string catalogSaveProduct"
+  },
+  "catalogSaveProductEdits": "حفظ التعديلات",
+  "@catalogSaveProductEdits": {
+    "description": "Merchant UI string catalogSaveProductEdits"
+  },
+  "catalogPreview": "معاينة",
+  "@catalogPreview": {
+    "description": "Merchant UI string catalogPreview"
+  },
+  "catalogPreviewTitle": "معاينة المنتج",
+  "@catalogPreviewTitle": {
+    "description": "Merchant UI string catalogPreviewTitle"
+  },
+  "catalogPreviewUnavailable": "المعاينة غير متاحة حالياً.",
+  "@catalogPreviewUnavailable": {
+    "description": "Merchant UI string catalogPreviewUnavailable"
+  },
+  "catalogFieldRequired": "هذا الحقل إلزامي.",
+  "@catalogFieldRequired": {
+    "description": "Merchant UI string catalogFieldRequired"
+  },
+  "catalogPriceInvalid": "أدخل سعراً صالحاً.",
+  "@catalogPriceInvalid": {
+    "description": "Merchant UI string catalogPriceInvalid"
+  },
+  "catalogCategoryRequired": "اختر فئة.",
+  "@catalogCategoryRequired": {
+    "description": "Merchant UI string catalogCategoryRequired"
+  },
+  "catalogSaveRetryHint": "تعذّر الحفظ. تحقّق من الاتصال وأعد المحاولة.",
+  "@catalogSaveRetryHint": {
+    "description": "Merchant UI string catalogSaveRetryHint"
+  },
+  "catalogSectionInfo": "المعلومات",
+  "@catalogSectionInfo": {
+    "description": "Merchant UI string catalogSectionInfo"
+  },
+  "catalogSectionMedia": "الوسائط",
+  "@catalogSectionMedia": {
+    "description": "Merchant UI string catalogSectionMedia"
+  },
+  "catalogSectionPrice": "السعر والتحضير",
+  "@catalogSectionPrice": {
+    "description": "Merchant UI string catalogSectionPrice"
+  },
+  "catalogSectionConfig": "الإعدادات",
+  "@catalogSectionConfig": {
+    "description": "Merchant UI string catalogSectionConfig"
+  },
+  "catalogSectionAvailability": "التوفّر",
+  "@catalogSectionAvailability": {
+    "description": "Merchant UI string catalogSectionAvailability"
+  },
+  "catalogSectionImage": "صورة المنتج",
+  "@catalogSectionImage": {
+    "description": "Merchant UI string catalogSectionImage"
+  },
+  "catalogSectionGeneral": "معلومات عامة",
+  "@catalogSectionGeneral": {
+    "description": "Merchant UI string catalogSectionGeneral"
+  },
+  "catalogSectionPriceDetails": "السعر والتفاصيل",
+  "@catalogSectionPriceDetails": {
+    "description": "Merchant UI string catalogSectionPriceDetails"
+  },
+  "catalogOnlineBanner": "هذا الصنف متاح حالياً للعملاء عبر الإنترنت.",
+  "@catalogOnlineBanner": {
+    "description": "Merchant UI string catalogOnlineBanner"
+  },
+  "catalogOfflineBanner": "هذا الصنف غير ظاهر للعملاء.",
+  "@catalogOfflineBanner": {
+    "description": "Merchant UI string catalogOfflineBanner"
+  },
+  "catalogPriceWarning": "تُطبَّق تغييرات السعر والتوفّر فوراً على العملاء.",
+  "@catalogPriceWarning": {
+    "description": "Merchant UI string catalogPriceWarning"
+  },
+  "catalogImagePrimary": "الصورة الرئيسية",
+  "@catalogImagePrimary": {
+    "description": "Merchant UI string catalogImagePrimary"
+  },
+  "catalogImageAdd": "إضافة صورة",
+  "@catalogImageAdd": {
+    "description": "Merchant UI string catalogImageAdd"
+  },
+  "catalogImageHint": "JPG أو PNG (بحد أقصى 2 ميغابايت، وبحد أدنى 400 بكسل)",
+  "@catalogImageHint": {
+    "description": "Merchant UI string catalogImageHint"
+  },
+  "catalogImageChangePhoto": "تغيير الصورة",
+  "@catalogImageChangePhoto": {
+    "description": "Merchant UI string catalogImageChangePhoto"
+  },
+  "catalogInStockNow": "متوفر حالياً",
+  "@catalogInStockNow": {
+    "description": "Merchant UI string catalogInStockNow"
+  },
+  "catalogOutOfStockNow": "غير متوفر حالياً",
+  "@catalogOutOfStockNow": {
+    "description": "Merchant UI string catalogOutOfStockNow"
+  },
+  "catalogCurrencySuffix": "DZD",
+  "@catalogCurrencySuffix": {
+    "description": "Merchant UI string catalogCurrencySuffix"
+  },
+  "catalogDeleteProduct": "حذف",
+  "@catalogDeleteProduct": {
+    "description": "Merchant UI string catalogDeleteProduct"
+  },
+  "catalogNeedCategory": "أنشئ فئة أولاً لإضافة منتج.",
+  "@catalogNeedCategory": {
+    "description": "Merchant UI string catalogNeedCategory"
+  },
+  "catalogImagePick": "اختيار صورة",
+  "@catalogImagePick": {
+    "description": "Merchant UI string catalogImagePick"
+  },
+  "catalogImageFromGallery": "الاختيار من المعرض",
+  "@catalogImageFromGallery": {
+    "description": "Merchant UI string catalogImageFromGallery"
+  },
+  "catalogImageFromCamera": "التقاط صورة",
+  "@catalogImageFromCamera": {
+    "description": "Merchant UI string catalogImageFromCamera"
+  },
+  "catalogImagePluginRestart": "أعد تشغيل التطبيق لتفعيل اختيار الصور.",
+  "@catalogImagePluginRestart": {
+    "description": "Merchant UI string catalogImagePluginRestart"
+  },
+  "catalogImageFormatError": "تنسيق غير مدعوم. استخدم صورة JPG أو PNG.",
+  "@catalogImageFormatError": {
+    "description": "Merchant UI string catalogImageFormatError"
+  },
+  "catalogImageTooSmall": "الصورة صغيرة جداً. الحد الأدنى 400 × 400 بكسل.",
+  "@catalogImageTooSmall": {
+    "description": "Merchant UI string catalogImageTooSmall"
+  },
+  "catalogImageTooLarge": "الصورة كبيرة جداً. الحد الأقصى 2 ميغابايت بعد الضغط.",
+  "@catalogImageTooLarge": {
+    "description": "Merchant UI string catalogImageTooLarge"
+  },
+  "catalogImageChange": "تغيير الصورة",
+  "@catalogImageChange": {
+    "description": "Merchant UI string catalogImageChange"
+  },
+  "catalogImageRemove": "إزالة الصورة",
+  "@catalogImageRemove": {
+    "description": "Merchant UI string catalogImageRemove"
+  },
+  "catalogImageUploadError": "تعذّر إرسال الصورة.",
+  "@catalogImageUploadError": {
+    "description": "Merchant UI string catalogImageUploadError"
+  },
+  "catalogImageBindPartial": "تمّ حفظ المنتج، لكن تعذّر ربط الصورة. أعد المحاولة.",
+  "@catalogImageBindPartial": {
+    "description": "Merchant UI string catalogImageBindPartial"
+  },
+  "catalogImageRemoteUnavailable": "معاينة الصورة غير متاحة حالياً.",
+  "@catalogImageRemoteUnavailable": {
+    "description": "Merchant UI string catalogImageRemoteUnavailable"
+  },
+  "catalogSaveError": "تعذّر الحفظ. تحقّق من الاتصال وأعد المحاولة.",
+  "@catalogSaveError": {
+    "description": "Merchant UI string catalogSaveError"
+  },
+  "catalogDeleteConfirm": "حذف هذا المنتج؟ تُحفظ الطلبات السابقة.",
+  "@catalogDeleteConfirm": {
+    "description": "Merchant UI string catalogDeleteConfirm"
+  },
+  "catalogCategoryName": "اسم الفئة (الفرنسية)",
+  "@catalogCategoryName": {
+    "description": "Merchant UI string catalogCategoryName"
+  },
+  "catalogCategoryActive": "الظهور في القائمة",
+  "@catalogCategoryActive": {
+    "description": "Merchant UI string catalogCategoryActive"
+  },
+  "catalogCategoryActiveSub": "عرض هذه الفئة للعملاء",
+  "@catalogCategoryActiveSub": {
+    "description": "Merchant UI string catalogCategoryActiveSub"
+  },
+  "catalogCategoryDetails": "تفاصيل الفئة",
+  "@catalogCategoryDetails": {
+    "description": "Merchant UI string catalogCategoryDetails"
+  },
+  "catalogCategorySettings": "الإعدادات",
+  "@catalogCategorySettings": {
+    "description": "Merchant UI string catalogCategorySettings"
+  },
+  "catalogCategoryCancel": "إلغاء",
+  "@catalogCategoryCancel": {
+    "description": "Merchant UI string catalogCategoryCancel"
+  },
+  "catalogDeleteCategory": "حذف الفئة",
+  "@catalogDeleteCategory": {
+    "description": "Merchant UI string catalogDeleteCategory"
+  },
+  "catalogDeleteCategoryConfirm": "حذف هذه الفئة؟ يجب أن تكون فارغة.",
+  "@catalogDeleteCategoryConfirm": {
+    "description": "Merchant UI string catalogDeleteCategoryConfirm"
+  },
+  "catalogStaffReadOnly": "عرض فقط — التعديلات مخصّصة للمالك أو المسؤول.",
+  "@catalogStaffReadOnly": {
+    "description": "Merchant UI string catalogStaffReadOnly"
+  },
+  "catalogCategorySearchHint": "البحث عن فئة…",
+  "@catalogCategorySearchHint": {
+    "description": "Merchant UI string catalogCategorySearchHint"
+  },
+  "catalogFilterTooltip": "عوامل التصفية",
+  "@catalogFilterTooltip": {
+    "description": "Merchant UI string catalogFilterTooltip"
+  },
+  "catalogReorder": "إعادة الترتيب",
+  "@catalogReorder": {
+    "description": "Merchant UI string catalogReorder"
+  },
+  "catalogVisible": "ظاهر",
+  "@catalogVisible": {
+    "description": "Merchant UI string catalogVisible"
+  },
+  "catalogHidden": "مخفي",
+  "@catalogHidden": {
+    "description": "Merchant UI string catalogHidden"
+  },
+  "catalogMenuAvailability": "إدارة التوفّر",
+  "@catalogMenuAvailability": {
+    "description": "Merchant UI string catalogMenuAvailability"
+  },
+  "catalogMenuDelete": "حذف",
+  "@catalogMenuDelete": {
+    "description": "Merchant UI string catalogMenuDelete"
+  },
+  "catalogMenuDuplicate": "تكرار",
+  "@catalogMenuDuplicate": {
+    "description": "Merchant UI string catalogMenuDuplicate"
+  },
+  "duplicateTitle": "تكرار المنتج",
+  "@duplicateTitle": {
+    "description": "Merchant UI string duplicateTitle"
+  },
+  "duplicateSource": "المصدر",
+  "@duplicateSource": {
+    "description": "Merchant UI string duplicateSource"
+  },
+  "duplicateNewName": "الاسم الجديد للمنتج",
+  "@duplicateNewName": {
+    "description": "Merchant UI string duplicateNewName"
+  },
+  "duplicateNewNameHint": "يُرجى تعديل الاسم قبل نشر النسخة.",
+  "@duplicateNewNameHint": {
+    "description": "Merchant UI string duplicateNewNameHint"
+  },
+  "duplicateNamePlaceholder": "أدخل الاسم الجديد",
+  "@duplicateNamePlaceholder": {
+    "description": "Merchant UI string duplicateNamePlaceholder"
+  },
+  "duplicateClearName": "مسح الاسم",
+  "@duplicateClearName": {
+    "description": "Merchant UI string duplicateClearName"
+  },
+  "duplicateDefaultName": "نسخة من {name}",
+  "@duplicateDefaultName": {
+    "description": "Merchant UI string duplicateDefaultName",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicateCopied": "العناصر المنسوخة",
+  "@duplicateCopied": {
+    "description": "Merchant UI string duplicateCopied"
+  },
+  "duplicateImage": "صورة المنتج",
+  "@duplicateImage": {
+    "description": "Merchant UI string duplicateImage"
+  },
+  "duplicateNoImage": "صورة المنتج (لا توجد صورة)",
+  "@duplicateNoImage": {
+    "description": "Merchant UI string duplicateNoImage"
+  },
+  "duplicatePrice": "السعر ({price})",
+  "@duplicatePrice": {
+    "description": "Merchant UI string duplicatePrice",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicateOptions": "الخيارات والمتغيّرات",
+  "@duplicateOptions": {
+    "description": "Merchant UI string duplicateOptions"
+  },
+  "duplicateSaleUnits": "وحدات البيع (غير مُدارة)",
+  "@duplicateSaleUnits": {
+    "description": "Merchant UI string duplicateSaleUnits"
+  },
+  "duplicateNotCopiedLead": "حالة التوفّر وسجل المبيعات ",
+  "@duplicateNotCopiedLead": {
+    "description": "Merchant UI string duplicateNotCopiedLead"
+  },
+  "duplicateNotCopiedStrong": "لن يتم نسخها",
+  "@duplicateNotCopiedStrong": {
+    "description": "Merchant UI string duplicateNotCopiedStrong"
+  },
+  "duplicateNotCopiedTail": " إلى المنتج الجديد.",
+  "@duplicateNotCopiedTail": {
+    "description": "Merchant UI string duplicateNotCopiedTail"
+  },
+  "duplicateUnavailableInfo": "ستُنشأ النسخة غير متاحة حتى تتمكّن من مراجعتها قبل تفعيلها.",
+  "@duplicateUnavailableInfo": {
+    "description": "Merchant UI string duplicateUnavailableInfo"
+  },
+  "duplicateCancel": "إلغاء",
+  "@duplicateCancel": {
+    "description": "Merchant UI string duplicateCancel"
+  },
+  "duplicateCreate": "إنشاء النسخة",
+  "@duplicateCreate": {
+    "description": "Merchant UI string duplicateCreate"
+  },
+  "duplicateCreating": "جاري الإنشاء…",
+  "@duplicateCreating": {
+    "description": "Merchant UI string duplicateCreating"
+  },
+  "duplicateNameRequired": "لا يمكن أن يكون الاسم فارغًا.",
+  "@duplicateNameRequired": {
+    "description": "Merchant UI string duplicateNameRequired"
+  },
+  "duplicateNameTooLong": "الحد الأقصى 255 حرفًا.",
+  "@duplicateNameTooLong": {
+    "description": "Merchant UI string duplicateNameTooLong"
+  },
+  "duplicateNetworkError": "انقطع الاتصال. أعد المحاولة: لن تُنشأ النسخة مرّتين.",
+  "@duplicateNetworkError": {
+    "description": "Merchant UI string duplicateNetworkError"
+  },
+  "duplicateError": "تعذّر إنشاء النسخة ولم يُضف أي منتج. أعد المحاولة.",
+  "@duplicateError": {
+    "description": "Merchant UI string duplicateError"
+  },
+  "duplicateConflict": "طلب النسخ هذا استُخدم بالفعل في مكان آخر. أعد فتح الشاشة ثم حاول مجددًا.",
+  "@duplicateConflict": {
+    "description": "Merchant UI string duplicateConflict"
+  },
+  "duplicateNotFound": "المنتج غير موجود. حدّث الكتالوج.",
+  "@duplicateNotFound": {
+    "description": "Merchant UI string duplicateNotFound"
+  },
+  "duplicateCreated": "تم إنشاء النسخة — غير متاحة حتى مراجعَتك.",
+  "@duplicateCreated": {
+    "description": "Merchant UI string duplicateCreated"
+  },
+  "duplicateReplayed": "النسخة موجودة مسبقًا — جاري فتح المنتج.",
+  "@duplicateReplayed": {
+    "description": "Merchant UI string duplicateReplayed"
+  },
+  "duplicateForbiddenTitle": "النسخ مقصور على المالك أو المسؤول",
+  "@duplicateForbiddenTitle": {
+    "description": "Merchant UI string duplicateForbiddenTitle"
+  },
+  "duplicateBackToCatalog": "العودة إلى الكتالوج",
+  "@duplicateBackToCatalog": {
+    "description": "Merchant UI string duplicateBackToCatalog"
+  },
+  "catalogMenuViewCategory": "عرض الفئة",
+  "@catalogMenuViewCategory": {
+    "description": "Merchant UI string catalogMenuViewCategory"
+  },
+  "catalogBulkTooltip": "التوفّر الجماعي",
+  "@catalogBulkTooltip": {
+    "description": "Merchant UI string catalogBulkTooltip"
+  },
+  "catalogCategoryInUse": "لا تزال هذه الفئة تحتوي على منتجات. انقلها أو احذفها أولًا.",
+  "@catalogCategoryInUse": {
+    "description": "Merchant UI string catalogCategoryInUse"
+  },
+  "catalogProductInUse": "هذا المنتج وارد في طلبات سابقة: لا يمكن حذفه. ضعه في نفاد المخزون بدلًا من ذلك.",
+  "@catalogProductInUse": {
+    "description": "Merchant UI string catalogProductInUse"
+  },
+  "catalogVisibilityError": "تعذّر تعديل الظهور. أعد المحاولة.",
+  "@catalogVisibilityError": {
+    "description": "Merchant UI string catalogVisibilityError"
+  },
+  "catalogAvailabilityError": "تعذّر تعديل التوفّر. أعد المحاولة.",
+  "@catalogAvailabilityError": {
+    "description": "Merchant UI string catalogAvailabilityError"
+  },
+  "catalogNoResults": "لا يوجد منتج يطابق هذه عوامل التصفية.",
+  "@catalogNoResults": {
+    "description": "Merchant UI string catalogNoResults"
+  },
+  "catalogNoCategoryResults": "لا توجد فئة تطابق هذا البحث.",
+  "@catalogNoCategoryResults": {
+    "description": "Merchant UI string catalogNoCategoryResults"
+  },
+  "catalogFiltersTitle": "البحث وعوامل التصفية",
+  "@catalogFiltersTitle": {
+    "description": "Merchant UI string catalogFiltersTitle"
+  },
+  "catalogFiltersReset": "إعادة تعيين",
+  "@catalogFiltersReset": {
+    "description": "Merchant UI string catalogFiltersReset"
+  },
+  "catalogFiltersCategories": "الفئات",
+  "@catalogFiltersCategories": {
+    "description": "Merchant UI string catalogFiltersCategories"
+  },
+  "catalogFiltersStatus": "الحالة",
+  "@catalogFiltersStatus": {
+    "description": "Merchant UI string catalogFiltersStatus"
+  },
+  "catalogFiltersOutOfStock": "نفاد المخزون",
+  "@catalogFiltersOutOfStock": {
+    "description": "Merchant UI string catalogFiltersOutOfStock"
+  },
+  "catalogFiltersQuality": "مراقبة الجودة",
+  "@catalogFiltersQuality": {
+    "description": "Merchant UI string catalogFiltersQuality"
+  },
+  "catalogFiltersMissingImage": "صورة ناقصة",
+  "@catalogFiltersMissingImage": {
+    "description": "Merchant UI string catalogFiltersMissingImage"
+  },
+  "catalogFiltersPreview": "معاينة النتائج",
+  "@catalogFiltersPreview": {
+    "description": "Merchant UI string catalogFiltersPreview"
+  },
+  "catalogProductsCount": "{n} منتج{n} منتجات",
+  "@catalogProductsCount": {
+    "description": "Merchant UI string catalogProductsCount",
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogFiltersApply": "تطبيق عوامل التصفية",
+  "@catalogFiltersApply": {
+    "description": "Merchant UI string catalogFiltersApply"
+  },
+  "catalogCategoryDetailTitle": "تفاصيل الفئة",
+  "@catalogCategoryDetailTitle": {
+    "description": "Merchant UI string catalogCategoryDetailTitle"
+  },
+  "catalogDisplayOrder": "ترتيب العرض: {n}",
+  "@catalogDisplayOrder": {
+    "description": "Merchant UI string catalogDisplayOrder",
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogCategoryProducts": "المنتجات",
+  "@catalogCategoryProducts": {
+    "description": "Merchant UI string catalogCategoryProducts"
+  },
+  "catalogCategoryEmpty": "لا يوجد منتج في هذه الفئة.",
+  "@catalogCategoryEmpty": {
+    "description": "Merchant UI string catalogCategoryEmpty"
+  },
+  "catalogReorderTitle": "إعادة ترتيب الفئات",
+  "@catalogReorderTitle": {
+    "description": "Merchant UI string catalogReorderTitle"
+  },
+  "catalogReorderHint": "اسحب لتغيير ترتيب العرض.",
+  "@catalogReorderHint": {
+    "description": "Merchant UI string catalogReorderHint"
+  },
+  "catalogReorderSave": "حفظ الترتيب",
+  "@catalogReorderSave": {
+    "description": "Merchant UI string catalogReorderSave"
+  },
+  "catalogReorderSaved": "تم حفظ الترتيب.",
+  "@catalogReorderSaved": {
+    "description": "Merchant UI string catalogReorderSaved"
+  },
+  "catalogReorderPartial": "تعذّر نقل بعض الفئات. أعد المحاولة.",
+  "@catalogReorderPartial": {
+    "description": "Merchant UI string catalogReorderPartial"
+  },
+  "catalogAvailabilityTitle": "توفّر المنتج",
+  "@catalogAvailabilityTitle": {
+    "description": "Merchant UI string catalogAvailabilityTitle"
+  },
+  "catalogAvailabilityNote": "لا تؤثّر التعديلات على الطلبات المقبولة مسبقًا.",
+  "@catalogAvailabilityNote": {
+    "description": "Merchant UI string catalogAvailabilityNote"
+  },
+  "catalogAvailabilityState": "حالة التوفّر",
+  "@catalogAvailabilityState": {
+    "description": "Merchant UI string catalogAvailabilityState"
+  },
+  "catalogAvailableOption": "متاح",
+  "@catalogAvailableOption": {
+    "description": "Merchant UI string catalogAvailableOption"
+  },
+  "catalogAvailableOptionSub": "ظاهر وقابل للطلب فورًا.",
+  "@catalogAvailableOptionSub": {
+    "description": "Merchant UI string catalogAvailableOptionSub"
+  },
+  "catalogOutOfStockOptionSub": "يُعرض كغير متاح حتى إعادة التفعيل يدويًا.",
+  "@catalogOutOfStockOptionSub": {
+    "description": "Merchant UI string catalogOutOfStockOptionSub"
+  },
+  "catalogAvailabilitySave": "حفظ التوفّر",
+  "@catalogAvailabilitySave": {
+    "description": "Merchant UI string catalogAvailabilitySave"
+  },
+  "catalogAvailabilitySaved": "تم حفظ التوفّر.",
+  "@catalogAvailabilitySaved": {
+    "description": "Merchant UI string catalogAvailabilitySaved"
+  },
+  "catalogBulkTitle": "التوفّر الجماعي",
+  "@catalogBulkTitle": {
+    "description": "Merchant UI string catalogBulkTitle"
+  },
+  "catalogBulkNote": "تُطبَّق التعديلات فورًا على تطبيق العميل. ولا تؤثّر على الطلبات الجارية.",
+  "@catalogBulkNote": {
+    "description": "Merchant UI string catalogBulkNote"
+  },
+  "catalogBulkSelection": "تحديد متعدّد",
+  "@catalogBulkSelection": {
+    "description": "Merchant UI string catalogBulkSelection"
+  },
+  "catalogBulkNewStatus": "الحالة الجديدة",
+  "@catalogBulkNewStatus": {
+    "description": "Merchant UI string catalogBulkNewStatus"
+  },
+  "catalogBulkSelectAll": "تحديد الكل",
+  "@catalogBulkSelectAll": {
+    "description": "Merchant UI string catalogBulkSelectAll"
+  },
+  "catalogBulkClear": "مسح التحديد",
+  "@catalogBulkClear": {
+    "description": "Merchant UI string catalogBulkClear"
+  },
+  "catalogBulkApply": "تطبيق",
+  "@catalogBulkApply": {
+    "description": "Merchant UI string catalogBulkApply"
+  },
+  "catalogBulkDone": "تم تحديث {n} منتج.تم تحديث {n} منتجات.",
+  "@catalogBulkDone": {
+    "description": "Merchant UI string catalogBulkDone",
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogBulkFailed": "تعذّر تحديث {n} منتج.تعذّر تحديث {n} منتجات.",
+  "@catalogBulkFailed": {
+    "description": "Merchant UI string catalogBulkFailed",
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogUncategorized": "بدون فئة",
+  "@catalogUncategorized": {
+    "description": "Merchant UI string catalogUncategorized"
+  },
+  "catalogDeleteTitle": "حذف المنتج",
+  "@catalogDeleteTitle": {
+    "description": "Merchant UI string catalogDeleteTitle"
+  },
+  "catalogDeleteWarningTitle": "لا يمكن حذف منتج سبق طلبه.",
+  "@catalogDeleteWarningTitle": {
+    "description": "Merchant UI string catalogDeleteWarningTitle"
+  },
+  "catalogDeleteWarningBody": "تحتفظ الطلبات السابقة بنسختها من المنتج. إذا رُفض الحذف، ضع المنتج في نفاد المخزون.",
+  "@catalogDeleteWarningBody": {
+    "description": "Merchant UI string catalogDeleteWarningBody"
+  },
+  "catalogDeleteHideOption": "وضع في نفاد المخزون",
+  "@catalogDeleteHideOption": {
+    "description": "Merchant UI string catalogDeleteHideOption"
+  },
+  "catalogDeleteHideOptionSub": "يبقى المنتج محفوظًا وقابلًا للتعديل، لكنه لم يعد قابلًا للطلب.",
+  "@catalogDeleteHideOptionSub": {
+    "description": "Merchant UI string catalogDeleteHideOptionSub"
+  },
+  "catalogDeleteRecommended": "موصى به",
+  "@catalogDeleteRecommended": {
+    "description": "Merchant UI string catalogDeleteRecommended"
+  },
+  "catalogDeleteHardOption": "حذف نهائي",
+  "@catalogDeleteHardOption": {
+    "description": "Merchant UI string catalogDeleteHardOption"
+  },
+  "catalogDeleteHardOptionSub": "يزيل المنتج ومتغيّراته وإضافاته. غير ممكن إن وُجد في طلب.",
+  "@catalogDeleteHardOptionSub": {
+    "description": "Merchant UI string catalogDeleteHardOptionSub"
+  },
+  "catalogDeleteHardConfirm": "حذف نهائي",
+  "@catalogDeleteHardConfirm": {
+    "description": "Merchant UI string catalogDeleteHardConfirm"
+  },
+  "catalogDeleted": "تم حذف المنتج.",
+  "@catalogDeleted": {
+    "description": "Merchant UI string catalogDeleted"
+  },
+  "catalogMarkedOutOfStock": "تم وضع المنتج في نفاد المخزون.",
+  "@catalogMarkedOutOfStock": {
+    "description": "Merchant UI string catalogMarkedOutOfStock"
+  },
+  "catalogVariantsTitle": "المتغيّرات الإلزامية",
+  "@catalogVariantsTitle": {
+    "description": "Merchant UI string catalogVariantsTitle"
+  },
+  "catalogVariantsInfo": "تتطلّب المتغيّرات الإلزامية من العميل اختيار خيار قبل إضافة المنتج إلى السلة.",
+  "@catalogVariantsInfo": {
+    "description": "Merchant UI string catalogVariantsInfo"
+  },
+  "catalogVariantsSubtitle": "اضبط الخيارات المطلوبة قبل الإضافة إلى السلة.",
+  "@catalogVariantsSubtitle": {
+    "description": "Merchant UI string catalogVariantsSubtitle"
+  },
+  "catalogExtrasTitle": "الإضافات الاختيارية",
+  "@catalogExtrasTitle": {
+    "description": "Merchant UI string catalogExtrasTitle"
+  },
+  "catalogExtrasSubtitle": "خيارات اختيارية يمكن للعميل إضافتها.",
+  "@catalogExtrasSubtitle": {
+    "description": "Merchant UI string catalogExtrasSubtitle"
+  },
+  "catalogRequiredTag": "إلزامي",
+  "@catalogRequiredTag": {
+    "description": "Merchant UI string catalogRequiredTag"
+  },
+  "catalogSingleChoice": "اختيار واحد",
+  "@catalogSingleChoice": {
+    "description": "Merchant UI string catalogSingleChoice"
+  },
+  "catalogAddChoice": "إضافة اختيار",
+  "@catalogAddChoice": {
+    "description": "Merchant UI string catalogAddChoice"
+  },
+  "catalogAddOption": "إضافة خيار",
+  "@catalogAddOption": {
+    "description": "Merchant UI string catalogAddOption"
+  },
+  "catalogAddVariantGroup": "إضافة مجموعة متغيّرات",
+  "@catalogAddVariantGroup": {
+    "description": "Merchant UI string catalogAddVariantGroup"
+  },
+  "catalogAddExtrasGroup": "مجموعة إضافات جديدة",
+  "@catalogAddExtrasGroup": {
+    "description": "Merchant UI string catalogAddExtrasGroup"
+  },
+  "catalogNewGroup": "مجموعة جديدة",
+  "@catalogNewGroup": {
+    "description": "Merchant UI string catalogNewGroup"
+  },
+  "catalogGroupName": "اسم المجموعة (فرنسي)",
+  "@catalogGroupName": {
+    "description": "Merchant UI string catalogGroupName"
+  },
+  "catalogGroupNameHint": "مثال: صلصة",
+  "@catalogGroupNameHint": {
+    "description": "Merchant UI string catalogGroupNameHint"
+  },
+  "catalogOptionName": "اسم الاختيار",
+  "@catalogOptionName": {
+    "description": "Merchant UI string catalogOptionName"
+  },
+  "catalogOptionPrice": "السعر (+)",
+  "@catalogOptionPrice": {
+    "description": "Merchant UI string catalogOptionPrice"
+  },
+  "catalogMaxSelectionsLabel": "الحد الأقصى للاختيارات",
+  "@catalogMaxSelectionsLabel": {
+    "description": "Merchant UI string catalogMaxSelectionsLabel"
+  },
+  "catalogGroupRequiredSwitch": "اختيار إلزامي",
+  "@catalogGroupRequiredSwitch": {
+    "description": "Merchant UI string catalogGroupRequiredSwitch"
+  },
+  "catalogGroupRequiredSub": "يجب على العميل اختيار خيار.",
+  "@catalogGroupRequiredSub": {
+    "description": "Merchant UI string catalogGroupRequiredSub"
+  },
+  "catalogGroupSave": "حفظ المجموعة",
+  "@catalogGroupSave": {
+    "description": "Merchant UI string catalogGroupSave"
+  },
+  "catalogGroupDelete": "حذف المجموعة",
+  "@catalogGroupDelete": {
+    "description": "Merchant UI string catalogGroupDelete"
+  },
+  "catalogGroupDeleteConfirm": "حذف هذه المجموعة وجميع خياراتها؟ الطلبات السابقة لن تتغيّر.",
+  "@catalogGroupDeleteConfirm": {
+    "description": "Merchant UI string catalogGroupDeleteConfirm"
+  },
+  "catalogOptionDelete": "حذف الخيار",
+  "@catalogOptionDelete": {
+    "description": "Merchant UI string catalogOptionDelete"
+  },
+  "catalogOptionAvailable": "الخيار متاح",
+  "@catalogOptionAvailable": {
+    "description": "Merchant UI string catalogOptionAvailable"
+  },
+  "catalogOptionsEmpty": "لا توجد اختيارات حاليًا.",
+  "@catalogOptionsEmpty": {
+    "description": "Merchant UI string catalogOptionsEmpty"
+  },
+  "catalogGroupsLoadError": "تعذّر تحميل خيارات المنتج.",
+  "@catalogGroupsLoadError": {
+    "description": "Merchant UI string catalogGroupsLoadError"
+  },
+  "catalogGroupInvalid": "تحقّق من عدد الاختيارات (الحد الأدنى ≤ الحد الأقصى).",
+  "@catalogGroupInvalid": {
+    "description": "Merchant UI string catalogGroupInvalid"
+  },
+  "catalogSaveFirstForOptions": "احفظ المنتج لضبط متغيّراته وإضافاته.",
+  "@catalogSaveFirstForOptions": {
+    "description": "Merchant UI string catalogSaveFirstForOptions"
+  },
+  "catalogGroupsCount": "لا توجد مجموعاتمجموعة واحدة{n} مجموعات",
+  "@catalogGroupsCount": {
+    "description": "Merchant UI string catalogGroupsCount",
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogLastUpdated": "آخر تحديث",
+  "@catalogLastUpdated": {
+    "description": "Merchant UI string catalogLastUpdated"
+  },
+  "catalogCustomerPreview": "معاينة العميل",
+  "@catalogCustomerPreview": {
+    "description": "Merchant UI string catalogCustomerPreview"
+  },
+  "catalogEditGroup": "تعديل المجموعة",
+  "@catalogEditGroup": {
+    "description": "Merchant UI string catalogEditGroup"
+  },
+  "catalogProductDetailTitle": "تفاصيل المنتج",
+  "@catalogProductDetailTitle": {
+    "description": "Merchant UI string catalogProductDetailTitle"
+  },
+  "catalogDetailInfo": "المعلومات",
+  "@catalogDetailInfo": {
+    "description": "Merchant UI string catalogDetailInfo"
+  },
+  "catalogDetailName": "الاسم (فرنسي)",
+  "@catalogDetailName": {
+    "description": "Merchant UI string catalogDetailName"
+  },
+  "catalogDetailPricing": "التسعير",
+  "@catalogDetailPricing": {
+    "description": "Merchant UI string catalogDetailPricing"
+  },
+  "catalogDetailPrice": "السعر الأساسي",
+  "@catalogDetailPrice": {
+    "description": "Merchant UI string catalogDetailPrice"
+  },
+  "catalogDetailAppearance": "المظهر في التطبيق",
+  "@catalogDetailAppearance": {
+    "description": "Merchant UI string catalogDetailAppearance"
+  },
+  "catalogDetailAvailable": "المنتج متاح",
+  "@catalogDetailAvailable": {
+    "description": "Merchant UI string catalogDetailAvailable"
+  },
+  "catalogDetailNoDescription": "لا يوجد وصف.",
+  "@catalogDetailNoDescription": {
+    "description": "Merchant UI string catalogDetailNoDescription"
+  },
+  "catalogDetailNoOptions": "لم يُضبط أي متغيّر أو إضافة.",
+  "@catalogDetailNoOptions": {
+    "description": "Merchant UI string catalogDetailNoOptions"
+  },
+  "catalogRequiredSummary": "إلزامي · {rule}",
+  "@catalogRequiredSummary": {
+    "description": "Merchant UI string catalogRequiredSummary",
+    "placeholders": {
+      "rule": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogOptionalSummary": "اختياري · الحد الأقصى {max}",
+  "@catalogOptionalSummary": {
+    "description": "Merchant UI string catalogOptionalSummary",
+    "placeholders": {
+      "max": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogCropTitle": "صورة المنتج",
+  "@catalogCropTitle": {
+    "description": "Merchant UI string catalogCropTitle"
+  },
+  "catalogCropTipsTitle": "نصائح لصورة جيدة",
+  "@catalogCropTipsTitle": {
+    "description": "Merchant UI string catalogCropTipsTitle"
+  },
+  "catalogCropTip1": "استخدم خلفية محايدة ونظيفة (أبيض أو خشب فاتح).",
+  "@catalogCropTip1": {
+    "description": "Merchant UI string catalogCropTip1"
+  },
+  "catalogCropTip2": "تأكّد من إضاءة جيدة، ويفضّل أن تكون طبيعية.",
+  "@catalogCropTip2": {
+    "description": "Merchant UI string catalogCropTip2"
+  },
+  "catalogCropTip3": "ضع المنتج في وسط الإطار.ضع المنتج (« {name} ») في وسط الإطار.",
+  "@catalogCropTip3": {
+    "description": "Merchant UI string catalogCropTip3",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "catalogCropFormat": "الصيغة: JPG، PNG (حد أقصى 2 ميغابايت، حد أدنى 400 بكسل)",
+  "@catalogCropFormat": {
+    "description": "Merchant UI string catalogCropFormat"
+  },
+  "catalogCropUse": "استخدام هذه الصورة",
+  "@catalogCropUse": {
+    "description": "Merchant UI string catalogCropUse"
+  },
+  "catalogCropRotate": "تدوير",
+  "@catalogCropRotate": {
+    "description": "Merchant UI string catalogCropRotate"
+  },
+  "catalogCropZoom": "تكبير",
+  "@catalogCropZoom": {
+    "description": "Merchant UI string catalogCropZoom"
+  },
+  "catalogCropRemove": "حذف الصورة",
+  "@catalogCropRemove": {
+    "description": "Merchant UI string catalogCropRemove"
+  },
+  "contractFieldUnavailable": "غير متاح حاليًا",
+  "@contractFieldUnavailable": {
+    "description": "Merchant UI string contractFieldUnavailable"
+  },
+  "catalogFieldNameAr": "اسم المنتج (عربي)",
+  "@catalogFieldNameAr": {
+    "description": "Merchant UI string catalogFieldNameAr"
+  },
+  "catalogFieldDescAr": "الوصف (عربي)",
+  "@catalogFieldDescAr": {
+    "description": "Merchant UI string catalogFieldDescAr"
+  },
+  "catalogFieldPrepTime": "وقت التحضير",
+  "@catalogFieldPrepTime": {
+    "description": "Merchant UI string catalogFieldPrepTime"
+  },
+  "catalogFieldSaleUnit": "وحدة البيع",
+  "@catalogFieldSaleUnit": {
+    "description": "Merchant UI string catalogFieldSaleUnit"
+  },
+  "sellingUnitTitle": "وحدات البيع",
+  "@sellingUnitTitle": {
+    "description": "Merchant UI string sellingUnitTitle"
+  },
+  "sellingUnitCalloutTitle": "دقة الوحدة",
+  "@sellingUnitCalloutTitle": {
+    "description": "Merchant UI string sellingUnitCalloutTitle"
+  },
+  "sellingUnitCalloutBody": "اختر الوحدة الدقيقة لتجنّب أي لبس أثناء التحضير. ستُعرض هذه الوحدة للعملاء (مثال: 1 500 DZD / طبق). الكميات أعداد صحيحة: لا بيع بالوزن.",
+  "@sellingUnitCalloutBody": {
+    "description": "Merchant UI string sellingUnitCalloutBody"
+  },
+  "sellingUnitPreviewLabel": "معاينة العميل",
+  "@sellingUnitPreviewLabel": {
+    "description": "Merchant UI string sellingUnitPreviewLabel"
+  },
+  "sellingUnitPreviewNoPrice": "— DZD",
+  "@sellingUnitPreviewNoPrice": {
+    "description": "Merchant UI string sellingUnitPreviewNoPrice"
+  },
+  "sellingUnitCommon": "الوحدات الشائعة",
+  "@sellingUnitCommon": {
+    "description": "Merchant UI string sellingUnitCommon"
+  },
+  "sellingUnitPackaging": "التعبئة",
+  "@sellingUnitPackaging": {
+    "description": "Merchant UI string sellingUnitPackaging"
+  },
+  "sellingUnitNone": "بدون وحدة",
+  "@sellingUnitNone": {
+    "description": "Merchant UI string sellingUnitNone"
+  },
+  "sellingUnitNoneSub": "يُعرض السعر دون وحدة.",
+  "@sellingUnitNoneSub": {
+    "description": "Merchant UI string sellingUnitNoneSub"
+  },
+  "sellingUnitNotSet": "غير محدّدة",
+  "@sellingUnitNotSet": {
+    "description": "Merchant UI string sellingUnitNotSet"
+  },
+  "sellingUnitCustomName": "اسم الوحدة (فرنسي)",
+  "@sellingUnitCustomName": {
+    "description": "Merchant UI string sellingUnitCustomName"
+  },
+  "sellingUnitCustomHint": "مثال: كورنيه",
+  "@sellingUnitCustomHint": {
+    "description": "Merchant UI string sellingUnitCustomHint"
+  },
+  "sellingUnitApply": "تطبيق الوحدة",
+  "@sellingUnitApply": {
+    "description": "Merchant UI string sellingUnitApply"
+  },
+  "sellingUnitReadOnly": "يمكن للمالك والمديرين فقط تعديل وحدة البيع.",
+  "@sellingUnitReadOnly": {
+    "description": "Merchant UI string sellingUnitReadOnly"
+  },
+  "catalogFieldVariants": "المتغيّرات الإلزامية",
+  "@catalogFieldVariants": {
+    "description": "Merchant UI string catalogFieldVariants"
+  },
+  "catalogFieldExtras": "الإضافات الاختيارية",
+  "@catalogFieldExtras": {
+    "description": "Merchant UI string catalogFieldExtras"
+  },
+  "catalogFieldCategoryNameAr": "اسم الفئة (عربي)",
+  "@catalogFieldCategoryNameAr": {
+    "description": "Merchant UI string catalogFieldCategoryNameAr"
+  },
+  "catalogFieldCategoryDesc": "وصف الفئة (اختياري)",
+  "@catalogFieldCategoryDesc": {
+    "description": "Merchant UI string catalogFieldCategoryDesc"
+  },
+  "storeCoverTitle": "الشعار والغلاف",
+  "@storeCoverTitle": {
+    "description": "Merchant UI string storeCoverTitle"
+  },
+  "storeCoverPick": "اختيار غلاف",
+  "@storeCoverPick": {
+    "description": "Merchant UI string storeCoverPick"
+  },
+  "storeCoverReplace": "استبدال",
+  "@storeCoverReplace": {
+    "description": "Merchant UI string storeCoverReplace"
+  },
+  "storeCoverSave": "حفظ التعديلات",
+  "@storeCoverSave": {
+    "description": "Merchant UI string storeCoverSave"
+  },
+  "storeCoverRemove": "حذف",
+  "@storeCoverRemove": {
+    "description": "Merchant UI string storeCoverRemove"
+  },
+  "storeCoverSection": "صورة الغلاف",
+  "@storeCoverSection": {
+    "description": "Merchant UI string storeCoverSection"
+  },
+  "storeCoverSectionHint": "يجب أن تمثّل صورة الغلاف مؤسستك.",
+  "@storeCoverSectionHint": {
+    "description": "Merchant UI string storeCoverSectionHint"
+  },
+  "storeLogoSection": "شعار المتجر",
+  "@storeLogoSection": {
+    "description": "Merchant UI string storeLogoSection"
+  },
+  "storeLogoSectionHint": "يجب أن يبقى الشعار واضحًا حتى بالحجم الصغير.",
+  "@storeLogoSectionHint": {
+    "description": "Merchant UI string storeLogoSectionHint"
+  },
+  "storeLogoEdit": "تعديل",
+  "@storeLogoEdit": {
+    "description": "Merchant UI string storeLogoEdit"
+  },
+  "storeLogoAdd": "إضافة",
+  "@storeLogoAdd": {
+    "description": "Merchant UI string storeLogoAdd"
+  },
+  "storeLogoRemove": "حذف",
+  "@storeLogoRemove": {
+    "description": "Merchant UI string storeLogoRemove"
+  },
+  "storeLogoEmpty": "لا يوجد شعار",
+  "@storeLogoEmpty": {
+    "description": "Merchant UI string storeLogoEmpty"
+  },
+  "storeLogoPending": "تم اختيار شعار جديد — احفظ لتطبيقه.",
+  "@storeLogoPending": {
+    "description": "Merchant UI string storeLogoPending"
+  },
+  "storeLogoTooSmall": "الشعار صغير جدًا. الحد الأدنى 128 × 128 بكسل.",
+  "@storeLogoTooSmall": {
+    "description": "Merchant UI string storeLogoTooSmall"
+  },
+  "storeLogoTooLarge": "الشعار كبير جدًا. الحد الأقصى 1 ميغابايت بعد الضغط.",
+  "@storeLogoTooLarge": {
+    "description": "Merchant UI string storeLogoTooLarge"
+  },
+  "storeLogoUploadError": "تعذّر رفع الشعار.",
+  "@storeLogoUploadError": {
+    "description": "Merchant UI string storeLogoUploadError"
+  },
+  "storeLogoBindPartial": "نجح الرفع، لكن تعذّر ربط الشعار. أعد المحاولة.",
+  "@storeLogoBindPartial": {
+    "description": "Merchant UI string storeLogoBindPartial"
+  },
+  "storeLogoRemoved": "تم حذف الشعار.",
+  "@storeLogoRemoved": {
+    "description": "Merchant UI string storeLogoRemoved"
+  },
+  "storeLogoRemoveError": "تعذّر حذف الشعار. أعد المحاولة.",
+  "@storeLogoRemoveError": {
+    "description": "Merchant UI string storeLogoRemoveError"
+  },
+  "storeLogoRemoteUnavailable": "معاينة الشعار غير متاحة حاليًا.",
+  "@storeLogoRemoteUnavailable": {
+    "description": "Merchant UI string storeLogoRemoteUnavailable"
+  },
+  "storeMediaPartialSaved": "تم حفظ الشعار، لكن الغلاف فشل. أعد المحاولة.",
+  "@storeMediaPartialSaved": {
+    "description": "Merchant UI string storeMediaPartialSaved"
+  },
+  "storeCoverHint": "JPEG أو PNG، حد أقصى 2 ميغابايت.",
+  "@storeCoverHint": {
+    "description": "Merchant UI string storeCoverHint"
+  },
+  "storeCoverUploadError": "تعذّر إرسال صورة الغلاف.",
+  "@storeCoverUploadError": {
+    "description": "Merchant UI string storeCoverUploadError"
+  },
+  "storeCoverBindPartial": "تم الإرسال بنجاح، لكن تعذّر ربط صورة الغلاف. يُرجى المحاولة مجددًا.",
+  "@storeCoverBindPartial": {
+    "description": "Merchant UI string storeCoverBindPartial"
+  },
+  "storeCoverRemoteUnavailable": "معاينة صورة الغلاف غير متاحة حاليًا.",
+  "@storeCoverRemoteUnavailable": {
+    "description": "Merchant UI string storeCoverRemoteUnavailable"
+  },
+  "storeCustomerPreviewTitle": "معاينة العميل",
+  "@storeCustomerPreviewTitle": {
+    "description": "Merchant UI string storeCustomerPreviewTitle"
+  },
+  "storeCustomerPreviewHint": "الملاحظات والمدة التقديرية غير متاحة حاليًا.",
+  "@storeCustomerPreviewHint": {
+    "description": "Merchant UI string storeCustomerPreviewHint"
+  },
+  "storeAddressTitle": "الاتصال وعنوان المتجر",
+  "@storeAddressTitle": {
+    "description": "Merchant UI string storeAddressTitle"
+  },
+  "storeAddressSave": "حفظ التعديلات",
+  "@storeAddressSave": {
+    "description": "Merchant UI string storeAddressSave"
+  },
+  "storeAddressConfirmMap": "تعديل على الخريطة",
+  "@storeAddressConfirmMap": {
+    "description": "Merchant UI string storeAddressConfirmMap"
+  },
+  "storeAddressSaveError": "تعذّر الحفظ. تحقّق من الاتصال وحاول مجددًا.",
+  "@storeAddressSaveError": {
+    "description": "Merchant UI string storeAddressSaveError"
+  },
+  "storeAddressBanner": "قد يؤثّر تعديل العنوان على مناطق التوصيل والعمليات الجارية.",
+  "@storeAddressBanner": {
+    "description": "Merchant UI string storeAddressBanner"
+  },
+  "storeAddressCoordsSection": "الإحداثيات",
+  "@storeAddressCoordsSection": {
+    "description": "Merchant UI string storeAddressCoordsSection"
+  },
+  "storeAddressSection": "العنوان",
+  "@storeAddressSection": {
+    "description": "Merchant UI string storeAddressSection"
+  },
+  "storeAddressPhone": "رقم الهاتف",
+  "@storeAddressPhone": {
+    "description": "Merchant UI string storeAddressPhone"
+  },
+  "storeAddressPhoneHint": "الرقم المُبلَّغ لسائقي التوصيل عند الاستلام.",
+  "@storeAddressPhoneHint": {
+    "description": "Merchant UI string storeAddressPhoneHint"
+  },
+  "storeAddressDetailed": "العنوان التفصيلي",
+  "@storeAddressDetailed": {
+    "description": "Merchant UI string storeAddressDetailed"
+  },
+  "storeAddressLocationSummary": "الموقع مؤكَّد",
+  "@storeAddressLocationSummary": {
+    "description": "Merchant UI string storeAddressLocationSummary"
+  },
+  "storeAddressPublicContact": "جهة اتصال عامة (اختياري)",
+  "@storeAddressPublicContact": {
+    "description": "Merchant UI string storeAddressPublicContact"
+  },
+  "storeAddressWilaya": "الولاية",
+  "@storeAddressWilaya": {
+    "description": "Merchant UI string storeAddressWilaya"
+  },
+  "storeAddressCommune": "البلدية",
+  "@storeAddressCommune": {
+    "description": "Merchant UI string storeAddressCommune"
+  },
+  "adminLocationChoose": "اختيار",
+  "@adminLocationChoose": {
+    "description": "Merchant UI string adminLocationChoose"
+  },
+  "adminLocationSearchHint": "بحث…",
+  "@adminLocationSearchHint": {
+    "description": "Merchant UI string adminLocationSearchHint"
+  },
+  "adminLocationEmpty": "لا توجد نتائج",
+  "@adminLocationEmpty": {
+    "description": "Merchant UI string adminLocationEmpty"
+  },
+  "adminLocationLoadError": "تعذّر تحميل القائمة. يُرجى المحاولة مجددًا.",
+  "@adminLocationLoadError": {
+    "description": "Merchant UI string adminLocationLoadError"
+  },
+  "adminLocationRetry": "إعادة المحاولة",
+  "@adminLocationRetry": {
+    "description": "Merchant UI string adminLocationRetry"
+  },
+  "adminLocationWilayaRequired": "اختر الولاية أولًا.",
+  "@adminLocationWilayaRequired": {
+    "description": "Merchant UI string adminLocationWilayaRequired"
+  },
+  "adminLocationPairRequired": "الولاية والبلدية مطلوبتان.",
+  "@adminLocationPairRequired": {
+    "description": "Merchant UI string adminLocationPairRequired"
+  },
+  "storeAddressPickupHints": "تعليمات الاستلام",
+  "@storeAddressPickupHints": {
+    "description": "Merchant UI string storeAddressPickupHints"
+  },
+  "storeProfileMediaSub": "الشعار وصورة الغلاف",
+  "@storeProfileMediaSub": {
+    "description": "Merchant UI string storeProfileMediaSub"
+  },
+  "storeProfileMediaUnavailable": "غير متاح",
+  "@storeProfileMediaUnavailable": {
+    "description": "Merchant UI string storeProfileMediaUnavailable"
+  },
+  "storeProfilePrepUnavailable": "غير متاح",
+  "@storeProfilePrepUnavailable": {
+    "description": "Merchant UI string storeProfilePrepUnavailable"
+  },
+  "storeProfilePreviewUnavailable": "معاينة العميل غير متاحة.",
+  "@storeProfilePreviewUnavailable": {
+    "description": "Merchant UI string storeProfilePreviewUnavailable"
+  },
+  "profileSettingsTitle": "الإعدادات",
+  "@profileSettingsTitle": {
+    "description": "Merchant UI string profileSettingsTitle"
+  },
+  "storeProfileTitle": "ملف المتجر",
+  "@storeProfileTitle": {
+    "description": "Merchant UI string storeProfileTitle"
+  },
+  "storeProfileCustomerPreview": "معاينة العميل",
+  "@storeProfileCustomerPreview": {
+    "description": "Merchant UI string storeProfileCustomerPreview"
+  },
+  "storeProfileGeneral": "المعلومات العامة",
+  "@storeProfileGeneral": {
+    "description": "Merchant UI string storeProfileGeneral"
+  },
+  "storeProfileGeneralSub": "اسم المتجر وحالته",
+  "@storeProfileGeneralSub": {
+    "description": "Merchant UI string storeProfileGeneralSub"
+  },
+  "storeGeneralTitle": "المعلومات العامة",
+  "@storeGeneralTitle": {
+    "description": "Merchant UI string storeGeneralTitle"
+  },
+  "storeGeneralBranchName": "اسم الفرع",
+  "@storeGeneralBranchName": {
+    "description": "Merchant UI string storeGeneralBranchName"
+  },
+  "storeGeneralBranchNameHint": "يُعرض للعملاء لهذا الفرع.",
+  "@storeGeneralBranchNameHint": {
+    "description": "Merchant UI string storeGeneralBranchNameHint"
+  },
+  "storeGeneralMerchantName": "اسم التجارة",
+  "@storeGeneralMerchantName": {
+    "description": "Merchant UI string storeGeneralMerchantName"
+  },
+  "storeGeneralMerchantLocked": "اسم موثَّق من SpeedyGo: غير قابل للتعديل هنا.",
+  "@storeGeneralMerchantLocked": {
+    "description": "Merchant UI string storeGeneralMerchantLocked"
+  },
+  "storeGeneralReadOnly": "يمكن للمالك والمدير فقط تعديل هذه المعلومات.",
+  "@storeGeneralReadOnly": {
+    "description": "Merchant UI string storeGeneralReadOnly"
+  },
+  "storeGeneralPhoneElsewhere": "يُعدَّل الهاتف من «العنوان والموقع».",
+  "@storeGeneralPhoneElsewhere": {
+    "description": "Merchant UI string storeGeneralPhoneElsewhere"
+  },
+  "storeGeneralSave": "حفظ",
+  "@storeGeneralSave": {
+    "description": "Merchant UI string storeGeneralSave"
+  },
+  "storeGeneralSaved": "تم حفظ معلومات الفرع.",
+  "@storeGeneralSaved": {
+    "description": "Merchant UI string storeGeneralSaved"
+  },
+  "storeGeneralNameAr": "الاسم بالعربية",
+  "@storeGeneralNameAr": {
+    "description": "Merchant UI string storeGeneralNameAr"
+  },
+  "storeGeneralNameArHint": "اختياري. يُعرض للعملاء الناطقين بالعربية.",
+  "@storeGeneralNameArHint": {
+    "description": "Merchant UI string storeGeneralNameArHint"
+  },
+  "storeGeneralDescription": "وصف مختصر",
+  "@storeGeneralDescription": {
+    "description": "Merchant UI string storeGeneralDescription"
+  },
+  "storeGeneralDescriptionHint": "اختياري. قدّم فرعك في بضع جمل.",
+  "@storeGeneralDescriptionHint": {
+    "description": "Merchant UI string storeGeneralDescriptionHint"
+  },
+  "storeGeneralPublicEmail": "البريد الإلكتروني العام",
+  "@storeGeneralPublicEmail": {
+    "description": "Merchant UI string storeGeneralPublicEmail"
+  },
+  "storeGeneralPublicEmailHint": "اختياري. عنوان اتصال ظاهر للعملاء.",
+  "@storeGeneralPublicEmailHint": {
+    "description": "Merchant UI string storeGeneralPublicEmailHint"
+  },
+  "storeGeneralEmailInvalid": "عنوان البريد الإلكتروني غير صالح.",
+  "@storeGeneralEmailInvalid": {
+    "description": "Merchant UI string storeGeneralEmailInvalid"
+  },
+  "storeGeneralPreviewTitle": "معاينة العميل",
+  "@storeGeneralPreviewTitle": {
+    "description": "Merchant UI string storeGeneralPreviewTitle"
+  },
+  "storeGeneralPreviewOpen": "مفتوح",
+  "@storeGeneralPreviewOpen": {
+    "description": "Merchant UI string storeGeneralPreviewOpen"
+  },
+  "storeGeneralPreviewClosed": "مغلق",
+  "@storeGeneralPreviewClosed": {
+    "description": "Merchant UI string storeGeneralPreviewClosed"
+  },
+  "storeProfileCategory": "فئة الفرع",
+  "@storeProfileCategory": {
+    "description": "Merchant UI string storeProfileCategory"
+  },
+  "storeProfileCategorySub": "نوع النشاط الظاهر للعملاء",
+  "@storeProfileCategorySub": {
+    "description": "Merchant UI string storeProfileCategorySub"
+  },
+  "storeCategoryTitle": "فئة الفرع",
+  "@storeCategoryTitle": {
+    "description": "Merchant UI string storeCategoryTitle"
+  },
+  "storeCategorySubtitle": "اختر الفئة التي تصف نشاطك بأفضل شكل.",
+  "@storeCategorySubtitle": {
+    "description": "Merchant UI string storeCategorySubtitle"
+  },
+  "storeCategorySearch": "البحث عن فئة...",
+  "@storeCategorySearch": {
+    "description": "Merchant UI string storeCategorySearch"
+  },
+  "storeCategoryInfo": "فئة واحدة لكل فرع. تحدّد مكان ظهوره في تطبيق العميل.",
+  "@storeCategoryInfo": {
+    "description": "Merchant UI string storeCategoryInfo"
+  },
+  "storeCategoryReadOnly": "يمكن للمالك والمديرين فقط تعديل الفئة.",
+  "@storeCategoryReadOnly": {
+    "description": "Merchant UI string storeCategoryReadOnly"
+  },
+  "storeCategorySave": "حفظ",
+  "@storeCategorySave": {
+    "description": "Merchant UI string storeCategorySave"
+  },
+  "storeCategoryClear": "إزالة الفئة",
+  "@storeCategoryClear": {
+    "description": "Merchant UI string storeCategoryClear"
+  },
+  "storeCategorySaved": "تم حفظ الفئة.",
+  "@storeCategorySaved": {
+    "description": "Merchant UI string storeCategorySaved"
+  },
+  "storeCategoryCleared": "تمت إزالة الفئة.",
+  "@storeCategoryCleared": {
+    "description": "Merchant UI string storeCategoryCleared"
+  },
+  "storeCategoryNotSet": "غير محدّدة",
+  "@storeCategoryNotSet": {
+    "description": "Merchant UI string storeCategoryNotSet"
+  },
+  "storeCategoryEmpty": "لا توجد فئات متاحة حاليًا.",
+  "@storeCategoryEmpty": {
+    "description": "Merchant UI string storeCategoryEmpty"
+  },
+  "storeCategoryNoMatch": "لا توجد فئة مطابقة.",
+  "@storeCategoryNoMatch": {
+    "description": "Merchant UI string storeCategoryNoMatch"
+  },
+  "storeCategoryLoadError": "تعذّر تحميل الفئات.",
+  "@storeCategoryLoadError": {
+    "description": "Merchant UI string storeCategoryLoadError"
+  },
+  "storeCategorySaveError": "تعذّر الحفظ. يُرجى المحاولة مجددًا.",
+  "@storeCategorySaveError": {
+    "description": "Merchant UI string storeCategorySaveError"
+  },
+  "storeCategoryForbidden": "دورك لا يسمح بتعديل هذا الفرع.",
+  "@storeCategoryForbidden": {
+    "description": "Merchant UI string storeCategoryForbidden"
+  },
+  "storeCategoryRestricted": "حالة التجارة لا تسمح بهذا التعديل.",
+  "@storeCategoryRestricted": {
+    "description": "Merchant UI string storeCategoryRestricted"
+  },
+  "storeGeneralNameRequired": "لا يمكن أن يكون الاسم فارغًا.",
+  "@storeGeneralNameRequired": {
+    "description": "Merchant UI string storeGeneralNameRequired"
+  },
+  "storeGeneralSaveError": "تعذّر الحفظ. يُرجى المحاولة مجددًا.",
+  "@storeGeneralSaveError": {
+    "description": "Merchant UI string storeGeneralSaveError"
+  },
+  "storeGeneralForbidden": "دورك لا يسمح بتعديل هذا الفرع.",
+  "@storeGeneralForbidden": {
+    "description": "Merchant UI string storeGeneralForbidden"
+  },
+  "storeGeneralRestricted": "حالة التجارة لا تسمح بهذا التعديل.",
+  "@storeGeneralRestricted": {
+    "description": "Merchant UI string storeGeneralRestricted"
+  },
+  "storeProfileMedia": "الوسائط والشعارات",
+  "@storeProfileMedia": {
+    "description": "Merchant UI string storeProfileMedia"
+  },
+  "storeProfileAddress": "العنوان والموقع",
+  "@storeProfileAddress": {
+    "description": "Merchant UI string storeProfileAddress"
+  },
+  "storeProfileAddressSub": "الهاتف والعنوان وموقع GPS",
+  "@storeProfileAddressSub": {
+    "description": "Merchant UI string storeProfileAddressSub"
+  },
+  "storeProfileHours": "ساعات العمل",
+  "@storeProfileHours": {
+    "description": "Merchant UI string storeProfileHours"
+  },
+  "storeProfileHoursSub": "أيام الفتح والاستراحات",
+  "@storeProfileHoursSub": {
+    "description": "Merchant UI string storeProfileHoursSub"
+  },
+  "storeProfilePrep": "إعدادات التحضير",
+  "@storeProfilePrep": {
+    "description": "Merchant UI string storeProfilePrep"
+  },
+  "storeProfileSettings": "إعدادات الحساب",
+  "@storeProfileSettings": {
+    "description": "Merchant UI string storeProfileSettings"
+  },
+  "storeProfileSettingsSub": "الحساب والتفضيلات وتسجيل الخروج",
+  "@storeProfileSettingsSub": {
+    "description": "Merchant UI string storeProfileSettingsSub"
+  },
+  "storeProfileNotifications": "الإشعارات",
+  "@storeProfileNotifications": {
+    "description": "Merchant UI string storeProfileNotifications"
+  },
+  "storeProfileNotificationsSub": "مركز التنبيهات",
+  "@storeProfileNotificationsSub": {
+    "description": "Merchant UI string storeProfileNotificationsSub"
+  },
+  "openingHoursTitle": "ساعات العمل",
+  "@openingHoursTitle": {
+    "description": "Merchant UI string openingHoursTitle"
+  },
+  "openingHoursEmpty": "لا توجد ساعات عمل مُعدَّة لهذا الفرع.",
+  "@openingHoursEmpty": {
+    "description": "Merchant UI string openingHoursEmpty"
+  },
+  "openingHoursSave": "حفظ ساعات العمل",
+  "@openingHoursSave": {
+    "description": "Merchant UI string openingHoursSave"
+  },
+  "openingHoursSaved": "تم حفظ ساعات العمل.",
+  "@openingHoursSaved": {
+    "description": "Merchant UI string openingHoursSaved"
+  },
+  "openingHoursLoadError": "تعذّر تحميل ساعات العمل.",
+  "@openingHoursLoadError": {
+    "description": "Merchant UI string openingHoursLoadError"
+  },
+  "openingHoursSaveError": "تعذّر حفظ ساعات العمل.",
+  "@openingHoursSaveError": {
+    "description": "Merchant UI string openingHoursSaveError"
+  },
+  "openingHoursInvalid": "رُفضت الساعات: تحقّق من التداخلات، بما في ذلك ما بعد منتصف الليل.",
+  "@openingHoursInvalid": {
+    "description": "Merchant UI string openingHoursInvalid"
+  },
+  "openingHoursConflict": "تغيّرت الساعات من جهة أخرى. تم إعادة التحميل — تحقّق ثم حاول مجددًا.",
+  "@openingHoursConflict": {
+    "description": "Merchant UI string openingHoursConflict"
+  },
+  "openingHoursClosed": "مغلق",
+  "@openingHoursClosed": {
+    "description": "Merchant UI string openingHoursClosed"
+  },
+  "openingHoursUsual": "الساعات المعتادة",
+  "@openingHoursUsual": {
+    "description": "Merchant UI string openingHoursUsual"
+  },
+  "openingHoursNotConfigured": "لا توجد ساعات مُعدَّة",
+  "@openingHoursNotConfigured": {
+    "description": "Merchant UI string openingHoursNotConfigured"
+  },
+  "openingHoursOpenNow": "مفتوح حاليًا",
+  "@openingHoursOpenNow": {
+    "description": "Merchant UI string openingHoursOpenNow"
+  },
+  "openingHoursClosedNow": "مغلق حاليًا",
+  "@openingHoursClosedNow": {
+    "description": "Merchant UI string openingHoursClosedNow"
+  },
+  "openingHoursInfo": "يمكن للعملاء الطلب فقط خلال ساعات عملك. تُطبَّق التعديلات فور الحفظ.",
+  "@openingHoursInfo": {
+    "description": "Merchant UI string openingHoursInfo"
+  },
+  "openingHoursStaffReadOnly": "للقراءة فقط: يمكن للمالك والمديرين فقط تعديل ساعات العمل.",
+  "@openingHoursStaffReadOnly": {
+    "description": "Merchant UI string openingHoursStaffReadOnly"
+  },
+  "openingHoursOpens": "الفتح",
+  "@openingHoursOpens": {
+    "description": "Merchant UI string openingHoursOpens"
+  },
+  "openingHoursCloses": "الإغلاق",
+  "@openingHoursCloses": {
+    "description": "Merchant UI string openingHoursCloses"
+  },
+  "openingHoursEditorHint": "حتى 3 فترات في اليوم. إذا كان الإغلاق قبل الفتح، تنتهي الفترة في اليوم التالي.",
+  "@openingHoursEditorHint": {
+    "description": "Merchant UI string openingHoursEditorHint"
+  },
+  "openingHoursAddRange": "إضافة فترة",
+  "@openingHoursAddRange": {
+    "description": "Merchant UI string openingHoursAddRange"
+  },
+  "openingHoursRemoveRange": "حذف الفترة",
+  "@openingHoursRemoveRange": {
+    "description": "Merchant UI string openingHoursRemoveRange"
+  },
+  "openingHoursApply": "تطبيق",
+  "@openingHoursApply": {
+    "description": "Merchant UI string openingHoursApply"
+  },
+  "openingHoursNextDay": "تنتهي في اليوم التالي",
+  "@openingHoursNextDay": {
+    "description": "Merchant UI string openingHoursNextDay"
+  },
+  "openingHoursAllDay": "مفتوح على مدار الساعة",
+  "@openingHoursAllDay": {
+    "description": "Merchant UI string openingHoursAllDay"
+  },
+  "openingHoursDayClosedHint": "بدون فترة: سيُعدّ اليوم مغلقًا.",
+  "@openingHoursDayClosedHint": {
+    "description": "Merchant UI string openingHoursDayClosedHint"
+  },
+  "openingHoursIssueOverlap": "الفترات متداخلة.",
+  "@openingHoursIssueOverlap": {
+    "description": "Merchant UI string openingHoursIssueOverlap"
+  },
+  "openingHoursIssueZero": "يجب أن يختلف وقتا الفتح والإغلاق (00:00–00:00 ليوم كامل).",
+  "@openingHoursIssueZero": {
+    "description": "Merchant UI string openingHoursIssueZero"
+  },
+  "openingHoursIssueTooMany": "الحد الأقصى 3 فترات في اليوم.",
+  "@openingHoursIssueTooMany": {
+    "description": "Merchant UI string openingHoursIssueTooMany"
+  },
+  "hoursExceptionsTitle": "ساعات استثنائية",
+  "@hoursExceptionsTitle": {
+    "description": "Merchant UI string hoursExceptionsTitle"
+  },
+  "hoursExceptionsNavSub": "العطل والإغلاقات المؤقتة",
+  "@hoursExceptionsNavSub": {
+    "description": "Merchant UI string hoursExceptionsNavSub"
+  },
+  "hoursExceptionsBanner": "تستبدل هذه الساعات ساعاتك المعتادة فقط للتواريخ المحددة.",
+  "@hoursExceptionsBanner": {
+    "description": "Merchant UI string hoursExceptionsBanner"
+  },
+  "hoursExceptionsUpcoming": "الاستثناءات القادمة",
+  "@hoursExceptionsUpcoming": {
+    "description": "Merchant UI string hoursExceptionsUpcoming"
+  },
+  "hoursExceptionsEmpty": "لا توجد استثناءات قادمة.",
+  "@hoursExceptionsEmpty": {
+    "description": "Merchant UI string hoursExceptionsEmpty"
+  },
+  "hoursExceptionsAdd": "إضافة استثناء",
+  "@hoursExceptionsAdd": {
+    "description": "Merchant UI string hoursExceptionsAdd"
+  },
+  "hoursExceptionsEdit": "تعديل الاستثناء",
+  "@hoursExceptionsEdit": {
+    "description": "Merchant UI string hoursExceptionsEdit"
+  },
+  "hoursExceptionsDate": "التاريخ",
+  "@hoursExceptionsDate": {
+    "description": "Merchant UI string hoursExceptionsDate"
+  },
+  "hoursExceptionsDateHint": "اختيار تاريخ",
+  "@hoursExceptionsDateHint": {
+    "description": "Merchant UI string hoursExceptionsDateHint"
+  },
+  "hoursExceptionsDateTaken": "هذا التاريخ لديه استثناء بالفعل: سيُستبدل عند الحفظ.",
+  "@hoursExceptionsDateTaken": {
+    "description": "Merchant UI string hoursExceptionsDateTaken"
+  },
+  "hoursExceptionsStatus": "الحالة",
+  "@hoursExceptionsStatus": {
+    "description": "Merchant UI string hoursExceptionsStatus"
+  },
+  "hoursExceptionsOpen": "مفتوح",
+  "@hoursExceptionsOpen": {
+    "description": "Merchant UI string hoursExceptionsOpen"
+  },
+  "hoursExceptionsClosed": "مغلق",
+  "@hoursExceptionsClosed": {
+    "description": "Merchant UI string hoursExceptionsClosed"
+  },
+  "hoursExceptionsHours": "ساعات معدَّلة",
+  "@hoursExceptionsHours": {
+    "description": "Merchant UI string hoursExceptionsHours"
+  },
+  "hoursExceptionsTo": "إلى",
+  "@hoursExceptionsTo": {
+    "description": "Merchant UI string hoursExceptionsTo"
+  },
+  "hoursExceptionsLabel": "السبب",
+  "@hoursExceptionsLabel": {
+    "description": "Merchant UI string hoursExceptionsLabel"
+  },
+  "hoursExceptionsLabelHint": "مثال: عطلة رسمية، أشغال…",
+  "@hoursExceptionsLabelHint": {
+    "description": "Merchant UI string hoursExceptionsLabelHint"
+  },
+  "hoursExceptionsMessage": "رسالة للعملاء (اختياري)",
+  "@hoursExceptionsMessage": {
+    "description": "Merchant UI string hoursExceptionsMessage"
+  },
+  "hoursExceptionsMessageHint": "يُحفظ مع الاستثناء. غير معروض بعد في تطبيق العميل.",
+  "@hoursExceptionsMessageHint": {
+    "description": "Merchant UI string hoursExceptionsMessageHint"
+  },
+  "hoursExceptionsCancel": "إلغاء",
+  "@hoursExceptionsCancel": {
+    "description": "Merchant UI string hoursExceptionsCancel"
+  },
+  "hoursExceptionsSave": "حفظ ساعات العمل",
+  "@hoursExceptionsSave": {
+    "description": "Merchant UI string hoursExceptionsSave"
+  },
+  "hoursExceptionsSaved": "تم حفظ الاستثناء.",
+  "@hoursExceptionsSaved": {
+    "description": "Merchant UI string hoursExceptionsSaved"
+  },
+  "hoursExceptionsDeleted": "تم حذف الاستثناء.",
+  "@hoursExceptionsDeleted": {
+    "description": "Merchant UI string hoursExceptionsDeleted"
+  },
+  "hoursExceptionsDeleteTitle": "حذف الاستثناء؟",
+  "@hoursExceptionsDeleteTitle": {
+    "description": "Merchant UI string hoursExceptionsDeleteTitle"
+  },
+  "hoursExceptionsDeleteBody": "سيعود {date} إلى ساعاتك المعتادة.",
+  "@hoursExceptionsDeleteBody": {
+    "description": "Merchant UI string hoursExceptionsDeleteBody",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "hoursExceptionsDeleteConfirm": "حذف",
+  "@hoursExceptionsDeleteConfirm": {
+    "description": "Merchant UI string hoursExceptionsDeleteConfirm"
+  },
+  "hoursExceptionsLoadError": "تعذّر تحميل الساعات الاستثنائية.",
+  "@hoursExceptionsLoadError": {
+    "description": "Merchant UI string hoursExceptionsLoadError"
+  },
+  "hoursExceptionsSaveError": "تعذّر حفظ الاستثناء. تم الاحتفاظ بإدخالاتك.",
+  "@hoursExceptionsSaveError": {
+    "description": "Merchant UI string hoursExceptionsSaveError"
+  },
+  "hoursExceptionsDeleteError": "تعذّر حذف الاستثناء. يُرجى المحاولة مجددًا.",
+  "@hoursExceptionsDeleteError": {
+    "description": "Merchant UI string hoursExceptionsDeleteError"
+  },
+  "hoursExceptionsConflict": "تم تعديل هذا التاريخ من جهة أخرى. أُعيد تحميل القائمة: تحقّق ثم احفظ مجددًا.",
+  "@hoursExceptionsConflict": {
+    "description": "Merchant UI string hoursExceptionsConflict"
+  },
+  "hoursExceptionsInvalid": "رُفض الاستثناء: تحقّق من التاريخ (من اليوم إلى +365 يومًا) والفترات.",
+  "@hoursExceptionsInvalid": {
+    "description": "Merchant UI string hoursExceptionsInvalid"
+  },
+  "hoursExceptionsWeeklyRequired": "أعدّ الساعات المعتادة أولًا.",
+  "@hoursExceptionsWeeklyRequired": {
+    "description": "Merchant UI string hoursExceptionsWeeklyRequired"
+  },
+  "hoursExceptionsTooMany": "عدد كبير من الاستثناءات القادمة (100 كحد أقصى).",
+  "@hoursExceptionsTooMany": {
+    "description": "Merchant UI string hoursExceptionsTooMany"
+  },
+  "hoursExceptionsStaffReadOnly": "للقراءة فقط: يمكن للمالك والمديرين فقط تعديل الساعات الاستثنائية.",
+  "@hoursExceptionsStaffReadOnly": {
+    "description": "Merchant UI string hoursExceptionsStaffReadOnly"
+  },
+  "hoursExceptionsDateRequired": "اختر تاريخًا.",
+  "@hoursExceptionsDateRequired": {
+    "description": "Merchant UI string hoursExceptionsDateRequired"
+  },
+  "hoursExceptionsLabelRequired": "أدخل سببًا.",
+  "@hoursExceptionsLabelRequired": {
+    "description": "Merchant UI string hoursExceptionsLabelRequired"
+  },
+  "hoursExceptionsIntervalsRequired": "أضف فترة زمنية واحدة على الأقل.",
+  "@hoursExceptionsIntervalsRequired": {
+    "description": "Merchant UI string hoursExceptionsIntervalsRequired"
+  },
+  "hoursExceptionsSameDay": "يجب أن تنتهي كل فترة في اليوم نفسه (00:00 = منتصف الليل).",
+  "@hoursExceptionsSameDay": {
+    "description": "Merchant UI string hoursExceptionsSameDay"
+  },
+  "hoursExceptionsHelpTitle": "ترتيب التطبيق",
+  "@hoursExceptionsHelpTitle": {
+    "description": "Merchant UI string hoursExceptionsHelpTitle"
+  },
+  "hoursExceptionsHelpBody": "يُطبَّق الإغلاق الإجباري أو المؤقت للفرع دائمًا أولًا. وإلا يستبدل الاستثناء الساعات المعتادة لتاريخه (بتوقيت الجزائر). وتتبع الأيام الأخرى الساعات المعتادة.",
+  "@hoursExceptionsHelpBody": {
+    "description": "Merchant UI string hoursExceptionsHelpBody"
+  },
+  "hoursExceptionsHelpOk": "حسنًا",
+  "@hoursExceptionsHelpOk": {
+    "description": "Merchant UI string hoursExceptionsHelpOk"
+  },
+  "hoursExceptionsToday": "استثناء اليوم: {label}",
+  "@hoursExceptionsToday": {
+    "description": "Merchant UI string hoursExceptionsToday",
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "availabilityTitle": "حالة المتجر",
+  "@availabilityTitle": {
+    "description": "Merchant UI string availabilityTitle"
+  },
+  "availabilityEstablishment": "الفرع",
+  "@availabilityEstablishment": {
+    "description": "Merchant UI string availabilityEstablishment"
+  },
+  "availabilityOpen": "مفتوح",
+  "@availabilityOpen": {
+    "description": "Merchant UI string availabilityOpen"
+  },
+  "availabilityClosed": "مغلق",
+  "@availabilityClosed": {
+    "description": "Merchant UI string availabilityClosed"
+  },
+  "availabilityFollowSchedule": "وفق الساعات",
+  "@availabilityFollowSchedule": {
+    "description": "Merchant UI string availabilityFollowSchedule"
+  },
+  "availabilityForceClosed": "مغلق",
+  "@availabilityForceClosed": {
+    "description": "Merchant UI string availabilityForceClosed"
+  },
+  "availabilitySave": "حفظ التعديلات",
+  "@availabilitySave": {
+    "description": "Merchant UI string availabilitySave"
+  },
+  "availabilitySaving": "جاري الحفظ…",
+  "@availabilitySaving": {
+    "description": "Merchant UI string availabilitySaving"
+  },
+  "availabilitySaved": "تم حفظ حالة المتجر.",
+  "@availabilitySaved": {
+    "description": "Merchant UI string availabilitySaved"
+  },
+  "availabilityClosureSaved": "تم حفظ الإغلاق.",
+  "@availabilityClosureSaved": {
+    "description": "Merchant UI string availabilityClosureSaved"
+  },
+  "availabilityLoadError": "تعذّر تحميل حالة المتجر.",
+  "@availabilityLoadError": {
+    "description": "Merchant UI string availabilityLoadError"
+  },
+  "availabilitySaveError": "تعذّر حفظ حالة المتجر.",
+  "@availabilitySaveError": {
+    "description": "Merchant UI string availabilitySaveError"
+  },
+  "availabilityConflict": "تغيّرت الحالة من جهة أخرى. تم إعادة التحميل — تحقّق ثم حاول مجددًا.",
+  "@availabilityConflict": {
+    "description": "Merchant UI string availabilityConflict"
+  },
+  "availabilityReopenTitle": "إعادة الفتح وفق الساعات",
+  "@availabilityReopenTitle": {
+    "description": "Merchant UI string availabilityReopenTitle"
+  },
+  "availabilityReopenOutsideHoursBody": "أنت خارج الساعات الأسبوعية. سيبقى المتجر مغلقًا حتى موعد الفتح التالي.",
+  "@availabilityReopenOutsideHoursBody": {
+    "description": "Merchant UI string availabilityReopenOutsideHoursBody"
+  },
+  "availabilityConfirmReopen": "تأكيد",
+  "@availabilityConfirmReopen": {
+    "description": "Merchant UI string availabilityConfirmReopen"
+  },
+  "availabilityToday": "اليوم",
+  "@availabilityToday": {
+    "description": "Merchant UI string availabilityToday"
+  },
+  "availabilityClosedToday": "مغلق اليوم",
+  "@availabilityClosedToday": {
+    "description": "Merchant UI string availabilityClosedToday"
+  },
+  "availabilityModifyHours": "تعديل",
+  "@availabilityModifyHours": {
+    "description": "Merchant UI string availabilityModifyHours"
+  },
+  "availabilityQuickPause": "إيقاف سريع",
+  "@availabilityQuickPause": {
+    "description": "Merchant UI string availabilityQuickPause"
+  },
+  "availabilityQuickPauseHint": "إغلاق مؤقت بسبب ضغط في المطبخ.",
+  "@availabilityQuickPauseHint": {
+    "description": "Merchant UI string availabilityQuickPauseHint"
+  },
+  "availabilityPause30": "30 دقيقة",
+  "@availabilityPause30": {
+    "description": "Merchant UI string availabilityPause30"
+  },
+  "availabilityPause60": "1 ساعة",
+  "@availabilityPause60": {
+    "description": "Merchant UI string availabilityPause60"
+  },
+  "availabilityActiveOrdersUnknown": "طلبات قيد التنفيذ",
+  "@availabilityActiveOrdersUnknown": {
+    "description": "Merchant UI string availabilityActiveOrdersUnknown"
+  },
+  "availabilityCloseWarningTitle": "تنبيه: إغلاق فوري",
+  "@availabilityCloseWarningTitle": {
+    "description": "Merchant UI string availabilityCloseWarningTitle"
+  },
+  "availabilityStaffReadOnly": "للقراءة فقط: يمكن للمالك والمديرين فقط تعديل حالة المتجر.",
+  "@availabilityStaffReadOnly": {
+    "description": "Merchant UI string availabilityStaffReadOnly"
+  },
+  "availabilityBannerOpenTitle": "المتجر متصل",
+  "@availabilityBannerOpenTitle": {
+    "description": "Merchant UI string availabilityBannerOpenTitle"
+  },
+  "availabilityBannerOpenBody": "يمكن للعملاء تقديم الطلبات وعرض قائمتك بشكل طبيعي.",
+  "@availabilityBannerOpenBody": {
+    "description": "Merchant UI string availabilityBannerOpenBody"
+  },
+  "availabilityBannerClosedTitle": "المتجر غير متصل",
+  "@availabilityBannerClosedTitle": {
+    "description": "Merchant UI string availabilityBannerClosedTitle"
+  },
+  "availabilityBannerClosedBody": "لم يعد بإمكان العملاء تقديم طلبات جديدة.",
+  "@availabilityBannerClosedBody": {
+    "description": "Merchant UI string availabilityBannerClosedBody"
+  },
+  "availabilityBannerScheduleClosedTitle": "حسب أوقات العمل — مغلق حالياً",
+  "@availabilityBannerScheduleClosedTitle": {
+    "description": "Merchant UI string availabilityBannerScheduleClosedTitle"
+  },
+  "availabilityBannerScheduleClosedBody": "يتبع المتجر الجدول الزمني. سيفتح تلقائياً في الساعات القادمة.",
+  "@availabilityBannerScheduleClosedBody": {
+    "description": "Merchant UI string availabilityBannerScheduleClosedBody"
+  },
+  "availabilityReasonPeak": "ضغط مرتفع (المطبخ)",
+  "@availabilityReasonPeak": {
+    "description": "Merchant UI string availabilityReasonPeak"
+  },
+  "availabilityReasonTechnical": "مشكلة تقنية",
+  "@availabilityReasonTechnical": {
+    "description": "Merchant UI string availabilityReasonTechnical"
+  },
+  "availabilityReasonStock": "نفاد المخزون",
+  "@availabilityReasonStock": {
+    "description": "Merchant UI string availabilityReasonStock"
+  },
+  "availabilityReasonLunch": "استراحة الغداء",
+  "@availabilityReasonLunch": {
+    "description": "Merchant UI string availabilityReasonLunch"
+  },
+  "temporaryClosureTitle": "إغلاق مؤقت",
+  "@temporaryClosureTitle": {
+    "description": "Merchant UI string temporaryClosureTitle"
+  },
+  "temporaryClosureActionRequired": "إجراء مطلوب",
+  "@temporaryClosureActionRequired": {
+    "description": "Merchant UI string temporaryClosureActionRequired"
+  },
+  "temporaryClosureImpactLead": "سيؤدي الإغلاق إلى تعليق قبول الطلبات الجديدة. ",
+  "@temporaryClosureImpactLead": {
+    "description": "Merchant UI string temporaryClosureImpactLead"
+  },
+  "temporaryClosureImpactNone": "لا توجد طلبات قيد المعالجة.",
+  "@temporaryClosureImpactNone": {
+    "description": "Merchant UI string temporaryClosureImpactNone"
+  },
+  "temporaryClosureImpactUnknown": "ستُبقى الطلبات قيد المعالجة ويجب تحضيرها.",
+  "@temporaryClosureImpactUnknown": {
+    "description": "Merchant UI string temporaryClosureImpactUnknown"
+  },
+  "temporaryClosureReason": "سبب الإغلاق",
+  "@temporaryClosureReason": {
+    "description": "Merchant UI string temporaryClosureReason"
+  },
+  "temporaryClosureReopen": "إعادة الفتح المخططة",
+  "@temporaryClosureReopen": {
+    "description": "Merchant UI string temporaryClosureReopen"
+  },
+  "temporaryClosure30m": "خلال 30 دقيقة",
+  "@temporaryClosure30m": {
+    "description": "Merchant UI string temporaryClosure30m"
+  },
+  "temporaryClosure1h": "خلال ساعة واحدة",
+  "@temporaryClosure1h": {
+    "description": "Merchant UI string temporaryClosure1h"
+  },
+  "temporaryClosurePickTime": "اختر وقتاً…",
+  "@temporaryClosurePickTime": {
+    "description": "Merchant UI string temporaryClosurePickTime"
+  },
+  "temporaryClosureIndefinite": "غير محدد (يدوي)",
+  "@temporaryClosureIndefinite": {
+    "description": "Merchant UI string temporaryClosureIndefinite"
+  },
+  "temporaryClosureImageImpact": "التأثير على ظهورك: سيرى العملاء منشأتك على أنها «مغلق مؤقتاً».",
+  "@temporaryClosureImageImpact": {
+    "description": "Merchant UI string temporaryClosureImageImpact"
+  },
+  "temporaryClosureStaffReadOnly": "يمكن للمالك والمديرين فقط إغلاق المتجر.",
+  "@temporaryClosureStaffReadOnly": {
+    "description": "Merchant UI string temporaryClosureStaffReadOnly"
+  },
+  "temporaryClosurePastTime": "وقت إعادة الفتح قد مضى. اختر وقتاً جديداً.",
+  "@temporaryClosurePastTime": {
+    "description": "Merchant UI string temporaryClosurePastTime"
+  },
+  "temporaryClosureMessage": "رسالة للعميل",
+  "@temporaryClosureMessage": {
+    "description": "Merchant UI string temporaryClosureMessage"
+  },
+  "temporaryClosureOptional": "اختياري",
+  "@temporaryClosureOptional": {
+    "description": "Merchant UI string temporaryClosureOptional"
+  },
+  "temporaryClosureMessageHint": "مثال: نحن ممتلئون حالياً، عد إلينا بعد 30 دقيقة!",
+  "@temporaryClosureMessageHint": {
+    "description": "Merchant UI string temporaryClosureMessageHint"
+  },
+  "temporaryClosureManualReopenHint": "يمكنك إعادة الفتح يدوياً في أي وقت.",
+  "@temporaryClosureManualReopenHint": {
+    "description": "Merchant UI string temporaryClosureManualReopenHint"
+  },
+  "temporaryClosureConfirm": "تأكيد الإغلاق",
+  "@temporaryClosureConfirm": {
+    "description": "Merchant UI string temporaryClosureConfirm"
+  },
+  "storeProfileAvailability": "حالة المتجر",
+  "@storeProfileAvailability": {
+    "description": "Merchant UI string storeProfileAvailability"
+  },
+  "storeProfileAvailabilitySub": "حسب أوقات العمل، الإغلاق، والاستراحة",
+  "@storeProfileAvailabilitySub": {
+    "description": "Merchant UI string storeProfileAvailabilitySub"
+  },
+  "notificationsTitle": "الإشعارات",
+  "@notificationsTitle": {
+    "description": "Merchant UI string notificationsTitle"
+  },
+  "notificationsEmpty": "لا توجد إشعارات حالياً.",
+  "@notificationsEmpty": {
+    "description": "Merchant UI string notificationsEmpty"
+  },
+  "notificationsLoadError": "تعذّر تحميل الإشعارات.",
+  "@notificationsLoadError": {
+    "description": "Merchant UI string notificationsLoadError"
+  },
+  "notificationsToday": "اليوم",
+  "@notificationsToday": {
+    "description": "Merchant UI string notificationsToday"
+  },
+  "notificationsYesterday": "أمس",
+  "@notificationsYesterday": {
+    "description": "Merchant UI string notificationsYesterday"
+  },
+  "notificationsJustNow": "الآن",
+  "@notificationsJustNow": {
+    "description": "Merchant UI string notificationsJustNow"
+  },
+  "notificationsMarkAllRead": "تعليم الكل كمقروء",
+  "@notificationsMarkAllRead": {
+    "description": "Merchant UI string notificationsMarkAllRead"
+  },
+  "notificationsFilterAll": "الكل",
+  "@notificationsFilterAll": {
+    "description": "Merchant UI string notificationsFilterAll"
+  },
+  "notificationsFilterOrders": "الطلبات",
+  "@notificationsFilterOrders": {
+    "description": "Merchant UI string notificationsFilterOrders"
+  },
+  "notificationsOpenDetails": "التفاصيل",
+  "@notificationsOpenDetails": {
+    "description": "Merchant UI string notificationsOpenDetails"
+  },
+  "notificationsOrderStale": "هذا الطلب لم يعد بانتظار القبول.",
+  "@notificationsOrderStale": {
+    "description": "Merchant UI string notificationsOrderStale"
+  },
+  "alertNewOrder": "طلب جديد",
+  "@alertNewOrder": {
+    "description": "Merchant UI string alertNewOrder"
+  },
+  "alertReceivedAt": "استُلم في",
+  "@alertReceivedAt": {
+    "description": "Merchant UI string alertReceivedAt"
+  },
+  "alertPayment": "الدفع",
+  "@alertPayment": {
+    "description": "Merchant UI string alertPayment"
+  },
+  "alertViewDetails": "عرض التفاصيل",
+  "@alertViewDetails": {
+    "description": "Merchant UI string alertViewDetails"
+  },
+  "alertRefuse": "رفض",
+  "@alertRefuse": {
+    "description": "Merchant UI string alertRefuse"
+  },
+  "alertItems": "الأصناف",
+  "@alertItems": {
+    "description": "Merchant UI string alertItems"
+  },
+  "alertOrderTotal": "المجموع الفرعي للبضائع",
+  "@alertOrderTotal": {
+    "description": "Merchant UI string alertOrderTotal"
+  },
+  "alertOrderLabel": "طلب",
+  "@alertOrderLabel": {
+    "description": "Merchant UI string alertOrderLabel"
+  },
+  "alertDismiss": "إغلاق",
+  "@alertDismiss": {
+    "description": "Merchant UI string alertDismiss"
+  },
+  "alertSeeList": "عرض القائمة",
+  "@alertSeeList": {
+    "description": "Merchant UI string alertSeeList"
+  },
+  "notifSettingsTitle": "إعدادات الإشعارات",
+  "@notifSettingsTitle": {
+    "description": "Merchant UI string notifSettingsTitle"
+  },
+  "notifSettingsScreenTitle": "التنبيهات",
+  "@notifSettingsScreenTitle": {
+    "description": "Merchant UI string notifSettingsScreenTitle"
+  },
+  "notifSettingsOsEnabled": "إذن iOS مفعّل. الإشعارات الفورية الأصلية غير مفعّلة بعد.",
+  "@notifSettingsOsEnabled": {
+    "description": "Merchant UI string notifSettingsOsEnabled"
+  },
+  "notifSettingsOsDenied": "إذن iOS مرفوض (يمكن تعديله من الإعدادات). الإشعارات الفورية الأصلية غير مفعّلة بعد.",
+  "@notifSettingsOsDenied": {
+    "description": "Merchant UI string notifSettingsOsDenied"
+  },
+  "notifSettingsOsNotAsked": "إذن الإشعارات: لم يُمنح بعد.",
+  "@notifSettingsOsNotAsked": {
+    "description": "Merchant UI string notifSettingsOsNotAsked"
+  },
+  "notifSettingsOsOpen": "إعدادات النظام",
+  "@notifSettingsOsOpen": {
+    "description": "Merchant UI string notifSettingsOsOpen"
+  },
+  "notifSettingsSwitchesNote": "فقط عندما يكون التطبيق مفتوحاً.",
+  "@notifSettingsSwitchesNote": {
+    "description": "Merchant UI string notifSettingsSwitchesNote"
+  },
+  "notifSettingsInAppSection": "داخل التطبيق",
+  "@notifSettingsInAppSection": {
+    "description": "Merchant UI string notifSettingsInAppSection"
+  },
+  "notifSettingsCriticalWarning": "لا يمكن كتم تنبيهات الطلبات الواردة الحرجة بالكامل دون خطر التأخير.",
+  "@notifSettingsCriticalWarning": {
+    "description": "Merchant UI string notifSettingsCriticalWarning"
+  },
+  "notifSettingsPushNotConfigured": "غير مهيأ",
+  "@notifSettingsPushNotConfigured": {
+    "description": "Merchant UI string notifSettingsPushNotConfigured"
+  },
+  "notifSettingsSoundSection": "التنبيهات الصوتية",
+  "@notifSettingsSoundSection": {
+    "description": "Merchant UI string notifSettingsSoundSection"
+  },
+  "notifSettingsSound": "نغمة الطلبات الجديدة",
+  "@notifSettingsSound": {
+    "description": "Merchant UI string notifSettingsSound"
+  },
+  "notifSettingsVibrationSection": "الاهتزاز",
+  "@notifSettingsVibrationSection": {
+    "description": "Merchant UI string notifSettingsVibrationSection"
+  },
+  "notifSettingsVibration": "اهتزاز عند ورود طلب",
+  "@notifSettingsVibration": {
+    "description": "Merchant UI string notifSettingsVibration"
+  },
+  "notifSettingsPushSection": "تنبيهات Push",
+  "@notifSettingsPushSection": {
+    "description": "Merchant UI string notifSettingsPushSection"
+  },
+  "notifSettingsOsEnabledPush": "إذن الإشعارات: مفعّل.",
+  "@notifSettingsOsEnabledPush": {
+    "description": "Merchant UI string notifSettingsOsEnabledPush"
+  },
+  "notifSettingsOsDeniedPush": "إذن الإشعارات مرفوض: فعّله من إعدادات النظام.",
+  "@notifSettingsOsDeniedPush": {
+    "description": "Merchant UI string notifSettingsOsDeniedPush"
+  },
+  "notifSettingsNativePush": "الإشعارات خارج التطبيق",
+  "@notifSettingsNativePush": {
+    "description": "Merchant UI string notifSettingsNativePush"
+  },
+  "notifSettingsNativePushSub": "التطبيق مغلق أو في الخلفية.",
+  "@notifSettingsNativePushSub": {
+    "description": "Merchant UI string notifSettingsNativePushSub"
+  },
+  "notifSettingsLockScreenNote": "المعاينة على شاشة القفل: حسب إعدادات النظام.",
+  "@notifSettingsLockScreenNote": {
+    "description": "Merchant UI string notifSettingsLockScreenNote"
+  },
+  "notifPushStatusRegistered": "هذا الجهاز مسجّل لاستلام الإشعارات.",
+  "@notifPushStatusRegistered": {
+    "description": "Merchant UI string notifPushStatusRegistered"
+  },
+  "notifPushStatusPending": "جاري تسجيل الجهاز…",
+  "@notifPushStatusPending": {
+    "description": "Merchant UI string notifPushStatusPending"
+  },
+  "notifPushStatusDenied": "الإذن مرفوض: لا إشعارات خارج التطبيق.",
+  "@notifPushStatusDenied": {
+    "description": "Merchant UI string notifPushStatusDenied"
+  },
+  "notifPushStatusDisabled": "معطّلة على هذا الجهاز.",
+  "@notifPushStatusDisabled": {
+    "description": "Merchant UI string notifPushStatusDisabled"
+  },
+  "notifPushStatusTokenUnavailable": "رمز الإشعار غير متاح على هذا الجهاز.",
+  "@notifPushStatusTokenUnavailable": {
+    "description": "Merchant UI string notifPushStatusTokenUnavailable"
+  },
+  "notifPushStatusFailed": "تعذّر التسجيل حالياً. أعد المحاولة لاحقاً.",
+  "@notifPushStatusFailed": {
+    "description": "Merchant UI string notifPushStatusFailed"
+  },
+  "pushOrderInaccessible": "هذا الطلب غير متاح لهذا الحساب.",
+  "@pushOrderInaccessible": {
+    "description": "Merchant UI string pushOrderInaccessible"
+  },
+  "notifSettingsForeground": "التنبيهات داخل التطبيق",
+  "@notifSettingsForeground": {
+    "description": "Merchant UI string notifSettingsForeground"
+  },
+  "notifSettingsPushUnavailable": "الإشعارات خارج التطبيق غير متاحة بعد.",
+  "@notifSettingsPushUnavailable": {
+    "description": "Merchant UI string notifSettingsPushUnavailable"
+  },
+  "notifSettingsPushBlocked": "الإشعارات الفورية الأصلية (APNs/FCM) غير مهيأة: إذن iOS وحده لا يكفي.",
+  "@notifSettingsPushBlocked": {
+    "description": "Merchant UI string notifSettingsPushBlocked"
+  },
+  "notifSettingsSave": "حفظ الإعدادات",
+  "@notifSettingsSave": {
+    "description": "Merchant UI string notifSettingsSave"
+  },
+  "notifSettingsSaved": "تم حفظ الإعدادات.",
+  "@notifSettingsSaved": {
+    "description": "Merchant UI string notifSettingsSaved"
+  },
+  "profileRole": "الدور",
+  "@profileRole": {
+    "description": "Merchant UI string profileRole"
+  },
+  "profileMerchant": "التجارة",
+  "@profileMerchant": {
+    "description": "Merchant UI string profileMerchant"
+  },
+  "profileBranch": "المنشأة",
+  "@profileBranch": {
+    "description": "Merchant UI string profileBranch"
+  },
+  "profileRoleOwner": "المالك",
+  "@profileRoleOwner": {
+    "description": "Merchant UI string profileRoleOwner"
+  },
+  "profileRoleManager": "المسؤول",
+  "@profileRoleManager": {
+    "description": "Merchant UI string profileRoleManager"
+  },
+  "profileRoleStaff": "الفريق",
+  "@profileRoleStaff": {
+    "description": "Merchant UI string profileRoleStaff"
+  },
+  "profileSectionAccount": "الحساب",
+  "@profileSectionAccount": {
+    "description": "Merchant UI string profileSectionAccount"
+  },
+  "profileSectionStore": "المنشأة",
+  "@profileSectionStore": {
+    "description": "Merchant UI string profileSectionStore"
+  },
+  "profileSectionOps": "عمليات المتجر",
+  "@profileSectionOps": {
+    "description": "Merchant UI string profileSectionOps"
+  },
+  "profileSectionPrefs": "التفضيلات",
+  "@profileSectionPrefs": {
+    "description": "Merchant UI string profileSectionPrefs"
+  },
+  "profileSectionSupport": "الدعم والشؤون القانونية",
+  "@profileSectionSupport": {
+    "description": "Merchant UI string profileSectionSupport"
+  },
+  "profileInfoReadonly": "معلومات التجارة",
+  "@profileInfoReadonly": {
+    "description": "Merchant UI string profileInfoReadonly"
+  },
+  "profileBranchStatus": "الحالة التشغيلية",
+  "@profileBranchStatus": {
+    "description": "Merchant UI string profileBranchStatus"
+  },
+  "profileUnavailableItem": "غير متاح في هذا الإصدار",
+  "@profileUnavailableItem": {
+    "description": "Merchant UI string profileUnavailableItem"
+  },
+  "switchBranch": "تغيير المنشأة",
+  "@switchBranch": {
+    "description": "Merchant UI string switchBranch"
+  },
+  "logoutConfirmTitle": "تسجيل الخروج",
+  "@logoutConfirmTitle": {
+    "description": "Merchant UI string logoutConfirmTitle"
+  },
+  "logoutConfirmBody": "هل تريد فعلاً تسجيل الخروج من SpeedyGo Merchant؟",
+  "@logoutConfirmBody": {
+    "description": "Merchant UI string logoutConfirmBody"
+  },
+  "logoutConfirmAction": "تسجيل الخروج",
+  "@logoutConfirmAction": {
+    "description": "Merchant UI string logoutConfirmAction"
+  },
+  "settingsProfileRow": "الملف الشخصي",
+  "@settingsProfileRow": {
+    "description": "Merchant UI string settingsProfileRow"
+  },
+  "settingsNotificationsOff": "معطّل",
+  "@settingsNotificationsOff": {
+    "description": "Merchant UI string settingsNotificationsOff"
+  },
+  "settingsSupportSection": "الدعم",
+  "@settingsSupportSection": {
+    "description": "Merchant UI string settingsSupportSection"
+  },
+  "settingsHelpCenter": "مركز المساعدة",
+  "@settingsHelpCenter": {
+    "description": "Merchant UI string settingsHelpCenter"
+  },
+  "logoutConnected": "متصل",
+  "@logoutConnected": {
+    "description": "Merchant UI string logoutConnected"
+  },
+  "logoutWarningTitle": "تنبيه بشأن العمليات الجارية",
+  "@logoutWarningTitle": {
+    "description": "Merchant UI string logoutWarningTitle"
+  },
+  "logoutActiveOrders": "الطلبات قيد المعالجة",
+  "@logoutActiveOrders": {
+    "description": "Merchant UI string logoutActiveOrders"
+  },
+  "logoutStoreState": "حالة المتجر",
+  "@logoutStoreState": {
+    "description": "Merchant UI string logoutStoreState"
+  },
+  "logoutStoreOpen": "مفتوح",
+  "@logoutStoreOpen": {
+    "description": "Merchant UI string logoutStoreOpen"
+  },
+  "logoutStoreClosed": "مغلق",
+  "@logoutStoreClosed": {
+    "description": "Merchant UI string logoutStoreClosed"
+  },
+  "logoutHandoverAdvice": "تأكد من توفر مسؤول آخر لمعالجة الطلبات قبل تسجيل الخروج.",
+  "@logoutHandoverAdvice": {
+    "description": "Merchant UI string logoutHandoverAdvice"
+  },
+  "logoutDataPreserved": "ستُحفظ بياناتك والكتالوج وسجل الطلبات.",
+  "@logoutDataPreserved": {
+    "description": "Merchant UI string logoutDataPreserved"
+  },
+  "logoutCancel": "إلغاء والرجوع",
+  "@logoutCancel": {
+    "description": "Merchant UI string logoutCancel"
+  },
+  "cancel": "إلغاء",
+  "@cancel": {
+    "description": "Merchant UI string cancel"
+  },
+  "attentionRequired": "بعض المستندات تتطلب انتباهك.",
+  "@attentionRequired": {
+    "description": "Merchant UI string attentionRequired"
+  },
+  "submitVerification": "إرسال الملف",
+  "@submitVerification": {
+    "description": "Merchant UI string submitVerification"
+  },
+  "submitVerificationUnavailable": "الإرسال غير ممكن بعد: مستندات إلزامية ناقصة أو غير مكتملة.",
+  "@submitVerificationUnavailable": {
+    "description": "Merchant UI string submitVerificationUnavailable"
+  },
+  "permissionDenied": "رُفض الإذن من الخادم.",
+  "@permissionDenied": {
+    "description": "Merchant UI string permissionDenied"
+  },
+  "regTitle": "التسجيل",
+  "@regTitle": {
+    "description": "Merchant UI string regTitle"
+  },
+  "regStepOf": "الخطوة",
+  "@regStepOf": {
+    "description": "Merchant UI string regStepOf"
+  },
+  "regAccountTitle": "إعداد الحساب",
+  "@regAccountTitle": {
+    "description": "Merchant UI string regAccountTitle"
+  },
+  "regRoleLabel": "الدور",
+  "@regRoleLabel": {
+    "description": "Merchant UI string regRoleLabel"
+  },
+  "regOwner": "المالك",
+  "@regOwner": {
+    "description": "Merchant UI string regOwner"
+  },
+  "regOperator": "المشغّل",
+  "@regOperator": {
+    "description": "Merchant UI string regOperator"
+  },
+  "regOwnerHint": "أنشئ تجارتك وأدرها بصفتك المالك.",
+  "@regOwnerHint": {
+    "description": "Merchant UI string regOwnerHint"
+  },
+  "regOperatorHint": "الانضمام إلى تجارة قائمة يتطلب دعوة والرمز الذي يقدّمه المالك.",
+  "@regOperatorHint": {
+    "description": "Merchant UI string regOperatorHint"
+  },
+  "regOperatorUnsupported": "للانضمام إلى تجارة، افتح الدعوات المستلمة وأدخل الرمز الذي قدّمه المالك. SpeedyGo لا يرسل رسائل SMS.",
+  "@regOperatorUnsupported": {
+    "description": "Merchant UI string regOperatorUnsupported"
+  },
+  "regOperatorOpenInvitations": "عرض دعواتي",
+  "@regOperatorOpenInvitations": {
+    "description": "Merchant UI string regOperatorOpenInvitations"
+  },
+  "regSelectRole": "اختر دوراً للمتابعة.",
+  "@regSelectRole": {
+    "description": "Merchant UI string regSelectRole"
+  },
+  "regContactTitle": "بيانات الاتصال",
+  "@regContactTitle": {
+    "description": "Merchant UI string regContactTitle"
+  },
+  "regAccountContinue": "متابعة التسجيل",
+  "@regAccountContinue": {
+    "description": "Merchant UI string regAccountContinue"
+  },
+  "regVerifiedPhone": "رقم الهاتف (موثَّق)",
+  "@regVerifiedPhone": {
+    "description": "Merchant UI string regVerifiedPhone"
+  },
+  "regVerifiedPhoneHint": "تم التحقق من هذا الرقم عند تسجيل الدخول. لا يمكن تعديله هنا.",
+  "@regVerifiedPhoneHint": {
+    "description": "Merchant UI string regVerifiedPhoneHint"
+  },
+  "regEmailUnsupported": "لا يمكن تسجيل البريد الإلكتروني في هذه المرحلة.",
+  "@regEmailUnsupported": {
+    "description": "Merchant UI string regEmailUnsupported"
+  },
+  "regConsentUnsupported": "اطّلع على الشروط العامة وسياسة الخصوصية لـ SpeedyGo قبل المتابعة.",
+  "@regConsentUnsupported": {
+    "description": "Merchant UI string regConsentUnsupported"
+  },
+  "regActivityTitle": "معلومات التجارة",
+  "@regActivityTitle": {
+    "description": "Merchant UI string regActivityTitle"
+  },
+  "regActivityBody": "أدخل الاسم الذي ستُعرَّف به تجارتك.",
+  "@regActivityBody": {
+    "description": "Merchant UI string regActivityBody"
+  },
+  "regLegalIdUnsupported": "تُرفع وثائق الهوية المهنية في مرحلة المستندات.",
+  "@regLegalIdUnsupported": {
+    "description": "Merchant UI string regLegalIdUnsupported"
+  },
+  "regDocsTitle": "مستندات المؤسسة",
+  "@regDocsTitle": {
+    "description": "Merchant UI string regDocsTitle"
+  },
+  "regDocsBody": "أضف المستندات المطلوبة.",
+  "@regDocsBody": {
+    "description": "Merchant UI string regDocsBody"
+  },
+  "regDocsRequired": "ارفع جميع المستندات الإلزامية قبل المتابعة.",
+  "@regDocsRequired": {
+    "description": "Merchant UI string regDocsRequired"
+  },
+  "regDocsTipsTitle": "نصائح لالتقاط واضح",
+  "@regDocsTipsTitle": {
+    "description": "Merchant UI string regDocsTipsTitle"
+  },
+  "regDocsTipLight": "فضّل إضاءة طبيعية ومتساوية لتجنب الظلال.",
+  "@regDocsTipLight": {
+    "description": "Merchant UI string regDocsTipLight"
+  },
+  "regDocsTipFrame": "حدّد إطار المستند جيداً: يجب أن تظهر جميع الزوايا.",
+  "@regDocsTipFrame": {
+    "description": "Merchant UI string regDocsTipFrame"
+  },
+  "regDocsFormats": "الصيغ المقبولة: PDF أو JPEG أو PNG (10 ميغابايت كحد أقصى).",
+  "@regDocsFormats": {
+    "description": "Merchant UI string regDocsFormats"
+  },
+  "regDocsContinue": "متابعة",
+  "@regDocsContinue": {
+    "description": "Merchant UI string regDocsContinue"
+  },
+  "regDocsContinueFinal": "المتابعة إلى المرحلة الأخيرة",
+  "@regDocsContinueFinal": {
+    "description": "Merchant UI string regDocsContinueFinal"
+  },
+  "regDocsAppBar": "التحقق",
+  "@regDocsAppBar": {
+    "description": "Merchant UI string regDocsAppBar"
+  },
+  "regDocsTipFlash": "عطّل الفلاش لتجنب الانعكاسات على الأسطح البلاستيكية.",
+  "@regDocsTipFlash": {
+    "description": "Merchant UI string regDocsTipFlash"
+  },
+  "regDocsPrivacy": "تُرسل مستنداتك إلى SpeedyGo فقط للتحقق من تجارتك.",
+  "@regDocsPrivacy": {
+    "description": "Merchant UI string regDocsPrivacy"
+  },
+  "regFileTooLarge": "الملف كبير جداً (الحد الأقصى 10 ميغابايت).",
+  "@regFileTooLarge": {
+    "description": "Merchant UI string regFileTooLarge"
+  },
+  "regFileTypeUnsupported": "صيغة غير مقبولة. استخدم PDF أو JPEG أو PNG.",
+  "@regFileTypeUnsupported": {
+    "description": "Merchant UI string regFileTypeUnsupported"
+  },
+  "regPickerUnavailable": "تعذّر فتح منتقي الملفات. أعد المحاولة بعد إعادة تشغيل التطبيق.",
+  "@regPickerUnavailable": {
+    "description": "Merchant UI string regPickerUnavailable"
+  },
+  "regPickDocument": "إضافة",
+  "@regPickDocument": {
+    "description": "Merchant UI string regPickDocument"
+  },
+  "regReplaceDocument": "استبدال",
+  "@regReplaceDocument": {
+    "description": "Merchant UI string regReplaceDocument"
+  },
+  "regEstablishmentTitle": "تفاصيل المنشأة",
+  "@regEstablishmentTitle": {
+    "description": "Merchant UI string regEstablishmentTitle"
+  },
+  "regEstablishmentBody": "أدخل معلومات منشأتك.",
+  "@regEstablishmentBody": {
+    "description": "Merchant UI string regEstablishmentBody"
+  },
+  "regIdentitySection": "اسم المنشأة",
+  "@regIdentitySection": {
+    "description": "Merchant UI string regIdentitySection"
+  },
+  "regBranchNameFrLabel": "اسم المنشأة",
+  "@regBranchNameFrLabel": {
+    "description": "Merchant UI string regBranchNameFrLabel"
+  },
+  "regCommerceContext": "التجارة",
+  "@regCommerceContext": {
+    "description": "Merchant UI string regCommerceContext"
+  },
+  "regContactSection": "جهة اتصال المنشأة",
+  "@regContactSection": {
+    "description": "Merchant UI string regContactSection"
+  },
+  "regCategorySection": "الفئة",
+  "@regCategorySection": {
+    "description": "Merchant UI string regCategorySection"
+  },
+  "regCategoryReadonly": "ستُحدَّد الفئة بعد التحقق.",
+  "@regCategoryReadonly": {
+    "description": "Merchant UI string regCategoryReadonly"
+  },
+  "regAddressSection": "العنوان والموقع",
+  "@regAddressSection": {
+    "description": "Merchant UI string regAddressSection"
+  },
+  "regAddressGuidance": "أدخل عنوان منشأتك.",
+  "@regAddressGuidance": {
+    "description": "Merchant UI string regAddressGuidance"
+  },
+  "regAddressExactLabel": "العنوان الدقيق",
+  "@regAddressExactLabel": {
+    "description": "Merchant UI string regAddressExactLabel"
+  },
+  "regPickupPlace": "موقع الاستلام",
+  "@regPickupPlace": {
+    "description": "Merchant UI string regPickupPlace"
+  },
+  "regChooseOnMap": "اختيار على الخريطة",
+  "@regChooseOnMap": {
+    "description": "Merchant UI string regChooseOnMap"
+  },
+  "regLocationConfirmed": "تم تأكيد الموقع",
+  "@regLocationConfirmed": {
+    "description": "Merchant UI string regLocationConfirmed"
+  },
+  "regLocationEdit": "تعديل",
+  "@regLocationEdit": {
+    "description": "Merchant UI string regLocationEdit"
+  },
+  "regLocationRequired": "أكّد موقع الاستلام على الخريطة قبل المتابعة.",
+  "@regLocationRequired": {
+    "description": "Merchant UI string regLocationRequired"
+  },
+  "regLocationPickerTitle": "موقع المتجر",
+  "@regLocationPickerTitle": {
+    "description": "Merchant UI string regLocationPickerTitle"
+  },
+  "regLocationConfirm": "تأكيد الموقع",
+  "@regLocationConfirm": {
+    "description": "Merchant UI string regLocationConfirm"
+  },
+  "regLocationUseGps": "استخدام موقعي",
+  "@regLocationUseGps": {
+    "description": "Merchant UI string regLocationUseGps"
+  },
+  "regLocationMoveHint": "حرّك الخريطة لوضع الدبوس على موقع الاستلام، أو استخدم موقعك عبر GPS.",
+  "@regLocationMoveHint": {
+    "description": "Merchant UI string regLocationMoveHint"
+  },
+  "regLocationGpsSuggestion": "موقع GPS مقترح — أكّد فقط إذا كان موقع استلام المنشأة.",
+  "@regLocationGpsSuggestion": {
+    "description": "Merchant UI string regLocationGpsSuggestion"
+  },
+  "regLocationDenied": "رُفض إذن الموقع. ضع الدبوس يدويًا على الخريطة.",
+  "@regLocationDenied": {
+    "description": "Merchant UI string regLocationDenied"
+  },
+  "regLocationDeniedForever": "الموقع معطّل لتطبيق SpeedyGo. فعّله من الإعدادات، أو ضع الدبوس يدويًا.",
+  "@regLocationDeniedForever": {
+    "description": "Merchant UI string regLocationDeniedForever"
+  },
+  "regLocationServicesDisabled": "خدمات الموقع معطّلة. ضع الدبوس يدويًا على الخريطة.",
+  "@regLocationServicesDisabled": {
+    "description": "Merchant UI string regLocationServicesDisabled"
+  },
+  "regLocationUnavailable": "موقع GPS غير متاح. ضع الدبوس يدويًا على الخريطة.",
+  "@regLocationUnavailable": {
+    "description": "Merchant UI string regLocationUnavailable"
+  },
+  "regBranchPhoneLabel": "رقم الهاتف",
+  "@regBranchPhoneLabel": {
+    "description": "Merchant UI string regBranchPhoneLabel"
+  },
+  "regBranchPhoneHint": "رقم اتصال المنشأة (مختلف عن رقم تسجيل الدخول).",
+  "@regBranchPhoneHint": {
+    "description": "Merchant UI string regBranchPhoneHint"
+  },
+  "regPreviewLabel": "معاينة (بيانات مُدخَلة — غير منشورة)",
+  "@regPreviewLabel": {
+    "description": "Merchant UI string regPreviewLabel"
+  },
+  "regBranchIncomplete": "اسم المنشأة ورقم هاتفها وعنوانها مطلوبة.",
+  "@regBranchIncomplete": {
+    "description": "Merchant UI string regBranchIncomplete"
+  },
+  "regCoordsInvalid": "خط العرض (−90…90) وخط الطول (−180…180) غير صالحين.",
+  "@regCoordsInvalid": {
+    "description": "Merchant UI string regCoordsInvalid"
+  },
+  "regCoordsConfirmHint": "حدّد موقع الاستلام على الخريطة، ثم أكّد.",
+  "@regCoordsConfirmHint": {
+    "description": "Merchant UI string regCoordsConfirmHint"
+  },
+  "regReviewTitle": "المراجعة",
+  "@regReviewTitle": {
+    "description": "Merchant UI string regReviewTitle"
+  },
+  "regReviewDocsTitle": "المستندات القانونية",
+  "@regReviewDocsTitle": {
+    "description": "Merchant UI string regReviewDocsTitle"
+  },
+  "regReviewBranchTitle": "المنشأة",
+  "@regReviewBranchTitle": {
+    "description": "Merchant UI string regReviewBranchTitle"
+  },
+  "regReviewLocation": "الموقع",
+  "@regReviewLocation": {
+    "description": "Merchant UI string regReviewLocation"
+  },
+  "regReviewBody": "يُرجى التحقّق بعناية من معلوماتك قبل الإرسال النهائي لتجنّب أي تأخير في الاعتماد.",
+  "@regReviewBody": {
+    "description": "Merchant UI string regReviewBody"
+  },
+  "regSubmit": "إرسال للتحقق",
+  "@regSubmit": {
+    "description": "Merchant UI string regSubmit"
+  },
+  "regCorrectionTitle": "تصحيح الملف",
+  "@regCorrectionTitle": {
+    "description": "Merchant UI string regCorrectionTitle"
+  },
+  "regCorrectionActionRequired": "إجراء مطلوب",
+  "@regCorrectionActionRequired": {
+    "description": "Merchant UI string regCorrectionActionRequired"
+  },
+  "regCorrectionDetails": "تفاصيل الملف",
+  "@regCorrectionDetails": {
+    "description": "Merchant UI string regCorrectionDetails"
+  },
+  "regCorrectionSubmit": "إرسال التصحيحات",
+  "@regCorrectionSubmit": {
+    "description": "Merchant UI string regCorrectionSubmit"
+  },
+  "regContinue": "متابعة",
+  "@regContinue": {
+    "description": "Merchant UI string regContinue"
+  },
+  "regEdit": "تعديل",
+  "@regEdit": {
+    "description": "Merchant UI string regEdit"
+  },
+  "regMissingSteps": "أكمل ملفك",
+  "@regMissingSteps": {
+    "description": "Merchant UI string regMissingSteps"
+  },
+  "regRejectionNoReason": "يلزم إجراء تصحيحات. حدّث المستندات المعنية ثم أعد الإرسال.",
+  "@regRejectionNoReason": {
+    "description": "Merchant UI string regRejectionNoReason"
+  },
+  "regApprovedNext": "تم اعتماد تجارتك. أكمل بعد ذلك ساعات العمل والكتالوج عند توفّرهما.",
+  "@regApprovedNext": {
+    "description": "Merchant UI string regApprovedNext"
+  },
+  "legalSectionTitle": "الشروط والإقرار",
+  "@legalSectionTitle": {
+    "description": "Merchant UI string legalSectionTitle"
+  },
+  "legalSectionBody": "قبل الإرسال، اقرأ الشروط التالية ووافق عليها. تُسجَّل موافقتك مع الملف.",
+  "@legalSectionBody": {
+    "description": "Merchant UI string legalSectionBody"
+  },
+  "legalTermsLabel": "لقد قرأتُ وأوافق على الشروط العامة للتاجر SpeedyGo.",
+  "@legalTermsLabel": {
+    "description": "Merchant UI string legalTermsLabel"
+  },
+  "legalDeclarationLabel": "أُقرّ بأن معلومات الملف ومستنداته دقيقة وكاملة.",
+  "@legalDeclarationLabel": {
+    "description": "Merchant UI string legalDeclarationLabel"
+  },
+  "legalVersionTag": "الإصدار {version}",
+  "@legalVersionTag": {
+    "description": "Merchant UI string legalVersionTag",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "legalLoading": "جاري تحميل الشروط…",
+  "@legalLoading": {
+    "description": "Merchant UI string legalLoading"
+  },
+  "legalLoadFailed": "تعذّر تحميل الشروط. تحقّق من اتصالك ثم أعد المحاولة.",
+  "@legalLoadFailed": {
+    "description": "Merchant UI string legalLoadFailed"
+  },
+  "legalIncomplete": "الشروط غير متاحة حاليًا. أعد المحاولة لاحقًا.",
+  "@legalIncomplete": {
+    "description": "Merchant UI string legalIncomplete"
+  },
+  "legalRetry": "إعادة المحاولة",
+  "@legalRetry": {
+    "description": "Merchant UI string legalRetry"
+  },
+  "legalConsentRequired": "وافق على الشروط وإقرار الدقّة لإرسال الملف.",
+  "@legalConsentRequired": {
+    "description": "Merchant UI string legalConsentRequired"
+  },
+  "legalVersionOutdated": "تم تحديث الشروط. أعد قراءتها ثم وافق عليها مجددًا قبل الإرسال.",
+  "@legalVersionOutdated": {
+    "description": "Merchant UI string legalVersionOutdated"
+  },
+  "legalConsentHint": "ضع علامة على الخانتين لتفعيل الإرسال.",
+  "@legalConsentHint": {
+    "description": "Merchant UI string legalConsentHint"
+  },
+  "legalContentLink": "مرجع النص",
+  "@legalContentLink": {
+    "description": "Merchant UI string legalContentLink"
+  },
+  "issuesTitle": "نقاط يجب تصحيحها",
+  "@issuesTitle": {
+    "description": "Merchant UI string issuesTitle"
+  },
+  "issuesApplicationTitle": "معلومات الملف",
+  "@issuesApplicationTitle": {
+    "description": "Merchant UI string issuesApplicationTitle"
+  },
+  "issuesDocumentTitle": "مستندات يجب استبدالها",
+  "@issuesDocumentTitle": {
+    "description": "Merchant UI string issuesDocumentTitle"
+  },
+  "issuesReplaceDocument": "استبدال هذا المستند",
+  "@issuesReplaceDocument": {
+    "description": "Merchant UI string issuesReplaceDocument"
+  },
+  "issuesResolved": "تم التصحيح",
+  "@issuesResolved": {
+    "description": "Merchant UI string issuesResolved"
+  },
+  "issuesFixHint": "صحّح النقاط أعلاه (واستبدل المستندات المعنية إن وُجدت)، ووافق مجددًا على الشروط، ثم أرسل الملف.",
+  "@issuesFixHint": {
+    "description": "Merchant UI string issuesFixHint"
+  },
+  "issuesRemaining": "نقطة واحدة متبقية للتصحيح{count} نقاط متبقية للتصحيح",
+  "@issuesRemaining": {
+    "description": "Merchant UI string issuesRemaining",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "dossierAttemptLabel": "المحاولة رقم",
+  "@dossierAttemptLabel": {
+    "description": "Merchant UI string dossierAttemptLabel"
+  },
+  "dossierSubmittedAtLabel": "أُرسل في",
+  "@dossierSubmittedAtLabel": {
+    "description": "Merchant UI string dossierSubmittedAtLabel"
+  },
+  "dossierReviewedAtLabel": "رُوجع في",
+  "@dossierReviewedAtLabel": {
+    "description": "Merchant UI string dossierReviewedAtLabel"
+  },
+  "dossierConsentLabel": "تم قبول الشروط",
+  "@dossierConsentLabel": {
+    "description": "Merchant UI string dossierConsentLabel"
+  },
+  "dossierConsentVersions": "الشروط {terms} · الإقرار {declaration}",
+  "@dossierConsentVersions": {
+    "description": "Merchant UI string dossierConsentVersions",
+    "placeholders": {
+      "terms": {
+        "type": "String"
+      },
+      "declaration": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsTeamRow": "إدارة الفريق",
+  "@settingsTeamRow": {
+    "description": "Merchant UI string settingsTeamRow"
+  },
+  "settingsTeamInvitationsRow": "الدعوات المستلمة",
+  "@settingsTeamInvitationsRow": {
+    "description": "Merchant UI string settingsTeamInvitationsRow"
+  },
+  "teamTitle": "الموظفون والصلاحيات",
+  "@teamTitle": {
+    "description": "Merchant UI string teamTitle"
+  },
+  "teamStoreContext": "إدارة الفريق",
+  "@teamStoreContext": {
+    "description": "Merchant UI string teamStoreContext"
+  },
+  "teamActiveMembers": "الأعضاء النشطون",
+  "@teamActiveMembers": {
+    "description": "Merchant UI string teamActiveMembers"
+  },
+  "teamPendingInvitations": "الدعوات قيد الانتظار",
+  "@teamPendingInvitations": {
+    "description": "Merchant UI string teamPendingInvitations"
+  },
+  "teamRolesSummary": "ملخّص الأدوار",
+  "@teamRolesSummary": {
+    "description": "Merchant UI string teamRolesSummary"
+  },
+  "teamRoleOwner": "المالك",
+  "@teamRoleOwner": {
+    "description": "Merchant UI string teamRoleOwner"
+  },
+  "teamRoleManager": "المسؤول",
+  "@teamRoleManager": {
+    "description": "Merchant UI string teamRoleManager"
+  },
+  "teamRoleStaff": "الفريق",
+  "@teamRoleStaff": {
+    "description": "Merchant UI string teamRoleStaff"
+  },
+  "teamOwnerBadge": "إداري",
+  "@teamOwnerBadge": {
+    "description": "Merchant UI string teamOwnerBadge"
+  },
+  "teamSelfBadge": "أنت",
+  "@teamSelfBadge": {
+    "description": "Merchant UI string teamSelfBadge"
+  },
+  "teamPhoneUnavailable": "الرقم غير متاح",
+  "@teamPhoneUnavailable": {
+    "description": "Merchant UI string teamPhoneUnavailable"
+  },
+  "teamRevoke": "إلغاء الصلاحية",
+  "@teamRevoke": {
+    "description": "Merchant UI string teamRevoke"
+  },
+  "teamChangeRole": "تعديل الدور",
+  "@teamChangeRole": {
+    "description": "Merchant UI string teamChangeRole"
+  },
+  "teamRegenerateCode": "إعادة إنشاء الرمز",
+  "@teamRegenerateCode": {
+    "description": "Merchant UI string teamRegenerateCode"
+  },
+  "teamCancelInvitation": "إلغاء",
+  "@teamCancelInvitation": {
+    "description": "Merchant UI string teamCancelInvitation"
+  },
+  "teamInviteMember": "دعوة عضو",
+  "@teamInviteMember": {
+    "description": "Merchant UI string teamInviteMember"
+  },
+  "teamInvitationExpired": "منتهية",
+  "@teamInvitationExpired": {
+    "description": "Merchant UI string teamInvitationExpired"
+  },
+  "teamRoleLine": "الدور: {role}",
+  "@teamRoleLine": {
+    "description": "Merchant UI string teamRoleLine",
+    "placeholders": {
+      "role": {
+        "type": "String"
+      }
+    }
+  },
+  "teamExpiresOn": "تنتهي في {date}",
+  "@teamExpiresOn": {
+    "description": "Merchant UI string teamExpiresOn",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "teamEmptyMembers": "لا يوجد أعضاء نشطون حاليًا.",
+  "@teamEmptyMembers": {
+    "description": "Merchant UI string teamEmptyMembers"
+  },
+  "teamEmptyInvitations": "لا توجد دعوات قيد الانتظار.",
+  "@teamEmptyInvitations": {
+    "description": "Merchant UI string teamEmptyInvitations"
+  },
+  "teamLoadError": "تعذّر تحميل الفريق. تحقّق من اتصالك ثم أعد المحاولة.",
+  "@teamLoadError": {
+    "description": "Merchant UI string teamLoadError"
+  },
+  "teamForbiddenTitle": "وصول مقيّد",
+  "@teamForbiddenTitle": {
+    "description": "Merchant UI string teamForbiddenTitle"
+  },
+  "teamForbiddenBody": "إدارة الفريق مخصّصة للمالكين والمسؤولين.",
+  "@teamForbiddenBody": {
+    "description": "Merchant UI string teamForbiddenBody"
+  },
+  "teamSummaryOwner": "يدعو الأعضاء ويعدّل الأدوار ويلغي صلاحياتهم.",
+  "@teamSummaryOwner": {
+    "description": "Merchant UI string teamSummaryOwner"
+  },
+  "teamSummaryManager": "يطّلع على قائمة الفريق والدعوات. لا يمكنه الدعوة ولا تعديل الأدوار ولا إلغاء الصلاحيات.",
+  "@teamSummaryManager": {
+    "description": "Merchant UI string teamSummaryManager"
+  },
+  "teamSummaryStaff": "لا يملك صلاحية إدارة الفريق.",
+  "@teamSummaryStaff": {
+    "description": "Merchant UI string teamSummaryStaff"
+  },
+  "teamSummaryScope": "تغطي الصلاحيات جميع منشآت التجارة: لا يوجد وصول حسب المنشأة.",
+  "@teamSummaryScope": {
+    "description": "Merchant UI string teamSummaryScope"
+  },
+  "teamInviteTitle": "دعوة عضو",
+  "@teamInviteTitle": {
+    "description": "Merchant UI string teamInviteTitle"
+  },
+  "teamInviteHint": "لا يُرسل SpeedyGo رسالة SMS ولا بريدًا إلكترونيًا. سيُسلَّم إليك رمز قبول: انقله بنفسك إلى الشخص المدعو.",
+  "@teamInviteHint": {
+    "description": "Merchant UI string teamInviteHint"
+  },
+  "teamInvitePhoneLabel": "رقم الهاتف",
+  "@teamInvitePhoneLabel": {
+    "description": "Merchant UI string teamInvitePhoneLabel"
+  },
+  "teamInvitePhoneHint": "550 12 34 56",
+  "@teamInvitePhoneHint": {
+    "description": "Merchant UI string teamInvitePhoneHint"
+  },
+  "teamInvitePhoneHelper": "الرقم الذي يستخدمه الشخص لتسجيل الدخول إلى SpeedyGo.",
+  "@teamInvitePhoneHelper": {
+    "description": "Merchant UI string teamInvitePhoneHelper"
+  },
+  "teamInvitePhoneInvalid": "أدخل رقم هاتف محمول جزائري صالحًا (9 أرقام).",
+  "@teamInvitePhoneInvalid": {
+    "description": "Merchant UI string teamInvitePhoneInvalid"
+  },
+  "teamInviteRoleLabel": "الدور",
+  "@teamInviteRoleLabel": {
+    "description": "Merchant UI string teamInviteRoleLabel"
+  },
+  "teamInviteCreate": "إنشاء الدعوة",
+  "@teamInviteCreate": {
+    "description": "Merchant UI string teamInviteCreate"
+  },
+  "teamRoleManagerHint": "يمكنه الاطّلاع على الفريق. بلا صلاحيات إدارة.",
+  "@teamRoleManagerHint": {
+    "description": "Merchant UI string teamRoleManagerHint"
+  },
+  "teamRoleStaffHint": "وصول تشغيلي، دون صلاحية إدارة الفريق.",
+  "@teamRoleStaffHint": {
+    "description": "Merchant UI string teamRoleStaffHint"
+  },
+  "teamCodeTitle": "رمز القبول",
+  "@teamCodeTitle": {
+    "description": "Merchant UI string teamCodeTitle"
+  },
+  "teamCodeRegeneratedTitle": "رمز قبول جديد",
+  "@teamCodeRegeneratedTitle": {
+    "description": "Merchant UI string teamCodeRegeneratedTitle"
+  },
+  "teamCodeRegeneratedNote": "الرمز السابق لم يعد صالحًا.",
+  "@teamCodeRegeneratedNote": {
+    "description": "Merchant UI string teamCodeRegeneratedNote"
+  },
+  "teamCodeCopy": "نسخ الرمز",
+  "@teamCodeCopy": {
+    "description": "Merchant UI string teamCodeCopy"
+  },
+  "teamCodeCopied": "تم نسخ الرمز.",
+  "@teamCodeCopied": {
+    "description": "Merchant UI string teamCodeCopied"
+  },
+  "teamCodeDone": "إنهاء",
+  "@teamCodeDone": {
+    "description": "Merchant UI string teamCodeDone"
+  },
+  "teamRevokeTitle": "إلغاء الصلاحية؟",
+  "@teamRevokeTitle": {
+    "description": "Merchant UI string teamRevokeTitle"
+  },
+  "teamRevoked": "تم إلغاء الصلاحية.",
+  "@teamRevoked": {
+    "description": "Merchant UI string teamRevoked"
+  },
+  "teamCancelInviteTitle": "إلغاء الدعوة؟",
+  "@teamCancelInviteTitle": {
+    "description": "Merchant UI string teamCancelInviteTitle"
+  },
+  "teamCancelInviteBody": "رمز القبول الخاص بـ {phone} لن يعود صالحًا.",
+  "@teamCancelInviteBody": {
+    "description": "Merchant UI string teamCancelInviteBody",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "teamCancelInviteConfirm": "إلغاء الدعوة",
+  "@teamCancelInviteConfirm": {
+    "description": "Merchant UI string teamCancelInviteConfirm"
+  },
+  "teamKeep": "إبقاء",
+  "@teamKeep": {
+    "description": "Merchant UI string teamKeep"
+  },
+  "teamInviteCancelled": "تم إلغاء الدعوة.",
+  "@teamInviteCancelled": {
+    "description": "Merchant UI string teamInviteCancelled"
+  },
+  "teamRoleSheetTitle": "تعديل الدور",
+  "@teamRoleSheetTitle": {
+    "description": "Merchant UI string teamRoleSheetTitle"
+  },
+  "teamRoleSheetHint": "إذا قلّل الدور من صلاحياته، تُغلق جلسات العضو ويتعيّن عليه إعادة تسجيل الدخول.",
+  "@teamRoleSheetHint": {
+    "description": "Merchant UI string teamRoleSheetHint"
+  },
+  "teamRoleSave": "حفظ",
+  "@teamRoleSave": {
+    "description": "Merchant UI string teamRoleSave"
+  },
+  "teamRoleUpdated": "تم تحديث الدور.",
+  "@teamRoleUpdated": {
+    "description": "Merchant UI string teamRoleUpdated"
+  },
+  "teamErrorGeneric": "تعذّر تنفيذ الإجراء حاليًا. أعد المحاولة.",
+  "@teamErrorGeneric": {
+    "description": "Merchant UI string teamErrorGeneric"
+  },
+  "teamErrorConflict": "تغيّرت القائمة في الأثناء. تم تحديثها الآن: تحقّق ثم أعد المحاولة.",
+  "@teamErrorConflict": {
+    "description": "Merchant UI string teamErrorConflict"
+  },
+  "teamErrorDuplicateMember": "هذا الرقم جزء من الفريق بالفعل.",
+  "@teamErrorDuplicateMember": {
+    "description": "Merchant UI string teamErrorDuplicateMember"
+  },
+  "teamErrorDuplicateInvite": "توجد دعوة قيد الانتظار لهذا الرقم بالفعل.",
+  "@teamErrorDuplicateInvite": {
+    "description": "Merchant UI string teamErrorDuplicateInvite"
+  },
+  "teamErrorOwnerProtected": "لا يمكن تعديل المالك من هنا.",
+  "@teamErrorOwnerProtected": {
+    "description": "Merchant UI string teamErrorOwnerProtected"
+  },
+  "teamErrorSelf": "لا يمكنك تعديل صلاحيتك الخاصة.",
+  "@teamErrorSelf": {
+    "description": "Merchant UI string teamErrorSelf"
+  },
+  "teamErrorInviteGone": "هذه الدعوة لم تعد موجودة.",
+  "@teamErrorInviteGone": {
+    "description": "Merchant UI string teamErrorInviteGone"
+  },
+  "teamErrorInviteExpired": "انتهت صلاحية هذه الدعوة. اطلب رمزًا جديدًا من المالك.",
+  "@teamErrorInviteExpired": {
+    "description": "Merchant UI string teamErrorInviteExpired"
+  },
+  "teamErrorCodeInvalid": "الرمز غير صحيح.",
+  "@teamErrorCodeInvalid": {
+    "description": "Merchant UI string teamErrorCodeInvalid"
+  },
+  "teamErrorPhoneMismatch": "هذه الدعوة موجّهة إلى رقم آخر.",
+  "@teamErrorPhoneMismatch": {
+    "description": "Merchant UI string teamErrorPhoneMismatch"
+  },
+  "teamErrorInvalidInput": "تحقّق من الرقم والدور ثم أعد المحاولة.",
+  "@teamErrorInvalidInput": {
+    "description": "Merchant UI string teamErrorInvalidInput"
+  },
+  "teamInvitationsTitle": "الدعوات المستلمة",
+  "@teamInvitationsTitle": {
+    "description": "Merchant UI string teamInvitationsTitle"
+  },
+  "teamInvitationsHint": "دعوات موجّهة إلى رقمك. أدخل الرمز الذي قدّمه المالك لقبولها.",
+  "@teamInvitationsHint": {
+    "description": "Merchant UI string teamInvitationsHint"
+  },
+  "teamInvitationsEmpty": "لا توجد دعوات قيد الانتظار لرقمك.",
+  "@teamInvitationsEmpty": {
+    "description": "Merchant UI string teamInvitationsEmpty"
+  },
+  "teamInvitationsLoadError": "تعذّر تحميل دعواتك. أعد المحاولة.",
+  "@teamInvitationsLoadError": {
+    "description": "Merchant UI string teamInvitationsLoadError"
+  },
+  "teamAccept": "قبول",
+  "@teamAccept": {
+    "description": "Merchant UI string teamAccept"
+  },
+  "teamAcceptTitle": "إدخال رمز القبول",
+  "@teamAcceptTitle": {
+    "description": "Merchant UI string teamAcceptTitle"
+  },
+  "teamAcceptCodeLabel": "الرمز المقدَّم من المالك",
+  "@teamAcceptCodeLabel": {
+    "description": "Merchant UI string teamAcceptCodeLabel"
+  },
+  "teamAcceptCodeInvalid": "يتكوّن الرمز من 64 حرفًا (أرقام وحروف من a إلى f).",
+  "@teamAcceptCodeInvalid": {
+    "description": "Merchant UI string teamAcceptCodeInvalid"
+  },
+  "teamAcceptConfirm": "قبول الدعوة",
+  "@teamAcceptConfirm": {
+    "description": "Merchant UI string teamAcceptConfirm"
+  },
+  "settingsLanguageRow": "اللغة",
+  "@settingsLanguageRow": {
+    "description": "Merchant UI string settingsLanguageRow"
+  },
+  "languageSettingsTitle": "اللغة",
+  "@languageSettingsTitle": {
+    "description": "Merchant UI string languageSettingsTitle"
+  },
+  "languageSettingsSubtitle": "اختر لغة التطبيق. يُطبَّق التغيير فورًا.",
+  "@languageSettingsSubtitle": {
+    "description": "Merchant UI string languageSettingsSubtitle"
+  },
+  "languageOptionFrench": "Français",
+  "@languageOptionFrench": {
+    "description": "Merchant UI string languageOptionFrench"
+  },
+  "languageOptionArabic": "العربية",
+  "@languageOptionArabic": {
+    "description": "Merchant UI string languageOptionArabic"
+  },
+  "languageApply": "تطبيق التغييرات",
+  "@languageApply": {
+    "description": "Merchant UI string languageApply"
+  },
+  "languageApplied": "تم تحديث اللغة.",
+  "@languageApplied": {
+    "description": "Merchant UI string languageApplied"
+  },
+  "languageBilingualTitle": "اللغة / Langue",
+  "@languageBilingualTitle": {
+    "description": "Merchant UI string languageBilingualTitle"
+  },
+  "languagePreviewNote": "تتبدل نصوص الواجهة بين الفرنسية والعربية. تبقى بيانات العمل دون تغيير.",
+  "@languagePreviewNote": {
+    "description": "Merchant UI string languagePreviewNote"
+  }
+}

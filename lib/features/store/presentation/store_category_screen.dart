@@ -160,7 +160,7 @@ class _StoreCategoryScreenState extends ConsumerState<StoreCategoryScreen> {
                   key: const Key('store-category-search'),
                   controller: _search,
                   textInputAction: TextInputAction.search,
-                  decoration: const InputDecoration(
+                  decoration: InputDecoration(
                     prefixIcon: Icon(Icons.search),
                     hintText: AppStrings.storeCategorySearch,
                   ),
@@ -200,7 +200,7 @@ class _StoreCategoryScreenState extends ConsumerState<StoreCategoryScreen> {
                   TextButton(
                     key: const Key('store-category-clear'),
                     onPressed: _saving ? null : _clear,
-                    child: const Text(AppStrings.storeCategoryClear),
+                    child: Text(AppStrings.storeCategoryClear),
                   ),
                 ],
               ],
@@ -224,7 +224,7 @@ class _StoreCategoryScreenState extends ConsumerState<StoreCategoryScreen> {
                           width: 20,
                           child: CircularProgressIndicator(strokeWidth: 2),
                         )
-                      : const Text(AppStrings.storeCategorySave),
+                      : Text(AppStrings.storeCategorySave),
                 ),
               ),
             ),
@@ -239,7 +239,7 @@ class _StoreCategoryScreenState extends ConsumerState<StoreCategoryScreen> {
     bool canManage,
   ) {
     if (items.isEmpty) {
-      return const [
+      return [
         _Message(
           key: Key('store-category-empty'),
           text: AppStrings.storeCategoryEmpty,
@@ -251,7 +251,7 @@ class _StoreCategoryScreenState extends ConsumerState<StoreCategoryScreen> {
         ? items
         : items.where((v) => v.name.toLowerCase().contains(query)).toList();
     if (shown.isEmpty) {
-      return const [
+      return [
         _Message(
           key: Key('store-category-no-match'),
           text: AppStrings.storeCategoryNoMatch,

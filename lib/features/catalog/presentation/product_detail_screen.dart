@@ -405,7 +405,7 @@ class _ConfigCard extends StatelessWidget {
           TextButton(
             key: const Key('product-detail-groups-retry'),
             onPressed: onRetry,
-            child: const Text(AppStrings.retry),
+            child: Text(AppStrings.retry),
           ),
         ],
       );
@@ -469,7 +469,7 @@ class _GroupBlock extends StatelessWidget {
                     g.maxSelections,
                   ),
           )
-        : AppStrings.catalogOptionalSummary(g.maxSelections);
+        : AppStrings.catalogOptionalSummary(g.maxSelections.toString());
     return Column(
       key: Key('product-detail-group-${g.id}'),
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -731,7 +731,7 @@ class _Footer extends StatelessWidget {
       key: const Key('product-detail-edit'),
       onPressed: onEdit,
       icon: const Icon(Icons.edit, size: 20),
-      label: const Text(
+      label: Text(
         AppStrings.catalogEditProduct,
         maxLines: 2,
         textAlign: TextAlign.center,

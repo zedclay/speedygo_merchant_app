@@ -30,7 +30,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   var _index = 0;
   var _completing = false;
 
-  static const _pages = [
+  static final _pages = [
     _OnboardingPage(
       asset: MerchantAssets.onboardingReceive,
       title: AppStrings.onboardingPage1Title,
@@ -110,7 +110,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                   TextButton(
                     key: const Key('merchant-onboarding-skip'),
                     onPressed: busy ? null : _complete,
-                    child: const Text(AppStrings.onboardingSkip),
+                    child: Text(AppStrings.onboardingSkip),
                   ),
                 ],
               ),
@@ -235,7 +235,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                   TextButton(
                     key: const Key('merchant-onboarding-existing'),
                     onPressed: busy ? null : _complete,
-                    child: const Text(AppStrings.onboardingHaveAccount),
+                    child: Text(AppStrings.onboardingHaveAccount),
                   ),
                   if (session.errorMessage != null) ...[
                     const SizedBox(height: 8),

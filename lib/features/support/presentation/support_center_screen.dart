@@ -64,7 +64,7 @@ class SupportCenterScreen extends ConsumerWidget {
                   ),
                   onPressed: () => _compose(context, ref),
                   icon: const Icon(Icons.add_circle),
-                  label: const Text(AppStrings.supportNewTicket),
+                  label: Text(AppStrings.supportNewTicket),
                 ),
               ),
             if (canContact) const SizedBox(height: 24),
@@ -94,7 +94,7 @@ class SupportCenterScreen extends ConsumerWidget {
                           key: const Key('support-retry'),
                           onPressed: () =>
                               ref.invalidate(supportTicketsProvider),
-                          child: const Text(AppStrings.retry),
+                          child: Text(AppStrings.retry),
                         ),
                       ),
                     ],
@@ -167,7 +167,7 @@ class SupportCenterScreen extends ConsumerWidget {
       ],
       ...topics,
       if (finished.isNotEmpty) ...[
-        const _SectionHeader(title: AppStrings.supportResolvedTickets),
+        _SectionHeader(title: AppStrings.supportResolvedTickets),
         const SizedBox(height: 12),
         _ResolvedList(tickets: finished),
       ],
@@ -208,7 +208,7 @@ Future<void> showSupportCompose(
   ref.invalidate(supportTicketsProvider);
   ScaffoldMessenger.of(
     context,
-  ).showSnackBar(SnackBar(content: Text(AppStrings.supportCreated(reference))));
+  ).showSnackBar(SnackBar(content: Text(AppStrings.supportCreated(reference.toString()))));
 }
 
 class _SectionHeader extends StatelessWidget {
@@ -395,9 +395,7 @@ class _ResolvedList extends StatelessWidget {
                               TextSpan(
                                 children: [
                                   TextSpan(
-                                    text: AppStrings.supportStatus(
-                                      tickets[i].status.name,
-                                    ).toUpperCase(),
+                                    text: AppStrings.supportStatus(tickets[i].status.name, ).toUpperCase(),
                                     style: const TextStyle(
                                       color: Color(0xFF07883B),
                                       fontWeight: FontWeight.w700,
@@ -444,7 +442,7 @@ class SupportStatusChip extends StatelessWidget {
         borderRadius: BorderRadius.circular(999),
       ),
       child: Text(
-        AppStrings.supportStatus(status.name).toUpperCase(),
+        AppStrings.supportStatus(status.name.toString()).toUpperCase(),
         style: Theme.of(context).textTheme.labelSmall?.copyWith(
           color: AppColors.onSecondaryContainer,
           fontSize: 11,
@@ -522,7 +520,7 @@ class _SupportTopics extends ConsumerWidget {
                 ),
                 TextButton(
                   onPressed: () => ref.invalidate(supportTopicsProvider),
-                  child: const Text(AppStrings.retry),
+                  child: Text(AppStrings.retry),
                 ),
               ],
             ),
@@ -611,7 +609,7 @@ class _SupportFaq extends ConsumerWidget {
                 ),
                 TextButton(
                   onPressed: () => ref.invalidate(supportFaqProvider),
-                  child: const Text(AppStrings.retry),
+                  child: Text(AppStrings.retry),
                 ),
               ],
             ),
@@ -627,11 +625,11 @@ class _SupportFaq extends ConsumerWidget {
                   ),
                 ]
               : [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: AppColors.surfaceContainerLowest,
+                  Material(
+                    color: AppColors.surfaceContainerLowest,
+                    shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: AppColors.outlineVariant),
+                      side: const BorderSide(color: AppColors.outlineVariant),
                     ),
                     clipBehavior: Clip.antiAlias,
                     child: Column(

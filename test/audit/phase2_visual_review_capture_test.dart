@@ -54,7 +54,7 @@ class _Shell extends StatelessWidget {
         unselectedFontSize: 10,
         selectedLabelStyle: const TextStyle(fontSize: 11, height: 1.1),
         unselectedLabelStyle: const TextStyle(fontSize: 10, height: 1.1),
-        items: const [
+        items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_outlined),
             label: AppStrings.tabHome,

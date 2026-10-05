@@ -317,7 +317,7 @@ class _AcceptCodeSheet extends StatelessWidget {
     await Clipboard.setData(ClipboardData(text: code));
     if (!context.mounted) return;
     ScaffoldMessenger.of(context)
-        .showSnackBar(const SnackBar(content: Text(AppStrings.teamCodeCopied)));
+        .showSnackBar(SnackBar(content: Text(AppStrings.teamCodeCopied)));
   }
 
   @override
@@ -400,7 +400,7 @@ class _AcceptCodeSheet extends StatelessWidget {
               ),
               onPressed: () => _copy(context),
               icon: const Icon(Icons.copy),
-              label: const Text(
+              label: Text(
                 AppStrings.teamCodeCopy,
                 textAlign: TextAlign.center,
               ),

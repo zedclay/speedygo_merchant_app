@@ -30,7 +30,7 @@ class _OrdersShellHarness extends StatelessWidget {
         currentIndex: 1,
         selectedFontSize: 11,
         unselectedFontSize: 10,
-        items: const [
+        items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_outlined, key: Key('nav-home')),
             label: AppStrings.tabHome,

@@ -166,7 +166,7 @@ class _OpeningHoursExceptionsScreenState
       if (!mounted) return;
       _resetForm();
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text(AppStrings.hoursExceptionsSaved)),
+        SnackBar(content: Text(AppStrings.hoursExceptionsSaved)),
       );
     } catch (e) {
       if (!mounted) return;
@@ -197,18 +197,18 @@ class _OpeningHoursExceptionsScreenState
       context: context,
       builder: (context) => AlertDialog(
         key: const Key('hours-exception-delete-dialog'),
-        title: const Text(AppStrings.hoursExceptionsDeleteTitle),
-        content: Text(AppStrings.hoursExceptionsDeleteBody(label)),
+        title: Text(AppStrings.hoursExceptionsDeleteTitle),
+        content: Text(AppStrings.hoursExceptionsDeleteBody(label.toString())),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(false),
-            child: const Text(AppStrings.hoursExceptionsCancel),
+            child: Text(AppStrings.hoursExceptionsCancel),
           ),
           TextButton(
             key: const Key('hours-exception-delete-confirm'),
             style: TextButton.styleFrom(foregroundColor: AppColors.error),
             onPressed: () => Navigator.of(context).pop(true),
-            child: const Text(AppStrings.hoursExceptionsDeleteConfirm),
+            child: Text(AppStrings.hoursExceptionsDeleteConfirm),
           ),
         ],
       ),
@@ -225,7 +225,7 @@ class _OpeningHoursExceptionsScreenState
       if (!mounted) return;
       if (_editingDate == item.date) _resetForm();
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text(AppStrings.hoursExceptionsDeleted)),
+        SnackBar(content: Text(AppStrings.hoursExceptionsDeleted)),
       );
     } catch (e) {
       if (!mounted) return;
@@ -256,12 +256,12 @@ class _OpeningHoursExceptionsScreenState
       context: context,
       builder: (context) => AlertDialog(
         key: const Key('hours-exception-help-dialog'),
-        title: const Text(AppStrings.hoursExceptionsHelpTitle),
-        content: const Text(AppStrings.hoursExceptionsHelpBody),
+        title: Text(AppStrings.hoursExceptionsHelpTitle),
+        content: Text(AppStrings.hoursExceptionsHelpBody),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text(AppStrings.hoursExceptionsHelpOk),
+            child: Text(AppStrings.hoursExceptionsHelpOk),
           ),
         ],
       ),
@@ -312,7 +312,7 @@ class _OpeningHoursExceptionsScreenState
                 child: ListView(
                   padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
                   children: [
-                    const _InfoBanner(text: AppStrings.hoursExceptionsBanner),
+                    _InfoBanner(text: AppStrings.hoursExceptionsBanner),
                     const SizedBox(height: 24),
                     Text(
                       AppStrings.hoursExceptionsUpcoming,
@@ -360,7 +360,7 @@ class _OpeningHoursExceptionsScreenState
                       ),
                       const SizedBox(height: 12),
                       if (weeklyConfigured == false) ...[
-                        const _Note(
+                        _Note(
                           key: Key('hours-exception-weekly-required'),
                           icon: Icons.warning_amber_outlined,
                           text: AppStrings.hoursExceptionsWeeklyRequired,
@@ -369,7 +369,7 @@ class _OpeningHoursExceptionsScreenState
                       ],
                       _buildForm(context, list, busy),
                     ] else
-                      const _Note(
+                      _Note(
                         key: Key('hours-exception-readonly'),
                         icon: Icons.lock_outline,
                         text: AppStrings.hoursExceptionsStaffReadOnly,
@@ -394,7 +394,7 @@ class _OpeningHoursExceptionsScreenState
                               ),
                             ),
                             onPressed: busy ? null : _cancel,
-                            child: const Text(
+                            child: Text(
                               AppStrings.hoursExceptionsCancel,
                               maxLines: 2,
                               textAlign: TextAlign.center,
@@ -625,7 +625,7 @@ class _OpeningHoursExceptionsScreenState
                           _error = null;
                         }),
                   icon: const Icon(Icons.add),
-                  label: const Text(AppStrings.openingHoursAddRange),
+                  label: Text(AppStrings.openingHoursAddRange),
                 ),
               ),
           ],

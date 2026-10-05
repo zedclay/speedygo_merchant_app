@@ -146,6 +146,7 @@ class _TrackingMerchant extends FakeMerchantApi {
     String? description,
     required int priceMinor,
     bool available = true,
+    SellingUnitSelection? sellingUnit,
   }) async {
     onCreate(name);
     return CatalogProduct(
@@ -156,6 +157,8 @@ class _TrackingMerchant extends FakeMerchantApi {
       description: description,
       priceMinor: '$priceMinor',
       available: available,
+      sellingUnitCode: sellingUnit?.code,
+      sellingUnitLabelFr: sellingUnit?.labelFr,
     );
   }
 }

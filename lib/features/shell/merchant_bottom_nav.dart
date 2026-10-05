@@ -16,37 +16,43 @@ class MerchantBottomNav extends StatelessWidget {
   final int currentIndex;
   final ValueChanged<int> onSelect;
 
-  static const items = [
-    (Icons.home_outlined, Icons.home, AppStrings.tabHome, 'nav-home', null),
-    (
-      Icons.receipt_long_outlined,
-      Icons.receipt_long,
-      AppStrings.tabOrders,
-      'nav-orders',
-      'nav-orders-active',
-    ),
-    (
-      Icons.inventory_2_outlined,
-      Icons.inventory_2,
-      AppStrings.tabCatalog,
-      'nav-catalog',
-      null,
-    ),
-    (
-      Icons.bar_chart_outlined,
-      Icons.bar_chart,
-      AppStrings.tabReports,
-      'nav-reports',
-      null,
-    ),
-    (
-      Icons.person_outline,
-      Icons.person,
-      AppStrings.tabProfile,
-      'nav-profile',
-      null,
-    ),
-  ];
+  static List<(IconData, IconData, String, String, String?)> get items => [
+        (
+          Icons.home_outlined,
+          Icons.home,
+          AppStrings.tabHome,
+          'nav-home',
+          null,
+        ),
+        (
+          Icons.receipt_long_outlined,
+          Icons.receipt_long,
+          AppStrings.tabOrders,
+          'nav-orders',
+          'nav-orders-active',
+        ),
+        (
+          Icons.inventory_2_outlined,
+          Icons.inventory_2,
+          AppStrings.tabCatalog,
+          'nav-catalog',
+          null,
+        ),
+        (
+          Icons.bar_chart_outlined,
+          Icons.bar_chart,
+          AppStrings.tabReports,
+          'nav-reports',
+          null,
+        ),
+        (
+          Icons.person_outline,
+          Icons.person,
+          AppStrings.tabProfile,
+          'nav-profile',
+          null,
+        ),
+      ];
 
   @override
   Widget build(BuildContext context) {

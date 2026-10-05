@@ -1,0 +1,910 @@
+[
+  {
+    "key": "availabilityCloseWarningTitle",
+    "fr": "Attention : fermeture immédiate",
+    "params": []
+  },
+  {
+    "key": "availabilityCloseWarningBody",
+    "fr": "Toutes les nouvelles commandes seront rejetées. Les commandes actives doivent toujours être traitées.Toutes les nouvelles commandes seront rejetées. Aucune commande active en cours.Toutes les nouvelles commandes seront rejetées. Vous devez toujours traiter ${count == 1 ?  : }.",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "availabilityStaffReadOnly",
+    "fr": "Lecture seule : seuls le propriétaire et les gérants peuvent modifier l’état du magasin.",
+    "params": []
+  },
+  {
+    "key": "availabilityBannerOpenTitle",
+    "fr": "Magasin en ligne",
+    "params": []
+  },
+  {
+    "key": "availabilityBannerOpenBody",
+    "fr": "Les clients peuvent passer commande et voir votre menu normalement.",
+    "params": []
+  },
+  {
+    "key": "availabilityBannerClosedTitle",
+    "fr": "Magasin hors ligne",
+    "params": []
+  },
+  {
+    "key": "availabilityBannerClosedBody",
+    "fr": "Les clients ne peuvent plus passer de nouvelles commandes.",
+    "params": []
+  },
+  {
+    "key": "availabilityBannerScheduleClosedTitle",
+    "fr": "Selon les horaires — actuellement fermé",
+    "params": []
+  },
+  {
+    "key": "availabilityBannerScheduleClosedBody",
+    "fr": "Le magasin suit le planning. Il s’ouvrira automatiquement aux prochaines heures.",
+    "params": []
+  },
+  {
+    "key": "availabilityActiveOrders",
+    "fr": "{count} commande${count == 1 ?  : } en cours",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "availabilityReasonPeak",
+    "fr": "Forte charge (cuisine)",
+    "params": []
+  },
+  {
+    "key": "availabilityReasonTechnical",
+    "fr": "Problème technique",
+    "params": []
+  },
+  {
+    "key": "availabilityReasonStock",
+    "fr": "Rupture de stock",
+    "params": []
+  },
+  {
+    "key": "availabilityReasonLunch",
+    "fr": "Pause déjeuner",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureTitle",
+    "fr": "Fermeture temporaire",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureActionRequired",
+    "fr": "Action requise",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureImpactLead",
+    "fr": "La fermeture suspendra l’acceptation de nouvelles commandes. ",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureImpactCount",
+    "fr": "La commande en coursLes {count} commandes en cours",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "temporaryClosureImpactTail",
+    "fr": " sera maintenue et doit être préparée. seront maintenues et doivent être préparées.",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "temporaryClosureImpactNone",
+    "fr": "Aucune commande en cours.",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureImpactUnknown",
+    "fr": "Les commandes en cours seront maintenues et doivent être préparées.",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureReason",
+    "fr": "Motif de la fermeture",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureReopen",
+    "fr": "Réouverture prévue",
+    "params": []
+  },
+  {
+    "key": "temporaryClosure30m",
+    "fr": "Dans 30 minutes",
+    "params": []
+  },
+  {
+    "key": "temporaryClosure1h",
+    "fr": "Dans 1 heure",
+    "params": []
+  },
+  {
+    "key": "temporaryClosurePickTime",
+    "fr": "Choisir une heure…",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureIndefinite",
+    "fr": "Indéfinie (Manuel)",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureImageImpact",
+    "fr": "Impact sur votre visibilité : Les clients verront votre établissement comme « Fermé temporairement ».",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureStaffReadOnly",
+    "fr": "Seuls le propriétaire et les gérants peuvent fermer le magasin.",
+    "params": []
+  },
+  {
+    "key": "temporaryClosurePastTime",
+    "fr": "L’heure de réouverture est déjà passée. Choisissez une nouvelle heure.",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureMessage",
+    "fr": "Message client",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureOptional",
+    "fr": "Facultatif",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureMessageHint",
+    "fr": "Ex: Nous sommes complets pour le moment, revenez dans 30 minutes !",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureManualReopenHint",
+    "fr": "Vous pourrez rouvrir manuellement à tout moment.",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureConfirm",
+    "fr": "Confirmer la fermeture",
+    "params": []
+  },
+  {
+    "key": "storeProfileAvailability",
+    "fr": "État du magasin",
+    "params": []
+  },
+  {
+    "key": "storeProfileAvailabilitySub",
+    "fr": "Selon les horaires, fermeture, pause",
+    "params": []
+  },
+  {
+    "key": "notificationsTitle",
+    "fr": "Notifications",
+    "params": []
+  },
+  {
+    "key": "notificationsEmpty",
+    "fr": "Aucune notification pour le moment.",
+    "params": []
+  },
+  {
+    "key": "notificationsLoadError",
+    "fr": "Impossible de charger les notifications.",
+    "params": []
+  },
+  {
+    "key": "notificationsToday",
+    "fr": "Aujourd’hui",
+    "params": []
+  },
+  {
+    "key": "notificationsYesterday",
+    "fr": "Hier",
+    "params": []
+  },
+  {
+    "key": "notificationsJustNow",
+    "fr": "À l’instant",
+    "params": []
+  },
+  {
+    "key": "notificationsMarkAllRead",
+    "fr": "Tout marquer comme lu",
+    "params": []
+  },
+  {
+    "key": "notificationsFilterAll",
+    "fr": "Tout",
+    "params": []
+  },
+  {
+    "key": "notificationsFilterOrders",
+    "fr": "Commandes",
+    "params": []
+  },
+  {
+    "key": "notificationsOpenDetails",
+    "fr": "Détails",
+    "params": []
+  },
+  {
+    "key": "notificationsOrderStale",
+    "fr": "Cette commande n’est plus en attente d’acceptation.",
+    "params": []
+  },
+  {
+    "key": "alertNewOrder",
+    "fr": "NOUVELLE COMMANDE",
+    "params": []
+  },
+  {
+    "key": "alertReceivedAt",
+    "fr": "Reçue à",
+    "params": []
+  },
+  {
+    "key": "alertPayment",
+    "fr": "Paiement",
+    "params": []
+  },
+  {
+    "key": "alertViewDetails",
+    "fr": "Voir les détails",
+    "params": []
+  },
+  {
+    "key": "alertRefuse",
+    "fr": "Refuser",
+    "params": []
+  },
+  {
+    "key": "alertItems",
+    "fr": "Articles",
+    "params": []
+  },
+  {
+    "key": "alertOrderTotal",
+    "fr": "Sous-total marchandises",
+    "params": []
+  },
+  {
+    "key": "alertOrderLabel",
+    "fr": "Commande",
+    "params": []
+  },
+  {
+    "key": "alertDismiss",
+    "fr": "Fermer",
+    "params": []
+  },
+  {
+    "key": "alertSeeList",
+    "fr": "Voir la liste",
+    "params": []
+  },
+  {
+    "key": "notifSettingsTitle",
+    "fr": "Paramètres de notification",
+    "params": []
+  },
+  {
+    "key": "notifSettingsScreenTitle",
+    "fr": "Alertes",
+    "params": []
+  },
+  {
+    "key": "notifSettingsOsEnabled",
+    "fr": "Permission iOS autorisée. Le Push natif n’est pas encore actif.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsOsDenied",
+    "fr": "Permission iOS refusée (modifiable dans Réglages). Le Push natif n’est pas encore actif.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsOsNotAsked",
+    "fr": "Permission de notification : pas encore autorisée.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsOsOpen",
+    "fr": "Paramètres système",
+    "params": []
+  },
+  {
+    "key": "notifSettingsSwitchesNote",
+    "fr": "Uniquement quand l’application est ouverte.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsInAppSection",
+    "fr": "DANS L’APPLICATION",
+    "params": []
+  },
+  {
+    "key": "notifSettingsCriticalWarning",
+    "fr": "Les commandes entrantes critiques ne peuvent pas être totalement réduites au silence sans risque de retard.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsPushNotConfigured",
+    "fr": "Non configuré",
+    "params": []
+  },
+  {
+    "key": "notifSettingsSoundSection",
+    "fr": "ALERTES SONORES",
+    "params": []
+  },
+  {
+    "key": "notifSettingsSound",
+    "fr": "Sonnerie des nouvelles commandes",
+    "params": []
+  },
+  {
+    "key": "notifSettingsVibrationSection",
+    "fr": "VIBRATIONS",
+    "params": []
+  },
+  {
+    "key": "notifSettingsVibration",
+    "fr": "Vibration lors d’une commande",
+    "params": []
+  },
+  {
+    "key": "notifSettingsPushSection",
+    "fr": "ALERTES PUSH",
+    "params": []
+  },
+  {
+    "key": "notifSettingsOsEnabledPush",
+    "fr": "Permission de notification : autorisée.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsOsDeniedPush",
+    "fr": "Permission de notification refusée : activez-la dans les réglages système.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsNativePush",
+    "fr": "Notifications hors application",
+    "params": []
+  },
+  {
+    "key": "notifSettingsNativePushSub",
+    "fr": "Application fermée ou en arrière-plan.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsLockScreenNote",
+    "fr": "Aperçu sur l’écran verrouillé : selon les réglages système.",
+    "params": []
+  },
+  {
+    "key": "notifPushStatusRegistered",
+    "fr": "Cet appareil est enregistré pour les notifications.",
+    "params": []
+  },
+  {
+    "key": "notifPushStatusPending",
+    "fr": "Enregistrement de l’appareil…",
+    "params": []
+  },
+  {
+    "key": "notifPushStatusDenied",
+    "fr": "Permission refusée : pas de notification hors application.",
+    "params": []
+  },
+  {
+    "key": "notifPushStatusDisabled",
+    "fr": "Désactivées sur cet appareil.",
+    "params": []
+  },
+  {
+    "key": "notifPushStatusTokenUnavailable",
+    "fr": "Jeton de notification indisponible sur cet appareil.",
+    "params": []
+  },
+  {
+    "key": "notifPushStatusFailed",
+    "fr": "Enregistrement impossible pour le moment. Réessayez plus tard.",
+    "params": []
+  },
+  {
+    "key": "pushOrderInaccessible",
+    "fr": "Cette commande n’est pas accessible avec ce compte.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsForeground",
+    "fr": "Alertes dans l’application",
+    "params": []
+  },
+  {
+    "key": "notifSettingsPushUnavailable",
+    "fr": "Les notifications hors application ne sont pas encore disponibles.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsPushBlocked",
+    "fr": "Push natif (APNs/FCM) non configuré : la permission iOS ne suffit pas.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsSave",
+    "fr": "Enregistrer les paramètres",
+    "params": []
+  },
+  {
+    "key": "notifSettingsSaved",
+    "fr": "Paramètres enregistrés.",
+    "params": []
+  },
+  {
+    "key": "profileRole",
+    "fr": "Rôle",
+    "params": []
+  },
+  {
+    "key": "profileMerchant",
+    "fr": "Commerce",
+    "params": []
+  },
+  {
+    "key": "profileBranch",
+    "fr": "Établissement",
+    "params": []
+  },
+  {
+    "key": "profileRoleOwner",
+    "fr": "Propriétaire",
+    "params": []
+  },
+  {
+    "key": "profileRoleManager",
+    "fr": "Responsable",
+    "params": []
+  },
+  {
+    "key": "profileRoleStaff",
+    "fr": "Équipe",
+    "params": []
+  },
+  {
+    "key": "profileSectionAccount",
+    "fr": "Compte",
+    "params": []
+  },
+  {
+    "key": "profileSectionStore",
+    "fr": "Établissement",
+    "params": []
+  },
+  {
+    "key": "profileSectionOps",
+    "fr": "Opérations du magasin",
+    "params": []
+  },
+  {
+    "key": "profileSectionPrefs",
+    "fr": "Préférences",
+    "params": []
+  },
+  {
+    "key": "profileSectionSupport",
+    "fr": "Support & légal",
+    "params": []
+  },
+  {
+    "key": "profileInfoReadonly",
+    "fr": "Informations du commerce",
+    "params": []
+  },
+  {
+    "key": "profileBranchStatus",
+    "fr": "Statut opérationnel",
+    "params": []
+  },
+  {
+    "key": "profileUnavailableItem",
+    "fr": "Non disponible dans cette version",
+    "params": []
+  },
+  {
+    "key": "switchBranch",
+    "fr": "Changer d’établissement",
+    "params": []
+  },
+  {
+    "key": "logoutConfirmTitle",
+    "fr": "Déconnexion",
+    "params": []
+  },
+  {
+    "key": "logoutConfirmBody",
+    "fr": "Voulez-vous vraiment vous déconnecter de SpeedyGo Merchant ?",
+    "params": []
+  },
+  {
+    "key": "logoutConfirmAction",
+    "fr": "Déconnexion",
+    "params": []
+  },
+  {
+    "key": "settingsProfileRow",
+    "fr": "Profil",
+    "params": []
+  },
+  {
+    "key": "settingsNotificationsOff",
+    "fr": "Désactivé",
+    "params": []
+  },
+  {
+    "key": "settingsSupportSection",
+    "fr": "Support",
+    "params": []
+  },
+  {
+    "key": "settingsHelpCenter",
+    "fr": "Centre d’aide",
+    "params": []
+  },
+  {
+    "key": "logoutConnected",
+    "fr": "Connecté",
+    "params": []
+  },
+  {
+    "key": "logoutWarningTitle",
+    "fr": "Attention aux opérations en cours",
+    "params": []
+  },
+  {
+    "key": "logoutActiveOrders",
+    "fr": "Commandes en cours",
+    "params": []
+  },
+  {
+    "key": "logoutStoreState",
+    "fr": "État du magasin",
+    "params": []
+  },
+  {
+    "key": "logoutStoreOpen",
+    "fr": "Ouvert",
+    "params": []
+  },
+  {
+    "key": "logoutStoreClosed",
+    "fr": "Fermé",
+    "params": []
+  },
+  {
+    "key": "logoutHandoverAdvice",
+    "fr": "Assurez-vous qu’un autre gestionnaire est disponible pour traiter les commandes avant de vous déconnecter.",
+    "params": []
+  },
+  {
+    "key": "logoutDataPreserved",
+    "fr": "Vos données, le catalogue et l’historique des commandes seront préservés.",
+    "params": []
+  },
+  {
+    "key": "logoutCancel",
+    "fr": "Annuler et retourner",
+    "params": []
+  },
+  {
+    "key": "cancel",
+    "fr": "Annuler",
+    "params": []
+  },
+  {
+    "key": "attentionRequired",
+    "fr": "Certaines pièces nécessitent votre attention.",
+    "params": []
+  },
+  {
+    "key": "submitVerification",
+    "fr": "Soumettre le dossier",
+    "params": []
+  },
+  {
+    "key": "submitVerificationUnavailable",
+    "fr": "La soumission n’est pas encore possible : des pièces obligatoires manquent ou sont incomplètes.",
+    "params": []
+  },
+  {
+    "key": "permissionDenied",
+    "fr": "Permission refusée par le serveur.",
+    "params": []
+  },
+  {
+    "key": "regTitle",
+    "fr": "Inscription",
+    "params": []
+  },
+  {
+    "key": "regStepOf",
+    "fr": "Étape",
+    "params": []
+  },
+  {
+    "key": "regAccountTitle",
+    "fr": "Configuration du compte",
+    "params": []
+  },
+  {
+    "key": "regRoleLabel",
+    "fr": "Rôle",
+    "params": []
+  },
+  {
+    "key": "regOwner",
+    "fr": "Propriétaire",
+    "params": []
+  },
+  {
+    "key": "regOperator",
+    "fr": "Opérateur",
+    "params": []
+  },
+  {
+    "key": "regOwnerHint",
+    "fr": "Créez et gérez votre commerce en tant que propriétaire.",
+    "params": []
+  },
+  {
+    "key": "regOperatorHint",
+    "fr": "Rejoindre un commerce existant nécessite une invitation et le code remis par le propriétaire.",
+    "params": []
+  },
+  {
+    "key": "regOperatorUnsupported",
+    "fr": "Pour rejoindre un commerce, ouvrez vos invitations reçues et saisissez le code remis par le propriétaire. SpeedyGo n’envoie pas de SMS.",
+    "params": []
+  },
+  {
+    "key": "regOperatorOpenInvitations",
+    "fr": "Voir mes invitations",
+    "params": []
+  },
+  {
+    "key": "regSelectRole",
+    "fr": "Choisissez un rôle pour continuer.",
+    "params": []
+  },
+  {
+    "key": "regContactTitle",
+    "fr": "Contact",
+    "params": []
+  },
+  {
+    "key": "regAccountContinue",
+    "fr": "Continuer l’inscription",
+    "params": []
+  },
+  {
+    "key": "regVerifiedPhone",
+    "fr": "Numéro de téléphone (vérifié)",
+    "params": []
+  },
+  {
+    "key": "regVerifiedPhoneHint",
+    "fr": "Ce numéro a été vérifié lors de la connexion. Il n’est pas modifiable ici.",
+    "params": []
+  },
+  {
+    "key": "regEmailUnsupported",
+    "fr": "L’e-mail ne peut pas être enregistré à cette étape.",
+    "params": []
+  },
+  {
+    "key": "regConsentUnsupported",
+    "fr": "Consultez les conditions générales et la politique de confidentialité SpeedyGo avant de continuer.",
+    "params": []
+  },
+  {
+    "key": "regActivityTitle",
+    "fr": "Informations du commerce",
+    "params": []
+  },
+  {
+    "key": "regActivityBody",
+    "fr": "Indiquez le nom sous lequel votre commerce sera identifié.",
+    "params": []
+  },
+  {
+    "key": "regLegalIdUnsupported",
+    "fr": "Les pièces d’identité professionnelle se déposent à l’étape Documents.",
+    "params": []
+  },
+  {
+    "key": "regDocsTitle",
+    "fr": "Documents d’entreprise",
+    "params": []
+  },
+  {
+    "key": "regDocsBody",
+    "fr": "Ajoutez les documents demandés.",
+    "params": []
+  },
+  {
+    "key": "regDocsRequired",
+    "fr": "Téléversez toutes les pièces obligatoires avant de continuer.",
+    "params": []
+  },
+  {
+    "key": "regDocsTipsTitle",
+    "fr": "Conseils pour une capture nette",
+    "params": []
+  },
+  {
+    "key": "regDocsTipLight",
+    "fr": "Privilégiez un éclairage naturel et uniforme pour éviter les zones d’ombre.",
+    "params": []
+  },
+  {
+    "key": "regDocsTipFrame",
+    "fr": "Cadrez bien le document : tous les coins doivent être visibles.",
+    "params": []
+  },
+  {
+    "key": "regDocsFormats",
+    "fr": "Formats acceptés : PDF, JPEG ou PNG (10 Mo max).",
+    "params": []
+  },
+  {
+    "key": "regDocsContinue",
+    "fr": "Continuer",
+    "params": []
+  },
+  {
+    "key": "regDocsContinueFinal",
+    "fr": "Continuer vers l’étape finale",
+    "params": []
+  },
+  {
+    "key": "regDocsAppBar",
+    "fr": "Vérification",
+    "params": []
+  },
+  {
+    "key": "regDocsTipFlash",
+    "fr": "Désactivez le flash pour éviter les reflets sur les surfaces plastifiées.",
+    "params": []
+  },
+  {
+    "key": "regDocsPrivacy",
+    "fr": "Vos documents sont transmis à SpeedyGo uniquement pour la vérification de votre commerce.",
+    "params": []
+  },
+  {
+    "key": "regFileTooLarge",
+    "fr": "Fichier trop volumineux (max. 10 Mo).",
+    "params": []
+  },
+  {
+    "key": "regFileTypeUnsupported",
+    "fr": "Format non accepté. Utilisez PDF, JPEG ou PNG.",
+    "params": []
+  },
+  {
+    "key": "regPickerUnavailable",
+    "fr": "Impossible d’ouvrir le sélecteur de fichiers. Réessayez après avoir relancé l’application.",
+    "params": []
+  },
+  {
+    "key": "regPickDocument",
+    "fr": "Ajouter",
+    "params": []
+  },
+  {
+    "key": "regReplaceDocument",
+    "fr": "Remplacer",
+    "params": []
+  },
+  {
+    "key": "regEstablishmentTitle",
+    "fr": "Détails de l’établissement",
+    "params": []
+  },
+  {
+    "key": "regEstablishmentBody",
+    "fr": "Renseignez les informations de votre établissement.",
+    "params": []
+  },
+  {
+    "key": "regIdentitySection",
+    "fr": "Nom de l’établissement",
+    "params": []
+  },
+  {
+    "key": "regBranchNameFrLabel",
+    "fr": "Nom de l’établissement",
+    "params": []
+  },
+  {
+    "key": "regCommerceContext",
+    "fr": "Commerce",
+    "params": []
+  },
+  {
+    "key": "regContactSection",
+    "fr": "Contact de l’établissement",
+    "params": []
+  },
+  {
+    "key": "regCategorySection",
+    "fr": "Catégorie",
+    "params": []
+  },
+  {
+    "key": "regCategoryReadonly",
+    "fr": "La catégorie sera attribuée après vérification.",
+    "params": []
+  },
+  {
+    "key": "regAddressSection",
+    "fr": "Adresse et emplacement",
+    "params": []
+  },
+  {
+    "key": "regAddressGuidance",
+    "fr": "Saisissez l’adresse de votre établissement.",
+    "params": []
+  },
+  {
+    "key": "regAddressExactLabel",
+    "fr": "Adresse exacte",
+    "params": []
+  },
+  {
+    "key": "regPickupPlace",
+    "fr": "Lieu de retrait",
+    "params": []
+  },
+  {
+    "key": "regChooseOnMap",
+    "fr": "Choisir sur la carte",
+    "params": []
+  },
+  {
+    "key": "regLocationConfirmed",
+    "fr": "Position confirmée",
+    "params": []
+  },
+  {
+    "key": "regLocationEdit",
+    "fr": "Modifier",
+    "params": []
+  },
+  {
+    "key": "regLocationRequired",
+    "fr": "Confirmez le lieu de retrait sur la carte avant de continuer.",
+    "params": []
+  },
+  {
+    "key": "regLocationPickerTitle",
+    "fr": "Position du magasin",
+    "params": []
+  }
+]

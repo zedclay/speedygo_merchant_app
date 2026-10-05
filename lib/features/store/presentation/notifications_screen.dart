@@ -105,7 +105,7 @@ class _NotificationsScreenState extends ConsumerState<NotificationsScreen> {
                 fontWeight: FontWeight.w600,
               ),
             ),
-            child: const Text(AppStrings.notificationsMarkAllRead),
+            child: Text(AppStrings.notificationsMarkAllRead),
           ),
         const SizedBox(width: 8),
       ],
@@ -157,7 +157,7 @@ class _NotificationsScreenState extends ConsumerState<NotificationsScreen> {
                   child: filtered.isEmpty
                       ? ListView(
                           physics: const AlwaysScrollableScrollPhysics(),
-                          children: const [
+                          children: [
                             SizedBox(height: 48),
                             Text(
                               AppStrings.notificationsEmpty,
@@ -405,7 +405,7 @@ class _NotificationTile extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                 ),
-                                child: const Text(
+                                child: Text(
                                   AppStrings.notificationsOpenDetails,
                                 ),
                               ),

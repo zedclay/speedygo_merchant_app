@@ -752,7 +752,7 @@ class _OrderListCard extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          child: const Text(AppStrings.homeTreatOrder),
+                          child: Text(AppStrings.homeTreatOrder),
                         ),
                     ],
                   ],

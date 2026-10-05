@@ -48,6 +48,7 @@ class AppRoutes {
   static const reportsDailySummary = '/app/reports/daily-summary';
   static const profile = '/app/profile';
   static const settings = '/app/profile/settings';
+  static const languageSettings = '/app/profile/settings/language';
   static const logout = '/app/profile/settings/logout';
   static const team = '/app/profile/team';
   static const teamInvitations = '/app/profile/team-invitations';

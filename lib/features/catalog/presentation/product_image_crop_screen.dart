@@ -35,7 +35,7 @@ typedef MerchantCropRequest = ({
 MerchantPickedImage cropMerchantImage(MerchantCropRequest r) {
   final decoded = img.decodeImage(r.bytes);
   if (decoded == null) {
-    throw const MerchantImagePickException(AppStrings.catalogImageFormatError);
+    throw MerchantImagePickException(AppStrings.catalogImageFormatError);
   }
   var frame = img.bakeOrientation(decoded);
   final turns = r.quarterTurns % 4;
@@ -326,7 +326,7 @@ class _ProductImageCropScreenState extends State<ProductImageCropScreen> {
                         color: AppColors.onPrimary,
                       ),
                     )
-                  : const Text(AppStrings.catalogCropUse),
+                  : Text(AppStrings.catalogCropUse),
             ),
           ),
         ],
@@ -536,7 +536,7 @@ class _ActionsRow extends StatelessWidget {
                 key: const Key('crop-change'),
                 onPressed: onChange,
                 icon: const Icon(Icons.photo_library_outlined, size: 20),
-                label: const Text(AppStrings.catalogImageChangePhoto),
+                label: Text(AppStrings.catalogImageChangePhoto),
               ),
             ),
             if (showRemove) ...[
@@ -552,7 +552,7 @@ class _ActionsRow extends StatelessWidget {
                     foregroundColor: AppColors.error,
                     side: const BorderSide(color: AppColors.error),
                   ),
-                  child: const Icon(
+                  child: Icon(
                     Icons.delete_outline,
                     semanticLabel: AppStrings.catalogCropRemove,
                   ),
@@ -623,7 +623,7 @@ class _TipsCard extends StatelessWidget {
           ),
           tip(AppStrings.catalogCropTip1),
           tip(AppStrings.catalogCropTip2),
-          tip(AppStrings.catalogCropTip3(productName)),
+          tip(AppStrings.catalogCropTip3(productName.toString())),
           const SizedBox(height: 12),
           const Divider(height: 1, color: AppColors.outlineVariant),
           const SizedBox(height: 8),

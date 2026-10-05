@@ -491,7 +491,7 @@ class ErrorBody extends StatelessWidget {
             const SizedBox(height: 16),
             FilledButton(
               onPressed: onRetry,
-              child: const Text(AppStrings.retry),
+              child: Text(AppStrings.retry),
             ),
           ],
         ],
@@ -902,15 +902,16 @@ class MerchantContractGapRow extends StatelessWidget {
   const MerchantContractGapRow({
     super.key,
     required this.label,
-    this.detail = AppStrings.contractFieldUnavailable,
+    this.detail,
   });
 
   final String label;
-  final String detail;
+  final String? detail;
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final resolvedDetail = detail ?? AppStrings.contractFieldUnavailable;
     return ExcludeSemantics(
       excluding: false,
       child: Opacity(
@@ -939,7 +940,7 @@ class MerchantContractGapRow extends StatelessWidget {
                 const SizedBox(width: 8),
                 Flexible(
                   child: Text(
-                    detail,
+                    resolvedDetail,
                     textAlign: TextAlign.end,
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: AppColors.onSurfaceVariant,

@@ -617,16 +617,16 @@ class _ProductEditorScreenState extends ConsumerState<ProductEditorScreen> {
     final ok = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text(AppStrings.catalogDeleteProduct),
-        content: const Text(AppStrings.catalogDeleteConfirm),
+        title: Text(AppStrings.catalogDeleteProduct),
+        content: Text(AppStrings.catalogDeleteConfirm),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx, false),
-            child: const Text(AppStrings.cancel),
+            child: Text(AppStrings.cancel),
           ),
           FilledButton(
             onPressed: () => Navigator.pop(ctx, true),
-            child: const Text(AppStrings.catalogDeleteProduct),
+            child: Text(AppStrings.catalogDeleteProduct),
           ),
         ],
       ),
@@ -794,7 +794,7 @@ class _ProductEditorScreenState extends ConsumerState<ProductEditorScreen> {
                                 ),
                               ),
                             ),
-                            const MerchantContractGapRow(
+                            MerchantContractGapRow(
                               label: AppStrings.catalogFieldNameAr,
                             ),
                             MerchantLabeledField(
@@ -807,7 +807,7 @@ class _ProductEditorScreenState extends ConsumerState<ProductEditorScreen> {
                                 decoration: _fieldDecoration(),
                               ),
                             ),
-                            const MerchantContractGapRow(
+                            MerchantContractGapRow(
                               label: AppStrings.catalogFieldDescAr,
                             ),
                             if (isCreate)
@@ -935,7 +935,7 @@ class _ProductEditorScreenState extends ConsumerState<ProductEditorScreen> {
                                 ),
                               ),
                             ),
-                            const MerchantContractGapRow(
+                            MerchantContractGapRow(
                               label: AppStrings.catalogFieldPrepTime,
                             ),
                             _ConfigRow(
@@ -969,8 +969,7 @@ class _ProductEditorScreenState extends ConsumerState<ProductEditorScreen> {
                                 label: AppStrings.catalogFieldVariants,
                                 detail: _groups == null
                                     ? null
-                                    : AppStrings.catalogGroupsCount(
-                                        _groups!
+                                    : AppStrings.catalogGroupsCount(_groups!
                                             .where((g) => g.required)
                                             .length,
                                       ),
@@ -981,8 +980,7 @@ class _ProductEditorScreenState extends ConsumerState<ProductEditorScreen> {
                                 label: AppStrings.catalogFieldExtras,
                                 detail: _groups == null
                                     ? null
-                                    : AppStrings.catalogGroupsCount(
-                                        _groups!
+                                    : AppStrings.catalogGroupsCount(_groups!
                                             .where((g) => !g.required)
                                             .length,
                                       ),
@@ -993,10 +991,10 @@ class _ProductEditorScreenState extends ConsumerState<ProductEditorScreen> {
                               SwitchListTile(
                                 key: const Key('product-editor-available'),
                                 contentPadding: EdgeInsets.zero,
-                                title: const Text(
+                                title: Text(
                                   AppStrings.catalogProductAvailable,
                                 ),
-                                subtitle: const Text(
+                                subtitle: Text(
                                   AppStrings.catalogProductAvailableSub,
                                 ),
                                 value: _available,
@@ -1008,7 +1006,7 @@ class _ProductEditorScreenState extends ConsumerState<ProductEditorScreen> {
                               OutlinedButton(
                                 key: const Key('product-editor-delete'),
                                 onPressed: _saving ? null : _delete,
-                                child: const Text(
+                                child: Text(
                                   AppStrings.catalogDeleteProduct,
                                 ),
                               ),
@@ -1034,7 +1032,7 @@ class _ProductEditorScreenState extends ConsumerState<ProductEditorScreen> {
                       onPressed: (_saving || _uploadingImage)
                           ? null
                           : () => _showLocalPreview(categories),
-                      child: const Text(
+                      child: Text(
                         AppStrings.catalogPreview,
                         maxLines: 1,
                         softWrap: false,
@@ -1244,7 +1242,7 @@ class _ProductImageBlock extends StatelessWidget {
                     key: const Key('product-editor-remote-retry'),
                     onPressed: onRetryRemote,
                     icon: const Icon(Icons.refresh),
-                    label: const Text(AppStrings.retry),
+                    label: Text(AppStrings.retry),
                   ),
                 ],
               ],
@@ -1383,7 +1381,7 @@ class _ProductImageBlock extends StatelessWidget {
               key: const Key('product-editor-pick-image'),
               onPressed: onPick,
               icon: const Icon(Icons.add_photo_alternate_outlined),
-              label: const Text(AppStrings.catalogImageChangePhoto),
+              label: Text(AppStrings.catalogImageChangePhoto),
             ),
           ],
         ],

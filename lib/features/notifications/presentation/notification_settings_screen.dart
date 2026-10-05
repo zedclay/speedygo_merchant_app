@@ -61,7 +61,7 @@ class _NotificationSettingsScreenState
     if (!mounted) return;
     setState(() => _saving = false);
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text(AppStrings.notifSettingsSaved)),
+      SnackBar(content: Text(AppStrings.notifSettingsSaved)),
     );
   }
 
@@ -120,7 +120,7 @@ class _NotificationSettingsScreenState
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      const _SectionLabel(AppStrings.notifSettingsInAppSection),
+                      _SectionLabel(AppStrings.notifSettingsInAppSection),
                       _GroupCard(
                         children: [
                           _ToggleRow(
@@ -137,7 +137,7 @@ class _NotificationSettingsScreenState
                         ],
                       ),
                       const SizedBox(height: 24),
-                      const _SectionLabel(AppStrings.notifSettingsSoundSection),
+                      _SectionLabel(AppStrings.notifSettingsSoundSection),
                       _GroupCard(
                         children: [
                           _ToggleRow(
@@ -151,7 +151,7 @@ class _NotificationSettingsScreenState
                         ],
                       ),
                       const SizedBox(height: 24),
-                      const _SectionLabel(
+                      _SectionLabel(
                         AppStrings.notifSettingsVibrationSection,
                       ),
                       _GroupCard(
@@ -168,7 +168,7 @@ class _NotificationSettingsScreenState
                         ],
                       ),
                       const SizedBox(height: 24),
-                      const _SectionLabel(AppStrings.notifSettingsPushSection),
+                      _SectionLabel(AppStrings.notifSettingsPushSection),
                       if (!pushConfigured)
                         _GroupCard(
                           key: const Key('notif-push-unavailable'),
@@ -190,7 +190,7 @@ class _NotificationSettingsScreenState
                                         ),
                                       ),
                                       const SizedBox(width: 8),
-                                      const StatusBadge(
+                                      StatusBadge(
                                         label: AppStrings
                                             .notifSettingsPushNotConfigured,
                                         tone: StatusTone.neutral,

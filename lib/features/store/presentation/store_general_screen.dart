@@ -133,7 +133,7 @@ class _StoreGeneralScreenState extends ConsumerState<StoreGeneralScreen> {
       final messenger = ScaffoldMessenger.maybeOf(context);
       context.pop(true);
       messenger?.showSnackBar(
-        const SnackBar(content: Text(AppStrings.storeGeneralSaved)),
+        SnackBar(content: Text(AppStrings.storeGeneralSaved)),
       );
       // Access changes refresh the router from its last reported location;
       // until the pop is reported at the end of the frame, that location
@@ -366,7 +366,7 @@ class _StoreGeneralScreenState extends ConsumerState<StoreGeneralScreen> {
                           height: 22,
                           child: CircularProgressIndicator(strokeWidth: 2),
                         )
-                      : const Text(AppStrings.storeGeneralSave),
+                      : Text(AppStrings.storeGeneralSave),
                 ),
               ),
             ),

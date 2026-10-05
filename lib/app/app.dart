@@ -6,6 +6,7 @@ import 'package:speedygo_merchant_app/app/theme/app_theme.dart';
 import 'package:speedygo_merchant_app/core/constants/app_strings.dart';
 import 'package:speedygo_merchant_app/features/auth/application/session_controller.dart';
 import 'package:speedygo_merchant_app/features/notifications/presentation/merchant_alert_host.dart';
+import 'package:speedygo_merchant_app/l10n/app_localizations.dart';
 
 class SpeedyGoApp extends ConsumerWidget {
   const SpeedyGoApp({super.key});
@@ -20,13 +21,15 @@ class SpeedyGoApp extends ConsumerWidget {
       title: AppStrings.appName,
       theme: AppTheme.light(locale: locale),
       locale: locale,
-      supportedLocales: const [Locale('fr'), Locale('ar')],
+      supportedLocales: AppLocalizations.supportedLocales,
       localizationsDelegates: const [
+        AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
       builder: (context, child) {
+        AppStrings.bind(AppLocalizations.of(context), locale.languageCode);
         return Directionality(
           textDirection: locale.languageCode == 'ar'
               ? TextDirection.rtl

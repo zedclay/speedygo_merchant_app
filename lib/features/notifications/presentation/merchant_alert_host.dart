@@ -101,7 +101,7 @@ class _MerchantAlertHostState extends ConsumerState<MerchantAlertHost>
           .read(orderAlertControllerProvider.notifier)
           .markOrderHandled(hint.orderId, promoteNext: false);
       ScaffoldMessenger.maybeOf(context)?.showSnackBar(
-        const SnackBar(content: Text(AppStrings.pushOrderInaccessible)),
+        SnackBar(content: Text(AppStrings.pushOrderInaccessible)),
       );
       return;
     }
@@ -144,7 +144,7 @@ class _MerchantAlertHostState extends ConsumerState<MerchantAlertHost>
             .getOrder(merchantId: merchantId, orderId: orderId);
         if (branchId != null && detail.merchantBranchId != branchId) {
           messenger?.showSnackBar(
-            const SnackBar(content: Text(AppStrings.permissionDenied)),
+            SnackBar(content: Text(AppStrings.permissionDenied)),
           );
           return;
         }
@@ -153,14 +153,14 @@ class _MerchantAlertHostState extends ConsumerState<MerchantAlertHost>
             detail.status.toUpperCase() != 'CANCELLED';
         if (!stillIncoming && (openReject || fromPush)) {
           messenger?.showSnackBar(
-            const SnackBar(content: Text(AppStrings.notificationsOrderStale)),
+            SnackBar(content: Text(AppStrings.notificationsOrderStale)),
           );
         }
       } catch (_) {
         if (fromPush) {
           // No access / deleted / network: never open a pushed order blind.
           messenger?.showSnackBar(
-            const SnackBar(content: Text(AppStrings.pushOrderInaccessible)),
+            SnackBar(content: Text(AppStrings.pushOrderInaccessible)),
           );
           return;
         }
@@ -181,7 +181,7 @@ class _MerchantAlertHostState extends ConsumerState<MerchantAlertHost>
     router.push(AppRoutes.orderDetail(orderId));
     if (openReject && stillIncoming && _canMutateOrders()) {
       messenger?.showSnackBar(
-        const SnackBar(content: Text(AppStrings.orderRejectHint)),
+        SnackBar(content: Text(AppStrings.orderRejectHint)),
       );
     }
   }

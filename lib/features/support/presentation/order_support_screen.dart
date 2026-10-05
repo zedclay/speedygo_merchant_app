@@ -142,6 +142,16 @@ class _OrderSupportScreenState extends ConsumerState<OrderSupportScreen> {
                     ),
                   )
                 else ...[
+                  if (_error != null) ...[
+                    Text(
+                      _error!,
+                      key: const Key('support-error'),
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        color: AppColors.error,
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                  ],
                   SupportTopicPicker(
                     selectedCode: _topicCode,
                     onSelected: (code) => setState(() => _topicCode = code),
@@ -175,7 +185,7 @@ class _OrderSupportScreenState extends ConsumerState<OrderSupportScreen> {
                       minLines: 5,
                       maxLines: 8,
                       maxLength: supportBodyMaxLength,
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
                         hintText: AppStrings.supportDescriptionHint,
                       ),
                     ),
@@ -199,16 +209,6 @@ class _OrderSupportScreenState extends ConsumerState<OrderSupportScreen> {
                       ),
                     ],
                   ),
-                  if (_error != null) ...[
-                    const SizedBox(height: 16),
-                    Text(
-                      _error!,
-                      key: const Key('support-error'),
-                      style: theme.textTheme.bodyMedium?.copyWith(
-                        color: AppColors.error,
-                      ),
-                    ),
-                  ],
                 ],
               ],
             ),
@@ -347,7 +347,7 @@ class _SentConfirmation extends StatelessWidget {
           Text(
             reference.isEmpty
                 ? AppStrings.supportSentBodyNoRef
-                : AppStrings.supportSentBody(reference),
+                : AppStrings.supportSentBody(reference.toString()),
             textAlign: TextAlign.center,
             style: theme.textTheme.bodyLarge?.copyWith(
               color: AppColors.onSurfaceVariant,
@@ -359,7 +359,7 @@ class _SentConfirmation extends StatelessWidget {
             onPressed: () {
               if (context.canPop()) context.pop();
             },
-            child: const Text(AppStrings.supportBackToOrder),
+            child: Text(AppStrings.supportBackToOrder),
           ),
         ],
       ),

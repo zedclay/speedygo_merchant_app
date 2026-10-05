@@ -1,0 +1,7521 @@
+[
+  {
+    "key": "appName",
+    "kind": "const",
+    "fr": "SpeedyGo Merchant",
+    "params": []
+  },
+  {
+    "key": "brandName",
+    "kind": "const",
+    "fr": "SpeedyGo",
+    "params": []
+  },
+  {
+    "key": "splashTagline",
+    "kind": "const",
+    "fr": "Votre commerce. Simplement.",
+    "params": []
+  },
+  {
+    "key": "splashLegacyTagline",
+    "kind": "const",
+    "fr": "Espace commerçant",
+    "params": []
+  },
+  {
+    "key": "onboardingSkip",
+    "kind": "const",
+    "fr": "Passer",
+    "params": []
+  },
+  {
+    "key": "onboardingNext",
+    "kind": "const",
+    "fr": "Suivant",
+    "params": []
+  },
+  {
+    "key": "onboardingStart",
+    "kind": "const",
+    "fr": "Commencer",
+    "params": []
+  },
+  {
+    "key": "onboardingHaveAccount",
+    "kind": "const",
+    "fr": "J’ai déjà un compte",
+    "params": []
+  },
+  {
+    "key": "onboardingPage1Title",
+    "kind": "const",
+    "fr": "Recevez vos commandes",
+    "params": []
+  },
+  {
+    "key": "onboardingPage1Body",
+    "kind": "const",
+    "fr": "Retrouvez les nouvelles commandes et consultez leurs détails.",
+    "params": []
+  },
+  {
+    "key": "onboardingPage2Title",
+    "kind": "const",
+    "fr": "Maîtrisez la préparation",
+    "params": []
+  },
+  {
+    "key": "onboardingPage2Body",
+    "kind": "const",
+    "fr": "Organisez la préparation et indiquez quand une commande est prête.",
+    "params": []
+  },
+  {
+    "key": "onboardingPage3Title",
+    "kind": "const",
+    "fr": "Votre commerce, à portée de main",
+    "params": []
+  },
+  {
+    "key": "onboardingPage3Body",
+    "kind": "const",
+    "fr": "Retrouvez votre catalogue, vos horaires et les informations de votre établissement.",
+    "params": []
+  },
+  {
+    "key": "onboardingSaveFailed",
+    "kind": "const",
+    "fr": "Impossible d’enregistrer l’introduction. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "onboardingPageSemantics",
+    "kind": "const",
+    "fr": "Page d’introduction",
+    "params": []
+  },
+  {
+    "key": "phoneTitle",
+    "kind": "const",
+    "fr": "Entrez votre numéro de téléphone",
+    "params": []
+  },
+  {
+    "key": "phoneSubtitle",
+    "kind": "const",
+    "fr": "Nous vous enverrons un code de vérification par SMS.",
+    "params": []
+  },
+  {
+    "key": "phoneHint",
+    "kind": "const",
+    "fr": "555 12 34 56",
+    "params": []
+  },
+  {
+    "key": "phonePrefix",
+    "kind": "const",
+    "fr": "+213",
+    "params": []
+  },
+  {
+    "key": "phoneSmsNote",
+    "kind": "const",
+    "fr": "Les frais de SMS standard peuvent s’appliquer.",
+    "params": []
+  },
+  {
+    "key": "phoneLabel",
+    "kind": "const",
+    "fr": "Numéro de téléphone",
+    "params": []
+  },
+  {
+    "key": "phoneInvalid",
+    "kind": "const",
+    "fr": "Saisissez un numéro algérien valide.",
+    "params": []
+  },
+  {
+    "key": "continueLabel",
+    "kind": "const",
+    "fr": "Continuer",
+    "params": []
+  },
+  {
+    "key": "needHelp",
+    "kind": "const",
+    "fr": "Besoin d’aide ?",
+    "params": []
+  },
+  {
+    "key": "helpUnavailable",
+    "kind": "const",
+    "fr": "L’assistance sera disponible dans une prochaine version.",
+    "params": []
+  },
+  {
+    "key": "otpTitle",
+    "kind": "const",
+    "fr": "Vérification du code",
+    "params": []
+  },
+  {
+    "key": "otpSentTo",
+    "kind": "method",
+    "fr": "Code envoyé au {masked}",
+    "params": [
+      "masked"
+    ]
+  },
+  {
+    "key": "editNumber",
+    "kind": "const",
+    "fr": "Modifier",
+    "params": []
+  },
+  {
+    "key": "verify",
+    "kind": "const",
+    "fr": "Vérifier",
+    "params": []
+  },
+  {
+    "key": "resend",
+    "kind": "const",
+    "fr": "Renvoyer le code",
+    "params": []
+  },
+  {
+    "key": "resendIn",
+    "kind": "method",
+    "fr": "Renvoyer le code dans {clock}",
+    "params": [
+      "clock"
+    ]
+  },
+  {
+    "key": "otpCooldownHint",
+    "kind": "const",
+    "fr": "Patientez avant de renvoyer un code",
+    "params": []
+  },
+  {
+    "key": "resendCode",
+    "kind": "const",
+    "fr": "Renvoyer le code",
+    "params": []
+  },
+  {
+    "key": "otpSubtitle",
+    "kind": "const",
+    "fr": "Saisissez le code à 6 chiffres envoyé au",
+    "params": []
+  },
+  {
+    "key": "restoreTitle",
+    "kind": "const",
+    "fr": "Restauration de la session",
+    "params": []
+  },
+  {
+    "key": "restoreLoading",
+    "kind": "const",
+    "fr": "Connexion en cours…",
+    "params": []
+  },
+  {
+    "key": "restoreOffline",
+    "kind": "const",
+    "fr": "Impossible de joindre le serveur. Vérifiez votre connexion.",
+    "params": []
+  },
+  {
+    "key": "restoreRetry",
+    "kind": "const",
+    "fr": "Réessayer",
+    "params": []
+  },
+  {
+    "key": "restoreOtherAccount",
+    "kind": "const",
+    "fr": "Utiliser un autre compte",
+    "params": []
+  },
+  {
+    "key": "sessionExpired",
+    "kind": "const",
+    "fr": "Votre session a expiré. Connectez-vous.",
+    "params": []
+  },
+  {
+    "key": "networkError",
+    "kind": "const",
+    "fr": "Problème de réseau. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "languageSaveFailed",
+    "kind": "const",
+    "fr": "Impossible d’enregistrer la langue. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "retry",
+    "kind": "const",
+    "fr": "Réessayer",
+    "params": []
+  },
+  {
+    "key": "refreshStatus",
+    "kind": "const",
+    "fr": "Actualiser le statut",
+    "params": []
+  },
+  {
+    "key": "back",
+    "kind": "const",
+    "fr": "Retour",
+    "params": []
+  },
+  {
+    "key": "loading",
+    "kind": "const",
+    "fr": "Chargement…",
+    "params": []
+  },
+  {
+    "key": "tabHome",
+    "kind": "const",
+    "fr": "Accueil",
+    "params": []
+  },
+  {
+    "key": "tabOrders",
+    "kind": "const",
+    "fr": "Commandes",
+    "params": []
+  },
+  {
+    "key": "tabCatalog",
+    "kind": "const",
+    "fr": "Catalogue",
+    "params": []
+  },
+  {
+    "key": "tabReports",
+    "kind": "const",
+    "fr": "Rapports",
+    "params": []
+  },
+  {
+    "key": "tabProfile",
+    "kind": "const",
+    "fr": "Profil",
+    "params": []
+  },
+  {
+    "key": "navReveal",
+    "kind": "const",
+    "fr": "Afficher la navigation",
+    "params": []
+  },
+  {
+    "key": "homeTitle",
+    "kind": "const",
+    "fr": "Accueil",
+    "params": []
+  },
+  {
+    "key": "selectBranchTitle",
+    "kind": "const",
+    "fr": "Choisir un établissement",
+    "params": []
+  },
+  {
+    "key": "selectBranchSubtitle",
+    "kind": "const",
+    "fr": "Sélectionnez l’établissement avec lequel vous souhaitez travailler.",
+    "params": []
+  },
+  {
+    "key": "noMembershipTitle",
+    "kind": "const",
+    "fr": "Aucun commerce associé",
+    "params": []
+  },
+  {
+    "key": "noMembershipBody",
+    "kind": "const",
+    "fr": "Ce compte n’a pas encore d’adhésion commerçant. Vous pouvez créer un profil commerce pour démarrer la vérification.",
+    "params": []
+  },
+  {
+    "key": "noMembershipInvitationsCta",
+    "kind": "const",
+    "fr": "J’ai une invitation",
+    "params": []
+  },
+  {
+    "key": "createMerchant",
+    "kind": "const",
+    "fr": "Créer un commerce",
+    "params": []
+  },
+  {
+    "key": "merchantNameLabel",
+    "kind": "const",
+    "fr": "Nom du commerce",
+    "params": []
+  },
+  {
+    "key": "merchantNameHint",
+    "kind": "const",
+    "fr": "Ex. Pharmacie du Centre",
+    "params": []
+  },
+  {
+    "key": "verificationPendingTitle",
+    "kind": "const",
+    "fr": "Vérification en cours",
+    "params": []
+  },
+  {
+    "key": "verificationPendingBody",
+    "kind": "const",
+    "fr": "Votre commerce est enregistré et en attente de vérification.",
+    "params": []
+  },
+  {
+    "key": "verificationDossierProgress",
+    "kind": "const",
+    "fr": "Pièces du dossier",
+    "params": []
+  },
+  {
+    "key": "verificationSubmittedStep",
+    "kind": "const",
+    "fr": "Dossier soumis",
+    "params": []
+  },
+  {
+    "key": "verificationReviewStep",
+    "kind": "const",
+    "fr": "Examen des documents",
+    "params": []
+  },
+  {
+    "key": "verificationReviewStepBody",
+    "kind": "const",
+    "fr": "En cours d’examen par SpeedyGo",
+    "params": []
+  },
+  {
+    "key": "verificationFinalStep",
+    "kind": "const",
+    "fr": "Validation finale",
+    "params": []
+  },
+  {
+    "key": "verificationFinalStepBody",
+    "kind": "const",
+    "fr": "En attente de décision",
+    "params": []
+  },
+  {
+    "key": "verificationTimelineTitle",
+    "kind": "const",
+    "fr": "Progression du dossier",
+    "params": []
+  },
+  {
+    "key": "verificationReferenceLabel",
+    "kind": "const",
+    "fr": "Référence",
+    "params": []
+  },
+  {
+    "key": "verificationReferenceFull",
+    "kind": "const",
+    "fr": "Référence du dossier",
+    "params": []
+  },
+  {
+    "key": "approvedTitle",
+    "kind": "const",
+    "fr": "Félicitations !",
+    "params": []
+  },
+  {
+    "key": "approvedSubtitle",
+    "kind": "const",
+    "fr": "Votre établissement est approuvé",
+    "params": []
+  },
+  {
+    "key": "approvedBody",
+    "kind": "const",
+    "fr": "Pour commencer à recevoir des commandes, assurez-vous que votre magasin est ouvert, que vos horaires sont définis et que vos produits sont disponibles.",
+    "params": []
+  },
+  {
+    "key": "approvedReferenceLabel",
+    "kind": "const",
+    "fr": "RÉFÉRENCE MERCHANT",
+    "params": []
+  },
+  {
+    "key": "approvedReferenceFull",
+    "kind": "const",
+    "fr": "Référence Merchant",
+    "params": []
+  },
+  {
+    "key": "approvedBadge",
+    "kind": "const",
+    "fr": "Approuvé",
+    "params": []
+  },
+  {
+    "key": "approvedStepsTitle",
+    "kind": "const",
+    "fr": "Étapes de configuration",
+    "params": []
+  },
+  {
+    "key": "approvedHoursTitle",
+    "kind": "const",
+    "fr": "Horaires d’ouverture",
+    "params": []
+  },
+  {
+    "key": "approvedHoursBody",
+    "kind": "const",
+    "fr": "Configurez quand vous êtes ouvert",
+    "params": []
+  },
+  {
+    "key": "approvedCatalogTitle",
+    "kind": "const",
+    "fr": "Catalogue de produits",
+    "params": []
+  },
+  {
+    "key": "approvedCatalogBody",
+    "kind": "const",
+    "fr": "Ajoutez vos premiers articles",
+    "params": []
+  },
+  {
+    "key": "approvedAlertsTitle",
+    "kind": "const",
+    "fr": "Alertes et notifications",
+    "params": []
+  },
+  {
+    "key": "approvedAlertsBody",
+    "kind": "const",
+    "fr": "Restez informé des commandes",
+    "params": []
+  },
+  {
+    "key": "approvedNeedBranchHint",
+    "kind": "const",
+    "fr": "Disponible après l’ajout d’un établissement",
+    "params": []
+  },
+  {
+    "key": "approvedNotOpenNote",
+    "kind": "const",
+    "fr": "L’approbation n’ouvre pas votre magasin automatiquement : vérifiez son statut, vos horaires et votre catalogue depuis l’accueil.",
+    "params": []
+  },
+  {
+    "key": "approvedContinue",
+    "kind": "const",
+    "fr": "Accéder à l’accueil marchand",
+    "params": []
+  },
+  {
+    "key": "verificationRequestIdLabel",
+    "kind": "const",
+    "fr": "ID DE DEMANDE",
+    "params": []
+  },
+  {
+    "key": "verificationNeedHelp",
+    "kind": "const",
+    "fr": "Besoin d’aide pour votre dossier ?",
+    "params": []
+  },
+  {
+    "key": "verificationCorrectAndSubmit",
+    "kind": "const",
+    "fr": "Corriger et soumettre",
+    "params": []
+  },
+  {
+    "key": "verificationRejectedGreeting",
+    "kind": "method",
+    "fr": "Bonjour, le dossier de {merchantName} nécessite des corrections.",
+    "params": [
+      "merchantName"
+    ]
+  },
+  {
+    "key": "verificationRejectedTitle",
+    "kind": "const",
+    "fr": "Dossier à compléter",
+    "params": []
+  },
+  {
+    "key": "verificationRejectedBody",
+    "kind": "const",
+    "fr": "Le dossier a été refusé. Corrigez le profil ou les pièces lorsque l’édition est autorisée, puis soumettez à nouveau.",
+    "params": []
+  },
+  {
+    "key": "verificationApprovedTitle",
+    "kind": "const",
+    "fr": "Commerce approuvé",
+    "params": []
+  },
+  {
+    "key": "verificationApprovedBody",
+    "kind": "const",
+    "fr": "Votre commerce est approuvé. Complétez un établissement actif pour l’exploitation.",
+    "params": []
+  },
+  {
+    "key": "suspendedTitle",
+    "kind": "const",
+    "fr": "Compte commerce suspendu",
+    "params": []
+  },
+  {
+    "key": "suspendedBody",
+    "kind": "const",
+    "fr": "Ce commerce est suspendu. Contactez le support SpeedyGo si besoin.",
+    "params": []
+  },
+  {
+    "key": "checklistTitle",
+    "kind": "const",
+    "fr": "Pièces du dossier",
+    "params": []
+  },
+  {
+    "key": "accessRestrictedTitle",
+    "kind": "const",
+    "fr": "Accès restreint",
+    "params": []
+  },
+  {
+    "key": "accessRestrictedBody",
+    "kind": "const",
+    "fr": "Vous n’avez pas les droits nécessaires pour cette action.",
+    "params": []
+  },
+  {
+    "key": "needBranchTitle",
+    "kind": "const",
+    "fr": "Établissement requis",
+    "params": []
+  },
+  {
+    "key": "needBranchBody",
+    "kind": "const",
+    "fr": "Ajoutez au moins un établissement actif pour utiliser l’espace opérationnel.",
+    "params": []
+  },
+  {
+    "key": "addBranch",
+    "kind": "const",
+    "fr": "Ajouter un établissement",
+    "params": []
+  },
+  {
+    "key": "branchNameLabel",
+    "kind": "const",
+    "fr": "Nom de l’établissement",
+    "params": []
+  },
+  {
+    "key": "branchPhoneLabel",
+    "kind": "const",
+    "fr": "Téléphone",
+    "params": []
+  },
+  {
+    "key": "branchAddressLabel",
+    "kind": "const",
+    "fr": "Adresse",
+    "params": []
+  },
+  {
+    "key": "branchLatLabel",
+    "kind": "const",
+    "fr": "Latitude",
+    "params": []
+  },
+  {
+    "key": "branchLngLabel",
+    "kind": "const",
+    "fr": "Longitude",
+    "params": []
+  },
+  {
+    "key": "save",
+    "kind": "const",
+    "fr": "Enregistrer",
+    "params": []
+  },
+  {
+    "key": "logout",
+    "kind": "const",
+    "fr": "Se déconnecter",
+    "params": []
+  },
+  {
+    "key": "operationalActive",
+    "kind": "const",
+    "fr": "Actif",
+    "params": []
+  },
+  {
+    "key": "operationalInactive",
+    "kind": "const",
+    "fr": "Inactif",
+    "params": []
+  },
+  {
+    "key": "operationalSuspended",
+    "kind": "const",
+    "fr": "Suspendu",
+    "params": []
+  },
+  {
+    "key": "homeNoMetrics",
+    "kind": "const",
+    "fr": "Aucun indicateur agrégé n’est fourni par l’API dans cette phase.",
+    "params": []
+  },
+  {
+    "key": "homeOrderCountsTitle",
+    "kind": "const",
+    "fr": "Commandes en cours",
+    "params": []
+  },
+  {
+    "key": "homeCountIncoming",
+    "kind": "const",
+    "fr": "Nouveaux",
+    "params": []
+  },
+  {
+    "key": "homeCountPreparing",
+    "kind": "const",
+    "fr": "En prép.",
+    "params": []
+  },
+  {
+    "key": "homeCountReady",
+    "kind": "const",
+    "fr": "Prêts",
+    "params": []
+  },
+  {
+    "key": "homeCountCourier",
+    "kind": "const",
+    "fr": "Livreur",
+    "params": []
+  },
+  {
+    "key": "homeCountCourierUnavailable",
+    "kind": "const",
+    "fr": "—",
+    "params": []
+  },
+  {
+    "key": "homeActiveOrdersTitle",
+    "kind": "const",
+    "fr": "Commandes actives",
+    "params": []
+  },
+  {
+    "key": "homeActiveOrdersEmpty",
+    "kind": "const",
+    "fr": "Aucune commande active pour le moment.",
+    "params": []
+  },
+  {
+    "key": "homeTreatOrder",
+    "kind": "const",
+    "fr": "Traiter la commande",
+    "params": []
+  },
+  {
+    "key": "homeOpenOrder",
+    "kind": "const",
+    "fr": "Voir la commande",
+    "params": []
+  },
+  {
+    "key": "homeVerificationTitle",
+    "kind": "const",
+    "fr": "Vérification à finaliser",
+    "params": []
+  },
+  {
+    "key": "homeVerificationBody",
+    "kind": "const",
+    "fr": "Complétez votre dossier pour conserver l’accès complet à votre espace marchand.",
+    "params": []
+  },
+  {
+    "key": "homeKpiSales",
+    "kind": "const",
+    "fr": "Ventes",
+    "params": []
+  },
+  {
+    "key": "homeKpiOrders",
+    "kind": "const",
+    "fr": "Commandes",
+    "params": []
+  },
+  {
+    "key": "homeKpiOrdersUnit",
+    "kind": "const",
+    "fr": "terminées",
+    "params": []
+  },
+  {
+    "key": "homeKpiCurrency",
+    "kind": "const",
+    "fr": "DZD",
+    "params": []
+  },
+  {
+    "key": "homeKpiUnavailable",
+    "kind": "const",
+    "fr": "—",
+    "params": []
+  },
+  {
+    "key": "homeLastSync",
+    "kind": "method",
+    "fr": "Dernière synchro : {hhmm}",
+    "params": [
+      "hhmm"
+    ]
+  },
+  {
+    "key": "refresh",
+    "kind": "const",
+    "fr": "Actualiser",
+    "params": []
+  },
+  {
+    "key": "ordersEmpty",
+    "kind": "const",
+    "fr": "Aucune commande pour cet établissement.",
+    "params": []
+  },
+  {
+    "key": "ordersEmptyIncoming",
+    "kind": "const",
+    "fr": "Aucune nouvelle commande",
+    "params": []
+  },
+  {
+    "key": "ordersEmptyAccepted",
+    "kind": "const",
+    "fr": "Aucune commande acceptée",
+    "params": []
+  },
+  {
+    "key": "ordersEmptyPreparing",
+    "kind": "const",
+    "fr": "Aucune commande en préparation",
+    "params": []
+  },
+  {
+    "key": "ordersEmptyReady",
+    "kind": "const",
+    "fr": "Aucune commande prête",
+    "params": []
+  },
+  {
+    "key": "ordersEmptyCompleted",
+    "kind": "const",
+    "fr": "Aucune commande terminée",
+    "params": []
+  },
+  {
+    "key": "ordersEmptyCancelled",
+    "kind": "const",
+    "fr": "Aucune commande annulée",
+    "params": []
+  },
+  {
+    "key": "ordersEmptyFailed",
+    "kind": "const",
+    "fr": "Aucune commande échouée",
+    "params": []
+  },
+  {
+    "key": "ordersLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger les commandes.",
+    "params": []
+  },
+  {
+    "key": "orderDetailTitle",
+    "kind": "const",
+    "fr": "Commande",
+    "params": []
+  },
+  {
+    "key": "orderDetailLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger cette commande.",
+    "params": []
+  },
+  {
+    "key": "orderFulfillmentIncoming",
+    "kind": "const",
+    "fr": "Nouveau",
+    "params": []
+  },
+  {
+    "key": "supportReportTitle",
+    "kind": "const",
+    "fr": "Signaler un problème",
+    "params": []
+  },
+  {
+    "key": "supportShort",
+    "kind": "const",
+    "fr": "Support",
+    "params": []
+  },
+  {
+    "key": "supportContact",
+    "kind": "const",
+    "fr": "Contacter le support",
+    "params": []
+  },
+  {
+    "key": "supportOrderLabel",
+    "kind": "const",
+    "fr": "COMMANDE",
+    "params": []
+  },
+  {
+    "key": "supportCustomerLabel",
+    "kind": "const",
+    "fr": "CLIENT",
+    "params": []
+  },
+  {
+    "key": "supportMerchandiseLabel",
+    "kind": "const",
+    "fr": "MARCHANDISES",
+    "params": []
+  },
+  {
+    "key": "supportDescriptionLabel",
+    "kind": "const",
+    "fr": "Description du problème",
+    "params": []
+  },
+  {
+    "key": "supportDescriptionHint",
+    "kind": "const",
+    "fr": "Expliquez-nous ce qui s’est passé en détail...",
+    "params": []
+  },
+  {
+    "key": "supportSensitiveHint",
+    "kind": "const",
+    "fr": "Veuillez ne pas inclure de données sensibles (ex : mots de passe).",
+    "params": []
+  },
+  {
+    "key": "supportSend",
+    "kind": "const",
+    "fr": "Envoyer le ticket",
+    "params": []
+  },
+  {
+    "key": "supportSentTitle",
+    "kind": "const",
+    "fr": "Signalement envoyé",
+    "params": []
+  },
+  {
+    "key": "supportSentBody",
+    "kind": "method",
+    "fr": "Votre ticket {ref} a été transmis à l’équipe SpeedyGo.",
+    "params": [
+      "ref"
+    ]
+  },
+  {
+    "key": "supportSentBodyNoRef",
+    "kind": "const",
+    "fr": "Votre ticket a été transmis à l’équipe SpeedyGo.",
+    "params": []
+  },
+  {
+    "key": "supportBackToOrder",
+    "kind": "const",
+    "fr": "Retour à la commande",
+    "params": []
+  },
+  {
+    "key": "supportForbidden",
+    "kind": "const",
+    "fr": "Seuls le propriétaire et les gérants peuvent contacter le support.",
+    "params": []
+  },
+  {
+    "key": "supportSendError",
+    "kind": "const",
+    "fr": "Le ticket n’a pas pu être envoyé. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "supportCenterTitle",
+    "kind": "const",
+    "fr": "Support Merchant",
+    "params": []
+  },
+  {
+    "key": "supportNewTicket",
+    "kind": "const",
+    "fr": "Nouveau ticket",
+    "params": []
+  },
+  {
+    "key": "supportActiveTickets",
+    "kind": "const",
+    "fr": "Tickets actifs",
+    "params": []
+  },
+  {
+    "key": "supportResolvedTickets",
+    "kind": "const",
+    "fr": "Tickets résolus",
+    "params": []
+  },
+  {
+    "key": "supportNoTickets",
+    "kind": "const",
+    "fr": "Aucun ticket pour le moment.",
+    "params": []
+  },
+  {
+    "key": "supportLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger vos tickets.",
+    "params": []
+  },
+  {
+    "key": "supportUpdated",
+    "kind": "complex",
+    "fr": null,
+    "params": [
+      "updatedAt",
+      "now"
+    ]
+  },
+  {
+    "key": "supportDate",
+    "kind": "method",
+    "fr": "_ddMmYyyy(at)",
+    "params": [
+      "at"
+    ]
+  },
+  {
+    "key": "_ddMmYyyy",
+    "kind": "complex",
+    "fr": null,
+    "params": [
+      "at"
+    ]
+  },
+  {
+    "key": "supportShowingLatest",
+    "kind": "method",
+    "fr": "{shown} tickets les plus récents affichés sur {total}.",
+    "params": [
+      "shown",
+      "total"
+    ]
+  },
+  {
+    "key": "supportStatus",
+    "kind": "method",
+    "fr": "openOuvertinProgressEn courswaitingCustomerRéponse attendueresolvedRésoluclosedFerméStatut inconnu",
+    "params": [
+      "code"
+    ]
+  },
+  {
+    "key": "supportTopicsTitle",
+    "kind": "const",
+    "fr": "Sujets fréquents",
+    "params": []
+  },
+  {
+    "key": "supportTopicsHint",
+    "kind": "const",
+    "fr": "Choisissez un sujet pour ouvrir un nouveau ticket.",
+    "params": []
+  },
+  {
+    "key": "supportTopicsLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger les sujets.",
+    "params": []
+  },
+  {
+    "key": "supportTopicsEmpty",
+    "kind": "const",
+    "fr": "Aucun sujet disponible pour le moment.",
+    "params": []
+  },
+  {
+    "key": "supportTopicLabel",
+    "kind": "const",
+    "fr": "Sujet",
+    "params": []
+  },
+  {
+    "key": "supportTopicRequired",
+    "kind": "const",
+    "fr": "Choisissez un sujet.",
+    "params": []
+  },
+  {
+    "key": "supportSubjectLabel",
+    "kind": "const",
+    "fr": "Objet",
+    "params": []
+  },
+  {
+    "key": "supportSubjectHint",
+    "kind": "const",
+    "fr": "Résumez votre demande en quelques mots",
+    "params": []
+  },
+  {
+    "key": "supportSubjectRequired",
+    "kind": "const",
+    "fr": "Indiquez l’objet de votre demande.",
+    "params": []
+  },
+  {
+    "key": "supportFaqTitle",
+    "kind": "const",
+    "fr": "Questions fréquentes",
+    "params": []
+  },
+  {
+    "key": "supportFaqEmpty",
+    "kind": "const",
+    "fr": "Aucune question fréquente pour le moment.",
+    "params": []
+  },
+  {
+    "key": "supportFaqLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger la FAQ.",
+    "params": []
+  },
+  {
+    "key": "supportComposeTitle",
+    "kind": "const",
+    "fr": "Nouveau ticket",
+    "params": []
+  },
+  {
+    "key": "supportComposeHint",
+    "kind": "const",
+    "fr": "Décrivez votre demande. Pour un problème sur une commande, utilisez « Signaler un problème » depuis la commande.",
+    "params": []
+  },
+  {
+    "key": "supportCreated",
+    "kind": "method",
+    "fr": "Ticket envoyé.Ticket envoyé : {reference}",
+    "params": [
+      "reference"
+    ]
+  },
+  {
+    "key": "supportTicketTitle",
+    "kind": "const",
+    "fr": "Ticket",
+    "params": []
+  },
+  {
+    "key": "supportTicketLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger ce ticket.",
+    "params": []
+  },
+  {
+    "key": "supportLinkedOrder",
+    "kind": "const",
+    "fr": "Commande liée",
+    "params": []
+  },
+  {
+    "key": "supportYou",
+    "kind": "const",
+    "fr": "Vous",
+    "params": []
+  },
+  {
+    "key": "supportTeam",
+    "kind": "const",
+    "fr": "Support SpeedyGo",
+    "params": []
+  },
+  {
+    "key": "supportReplyHint",
+    "kind": "const",
+    "fr": "Votre réponse",
+    "params": []
+  },
+  {
+    "key": "supportReplySend",
+    "kind": "const",
+    "fr": "Envoyer",
+    "params": []
+  },
+  {
+    "key": "supportReplyError",
+    "kind": "const",
+    "fr": "La réponse n’a pas pu être envoyée.",
+    "params": []
+  },
+  {
+    "key": "supportTicketFinished",
+    "kind": "const",
+    "fr": "Ce ticket est clos. Créez un nouveau ticket si besoin.",
+    "params": []
+  },
+  {
+    "key": "supportNoMessages",
+    "kind": "const",
+    "fr": "Aucun message.",
+    "params": []
+  },
+  {
+    "key": "orderListAcceptNow",
+    "kind": "const",
+    "fr": "À accepter immédiatement",
+    "params": []
+  },
+  {
+    "key": "orderDetailsTitle",
+    "kind": "const",
+    "fr": "Détails de la commande",
+    "params": []
+  },
+  {
+    "key": "orderDetailCancelledTitle",
+    "kind": "const",
+    "fr": "Commande annulée",
+    "params": []
+  },
+  {
+    "key": "orderCancelledHeroBody",
+    "kind": "const",
+    "fr": "Cette commande n’aboutira pas.",
+    "params": []
+  },
+  {
+    "key": "orderCancelledByCustomer",
+    "kind": "const",
+    "fr": "Annulée par le client",
+    "params": []
+  },
+  {
+    "key": "orderRejectedByMerchant",
+    "kind": "const",
+    "fr": "Refusée par le commerce",
+    "params": []
+  },
+  {
+    "key": "orderReasonLabel",
+    "kind": "const",
+    "fr": "Raison",
+    "params": []
+  },
+  {
+    "key": "orderCancelledAck",
+    "kind": "const",
+    "fr": "Compris",
+    "params": []
+  },
+  {
+    "key": "orderViewHistory",
+    "kind": "const",
+    "fr": "Voir l’historique",
+    "params": []
+  },
+  {
+    "key": "orderCurrentStatus",
+    "kind": "const",
+    "fr": "Statut actuel",
+    "params": []
+  },
+  {
+    "key": "orderDeliveredOn",
+    "kind": "method",
+    "fr": "Livrée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderCompletedOn",
+    "kind": "method",
+    "fr": "Terminée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderReceivedAtLabel",
+    "kind": "const",
+    "fr": "Reçue à",
+    "params": []
+  },
+  {
+    "key": "orderPaymentLabel",
+    "kind": "const",
+    "fr": "Paiement",
+    "params": []
+  },
+  {
+    "key": "orderPaymentMethod",
+    "kind": "method",
+    "fr": "Méthode : {method}",
+    "params": [
+      "method"
+    ]
+  },
+  {
+    "key": "orderReadySince",
+    "kind": "method",
+    "fr": "Prête depuis {hhmm}",
+    "params": [
+      "hhmm"
+    ]
+  },
+  {
+    "key": "eventCreated",
+    "kind": "const",
+    "fr": "Commande reçue",
+    "params": []
+  },
+  {
+    "key": "eventCreatedCaption",
+    "kind": "const",
+    "fr": "Commande passée par le client",
+    "params": []
+  },
+  {
+    "key": "eventAccepted",
+    "kind": "const",
+    "fr": "Acceptée",
+    "params": []
+  },
+  {
+    "key": "eventAcceptedCaption",
+    "kind": "const",
+    "fr": "Commande confirmée",
+    "params": []
+  },
+  {
+    "key": "eventPrepStarted",
+    "kind": "const",
+    "fr": "En préparation",
+    "params": []
+  },
+  {
+    "key": "eventPrepStartedCaption",
+    "kind": "const",
+    "fr": "Préparation démarrée",
+    "params": []
+  },
+  {
+    "key": "eventReady",
+    "kind": "const",
+    "fr": "Préparée",
+    "params": []
+  },
+  {
+    "key": "eventReadyCaption",
+    "kind": "const",
+    "fr": "Prête pour la collecte",
+    "params": []
+  },
+  {
+    "key": "eventRejected",
+    "kind": "const",
+    "fr": "Refusée",
+    "params": []
+  },
+  {
+    "key": "eventCancelled",
+    "kind": "const",
+    "fr": "Annulée",
+    "params": []
+  },
+  {
+    "key": "eventCompleted",
+    "kind": "const",
+    "fr": "Terminée",
+    "params": []
+  },
+  {
+    "key": "eventCompletedCaption",
+    "kind": "const",
+    "fr": "Commande livrée au client",
+    "params": []
+  },
+  {
+    "key": "eventStatusUpdate",
+    "kind": "const",
+    "fr": "Mise à jour du statut",
+    "params": []
+  },
+  {
+    "key": "orderListLate",
+    "kind": "const",
+    "fr": "En retard",
+    "params": []
+  },
+  {
+    "key": "orderListReadyAt",
+    "kind": "method",
+    "fr": "Prête vers {hhmm}",
+    "params": [
+      "hhmm"
+    ]
+  },
+  {
+    "key": "orderHistoryToday",
+    "kind": "const",
+    "fr": "Aujourd’hui",
+    "params": []
+  },
+  {
+    "key": "orderHistoryYesterday",
+    "kind": "const",
+    "fr": "Hier",
+    "params": []
+  },
+  {
+    "key": "orderHistoryEarlier",
+    "kind": "const",
+    "fr": "Plus tôt",
+    "params": []
+  },
+  {
+    "key": "orderFulfillmentAccepted",
+    "kind": "const",
+    "fr": "Acceptée",
+    "params": []
+  },
+  {
+    "key": "orderFulfillmentPreparing",
+    "kind": "const",
+    "fr": "En préparation",
+    "params": []
+  },
+  {
+    "key": "orderFulfillmentReady",
+    "kind": "const",
+    "fr": "Prête",
+    "params": []
+  },
+  {
+    "key": "orderStatusCreated",
+    "kind": "const",
+    "fr": "Créée",
+    "params": []
+  },
+  {
+    "key": "orderStatusConfirmed",
+    "kind": "const",
+    "fr": "Confirmée",
+    "params": []
+  },
+  {
+    "key": "orderStatusActive",
+    "kind": "const",
+    "fr": "Active",
+    "params": []
+  },
+  {
+    "key": "orderStatusCompleted",
+    "kind": "const",
+    "fr": "Terminée",
+    "params": []
+  },
+  {
+    "key": "orderStatusCancelled",
+    "kind": "const",
+    "fr": "Annulée",
+    "params": []
+  },
+  {
+    "key": "orderStatusFailed",
+    "kind": "const",
+    "fr": "Échouée",
+    "params": []
+  },
+  {
+    "key": "orderPaymentCod",
+    "kind": "const",
+    "fr": "Paiement à la livraison",
+    "params": []
+  },
+  {
+    "key": "orderPaymentElectronic",
+    "kind": "const",
+    "fr": "Paiement électronique",
+    "params": []
+  },
+  {
+    "key": "orderCreatedAt",
+    "kind": "method",
+    "fr": "Créée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderConfirmedAt",
+    "kind": "method",
+    "fr": "Confirmée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderCancelledAt",
+    "kind": "method",
+    "fr": "Annulée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderCreatedShort",
+    "kind": "method",
+    "fr": "Créée · {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderListMerchandiseLabel",
+    "kind": "const",
+    "fr": "Marchandises",
+    "params": []
+  },
+  {
+    "key": "orderIncomingBanner",
+    "kind": "const",
+    "fr": "Nouvelle commande",
+    "params": []
+  },
+  {
+    "key": "orderReadyBanner",
+    "kind": "const",
+    "fr": "Commande prête",
+    "params": []
+  },
+  {
+    "key": "orderSegmentActive",
+    "kind": "const",
+    "fr": "En cours",
+    "params": []
+  },
+  {
+    "key": "orderSegmentHistory",
+    "kind": "const",
+    "fr": "Historique",
+    "params": []
+  },
+  {
+    "key": "orderReferenceCopy",
+    "kind": "const",
+    "fr": "Copier la référence",
+    "params": []
+  },
+  {
+    "key": "orderReferenceCopied",
+    "kind": "const",
+    "fr": "Référence copiée",
+    "params": []
+  },
+  {
+    "key": "orderReferenceShowFull",
+    "kind": "const",
+    "fr": "Afficher la référence complète",
+    "params": []
+  },
+  {
+    "key": "orderItemsTitle",
+    "kind": "const",
+    "fr": "Articles",
+    "params": []
+  },
+  {
+    "key": "orderItemsToPrepareTitle",
+    "kind": "const",
+    "fr": "Articles à préparer",
+    "params": []
+  },
+  {
+    "key": "orderDeliveryAddress",
+    "kind": "const",
+    "fr": "Adresse de livraison",
+    "params": []
+  },
+  {
+    "key": "orderFinanceTitle",
+    "kind": "const",
+    "fr": "Répartition financière",
+    "params": []
+  },
+  {
+    "key": "orderFinanceGms",
+    "kind": "const",
+    "fr": "Sous-total marchandises",
+    "params": []
+  },
+  {
+    "key": "orderFinanceDiscount",
+    "kind": "const",
+    "fr": "Remise commerçant",
+    "params": []
+  },
+  {
+    "key": "orderFinanceCommission",
+    "kind": "method",
+    "fr": "Commission SpeedyGo ({percent} %)",
+    "params": [
+      "percent"
+    ]
+  },
+  {
+    "key": "orderFinanceNet",
+    "kind": "const",
+    "fr": "Net commerçant",
+    "params": []
+  },
+  {
+    "key": "orderFinanceCommissionUnavailable",
+    "kind": "const",
+    "fr": "Commission SpeedyGo",
+    "params": []
+  },
+  {
+    "key": "orderFinanceRestricted",
+    "kind": "const",
+    "fr": "Commission, remise et net commerçant réservés au propriétaire ou au responsable.",
+    "params": []
+  },
+  {
+    "key": "valueUnavailable",
+    "kind": "const",
+    "fr": "—",
+    "params": []
+  },
+  {
+    "key": "orderFinanceNetCancelledNote",
+    "kind": "const",
+    "fr": "Montants historiques figés au moment de la commande — pas un paiement dû.",
+    "params": []
+  },
+  {
+    "key": "orderFinanceDeliveryFeeNote",
+    "kind": "const",
+    "fr": "Frais de livraison (client)",
+    "params": []
+  },
+  {
+    "key": "orderFinanceDeliveryFeeDisclaimer",
+    "kind": "const",
+    "fr": "Les frais de livraison ne sont pas un revenu commerçant.",
+    "params": []
+  },
+  {
+    "key": "orderAccept",
+    "kind": "const",
+    "fr": "Accepter",
+    "params": []
+  },
+  {
+    "key": "orderChoosePrepTime",
+    "kind": "const",
+    "fr": "Choisir le temps de préparation",
+    "params": []
+  },
+  {
+    "key": "orderReject",
+    "kind": "const",
+    "fr": "Refuser",
+    "params": []
+  },
+  {
+    "key": "orderRejectTitle",
+    "kind": "const",
+    "fr": "Refuser la commande",
+    "params": []
+  },
+  {
+    "key": "orderRejectHint",
+    "kind": "const",
+    "fr": "Le refus n’est possible qu’avant acceptation. Indiquez un motif.",
+    "params": []
+  },
+  {
+    "key": "orderRejectReasonLabel",
+    "kind": "const",
+    "fr": "Motif du refus",
+    "params": []
+  },
+  {
+    "key": "orderRejectConfirm",
+    "kind": "const",
+    "fr": "Confirmer le refus",
+    "params": []
+  },
+  {
+    "key": "orderQuickAlreadyHandled",
+    "kind": "const",
+    "fr": "Cette commande a déjà été traitée. La liste est actualisée.",
+    "params": []
+  },
+  {
+    "key": "orderQuickNotAllowed",
+    "kind": "const",
+    "fr": "Votre rôle ne permet pas cette action.",
+    "params": []
+  },
+  {
+    "key": "orderQuickCheckFailed",
+    "kind": "const",
+    "fr": "Impossible de vérifier la commande. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "orderQuickAccepted",
+    "kind": "const",
+    "fr": "Commande acceptée.",
+    "params": []
+  },
+  {
+    "key": "orderQuickRejected",
+    "kind": "const",
+    "fr": "Commande refusée.",
+    "params": []
+  },
+  {
+    "key": "prepAcceptTitle",
+    "kind": "const",
+    "fr": "Accepter la commande",
+    "params": []
+  },
+  {
+    "key": "prepEstimatedTitle",
+    "kind": "const",
+    "fr": "Temps de préparation estimé",
+    "params": []
+  },
+  {
+    "key": "prepSelectHint",
+    "kind": "complex",
+    "fr": null,
+    "params": [
+      "itemCount"
+    ]
+  },
+  {
+    "key": "prepMinutesLabel",
+    "kind": "method",
+    "fr": "{minutes} min",
+    "params": [
+      "minutes"
+    ]
+  },
+  {
+    "key": "prepConfirmAccept",
+    "kind": "const",
+    "fr": "Confirmer et accepter",
+    "params": []
+  },
+  {
+    "key": "prepCustomTime",
+    "kind": "const",
+    "fr": "Temps personnalisé",
+    "params": []
+  },
+  {
+    "key": "prepCustomEntry",
+    "kind": "const",
+    "fr": "Saisie personnalisée",
+    "params": []
+  },
+  {
+    "key": "prepCustomRange",
+    "kind": "method",
+    "fr": "Entre {min} et {max} minutes",
+    "params": [
+      "min",
+      "max"
+    ]
+  },
+  {
+    "key": "prepItemCount",
+    "kind": "method",
+    "fr": "1 article{n} articles",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "prepInProgress",
+    "kind": "const",
+    "fr": "En cours",
+    "params": []
+  },
+  {
+    "key": "prepCurrentShort",
+    "kind": "const",
+    "fr": "Heure actuelle",
+    "params": []
+  },
+  {
+    "key": "prepNewShort",
+    "kind": "const",
+    "fr": "Nouvelle estimation",
+    "params": []
+  },
+  {
+    "key": "prepReasonHint",
+    "kind": "const",
+    "fr": "Ex : problème technique en cuisine…",
+    "params": []
+  },
+  {
+    "key": "prepRemainingTitle",
+    "kind": "const",
+    "fr": "Temps restant",
+    "params": []
+  },
+  {
+    "key": "prepMinutesCaption",
+    "kind": "const",
+    "fr": "MINUTES",
+    "params": []
+  },
+  {
+    "key": "prepSecondsCaption",
+    "kind": "const",
+    "fr": "SECONDES",
+    "params": []
+  },
+  {
+    "key": "prepScheduledAtLocal",
+    "kind": "method",
+    "fr": "Heure prévue : {time} (heure locale)",
+    "params": [
+      "time"
+    ]
+  },
+  {
+    "key": "prepScheduledOnLocal",
+    "kind": "method",
+    "fr": "Heure prévue : le {day} à {time} (heure locale)",
+    "params": [
+      "day",
+      "time"
+    ]
+  },
+  {
+    "key": "prepLateBy",
+    "kind": "method",
+    "fr": "En retard${durationFr(minutes)} de retard",
+    "params": [
+      "minutes"
+    ]
+  },
+  {
+    "key": "durationFr",
+    "kind": "complex",
+    "fr": null,
+    "params": [
+      "minutes"
+    ]
+  },
+  {
+    "key": "prepLateHint",
+    "kind": "const",
+    "fr": "L’estimation est dépassée. Mettez à jour le temps ou marquez la commande prête quand elle l’est.",
+    "params": []
+  },
+  {
+    "key": "prepUpdateAction",
+    "kind": "const",
+    "fr": "Modifier temps",
+    "params": []
+  },
+  {
+    "key": "prepUpdateTitle",
+    "kind": "const",
+    "fr": "Mise à jour du temps",
+    "params": []
+  },
+  {
+    "key": "prepCurrentReady",
+    "kind": "const",
+    "fr": "Heure prévue actuelle",
+    "params": []
+  },
+  {
+    "key": "prepOriginalReady",
+    "kind": "method",
+    "fr": "Initiale : {time}",
+    "params": [
+      "time"
+    ]
+  },
+  {
+    "key": "prepOriginalReadyLabel",
+    "kind": "method",
+    "fr": "Heure initiale : {time}",
+    "params": [
+      "time"
+    ]
+  },
+  {
+    "key": "prepBranchLabel",
+    "kind": "const",
+    "fr": "Établissement",
+    "params": []
+  },
+  {
+    "key": "prepAddTime",
+    "kind": "const",
+    "fr": "Ajouter du temps de préparation",
+    "params": []
+  },
+  {
+    "key": "prepNewEstimate",
+    "kind": "method",
+    "fr": "Nouvelle estimation : {to} au lieu de {from}, plus {add} minutes",
+    "params": [
+      "from",
+      "to",
+      "add"
+    ]
+  },
+  {
+    "key": "prepClockOnDay",
+    "kind": "method",
+    "fr": "le {day} à {time}",
+    "params": [
+      "day",
+      "time"
+    ]
+  },
+  {
+    "key": "prepOnDay",
+    "kind": "method",
+    "fr": "le {day}",
+    "params": [
+      "day"
+    ]
+  },
+  {
+    "key": "prepSpokenClock",
+    "kind": "method",
+    "fr": "{time} le {day}",
+    "params": [
+      "time",
+      "day"
+    ]
+  },
+  {
+    "key": "prepReasonOptional",
+    "kind": "const",
+    "fr": "Raison du retard (optionnel)",
+    "params": []
+  },
+  {
+    "key": "prepReasonShortcutsHint",
+    "kind": "const",
+    "fr": "Un raccourci remplit le motif ; vous pouvez le modifier.",
+    "params": []
+  },
+  {
+    "key": "prepReasonFieldLabel",
+    "kind": "const",
+    "fr": "Motif",
+    "params": []
+  },
+  {
+    "key": "prepReasonBusy",
+    "kind": "const",
+    "fr": "Forte affluence",
+    "params": []
+  },
+  {
+    "key": "prepReasonLongPrep",
+    "kind": "const",
+    "fr": "Préparation longue",
+    "params": []
+  },
+  {
+    "key": "prepReasonMissingIngredient",
+    "kind": "const",
+    "fr": "Ingrédient manquant",
+    "params": []
+  },
+  {
+    "key": "prepReasonOther",
+    "kind": "const",
+    "fr": "Autre raison",
+    "params": []
+  },
+  {
+    "key": "prepUpdateConfirm",
+    "kind": "const",
+    "fr": "Mettre à jour",
+    "params": []
+  },
+  {
+    "key": "orderStartPreparation",
+    "kind": "const",
+    "fr": "Démarrer la préparation",
+    "params": []
+  },
+  {
+    "key": "orderMarkReady",
+    "kind": "const",
+    "fr": "Marquer comme prête",
+    "params": []
+  },
+  {
+    "key": "markReadyPackingTitle",
+    "kind": "const",
+    "fr": "Liste de colisage",
+    "params": []
+  },
+  {
+    "key": "markReadyPackingHint",
+    "kind": "const",
+    "fr": "Vérifiez que tous les éléments de la commande sont bien emballés avant de la marquer prête.",
+    "params": []
+  },
+  {
+    "key": "markReadyConfirm",
+    "kind": "const",
+    "fr": "Confirmer et marquer prête",
+    "params": []
+  },
+  {
+    "key": "orderReadyWaitingDelivery",
+    "kind": "const",
+    "fr": "En attente de prise en charge pour la livraison.",
+    "params": []
+  },
+  {
+    "key": "orderDeliveryStatusTitle",
+    "kind": "const",
+    "fr": "Livraison",
+    "params": []
+  },
+  {
+    "key": "orderDriverAssigned",
+    "kind": "const",
+    "fr": "Un livreur est assigné.",
+    "params": []
+  },
+  {
+    "key": "orderDriverSearchStarted",
+    "kind": "method",
+    "fr": "Recherche démarrée le {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderDriverSearchStartedAt",
+    "kind": "method",
+    "fr": "Recherche démarrée à {hhmm}",
+    "params": [
+      "hhmm"
+    ]
+  },
+  {
+    "key": "orderDriverEtaEstimate",
+    "kind": "method",
+    "fr": "Arrivée estimée : {when}",
+    "params": [
+      "when"
+    ]
+  },
+  {
+    "key": "orderDriverCardTitle",
+    "kind": "const",
+    "fr": "Livreur assigné",
+    "params": []
+  },
+  {
+    "key": "orderDriverStatusLabel",
+    "kind": "const",
+    "fr": "Statut",
+    "params": []
+  },
+  {
+    "key": "orderDriverEtaLabel",
+    "kind": "const",
+    "fr": "Arrivée estimée",
+    "params": []
+  },
+  {
+    "key": "orderDriverEtaUnavailable",
+    "kind": "const",
+    "fr": "Heure d’arrivée indisponible.",
+    "params": []
+  },
+  {
+    "key": "orderDriverContactUnavailable",
+    "kind": "const",
+    "fr": "Contact du livreur indisponible.",
+    "params": []
+  },
+  {
+    "key": "orderDriverCall",
+    "kind": "const",
+    "fr": "Appeler le livreur",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffTitle",
+    "kind": "const",
+    "fr": "Code de retrait",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffWaiting",
+    "kind": "const",
+    "fr": "En attente de validation par le livreur…",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffInstruction1",
+    "kind": "const",
+    "fr": "Communiquez ce code uniquement au livreur affiché ci-dessus.",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffInstruction2",
+    "kind": "const",
+    "fr": "Le livreur doit saisir ce code dans son application pour confirmer la récupération.",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffRegenerate",
+    "kind": "const",
+    "fr": "Régénérer le code",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffConfirmed",
+    "kind": "const",
+    "fr": "Remise confirmée",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger le code de retrait.",
+    "params": []
+  },
+  {
+    "key": "pickupHandoffRetry",
+    "kind": "const",
+    "fr": "Réessayer",
+    "params": []
+  },
+  {
+    "key": "orderHandoffUnsupported",
+    "kind": "const",
+    "fr": "La confirmation de remise sécurisée n’est pas disponible pour le commerçant dans cette version.",
+    "params": []
+  },
+  {
+    "key": "orderHistoryTitle",
+    "kind": "const",
+    "fr": "Historique de la commande",
+    "params": []
+  },
+  {
+    "key": "orderReferenceLabel",
+    "kind": "const",
+    "fr": "Référence",
+    "params": []
+  },
+  {
+    "key": "orderCustomerLabel",
+    "kind": "const",
+    "fr": "Client",
+    "params": []
+  },
+  {
+    "key": "orderSummaryTitle",
+    "kind": "const",
+    "fr": "Résumé de la commande",
+    "params": []
+  },
+  {
+    "key": "deliverySearching",
+    "kind": "const",
+    "fr": "Recherche de livreur",
+    "params": []
+  },
+  {
+    "key": "deliveryAssigned",
+    "kind": "const",
+    "fr": "Livreur assigné",
+    "params": []
+  },
+  {
+    "key": "deliveryPickedUp",
+    "kind": "const",
+    "fr": "Récupérée",
+    "params": []
+  },
+  {
+    "key": "deliveryArrived",
+    "kind": "const",
+    "fr": "Arrivé chez le client",
+    "params": []
+  },
+  {
+    "key": "deliveryToPickup",
+    "kind": "const",
+    "fr": "Livreur en route vers le commerce",
+    "params": []
+  },
+  {
+    "key": "deliveryAtPickup",
+    "kind": "const",
+    "fr": "Livreur arrivé au commerce",
+    "params": []
+  },
+  {
+    "key": "deliveryInTransit",
+    "kind": "const",
+    "fr": "En route vers le client",
+    "params": []
+  },
+  {
+    "key": "deliveryFailed",
+    "kind": "const",
+    "fr": "Livraison échouée",
+    "params": []
+  },
+  {
+    "key": "deliveryCancelled",
+    "kind": "const",
+    "fr": "Livraison annulée",
+    "params": []
+  },
+  {
+    "key": "deliveryUnknown",
+    "kind": "const",
+    "fr": "Statut de livraison indisponible",
+    "params": []
+  },
+  {
+    "key": "deliveryDelivered",
+    "kind": "const",
+    "fr": "Livrée",
+    "params": []
+  },
+  {
+    "key": "catalogTitle",
+    "kind": "const",
+    "fr": "Catalogue",
+    "params": []
+  },
+  {
+    "key": "catalogTabProducts",
+    "kind": "const",
+    "fr": "Produits",
+    "params": []
+  },
+  {
+    "key": "catalogTabCategories",
+    "kind": "const",
+    "fr": "Catégories",
+    "params": []
+  },
+  {
+    "key": "catalogSearchHint",
+    "kind": "const",
+    "fr": "Rechercher un produit…",
+    "params": []
+  },
+  {
+    "key": "catalogAllCategories",
+    "kind": "const",
+    "fr": "Tous",
+    "params": []
+  },
+  {
+    "key": "catalogEmptyProducts",
+    "kind": "const",
+    "fr": "Aucun produit dans ce catalogue.",
+    "params": []
+  },
+  {
+    "key": "catalogEmptyCategories",
+    "kind": "const",
+    "fr": "Aucune catégorie pour le moment.",
+    "params": []
+  },
+  {
+    "key": "catalogLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger le catalogue.",
+    "params": []
+  },
+  {
+    "key": "catalogInStock",
+    "kind": "const",
+    "fr": "En stock",
+    "params": []
+  },
+  {
+    "key": "catalogOutOfStock",
+    "kind": "const",
+    "fr": "Rupture",
+    "params": []
+  },
+  {
+    "key": "catalogUnavailableSection",
+    "kind": "const",
+    "fr": "La création et l’édition avancées de produits ne sont pas branchées dans cet écran.",
+    "params": []
+  },
+  {
+    "key": "reportsTitle",
+    "kind": "const",
+    "fr": "Rapports",
+    "params": []
+  },
+  {
+    "key": "reportsPeriodToday",
+    "kind": "const",
+    "fr": "Aujourd’hui",
+    "params": []
+  },
+  {
+    "key": "reportsPeriodYesterday",
+    "kind": "const",
+    "fr": "Hier",
+    "params": []
+  },
+  {
+    "key": "reportsPeriodWeek",
+    "kind": "const",
+    "fr": "Cette semaine",
+    "params": []
+  },
+  {
+    "key": "reportsPeriodMonth",
+    "kind": "const",
+    "fr": "Ce mois",
+    "params": []
+  },
+  {
+    "key": "reportsFinanceTitle",
+    "kind": "const",
+    "fr": "Détails financiers",
+    "params": []
+  },
+  {
+    "key": "reportsGrossSales",
+    "kind": "const",
+    "fr": "Ventes brutes",
+    "params": []
+  },
+  {
+    "key": "reportsCommission",
+    "kind": "const",
+    "fr": "Commission SpeedyGo",
+    "params": []
+  },
+  {
+    "key": "reportsMerchantNet",
+    "kind": "const",
+    "fr": "Net commerçant",
+    "params": []
+  },
+  {
+    "key": "reportsDataUnavailable",
+    "kind": "const",
+    "fr": "Données indisponibles",
+    "params": []
+  },
+  {
+    "key": "reportsDataUnavailableShort",
+    "kind": "const",
+    "fr": "—",
+    "params": []
+  },
+  {
+    "key": "reportsOrdersMetric",
+    "kind": "const",
+    "fr": "Commandes",
+    "params": []
+  },
+  {
+    "key": "reportsPrepTimeMetric",
+    "kind": "const",
+    "fr": "Temps prép. moy.",
+    "params": []
+  },
+  {
+    "key": "reportsCancellationsMetric",
+    "kind": "const",
+    "fr": "Annulations",
+    "params": []
+  },
+  {
+    "key": "reportsTrendTitle",
+    "kind": "const",
+    "fr": "Tendance des ventes",
+    "params": []
+  },
+  {
+    "key": "reportsTopProductsTitle",
+    "kind": "const",
+    "fr": "Produits les plus vendus",
+    "params": []
+  },
+  {
+    "key": "reportsTopProductsScreenTitle",
+    "kind": "const",
+    "fr": "Top produits",
+    "params": []
+  },
+  {
+    "key": "reportsCommissionMixedRates",
+    "kind": "const",
+    "fr": "Commission SpeedyGo (taux variables)",
+    "params": []
+  },
+  {
+    "key": "reportsFinanceUnavailable",
+    "kind": "const",
+    "fr": "Données indisponibles",
+    "params": []
+  },
+  {
+    "key": "reportsRatingsTitle",
+    "kind": "const",
+    "fr": "Notes clients",
+    "params": []
+  },
+  {
+    "key": "reportsRatingsEmpty",
+    "kind": "const",
+    "fr": "Aucune note pour le moment.",
+    "params": []
+  },
+  {
+    "key": "reportsRatingsCount",
+    "kind": "const",
+    "fr": "avis",
+    "params": []
+  },
+  {
+    "key": "reportsRatingsUnavailable",
+    "kind": "const",
+    "fr": "Données indisponibles",
+    "params": []
+  },
+  {
+    "key": "reportsSettlementsTitle",
+    "kind": "const",
+    "fr": "Règlements",
+    "params": []
+  },
+  {
+    "key": "reportsSettlementStatus",
+    "kind": "method",
+    "fr": "DRAFTBrouillonFINALIZEDFinaliséStatut inconnu",
+    "params": [
+      "status"
+    ]
+  },
+  {
+    "key": "reportsSettlementsEmpty",
+    "kind": "const",
+    "fr": "Aucun règlement pour le moment.",
+    "params": []
+  },
+  {
+    "key": "reportsSettlementsForbidden",
+    "kind": "const",
+    "fr": "Les règlements sont réservés au propriétaire ou au responsable.",
+    "params": []
+  },
+  {
+    "key": "reportsLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger les indicateurs.",
+    "params": []
+  },
+  {
+    "key": "reportsTrendUnavailable",
+    "kind": "const",
+    "fr": "Données indisponibles",
+    "params": []
+  },
+  {
+    "key": "reportsTopProductsUnavailable",
+    "kind": "const",
+    "fr": "Données indisponibles",
+    "params": []
+  },
+  {
+    "key": "reportsPeriodCustom",
+    "kind": "const",
+    "fr": "Personnalisé",
+    "params": []
+  },
+  {
+    "key": "reportsPeriodSelectorLabel",
+    "kind": "const",
+    "fr": "Période du rapport",
+    "params": []
+  },
+  {
+    "key": "reportsCustomRangeTooLong",
+    "kind": "const",
+    "fr": "La période personnalisée est limitée à 93 jours.",
+    "params": []
+  },
+  {
+    "key": "reportsAverageBasketMetric",
+    "kind": "const",
+    "fr": "Panier moyen",
+    "params": []
+  },
+  {
+    "key": "reportsPrepTimeNotTracked",
+    "kind": "const",
+    "fr": "Non suivi",
+    "params": []
+  },
+  {
+    "key": "reportsMerchantDiscount",
+    "kind": "const",
+    "fr": "Remise commerçant",
+    "params": []
+  },
+  {
+    "key": "reportsFinanceRestricted",
+    "kind": "const",
+    "fr": "Commission et net commerçant réservés au propriétaire ou au responsable.",
+    "params": []
+  },
+  {
+    "key": "reportsFinanceMissingSnapshot",
+    "kind": "const",
+    "fr": "Données financières indisponibles pour certaines commandes de la période.",
+    "params": []
+  },
+  {
+    "key": "reportsRefundsCompleted",
+    "kind": "const",
+    "fr": "Remboursements finalisés",
+    "params": []
+  },
+  {
+    "key": "reportsRefundAdjustments",
+    "kind": "const",
+    "fr": "Ajustements enregistrés",
+    "params": []
+  },
+  {
+    "key": "reportsRefundsNote",
+    "kind": "const",
+    "fr": "Les remboursements ne réduisent pas les ventes. Seuls les ajustements enregistrés sur vos règlements vous sont imputés.",
+    "params": []
+  },
+  {
+    "key": "reportsTrendEmpty",
+    "kind": "const",
+    "fr": "Aucune vente sur la période.",
+    "params": []
+  },
+  {
+    "key": "reportsTopProductsEmpty",
+    "kind": "const",
+    "fr": "Aucun produit vendu sur la période.",
+    "params": []
+  },
+  {
+    "key": "reportsSeeAll",
+    "kind": "const",
+    "fr": "Voir tout",
+    "params": []
+  },
+  {
+    "key": "reportsSortOrders",
+    "kind": "const",
+    "fr": "Commandes",
+    "params": []
+  },
+  {
+    "key": "reportsSortRevenue",
+    "kind": "const",
+    "fr": "Chiffre d’affaires",
+    "params": []
+  },
+  {
+    "key": "reportsTopSales",
+    "kind": "const",
+    "fr": "Top des ventes",
+    "params": []
+  },
+  {
+    "key": "reportsRankFirst",
+    "kind": "const",
+    "fr": "N°1",
+    "params": []
+  },
+  {
+    "key": "reportsDeletedProduct",
+    "kind": "const",
+    "fr": "Produit retiré du catalogue",
+    "params": []
+  },
+  {
+    "key": "reportsSalesLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger les ventes.",
+    "params": []
+  },
+  {
+    "key": "reportsTopProductsLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger les produits.",
+    "params": []
+  },
+  {
+    "key": "reportsLastUpdated",
+    "kind": "method",
+    "fr": "Dernière mise à jour : {time}",
+    "params": [
+      "time"
+    ]
+  },
+  {
+    "key": "reportsSyncedAt",
+    "kind": "method",
+    "fr": "Synchronisé à {time}",
+    "params": [
+      "time"
+    ]
+  },
+  {
+    "key": "reportsCommissionWithRate",
+    "kind": "method",
+    "fr": "Commission SpeedyGo ({rate})",
+    "params": [
+      "rate"
+    ]
+  },
+  {
+    "key": "reportsOrderCount",
+    "kind": "method",
+    "fr": "1 commande{count} commandes",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "reportsUnitCount",
+    "kind": "method",
+    "fr": "1 unité{count} unités",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "reportsTotalArticles",
+    "kind": "method",
+    "fr": "Total : 1 articleTotal : {count} articles",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "reportsTrendSemantics",
+    "kind": "method",
+    "fr": "Tendance des ventes : {orders} commandes, {gross}",
+    "params": [
+      "orders",
+      "gross"
+    ]
+  },
+  {
+    "key": "reportsDailySummaryTitle",
+    "kind": "const",
+    "fr": "Résumé quotidien",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryShortcut",
+    "kind": "const",
+    "fr": "Résumé quotidien",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger le résumé quotidien.",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryEmpty",
+    "kind": "const",
+    "fr": "Aucune commande créée pour cette journée.",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummarySalesKpi",
+    "kind": "const",
+    "fr": "Ventes",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryOrdersKpi",
+    "kind": "const",
+    "fr": "Commandes",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryPrepKpi",
+    "kind": "const",
+    "fr": "Temps Prép.",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryCancellationsKpi",
+    "kind": "const",
+    "fr": "Annulations",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryBreakdownTitle",
+    "kind": "const",
+    "fr": "Répartition des commandes",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryDelivered",
+    "kind": "const",
+    "fr": "Livrées",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryInProgress",
+    "kind": "const",
+    "fr": "En cours",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryCancelled",
+    "kind": "const",
+    "fr": "Annulées",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryPrepEfficiencyTitle",
+    "kind": "const",
+    "fr": "Efficacité de préparation",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryPrepAverage",
+    "kind": "const",
+    "fr": "Moyenne",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryOnTimeRate",
+    "kind": "const",
+    "fr": "À l’heure",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryCancellationMotifs",
+    "kind": "const",
+    "fr": "Motifs d’annulation",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryViewOrders",
+    "kind": "const",
+    "fr": "Voir toutes les commandes du jour",
+    "params": []
+  },
+  {
+    "key": "reportsDailySummaryMinutes",
+    "kind": "method",
+    "fr": "{minutes} min",
+    "params": [
+      "minutes"
+    ]
+  },
+  {
+    "key": "reportsDailySummaryOnTimePercent",
+    "kind": "method",
+    "fr": "{percent} à l’heure",
+    "params": [
+      "percent"
+    ]
+  },
+  {
+    "key": "reportsDailySummaryTodayDate",
+    "kind": "method",
+    "fr": "Aujourd’hui, {label}",
+    "params": [
+      "label"
+    ]
+  },
+  {
+    "key": "deliveryImpactTitle",
+    "kind": "const",
+    "fr": "Impact sur la livraison",
+    "params": []
+  },
+  {
+    "key": "deliveryImpactMayDelayDriverAssignment",
+    "kind": "const",
+    "fr": "La préparation peut retarder la recherche d’un livreur.",
+    "params": []
+  },
+  {
+    "key": "deliveryImpactMayDelayPickup",
+    "kind": "const",
+    "fr": "Un livreur est assigné; le retrait peut être retardé.",
+    "params": []
+  },
+  {
+    "key": "deliveryImpactDriverWaiting",
+    "kind": "const",
+    "fr": "Le livreur attend la commande.",
+    "params": []
+  },
+  {
+    "key": "deliveryImpactTimingUnavailable",
+    "kind": "const",
+    "fr": "Impact exact sur la livraison indisponible.",
+    "params": []
+  },
+  {
+    "key": "deliveryImpactLatestRevision",
+    "kind": "method",
+    "fr": "Dernier motif : {reason}",
+    "params": [
+      "reason"
+    ]
+  },
+  {
+    "key": "rejectReasonProductUnavailable",
+    "kind": "const",
+    "fr": "Indisponibilité produit",
+    "params": []
+  },
+  {
+    "key": "rejectReasonTooBusy",
+    "kind": "const",
+    "fr": "Trop occupé",
+    "params": []
+  },
+  {
+    "key": "rejectReasonClosingSoon",
+    "kind": "const",
+    "fr": "Fermeture proche",
+    "params": []
+  },
+  {
+    "key": "rejectReasonOther",
+    "kind": "const",
+    "fr": "Autre",
+    "params": []
+  },
+  {
+    "key": "rejectReasonTilesHint",
+    "kind": "const",
+    "fr": "Sélectionnez un motif puis précisez si nécessaire.",
+    "params": []
+  },
+  {
+    "key": "catalogAddProduct",
+    "kind": "const",
+    "fr": "Ajouter un produit",
+    "params": []
+  },
+  {
+    "key": "catalogEditProduct",
+    "kind": "const",
+    "fr": "Modifier le produit",
+    "params": []
+  },
+  {
+    "key": "catalogProductDetail",
+    "kind": "const",
+    "fr": "Détail du produit",
+    "params": []
+  },
+  {
+    "key": "catalogAddCategory",
+    "kind": "const",
+    "fr": "Ajouter une catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogEditCategory",
+    "kind": "const",
+    "fr": "Modifier la catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogProductName",
+    "kind": "const",
+    "fr": "Nom du produit (Français)",
+    "params": []
+  },
+  {
+    "key": "catalogProductDescription",
+    "kind": "const",
+    "fr": "Description (Français)",
+    "params": []
+  },
+  {
+    "key": "catalogProductPrice",
+    "kind": "const",
+    "fr": "Prix de base",
+    "params": []
+  },
+  {
+    "key": "catalogProductCategory",
+    "kind": "const",
+    "fr": "Catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogProductAvailable",
+    "kind": "const",
+    "fr": "Visible dans le menu",
+    "params": []
+  },
+  {
+    "key": "catalogProductAvailableSub",
+    "kind": "const",
+    "fr": "Activer pour rendre disponible",
+    "params": []
+  },
+  {
+    "key": "catalogSaveProduct",
+    "kind": "const",
+    "fr": "Enregistrer",
+    "params": []
+  },
+  {
+    "key": "catalogSaveProductEdits",
+    "kind": "const",
+    "fr": "Enregistrer les modifications",
+    "params": []
+  },
+  {
+    "key": "catalogPreview",
+    "kind": "const",
+    "fr": "Aperçu",
+    "params": []
+  },
+  {
+    "key": "catalogPreviewTitle",
+    "kind": "const",
+    "fr": "Aperçu du produit",
+    "params": []
+  },
+  {
+    "key": "catalogPreviewUnavailable",
+    "kind": "const",
+    "fr": "Aperçu non disponible actuellement.",
+    "params": []
+  },
+  {
+    "key": "catalogFieldRequired",
+    "kind": "const",
+    "fr": "Ce champ est obligatoire.",
+    "params": []
+  },
+  {
+    "key": "catalogPriceInvalid",
+    "kind": "const",
+    "fr": "Indiquez un prix valide.",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryRequired",
+    "kind": "const",
+    "fr": "Choisissez une catégorie.",
+    "params": []
+  },
+  {
+    "key": "catalogSaveRetryHint",
+    "kind": "const",
+    "fr": "Enregistrement impossible. Vérifiez la connexion et réessayez.",
+    "params": []
+  },
+  {
+    "key": "catalogSectionInfo",
+    "kind": "const",
+    "fr": "Informations",
+    "params": []
+  },
+  {
+    "key": "catalogSectionMedia",
+    "kind": "const",
+    "fr": "Médias",
+    "params": []
+  },
+  {
+    "key": "catalogSectionPrice",
+    "kind": "const",
+    "fr": "Prix et préparation",
+    "params": []
+  },
+  {
+    "key": "catalogSectionConfig",
+    "kind": "const",
+    "fr": "Configuration",
+    "params": []
+  },
+  {
+    "key": "catalogSectionAvailability",
+    "kind": "const",
+    "fr": "Disponibilité",
+    "params": []
+  },
+  {
+    "key": "catalogSectionImage",
+    "kind": "const",
+    "fr": "Image du produit",
+    "params": []
+  },
+  {
+    "key": "catalogSectionGeneral",
+    "kind": "const",
+    "fr": "Informations générales",
+    "params": []
+  },
+  {
+    "key": "catalogSectionPriceDetails",
+    "kind": "const",
+    "fr": "Prix et détails",
+    "params": []
+  },
+  {
+    "key": "catalogOnlineBanner",
+    "kind": "const",
+    "fr": "Cet article est actuellement en ligne pour les clients.",
+    "params": []
+  },
+  {
+    "key": "catalogOfflineBanner",
+    "kind": "const",
+    "fr": "Cet article n’est pas visible pour les clients.",
+    "params": []
+  },
+  {
+    "key": "catalogPriceWarning",
+    "kind": "const",
+    "fr": "Les changements de prix et de disponibilité sont appliqués immédiatement aux clients.",
+    "params": []
+  },
+  {
+    "key": "catalogImagePrimary",
+    "kind": "const",
+    "fr": "Image principale",
+    "params": []
+  },
+  {
+    "key": "catalogImageAdd",
+    "kind": "const",
+    "fr": "Ajouter une photo",
+    "params": []
+  },
+  {
+    "key": "catalogImageHint",
+    "kind": "const",
+    "fr": "JPG, PNG (max. 2 Mo, min. 400 px)",
+    "params": []
+  },
+  {
+    "key": "catalogImageChangePhoto",
+    "kind": "const",
+    "fr": "Changer la photo",
+    "params": []
+  },
+  {
+    "key": "catalogInStockNow",
+    "kind": "const",
+    "fr": "Actuellement en stock",
+    "params": []
+  },
+  {
+    "key": "catalogOutOfStockNow",
+    "kind": "const",
+    "fr": "Actuellement indisponible",
+    "params": []
+  },
+  {
+    "key": "catalogCurrencySuffix",
+    "kind": "const",
+    "fr": "DZD",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteProduct",
+    "kind": "const",
+    "fr": "Supprimer",
+    "params": []
+  },
+  {
+    "key": "catalogNeedCategory",
+    "kind": "const",
+    "fr": "Créez d’abord une catégorie pour ajouter un produit.",
+    "params": []
+  },
+  {
+    "key": "catalogImagePick",
+    "kind": "const",
+    "fr": "Choisir une image",
+    "params": []
+  },
+  {
+    "key": "catalogImageFromGallery",
+    "kind": "const",
+    "fr": "Choisir dans la galerie",
+    "params": []
+  },
+  {
+    "key": "catalogImageFromCamera",
+    "kind": "const",
+    "fr": "Prendre une photo",
+    "params": []
+  },
+  {
+    "key": "catalogImagePluginRestart",
+    "kind": "const",
+    "fr": "Redémarrez l’application pour activer la sélection de photos.",
+    "params": []
+  },
+  {
+    "key": "catalogImageFormatError",
+    "kind": "const",
+    "fr": "Format non pris en charge. Utilisez une photo JPG ou PNG.",
+    "params": []
+  },
+  {
+    "key": "catalogImageTooSmall",
+    "kind": "const",
+    "fr": "Image trop petite. Minimum 400 × 400 pixels.",
+    "params": []
+  },
+  {
+    "key": "catalogImageTooLarge",
+    "kind": "const",
+    "fr": "Image trop lourde. Maximum 2 Mo après compression.",
+    "params": []
+  },
+  {
+    "key": "catalogImageChange",
+    "kind": "const",
+    "fr": "Changer l’image",
+    "params": []
+  },
+  {
+    "key": "catalogImageRemove",
+    "kind": "const",
+    "fr": "Retirer l’image",
+    "params": []
+  },
+  {
+    "key": "catalogImageUploadError",
+    "kind": "const",
+    "fr": "Impossible d’envoyer l’image.",
+    "params": []
+  },
+  {
+    "key": "catalogImageBindPartial",
+    "kind": "const",
+    "fr": "Produit enregistré, mais l’image n’a pas pu être liée. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "catalogImageRemoteUnavailable",
+    "kind": "const",
+    "fr": "Aperçu de l’image non disponible actuellement.",
+    "params": []
+  },
+  {
+    "key": "catalogSaveError",
+    "kind": "const",
+    "fr": "Enregistrement impossible. Vérifiez la connexion et réessayez.",
+    "params": [],
+    "aliasOf": "catalogSaveRetryHint"
+  },
+  {
+    "key": "catalogDeleteConfirm",
+    "kind": "const",
+    "fr": "Supprimer ce produit ? Les commandes historiques sont conservées.",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryName",
+    "kind": "const",
+    "fr": "Nom de la catégorie (Français)",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryActive",
+    "kind": "const",
+    "fr": "Visibilité dans le menu",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryActiveSub",
+    "kind": "const",
+    "fr": "Afficher cette catégorie aux clients",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryDetails",
+    "kind": "const",
+    "fr": "Détails de la catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogCategorySettings",
+    "kind": "const",
+    "fr": "Paramètres",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryCancel",
+    "kind": "const",
+    "fr": "Annuler",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteCategory",
+    "kind": "const",
+    "fr": "Supprimer la catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteCategoryConfirm",
+    "kind": "const",
+    "fr": "Supprimer cette catégorie ? Elle doit être vide.",
+    "params": []
+  },
+  {
+    "key": "catalogStaffReadOnly",
+    "kind": "const",
+    "fr": "Consultation seule — modifications réservées au propriétaire ou responsable.",
+    "params": []
+  },
+  {
+    "key": "catalogCategorySearchHint",
+    "kind": "const",
+    "fr": "Rechercher une catégorie…",
+    "params": []
+  },
+  {
+    "key": "catalogFilterTooltip",
+    "kind": "const",
+    "fr": "Filtres",
+    "params": []
+  },
+  {
+    "key": "catalogReorder",
+    "kind": "const",
+    "fr": "Réorganiser",
+    "params": []
+  },
+  {
+    "key": "catalogVisible",
+    "kind": "const",
+    "fr": "Visible",
+    "params": []
+  },
+  {
+    "key": "catalogHidden",
+    "kind": "const",
+    "fr": "Masqué",
+    "params": []
+  },
+  {
+    "key": "catalogArticles",
+    "kind": "method",
+    "fr": "{n} article{n} articles",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogMenuAvailability",
+    "kind": "const",
+    "fr": "Gérer la disponibilité",
+    "params": []
+  },
+  {
+    "key": "catalogMenuDelete",
+    "kind": "const",
+    "fr": "Supprimer",
+    "params": []
+  },
+  {
+    "key": "catalogMenuDuplicate",
+    "kind": "const",
+    "fr": "Dupliquer",
+    "params": []
+  },
+  {
+    "key": "duplicateTitle",
+    "kind": "const",
+    "fr": "Dupliquer le produit",
+    "params": []
+  },
+  {
+    "key": "duplicateSource",
+    "kind": "const",
+    "fr": "Source",
+    "params": []
+  },
+  {
+    "key": "duplicateNewName",
+    "kind": "const",
+    "fr": "Nouveau nom du produit",
+    "params": []
+  },
+  {
+    "key": "duplicateNewNameHint",
+    "kind": "const",
+    "fr": "Veuillez modifier le nom avant de publier la copie.",
+    "params": []
+  },
+  {
+    "key": "duplicateNamePlaceholder",
+    "kind": "const",
+    "fr": "Entrez le nouveau nom",
+    "params": []
+  },
+  {
+    "key": "duplicateClearName",
+    "kind": "const",
+    "fr": "Effacer le nom",
+    "params": []
+  },
+  {
+    "key": "duplicateDefaultName",
+    "kind": "method",
+    "fr": "Copie de {name}",
+    "params": [
+      "name"
+    ]
+  },
+  {
+    "key": "duplicateCopied",
+    "kind": "const",
+    "fr": "Éléments copiés",
+    "params": []
+  },
+  {
+    "key": "duplicateImage",
+    "kind": "const",
+    "fr": "Image du produit",
+    "params": []
+  },
+  {
+    "key": "duplicateNoImage",
+    "kind": "const",
+    "fr": "Image du produit (aucune image)",
+    "params": []
+  },
+  {
+    "key": "duplicatePrice",
+    "kind": "method",
+    "fr": "Prix ({price})",
+    "params": [
+      "price"
+    ]
+  },
+  {
+    "key": "duplicateOptions",
+    "kind": "const",
+    "fr": "Options et variantes",
+    "params": []
+  },
+  {
+    "key": "duplicateSaleUnits",
+    "kind": "const",
+    "fr": "Unités de vente (non gérées)",
+    "params": []
+  },
+  {
+    "key": "duplicateNotCopiedLead",
+    "kind": "const",
+    "fr": "Le statut de disponibilité et l’historique des ventes ",
+    "params": []
+  },
+  {
+    "key": "duplicateNotCopiedStrong",
+    "kind": "const",
+    "fr": "ne seront pas",
+    "params": []
+  },
+  {
+    "key": "duplicateNotCopiedTail",
+    "kind": "const",
+    "fr": " copiés vers le nouveau produit.",
+    "params": []
+  },
+  {
+    "key": "duplicateUnavailableInfo",
+    "kind": "const",
+    "fr": "La copie sera créée indisponible afin que vous puissiez la vérifier avant de l’activer.",
+    "params": []
+  },
+  {
+    "key": "duplicateCancel",
+    "kind": "const",
+    "fr": "Annuler",
+    "params": []
+  },
+  {
+    "key": "duplicateCreate",
+    "kind": "const",
+    "fr": "Créer la copie",
+    "params": []
+  },
+  {
+    "key": "duplicateCreating",
+    "kind": "const",
+    "fr": "Création…",
+    "params": []
+  },
+  {
+    "key": "duplicateNameRequired",
+    "kind": "const",
+    "fr": "Le nom ne peut pas être vide.",
+    "params": []
+  },
+  {
+    "key": "duplicateNameTooLong",
+    "kind": "const",
+    "fr": "Maximum 255 caractères.",
+    "params": []
+  },
+  {
+    "key": "duplicateNetworkError",
+    "kind": "const",
+    "fr": "Connexion interrompue. Réessayez : la copie ne sera pas créée deux fois.",
+    "params": []
+  },
+  {
+    "key": "duplicateError",
+    "kind": "const",
+    "fr": "La copie n’a pas pu être créée et aucun produit n’a été ajouté. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "duplicateConflict",
+    "kind": "const",
+    "fr": "Cette demande de copie a déjà servi ailleurs. Rouvrez l’écran puis réessayez.",
+    "params": []
+  },
+  {
+    "key": "duplicateNotFound",
+    "kind": "const",
+    "fr": "Produit introuvable. Actualisez le catalogue.",
+    "params": []
+  },
+  {
+    "key": "duplicateCreated",
+    "kind": "const",
+    "fr": "Copie créée — indisponible jusqu’à votre vérification.",
+    "params": []
+  },
+  {
+    "key": "duplicateReplayed",
+    "kind": "const",
+    "fr": "Copie déjà créée — ouverture du produit.",
+    "params": []
+  },
+  {
+    "key": "duplicateForbiddenTitle",
+    "kind": "const",
+    "fr": "Duplication réservée au propriétaire ou au responsable",
+    "params": []
+  },
+  {
+    "key": "duplicateBackToCatalog",
+    "kind": "const",
+    "fr": "Retour au catalogue",
+    "params": []
+  },
+  {
+    "key": "catalogMenuViewCategory",
+    "kind": "const",
+    "fr": "Voir la catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogBulkTooltip",
+    "kind": "const",
+    "fr": "Disponibilité groupée",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryInUse",
+    "kind": "const",
+    "fr": "Cette catégorie contient encore des produits. Déplacez-les ou supprimez-les d’abord.",
+    "params": []
+  },
+  {
+    "key": "catalogProductInUse",
+    "kind": "const",
+    "fr": "Ce produit figure dans des commandes passées : il ne peut pas être supprimé. Mettez-le en rupture à la place.",
+    "params": []
+  },
+  {
+    "key": "catalogVisibilityError",
+    "kind": "const",
+    "fr": "Impossible de modifier la visibilité. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "catalogAvailabilityError",
+    "kind": "const",
+    "fr": "Impossible de modifier la disponibilité. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "catalogNoResults",
+    "kind": "const",
+    "fr": "Aucun produit ne correspond à ces filtres.",
+    "params": []
+  },
+  {
+    "key": "catalogNoCategoryResults",
+    "kind": "const",
+    "fr": "Aucune catégorie ne correspond à cette recherche.",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersTitle",
+    "kind": "const",
+    "fr": "Recherche et Filtres",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersReset",
+    "kind": "const",
+    "fr": "Réinitialiser",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersCategories",
+    "kind": "const",
+    "fr": "Catégories",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersStatus",
+    "kind": "const",
+    "fr": "Statut",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersOutOfStock",
+    "kind": "const",
+    "fr": "Rupture de stock",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersQuality",
+    "kind": "const",
+    "fr": "Contrôle qualité",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersMissingImage",
+    "kind": "const",
+    "fr": "Image manquante",
+    "params": []
+  },
+  {
+    "key": "catalogFiltersPreview",
+    "kind": "const",
+    "fr": "Aperçu des résultats",
+    "params": []
+  },
+  {
+    "key": "catalogProductsCount",
+    "kind": "method",
+    "fr": "{n} produit{n} produits",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogFiltersApply",
+    "kind": "const",
+    "fr": "Appliquer les filtres",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryDetailTitle",
+    "kind": "const",
+    "fr": "Détails de la catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogDisplayOrder",
+    "kind": "method",
+    "fr": "Ordre d’affichage : {n}",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogCategoryProducts",
+    "kind": "const",
+    "fr": "Produits",
+    "params": []
+  },
+  {
+    "key": "catalogCategoryEmpty",
+    "kind": "const",
+    "fr": "Aucun produit dans cette catégorie.",
+    "params": []
+  },
+  {
+    "key": "catalogReorderTitle",
+    "kind": "const",
+    "fr": "Réorganiser les catégories",
+    "params": []
+  },
+  {
+    "key": "catalogCategoriesCount",
+    "kind": "method",
+    "fr": "{n} catégorie{n} catégories",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogReorderHint",
+    "kind": "const",
+    "fr": "Faites glisser pour modifier l’ordre d’affichage.",
+    "params": []
+  },
+  {
+    "key": "catalogReorderSave",
+    "kind": "const",
+    "fr": "Enregistrer l’ordre",
+    "params": []
+  },
+  {
+    "key": "catalogReorderSaved",
+    "kind": "const",
+    "fr": "Ordre enregistré.",
+    "params": []
+  },
+  {
+    "key": "catalogReorderPartial",
+    "kind": "const",
+    "fr": "Certaines catégories n’ont pas pu être déplacées. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "catalogAvailabilityTitle",
+    "kind": "const",
+    "fr": "Disponibilité du produit",
+    "params": []
+  },
+  {
+    "key": "catalogAvailabilityNote",
+    "kind": "const",
+    "fr": "Les modifications n’affectent pas les commandes déjà acceptées.",
+    "params": []
+  },
+  {
+    "key": "catalogAvailabilityState",
+    "kind": "const",
+    "fr": "État de disponibilité",
+    "params": []
+  },
+  {
+    "key": "catalogAvailableOption",
+    "kind": "const",
+    "fr": "Disponible",
+    "params": []
+  },
+  {
+    "key": "catalogAvailableOptionSub",
+    "kind": "const",
+    "fr": "Visible et commandable immédiatement.",
+    "params": []
+  },
+  {
+    "key": "catalogOutOfStockOptionSub",
+    "kind": "const",
+    "fr": "Affiché comme indisponible jusqu’à réactivation manuelle.",
+    "params": []
+  },
+  {
+    "key": "catalogAvailabilitySave",
+    "kind": "const",
+    "fr": "Enregistrer la disponibilité",
+    "params": []
+  },
+  {
+    "key": "catalogAvailabilitySaved",
+    "kind": "const",
+    "fr": "Disponibilité enregistrée.",
+    "params": []
+  },
+  {
+    "key": "catalogBulkTitle",
+    "kind": "const",
+    "fr": "Disponibilité groupée",
+    "params": []
+  },
+  {
+    "key": "catalogBulkNote",
+    "kind": "const",
+    "fr": "Les modifications s’appliquent immédiatement sur l’application client. Elles n’affectent pas les commandes en cours.",
+    "params": []
+  },
+  {
+    "key": "catalogBulkSelection",
+    "kind": "const",
+    "fr": "Sélection multiple",
+    "params": []
+  },
+  {
+    "key": "catalogBulkSelected",
+    "kind": "method",
+    "fr": "{n} produit sélectionné{n} produits sélectionnés",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogBulkNewStatus",
+    "kind": "const",
+    "fr": "Nouveau statut",
+    "params": []
+  },
+  {
+    "key": "catalogBulkSelectAll",
+    "kind": "const",
+    "fr": "Tout sélectionner",
+    "params": []
+  },
+  {
+    "key": "catalogBulkClear",
+    "kind": "const",
+    "fr": "Effacer la sélection",
+    "params": []
+  },
+  {
+    "key": "catalogBulkApply",
+    "kind": "const",
+    "fr": "Appliquer",
+    "params": []
+  },
+  {
+    "key": "catalogBulkDone",
+    "kind": "method",
+    "fr": "{n} produit mis à jour.{n} produits mis à jour.",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogBulkFailed",
+    "kind": "method",
+    "fr": "{n} produit n’a pas pu être mis à jour.{n} produits n’ont pas pu être mis à jour.",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogUncategorized",
+    "kind": "const",
+    "fr": "Sans catégorie",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteTitle",
+    "kind": "const",
+    "fr": "Supprimer le produit",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteWarningTitle",
+    "kind": "const",
+    "fr": "Un produit déjà commandé ne peut pas être supprimé.",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteWarningBody",
+    "kind": "const",
+    "fr": "Les commandes passées gardent leur copie du produit. Si la suppression est refusée, mettez le produit en rupture.",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteHideOption",
+    "kind": "const",
+    "fr": "Mettre en rupture",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteHideOptionSub",
+    "kind": "const",
+    "fr": "Le produit reste enregistré et modifiable, mais n’est plus commandable.",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteRecommended",
+    "kind": "const",
+    "fr": "Recommandé",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteHardOption",
+    "kind": "const",
+    "fr": "Supprimer définitivement",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteHardOptionSub",
+    "kind": "const",
+    "fr": "Retire le produit, ses variantes et suppléments. Impossible s’il figure dans une commande.",
+    "params": []
+  },
+  {
+    "key": "catalogDeleteHardConfirm",
+    "kind": "const",
+    "fr": "Supprimer définitivement",
+    "params": []
+  },
+  {
+    "key": "catalogDeleted",
+    "kind": "const",
+    "fr": "Produit supprimé.",
+    "params": []
+  },
+  {
+    "key": "catalogMarkedOutOfStock",
+    "kind": "const",
+    "fr": "Produit mis en rupture.",
+    "params": []
+  },
+  {
+    "key": "catalogVariantsTitle",
+    "kind": "const",
+    "fr": "Variantes obligatoires",
+    "params": []
+  },
+  {
+    "key": "catalogVariantsInfo",
+    "kind": "const",
+    "fr": "Les variantes obligatoires demandent au client de choisir une option avant d’ajouter le produit au panier.",
+    "params": []
+  },
+  {
+    "key": "catalogVariantsSubtitle",
+    "kind": "const",
+    "fr": "Configurez les options requises avant l’ajout au panier.",
+    "params": []
+  },
+  {
+    "key": "catalogExtrasTitle",
+    "kind": "const",
+    "fr": "Suppléments optionnels",
+    "params": []
+  },
+  {
+    "key": "catalogExtrasSubtitle",
+    "kind": "const",
+    "fr": "Options facultatives que le client peut ajouter.",
+    "params": []
+  },
+  {
+    "key": "catalogRequiredTag",
+    "kind": "const",
+    "fr": "Obligatoire",
+    "params": []
+  },
+  {
+    "key": "catalogSingleChoice",
+    "kind": "const",
+    "fr": "Sélection unique",
+    "params": []
+  },
+  {
+    "key": "catalogChoiceRange",
+    "kind": "method",
+    "fr": "{min} choixEntre {min} et {max} choix",
+    "params": [
+      "min",
+      "max"
+    ]
+  },
+  {
+    "key": "catalogMaxSelections",
+    "kind": "method",
+    "fr": "Maximum 1 sélectionMaximum {n} sélections",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogAddChoice",
+    "kind": "const",
+    "fr": "Ajouter un choix",
+    "params": []
+  },
+  {
+    "key": "catalogAddOption",
+    "kind": "const",
+    "fr": "Ajouter une option",
+    "params": []
+  },
+  {
+    "key": "catalogAddVariantGroup",
+    "kind": "const",
+    "fr": "Ajouter un groupe de variantes",
+    "params": []
+  },
+  {
+    "key": "catalogAddExtrasGroup",
+    "kind": "const",
+    "fr": "Nouveau groupe de suppléments",
+    "params": []
+  },
+  {
+    "key": "catalogNewGroup",
+    "kind": "const",
+    "fr": "Nouveau groupe",
+    "params": []
+  },
+  {
+    "key": "catalogGroupName",
+    "kind": "const",
+    "fr": "Nom du groupe (Français)",
+    "params": []
+  },
+  {
+    "key": "catalogGroupNameHint",
+    "kind": "const",
+    "fr": "ex : Sauce",
+    "params": []
+  },
+  {
+    "key": "catalogOptionName",
+    "kind": "const",
+    "fr": "Nom du choix",
+    "params": []
+  },
+  {
+    "key": "catalogOptionPrice",
+    "kind": "const",
+    "fr": "Prix (+)",
+    "params": []
+  },
+  {
+    "key": "catalogMaxSelectionsLabel",
+    "kind": "const",
+    "fr": "Sélections maximum",
+    "params": []
+  },
+  {
+    "key": "catalogGroupRequiredSwitch",
+    "kind": "const",
+    "fr": "Choix obligatoire",
+    "params": []
+  },
+  {
+    "key": "catalogGroupRequiredSub",
+    "kind": "const",
+    "fr": "Le client doit choisir une option.",
+    "params": []
+  },
+  {
+    "key": "catalogGroupSave",
+    "kind": "const",
+    "fr": "Enregistrer le groupe",
+    "params": []
+  },
+  {
+    "key": "catalogGroupDelete",
+    "kind": "const",
+    "fr": "Supprimer le groupe",
+    "params": []
+  },
+  {
+    "key": "catalogGroupDeleteConfirm",
+    "kind": "const",
+    "fr": "Supprimer ce groupe et toutes ses options ? Les commandes passées ne sont pas modifiées.",
+    "params": []
+  },
+  {
+    "key": "catalogOptionDelete",
+    "kind": "const",
+    "fr": "Supprimer l’option",
+    "params": []
+  },
+  {
+    "key": "catalogOptionAvailable",
+    "kind": "const",
+    "fr": "Option disponible",
+    "params": []
+  },
+  {
+    "key": "catalogOptionsEmpty",
+    "kind": "const",
+    "fr": "Aucun choix pour le moment.",
+    "params": []
+  },
+  {
+    "key": "catalogGroupsLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger les options du produit.",
+    "params": []
+  },
+  {
+    "key": "catalogGroupInvalid",
+    "kind": "const",
+    "fr": "Vérifiez le nombre de sélections (minimum ≤ maximum).",
+    "params": []
+  },
+  {
+    "key": "catalogSaveFirstForOptions",
+    "kind": "const",
+    "fr": "Enregistrez le produit pour configurer ses variantes et suppléments.",
+    "params": []
+  },
+  {
+    "key": "catalogGroupsCount",
+    "kind": "method",
+    "fr": "Aucun groupe1 groupe{n} groupes",
+    "params": [
+      "n"
+    ]
+  },
+  {
+    "key": "catalogLastUpdated",
+    "kind": "const",
+    "fr": "Dernière mise à jour",
+    "params": []
+  },
+  {
+    "key": "catalogCustomerPreview",
+    "kind": "const",
+    "fr": "Aperçu client",
+    "params": []
+  },
+  {
+    "key": "catalogEditGroup",
+    "kind": "const",
+    "fr": "Modifier le groupe",
+    "params": []
+  },
+  {
+    "key": "catalogProductDetailTitle",
+    "kind": "const",
+    "fr": "Détails du Produit",
+    "params": []
+  },
+  {
+    "key": "catalogDetailInfo",
+    "kind": "const",
+    "fr": "Informations",
+    "params": []
+  },
+  {
+    "key": "catalogDetailName",
+    "kind": "const",
+    "fr": "Nom (Français)",
+    "params": []
+  },
+  {
+    "key": "catalogDetailPricing",
+    "kind": "const",
+    "fr": "Tarification",
+    "params": []
+  },
+  {
+    "key": "catalogDetailPrice",
+    "kind": "const",
+    "fr": "Prix de base",
+    "params": []
+  },
+  {
+    "key": "catalogDetailAppearance",
+    "kind": "const",
+    "fr": "Apparence sur l’application",
+    "params": []
+  },
+  {
+    "key": "catalogDetailAvailable",
+    "kind": "const",
+    "fr": "Produit disponible",
+    "params": []
+  },
+  {
+    "key": "catalogDetailNoDescription",
+    "kind": "const",
+    "fr": "Aucune description.",
+    "params": []
+  },
+  {
+    "key": "catalogDetailNoOptions",
+    "kind": "const",
+    "fr": "Aucune variante ni supplément configuré.",
+    "params": []
+  },
+  {
+    "key": "catalogRequiredSummary",
+    "kind": "method",
+    "fr": "Obligatoire · {rule}",
+    "params": [
+      "rule"
+    ]
+  },
+  {
+    "key": "catalogOptionalSummary",
+    "kind": "method",
+    "fr": "Facultatif · Maximum {max}",
+    "params": [
+      "max"
+    ]
+  },
+  {
+    "key": "catalogCropTitle",
+    "kind": "const",
+    "fr": "Image du produit",
+    "params": []
+  },
+  {
+    "key": "catalogCropTipsTitle",
+    "kind": "const",
+    "fr": "Conseils pour une belle photo",
+    "params": []
+  },
+  {
+    "key": "catalogCropTip1",
+    "kind": "const",
+    "fr": "Utilisez un fond neutre et propre (blanc ou bois clair).",
+    "params": []
+  },
+  {
+    "key": "catalogCropTip2",
+    "kind": "const",
+    "fr": "Assurez-vous d’avoir un bon éclairage, de préférence naturel.",
+    "params": []
+  },
+  {
+    "key": "catalogCropTip3",
+    "kind": "method",
+    "fr": "Centrez le produit dans le cadre.Centrez le produit (« {name} ») dans le cadre.",
+    "params": [
+      "name"
+    ]
+  },
+  {
+    "key": "catalogCropFormat",
+    "kind": "const",
+    "fr": "Format : JPG, PNG (max. 2 Mo, min. 400 px)",
+    "params": []
+  },
+  {
+    "key": "catalogCropUse",
+    "kind": "const",
+    "fr": "Utiliser cette image",
+    "params": []
+  },
+  {
+    "key": "catalogCropRotate",
+    "kind": "const",
+    "fr": "Pivoter",
+    "params": []
+  },
+  {
+    "key": "catalogCropZoom",
+    "kind": "const",
+    "fr": "Zoomer",
+    "params": []
+  },
+  {
+    "key": "catalogCropRemove",
+    "kind": "const",
+    "fr": "Supprimer l’image",
+    "params": []
+  },
+  {
+    "key": "contractFieldUnavailable",
+    "kind": "const",
+    "fr": "Non disponible actuellement",
+    "params": []
+  },
+  {
+    "key": "catalogFieldNameAr",
+    "kind": "const",
+    "fr": "Nom du produit (Arabe)",
+    "params": []
+  },
+  {
+    "key": "catalogFieldDescAr",
+    "kind": "const",
+    "fr": "Description (Arabe)",
+    "params": []
+  },
+  {
+    "key": "catalogFieldPrepTime",
+    "kind": "const",
+    "fr": "Temps de prép.",
+    "params": []
+  },
+  {
+    "key": "catalogFieldSaleUnit",
+    "kind": "const",
+    "fr": "Unité de vente",
+    "params": []
+  },
+  {
+    "key": "sellingUnitTitle",
+    "kind": "const",
+    "fr": "Unités de vente",
+    "params": []
+  },
+  {
+    "key": "sellingUnitCalloutTitle",
+    "kind": "const",
+    "fr": "Précision de l’unité",
+    "params": []
+  },
+  {
+    "key": "sellingUnitCalloutBody",
+    "kind": "const",
+    "fr": "Choisissez l’unité exacte pour éviter toute confusion lors de la préparation. Cette unité sera affichée aux clients (ex : 1 500 DZD / Plat). Les quantités sont entières : pas de vente au poids.",
+    "params": []
+  },
+  {
+    "key": "sellingUnitPreviewLabel",
+    "kind": "const",
+    "fr": "Aperçu client",
+    "params": []
+  },
+  {
+    "key": "sellingUnitPreviewNoPrice",
+    "kind": "const",
+    "fr": "— DZD",
+    "params": []
+  },
+  {
+    "key": "sellingUnitCommon",
+    "kind": "const",
+    "fr": "Unités courantes",
+    "params": []
+  },
+  {
+    "key": "sellingUnitPackaging",
+    "kind": "const",
+    "fr": "Conditionnement",
+    "params": []
+  },
+  {
+    "key": "sellingUnitNone",
+    "kind": "const",
+    "fr": "Aucune unité",
+    "params": []
+  },
+  {
+    "key": "sellingUnitNoneSub",
+    "kind": "const",
+    "fr": "Le prix est affiché sans unité.",
+    "params": []
+  },
+  {
+    "key": "sellingUnitNotSet",
+    "kind": "const",
+    "fr": "Non définie",
+    "params": []
+  },
+  {
+    "key": "sellingUnitCustomName",
+    "kind": "const",
+    "fr": "Nom de l’unité (Français)",
+    "params": []
+  },
+  {
+    "key": "sellingUnitCustomHint",
+    "kind": "const",
+    "fr": "ex : Cornet",
+    "params": []
+  },
+  {
+    "key": "sellingUnitCustomMaxLength",
+    "kind": "int",
+    "fr": "40",
+    "params": []
+  },
+  {
+    "key": "sellingUnitApply",
+    "kind": "const",
+    "fr": "Appliquer l’unité",
+    "params": []
+  },
+  {
+    "key": "sellingUnitReadOnly",
+    "kind": "const",
+    "fr": "Seuls le propriétaire et les gérants peuvent modifier l’unité de vente.",
+    "params": []
+  },
+  {
+    "key": "catalogFieldVariants",
+    "kind": "const",
+    "fr": "Variantes obligatoires",
+    "params": []
+  },
+  {
+    "key": "catalogFieldExtras",
+    "kind": "const",
+    "fr": "Suppléments optionnels",
+    "params": []
+  },
+  {
+    "key": "catalogFieldCategoryNameAr",
+    "kind": "const",
+    "fr": "Nom de la catégorie (Arabe)",
+    "params": []
+  },
+  {
+    "key": "catalogFieldCategoryDesc",
+    "kind": "const",
+    "fr": "Description de la catégorie (Optionnel)",
+    "params": []
+  },
+  {
+    "key": "storeCoverTitle",
+    "kind": "const",
+    "fr": "Logo et Couverture",
+    "params": []
+  },
+  {
+    "key": "storeCoverPick",
+    "kind": "const",
+    "fr": "Choisir une couverture",
+    "params": []
+  },
+  {
+    "key": "storeCoverReplace",
+    "kind": "const",
+    "fr": "Remplacer",
+    "params": []
+  },
+  {
+    "key": "storeCoverSave",
+    "kind": "const",
+    "fr": "Enregistrer les modifications",
+    "params": []
+  },
+  {
+    "key": "storeCoverRemove",
+    "kind": "const",
+    "fr": "Supprimer",
+    "params": []
+  },
+  {
+    "key": "storeCoverSection",
+    "kind": "const",
+    "fr": "Photo de couverture",
+    "params": []
+  },
+  {
+    "key": "storeCoverSectionHint",
+    "kind": "const",
+    "fr": "La photo de couverture doit représenter votre établissement.",
+    "params": []
+  },
+  {
+    "key": "storeLogoSection",
+    "kind": "const",
+    "fr": "Logo du magasin",
+    "params": []
+  },
+  {
+    "key": "storeLogoSectionHint",
+    "kind": "const",
+    "fr": "Le logo doit être lisible même en petit format.",
+    "params": []
+  },
+  {
+    "key": "storeLogoEdit",
+    "kind": "const",
+    "fr": "Modifier",
+    "params": []
+  },
+  {
+    "key": "storeLogoAdd",
+    "kind": "const",
+    "fr": "Ajouter",
+    "params": []
+  },
+  {
+    "key": "storeLogoRemove",
+    "kind": "const",
+    "fr": "Supprimer",
+    "params": []
+  },
+  {
+    "key": "storeLogoEmpty",
+    "kind": "const",
+    "fr": "Aucun logo",
+    "params": []
+  },
+  {
+    "key": "storeLogoPending",
+    "kind": "const",
+    "fr": "Nouveau logo sélectionné — enregistrez pour l’appliquer.",
+    "params": []
+  },
+  {
+    "key": "storeLogoTooSmall",
+    "kind": "const",
+    "fr": "Logo trop petit. Minimum 128 × 128 pixels.",
+    "params": []
+  },
+  {
+    "key": "storeLogoTooLarge",
+    "kind": "const",
+    "fr": "Logo trop lourd. Maximum 1 Mo après compression.",
+    "params": []
+  },
+  {
+    "key": "storeLogoUploadError",
+    "kind": "const",
+    "fr": "Impossible d’envoyer le logo.",
+    "params": []
+  },
+  {
+    "key": "storeLogoBindPartial",
+    "kind": "const",
+    "fr": "Envoi réussi, mais le logo n’a pas pu être lié. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "storeLogoRemoved",
+    "kind": "const",
+    "fr": "Logo supprimé.",
+    "params": []
+  },
+  {
+    "key": "storeLogoRemoveError",
+    "kind": "const",
+    "fr": "Impossible de supprimer le logo. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "storeLogoRemoteUnavailable",
+    "kind": "const",
+    "fr": "Aperçu du logo non disponible actuellement.",
+    "params": []
+  },
+  {
+    "key": "storeMediaPartialSaved",
+    "kind": "const",
+    "fr": "Le logo est enregistré, mais la couverture a échoué. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "storeCoverHint",
+    "kind": "const",
+    "fr": "JPEG ou PNG, max. 2 Mo.",
+    "params": []
+  },
+  {
+    "key": "storeCoverUploadError",
+    "kind": "const",
+    "fr": "Impossible d’envoyer la couverture.",
+    "params": []
+  },
+  {
+    "key": "storeCoverBindPartial",
+    "kind": "const",
+    "fr": "Envoi réussi, mais la couverture n’a pas pu être liée. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "storeCoverRemoteUnavailable",
+    "kind": "const",
+    "fr": "Aperçu de la couverture non disponible actuellement.",
+    "params": []
+  },
+  {
+    "key": "storeCustomerPreviewTitle",
+    "kind": "const",
+    "fr": "Aperçu client",
+    "params": []
+  },
+  {
+    "key": "storeCustomerPreviewHint",
+    "kind": "const",
+    "fr": "Notes et délai estimé non disponibles actuellement.",
+    "params": []
+  },
+  {
+    "key": "storeAddressTitle",
+    "kind": "const",
+    "fr": "Contact et Adresse du magasin",
+    "params": []
+  },
+  {
+    "key": "storeAddressSave",
+    "kind": "const",
+    "fr": "Enregistrer les modifications",
+    "params": []
+  },
+  {
+    "key": "storeAddressConfirmMap",
+    "kind": "const",
+    "fr": "Modifier sur la carte",
+    "params": []
+  },
+  {
+    "key": "storeAddressSaveError",
+    "kind": "const",
+    "fr": "Enregistrement impossible. Vérifiez la connexion et réessayez.",
+    "params": []
+  },
+  {
+    "key": "storeAddressBanner",
+    "kind": "const",
+    "fr": "La modification de l’adresse peut affecter vos zones de livraison et les opérations en cours.",
+    "params": []
+  },
+  {
+    "key": "storeAddressCoordsSection",
+    "kind": "const",
+    "fr": "Coordonnées",
+    "params": []
+  },
+  {
+    "key": "storeAddressSection",
+    "kind": "const",
+    "fr": "Adresse",
+    "params": []
+  },
+  {
+    "key": "storeAddressPhone",
+    "kind": "const",
+    "fr": "Numéro de téléphone",
+    "params": []
+  },
+  {
+    "key": "storeAddressPhoneHint",
+    "kind": "const",
+    "fr": "Numéro communiqué aux livreurs pour le retrait.",
+    "params": []
+  },
+  {
+    "key": "storeAddressDetailed",
+    "kind": "const",
+    "fr": "Adresse détaillée",
+    "params": []
+  },
+  {
+    "key": "storeAddressLocationSummary",
+    "kind": "const",
+    "fr": "Emplacement confirmé",
+    "params": []
+  },
+  {
+    "key": "storeAddressPublicContact",
+    "kind": "const",
+    "fr": "Contact public (Optionnel)",
+    "params": []
+  },
+  {
+    "key": "storeAddressWilaya",
+    "kind": "const",
+    "fr": "Wilaya",
+    "params": []
+  },
+  {
+    "key": "storeAddressCommune",
+    "kind": "const",
+    "fr": "Commune",
+    "params": []
+  },
+  {
+    "key": "adminLocationChoose",
+    "kind": "const",
+    "fr": "Sélectionner",
+    "params": []
+  },
+  {
+    "key": "adminLocationSearchHint",
+    "kind": "const",
+    "fr": "Rechercher…",
+    "params": []
+  },
+  {
+    "key": "adminLocationEmpty",
+    "kind": "const",
+    "fr": "Aucun résultat",
+    "params": []
+  },
+  {
+    "key": "adminLocationLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger la liste. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "adminLocationRetry",
+    "kind": "const",
+    "fr": "Réessayer",
+    "params": []
+  },
+  {
+    "key": "adminLocationWilayaRequired",
+    "kind": "const",
+    "fr": "Sélectionnez d’abord une wilaya.",
+    "params": []
+  },
+  {
+    "key": "adminLocationPairRequired",
+    "kind": "const",
+    "fr": "Wilaya et commune sont obligatoires.",
+    "params": []
+  },
+  {
+    "key": "storeAddressPickupHints",
+    "kind": "const",
+    "fr": "Instructions de retrait",
+    "params": []
+  },
+  {
+    "key": "storeProfileMediaSub",
+    "kind": "const",
+    "fr": "Logo et photo de couverture",
+    "params": []
+  },
+  {
+    "key": "storeProfileMediaUnavailable",
+    "kind": "const",
+    "fr": "Indisponible",
+    "params": []
+  },
+  {
+    "key": "storeProfilePrepUnavailable",
+    "kind": "const",
+    "fr": "Indisponible",
+    "params": []
+  },
+  {
+    "key": "storeProfilePreviewUnavailable",
+    "kind": "const",
+    "fr": "Aperçu client indisponible.",
+    "params": []
+  },
+  {
+    "key": "profileSettingsTitle",
+    "kind": "const",
+    "fr": "Paramètres",
+    "params": []
+  },
+  {
+    "key": "storeProfileTitle",
+    "kind": "const",
+    "fr": "Profil magasin",
+    "params": []
+  },
+  {
+    "key": "storeProfileCustomerPreview",
+    "kind": "const",
+    "fr": "Aperçu client",
+    "params": []
+  },
+  {
+    "key": "storeProfileGeneral",
+    "kind": "const",
+    "fr": "Informations générales",
+    "params": []
+  },
+  {
+    "key": "storeProfileGeneralSub",
+    "kind": "const",
+    "fr": "Nom et statut du commerce",
+    "params": []
+  },
+  {
+    "key": "storeGeneralTitle",
+    "kind": "const",
+    "fr": "Informations générales",
+    "params": []
+  },
+  {
+    "key": "storeGeneralBranchName",
+    "kind": "const",
+    "fr": "Nom de l’établissement",
+    "params": []
+  },
+  {
+    "key": "storeGeneralBranchNameHint",
+    "kind": "const",
+    "fr": "Affiché aux clients pour cet établissement.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralMerchantName",
+    "kind": "const",
+    "fr": "Nom du commerce",
+    "params": []
+  },
+  {
+    "key": "storeGeneralMerchantLocked",
+    "kind": "const",
+    "fr": "Nom vérifié par SpeedyGo : non modifiable ici.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralReadOnly",
+    "kind": "const",
+    "fr": "Seuls le propriétaire et le gérant peuvent modifier ces informations.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralPhoneElsewhere",
+    "kind": "const",
+    "fr": "Le téléphone se modifie dans « Adresse et Emplacement ».",
+    "params": []
+  },
+  {
+    "key": "storeGeneralSave",
+    "kind": "const",
+    "fr": "Enregistrer",
+    "params": []
+  },
+  {
+    "key": "storeGeneralSaved",
+    "kind": "const",
+    "fr": "Informations de l’établissement enregistrées.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralNameAr",
+    "kind": "const",
+    "fr": "Nom en arabe",
+    "params": []
+  },
+  {
+    "key": "storeGeneralNameArHint",
+    "kind": "const",
+    "fr": "Optionnel. Affiché aux clients arabophones.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralDescription",
+    "kind": "const",
+    "fr": "Description courte",
+    "params": []
+  },
+  {
+    "key": "storeGeneralDescriptionHint",
+    "kind": "const",
+    "fr": "Optionnel. Présentez votre établissement en quelques phrases.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralPublicEmail",
+    "kind": "const",
+    "fr": "E-mail public",
+    "params": []
+  },
+  {
+    "key": "storeGeneralPublicEmailHint",
+    "kind": "const",
+    "fr": "Optionnel. Adresse de contact visible par les clients.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralEmailInvalid",
+    "kind": "const",
+    "fr": "Adresse e-mail invalide.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralPreviewTitle",
+    "kind": "const",
+    "fr": "Aperçu client",
+    "params": []
+  },
+  {
+    "key": "storeGeneralPreviewOpen",
+    "kind": "const",
+    "fr": "Ouvert",
+    "params": []
+  },
+  {
+    "key": "storeGeneralPreviewClosed",
+    "kind": "const",
+    "fr": "Fermé",
+    "params": []
+  },
+  {
+    "key": "storeProfileCategory",
+    "kind": "const",
+    "fr": "Catégorie de l’établissement",
+    "params": []
+  },
+  {
+    "key": "storeProfileCategorySub",
+    "kind": "const",
+    "fr": "Type de commerce affiché aux clients",
+    "params": []
+  },
+  {
+    "key": "storeCategoryTitle",
+    "kind": "const",
+    "fr": "Catégorie de l’établissement",
+    "params": []
+  },
+  {
+    "key": "storeCategorySubtitle",
+    "kind": "const",
+    "fr": "Choisissez la catégorie qui décrit le mieux votre activité.",
+    "params": []
+  },
+  {
+    "key": "storeCategorySearch",
+    "kind": "const",
+    "fr": "Rechercher une catégorie...",
+    "params": []
+  },
+  {
+    "key": "storeCategoryInfo",
+    "kind": "const",
+    "fr": "Une seule catégorie par établissement. Elle détermine où il apparaît dans l’application client.",
+    "params": []
+  },
+  {
+    "key": "storeCategoryReadOnly",
+    "kind": "const",
+    "fr": "Seuls le propriétaire et les gérants peuvent modifier la catégorie.",
+    "params": []
+  },
+  {
+    "key": "storeCategorySave",
+    "kind": "const",
+    "fr": "Enregistrer",
+    "params": []
+  },
+  {
+    "key": "storeCategoryClear",
+    "kind": "const",
+    "fr": "Retirer la catégorie",
+    "params": []
+  },
+  {
+    "key": "storeCategorySaved",
+    "kind": "const",
+    "fr": "Catégorie enregistrée.",
+    "params": []
+  },
+  {
+    "key": "storeCategoryCleared",
+    "kind": "const",
+    "fr": "Catégorie retirée.",
+    "params": []
+  },
+  {
+    "key": "storeCategoryNotSet",
+    "kind": "const",
+    "fr": "Non définie",
+    "params": []
+  },
+  {
+    "key": "storeCategoryEmpty",
+    "kind": "const",
+    "fr": "Aucune catégorie disponible pour le moment.",
+    "params": []
+  },
+  {
+    "key": "storeCategoryNoMatch",
+    "kind": "const",
+    "fr": "Aucune catégorie ne correspond.",
+    "params": []
+  },
+  {
+    "key": "storeCategoryLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger les catégories.",
+    "params": []
+  },
+  {
+    "key": "storeCategorySaveError",
+    "kind": "const",
+    "fr": "Enregistrement impossible. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "storeCategoryForbidden",
+    "kind": "const",
+    "fr": "Votre rôle ne permet pas de modifier cet établissement.",
+    "params": []
+  },
+  {
+    "key": "storeCategoryRestricted",
+    "kind": "const",
+    "fr": "Le statut du commerce ne permet pas cette modification.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralNameRequired",
+    "kind": "const",
+    "fr": "Le nom ne peut pas être vide.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralSaveError",
+    "kind": "const",
+    "fr": "Enregistrement impossible. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralForbidden",
+    "kind": "const",
+    "fr": "Votre rôle ne permet pas de modifier cet établissement.",
+    "params": []
+  },
+  {
+    "key": "storeGeneralRestricted",
+    "kind": "const",
+    "fr": "Le statut du commerce ne permet pas cette modification.",
+    "params": []
+  },
+  {
+    "key": "storeProfileMedia",
+    "kind": "const",
+    "fr": "Médias et Logos",
+    "params": []
+  },
+  {
+    "key": "storeProfileAddress",
+    "kind": "const",
+    "fr": "Adresse et Emplacement",
+    "params": []
+  },
+  {
+    "key": "storeProfileAddressSub",
+    "kind": "const",
+    "fr": "Téléphone, adresse et position GPS",
+    "params": []
+  },
+  {
+    "key": "storeProfileHours",
+    "kind": "const",
+    "fr": "Horaires d’ouverture",
+    "params": []
+  },
+  {
+    "key": "storeProfileHoursSub",
+    "kind": "const",
+    "fr": "Jours d’ouverture, pauses",
+    "params": []
+  },
+  {
+    "key": "storeProfilePrep",
+    "kind": "const",
+    "fr": "Paramètres de préparation",
+    "params": []
+  },
+  {
+    "key": "storeProfileSettings",
+    "kind": "const",
+    "fr": "Paramètres du compte",
+    "params": []
+  },
+  {
+    "key": "storeProfileSettingsSub",
+    "kind": "const",
+    "fr": "Compte, préférences, déconnexion",
+    "params": []
+  },
+  {
+    "key": "storeProfileNotifications",
+    "kind": "const",
+    "fr": "Notifications",
+    "params": []
+  },
+  {
+    "key": "storeProfileNotificationsSub",
+    "kind": "const",
+    "fr": "Centre d’alertes",
+    "params": []
+  },
+  {
+    "key": "openingHoursTitle",
+    "kind": "const",
+    "fr": "Horaires d’ouverture",
+    "params": []
+  },
+  {
+    "key": "openingHoursEmpty",
+    "kind": "const",
+    "fr": "Aucun horaire configuré pour cet établissement.",
+    "params": []
+  },
+  {
+    "key": "openingHoursSave",
+    "kind": "const",
+    "fr": "Enregistrer les horaires",
+    "params": []
+  },
+  {
+    "key": "openingHoursSaved",
+    "kind": "const",
+    "fr": "Horaires enregistrés.",
+    "params": []
+  },
+  {
+    "key": "openingHoursLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger les horaires.",
+    "params": []
+  },
+  {
+    "key": "openingHoursSaveError",
+    "kind": "const",
+    "fr": "Impossible d’enregistrer les horaires.",
+    "params": []
+  },
+  {
+    "key": "openingHoursInvalid",
+    "kind": "const",
+    "fr": "Horaires refusés : vérifiez les chevauchements, y compris après minuit.",
+    "params": []
+  },
+  {
+    "key": "openingHoursConflict",
+    "kind": "const",
+    "fr": "Les horaires ont changé ailleurs. Rechargement effectué — vérifiez puis réessayez.",
+    "params": []
+  },
+  {
+    "key": "openingHoursClosed",
+    "kind": "const",
+    "fr": "Fermé",
+    "params": []
+  },
+  {
+    "key": "openingHoursUsual",
+    "kind": "const",
+    "fr": "Horaires habituels",
+    "params": []
+  },
+  {
+    "key": "openingHoursNotConfigured",
+    "kind": "const",
+    "fr": "Aucun horaire configuré",
+    "params": []
+  },
+  {
+    "key": "openingHoursOpenNow",
+    "kind": "const",
+    "fr": "Ouvert actuellement",
+    "params": []
+  },
+  {
+    "key": "openingHoursClosedNow",
+    "kind": "const",
+    "fr": "Fermé actuellement",
+    "params": []
+  },
+  {
+    "key": "openingHoursInfo",
+    "kind": "const",
+    "fr": "Les clients peuvent commander uniquement pendant vos heures d’ouverture. Les modifications sont appliquées dès l’enregistrement.",
+    "params": []
+  },
+  {
+    "key": "openingHoursStaffReadOnly",
+    "kind": "const",
+    "fr": "Lecture seule : seuls le propriétaire et les gérants peuvent modifier les horaires.",
+    "params": []
+  },
+  {
+    "key": "openingHoursOpens",
+    "kind": "const",
+    "fr": "Ouverture",
+    "params": []
+  },
+  {
+    "key": "openingHoursCloses",
+    "kind": "const",
+    "fr": "Fermeture",
+    "params": []
+  },
+  {
+    "key": "openingHoursEditorHint",
+    "kind": "const",
+    "fr": "Jusqu’à 3 plages par jour. Une fermeture avant l’ouverture se termine le lendemain.",
+    "params": []
+  },
+  {
+    "key": "openingHoursAddRange",
+    "kind": "const",
+    "fr": "Ajouter une plage",
+    "params": []
+  },
+  {
+    "key": "openingHoursRemoveRange",
+    "kind": "const",
+    "fr": "Supprimer la plage",
+    "params": []
+  },
+  {
+    "key": "openingHoursApply",
+    "kind": "const",
+    "fr": "Appliquer",
+    "params": []
+  },
+  {
+    "key": "openingHoursNextDay",
+    "kind": "const",
+    "fr": "Se termine le lendemain",
+    "params": []
+  },
+  {
+    "key": "openingHoursAllDay",
+    "kind": "const",
+    "fr": "Ouvert 24 h/24",
+    "params": []
+  },
+  {
+    "key": "openingHoursDayClosedHint",
+    "kind": "const",
+    "fr": "Aucune plage : le jour sera fermé.",
+    "params": []
+  },
+  {
+    "key": "openingHoursIssueOverlap",
+    "kind": "const",
+    "fr": "Les plages se chevauchent.",
+    "params": []
+  },
+  {
+    "key": "openingHoursIssueZero",
+    "kind": "const",
+    "fr": "L’ouverture et la fermeture doivent être différentes (00:00–00:00 pour 24 h).",
+    "params": []
+  },
+  {
+    "key": "openingHoursIssueTooMany",
+    "kind": "const",
+    "fr": "Maximum 3 plages par jour.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsTitle",
+    "kind": "const",
+    "fr": "Horaires exceptionnels",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsNavSub",
+    "kind": "const",
+    "fr": "Jours fériés, fermetures ponctuelles",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsBanner",
+    "kind": "const",
+    "fr": "Ces horaires remplacent vos horaires habituels uniquement pour les dates sélectionnées.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsUpcoming",
+    "kind": "const",
+    "fr": "Exceptions à venir",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsEmpty",
+    "kind": "const",
+    "fr": "Aucune exception à venir.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsAdd",
+    "kind": "const",
+    "fr": "Ajouter une exception",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsEdit",
+    "kind": "const",
+    "fr": "Modifier l’exception",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDate",
+    "kind": "const",
+    "fr": "Date",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDateHint",
+    "kind": "const",
+    "fr": "Sélectionner une date",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDateTaken",
+    "kind": "const",
+    "fr": "Cette date a déjà une exception : l’enregistrement la remplacera.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsStatus",
+    "kind": "const",
+    "fr": "Statut",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsOpen",
+    "kind": "const",
+    "fr": "Ouvert",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsClosed",
+    "kind": "const",
+    "fr": "Fermé",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsHours",
+    "kind": "const",
+    "fr": "Horaires modifiés",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsTo",
+    "kind": "const",
+    "fr": "à",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsLabel",
+    "kind": "const",
+    "fr": "Motif",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsLabelHint",
+    "kind": "const",
+    "fr": "ex : Jour férié, Travaux…",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsMessage",
+    "kind": "const",
+    "fr": "Message pour les clients (Optionnel)",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsMessageHint",
+    "kind": "const",
+    "fr": "Enregistré avec l’exception. Pas encore affiché dans l’application client.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsCancel",
+    "kind": "const",
+    "fr": "Annuler",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsSave",
+    "kind": "const",
+    "fr": "Enregistrer les horaires",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsSaved",
+    "kind": "const",
+    "fr": "Exception enregistrée.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDeleted",
+    "kind": "const",
+    "fr": "Exception supprimée.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDeleteTitle",
+    "kind": "const",
+    "fr": "Supprimer l’exception ?",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDeleteBody",
+    "kind": "method",
+    "fr": "Le {date} reprendra vos horaires habituels.",
+    "params": [
+      "date"
+    ]
+  },
+  {
+    "key": "hoursExceptionsDeleteConfirm",
+    "kind": "const",
+    "fr": "Supprimer",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger les horaires exceptionnels.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsSaveError",
+    "kind": "const",
+    "fr": "Impossible d’enregistrer l’exception. Vos saisies sont conservées.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDeleteError",
+    "kind": "const",
+    "fr": "Impossible de supprimer l’exception. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsConflict",
+    "kind": "const",
+    "fr": "Cette date a été modifiée ailleurs. La liste a été rechargée : vérifiez puis enregistrez à nouveau.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsInvalid",
+    "kind": "const",
+    "fr": "Exception refusée : vérifiez la date (aujourd’hui à +365 jours) et les plages.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsWeeklyRequired",
+    "kind": "const",
+    "fr": "Configurez d’abord les horaires habituels.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsTooMany",
+    "kind": "const",
+    "fr": "Trop d’exceptions à venir (100 maximum).",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsStaffReadOnly",
+    "kind": "const",
+    "fr": "Lecture seule : seuls le propriétaire et les gérants peuvent modifier les horaires exceptionnels.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsDateRequired",
+    "kind": "const",
+    "fr": "Sélectionnez une date.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsLabelRequired",
+    "kind": "const",
+    "fr": "Indiquez un motif.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsIntervalsRequired",
+    "kind": "const",
+    "fr": "Ajoutez au moins une plage horaire.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsSameDay",
+    "kind": "const",
+    "fr": "Chaque plage doit finir le même jour (00:00 = minuit).",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsHelpTitle",
+    "kind": "const",
+    "fr": "Ordre d’application",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsHelpBody",
+    "kind": "const",
+    "fr": "Une fermeture forcée ou temporaire de l’établissement s’applique toujours en premier. Sinon, une exception remplace les horaires habituels pour sa date (heure d’Alger). Les autres jours suivent les horaires habituels.",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsHelpOk",
+    "kind": "const",
+    "fr": "Compris",
+    "params": []
+  },
+  {
+    "key": "hoursExceptionsToday",
+    "kind": "method",
+    "fr": "Exception aujourd’hui : {label}",
+    "params": [
+      "label"
+    ]
+  },
+  {
+    "key": "availabilityTitle",
+    "kind": "const",
+    "fr": "État du magasin",
+    "params": []
+  },
+  {
+    "key": "availabilityEstablishment",
+    "kind": "const",
+    "fr": "Établissement",
+    "params": []
+  },
+  {
+    "key": "availabilityOpen",
+    "kind": "const",
+    "fr": "Ouvert",
+    "params": []
+  },
+  {
+    "key": "availabilityClosed",
+    "kind": "const",
+    "fr": "Fermé",
+    "params": []
+  },
+  {
+    "key": "availabilityFollowSchedule",
+    "kind": "const",
+    "fr": "Selon les horaires",
+    "params": []
+  },
+  {
+    "key": "availabilityForceClosed",
+    "kind": "const",
+    "fr": "Fermé",
+    "params": []
+  },
+  {
+    "key": "availabilitySave",
+    "kind": "const",
+    "fr": "Enregistrer les modifications",
+    "params": []
+  },
+  {
+    "key": "availabilitySaving",
+    "kind": "const",
+    "fr": "Enregistrement…",
+    "params": []
+  },
+  {
+    "key": "availabilitySaved",
+    "kind": "const",
+    "fr": "État du magasin enregistré.",
+    "params": []
+  },
+  {
+    "key": "availabilityClosureSaved",
+    "kind": "const",
+    "fr": "Fermeture enregistrée.",
+    "params": []
+  },
+  {
+    "key": "availabilityLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger l’état du magasin.",
+    "params": []
+  },
+  {
+    "key": "availabilitySaveError",
+    "kind": "const",
+    "fr": "Impossible d’enregistrer l’état du magasin.",
+    "params": []
+  },
+  {
+    "key": "availabilityConflict",
+    "kind": "const",
+    "fr": "L’état a changé ailleurs. Rechargement effectué — vérifiez puis réessayez.",
+    "params": []
+  },
+  {
+    "key": "availabilityReopenTitle",
+    "kind": "const",
+    "fr": "Rouvrir selon les horaires",
+    "params": []
+  },
+  {
+    "key": "availabilityReopenOutsideHoursBody",
+    "kind": "const",
+    "fr": "Vous êtes hors des horaires hebdomadaires. Le magasin restera Fermé jusqu’à la prochaine ouverture prévue.",
+    "params": []
+  },
+  {
+    "key": "availabilityConfirmReopen",
+    "kind": "const",
+    "fr": "Confirmer",
+    "params": []
+  },
+  {
+    "key": "availabilityLastUpdate",
+    "kind": "complex",
+    "fr": null,
+    "params": [
+      "updatedAt",
+      "now"
+    ]
+  },
+  {
+    "key": "availabilityToday",
+    "kind": "const",
+    "fr": "Aujourd’hui",
+    "params": []
+  },
+  {
+    "key": "availabilityClosedToday",
+    "kind": "const",
+    "fr": "Fermé aujourd’hui",
+    "params": []
+  },
+  {
+    "key": "availabilityModifyHours",
+    "kind": "const",
+    "fr": "Modifier",
+    "params": []
+  },
+  {
+    "key": "availabilityQuickPause",
+    "kind": "const",
+    "fr": "Pause rapide",
+    "params": []
+  },
+  {
+    "key": "availabilityQuickPauseHint",
+    "kind": "const",
+    "fr": "Fermer temporairement pour un rush en cuisine.",
+    "params": []
+  },
+  {
+    "key": "availabilityPause30",
+    "kind": "const",
+    "fr": "30 MIN",
+    "params": []
+  },
+  {
+    "key": "availabilityPause60",
+    "kind": "const",
+    "fr": "1 HEURE",
+    "params": []
+  },
+  {
+    "key": "availabilityActiveOrdersUnknown",
+    "kind": "const",
+    "fr": "Commandes en cours",
+    "params": []
+  },
+  {
+    "key": "availabilityCloseWarningTitle",
+    "kind": "const",
+    "fr": "Attention : fermeture immédiate",
+    "params": []
+  },
+  {
+    "key": "availabilityCloseWarningBody",
+    "kind": "method",
+    "fr": "Toutes les nouvelles commandes seront rejetées. Les commandes actives doivent toujours être traitées.Toutes les nouvelles commandes seront rejetées. Aucune commande active en cours.Toutes les nouvelles commandes seront rejetées. Vous devez toujours traiter ${count == 1 ?  : }.",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "availabilityStaffReadOnly",
+    "kind": "const",
+    "fr": "Lecture seule : seuls le propriétaire et les gérants peuvent modifier l’état du magasin.",
+    "params": []
+  },
+  {
+    "key": "availabilityBannerOpenTitle",
+    "kind": "const",
+    "fr": "Magasin en ligne",
+    "params": []
+  },
+  {
+    "key": "availabilityBannerOpenBody",
+    "kind": "const",
+    "fr": "Les clients peuvent passer commande et voir votre menu normalement.",
+    "params": []
+  },
+  {
+    "key": "availabilityBannerClosedTitle",
+    "kind": "const",
+    "fr": "Magasin hors ligne",
+    "params": []
+  },
+  {
+    "key": "availabilityBannerClosedBody",
+    "kind": "const",
+    "fr": "Les clients ne peuvent plus passer de nouvelles commandes.",
+    "params": []
+  },
+  {
+    "key": "availabilityBannerScheduleClosedTitle",
+    "kind": "const",
+    "fr": "Selon les horaires — actuellement fermé",
+    "params": []
+  },
+  {
+    "key": "availabilityBannerScheduleClosedBody",
+    "kind": "const",
+    "fr": "Le magasin suit le planning. Il s’ouvrira automatiquement aux prochaines heures.",
+    "params": []
+  },
+  {
+    "key": "availabilityActiveOrders",
+    "kind": "method",
+    "fr": "{count} commande${count == 1 ?  : } en cours",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "availabilityReasonPeak",
+    "kind": "const",
+    "fr": "Forte charge (cuisine)",
+    "params": []
+  },
+  {
+    "key": "availabilityReasonTechnical",
+    "kind": "const",
+    "fr": "Problème technique",
+    "params": []
+  },
+  {
+    "key": "availabilityReasonStock",
+    "kind": "const",
+    "fr": "Rupture de stock",
+    "params": []
+  },
+  {
+    "key": "availabilityReasonLunch",
+    "kind": "const",
+    "fr": "Pause déjeuner",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureTitle",
+    "kind": "const",
+    "fr": "Fermeture temporaire",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureActionRequired",
+    "kind": "const",
+    "fr": "Action requise",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureImpactLead",
+    "kind": "const",
+    "fr": "La fermeture suspendra l’acceptation de nouvelles commandes. ",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureImpactCount",
+    "kind": "method",
+    "fr": "La commande en coursLes {count} commandes en cours",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "temporaryClosureImpactTail",
+    "kind": "method",
+    "fr": " sera maintenue et doit être préparée. seront maintenues et doivent être préparées.",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "temporaryClosureImpactNone",
+    "kind": "const",
+    "fr": "Aucune commande en cours.",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureImpactUnknown",
+    "kind": "const",
+    "fr": "Les commandes en cours seront maintenues et doivent être préparées.",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureReason",
+    "kind": "const",
+    "fr": "Motif de la fermeture",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureReopen",
+    "kind": "const",
+    "fr": "Réouverture prévue",
+    "params": []
+  },
+  {
+    "key": "temporaryClosure30m",
+    "kind": "const",
+    "fr": "Dans 30 minutes",
+    "params": []
+  },
+  {
+    "key": "temporaryClosure1h",
+    "kind": "const",
+    "fr": "Dans 1 heure",
+    "params": []
+  },
+  {
+    "key": "temporaryClosurePickTime",
+    "kind": "const",
+    "fr": "Choisir une heure…",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureIndefinite",
+    "kind": "const",
+    "fr": "Indéfinie (Manuel)",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureImageImpact",
+    "kind": "const",
+    "fr": "Impact sur votre visibilité : Les clients verront votre établissement comme « Fermé temporairement ».",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureStaffReadOnly",
+    "kind": "const",
+    "fr": "Seuls le propriétaire et les gérants peuvent fermer le magasin.",
+    "params": []
+  },
+  {
+    "key": "temporaryClosurePastTime",
+    "kind": "const",
+    "fr": "L’heure de réouverture est déjà passée. Choisissez une nouvelle heure.",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureMessage",
+    "kind": "const",
+    "fr": "Message client",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureOptional",
+    "kind": "const",
+    "fr": "Facultatif",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureMessageHint",
+    "kind": "const",
+    "fr": "Ex: Nous sommes complets pour le moment, revenez dans 30 minutes !",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureManualReopenHint",
+    "kind": "const",
+    "fr": "Vous pourrez rouvrir manuellement à tout moment.",
+    "params": []
+  },
+  {
+    "key": "temporaryClosureConfirm",
+    "kind": "const",
+    "fr": "Confirmer la fermeture",
+    "params": []
+  },
+  {
+    "key": "storeProfileAvailability",
+    "kind": "const",
+    "fr": "État du magasin",
+    "params": []
+  },
+  {
+    "key": "storeProfileAvailabilitySub",
+    "kind": "const",
+    "fr": "Selon les horaires, fermeture, pause",
+    "params": []
+  },
+  {
+    "key": "notificationsTitle",
+    "kind": "const",
+    "fr": "Notifications",
+    "params": []
+  },
+  {
+    "key": "notificationsEmpty",
+    "kind": "const",
+    "fr": "Aucune notification pour le moment.",
+    "params": []
+  },
+  {
+    "key": "notificationsLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger les notifications.",
+    "params": []
+  },
+  {
+    "key": "notificationsToday",
+    "kind": "const",
+    "fr": "Aujourd’hui",
+    "params": []
+  },
+  {
+    "key": "notificationsYesterday",
+    "kind": "const",
+    "fr": "Hier",
+    "params": []
+  },
+  {
+    "key": "notificationsJustNow",
+    "kind": "const",
+    "fr": "À l’instant",
+    "params": []
+  },
+  {
+    "key": "notificationsMarkAllRead",
+    "kind": "const",
+    "fr": "Tout marquer comme lu",
+    "params": []
+  },
+  {
+    "key": "notificationsFilterAll",
+    "kind": "const",
+    "fr": "Tout",
+    "params": []
+  },
+  {
+    "key": "notificationsFilterOrders",
+    "kind": "const",
+    "fr": "Commandes",
+    "params": []
+  },
+  {
+    "key": "notificationsOpenDetails",
+    "kind": "const",
+    "fr": "Détails",
+    "params": []
+  },
+  {
+    "key": "notificationsOrderStale",
+    "kind": "const",
+    "fr": "Cette commande n’est plus en attente d’acceptation.",
+    "params": []
+  },
+  {
+    "key": "alertNewOrder",
+    "kind": "const",
+    "fr": "NOUVELLE COMMANDE",
+    "params": []
+  },
+  {
+    "key": "alertReceivedAt",
+    "kind": "const",
+    "fr": "Reçue à",
+    "params": []
+  },
+  {
+    "key": "alertPayment",
+    "kind": "const",
+    "fr": "Paiement",
+    "params": []
+  },
+  {
+    "key": "alertViewDetails",
+    "kind": "const",
+    "fr": "Voir les détails",
+    "params": []
+  },
+  {
+    "key": "alertRefuse",
+    "kind": "const",
+    "fr": "Refuser",
+    "params": []
+  },
+  {
+    "key": "alertItems",
+    "kind": "const",
+    "fr": "Articles",
+    "params": []
+  },
+  {
+    "key": "alertOrderTotal",
+    "kind": "const",
+    "fr": "Sous-total marchandises",
+    "params": []
+  },
+  {
+    "key": "alertOrderLabel",
+    "kind": "const",
+    "fr": "Commande",
+    "params": []
+  },
+  {
+    "key": "alertDismiss",
+    "kind": "const",
+    "fr": "Fermer",
+    "params": []
+  },
+  {
+    "key": "alertSeeList",
+    "kind": "const",
+    "fr": "Voir la liste",
+    "params": []
+  },
+  {
+    "key": "notifSettingsTitle",
+    "kind": "const",
+    "fr": "Paramètres de notification",
+    "params": []
+  },
+  {
+    "key": "notifSettingsScreenTitle",
+    "kind": "const",
+    "fr": "Alertes",
+    "params": []
+  },
+  {
+    "key": "notifSettingsOsEnabled",
+    "kind": "const",
+    "fr": "Permission iOS autorisée. Le Push natif n’est pas encore actif.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsOsDenied",
+    "kind": "const",
+    "fr": "Permission iOS refusée (modifiable dans Réglages). Le Push natif n’est pas encore actif.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsOsNotAsked",
+    "kind": "const",
+    "fr": "Permission de notification : pas encore autorisée.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsOsOpen",
+    "kind": "const",
+    "fr": "Paramètres système",
+    "params": []
+  },
+  {
+    "key": "notifSettingsSwitchesNote",
+    "kind": "const",
+    "fr": "Uniquement quand l’application est ouverte.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsInAppSection",
+    "kind": "const",
+    "fr": "DANS L’APPLICATION",
+    "params": []
+  },
+  {
+    "key": "notifSettingsCriticalWarning",
+    "kind": "const",
+    "fr": "Les commandes entrantes critiques ne peuvent pas être totalement réduites au silence sans risque de retard.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsPushNotConfigured",
+    "kind": "const",
+    "fr": "Non configuré",
+    "params": []
+  },
+  {
+    "key": "notifSettingsSoundSection",
+    "kind": "const",
+    "fr": "ALERTES SONORES",
+    "params": []
+  },
+  {
+    "key": "notifSettingsSound",
+    "kind": "const",
+    "fr": "Sonnerie des nouvelles commandes",
+    "params": []
+  },
+  {
+    "key": "notifSettingsVibrationSection",
+    "kind": "const",
+    "fr": "VIBRATIONS",
+    "params": []
+  },
+  {
+    "key": "notifSettingsVibration",
+    "kind": "const",
+    "fr": "Vibration lors d’une commande",
+    "params": []
+  },
+  {
+    "key": "notifSettingsPushSection",
+    "kind": "const",
+    "fr": "ALERTES PUSH",
+    "params": []
+  },
+  {
+    "key": "notifSettingsOsEnabledPush",
+    "kind": "const",
+    "fr": "Permission de notification : autorisée.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsOsDeniedPush",
+    "kind": "const",
+    "fr": "Permission de notification refusée : activez-la dans les réglages système.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsNativePush",
+    "kind": "const",
+    "fr": "Notifications hors application",
+    "params": []
+  },
+  {
+    "key": "notifSettingsNativePushSub",
+    "kind": "const",
+    "fr": "Application fermée ou en arrière-plan.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsLockScreenNote",
+    "kind": "const",
+    "fr": "Aperçu sur l’écran verrouillé : selon les réglages système.",
+    "params": []
+  },
+  {
+    "key": "notifPushStatusRegistered",
+    "kind": "const",
+    "fr": "Cet appareil est enregistré pour les notifications.",
+    "params": []
+  },
+  {
+    "key": "notifPushStatusPending",
+    "kind": "const",
+    "fr": "Enregistrement de l’appareil…",
+    "params": []
+  },
+  {
+    "key": "notifPushStatusDenied",
+    "kind": "const",
+    "fr": "Permission refusée : pas de notification hors application.",
+    "params": []
+  },
+  {
+    "key": "notifPushStatusDisabled",
+    "kind": "const",
+    "fr": "Désactivées sur cet appareil.",
+    "params": []
+  },
+  {
+    "key": "notifPushStatusTokenUnavailable",
+    "kind": "const",
+    "fr": "Jeton de notification indisponible sur cet appareil.",
+    "params": []
+  },
+  {
+    "key": "notifPushStatusFailed",
+    "kind": "const",
+    "fr": "Enregistrement impossible pour le moment. Réessayez plus tard.",
+    "params": []
+  },
+  {
+    "key": "pushOrderInaccessible",
+    "kind": "const",
+    "fr": "Cette commande n’est pas accessible avec ce compte.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsForeground",
+    "kind": "const",
+    "fr": "Alertes dans l’application",
+    "params": []
+  },
+  {
+    "key": "notifSettingsPushUnavailable",
+    "kind": "const",
+    "fr": "Les notifications hors application ne sont pas encore disponibles.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsPushBlocked",
+    "kind": "const",
+    "fr": "Push natif (APNs/FCM) non configuré : la permission iOS ne suffit pas.",
+    "params": []
+  },
+  {
+    "key": "notifSettingsSave",
+    "kind": "const",
+    "fr": "Enregistrer les paramètres",
+    "params": []
+  },
+  {
+    "key": "notifSettingsSaved",
+    "kind": "const",
+    "fr": "Paramètres enregistrés.",
+    "params": []
+  },
+  {
+    "key": "profileRole",
+    "kind": "const",
+    "fr": "Rôle",
+    "params": []
+  },
+  {
+    "key": "profileMerchant",
+    "kind": "const",
+    "fr": "Commerce",
+    "params": []
+  },
+  {
+    "key": "profileBranch",
+    "kind": "const",
+    "fr": "Établissement",
+    "params": []
+  },
+  {
+    "key": "profileRoleOwner",
+    "kind": "const",
+    "fr": "Propriétaire",
+    "params": []
+  },
+  {
+    "key": "profileRoleManager",
+    "kind": "const",
+    "fr": "Responsable",
+    "params": []
+  },
+  {
+    "key": "profileRoleStaff",
+    "kind": "const",
+    "fr": "Équipe",
+    "params": []
+  },
+  {
+    "key": "profileSectionAccount",
+    "kind": "const",
+    "fr": "Compte",
+    "params": []
+  },
+  {
+    "key": "profileSectionStore",
+    "kind": "const",
+    "fr": "Établissement",
+    "params": []
+  },
+  {
+    "key": "profileSectionOps",
+    "kind": "const",
+    "fr": "Opérations du magasin",
+    "params": []
+  },
+  {
+    "key": "profileSectionPrefs",
+    "kind": "const",
+    "fr": "Préférences",
+    "params": []
+  },
+  {
+    "key": "profileSectionSupport",
+    "kind": "const",
+    "fr": "Support & légal",
+    "params": []
+  },
+  {
+    "key": "profileInfoReadonly",
+    "kind": "const",
+    "fr": "Informations du commerce",
+    "params": []
+  },
+  {
+    "key": "profileBranchStatus",
+    "kind": "const",
+    "fr": "Statut opérationnel",
+    "params": []
+  },
+  {
+    "key": "profileUnavailableItem",
+    "kind": "const",
+    "fr": "Non disponible dans cette version",
+    "params": []
+  },
+  {
+    "key": "switchBranch",
+    "kind": "const",
+    "fr": "Changer d’établissement",
+    "params": []
+  },
+  {
+    "key": "logoutConfirmTitle",
+    "kind": "const",
+    "fr": "Déconnexion",
+    "params": []
+  },
+  {
+    "key": "logoutConfirmBody",
+    "kind": "const",
+    "fr": "Voulez-vous vraiment vous déconnecter de SpeedyGo Merchant ?",
+    "params": []
+  },
+  {
+    "key": "logoutConfirmAction",
+    "kind": "const",
+    "fr": "Déconnexion",
+    "params": []
+  },
+  {
+    "key": "settingsProfileRow",
+    "kind": "const",
+    "fr": "Profil",
+    "params": []
+  },
+  {
+    "key": "settingsNotificationsOff",
+    "kind": "const",
+    "fr": "Désactivé",
+    "params": []
+  },
+  {
+    "key": "settingsSupportSection",
+    "kind": "const",
+    "fr": "Support",
+    "params": []
+  },
+  {
+    "key": "settingsHelpCenter",
+    "kind": "const",
+    "fr": "Centre d’aide",
+    "params": []
+  },
+  {
+    "key": "logoutConnected",
+    "kind": "const",
+    "fr": "Connecté",
+    "params": []
+  },
+  {
+    "key": "logoutWarningTitle",
+    "kind": "const",
+    "fr": "Attention aux opérations en cours",
+    "params": []
+  },
+  {
+    "key": "logoutActiveOrders",
+    "kind": "const",
+    "fr": "Commandes en cours",
+    "params": []
+  },
+  {
+    "key": "logoutStoreState",
+    "kind": "const",
+    "fr": "État du magasin",
+    "params": []
+  },
+  {
+    "key": "logoutStoreOpen",
+    "kind": "const",
+    "fr": "Ouvert",
+    "params": []
+  },
+  {
+    "key": "logoutStoreClosed",
+    "kind": "const",
+    "fr": "Fermé",
+    "params": []
+  },
+  {
+    "key": "logoutHandoverAdvice",
+    "kind": "const",
+    "fr": "Assurez-vous qu’un autre gestionnaire est disponible pour traiter les commandes avant de vous déconnecter.",
+    "params": []
+  },
+  {
+    "key": "logoutDataPreserved",
+    "kind": "const",
+    "fr": "Vos données, le catalogue et l’historique des commandes seront préservés.",
+    "params": []
+  },
+  {
+    "key": "logoutCancel",
+    "kind": "const",
+    "fr": "Annuler et retourner",
+    "params": []
+  },
+  {
+    "key": "cancel",
+    "kind": "const",
+    "fr": "Annuler",
+    "params": []
+  },
+  {
+    "key": "attentionRequired",
+    "kind": "const",
+    "fr": "Certaines pièces nécessitent votre attention.",
+    "params": []
+  },
+  {
+    "key": "submitVerification",
+    "kind": "const",
+    "fr": "Soumettre le dossier",
+    "params": []
+  },
+  {
+    "key": "submitVerificationUnavailable",
+    "kind": "const",
+    "fr": "La soumission n’est pas encore possible : des pièces obligatoires manquent ou sont incomplètes.",
+    "params": []
+  },
+  {
+    "key": "permissionDenied",
+    "kind": "const",
+    "fr": "Permission refusée par le serveur.",
+    "params": []
+  },
+  {
+    "key": "regTitle",
+    "kind": "const",
+    "fr": "Inscription",
+    "params": []
+  },
+  {
+    "key": "regStepOf",
+    "kind": "const",
+    "fr": "Étape",
+    "params": []
+  },
+  {
+    "key": "regAccountTitle",
+    "kind": "const",
+    "fr": "Configuration du compte",
+    "params": []
+  },
+  {
+    "key": "regRoleLabel",
+    "kind": "const",
+    "fr": "Rôle",
+    "params": []
+  },
+  {
+    "key": "regOwner",
+    "kind": "const",
+    "fr": "Propriétaire",
+    "params": []
+  },
+  {
+    "key": "regOperator",
+    "kind": "const",
+    "fr": "Opérateur",
+    "params": []
+  },
+  {
+    "key": "regOwnerHint",
+    "kind": "const",
+    "fr": "Créez et gérez votre commerce en tant que propriétaire.",
+    "params": []
+  },
+  {
+    "key": "regOperatorHint",
+    "kind": "const",
+    "fr": "Rejoindre un commerce existant nécessite une invitation et le code remis par le propriétaire.",
+    "params": []
+  },
+  {
+    "key": "regOperatorUnsupported",
+    "kind": "const",
+    "fr": "Pour rejoindre un commerce, ouvrez vos invitations reçues et saisissez le code remis par le propriétaire. SpeedyGo n’envoie pas de SMS.",
+    "params": []
+  },
+  {
+    "key": "regOperatorOpenInvitations",
+    "kind": "const",
+    "fr": "Voir mes invitations",
+    "params": []
+  },
+  {
+    "key": "regSelectRole",
+    "kind": "const",
+    "fr": "Choisissez un rôle pour continuer.",
+    "params": []
+  },
+  {
+    "key": "regContactTitle",
+    "kind": "const",
+    "fr": "Contact",
+    "params": []
+  },
+  {
+    "key": "regAccountContinue",
+    "kind": "const",
+    "fr": "Continuer l’inscription",
+    "params": []
+  },
+  {
+    "key": "regVerifiedPhone",
+    "kind": "const",
+    "fr": "Numéro de téléphone (vérifié)",
+    "params": []
+  },
+  {
+    "key": "regVerifiedPhoneHint",
+    "kind": "const",
+    "fr": "Ce numéro a été vérifié lors de la connexion. Il n’est pas modifiable ici.",
+    "params": []
+  },
+  {
+    "key": "regEmailUnsupported",
+    "kind": "const",
+    "fr": "L’e-mail ne peut pas être enregistré à cette étape.",
+    "params": []
+  },
+  {
+    "key": "regConsentUnsupported",
+    "kind": "const",
+    "fr": "Consultez les conditions générales et la politique de confidentialité SpeedyGo avant de continuer.",
+    "params": []
+  },
+  {
+    "key": "regActivityTitle",
+    "kind": "const",
+    "fr": "Informations du commerce",
+    "params": []
+  },
+  {
+    "key": "regActivityBody",
+    "kind": "const",
+    "fr": "Indiquez le nom sous lequel votre commerce sera identifié.",
+    "params": []
+  },
+  {
+    "key": "regLegalIdUnsupported",
+    "kind": "const",
+    "fr": "Les pièces d’identité professionnelle se déposent à l’étape Documents.",
+    "params": []
+  },
+  {
+    "key": "regDocsTitle",
+    "kind": "const",
+    "fr": "Documents d’entreprise",
+    "params": []
+  },
+  {
+    "key": "regDocsBody",
+    "kind": "const",
+    "fr": "Ajoutez les documents demandés.",
+    "params": []
+  },
+  {
+    "key": "regDocsRequired",
+    "kind": "const",
+    "fr": "Téléversez toutes les pièces obligatoires avant de continuer.",
+    "params": []
+  },
+  {
+    "key": "regDocsTipsTitle",
+    "kind": "const",
+    "fr": "Conseils pour une capture nette",
+    "params": []
+  },
+  {
+    "key": "regDocsTipLight",
+    "kind": "const",
+    "fr": "Privilégiez un éclairage naturel et uniforme pour éviter les zones d’ombre.",
+    "params": []
+  },
+  {
+    "key": "regDocsTipFrame",
+    "kind": "const",
+    "fr": "Cadrez bien le document : tous les coins doivent être visibles.",
+    "params": []
+  },
+  {
+    "key": "regDocsFormats",
+    "kind": "const",
+    "fr": "Formats acceptés : PDF, JPEG ou PNG (10 Mo max).",
+    "params": []
+  },
+  {
+    "key": "regDocsContinue",
+    "kind": "const",
+    "fr": "Continuer",
+    "params": []
+  },
+  {
+    "key": "regDocsContinueFinal",
+    "kind": "const",
+    "fr": "Continuer vers l’étape finale",
+    "params": []
+  },
+  {
+    "key": "regDocsAppBar",
+    "kind": "const",
+    "fr": "Vérification",
+    "params": []
+  },
+  {
+    "key": "regDocsTipFlash",
+    "kind": "const",
+    "fr": "Désactivez le flash pour éviter les reflets sur les surfaces plastifiées.",
+    "params": []
+  },
+  {
+    "key": "regDocsPrivacy",
+    "kind": "const",
+    "fr": "Vos documents sont transmis à SpeedyGo uniquement pour la vérification de votre commerce.",
+    "params": []
+  },
+  {
+    "key": "regFileTooLarge",
+    "kind": "const",
+    "fr": "Fichier trop volumineux (max. 10 Mo).",
+    "params": []
+  },
+  {
+    "key": "regFileTypeUnsupported",
+    "kind": "const",
+    "fr": "Format non accepté. Utilisez PDF, JPEG ou PNG.",
+    "params": []
+  },
+  {
+    "key": "regPickerUnavailable",
+    "kind": "const",
+    "fr": "Impossible d’ouvrir le sélecteur de fichiers. Réessayez après avoir relancé l’application.",
+    "params": []
+  },
+  {
+    "key": "regPickDocument",
+    "kind": "const",
+    "fr": "Ajouter",
+    "params": []
+  },
+  {
+    "key": "regReplaceDocument",
+    "kind": "const",
+    "fr": "Remplacer",
+    "params": []
+  },
+  {
+    "key": "regEstablishmentTitle",
+    "kind": "const",
+    "fr": "Détails de l’établissement",
+    "params": []
+  },
+  {
+    "key": "regEstablishmentBody",
+    "kind": "const",
+    "fr": "Renseignez les informations de votre établissement.",
+    "params": []
+  },
+  {
+    "key": "regIdentitySection",
+    "kind": "const",
+    "fr": "Nom de l’établissement",
+    "params": []
+  },
+  {
+    "key": "regBranchNameFrLabel",
+    "kind": "const",
+    "fr": "Nom de l’établissement",
+    "params": []
+  },
+  {
+    "key": "regCommerceContext",
+    "kind": "const",
+    "fr": "Commerce",
+    "params": []
+  },
+  {
+    "key": "regContactSection",
+    "kind": "const",
+    "fr": "Contact de l’établissement",
+    "params": []
+  },
+  {
+    "key": "regCategorySection",
+    "kind": "const",
+    "fr": "Catégorie",
+    "params": []
+  },
+  {
+    "key": "regCategoryReadonly",
+    "kind": "const",
+    "fr": "La catégorie sera attribuée après vérification.",
+    "params": []
+  },
+  {
+    "key": "regAddressSection",
+    "kind": "const",
+    "fr": "Adresse et emplacement",
+    "params": []
+  },
+  {
+    "key": "regAddressGuidance",
+    "kind": "const",
+    "fr": "Saisissez l’adresse de votre établissement.",
+    "params": []
+  },
+  {
+    "key": "regAddressExactLabel",
+    "kind": "const",
+    "fr": "Adresse exacte",
+    "params": []
+  },
+  {
+    "key": "regPickupPlace",
+    "kind": "const",
+    "fr": "Lieu de retrait",
+    "params": []
+  },
+  {
+    "key": "regChooseOnMap",
+    "kind": "const",
+    "fr": "Choisir sur la carte",
+    "params": []
+  },
+  {
+    "key": "regLocationConfirmed",
+    "kind": "const",
+    "fr": "Position confirmée",
+    "params": []
+  },
+  {
+    "key": "regLocationEdit",
+    "kind": "const",
+    "fr": "Modifier",
+    "params": []
+  },
+  {
+    "key": "regLocationRequired",
+    "kind": "const",
+    "fr": "Confirmez le lieu de retrait sur la carte avant de continuer.",
+    "params": []
+  },
+  {
+    "key": "regLocationPickerTitle",
+    "kind": "const",
+    "fr": "Position du magasin",
+    "params": []
+  },
+  {
+    "key": "regLocationConfirm",
+    "kind": "const",
+    "fr": "Confirmer l’emplacement",
+    "params": []
+  },
+  {
+    "key": "regLocationUseGps",
+    "kind": "const",
+    "fr": "Utiliser ma position",
+    "params": []
+  },
+  {
+    "key": "regLocationMoveHint",
+    "kind": "const",
+    "fr": "Déplacez la carte pour placer le pin sur le lieu de retrait, ou utilisez votre position GPS.",
+    "params": []
+  },
+  {
+    "key": "regLocationGpsSuggestion",
+    "kind": "const",
+    "fr": "Position GPS proposée — confirmez uniquement si c’est le lieu de retrait de l’établissement.",
+    "params": []
+  },
+  {
+    "key": "regLocationDenied",
+    "kind": "const",
+    "fr": "Autorisation de localisation refusée. Placez le pin manuellement sur la carte.",
+    "params": []
+  },
+  {
+    "key": "regLocationDeniedForever",
+    "kind": "const",
+    "fr": "Localisation désactivée pour SpeedyGo. Activez-la dans Réglages, ou placez le pin manuellement.",
+    "params": []
+  },
+  {
+    "key": "regLocationServicesDisabled",
+    "kind": "const",
+    "fr": "Les services de localisation sont désactivés. Placez le pin manuellement sur la carte.",
+    "params": []
+  },
+  {
+    "key": "regLocationUnavailable",
+    "kind": "const",
+    "fr": "Position GPS indisponible. Placez le pin manuellement sur la carte.",
+    "params": []
+  },
+  {
+    "key": "regBranchPhoneLabel",
+    "kind": "const",
+    "fr": "Numéro de téléphone",
+    "params": []
+  },
+  {
+    "key": "regBranchPhoneHint",
+    "kind": "const",
+    "fr": "Numéro de contact de l’établissement (distinct du numéro de connexion).",
+    "params": []
+  },
+  {
+    "key": "regPreviewLabel",
+    "kind": "const",
+    "fr": "Aperçu (données saisies — non publié)",
+    "params": []
+  },
+  {
+    "key": "regBranchIncomplete",
+    "kind": "const",
+    "fr": "Nom, téléphone et adresse de l’établissement sont requis.",
+    "params": []
+  },
+  {
+    "key": "regCoordsInvalid",
+    "kind": "const",
+    "fr": "Latitude (−90…90) et longitude (−180…180) invalides.",
+    "params": []
+  },
+  {
+    "key": "regCoordsConfirmHint",
+    "kind": "const",
+    "fr": "Indiquez le lieu de retrait sur la carte, puis confirmez.",
+    "params": []
+  },
+  {
+    "key": "regReviewTitle",
+    "kind": "const",
+    "fr": "Révision",
+    "params": []
+  },
+  {
+    "key": "regReviewDocsTitle",
+    "kind": "const",
+    "fr": "Documents légaux",
+    "params": []
+  },
+  {
+    "key": "regReviewBranchTitle",
+    "kind": "const",
+    "fr": "Établissement",
+    "params": []
+  },
+  {
+    "key": "regReviewLocation",
+    "kind": "const",
+    "fr": "Localisation",
+    "params": []
+  },
+  {
+    "key": "regReviewBody",
+    "kind": "const",
+    "fr": "Veuillez vérifier attentivement vos informations avant la soumission finale pour éviter tout retard de validation.",
+    "params": []
+  },
+  {
+    "key": "regSubmit",
+    "kind": "const",
+    "fr": "Soumettre pour vérification",
+    "params": []
+  },
+  {
+    "key": "regCorrectionTitle",
+    "kind": "const",
+    "fr": "Correction du dossier",
+    "params": []
+  },
+  {
+    "key": "regCorrectionActionRequired",
+    "kind": "const",
+    "fr": "Action requise",
+    "params": []
+  },
+  {
+    "key": "regCorrectionIntro",
+    "kind": "method",
+    "fr": "Corrigez les éléments nécessaires puis soumettez à nouveau. Votre établissement {merchantName} sera activé après validation.",
+    "params": [
+      "merchantName"
+    ]
+  },
+  {
+    "key": "regCorrectionDetails",
+    "kind": "const",
+    "fr": "Détails du dossier",
+    "params": []
+  },
+  {
+    "key": "regCorrectionSubmit",
+    "kind": "const",
+    "fr": "Soumettre les corrections",
+    "params": []
+  },
+  {
+    "key": "regContinue",
+    "kind": "const",
+    "fr": "Continuer",
+    "params": []
+  },
+  {
+    "key": "regEdit",
+    "kind": "const",
+    "fr": "Modifier",
+    "params": []
+  },
+  {
+    "key": "regMissingSteps",
+    "kind": "const",
+    "fr": "Complétez votre dossier",
+    "params": []
+  },
+  {
+    "key": "regRejectionNoReason",
+    "kind": "const",
+    "fr": "Des corrections sont nécessaires. Mettez à jour les pièces concernées puis soumettez à nouveau.",
+    "params": []
+  },
+  {
+    "key": "regApprovedNext",
+    "kind": "const",
+    "fr": "Votre commerce est approuvé. Complétez ensuite horaires et catalogue lorsque disponibles.",
+    "params": []
+  },
+  {
+    "key": "legalSectionTitle",
+    "kind": "const",
+    "fr": "Conditions et déclaration",
+    "params": []
+  },
+  {
+    "key": "legalSectionBody",
+    "kind": "const",
+    "fr": "Avant de soumettre, lisez et acceptez les conditions suivantes. Votre acceptation est enregistrée avec le dossier.",
+    "params": []
+  },
+  {
+    "key": "legalTermsLabel",
+    "kind": "const",
+    "fr": "J’ai lu et j’accepte les conditions générales marchand SpeedyGo.",
+    "params": []
+  },
+  {
+    "key": "legalDeclarationLabel",
+    "kind": "const",
+    "fr": "Je certifie que les informations et les documents du dossier sont exacts et complets.",
+    "params": []
+  },
+  {
+    "key": "legalVersionTag",
+    "kind": "method",
+    "fr": "Version {version}",
+    "params": [
+      "version"
+    ]
+  },
+  {
+    "key": "legalLoading",
+    "kind": "const",
+    "fr": "Chargement des conditions…",
+    "params": []
+  },
+  {
+    "key": "legalLoadFailed",
+    "kind": "const",
+    "fr": "Impossible de charger les conditions. Vérifiez votre connexion puis réessayez.",
+    "params": []
+  },
+  {
+    "key": "legalIncomplete",
+    "kind": "const",
+    "fr": "Les conditions ne sont pas disponibles pour le moment. Réessayez plus tard.",
+    "params": []
+  },
+  {
+    "key": "legalRetry",
+    "kind": "const",
+    "fr": "Réessayer",
+    "params": []
+  },
+  {
+    "key": "legalConsentRequired",
+    "kind": "const",
+    "fr": "Acceptez les conditions et la déclaration d’exactitude pour soumettre le dossier.",
+    "params": []
+  },
+  {
+    "key": "legalVersionOutdated",
+    "kind": "const",
+    "fr": "Les conditions ont été mises à jour. Relisez-les puis acceptez à nouveau avant de soumettre.",
+    "params": []
+  },
+  {
+    "key": "legalConsentHint",
+    "kind": "const",
+    "fr": "Cochez les deux cases pour activer la soumission.",
+    "params": []
+  },
+  {
+    "key": "legalContentLink",
+    "kind": "const",
+    "fr": "Référence du texte",
+    "params": []
+  },
+  {
+    "key": "issuesTitle",
+    "kind": "const",
+    "fr": "Points à corriger",
+    "params": []
+  },
+  {
+    "key": "issuesApplicationTitle",
+    "kind": "const",
+    "fr": "Informations du dossier",
+    "params": []
+  },
+  {
+    "key": "issuesDocumentTitle",
+    "kind": "const",
+    "fr": "Documents à remplacer",
+    "params": []
+  },
+  {
+    "key": "issuesDocumentConcerned",
+    "kind": "method",
+    "fr": "Pièce concernée : {documentTitle}",
+    "params": [
+      "documentTitle"
+    ]
+  },
+  {
+    "key": "issuesReplaceDocument",
+    "kind": "const",
+    "fr": "Remplacer ce document",
+    "params": []
+  },
+  {
+    "key": "issuesResolved",
+    "kind": "const",
+    "fr": "Corrigé",
+    "params": []
+  },
+  {
+    "key": "issuesFixHint",
+    "kind": "const",
+    "fr": "Corrigez les points ci-dessus (remplacez les documents concernés si indiqué), acceptez à nouveau les conditions, puis soumettez le dossier.",
+    "params": []
+  },
+  {
+    "key": "issuesRemaining",
+    "kind": "method",
+    "fr": "1 point restant à corriger{count} points restants à corriger",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "dossierAttemptLabel",
+    "kind": "const",
+    "fr": "Tentative n°",
+    "params": []
+  },
+  {
+    "key": "dossierSubmittedAtLabel",
+    "kind": "const",
+    "fr": "Soumis le",
+    "params": []
+  },
+  {
+    "key": "dossierReviewedAtLabel",
+    "kind": "const",
+    "fr": "Examiné le",
+    "params": []
+  },
+  {
+    "key": "dossierConsentLabel",
+    "kind": "const",
+    "fr": "Conditions acceptées",
+    "params": []
+  },
+  {
+    "key": "dossierConsentVersions",
+    "kind": "method",
+    "fr": "Conditions {terms} · Déclaration {declaration}",
+    "params": [
+      "terms",
+      "declaration"
+    ]
+  },
+  {
+    "key": "settingsTeamRow",
+    "kind": "const",
+    "fr": "Gestion de l’équipe",
+    "params": []
+  },
+  {
+    "key": "settingsTeamInvitationsRow",
+    "kind": "const",
+    "fr": "Invitations reçues",
+    "params": []
+  },
+  {
+    "key": "teamTitle",
+    "kind": "const",
+    "fr": "Personnel et Accès",
+    "params": []
+  },
+  {
+    "key": "teamStoreContext",
+    "kind": "const",
+    "fr": "Gestion de l’équipe",
+    "params": []
+  },
+  {
+    "key": "teamActiveMembers",
+    "kind": "const",
+    "fr": "Membres actifs",
+    "params": []
+  },
+  {
+    "key": "teamPendingInvitations",
+    "kind": "const",
+    "fr": "Invitations en attente",
+    "params": []
+  },
+  {
+    "key": "teamRolesSummary",
+    "kind": "const",
+    "fr": "Résumé des rôles",
+    "params": []
+  },
+  {
+    "key": "teamRoleOwner",
+    "kind": "const",
+    "fr": "Propriétaire",
+    "params": []
+  },
+  {
+    "key": "teamRoleManager",
+    "kind": "const",
+    "fr": "Gestionnaire",
+    "params": []
+  },
+  {
+    "key": "teamRoleStaff",
+    "kind": "const",
+    "fr": "Équipe",
+    "params": []
+  },
+  {
+    "key": "teamOwnerBadge",
+    "kind": "const",
+    "fr": "Admin",
+    "params": []
+  },
+  {
+    "key": "teamSelfBadge",
+    "kind": "const",
+    "fr": "Vous",
+    "params": []
+  },
+  {
+    "key": "teamPhoneUnavailable",
+    "kind": "const",
+    "fr": "Numéro indisponible",
+    "params": []
+  },
+  {
+    "key": "teamRevoke",
+    "kind": "const",
+    "fr": "Révoquer",
+    "params": []
+  },
+  {
+    "key": "teamChangeRole",
+    "kind": "const",
+    "fr": "Modifier le rôle",
+    "params": []
+  },
+  {
+    "key": "teamRegenerateCode",
+    "kind": "const",
+    "fr": "Régénérer le code",
+    "params": []
+  },
+  {
+    "key": "teamCancelInvitation",
+    "kind": "const",
+    "fr": "Annuler",
+    "params": []
+  },
+  {
+    "key": "teamInviteMember",
+    "kind": "const",
+    "fr": "Inviter un membre",
+    "params": []
+  },
+  {
+    "key": "teamInvitationExpired",
+    "kind": "const",
+    "fr": "Expirée",
+    "params": []
+  },
+  {
+    "key": "teamRoleLine",
+    "kind": "method",
+    "fr": "Rôle : {role}",
+    "params": [
+      "role"
+    ]
+  },
+  {
+    "key": "teamExpiresOn",
+    "kind": "method",
+    "fr": "Expire le {date}",
+    "params": [
+      "date"
+    ]
+  },
+  {
+    "key": "teamEmptyMembers",
+    "kind": "const",
+    "fr": "Aucun membre actif pour le moment.",
+    "params": []
+  },
+  {
+    "key": "teamEmptyInvitations",
+    "kind": "const",
+    "fr": "Aucune invitation en attente.",
+    "params": []
+  },
+  {
+    "key": "teamLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger l’équipe. Vérifiez votre connexion puis réessayez.",
+    "params": []
+  },
+  {
+    "key": "teamForbiddenTitle",
+    "kind": "const",
+    "fr": "Accès réservé",
+    "params": []
+  },
+  {
+    "key": "teamForbiddenBody",
+    "kind": "const",
+    "fr": "La gestion de l’équipe est réservée aux propriétaires et aux gestionnaires.",
+    "params": []
+  },
+  {
+    "key": "teamSummaryOwner",
+    "kind": "const",
+    "fr": "Invite, modifie les rôles et révoque l’accès des membres.",
+    "params": []
+  },
+  {
+    "key": "teamSummaryManager",
+    "kind": "const",
+    "fr": "Consulte la liste de l’équipe et les invitations. Ne peut ni inviter, ni modifier les rôles, ni révoquer.",
+    "params": []
+  },
+  {
+    "key": "teamSummaryStaff",
+    "kind": "const",
+    "fr": "N’a pas accès à la gestion de l’équipe.",
+    "params": []
+  },
+  {
+    "key": "teamSummaryScope",
+    "kind": "const",
+    "fr": "Les accès couvrent tous les établissements du commerce : il n’existe pas d’accès par établissement.",
+    "params": []
+  },
+  {
+    "key": "teamInviteTitle",
+    "kind": "const",
+    "fr": "Inviter un membre",
+    "params": []
+  },
+  {
+    "key": "teamInviteHint",
+    "kind": "const",
+    "fr": "Aucun SMS ni e-mail n’est émis par SpeedyGo. Un code d’acceptation vous sera remis : transmettez-le vous-même à la personne invitée.",
+    "params": []
+  },
+  {
+    "key": "teamInvitePhoneLabel",
+    "kind": "const",
+    "fr": "Numéro de téléphone",
+    "params": []
+  },
+  {
+    "key": "teamInvitePhoneHint",
+    "kind": "const",
+    "fr": "550 12 34 56",
+    "params": []
+  },
+  {
+    "key": "teamInvitePhoneHelper",
+    "kind": "const",
+    "fr": "Numéro avec lequel la personne se connecte à SpeedyGo.",
+    "params": []
+  },
+  {
+    "key": "teamInvitePhoneInvalid",
+    "kind": "const",
+    "fr": "Saisissez un numéro mobile algérien valide (9 chiffres).",
+    "params": []
+  },
+  {
+    "key": "teamInviteRoleLabel",
+    "kind": "const",
+    "fr": "Rôle",
+    "params": []
+  },
+  {
+    "key": "teamInviteCreate",
+    "kind": "const",
+    "fr": "Créer l’invitation",
+    "params": []
+  },
+  {
+    "key": "teamRoleManagerHint",
+    "kind": "const",
+    "fr": "Peut consulter l’équipe. Aucun droit de gestion.",
+    "params": []
+  },
+  {
+    "key": "teamRoleStaffHint",
+    "kind": "const",
+    "fr": "Accès opérationnel, sans accès à la gestion de l’équipe.",
+    "params": []
+  },
+  {
+    "key": "teamCodeTitle",
+    "kind": "const",
+    "fr": "Code d’acceptation",
+    "params": []
+  },
+  {
+    "key": "teamCodeRegeneratedTitle",
+    "kind": "const",
+    "fr": "Nouveau code d’acceptation",
+    "params": []
+  },
+  {
+    "key": "teamCodeInstruction",
+    "kind": "method",
+    "fr": "Aucun SMS ni e-mail n’est émis par SpeedyGo. Copiez ce code et transmettez-le vous-même à {phone}. Il ne sera plus affiché après la fermeture de cette fenêtre.",
+    "params": [
+      "phone"
+    ]
+  },
+  {
+    "key": "teamCodeRegeneratedNote",
+    "kind": "const",
+    "fr": "L’ancien code ne fonctionne plus.",
+    "params": []
+  },
+  {
+    "key": "teamCodeCopy",
+    "kind": "const",
+    "fr": "Copier le code",
+    "params": []
+  },
+  {
+    "key": "teamCodeCopied",
+    "kind": "const",
+    "fr": "Code copié.",
+    "params": []
+  },
+  {
+    "key": "teamCodeDone",
+    "kind": "const",
+    "fr": "Terminer",
+    "params": []
+  },
+  {
+    "key": "teamRevokeTitle",
+    "kind": "const",
+    "fr": "Révoquer l’accès ?",
+    "params": []
+  },
+  {
+    "key": "teamRevokeBody",
+    "kind": "method",
+    "fr": "{phone} perdra l’accès à ce commerce et ses sessions seront fermées. Son compte SpeedyGo n’est pas supprimé.",
+    "params": [
+      "phone"
+    ]
+  },
+  {
+    "key": "teamRevoked",
+    "kind": "const",
+    "fr": "Accès révoqué.",
+    "params": []
+  },
+  {
+    "key": "teamCancelInviteTitle",
+    "kind": "const",
+    "fr": "Annuler l’invitation ?",
+    "params": []
+  },
+  {
+    "key": "teamCancelInviteBody",
+    "kind": "method",
+    "fr": "Le code d’acceptation de {phone} ne fonctionnera plus.",
+    "params": [
+      "phone"
+    ]
+  },
+  {
+    "key": "teamCancelInviteConfirm",
+    "kind": "const",
+    "fr": "Annuler l’invitation",
+    "params": []
+  },
+  {
+    "key": "teamKeep",
+    "kind": "const",
+    "fr": "Conserver",
+    "params": []
+  },
+  {
+    "key": "teamInviteCancelled",
+    "kind": "const",
+    "fr": "Invitation annulée.",
+    "params": []
+  },
+  {
+    "key": "teamRoleSheetTitle",
+    "kind": "const",
+    "fr": "Modifier le rôle",
+    "params": []
+  },
+  {
+    "key": "teamRoleSheetHint",
+    "kind": "const",
+    "fr": "Si le rôle réduit ses droits, les sessions du membre sont fermées et il devra se reconnecter.",
+    "params": []
+  },
+  {
+    "key": "teamRoleSave",
+    "kind": "const",
+    "fr": "Enregistrer",
+    "params": []
+  },
+  {
+    "key": "teamRoleUpdated",
+    "kind": "const",
+    "fr": "Rôle mis à jour.",
+    "params": []
+  },
+  {
+    "key": "teamErrorGeneric",
+    "kind": "const",
+    "fr": "Action impossible pour le moment. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "teamErrorConflict",
+    "kind": "const",
+    "fr": "La liste a changé entre-temps. Elle vient d’être actualisée : vérifiez puis réessayez.",
+    "params": []
+  },
+  {
+    "key": "teamErrorDuplicateMember",
+    "kind": "const",
+    "fr": "Ce numéro fait déjà partie de l’équipe.",
+    "params": []
+  },
+  {
+    "key": "teamErrorDuplicateInvite",
+    "kind": "const",
+    "fr": "Une invitation est déjà en attente pour ce numéro.",
+    "params": []
+  },
+  {
+    "key": "teamErrorOwnerProtected",
+    "kind": "const",
+    "fr": "Le propriétaire ne peut pas être modifié ici.",
+    "params": []
+  },
+  {
+    "key": "teamErrorSelf",
+    "kind": "const",
+    "fr": "Vous ne pouvez pas modifier votre propre accès.",
+    "params": []
+  },
+  {
+    "key": "teamErrorInviteGone",
+    "kind": "const",
+    "fr": "Cette invitation n’existe plus.",
+    "params": []
+  },
+  {
+    "key": "teamErrorInviteExpired",
+    "kind": "const",
+    "fr": "Cette invitation a expiré. Demandez un nouveau code au propriétaire.",
+    "params": []
+  },
+  {
+    "key": "teamErrorCodeInvalid",
+    "kind": "const",
+    "fr": "Code incorrect.",
+    "params": []
+  },
+  {
+    "key": "teamErrorPhoneMismatch",
+    "kind": "const",
+    "fr": "Cette invitation est destinée à un autre numéro.",
+    "params": []
+  },
+  {
+    "key": "teamErrorInvalidInput",
+    "kind": "const",
+    "fr": "Vérifiez le numéro et le rôle puis réessayez.",
+    "params": []
+  },
+  {
+    "key": "teamInvitationsTitle",
+    "kind": "const",
+    "fr": "Invitations reçues",
+    "params": []
+  },
+  {
+    "key": "teamInvitationsHint",
+    "kind": "const",
+    "fr": "Invitations adressées à votre numéro. Saisissez le code remis par le propriétaire pour les accepter.",
+    "params": []
+  },
+  {
+    "key": "teamInvitationsEmpty",
+    "kind": "const",
+    "fr": "Aucune invitation en attente pour votre numéro.",
+    "params": []
+  },
+  {
+    "key": "teamInvitationsLoadError",
+    "kind": "const",
+    "fr": "Impossible de charger vos invitations. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "teamAccept",
+    "kind": "const",
+    "fr": "Accepter",
+    "params": []
+  },
+  {
+    "key": "teamAcceptTitle",
+    "kind": "const",
+    "fr": "Saisir le code d’acceptation",
+    "params": []
+  },
+  {
+    "key": "teamAcceptCodeLabel",
+    "kind": "const",
+    "fr": "Code remis par le propriétaire",
+    "params": []
+  },
+  {
+    "key": "teamAcceptCodeInvalid",
+    "kind": "const",
+    "fr": "Le code comporte 64 caractères (chiffres et lettres a à f).",
+    "params": []
+  },
+  {
+    "key": "teamAcceptConfirm",
+    "kind": "const",
+    "fr": "Accepter l’invitation",
+    "params": []
+  },
+  {
+    "key": "teamAccepted",
+    "kind": "method",
+    "fr": "Invitation acceptée. Vous avez maintenant accès à {merchantName}.",
+    "params": [
+      "merchantName"
+    ]
+  },
+  {
+    "key": "errorForCode",
+    "kind": "complex",
+    "fr": null,
+    "params": [
+      "code"
+    ]
+  }
+]

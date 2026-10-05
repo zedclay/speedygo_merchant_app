@@ -72,7 +72,7 @@ class _IncomingOrderQuickActionsState
     final role = ref.read(accessControllerProvider).membership?.role;
     if (!merchantRoleCanMutateOrders(role)) {
       messenger?.showSnackBar(
-        const SnackBar(content: Text(AppStrings.orderQuickNotAllowed)),
+        SnackBar(content: Text(AppStrings.orderQuickNotAllowed)),
       );
       return null;
     }
@@ -91,7 +91,7 @@ class _IncomingOrderQuickActionsState
     final detail = fresh.value?.order;
     if (detail == null) {
       messenger?.showSnackBar(
-        const SnackBar(content: Text(AppStrings.orderQuickCheckFailed)),
+        SnackBar(content: Text(AppStrings.orderQuickCheckFailed)),
       );
       return null;
     }
@@ -101,14 +101,14 @@ class _IncomingOrderQuickActionsState
     final roleNow = ref.read(accessControllerProvider).membership?.role;
     if (!merchantRoleCanMutateOrders(roleNow)) {
       messenger?.showSnackBar(
-        const SnackBar(content: Text(AppStrings.orderQuickNotAllowed)),
+        SnackBar(content: Text(AppStrings.orderQuickNotAllowed)),
       );
       return null;
     }
     if (!stillIncoming) {
       ref.invalidate(ordersListControllerProvider);
       messenger?.showSnackBar(
-        const SnackBar(content: Text(AppStrings.orderQuickAlreadyHandled)),
+        SnackBar(content: Text(AppStrings.orderQuickAlreadyHandled)),
       );
       return null;
     }
@@ -208,7 +208,7 @@ class _IncomingOrderQuickActionsState
                     height: 20,
                     child: CircularProgressIndicator(strokeWidth: 2),
                   )
-                : const Text(AppStrings.orderAccept),
+                : Text(AppStrings.orderAccept),
           ),
         ),
         const SizedBox(width: 8),
@@ -227,7 +227,7 @@ class _IncomingOrderQuickActionsState
                 side: const BorderSide(color: AppColors.error),
                 shape: shape,
               ),
-              child: const Icon(
+              child: Icon(
                 Icons.close,
                 semanticLabel: AppStrings.orderRejectTitle,
               ),

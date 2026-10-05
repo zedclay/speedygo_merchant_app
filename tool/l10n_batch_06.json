@@ -1,0 +1,705 @@
+[
+  {
+    "key": "regLocationConfirm",
+    "fr": "Confirmer l’emplacement",
+    "params": []
+  },
+  {
+    "key": "regLocationUseGps",
+    "fr": "Utiliser ma position",
+    "params": []
+  },
+  {
+    "key": "regLocationMoveHint",
+    "fr": "Déplacez la carte pour placer le pin sur le lieu de retrait, ou utilisez votre position GPS.",
+    "params": []
+  },
+  {
+    "key": "regLocationGpsSuggestion",
+    "fr": "Position GPS proposée — confirmez uniquement si c’est le lieu de retrait de l’établissement.",
+    "params": []
+  },
+  {
+    "key": "regLocationDenied",
+    "fr": "Autorisation de localisation refusée. Placez le pin manuellement sur la carte.",
+    "params": []
+  },
+  {
+    "key": "regLocationDeniedForever",
+    "fr": "Localisation désactivée pour SpeedyGo. Activez-la dans Réglages, ou placez le pin manuellement.",
+    "params": []
+  },
+  {
+    "key": "regLocationServicesDisabled",
+    "fr": "Les services de localisation sont désactivés. Placez le pin manuellement sur la carte.",
+    "params": []
+  },
+  {
+    "key": "regLocationUnavailable",
+    "fr": "Position GPS indisponible. Placez le pin manuellement sur la carte.",
+    "params": []
+  },
+  {
+    "key": "regBranchPhoneLabel",
+    "fr": "Numéro de téléphone",
+    "params": []
+  },
+  {
+    "key": "regBranchPhoneHint",
+    "fr": "Numéro de contact de l’établissement (distinct du numéro de connexion).",
+    "params": []
+  },
+  {
+    "key": "regPreviewLabel",
+    "fr": "Aperçu (données saisies — non publié)",
+    "params": []
+  },
+  {
+    "key": "regBranchIncomplete",
+    "fr": "Nom, téléphone et adresse de l’établissement sont requis.",
+    "params": []
+  },
+  {
+    "key": "regCoordsInvalid",
+    "fr": "Latitude (−90…90) et longitude (−180…180) invalides.",
+    "params": []
+  },
+  {
+    "key": "regCoordsConfirmHint",
+    "fr": "Indiquez le lieu de retrait sur la carte, puis confirmez.",
+    "params": []
+  },
+  {
+    "key": "regReviewTitle",
+    "fr": "Révision",
+    "params": []
+  },
+  {
+    "key": "regReviewDocsTitle",
+    "fr": "Documents légaux",
+    "params": []
+  },
+  {
+    "key": "regReviewBranchTitle",
+    "fr": "Établissement",
+    "params": []
+  },
+  {
+    "key": "regReviewLocation",
+    "fr": "Localisation",
+    "params": []
+  },
+  {
+    "key": "regReviewBody",
+    "fr": "Veuillez vérifier attentivement vos informations avant la soumission finale pour éviter tout retard de validation.",
+    "params": []
+  },
+  {
+    "key": "regSubmit",
+    "fr": "Soumettre pour vérification",
+    "params": []
+  },
+  {
+    "key": "regCorrectionTitle",
+    "fr": "Correction du dossier",
+    "params": []
+  },
+  {
+    "key": "regCorrectionActionRequired",
+    "fr": "Action requise",
+    "params": []
+  },
+  {
+    "key": "regCorrectionIntro",
+    "fr": "Corrigez les éléments nécessaires puis soumettez à nouveau. Votre établissement {merchantName} sera activé après validation.",
+    "params": [
+      "merchantName"
+    ]
+  },
+  {
+    "key": "regCorrectionDetails",
+    "fr": "Détails du dossier",
+    "params": []
+  },
+  {
+    "key": "regCorrectionSubmit",
+    "fr": "Soumettre les corrections",
+    "params": []
+  },
+  {
+    "key": "regContinue",
+    "fr": "Continuer",
+    "params": []
+  },
+  {
+    "key": "regEdit",
+    "fr": "Modifier",
+    "params": []
+  },
+  {
+    "key": "regMissingSteps",
+    "fr": "Complétez votre dossier",
+    "params": []
+  },
+  {
+    "key": "regRejectionNoReason",
+    "fr": "Des corrections sont nécessaires. Mettez à jour les pièces concernées puis soumettez à nouveau.",
+    "params": []
+  },
+  {
+    "key": "regApprovedNext",
+    "fr": "Votre commerce est approuvé. Complétez ensuite horaires et catalogue lorsque disponibles.",
+    "params": []
+  },
+  {
+    "key": "legalSectionTitle",
+    "fr": "Conditions et déclaration",
+    "params": []
+  },
+  {
+    "key": "legalSectionBody",
+    "fr": "Avant de soumettre, lisez et acceptez les conditions suivantes. Votre acceptation est enregistrée avec le dossier.",
+    "params": []
+  },
+  {
+    "key": "legalTermsLabel",
+    "fr": "J’ai lu et j’accepte les conditions générales marchand SpeedyGo.",
+    "params": []
+  },
+  {
+    "key": "legalDeclarationLabel",
+    "fr": "Je certifie que les informations et les documents du dossier sont exacts et complets.",
+    "params": []
+  },
+  {
+    "key": "legalVersionTag",
+    "fr": "Version {version}",
+    "params": [
+      "version"
+    ]
+  },
+  {
+    "key": "legalLoading",
+    "fr": "Chargement des conditions…",
+    "params": []
+  },
+  {
+    "key": "legalLoadFailed",
+    "fr": "Impossible de charger les conditions. Vérifiez votre connexion puis réessayez.",
+    "params": []
+  },
+  {
+    "key": "legalIncomplete",
+    "fr": "Les conditions ne sont pas disponibles pour le moment. Réessayez plus tard.",
+    "params": []
+  },
+  {
+    "key": "legalRetry",
+    "fr": "Réessayer",
+    "params": []
+  },
+  {
+    "key": "legalConsentRequired",
+    "fr": "Acceptez les conditions et la déclaration d’exactitude pour soumettre le dossier.",
+    "params": []
+  },
+  {
+    "key": "legalVersionOutdated",
+    "fr": "Les conditions ont été mises à jour. Relisez-les puis acceptez à nouveau avant de soumettre.",
+    "params": []
+  },
+  {
+    "key": "legalConsentHint",
+    "fr": "Cochez les deux cases pour activer la soumission.",
+    "params": []
+  },
+  {
+    "key": "legalContentLink",
+    "fr": "Référence du texte",
+    "params": []
+  },
+  {
+    "key": "issuesTitle",
+    "fr": "Points à corriger",
+    "params": []
+  },
+  {
+    "key": "issuesApplicationTitle",
+    "fr": "Informations du dossier",
+    "params": []
+  },
+  {
+    "key": "issuesDocumentTitle",
+    "fr": "Documents à remplacer",
+    "params": []
+  },
+  {
+    "key": "issuesDocumentConcerned",
+    "fr": "Pièce concernée : {documentTitle}",
+    "params": [
+      "documentTitle"
+    ]
+  },
+  {
+    "key": "issuesReplaceDocument",
+    "fr": "Remplacer ce document",
+    "params": []
+  },
+  {
+    "key": "issuesResolved",
+    "fr": "Corrigé",
+    "params": []
+  },
+  {
+    "key": "issuesFixHint",
+    "fr": "Corrigez les points ci-dessus (remplacez les documents concernés si indiqué), acceptez à nouveau les conditions, puis soumettez le dossier.",
+    "params": []
+  },
+  {
+    "key": "issuesRemaining",
+    "fr": "1 point restant à corriger{count} points restants à corriger",
+    "params": [
+      "count"
+    ]
+  },
+  {
+    "key": "dossierAttemptLabel",
+    "fr": "Tentative n°",
+    "params": []
+  },
+  {
+    "key": "dossierSubmittedAtLabel",
+    "fr": "Soumis le",
+    "params": []
+  },
+  {
+    "key": "dossierReviewedAtLabel",
+    "fr": "Examiné le",
+    "params": []
+  },
+  {
+    "key": "dossierConsentLabel",
+    "fr": "Conditions acceptées",
+    "params": []
+  },
+  {
+    "key": "dossierConsentVersions",
+    "fr": "Conditions {terms} · Déclaration {declaration}",
+    "params": [
+      "terms",
+      "declaration"
+    ]
+  },
+  {
+    "key": "settingsTeamRow",
+    "fr": "Gestion de l’équipe",
+    "params": []
+  },
+  {
+    "key": "settingsTeamInvitationsRow",
+    "fr": "Invitations reçues",
+    "params": []
+  },
+  {
+    "key": "teamTitle",
+    "fr": "Personnel et Accès",
+    "params": []
+  },
+  {
+    "key": "teamStoreContext",
+    "fr": "Gestion de l’équipe",
+    "params": []
+  },
+  {
+    "key": "teamActiveMembers",
+    "fr": "Membres actifs",
+    "params": []
+  },
+  {
+    "key": "teamPendingInvitations",
+    "fr": "Invitations en attente",
+    "params": []
+  },
+  {
+    "key": "teamRolesSummary",
+    "fr": "Résumé des rôles",
+    "params": []
+  },
+  {
+    "key": "teamRoleOwner",
+    "fr": "Propriétaire",
+    "params": []
+  },
+  {
+    "key": "teamRoleManager",
+    "fr": "Gestionnaire",
+    "params": []
+  },
+  {
+    "key": "teamRoleStaff",
+    "fr": "Équipe",
+    "params": []
+  },
+  {
+    "key": "teamOwnerBadge",
+    "fr": "Admin",
+    "params": []
+  },
+  {
+    "key": "teamSelfBadge",
+    "fr": "Vous",
+    "params": []
+  },
+  {
+    "key": "teamPhoneUnavailable",
+    "fr": "Numéro indisponible",
+    "params": []
+  },
+  {
+    "key": "teamRevoke",
+    "fr": "Révoquer",
+    "params": []
+  },
+  {
+    "key": "teamChangeRole",
+    "fr": "Modifier le rôle",
+    "params": []
+  },
+  {
+    "key": "teamRegenerateCode",
+    "fr": "Régénérer le code",
+    "params": []
+  },
+  {
+    "key": "teamCancelInvitation",
+    "fr": "Annuler",
+    "params": []
+  },
+  {
+    "key": "teamInviteMember",
+    "fr": "Inviter un membre",
+    "params": []
+  },
+  {
+    "key": "teamInvitationExpired",
+    "fr": "Expirée",
+    "params": []
+  },
+  {
+    "key": "teamRoleLine",
+    "fr": "Rôle : {role}",
+    "params": [
+      "role"
+    ]
+  },
+  {
+    "key": "teamExpiresOn",
+    "fr": "Expire le {date}",
+    "params": [
+      "date"
+    ]
+  },
+  {
+    "key": "teamEmptyMembers",
+    "fr": "Aucun membre actif pour le moment.",
+    "params": []
+  },
+  {
+    "key": "teamEmptyInvitations",
+    "fr": "Aucune invitation en attente.",
+    "params": []
+  },
+  {
+    "key": "teamLoadError",
+    "fr": "Impossible de charger l’équipe. Vérifiez votre connexion puis réessayez.",
+    "params": []
+  },
+  {
+    "key": "teamForbiddenTitle",
+    "fr": "Accès réservé",
+    "params": []
+  },
+  {
+    "key": "teamForbiddenBody",
+    "fr": "La gestion de l’équipe est réservée aux propriétaires et aux gestionnaires.",
+    "params": []
+  },
+  {
+    "key": "teamSummaryOwner",
+    "fr": "Invite, modifie les rôles et révoque l’accès des membres.",
+    "params": []
+  },
+  {
+    "key": "teamSummaryManager",
+    "fr": "Consulte la liste de l’équipe et les invitations. Ne peut ni inviter, ni modifier les rôles, ni révoquer.",
+    "params": []
+  },
+  {
+    "key": "teamSummaryStaff",
+    "fr": "N’a pas accès à la gestion de l’équipe.",
+    "params": []
+  },
+  {
+    "key": "teamSummaryScope",
+    "fr": "Les accès couvrent tous les établissements du commerce : il n’existe pas d’accès par établissement.",
+    "params": []
+  },
+  {
+    "key": "teamInviteTitle",
+    "fr": "Inviter un membre",
+    "params": []
+  },
+  {
+    "key": "teamInviteHint",
+    "fr": "Aucun SMS ni e-mail n’est émis par SpeedyGo. Un code d’acceptation vous sera remis : transmettez-le vous-même à la personne invitée.",
+    "params": []
+  },
+  {
+    "key": "teamInvitePhoneLabel",
+    "fr": "Numéro de téléphone",
+    "params": []
+  },
+  {
+    "key": "teamInvitePhoneHint",
+    "fr": "550 12 34 56",
+    "params": []
+  },
+  {
+    "key": "teamInvitePhoneHelper",
+    "fr": "Numéro avec lequel la personne se connecte à SpeedyGo.",
+    "params": []
+  },
+  {
+    "key": "teamInvitePhoneInvalid",
+    "fr": "Saisissez un numéro mobile algérien valide (9 chiffres).",
+    "params": []
+  },
+  {
+    "key": "teamInviteRoleLabel",
+    "fr": "Rôle",
+    "params": []
+  },
+  {
+    "key": "teamInviteCreate",
+    "fr": "Créer l’invitation",
+    "params": []
+  },
+  {
+    "key": "teamRoleManagerHint",
+    "fr": "Peut consulter l’équipe. Aucun droit de gestion.",
+    "params": []
+  },
+  {
+    "key": "teamRoleStaffHint",
+    "fr": "Accès opérationnel, sans accès à la gestion de l’équipe.",
+    "params": []
+  },
+  {
+    "key": "teamCodeTitle",
+    "fr": "Code d’acceptation",
+    "params": []
+  },
+  {
+    "key": "teamCodeRegeneratedTitle",
+    "fr": "Nouveau code d’acceptation",
+    "params": []
+  },
+  {
+    "key": "teamCodeInstruction",
+    "fr": "Aucun SMS ni e-mail n’est émis par SpeedyGo. Copiez ce code et transmettez-le vous-même à {phone}. Il ne sera plus affiché après la fermeture de cette fenêtre.",
+    "params": [
+      "phone"
+    ]
+  },
+  {
+    "key": "teamCodeRegeneratedNote",
+    "fr": "L’ancien code ne fonctionne plus.",
+    "params": []
+  },
+  {
+    "key": "teamCodeCopy",
+    "fr": "Copier le code",
+    "params": []
+  },
+  {
+    "key": "teamCodeCopied",
+    "fr": "Code copié.",
+    "params": []
+  },
+  {
+    "key": "teamCodeDone",
+    "fr": "Terminer",
+    "params": []
+  },
+  {
+    "key": "teamRevokeTitle",
+    "fr": "Révoquer l’accès ?",
+    "params": []
+  },
+  {
+    "key": "teamRevokeBody",
+    "fr": "{phone} perdra l’accès à ce commerce et ses sessions seront fermées. Son compte SpeedyGo n’est pas supprimé.",
+    "params": [
+      "phone"
+    ]
+  },
+  {
+    "key": "teamRevoked",
+    "fr": "Accès révoqué.",
+    "params": []
+  },
+  {
+    "key": "teamCancelInviteTitle",
+    "fr": "Annuler l’invitation ?",
+    "params": []
+  },
+  {
+    "key": "teamCancelInviteBody",
+    "fr": "Le code d’acceptation de {phone} ne fonctionnera plus.",
+    "params": [
+      "phone"
+    ]
+  },
+  {
+    "key": "teamCancelInviteConfirm",
+    "fr": "Annuler l’invitation",
+    "params": []
+  },
+  {
+    "key": "teamKeep",
+    "fr": "Conserver",
+    "params": []
+  },
+  {
+    "key": "teamInviteCancelled",
+    "fr": "Invitation annulée.",
+    "params": []
+  },
+  {
+    "key": "teamRoleSheetTitle",
+    "fr": "Modifier le rôle",
+    "params": []
+  },
+  {
+    "key": "teamRoleSheetHint",
+    "fr": "Si le rôle réduit ses droits, les sessions du membre sont fermées et il devra se reconnecter.",
+    "params": []
+  },
+  {
+    "key": "teamRoleSave",
+    "fr": "Enregistrer",
+    "params": []
+  },
+  {
+    "key": "teamRoleUpdated",
+    "fr": "Rôle mis à jour.",
+    "params": []
+  },
+  {
+    "key": "teamErrorGeneric",
+    "fr": "Action impossible pour le moment. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "teamErrorConflict",
+    "fr": "La liste a changé entre-temps. Elle vient d’être actualisée : vérifiez puis réessayez.",
+    "params": []
+  },
+  {
+    "key": "teamErrorDuplicateMember",
+    "fr": "Ce numéro fait déjà partie de l’équipe.",
+    "params": []
+  },
+  {
+    "key": "teamErrorDuplicateInvite",
+    "fr": "Une invitation est déjà en attente pour ce numéro.",
+    "params": []
+  },
+  {
+    "key": "teamErrorOwnerProtected",
+    "fr": "Le propriétaire ne peut pas être modifié ici.",
+    "params": []
+  },
+  {
+    "key": "teamErrorSelf",
+    "fr": "Vous ne pouvez pas modifier votre propre accès.",
+    "params": []
+  },
+  {
+    "key": "teamErrorInviteGone",
+    "fr": "Cette invitation n’existe plus.",
+    "params": []
+  },
+  {
+    "key": "teamErrorInviteExpired",
+    "fr": "Cette invitation a expiré. Demandez un nouveau code au propriétaire.",
+    "params": []
+  },
+  {
+    "key": "teamErrorCodeInvalid",
+    "fr": "Code incorrect.",
+    "params": []
+  },
+  {
+    "key": "teamErrorPhoneMismatch",
+    "fr": "Cette invitation est destinée à un autre numéro.",
+    "params": []
+  },
+  {
+    "key": "teamErrorInvalidInput",
+    "fr": "Vérifiez le numéro et le rôle puis réessayez.",
+    "params": []
+  },
+  {
+    "key": "teamInvitationsTitle",
+    "fr": "Invitations reçues",
+    "params": []
+  },
+  {
+    "key": "teamInvitationsHint",
+    "fr": "Invitations adressées à votre numéro. Saisissez le code remis par le propriétaire pour les accepter.",
+    "params": []
+  },
+  {
+    "key": "teamInvitationsEmpty",
+    "fr": "Aucune invitation en attente pour votre numéro.",
+    "params": []
+  },
+  {
+    "key": "teamInvitationsLoadError",
+    "fr": "Impossible de charger vos invitations. Réessayez.",
+    "params": []
+  },
+  {
+    "key": "teamAccept",
+    "fr": "Accepter",
+    "params": []
+  },
+  {
+    "key": "teamAcceptTitle",
+    "fr": "Saisir le code d’acceptation",
+    "params": []
+  },
+  {
+    "key": "teamAcceptCodeLabel",
+    "fr": "Code remis par le propriétaire",
+    "params": []
+  },
+  {
+    "key": "teamAcceptCodeInvalid",
+    "fr": "Le code comporte 64 caractères (chiffres et lettres a à f).",
+    "params": []
+  },
+  {
+    "key": "teamAcceptConfirm",
+    "fr": "Accepter l’invitation",
+    "params": []
+  },
+  {
+    "key": "teamAccepted",
+    "fr": "Invitation acceptée. Vous avez maintenant accès à {merchantName}.",
+    "params": [
+      "merchantName"
+    ]
+  }
+]

@@ -67,7 +67,7 @@ class MarkReadyConfirmScreen extends StatelessWidget {
                       ],
                     ),
                     Text(
-                      AppStrings.prepItemCount(count),
+                      AppStrings.prepItemCount('${count}'),
                       key: const Key('order-mark-ready-count'),
                       style: theme.textTheme.labelMedium?.copyWith(
                         color: AppColors.onSurfaceVariant,
@@ -122,7 +122,7 @@ class MarkReadyConfirmScreen extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              child: const Text(AppStrings.back),
+              child: Text(AppStrings.back),
             ),
           ],
         ),

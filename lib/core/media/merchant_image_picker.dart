@@ -34,26 +34,26 @@ class MerchantImageConstraints {
   final String tooLargeMessage;
 
   /// Product images and branch covers (2 MiB, 400–4096 px).
-  static const productOrCover = MerchantImageConstraints(
-    maxBytes: kMerchantImageMaxBytes,
-    minPx: kMerchantImageMinPx,
-    maxPx: kMerchantImageMaxPx,
-    fallbackPx: 1280,
-    filename: 'product.jpg',
-    tooSmallMessage: AppStrings.catalogImageTooSmall,
-    tooLargeMessage: AppStrings.catalogImageTooLarge,
-  );
+  static MerchantImageConstraints get productOrCover => MerchantImageConstraints(
+        maxBytes: kMerchantImageMaxBytes,
+        minPx: kMerchantImageMinPx,
+        maxPx: kMerchantImageMaxPx,
+        fallbackPx: 1280,
+        filename: 'product.jpg',
+        tooSmallMessage: AppStrings.catalogImageTooSmall,
+        tooLargeMessage: AppStrings.catalogImageTooLarge,
+      );
 
   /// Branch logo (1 MiB, 128–2048 px on the server; encoded at ≤ 1024 px).
-  static const logo = MerchantImageConstraints(
-    maxBytes: 1024 * 1024,
-    minPx: 128,
-    maxPx: 1024,
-    fallbackPx: 512,
-    filename: 'logo.jpg',
-    tooSmallMessage: AppStrings.storeLogoTooSmall,
-    tooLargeMessage: AppStrings.storeLogoTooLarge,
-  );
+  static MerchantImageConstraints get logo => MerchantImageConstraints(
+        maxBytes: 1024 * 1024,
+        minPx: 128,
+        maxPx: 1024,
+        fallbackPx: 512,
+        filename: 'logo.jpg',
+        tooSmallMessage: AppStrings.storeLogoTooSmall,
+        tooLargeMessage: AppStrings.storeLogoTooLarge,
+      );
 }
 
 /// Result of a gallery/camera pick (JPEG bytes ready for upload).
@@ -81,9 +81,9 @@ class MerchantImagePickException implements Exception {
 Future<MerchantPickedImage?> pickMerchantImage(
   BuildContext context, {
   ImagePicker? picker,
-  MerchantImageConstraints constraints =
-      MerchantImageConstraints.productOrCover,
+  MerchantImageConstraints? constraints,
 }) async {
+  final resolved = constraints ?? MerchantImageConstraints.productOrCover;
   final source = await showModalBottomSheet<ImageSource>(
     context: context,
     showDragHandle: true,
@@ -94,12 +94,12 @@ Future<MerchantPickedImage?> pickMerchantImage(
           children: [
             ListTile(
               leading: const Icon(Icons.photo_library_outlined),
-              title: const Text(AppStrings.catalogImageFromGallery),
+              title: Text(AppStrings.catalogImageFromGallery),
               onTap: () => Navigator.pop(ctx, ImageSource.gallery),
             ),
             ListTile(
               leading: const Icon(Icons.photo_camera_outlined),
-              title: const Text(AppStrings.catalogImageFromCamera),
+              title: Text(AppStrings.catalogImageFromCamera),
               onTap: () => Navigator.pop(ctx, ImageSource.camera),
             ),
           ],
@@ -122,11 +122,11 @@ Future<MerchantPickedImage?> pickMerchantImage(
     final raw = await image.readAsBytes();
     if (raw.isEmpty) return null;
 
-    return prepareMerchantImage(raw, constraints: constraints);
+    return prepareMerchantImage(raw, constraints: resolved);
   } on MissingPluginException {
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text(AppStrings.catalogImagePluginRestart)),
+        SnackBar(content: Text(AppStrings.catalogImagePluginRestart)),
       );
     }
     return null;
@@ -142,17 +142,16 @@ Future<MerchantPickedImage?> pickMerchantImage(
 /// Decode → enforce dimensions → JPEG under the purpose's byte limit.
 MerchantPickedImage prepareMerchantImage(
   Uint8List raw, {
-  MerchantImageConstraints constraints =
-      MerchantImageConstraints.productOrCover,
+  MerchantImageConstraints? constraints,
 }) {
   final decoded = img.decodeImage(raw);
   if (decoded == null) {
-    throw const MerchantImagePickException(AppStrings.catalogImageFormatError);
+    throw MerchantImagePickException(AppStrings.catalogImageFormatError);
   }
 
   return encodeMerchantFrame(
     img.bakeOrientation(decoded),
-    constraints: constraints,
+    constraints: constraints ?? MerchantImageConstraints.productOrCover,
   );
 }
 
@@ -160,10 +159,9 @@ MerchantPickedImage prepareMerchantImage(
 /// upright frame.
 MerchantPickedImage encodeMerchantFrame(
   img.Image source, {
-  MerchantImageConstraints constraints =
-      MerchantImageConstraints.productOrCover,
+  MerchantImageConstraints? constraints,
 }) {
-  final c = constraints;
+  final c = constraints ?? MerchantImageConstraints.productOrCover;
   var frame = source;
   final longest = frame.width > frame.height ? frame.width : frame.height;
   if (longest > c.maxPx) {

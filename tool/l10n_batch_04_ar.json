@@ -1,0 +1,722 @@
+[
+  {
+    "key": "storeCoverUploadError",
+    "ar": "تعذّر إرسال صورة الغلاف."
+  },
+  {
+    "key": "storeCoverBindPartial",
+    "ar": "تم الإرسال بنجاح، لكن تعذّر ربط صورة الغلاف. يُرجى المحاولة مجددًا."
+  },
+  {
+    "key": "storeCoverRemoteUnavailable",
+    "ar": "معاينة صورة الغلاف غير متاحة حاليًا."
+  },
+  {
+    "key": "storeCustomerPreviewTitle",
+    "ar": "معاينة العميل"
+  },
+  {
+    "key": "storeCustomerPreviewHint",
+    "ar": "الملاحظات والمدة التقديرية غير متاحة حاليًا."
+  },
+  {
+    "key": "storeAddressTitle",
+    "ar": "الاتصال وعنوان المتجر"
+  },
+  {
+    "key": "storeAddressSave",
+    "ar": "حفظ التعديلات"
+  },
+  {
+    "key": "storeAddressConfirmMap",
+    "ar": "تعديل على الخريطة"
+  },
+  {
+    "key": "storeAddressSaveError",
+    "ar": "تعذّر الحفظ. تحقّق من الاتصال وحاول مجددًا."
+  },
+  {
+    "key": "storeAddressBanner",
+    "ar": "قد يؤثّر تعديل العنوان على مناطق التوصيل والعمليات الجارية."
+  },
+  {
+    "key": "storeAddressCoordsSection",
+    "ar": "الإحداثيات"
+  },
+  {
+    "key": "storeAddressSection",
+    "ar": "العنوان"
+  },
+  {
+    "key": "storeAddressPhone",
+    "ar": "رقم الهاتف"
+  },
+  {
+    "key": "storeAddressPhoneHint",
+    "ar": "الرقم المُبلَّغ لسائقي التوصيل عند الاستلام."
+  },
+  {
+    "key": "storeAddressDetailed",
+    "ar": "العنوان التفصيلي"
+  },
+  {
+    "key": "storeAddressLocationSummary",
+    "ar": "الموقع مؤكَّد"
+  },
+  {
+    "key": "storeAddressPublicContact",
+    "ar": "جهة اتصال عامة (اختياري)"
+  },
+  {
+    "key": "storeAddressWilaya",
+    "ar": "الولاية"
+  },
+  {
+    "key": "storeAddressCommune",
+    "ar": "البلدية"
+  },
+  {
+    "key": "adminLocationChoose",
+    "ar": "اختيار"
+  },
+  {
+    "key": "adminLocationSearchHint",
+    "ar": "بحث…"
+  },
+  {
+    "key": "adminLocationEmpty",
+    "ar": "لا توجد نتائج"
+  },
+  {
+    "key": "adminLocationLoadError",
+    "ar": "تعذّر تحميل القائمة. يُرجى المحاولة مجددًا."
+  },
+  {
+    "key": "adminLocationRetry",
+    "ar": "إعادة المحاولة"
+  },
+  {
+    "key": "adminLocationWilayaRequired",
+    "ar": "اختر الولاية أولًا."
+  },
+  {
+    "key": "adminLocationPairRequired",
+    "ar": "الولاية والبلدية مطلوبتان."
+  },
+  {
+    "key": "storeAddressPickupHints",
+    "ar": "تعليمات الاستلام"
+  },
+  {
+    "key": "storeProfileMediaSub",
+    "ar": "الشعار وصورة الغلاف"
+  },
+  {
+    "key": "storeProfileMediaUnavailable",
+    "ar": "غير متاح"
+  },
+  {
+    "key": "storeProfilePrepUnavailable",
+    "ar": "غير متاح"
+  },
+  {
+    "key": "storeProfilePreviewUnavailable",
+    "ar": "معاينة العميل غير متاحة."
+  },
+  {
+    "key": "profileSettingsTitle",
+    "ar": "الإعدادات"
+  },
+  {
+    "key": "storeProfileTitle",
+    "ar": "ملف المتجر"
+  },
+  {
+    "key": "storeProfileCustomerPreview",
+    "ar": "معاينة العميل"
+  },
+  {
+    "key": "storeProfileGeneral",
+    "ar": "المعلومات العامة"
+  },
+  {
+    "key": "storeProfileGeneralSub",
+    "ar": "اسم المتجر وحالته"
+  },
+  {
+    "key": "storeGeneralTitle",
+    "ar": "المعلومات العامة"
+  },
+  {
+    "key": "storeGeneralBranchName",
+    "ar": "اسم الفرع"
+  },
+  {
+    "key": "storeGeneralBranchNameHint",
+    "ar": "يُعرض للعملاء لهذا الفرع."
+  },
+  {
+    "key": "storeGeneralMerchantName",
+    "ar": "اسم التجارة"
+  },
+  {
+    "key": "storeGeneralMerchantLocked",
+    "ar": "اسم موثَّق من SpeedyGo: غير قابل للتعديل هنا."
+  },
+  {
+    "key": "storeGeneralReadOnly",
+    "ar": "يمكن للمالك والمدير فقط تعديل هذه المعلومات."
+  },
+  {
+    "key": "storeGeneralPhoneElsewhere",
+    "ar": "يُعدَّل الهاتف من «العنوان والموقع»."
+  },
+  {
+    "key": "storeGeneralSave",
+    "ar": "حفظ"
+  },
+  {
+    "key": "storeGeneralSaved",
+    "ar": "تم حفظ معلومات الفرع."
+  },
+  {
+    "key": "storeGeneralNameAr",
+    "ar": "الاسم بالعربية"
+  },
+  {
+    "key": "storeGeneralNameArHint",
+    "ar": "اختياري. يُعرض للعملاء الناطقين بالعربية."
+  },
+  {
+    "key": "storeGeneralDescription",
+    "ar": "وصف مختصر"
+  },
+  {
+    "key": "storeGeneralDescriptionHint",
+    "ar": "اختياري. قدّم فرعك في بضع جمل."
+  },
+  {
+    "key": "storeGeneralPublicEmail",
+    "ar": "البريد الإلكتروني العام"
+  },
+  {
+    "key": "storeGeneralPublicEmailHint",
+    "ar": "اختياري. عنوان اتصال ظاهر للعملاء."
+  },
+  {
+    "key": "storeGeneralEmailInvalid",
+    "ar": "عنوان البريد الإلكتروني غير صالح."
+  },
+  {
+    "key": "storeGeneralPreviewTitle",
+    "ar": "معاينة العميل"
+  },
+  {
+    "key": "storeGeneralPreviewOpen",
+    "ar": "مفتوح"
+  },
+  {
+    "key": "storeGeneralPreviewClosed",
+    "ar": "مغلق"
+  },
+  {
+    "key": "storeProfileCategory",
+    "ar": "فئة الفرع"
+  },
+  {
+    "key": "storeProfileCategorySub",
+    "ar": "نوع النشاط الظاهر للعملاء"
+  },
+  {
+    "key": "storeCategoryTitle",
+    "ar": "فئة الفرع"
+  },
+  {
+    "key": "storeCategorySubtitle",
+    "ar": "اختر الفئة التي تصف نشاطك بأفضل شكل."
+  },
+  {
+    "key": "storeCategorySearch",
+    "ar": "البحث عن فئة..."
+  },
+  {
+    "key": "storeCategoryInfo",
+    "ar": "فئة واحدة لكل فرع. تحدّد مكان ظهوره في تطبيق العميل."
+  },
+  {
+    "key": "storeCategoryReadOnly",
+    "ar": "يمكن للمالك والمديرين فقط تعديل الفئة."
+  },
+  {
+    "key": "storeCategorySave",
+    "ar": "حفظ"
+  },
+  {
+    "key": "storeCategoryClear",
+    "ar": "إزالة الفئة"
+  },
+  {
+    "key": "storeCategorySaved",
+    "ar": "تم حفظ الفئة."
+  },
+  {
+    "key": "storeCategoryCleared",
+    "ar": "تمت إزالة الفئة."
+  },
+  {
+    "key": "storeCategoryNotSet",
+    "ar": "غير محدّدة"
+  },
+  {
+    "key": "storeCategoryEmpty",
+    "ar": "لا توجد فئات متاحة حاليًا."
+  },
+  {
+    "key": "storeCategoryNoMatch",
+    "ar": "لا توجد فئة مطابقة."
+  },
+  {
+    "key": "storeCategoryLoadError",
+    "ar": "تعذّر تحميل الفئات."
+  },
+  {
+    "key": "storeCategorySaveError",
+    "ar": "تعذّر الحفظ. يُرجى المحاولة مجددًا."
+  },
+  {
+    "key": "storeCategoryForbidden",
+    "ar": "دورك لا يسمح بتعديل هذا الفرع."
+  },
+  {
+    "key": "storeCategoryRestricted",
+    "ar": "حالة التجارة لا تسمح بهذا التعديل."
+  },
+  {
+    "key": "storeGeneralNameRequired",
+    "ar": "لا يمكن أن يكون الاسم فارغًا."
+  },
+  {
+    "key": "storeGeneralSaveError",
+    "ar": "تعذّر الحفظ. يُرجى المحاولة مجددًا."
+  },
+  {
+    "key": "storeGeneralForbidden",
+    "ar": "دورك لا يسمح بتعديل هذا الفرع."
+  },
+  {
+    "key": "storeGeneralRestricted",
+    "ar": "حالة التجارة لا تسمح بهذا التعديل."
+  },
+  {
+    "key": "storeProfileMedia",
+    "ar": "الوسائط والشعارات"
+  },
+  {
+    "key": "storeProfileAddress",
+    "ar": "العنوان والموقع"
+  },
+  {
+    "key": "storeProfileAddressSub",
+    "ar": "الهاتف والعنوان وموقع GPS"
+  },
+  {
+    "key": "storeProfileHours",
+    "ar": "ساعات العمل"
+  },
+  {
+    "key": "storeProfileHoursSub",
+    "ar": "أيام الفتح والاستراحات"
+  },
+  {
+    "key": "storeProfilePrep",
+    "ar": "إعدادات التحضير"
+  },
+  {
+    "key": "storeProfileSettings",
+    "ar": "إعدادات الحساب"
+  },
+  {
+    "key": "storeProfileSettingsSub",
+    "ar": "الحساب والتفضيلات وتسجيل الخروج"
+  },
+  {
+    "key": "storeProfileNotifications",
+    "ar": "الإشعارات"
+  },
+  {
+    "key": "storeProfileNotificationsSub",
+    "ar": "مركز التنبيهات"
+  },
+  {
+    "key": "openingHoursTitle",
+    "ar": "ساعات العمل"
+  },
+  {
+    "key": "openingHoursEmpty",
+    "ar": "لا توجد ساعات عمل مُعدَّة لهذا الفرع."
+  },
+  {
+    "key": "openingHoursSave",
+    "ar": "حفظ ساعات العمل"
+  },
+  {
+    "key": "openingHoursSaved",
+    "ar": "تم حفظ ساعات العمل."
+  },
+  {
+    "key": "openingHoursLoadError",
+    "ar": "تعذّر تحميل ساعات العمل."
+  },
+  {
+    "key": "openingHoursSaveError",
+    "ar": "تعذّر حفظ ساعات العمل."
+  },
+  {
+    "key": "openingHoursInvalid",
+    "ar": "رُفضت الساعات: تحقّق من التداخلات، بما في ذلك ما بعد منتصف الليل."
+  },
+  {
+    "key": "openingHoursConflict",
+    "ar": "تغيّرت الساعات من جهة أخرى. تم إعادة التحميل — تحقّق ثم حاول مجددًا."
+  },
+  {
+    "key": "openingHoursClosed",
+    "ar": "مغلق"
+  },
+  {
+    "key": "openingHoursUsual",
+    "ar": "الساعات المعتادة"
+  },
+  {
+    "key": "openingHoursNotConfigured",
+    "ar": "لا توجد ساعات مُعدَّة"
+  },
+  {
+    "key": "openingHoursOpenNow",
+    "ar": "مفتوح حاليًا"
+  },
+  {
+    "key": "openingHoursClosedNow",
+    "ar": "مغلق حاليًا"
+  },
+  {
+    "key": "openingHoursInfo",
+    "ar": "يمكن للعملاء الطلب فقط خلال ساعات عملك. تُطبَّق التعديلات فور الحفظ."
+  },
+  {
+    "key": "openingHoursStaffReadOnly",
+    "ar": "للقراءة فقط: يمكن للمالك والمديرين فقط تعديل ساعات العمل."
+  },
+  {
+    "key": "openingHoursOpens",
+    "ar": "الفتح"
+  },
+  {
+    "key": "openingHoursCloses",
+    "ar": "الإغلاق"
+  },
+  {
+    "key": "openingHoursEditorHint",
+    "ar": "حتى 3 فترات في اليوم. إذا كان الإغلاق قبل الفتح، تنتهي الفترة في اليوم التالي."
+  },
+  {
+    "key": "openingHoursAddRange",
+    "ar": "إضافة فترة"
+  },
+  {
+    "key": "openingHoursRemoveRange",
+    "ar": "حذف الفترة"
+  },
+  {
+    "key": "openingHoursApply",
+    "ar": "تطبيق"
+  },
+  {
+    "key": "openingHoursNextDay",
+    "ar": "تنتهي في اليوم التالي"
+  },
+  {
+    "key": "openingHoursAllDay",
+    "ar": "مفتوح على مدار الساعة"
+  },
+  {
+    "key": "openingHoursDayClosedHint",
+    "ar": "بدون فترة: سيُعدّ اليوم مغلقًا."
+  },
+  {
+    "key": "openingHoursIssueOverlap",
+    "ar": "الفترات متداخلة."
+  },
+  {
+    "key": "openingHoursIssueZero",
+    "ar": "يجب أن يختلف وقتا الفتح والإغلاق (00:00–00:00 ليوم كامل)."
+  },
+  {
+    "key": "openingHoursIssueTooMany",
+    "ar": "الحد الأقصى 3 فترات في اليوم."
+  },
+  {
+    "key": "hoursExceptionsTitle",
+    "ar": "ساعات استثنائية"
+  },
+  {
+    "key": "hoursExceptionsNavSub",
+    "ar": "العطل والإغلاقات المؤقتة"
+  },
+  {
+    "key": "hoursExceptionsBanner",
+    "ar": "تستبدل هذه الساعات ساعاتك المعتادة فقط للتواريخ المحددة."
+  },
+  {
+    "key": "hoursExceptionsUpcoming",
+    "ar": "الاستثناءات القادمة"
+  },
+  {
+    "key": "hoursExceptionsEmpty",
+    "ar": "لا توجد استثناءات قادمة."
+  },
+  {
+    "key": "hoursExceptionsAdd",
+    "ar": "إضافة استثناء"
+  },
+  {
+    "key": "hoursExceptionsEdit",
+    "ar": "تعديل الاستثناء"
+  },
+  {
+    "key": "hoursExceptionsDate",
+    "ar": "التاريخ"
+  },
+  {
+    "key": "hoursExceptionsDateHint",
+    "ar": "اختيار تاريخ"
+  },
+  {
+    "key": "hoursExceptionsDateTaken",
+    "ar": "هذا التاريخ لديه استثناء بالفعل: سيُستبدل عند الحفظ."
+  },
+  {
+    "key": "hoursExceptionsStatus",
+    "ar": "الحالة"
+  },
+  {
+    "key": "hoursExceptionsOpen",
+    "ar": "مفتوح"
+  },
+  {
+    "key": "hoursExceptionsClosed",
+    "ar": "مغلق"
+  },
+  {
+    "key": "hoursExceptionsHours",
+    "ar": "ساعات معدَّلة"
+  },
+  {
+    "key": "hoursExceptionsTo",
+    "ar": "إلى"
+  },
+  {
+    "key": "hoursExceptionsLabel",
+    "ar": "السبب"
+  },
+  {
+    "key": "hoursExceptionsLabelHint",
+    "ar": "مثال: عطلة رسمية، أشغال…"
+  },
+  {
+    "key": "hoursExceptionsMessage",
+    "ar": "رسالة للعملاء (اختياري)"
+  },
+  {
+    "key": "hoursExceptionsMessageHint",
+    "ar": "يُحفظ مع الاستثناء. غير معروض بعد في تطبيق العميل."
+  },
+  {
+    "key": "hoursExceptionsCancel",
+    "ar": "إلغاء"
+  },
+  {
+    "key": "hoursExceptionsSave",
+    "ar": "حفظ ساعات العمل"
+  },
+  {
+    "key": "hoursExceptionsSaved",
+    "ar": "تم حفظ الاستثناء."
+  },
+  {
+    "key": "hoursExceptionsDeleted",
+    "ar": "تم حذف الاستثناء."
+  },
+  {
+    "key": "hoursExceptionsDeleteTitle",
+    "ar": "حذف الاستثناء؟"
+  },
+  {
+    "key": "hoursExceptionsDeleteBody",
+    "ar": "سيعود {date} إلى ساعاتك المعتادة."
+  },
+  {
+    "key": "hoursExceptionsDeleteConfirm",
+    "ar": "حذف"
+  },
+  {
+    "key": "hoursExceptionsLoadError",
+    "ar": "تعذّر تحميل الساعات الاستثنائية."
+  },
+  {
+    "key": "hoursExceptionsSaveError",
+    "ar": "تعذّر حفظ الاستثناء. تم الاحتفاظ بإدخالاتك."
+  },
+  {
+    "key": "hoursExceptionsDeleteError",
+    "ar": "تعذّر حذف الاستثناء. يُرجى المحاولة مجددًا."
+  },
+  {
+    "key": "hoursExceptionsConflict",
+    "ar": "تم تعديل هذا التاريخ من جهة أخرى. أُعيد تحميل القائمة: تحقّق ثم احفظ مجددًا."
+  },
+  {
+    "key": "hoursExceptionsInvalid",
+    "ar": "رُفض الاستثناء: تحقّق من التاريخ (من اليوم إلى +365 يومًا) والفترات."
+  },
+  {
+    "key": "hoursExceptionsWeeklyRequired",
+    "ar": "أعدّ الساعات المعتادة أولًا."
+  },
+  {
+    "key": "hoursExceptionsTooMany",
+    "ar": "عدد كبير من الاستثناءات القادمة (100 كحد أقصى)."
+  },
+  {
+    "key": "hoursExceptionsStaffReadOnly",
+    "ar": "للقراءة فقط: يمكن للمالك والمديرين فقط تعديل الساعات الاستثنائية."
+  },
+  {
+    "key": "hoursExceptionsDateRequired",
+    "ar": "اختر تاريخًا."
+  },
+  {
+    "key": "hoursExceptionsLabelRequired",
+    "ar": "أدخل سببًا."
+  },
+  {
+    "key": "hoursExceptionsIntervalsRequired",
+    "ar": "أضف فترة زمنية واحدة على الأقل."
+  },
+  {
+    "key": "hoursExceptionsSameDay",
+    "ar": "يجب أن تنتهي كل فترة في اليوم نفسه (00:00 = منتصف الليل)."
+  },
+  {
+    "key": "hoursExceptionsHelpTitle",
+    "ar": "ترتيب التطبيق"
+  },
+  {
+    "key": "hoursExceptionsHelpBody",
+    "ar": "يُطبَّق الإغلاق الإجباري أو المؤقت للفرع دائمًا أولًا. وإلا يستبدل الاستثناء الساعات المعتادة لتاريخه (بتوقيت الجزائر). وتتبع الأيام الأخرى الساعات المعتادة."
+  },
+  {
+    "key": "hoursExceptionsHelpOk",
+    "ar": "حسنًا"
+  },
+  {
+    "key": "hoursExceptionsToday",
+    "ar": "استثناء اليوم: {label}"
+  },
+  {
+    "key": "availabilityTitle",
+    "ar": "حالة المتجر"
+  },
+  {
+    "key": "availabilityEstablishment",
+    "ar": "الفرع"
+  },
+  {
+    "key": "availabilityOpen",
+    "ar": "مفتوح"
+  },
+  {
+    "key": "availabilityClosed",
+    "ar": "مغلق"
+  },
+  {
+    "key": "availabilityFollowSchedule",
+    "ar": "وفق الساعات"
+  },
+  {
+    "key": "availabilityForceClosed",
+    "ar": "مغلق"
+  },
+  {
+    "key": "availabilitySave",
+    "ar": "حفظ التعديلات"
+  },
+  {
+    "key": "availabilitySaving",
+    "ar": "جاري الحفظ…"
+  },
+  {
+    "key": "availabilitySaved",
+    "ar": "تم حفظ حالة المتجر."
+  },
+  {
+    "key": "availabilityClosureSaved",
+    "ar": "تم حفظ الإغلاق."
+  },
+  {
+    "key": "availabilityLoadError",
+    "ar": "تعذّر تحميل حالة المتجر."
+  },
+  {
+    "key": "availabilitySaveError",
+    "ar": "تعذّر حفظ حالة المتجر."
+  },
+  {
+    "key": "availabilityConflict",
+    "ar": "تغيّرت الحالة من جهة أخرى. تم إعادة التحميل — تحقّق ثم حاول مجددًا."
+  },
+  {
+    "key": "availabilityReopenTitle",
+    "ar": "إعادة الفتح وفق الساعات"
+  },
+  {
+    "key": "availabilityReopenOutsideHoursBody",
+    "ar": "أنت خارج الساعات الأسبوعية. سيبقى المتجر مغلقًا حتى موعد الفتح التالي."
+  },
+  {
+    "key": "availabilityConfirmReopen",
+    "ar": "تأكيد"
+  },
+  {
+    "key": "availabilityToday",
+    "ar": "اليوم"
+  },
+  {
+    "key": "availabilityClosedToday",
+    "ar": "مغلق اليوم"
+  },
+  {
+    "key": "availabilityModifyHours",
+    "ar": "تعديل"
+  },
+  {
+    "key": "availabilityQuickPause",
+    "ar": "إيقاف سريع"
+  },
+  {
+    "key": "availabilityQuickPauseHint",
+    "ar": "إغلاق مؤقت بسبب ضغط في المطبخ."
+  },
+  {
+    "key": "availabilityPause30",
+    "ar": "30 دقيقة"
+  },
+  {
+    "key": "availabilityPause60",
+    "ar": "1 ساعة"
+  },
+  {
+    "key": "availabilityActiveOrdersUnknown",
+    "ar": "طلبات قيد التنفيذ"
+  }
+]

@@ -127,7 +127,7 @@ class _RejectReasonSheetState extends State<_RejectReasonSheet> {
                 _selected = _codeFromText(widget.controller.text);
               }
             }),
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: AppStrings.orderRejectReasonLabel,
               border: OutlineInputBorder(),
             ),
@@ -141,7 +141,7 @@ class _RejectReasonSheetState extends State<_RejectReasonSheet> {
           const SizedBox(height: 8),
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text(AppStrings.back),
+            child: Text(AppStrings.back),
           ),
         ],
       ),

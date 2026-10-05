@@ -17,7 +17,7 @@ String _moneyOrDash(String? minor) {
   return label.isEmpty ? AppStrings.reportsDataUnavailableShort : label;
 }
 
-const _frMonths = [
+final _frMonths = [
   'janvier',
   'février',
   'mars',
@@ -43,7 +43,7 @@ String _dailySummaryDateLabel(String civil, DateTime now) {
   final monthLabel = month >= 1 && month <= 12 ? _frMonths[month - 1] : '';
   final dayLabel = '$day ${_capitalize(monthLabel)}';
   if (date == today) {
-    return AppStrings.reportsDailySummaryTodayDate(dayLabel);
+    return AppStrings.reportsDailySummaryTodayDate(dayLabel.toString());
   }
   return dayLabel;
 }
@@ -55,8 +55,7 @@ String _capitalize(String value) {
 
 String _onTimeRateLabel(int? bps) {
   if (bps == null) return AppStrings.reportsDataUnavailableShort;
-  return AppStrings.reportsDailySummaryOnTimePercent(
-    MoneyFormat.basisPointsPercent(bps),
+  return AppStrings.reportsDailySummaryOnTimePercent(MoneyFormat.basisPointsPercent(bps),
   );
 }
 
@@ -134,7 +133,7 @@ class DailySummaryScreen extends ConsumerWidget {
                   if (summary == null) {
                     return ListView(
                       physics: const AlwaysScrollableScrollPhysics(),
-                      children: const [
+                      children: [
                         SizedBox(height: 8),
                         Padding(
                           padding: EdgeInsets.symmetric(horizontal: 16),
