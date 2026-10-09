@@ -1,0 +1,41 @@
+{
+  "runId": "fxenv_20261005T125234Z",
+  "liveRunTag": "fxlive_merchant_driver_20261009T161443Z",
+  "dateTime": "2026-10-09T16:21:34Z",
+  "git": {
+    "backend": "3131c4ec0e0d3295f1eeedf5e13f3cbdeb3c02b4",
+    "merchant": "9a0bc393c6833b9d8d0a617f47aef38471dfca12",
+    "driver": "e994e7aa91652b9a7c16cba306c29146217f2fb9"
+  },
+  "simulator": {
+    "udid": "8DB9007A-B816-4EC5-86ED-C627AC60F2C5",
+    "model": "iPhone 16e"
+  },
+  "apiPort": 3100,
+  "dbAlias": "speedygo_parity_fx",
+  "redisIndex": 9,
+  "fixture": {
+    "orderIdSuffix": "fcac9d7a",
+    "deliveryIdSuffix": "ed581296",
+    "assignmentId": "0d00f0f0-fa00-7000-8000-64ce3387d158",
+    "assignmentVersion": 1
+  },
+  "evidenceClassification": "live_ui_sequential_single_simulator",
+  "screenshots": [
+    "fxlive_driver_code_entry.png",
+    "fxlive_driver_picked_up.png",
+    "fxlive_merchant_pickup_code.png",
+    "fxlive_merchant_post_confirm.png"
+  ],
+  "requiredScreenshotsPresent": true,
+  "gates": {
+    "merchant_code_ui": "PASS",
+    "driver_confirm_ui": "PASS",
+    "merchant_recheck_ui": "PASS",
+    "backend_verify": "PASS",
+    "fixture_cleanup": "PASS"
+  },
+  "allGatesPass": true,
+  "diskFreeGbAfter": 1.6,
+  "row23Decision": "close_implementer_reviewed"
+}

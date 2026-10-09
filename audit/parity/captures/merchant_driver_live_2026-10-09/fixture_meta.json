@@ -1,0 +1,17 @@
+{
+  "runTag": "fxlive_merchant_driver_20261009T161443Z",
+  "orderId": "01a12172-1933-7ba1-82ae-5caffcac9d7a",
+  "orderIdSuffix": "fcac9d7a",
+  "deliveryId": "01a12172-1b20-7f32-81f6-c9e3ed581296",
+  "deliveryIdSuffix": "ed581296",
+  "assignmentId": "0d00f0f0-fa00-7000-8000-64ce3387d158",
+  "assignmentVersion": 1,
+  "merchantId": "0d00f0f0-fa00-7000-8000-000000001001",
+  "driverId": "0d00f0f0-fa00-7000-8000-000000009131",
+  "deliveryStatus": "AT_PICKUP",
+  "handoffStatus": "PENDING",
+  "createdAt": "2026-10-09T16:15:02Z",
+  "apiBase": "http://127.0.0.1:3100/api/v1",
+  "dbAlias": "speedygo_parity_fx",
+  "redisIndex": 9
+}

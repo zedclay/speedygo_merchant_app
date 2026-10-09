@@ -1,0 +1,58 @@
+{
+  "results": [
+    {
+      "id": "V1",
+      "check": "delivery PICKED_UP",
+      "result": "PASS",
+      "detail": "status=PICKED_UP"
+    },
+    {
+      "id": "V2",
+      "check": "pickedUpAt set",
+      "result": "PASS",
+      "detail": "set=True"
+    },
+    {
+      "id": "V3",
+      "check": "handoff consumed",
+      "result": "PASS",
+      "detail": "status=CONSUMED"
+    },
+    {
+      "id": "V4",
+      "check": "exactly one ORDER_PICKED_UP event",
+      "result": "PASS",
+      "detail": "count=1"
+    },
+    {
+      "id": "V5",
+      "check": "assignment id/version preserved",
+      "result": "PASS",
+      "detail": "row=0d00f0f0-fa00-7000-8000-64ce3387d158|1|ACCEPTED"
+    },
+    {
+      "id": "V6",
+      "check": "no COD settlement lines",
+      "result": "PASS",
+      "detail": "count=0"
+    },
+    {
+      "id": "V7",
+      "check": "no driver earnings lines",
+      "result": "PASS",
+      "detail": "count=0"
+    },
+    {
+      "id": "V8",
+      "check": "delivery not COMPLETED",
+      "result": "PASS",
+      "detail": "status=PICKED_UP"
+    }
+  ],
+  "summary": {
+    "pass": 8,
+    "fail": 0
+  },
+  "orderIdSuffix": "fcac9d7a",
+  "deliveryIdSuffix": "ed581296"
+}
