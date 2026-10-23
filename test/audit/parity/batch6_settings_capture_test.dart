@@ -539,7 +539,7 @@ void main() {
       await pump(
         tester,
         const NotificationsScreen(),
-        api: _api(notifications: [_notifications.last]),
+        api: _api(notifications: [_notifications.last])..unreadCount = 0,
       );
       final button = tester.widget<TextButton>(
         find.byKey(const Key('notifications-mark-all')),

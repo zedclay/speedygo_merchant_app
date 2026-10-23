@@ -63,7 +63,6 @@ MerchantOrderDetail _detail({
   required String fulfillment,
   required String publicReference,
   String? reason,
-  MerchantDeliverySummary? delivery,
 }) {
   return MerchantOrderDetail(
     id: id,

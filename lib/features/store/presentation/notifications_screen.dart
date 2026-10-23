@@ -7,6 +7,8 @@ import 'package:speedygo_merchant_app/core/navigation/app_routes.dart';
 import 'package:speedygo_merchant_app/core/widgets/merchant_ui.dart';
 import 'package:speedygo_merchant_app/features/notifications/application/order_alert_controller.dart';
 import 'package:speedygo_merchant_app/features/orders/presentation/order_public_reference.dart';
+import 'package:speedygo_merchant_app/features/store/application/notification_copy.dart';
+import 'package:speedygo_merchant_app/features/store/application/notification_navigation.dart';
 import 'package:speedygo_merchant_app/features/store/application/opening_hours_format.dart';
 import 'package:speedygo_merchant_app/features/store/application/store_controllers.dart';
 import 'package:speedygo_merchant_app/features/store/data/store_models.dart';
@@ -67,11 +69,12 @@ class _NotificationsScreenState extends ConsumerState<NotificationsScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final async = ref.watch(notificationsControllerProvider);
+    final state = ref.watch(notificationsControllerProvider);
     final now = ref.watch(storeClockProvider)();
-    final hasUnread = async.value?.any((n) => !n.read) ?? false;
+    final hasUnread = state.unreadCount > 0;
     final stacked = !_markAllTextFits(context, theme);
-    final VoidCallback? markAll = hasUnread
+    final VoidCallback? markAll =
+        hasUnread && !state.mutating
         ? () => ref.read(notificationsControllerProvider.notifier).markAllRead()
         : null;
 
@@ -109,121 +112,204 @@ class _NotificationsScreenState extends ConsumerState<NotificationsScreen> {
           ),
         const SizedBox(width: 8),
       ],
-      body: async.when(
-        loading: () => const LoadingBody(),
-        error: (_, _) => ErrorBody(
-          message: AppStrings.notificationsLoadError,
-          onRetry: () =>
-              ref.read(notificationsControllerProvider.notifier).reload(),
+      body: _buildBody(context, theme, state, now),
+    );
+  }
+
+  Widget _buildBody(
+    BuildContext context,
+    ThemeData theme,
+    NotificationInboxState state,
+    DateTime now,
+  ) {
+    if (state.loading && state.items.isEmpty) {
+      return const LoadingBody();
+    }
+    if (state.errorMessage != null && state.items.isEmpty) {
+      return ErrorBody(
+        message: state.errorMessage ?? AppStrings.notificationsLoadError,
+        onRetry: () =>
+            ref.read(notificationsControllerProvider.notifier).reload(),
+      );
+    }
+    final filtered = state.items.where((n) {
+      if (_filter == _NotifFilter.orders) {
+        return n.type == 'MERCHANT_ORDER_CREATED';
+      }
+      return true;
+    }).toList();
+    final groups = _groupByDay(filtered, now);
+    final showFooter = state.hasMore || state.loadMoreError != null;
+    return Column(
+      children: [
+        Align(
+          alignment: AlignmentDirectional.centerStart,
+          child: SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            padding: const EdgeInsets.symmetric(vertical: 16),
+            child: Row(
+              children: [
+                _FilterPill(
+                  key: const Key('notif-filter-all'),
+                  label: AppStrings.notificationsFilterAll,
+                  selected: _filter == _NotifFilter.all,
+                  onTap: () => setState(() => _filter = _NotifFilter.all),
+                ),
+                const SizedBox(width: 8),
+                _FilterPill(
+                  key: const Key('notif-filter-orders'),
+                  label: AppStrings.notificationsFilterOrders,
+                  selected: _filter == _NotifFilter.orders,
+                  onTap: () => setState(() => _filter = _NotifFilter.orders),
+                ),
+              ],
+            ),
+          ),
         ),
-        data: (items) {
-          final filtered = items.where((n) {
-            if (_filter == _NotifFilter.orders) {
-              return n.type == 'MERCHANT_ORDER_CREATED';
-            }
-            return true;
-          }).toList();
-          final groups = _groupByDay(filtered, now);
-          return Column(
-            children: [
-              Align(
-                alignment: AlignmentDirectional.centerStart,
-                child: SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  padding: const EdgeInsets.symmetric(vertical: 16),
-                  child: Row(
+        if (state.errorMessage != null)
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+            child: ErrorBody(
+              message: state.errorMessage!,
+              onRetry: () =>
+                  ref.read(notificationsControllerProvider.notifier).reload(),
+            ),
+          ),
+        Expanded(
+          child: RefreshIndicator(
+            onRefresh: _refresh,
+            child: filtered.isEmpty
+                ? ListView(
+                    physics: const AlwaysScrollableScrollPhysics(),
                     children: [
-                      _FilterPill(
-                        key: const Key('notif-filter-all'),
-                        label: AppStrings.notificationsFilterAll,
-                        selected: _filter == _NotifFilter.all,
-                        onTap: () => setState(() => _filter = _NotifFilter.all),
-                      ),
-                      const SizedBox(width: 8),
-                      _FilterPill(
-                        key: const Key('notif-filter-orders'),
-                        label: AppStrings.notificationsFilterOrders,
-                        selected: _filter == _NotifFilter.orders,
-                        onTap: () =>
-                            setState(() => _filter = _NotifFilter.orders),
+                      const SizedBox(height: 48),
+                      Text(
+                        AppStrings.notificationsEmpty,
+                        key: const Key('notifications-empty'),
+                        textAlign: TextAlign.center,
                       ),
                     ],
-                  ),
-                ),
-              ),
-              Expanded(
-                child: RefreshIndicator(
-                  onRefresh: _refresh,
-                  child: filtered.isEmpty
-                      ? ListView(
-                          physics: const AlwaysScrollableScrollPhysics(),
-                          children: [
-                            SizedBox(height: 48),
-                            Text(
-                              AppStrings.notificationsEmpty,
-                              key: Key('notifications-empty'),
-                              textAlign: TextAlign.center,
+                  )
+                : ListView.builder(
+                    key: const Key('notifications-screen'),
+                    physics: const AlwaysScrollableScrollPhysics(),
+                    padding: const EdgeInsets.only(bottom: 24),
+                    itemCount: groups.length + (showFooter ? 1 : 0),
+                    itemBuilder: (context, index) {
+                      if (index >= groups.length) {
+                        return _PaginationFooter(
+                          loading: state.loadingMore,
+                          error: state.loadMoreError,
+                          onRetry: () => ref
+                              .read(notificationsControllerProvider.notifier)
+                              .loadMore(),
+                        );
+                      }
+                      final group = groups[index];
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          if (index > 0) const SizedBox(height: 16),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 12),
+                            child: Text(
+                              group.label.toUpperCase(),
+                              style: theme.textTheme.labelLarge?.copyWith(
+                                color: AppColors.outline,
+                                letterSpacing: 0.8,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
-                          ],
-                        )
-                      : ListView.builder(
-                          key: const Key('notifications-screen'),
-                          physics: const AlwaysScrollableScrollPhysics(),
-                          padding: const EdgeInsets.only(bottom: 24),
-                          itemCount: groups.length,
-                          itemBuilder: (context, index) {
-                            final group = groups[index];
-                            return Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                if (index > 0) const SizedBox(height: 16),
-                                Padding(
-                                  padding: const EdgeInsets.only(bottom: 12),
-                                  child: Text(
-                                    group.label.toUpperCase(),
-                                    style: theme.textTheme.labelLarge?.copyWith(
-                                      color: AppColors.outline,
-                                      letterSpacing: 0.8,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                  ),
-                                ),
-                                for (final n in group.items)
-                                  Padding(
-                                    padding: const EdgeInsets.only(bottom: 8),
-                                    child: _NotificationTile(
-                                      item: n,
-                                      now: now,
-                                      onOpen: () => _openItem(n),
-                                    ),
-                                  ),
-                              ],
-                            );
-                          },
-                        ),
-                ),
-              ),
-            ],
-          );
-        },
-      ),
+                          ),
+                          for (final n in group.items)
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 8),
+                              child: _NotificationTile(
+                                item: n,
+                                now: now,
+                                busy: state.mutating,
+                                onOpen: () => _openItem(n),
+                              ),
+                            ),
+                        ],
+                      );
+                    },
+                  ),
+          ),
+        ),
+      ],
     );
   }
 
   Future<void> _openItem(MerchantNotificationItem item) async {
+    final inbox = ref.read(notificationsControllerProvider);
+    if (inbox.mutating) {
+      return;
+    }
     if (!item.read) {
       await ref
           .read(notificationsControllerProvider.notifier)
           .markRead(item.id);
     }
     final orderId = item.sourceId;
-    if (item.type == 'MERCHANT_ORDER_CREATED' &&
-        orderId != null &&
-        orderId.isNotEmpty) {
-      ref.read(orderAlertControllerProvider.notifier).markOrderHandled(orderId);
+    if (item.type == 'MERCHANT_ORDER_CREATED') {
+      if (!isPlausibleSourceId(orderId)) {
+        if (!mounted) return;
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(AppStrings.notificationsDestinationUnavailable)),
+        );
+        return;
+      }
+      ref.read(orderAlertControllerProvider.notifier).markOrderHandled(orderId!);
       if (!mounted) return;
       context.push(AppRoutes.orderDetail(orderId));
     }
+  }
+}
+
+class _PaginationFooter extends StatelessWidget {
+  const _PaginationFooter({
+    required this.loading,
+    required this.error,
+    required this.onRetry,
+  });
+
+  final bool loading;
+  final String? error;
+  final VoidCallback onRetry;
+
+  @override
+  Widget build(BuildContext context) {
+    if (error != null) {
+      return Padding(
+        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
+        child: Column(
+          children: [
+            Text(
+              error!,
+              key: const Key('notifications-pagination-error'),
+              textAlign: TextAlign.center,
+            ),
+            TextButton(
+              key: const Key('notifications-pagination-retry'),
+              onPressed: onRetry,
+              child: Text(AppStrings.retry),
+            ),
+          ],
+        ),
+      );
+    }
+    return Center(
+      child: TextButton(
+        key: const Key('notifications-load-more'),
+        onPressed: loading ? null : onRetry,
+        child: Text(
+          loading
+              ? AppStrings.notificationsLoadingMore
+              : AppStrings.notificationsLoadMore,
+        ),
+      ),
+    );
   }
 }
 
@@ -273,16 +359,23 @@ class _NotificationTile extends StatelessWidget {
     required this.item,
     required this.now,
     required this.onOpen,
+    this.busy = false,
   });
 
   final MerchantNotificationItem item;
   final DateTime now;
   final VoidCallback onOpen;
+  final bool busy;
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final isOrder = item.type == 'MERCHANT_ORDER_CREATED';
+    final copy = resolveSystemNotificationCopy(
+      type: item.type ?? '',
+      storedTitle: item.title,
+      storedBody: item.body,
+    );
     final (IconData icon, Color bg, Color fg) = switch (item.type) {
       'MERCHANT_ORDER_CREATED' => (
         Icons.shopping_basket_outlined,
@@ -300,13 +393,15 @@ class _NotificationTile extends StatelessWidget {
         AppColors.onSurfaceVariant,
       ),
     };
-    final publicRef = _extractPublicReference(item.body);
-    final bodyWithoutRef = publicRef == null
-        ? item.body
-        : item.body
+    final publicRef = copy.publicReference ?? _extractPublicReference(item.body);
+    final displayBody = publicRef == null
+        ? copy.body
+        : copy.body
               .replaceFirst(publicRef, '')
               .replaceAll(RegExp(r'\s{2,}'), ' ')
               .trim();
+    final titleDirection = _textDirectionFor(copy.title, context);
+    final bodyDirection = _textDirectionFor(displayBody, context);
     final time = _relativeTime(item.createdAt, now);
     final radius = BorderRadius.circular(12);
     return DecoratedBox(
@@ -320,7 +415,7 @@ class _NotificationTile extends StatelessWidget {
         borderRadius: radius,
         clipBehavior: Clip.antiAlias,
         child: InkWell(
-          onTap: onOpen,
+          onTap: busy ? null : onOpen,
           child: Container(
             decoration: item.read
                 ? null
@@ -355,10 +450,12 @@ class _NotificationTile extends StatelessWidget {
                             children: [
                               Expanded(
                                 child: Text(
-                                  item.title,
+                                  copy.title,
                                   style: theme.textTheme.titleMedium?.copyWith(
                                     fontWeight: FontWeight.w600,
                                   ),
+                                  textDirection: titleDirection,
+                                  textAlign: TextAlign.start,
                                 ),
                               ),
                               if (time.isNotEmpty) ...[
@@ -375,12 +472,14 @@ class _NotificationTile extends StatelessWidget {
                               ],
                             ],
                           ),
-                          if (bodyWithoutRef.isNotEmpty) ...[
+                          if (displayBody.isNotEmpty) ...[
                             const SizedBox(height: 4),
                             Text(
-                              bodyWithoutRef,
-                              maxLines: 3,
+                              displayBody,
+                              maxLines: 8,
                               overflow: TextOverflow.ellipsis,
+                              textDirection: bodyDirection,
+                              textAlign: TextAlign.start,
                               style: theme.textTheme.bodyMedium?.copyWith(
                                 color: AppColors.onSurfaceVariant,
                               ),
@@ -396,7 +495,7 @@ class _NotificationTile extends StatelessWidget {
                               height: 40,
                               child: FilledButton(
                                 key: Key('notification-details-${item.id}'),
-                                onPressed: onOpen,
+                                onPressed: busy ? null : onOpen,
                                 style: FilledButton.styleFrom(
                                   backgroundColor:
                                       AppColors.surfaceContainerHigh,
@@ -444,6 +543,14 @@ String? _extractPublicReference(String body) {
   return m?.group(0);
 }
 
+TextDirection _textDirectionFor(String value, BuildContext context) {
+  return switch (guessTextDirection(value)) {
+    TextDirectionGuess.rtl => TextDirection.rtl,
+    TextDirectionGuess.ltr => TextDirection.ltr,
+    TextDirectionGuess.neutral => Directionality.of(context),
+  };
+}
+
 class _DayGroup {
   const _DayGroup({required this.label, required this.items});
   final String label;
@@ -489,14 +596,16 @@ String _relativeTime(String iso, DateTime now) {
   if (at == null) return '';
   final diff = now.toUtc().difference(at.toUtc());
   if (diff.inMinutes < 1) return AppStrings.notificationsJustNow;
-  if (diff.inMinutes < 60) return '${diff.inMinutes} min';
+  if (diff.inMinutes < 60) {
+    return AppStrings.notificationsMinutesShort(diff.inMinutes);
+  }
   final local = branchLocalNow(at);
   final today = branchLocalNow(now);
   final sameDay =
       local.year == today.year &&
       local.month == today.month &&
       local.day == today.day;
-  if (sameDay) return '${diff.inHours} h';
+  if (sameDay) return AppStrings.notificationsHoursShort(diff.inHours);
   final yesterday = DateTime.utc(
     today.year,
     today.month,

@@ -27,7 +27,7 @@ class OrdersScreen extends ConsumerWidget {
         .watch(branchAvailabilityControllerProvider)
         .value
         ?.isOpenNow;
-    final unread = ref.watch(notificationsUnreadCountProvider).value ?? 0;
+    final unread = ref.watch(notificationsUnreadCountProvider) ?? 0;
     final counts = ref.watch(homeOrderCountsProvider).value;
     final selected = async.value?.filter ?? MerchantOrderListFilter.incoming;
     final history = selected.isHistory;

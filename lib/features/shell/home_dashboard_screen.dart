@@ -47,7 +47,7 @@ class HomeScreen extends ConsumerWidget {
     final activeOrders = ref.watch(homeActiveOrdersProvider);
     final todaySales = ref.watch(todaySalesSummaryProvider);
     final lastSync = ref.watch(homeLastSyncProvider);
-    final unread = ref.watch(notificationsUnreadCountProvider).value ?? 0;
+    final unread = ref.watch(notificationsUnreadCountProvider) ?? 0;
     final title =
         branch?.name ?? membership?.merchantName ?? AppStrings.homeTitle;
     // Reference shows the availability pill only; the operational pill appears

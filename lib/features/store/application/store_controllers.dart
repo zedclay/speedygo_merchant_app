@@ -5,6 +5,8 @@ import 'package:speedygo_merchant_app/features/auth/application/auth_infrastruct
 import 'package:speedygo_merchant_app/features/store/data/classification_models.dart';
 import 'package:speedygo_merchant_app/features/store/data/store_models.dart';
 
+export 'notifications_inbox_controller.dart';
+
 class OpeningHoursController extends AsyncNotifier<OpeningHoursSchedule> {
   @override
   Future<OpeningHoursSchedule> build() async {
@@ -294,47 +296,7 @@ final branchAvailabilityControllerProvider =
     AsyncNotifierProvider<
       BranchAvailabilityController,
       BranchAvailabilityState
-    >(BranchAvailabilityController.new);
-
-class NotificationsController
-    extends AsyncNotifier<List<MerchantNotificationItem>> {
-  @override
-  Future<List<MerchantNotificationItem>> build() async {
-    return ref.read(merchantApiProvider).listNotifications();
-  }
-
-  Future<void> reload() async {
-    state = const AsyncLoading();
-    state = await AsyncValue.guard(build);
-  }
-
-  Future<void> markRead(String id) async {
-    await ref.read(merchantApiProvider).markNotificationRead(id);
-    await reload();
-    ref.invalidate(notificationsUnreadCountProvider);
-  }
-
-  Future<void> markAllRead() async {
-    await ref.read(merchantApiProvider).markAllNotificationsRead();
-    await reload();
-    ref.invalidate(notificationsUnreadCountProvider);
-  }
-}
-
-final notificationsControllerProvider =
-    AsyncNotifierProvider<
-      NotificationsController,
-      List<MerchantNotificationItem>
-    >(NotificationsController.new);
-
-final notificationsUnreadCountProvider = FutureProvider<int>((ref) async {
-  ref.watch(accessControllerProvider);
-  try {
-    return await ref.read(merchantApiProvider).notificationsUnreadCount();
-  } catch (_) {
-    return 0;
-  }
-});
+    >(      BranchAvailabilityController.new);
 
 Duration? _noAutomaticRetry(int _, Object _) => null;
 

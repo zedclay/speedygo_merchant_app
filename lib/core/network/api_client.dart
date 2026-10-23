@@ -19,7 +19,11 @@ Dio createApiClient({
       baseUrl: config.apiBaseUrl,
       connectTimeout: const Duration(seconds: 10),
       receiveTimeout: const Duration(seconds: 20),
-      headers: const {'Accept': 'application/json'},
+      headers: const {
+        'Accept': 'application/json',
+        'X-SpeedyGo-Money-Contract': 'dzd-v2',
+        AppConstants.speedyGoAppHeader: AppConstants.speedyGoAppAudience,
+      },
     ),
   );
   if (readSession != null && refresher != null) {
@@ -41,7 +45,11 @@ Dio createRefreshClient({required ApiConfig config}) {
       baseUrl: config.apiBaseUrl,
       connectTimeout: const Duration(seconds: 10),
       receiveTimeout: const Duration(seconds: 15),
-      headers: const {'Accept': 'application/json'},
+      headers: const {
+        'Accept': 'application/json',
+        'X-SpeedyGo-Money-Contract': 'dzd-v2',
+        AppConstants.speedyGoAppHeader: AppConstants.speedyGoAppAudience,
+      },
     ),
   );
 }

@@ -1590,6 +1590,19 @@ class FakeMerchantApi implements MerchantClient {
   }
 
   @override
+  Future<MerchantNotificationPage> listNotificationsPage({
+    int limit = 50,
+    int offset = 0,
+  }) async {
+    final items = await listNotifications(limit: limit, offset: offset);
+    return MerchantNotificationPage(
+      items: items,
+      total: items.length,
+      unreadCount: unreadCount,
+    );
+  }
+
+  @override
   Future<int> notificationsUnreadCount() async => unreadCount;
 
   @override

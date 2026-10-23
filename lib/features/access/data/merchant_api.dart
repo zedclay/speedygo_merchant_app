@@ -3,6 +3,7 @@ import 'dart:typed_data';
 import 'package:dio/dio.dart';
 import 'package:speedygo_merchant_app/core/constants/app_constants.dart';
 import 'package:speedygo_merchant_app/core/errors/app_exception.dart';
+import 'package:speedygo_merchant_app/core/money/money_format.dart';
 import 'package:speedygo_merchant_app/core/network/api_error_parser.dart';
 import 'package:speedygo_merchant_app/features/access/data/geo_models.dart';
 import 'package:speedygo_merchant_app/features/access/data/models.dart';
@@ -491,6 +492,21 @@ abstract class MerchantClient {
     int limit = 50,
     int offset = 0,
   });
+
+  /// Account-scoped page. Default wraps [listNotifications] so test fakes
+  /// that only implement the list keep compiling.
+  Future<MerchantNotificationPage> listNotificationsPage({
+    int limit = 50,
+    int offset = 0,
+  }) async {
+    final items = await listNotifications(limit: limit, offset: offset);
+    return MerchantNotificationPage(
+      items: items,
+      total: offset + items.length,
+      unreadCount: items.where((n) => !n.read).length,
+    );
+  }
+
   Future<int> notificationsUnreadCount();
   Future<void> markNotificationRead(String notificationId);
   Future<int> markAllNotificationsRead();
@@ -1300,7 +1316,7 @@ class MerchantApi implements MerchantClient {
           'categoryId': categoryId,
           'name': name,
           if (description != null) 'description': description,
-          'priceMinor': priceMinor,
+          'price': MoneyFormat.centimesToDzdV2(priceMinor),
           'available': available,
           if (sellingUnit != null && !sellingUnit.isNone) ...{
             'sellingUnitCode': sellingUnit.code,
@@ -1332,7 +1348,7 @@ class MerchantApi implements MerchantClient {
           if (categoryId != null) 'categoryId': categoryId,
           if (name != null) 'name': name,
           if (description != null) 'description': description,
-          if (priceMinor != null) 'priceMinor': priceMinor,
+          if (priceMinor != null) 'price': MoneyFormat.centimesToDzdV2(priceMinor),
           if (available != null) 'available': available,
           if (sellingUnit != null) ...{
             'sellingUnitCode': sellingUnit.code,
@@ -1535,7 +1551,7 @@ class MerchantApi implements MerchantClient {
         ApiEndpoints.merchantOptions(merchantId, productId, groupId),
         data: {
           'name': name,
-          'additionalPriceMinor': additionalPriceMinor,
+          'additionalPrice': MoneyFormat.centimesToDzdV2(additionalPriceMinor),
           'available': available,
         },
       );
@@ -1560,7 +1576,10 @@ class MerchantApi implements MerchantClient {
         ApiEndpoints.merchantOption(merchantId, productId, groupId, optionId),
         data: {
           'name': ?name,
-          'additionalPriceMinor': ?additionalPriceMinor,
+          if (additionalPriceMinor != null)
+            'additionalPrice': MoneyFormat.centimesToDzdV2(
+              additionalPriceMinor,
+            ),
           'available': ?available,
         },
       );
@@ -2076,20 +2095,38 @@ class MerchantApi implements MerchantClient {
     int limit = 50,
     int offset = 0,
   }) async {
+    return (await listNotificationsPage(limit: limit, offset: offset)).items;
+  }
+
+  @override
+  Future<MerchantNotificationPage> listNotificationsPage({
+    int limit = 50,
+    int offset = 0,
+  }) async {
     try {
       final response = await _dio.get<Map<String, dynamic>>(
         ApiEndpoints.notificationsPath,
         queryParameters: {'limit': limit, 'offset': offset},
       );
-      final raw = response.data?['items'] ?? response.data?['notifications'];
-      if (raw is! List) return const [];
-      return raw
-          .whereType<Map>()
-          .map(
-            (e) =>
-                MerchantNotificationItem.fromJson(Map<String, dynamic>.from(e)),
-          )
-          .toList();
+      final data = response.data ?? const <String, dynamic>{};
+      final raw = data['items'] ?? data['notifications'];
+      final items = raw is List
+          ? raw
+                .whereType<Map>()
+                .map(
+                  (e) => MerchantNotificationItem.fromJson(
+                    Map<String, dynamic>.from(e),
+                  ),
+                )
+                .toList()
+          : const <MerchantNotificationItem>[];
+      return MerchantNotificationPage(
+        items: items,
+        total: (data['total'] as num?)?.toInt() ?? (offset + items.length),
+        unreadCount:
+            (data['unreadCount'] as num?)?.toInt() ??
+            items.where((n) => !n.read).length,
+      );
     } catch (e) {
       throw mapDioError(e);
     }

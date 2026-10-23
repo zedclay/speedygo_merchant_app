@@ -116,7 +116,14 @@ class _RegScaffold extends StatelessWidget {
                 : FontWeight.w600,
           ),
         ),
-        actions: appBarActions,
+        actions: [
+          ...?appBarActions,
+          TextButton(
+            key: const Key('registration_logout'),
+            onPressed: () => GoRouter.of(context).go(AppRoutes.logout),
+            child: Text(AppStrings.logout),
+          ),
+        ],
       ),
       body: SafeArea(
         child: Column(
@@ -1451,9 +1458,7 @@ class _EstablishmentStepState extends ConsumerState<_EstablishmentStep> {
                               if (reg.hasValidConfirmedLocation) ...[
                                 const SizedBox(height: 4),
                                 Text(
-                                  '${AppStrings.regPickupPlace} : '
-                                  '${double.parse(reg.branchLatDraft).toStringAsFixed(5)}, '
-                                  '${double.parse(reg.branchLngDraft).toStringAsFixed(5)}',
+                                  AppStrings.locationPointConfirmed,
                                   style: Theme.of(context).textTheme.bodySmall
                                       ?.copyWith(
                                         color: AppColors.onSurfaceVariant,
@@ -1607,7 +1612,7 @@ class _ConfirmedLocationCard extends StatelessWidget {
                             ?.copyWith(color: AppColors.onSurfaceVariant),
                       ),
                       Text(
-                        '${latitude.toStringAsFixed(5)}, ${longitude.toStringAsFixed(5)}',
+                        AppStrings.locationPointConfirmed,
                         key: const Key('merchant-reg-confirmed-coords'),
                         style: Theme.of(context).textTheme.bodySmall
                             ?.copyWith(color: AppColors.onSurfaceVariant),
