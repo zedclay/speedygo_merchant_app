@@ -15,8 +15,8 @@ import '../features/phase1_flow_test.dart';
 import '../features/startup_flow_test.dart';
 
 /// Captures verification-pending bottom edge after sticky-bar shadow fix.
-const _out =
-    '/Users/mac/Downloads/speedygo_project/apps/merchant_app/audit/registration-verification/captures';
+final _out =
+    '${Directory.current.path}/audit/registration-verification/captures';
 
 Future<void> _settle(WidgetTester tester) async {
   for (var i = 0; i < 40; i++) {

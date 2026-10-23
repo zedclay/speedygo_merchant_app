@@ -29,8 +29,8 @@ import 'parity_harness.dart';
 /// route. Each capture also writes the measured rectangles; this file records
 /// and never asserts, so it can document the state before a fix.
 const _phase = String.fromEnvironment('B9_PHASE', defaultValue: 'after');
-const _geometryOut =
-    '/Users/mac/Downloads/speedygo_project/apps/merchant_app/audit/parity/polish/geometry';
+final _geometryOut =
+    '${Directory.current.path}/audit/parity/polish/geometry';
 
 /// Bottom safe area of a notched phone (home indicator).
 const _safeBottom = 34.0;

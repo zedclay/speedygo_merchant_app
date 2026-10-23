@@ -17,8 +17,8 @@ import 'package:speedygo_merchant_app/features/shell/merchant_shell.dart';
 import '../../features/phase1_flow_test.dart';
 
 /// Mocked parity captures (fixture data, never live).
-const parityOut =
-    '/Users/mac/Downloads/speedygo_project/apps/merchant_app/audit/parity/mocked';
+final parityOut =
+    '${Directory.current.path}/audit/parity/mocked';
 
 const parityRootKey = Key('capture-root');
 

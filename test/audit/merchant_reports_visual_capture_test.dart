@@ -23,8 +23,8 @@ import '../features/phase1_flow_test.dart';
 import '../features/sales_report_fixtures.dart';
 
 /// Mocked (contract-shaped fixture) captures for Merchant sales reports.
-const _out =
-    '/Users/mac/Downloads/speedygo_project/apps/merchant_app/audit/phase-5-ui/reports';
+final _out =
+    '${Directory.current.path}/audit/phase-5-ui/reports';
 const _root = Key('reports-capture-root');
 
 Future<void> _capture(WidgetTester tester, String name) async {

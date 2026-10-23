@@ -25,7 +25,7 @@ Future<void> _capture(WidgetTester tester, String name) async {
     final image = await renderObject.toImage(pixelRatio: 1.5);
     final bytes = await image.toByteData(format: ui.ImageByteFormat.png);
     final file = File(
-      '/Users/mac/Downloads/speedygo_project/apps/merchant_app/audit/phase-1/captures/auth-ui/$name.png',
+      '${Directory.current.path}/audit/phase-1/captures/auth-ui/$name.png',
     );
     file.parent.createSync(recursive: true);
     await file.writeAsBytes(bytes!.buffer.asUint8List());
