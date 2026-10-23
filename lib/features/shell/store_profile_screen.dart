@@ -21,7 +21,7 @@ class StoreProfileScreen extends ConsumerWidget {
     final merchantName = membership?.merchantName ?? '';
     final branchName = branch?.name ?? merchantName;
     final roleLabel = _roleLabel(membership?.role ?? '');
-    final unread = ref.watch(notificationsUnreadCountProvider).value ?? 0;
+    final unread = ref.watch(notificationsUnreadCountProvider) ?? 0;
     final verified =
         membership?.merchantStatus.toUpperCase() == 'ACTIVE' &&
         membership?.approved == true;

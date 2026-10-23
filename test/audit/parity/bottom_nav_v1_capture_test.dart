@@ -10,8 +10,8 @@ import 'package:speedygo_merchant_app/app/theme/app_theme.dart';
 import 'package:speedygo_merchant_app/core/constants/app_strings.dart';
 import 'package:speedygo_merchant_app/features/shell/merchant_shell.dart';
 
-const _out =
-    '/Users/mac/Downloads/speedygo_project/apps/merchant_app/audit/parity/bottom_nav/mocked';
+final _out =
+    '${Directory.current.path}/audit/parity/bottom_nav/mocked';
 
 const _rootKey = Key('capture-root');
 const _phone = Size(390, 844);

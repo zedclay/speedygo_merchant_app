@@ -71,7 +71,7 @@ class _CatalogScreenState extends ConsumerState<CatalogScreen> {
     final canManage = catalogRoleCanManage(
       ref.watch(accessControllerProvider).membership?.role ?? '',
     );
-    final unread = ref.watch(notificationsUnreadCountProvider).value ?? 0;
+    final unread = ref.watch(notificationsUnreadCountProvider) ?? 0;
     final state = async.asData?.value;
     final onCategories = state?.tab == CatalogTab.categories;
     final listEmpty =

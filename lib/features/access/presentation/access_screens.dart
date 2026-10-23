@@ -7,6 +7,7 @@ import 'package:speedygo_merchant_app/core/navigation/app_routes.dart';
 import 'package:speedygo_merchant_app/core/widgets/merchant_ui.dart';
 import 'package:speedygo_merchant_app/features/access/application/access_controller.dart';
 import 'package:speedygo_merchant_app/features/access/data/models.dart';
+import 'package:speedygo_merchant_app/features/access/presentation/location_picker_screen.dart';
 import 'package:speedygo_merchant_app/features/access/presentation/evidence_presentation.dart';
 import 'package:speedygo_merchant_app/features/access/presentation/verification_review_widgets.dart';
 import 'package:speedygo_merchant_app/features/auth/application/session_controller.dart';
@@ -146,8 +147,9 @@ class _NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
   final _name = TextEditingController();
   final _phone = TextEditingController();
   final _address = TextEditingController();
-  final _lat = TextEditingController(text: '36.7538');
-  final _lng = TextEditingController(text: '3.0588');
+  final _lat = TextEditingController();
+  final _lng = TextEditingController();
+  var _pointConfirmed = false;
 
   @override
   void dispose() {
@@ -193,19 +195,45 @@ class _NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
             ),
           ),
           const SizedBox(height: 12),
-          TextField(
-            controller: _lat,
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-              labelText: AppStrings.branchLatLabel,
+          OutlinedButton.icon(
+            key: const Key('branch-choose-map'),
+            onPressed: access.busy
+                ? null
+                : () async {
+                    final lat = double.tryParse(_lat.text);
+                    final lng = double.tryParse(_lng.text);
+                    final result = await Navigator.of(context)
+                        .push<LocationPickResult>(
+                      MaterialPageRoute(
+                        builder: (_) => LocationPickerScreen(
+                          initialLatitude: lat,
+                          initialLongitude: lng,
+                          addressHint: _address.text.trim(),
+                          branchLabel: _name.text.trim(),
+                        ),
+                      ),
+                    );
+                    if (!mounted || result == null) return;
+                    setState(() {
+                      _lat.text = result.latitude.toString();
+                      _lng.text = result.longitude.toString();
+                      _pointConfirmed = true;
+                    });
+                  },
+            icon: const Icon(Icons.map_outlined),
+            label: Text(
+              _pointConfirmed
+                  ? AppStrings.locationPointConfirmed
+                  : AppStrings.locationChooseOnMap,
             ),
           ),
-          const SizedBox(height: 12),
-          TextField(
-            controller: _lng,
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-              labelText: AppStrings.branchLngLabel,
+          Offstage(
+            offstage: true,
+            child: Column(
+              children: [
+                TextField(controller: _lat),
+                TextField(controller: _lng),
+              ],
             ),
           ),
           if (access.errorMessage != null) ...[
@@ -220,19 +248,25 @@ class _NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
             key: const Key('branch-create-submit'),
             onPressed: access.busy
                 ? null
-                : () => ref
-                      .read(accessControllerProvider.notifier)
-                      .createBranch(
-                        name: _name.text,
-                        phone: _phone.text,
-                        addressText: _address.text,
-                        latitude: double.tryParse(_lat.text) ?? 0,
-                        longitude: double.tryParse(_lng.text) ?? 0,
-                        // Legacy need-branch form: Alger Centre catalogue pair.
-                        // Prefer registration / store-address screens for full selectors.
-                        wilayaCode: '16',
-                        communeId: 556,
-                      ),
+                : () {
+                    final lat = double.tryParse(_lat.text);
+                    final lng = double.tryParse(_lng.text);
+                    if (lat == null ||
+                        lng == null ||
+                        (lat == 0 && lng == 0) ||
+                        !_pointConfirmed) {
+                      return;
+                    }
+                    ref.read(accessControllerProvider.notifier).createBranch(
+                      name: _name.text,
+                      phone: _phone.text,
+                      addressText: _address.text,
+                      latitude: lat,
+                      longitude: lng,
+                      wilayaCode: '22',
+                      communeId: 824,
+                    );
+                  },
             child: Text(AppStrings.addBranch),
           ),
         ],

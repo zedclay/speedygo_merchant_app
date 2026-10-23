@@ -9,6 +9,7 @@ import 'package:speedygo_merchant_app/core/constants/app_strings.dart';
 import 'package:speedygo_merchant_app/core/widgets/merchant_ui.dart';
 import 'package:speedygo_merchant_app/core/widgets/searchable_admin_picker.dart';
 import 'package:speedygo_merchant_app/features/access/application/access_controller.dart';
+import 'package:speedygo_merchant_app/features/access/data/geo_admin_consistency.dart';
 import 'package:speedygo_merchant_app/features/access/data/geo_models.dart';
 import 'package:speedygo_merchant_app/features/access/data/map_config.dart';
 import 'package:speedygo_merchant_app/features/access/presentation/location_picker_screen.dart';
@@ -217,6 +218,8 @@ class _StoreAddressScreenState extends ConsumerState<StoreAddressScreen> {
               ? null
               : _address.text.trim(),
           branchLabel: ref.read(accessControllerProvider).selectedBranch?.name,
+          wilayaCode: _selectedWilaya?.code,
+          wilayaLabel: _selectedWilaya?.nameFr,
         ),
       ),
     );
@@ -285,19 +288,27 @@ class _StoreAddressScreenState extends ConsumerState<StoreAddressScreen> {
             communeId: commune?.id,
           );
       await ref.read(accessControllerProvider.notifier).selectBranch(updated);
-      if (!mounted) return;
-      // Pop before refresh so the editor dismisses even if refresh remounts shell.
-      context.pop(true);
-      try {
-        await ref.read(accessControllerProvider.notifier).refreshInPlace();
-      } catch (_) {}
-    } catch (_) {
+    } catch (error) {
+      debugPrint('GEO_STORE_ADDRESS_SAVE_FAIL:$error');
       if (!mounted) return;
       setState(() {
         _saving = false;
         _error = AppStrings.storeAddressSaveError;
       });
+      return;
     }
+    if (!mounted) return;
+    setState(() {
+      _saving = false;
+      _error = null;
+    });
+    // Deep-links / test `go()` have nothing to pop; that is not a save failure.
+    if (context.canPop()) {
+      context.pop(true);
+    }
+    try {
+      await ref.read(accessControllerProvider.notifier).refreshInPlace();
+    } catch (_) {}
   }
 
   @override
@@ -473,6 +484,38 @@ class _StoreAddressScreenState extends ConsumerState<StoreAddressScreen> {
                   const SizedBox(height: 24),
                   _AddressSection(
                     children: [
+                      if (_locationConfirmed &&
+                          !GeoAdminConsistency.pinMatchesWilaya(
+                            wilayaCode: _selectedWilaya?.code,
+                            latitude: _lat,
+                            longitude: _lng,
+                          ))
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: Text(
+                            AppStrings.locationWilayaPinMismatch(
+                              _selectedWilaya?.nameFr ?? '',
+                            ),
+                            key: const Key('store-address-wilaya-mismatch'),
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: AppColors.error,
+                            ),
+                          ),
+                        ),
+                      OutlinedButton.icon(
+                        key: const Key('store-address-open-map'),
+                        style: OutlinedButton.styleFrom(
+                          foregroundColor: AppColors.primary,
+                          side: const BorderSide(color: AppColors.primary),
+                          minimumSize: const Size.fromHeight(48),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                        ),
+                        onPressed: canManage && !_saving ? _openMap : null,
+                        icon: const Icon(Icons.map_outlined, size: 20),
+                        label: Text(AppStrings.storeAddressConfirmMap),
+                      ),
                       SizedBox(
                         height: 160,
                         child: ClipRRect(
@@ -553,20 +596,6 @@ class _StoreAddressScreenState extends ConsumerState<StoreAddressScreen> {
                             ),
                           ],
                         ),
-                      OutlinedButton.icon(
-                        key: const Key('store-address-open-map'),
-                        style: OutlinedButton.styleFrom(
-                          foregroundColor: AppColors.primary,
-                          side: const BorderSide(color: AppColors.primary),
-                          minimumSize: const Size.fromHeight(48),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(4),
-                          ),
-                        ),
-                        onPressed: canManage && !_saving ? _openMap : null,
-                        icon: const Icon(Icons.map_outlined, size: 20),
-                        label: Text(AppStrings.storeAddressConfirmMap),
-                      ),
                     ],
                   ),
                   if (_error != null) ...[

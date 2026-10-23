@@ -30,7 +30,8 @@ class AppStrings {
   static String get adminLocationPairRequired => l10n.adminLocationPairRequired;
   static String get adminLocationRetry => l10n.adminLocationRetry;
   static String get adminLocationSearchHint => l10n.adminLocationSearchHint;
-  static String get adminLocationWilayaRequired => l10n.adminLocationWilayaRequired;
+  static String get adminLocationWilayaRequired =>
+      l10n.adminLocationWilayaRequired;
   static String get alertDismiss => l10n.alertDismiss;
   static String get alertItems => l10n.alertItems;
   static String get alertNewOrder => l10n.alertNewOrder;
@@ -59,21 +60,30 @@ class AppStrings {
   static String get approvedSubtitle => l10n.approvedSubtitle;
   static String get approvedTitle => l10n.approvedTitle;
   static String get attentionRequired => l10n.attentionRequired;
-  static String get availabilityActiveOrdersUnknown => l10n.availabilityActiveOrdersUnknown;
-  static String get availabilityBannerClosedBody => l10n.availabilityBannerClosedBody;
-  static String get availabilityBannerClosedTitle => l10n.availabilityBannerClosedTitle;
-  static String get availabilityBannerOpenBody => l10n.availabilityBannerOpenBody;
-  static String get availabilityBannerOpenTitle => l10n.availabilityBannerOpenTitle;
-  static String get availabilityBannerScheduleClosedBody => l10n.availabilityBannerScheduleClosedBody;
-  static String get availabilityBannerScheduleClosedTitle => l10n.availabilityBannerScheduleClosedTitle;
-  static String get availabilityCloseWarningTitle => l10n.availabilityCloseWarningTitle;
+  static String get availabilityActiveOrdersUnknown =>
+      l10n.availabilityActiveOrdersUnknown;
+  static String get availabilityBannerClosedBody =>
+      l10n.availabilityBannerClosedBody;
+  static String get availabilityBannerClosedTitle =>
+      l10n.availabilityBannerClosedTitle;
+  static String get availabilityBannerOpenBody =>
+      l10n.availabilityBannerOpenBody;
+  static String get availabilityBannerOpenTitle =>
+      l10n.availabilityBannerOpenTitle;
+  static String get availabilityBannerScheduleClosedBody =>
+      l10n.availabilityBannerScheduleClosedBody;
+  static String get availabilityBannerScheduleClosedTitle =>
+      l10n.availabilityBannerScheduleClosedTitle;
+  static String get availabilityCloseWarningTitle =>
+      l10n.availabilityCloseWarningTitle;
   static String get availabilityClosed => l10n.availabilityClosed;
   static String get availabilityClosedToday => l10n.availabilityClosedToday;
   static String get availabilityClosureSaved => l10n.availabilityClosureSaved;
   static String get availabilityConfirmReopen => l10n.availabilityConfirmReopen;
   static String get availabilityConflict => l10n.availabilityConflict;
   static String get availabilityEstablishment => l10n.availabilityEstablishment;
-  static String get availabilityFollowSchedule => l10n.availabilityFollowSchedule;
+  static String get availabilityFollowSchedule =>
+      l10n.availabilityFollowSchedule;
   static String get availabilityForceClosed => l10n.availabilityForceClosed;
   static String get availabilityLoadError => l10n.availabilityLoadError;
   static String get availabilityModifyHours => l10n.availabilityModifyHours;
@@ -81,12 +91,15 @@ class AppStrings {
   static String get availabilityPause30 => l10n.availabilityPause30;
   static String get availabilityPause60 => l10n.availabilityPause60;
   static String get availabilityQuickPause => l10n.availabilityQuickPause;
-  static String get availabilityQuickPauseHint => l10n.availabilityQuickPauseHint;
+  static String get availabilityQuickPauseHint =>
+      l10n.availabilityQuickPauseHint;
   static String get availabilityReasonLunch => l10n.availabilityReasonLunch;
   static String get availabilityReasonPeak => l10n.availabilityReasonPeak;
   static String get availabilityReasonStock => l10n.availabilityReasonStock;
-  static String get availabilityReasonTechnical => l10n.availabilityReasonTechnical;
-  static String get availabilityReopenOutsideHoursBody => l10n.availabilityReopenOutsideHoursBody;
+  static String get availabilityReasonTechnical =>
+      l10n.availabilityReasonTechnical;
+  static String get availabilityReopenOutsideHoursBody =>
+      l10n.availabilityReopenOutsideHoursBody;
   static String get availabilityReopenTitle => l10n.availabilityReopenTitle;
   static String get availabilitySave => l10n.availabilitySave;
   static String get availabilitySaveError => l10n.availabilitySaveError;
@@ -131,7 +144,8 @@ class AppStrings {
   static String get catalogCategoryActive => l10n.catalogCategoryActive;
   static String get catalogCategoryActiveSub => l10n.catalogCategoryActiveSub;
   static String get catalogCategoryCancel => l10n.catalogCategoryCancel;
-  static String get catalogCategoryDetailTitle => l10n.catalogCategoryDetailTitle;
+  static String get catalogCategoryDetailTitle =>
+      l10n.catalogCategoryDetailTitle;
   static String get catalogCategoryDetails => l10n.catalogCategoryDetails;
   static String get catalogCategoryEmpty => l10n.catalogCategoryEmpty;
   static String get catalogCategoryInUse => l10n.catalogCategoryInUse;
@@ -153,13 +167,16 @@ class AppStrings {
   static String get catalogCurrencySuffix => l10n.catalogCurrencySuffix;
   static String get catalogCustomerPreview => l10n.catalogCustomerPreview;
   static String get catalogDeleteCategory => l10n.catalogDeleteCategory;
-  static String get catalogDeleteCategoryConfirm => l10n.catalogDeleteCategoryConfirm;
+  static String get catalogDeleteCategoryConfirm =>
+      l10n.catalogDeleteCategoryConfirm;
   static String get catalogDeleteConfirm => l10n.catalogDeleteConfirm;
   static String get catalogDeleteHardConfirm => l10n.catalogDeleteHardConfirm;
   static String get catalogDeleteHardOption => l10n.catalogDeleteHardOption;
-  static String get catalogDeleteHardOptionSub => l10n.catalogDeleteHardOptionSub;
+  static String get catalogDeleteHardOptionSub =>
+      l10n.catalogDeleteHardOptionSub;
   static String get catalogDeleteHideOption => l10n.catalogDeleteHideOption;
-  static String get catalogDeleteHideOptionSub => l10n.catalogDeleteHideOptionSub;
+  static String get catalogDeleteHideOptionSub =>
+      l10n.catalogDeleteHideOptionSub;
   static String get catalogDeleteProduct => l10n.catalogDeleteProduct;
   static String get catalogDeleteRecommended => l10n.catalogDeleteRecommended;
   static String get catalogDeleteTitle => l10n.catalogDeleteTitle;
@@ -170,7 +187,8 @@ class AppStrings {
   static String get catalogDetailAvailable => l10n.catalogDetailAvailable;
   static String get catalogDetailInfo => l10n.catalogDetailInfo;
   static String get catalogDetailName => l10n.catalogDetailName;
-  static String get catalogDetailNoDescription => l10n.catalogDetailNoDescription;
+  static String get catalogDetailNoDescription =>
+      l10n.catalogDetailNoDescription;
   static String get catalogDetailNoOptions => l10n.catalogDetailNoOptions;
   static String get catalogDetailPrice => l10n.catalogDetailPrice;
   static String get catalogDetailPricing => l10n.catalogDetailPricing;
@@ -183,7 +201,8 @@ class AppStrings {
   static String get catalogExtrasSubtitle => l10n.catalogExtrasSubtitle;
   static String get catalogExtrasTitle => l10n.catalogExtrasTitle;
   static String get catalogFieldCategoryDesc => l10n.catalogFieldCategoryDesc;
-  static String get catalogFieldCategoryNameAr => l10n.catalogFieldCategoryNameAr;
+  static String get catalogFieldCategoryNameAr =>
+      l10n.catalogFieldCategoryNameAr;
   static String get catalogFieldDescAr => l10n.catalogFieldDescAr;
   static String get catalogFieldExtras => l10n.catalogFieldExtras;
   static String get catalogFieldNameAr => l10n.catalogFieldNameAr;
@@ -194,7 +213,8 @@ class AppStrings {
   static String get catalogFilterTooltip => l10n.catalogFilterTooltip;
   static String get catalogFiltersApply => l10n.catalogFiltersApply;
   static String get catalogFiltersCategories => l10n.catalogFiltersCategories;
-  static String get catalogFiltersMissingImage => l10n.catalogFiltersMissingImage;
+  static String get catalogFiltersMissingImage =>
+      l10n.catalogFiltersMissingImage;
   static String get catalogFiltersOutOfStock => l10n.catalogFiltersOutOfStock;
   static String get catalogFiltersPreview => l10n.catalogFiltersPreview;
   static String get catalogFiltersQuality => l10n.catalogFiltersQuality;
@@ -207,7 +227,8 @@ class AppStrings {
   static String get catalogGroupName => l10n.catalogGroupName;
   static String get catalogGroupNameHint => l10n.catalogGroupNameHint;
   static String get catalogGroupRequiredSub => l10n.catalogGroupRequiredSub;
-  static String get catalogGroupRequiredSwitch => l10n.catalogGroupRequiredSwitch;
+  static String get catalogGroupRequiredSwitch =>
+      l10n.catalogGroupRequiredSwitch;
   static String get catalogGroupSave => l10n.catalogGroupSave;
   static String get catalogGroupsLoadError => l10n.catalogGroupsLoadError;
   static String get catalogHidden => l10n.catalogHidden;
@@ -222,7 +243,8 @@ class AppStrings {
   static String get catalogImagePick => l10n.catalogImagePick;
   static String get catalogImagePluginRestart => l10n.catalogImagePluginRestart;
   static String get catalogImagePrimary => l10n.catalogImagePrimary;
-  static String get catalogImageRemoteUnavailable => l10n.catalogImageRemoteUnavailable;
+  static String get catalogImageRemoteUnavailable =>
+      l10n.catalogImageRemoteUnavailable;
   static String get catalogImageRemove => l10n.catalogImageRemove;
   static String get catalogImageTooLarge => l10n.catalogImageTooLarge;
   static String get catalogImageTooSmall => l10n.catalogImageTooSmall;
@@ -247,18 +269,21 @@ class AppStrings {
   static String get catalogOptionDelete => l10n.catalogOptionDelete;
   static String get catalogOptionName => l10n.catalogOptionName;
   static String get catalogOptionPrice => l10n.catalogOptionPrice;
-  static String catalogOptionalSummary(String max) => l10n.catalogOptionalSummary(max);
+  static String catalogOptionalSummary(String max) =>
+      l10n.catalogOptionalSummary(max);
   static String get catalogOptionsEmpty => l10n.catalogOptionsEmpty;
   static String get catalogOutOfStock => l10n.catalogOutOfStock;
   static String get catalogOutOfStockNow => l10n.catalogOutOfStockNow;
-  static String get catalogOutOfStockOptionSub => l10n.catalogOutOfStockOptionSub;
+  static String get catalogOutOfStockOptionSub =>
+      l10n.catalogOutOfStockOptionSub;
   static String get catalogPreview => l10n.catalogPreview;
   static String get catalogPreviewTitle => l10n.catalogPreviewTitle;
   static String get catalogPreviewUnavailable => l10n.catalogPreviewUnavailable;
   static String get catalogPriceInvalid => l10n.catalogPriceInvalid;
   static String get catalogPriceWarning => l10n.catalogPriceWarning;
   static String get catalogProductAvailable => l10n.catalogProductAvailable;
-  static String get catalogProductAvailableSub => l10n.catalogProductAvailableSub;
+  static String get catalogProductAvailableSub =>
+      l10n.catalogProductAvailableSub;
   static String get catalogProductCategory => l10n.catalogProductCategory;
   static String get catalogProductDescription => l10n.catalogProductDescription;
   static String get catalogProductDetail => l10n.catalogProductDetail;
@@ -273,22 +298,26 @@ class AppStrings {
   static String get catalogReorderSave => l10n.catalogReorderSave;
   static String get catalogReorderSaved => l10n.catalogReorderSaved;
   static String get catalogReorderTitle => l10n.catalogReorderTitle;
-  static String catalogRequiredSummary(String rule) => l10n.catalogRequiredSummary(rule);
+  static String catalogRequiredSummary(String rule) =>
+      l10n.catalogRequiredSummary(rule);
   static String get catalogRequiredTag => l10n.catalogRequiredTag;
   static String get catalogSaveError => l10n.catalogSaveError;
-  static String get catalogSaveFirstForOptions => l10n.catalogSaveFirstForOptions;
+  static String get catalogSaveFirstForOptions =>
+      l10n.catalogSaveFirstForOptions;
   static String get catalogSaveProduct => l10n.catalogSaveProduct;
   static String get catalogSaveProductEdits => l10n.catalogSaveProductEdits;
   static String get catalogSaveRetryHint => l10n.catalogSaveRetryHint;
   static String get catalogSearchHint => l10n.catalogSearchHint;
-  static String get catalogSectionAvailability => l10n.catalogSectionAvailability;
+  static String get catalogSectionAvailability =>
+      l10n.catalogSectionAvailability;
   static String get catalogSectionConfig => l10n.catalogSectionConfig;
   static String get catalogSectionGeneral => l10n.catalogSectionGeneral;
   static String get catalogSectionImage => l10n.catalogSectionImage;
   static String get catalogSectionInfo => l10n.catalogSectionInfo;
   static String get catalogSectionMedia => l10n.catalogSectionMedia;
   static String get catalogSectionPrice => l10n.catalogSectionPrice;
-  static String get catalogSectionPriceDetails => l10n.catalogSectionPriceDetails;
+  static String get catalogSectionPriceDetails =>
+      l10n.catalogSectionPriceDetails;
   static String get catalogSingleChoice => l10n.catalogSingleChoice;
   static String get catalogStaffReadOnly => l10n.catalogStaffReadOnly;
   static String get catalogTabCategories => l10n.catalogTabCategories;
@@ -311,11 +340,16 @@ class AppStrings {
   static String get deliveryCancelled => l10n.deliveryCancelled;
   static String get deliveryDelivered => l10n.deliveryDelivered;
   static String get deliveryFailed => l10n.deliveryFailed;
-  static String get deliveryImpactDriverWaiting => l10n.deliveryImpactDriverWaiting;
-  static String deliveryImpactLatestRevision(String reason) => l10n.deliveryImpactLatestRevision(reason);
-  static String get deliveryImpactMayDelayDriverAssignment => l10n.deliveryImpactMayDelayDriverAssignment;
-  static String get deliveryImpactMayDelayPickup => l10n.deliveryImpactMayDelayPickup;
-  static String get deliveryImpactTimingUnavailable => l10n.deliveryImpactTimingUnavailable;
+  static String get deliveryImpactDriverWaiting =>
+      l10n.deliveryImpactDriverWaiting;
+  static String deliveryImpactLatestRevision(String reason) =>
+      l10n.deliveryImpactLatestRevision(reason);
+  static String get deliveryImpactMayDelayDriverAssignment =>
+      l10n.deliveryImpactMayDelayDriverAssignment;
+  static String get deliveryImpactMayDelayPickup =>
+      l10n.deliveryImpactMayDelayPickup;
+  static String get deliveryImpactTimingUnavailable =>
+      l10n.deliveryImpactTimingUnavailable;
   static String get deliveryImpactTitle => l10n.deliveryImpactTitle;
   static String get deliveryInTransit => l10n.deliveryInTransit;
   static String get deliveryPickedUp => l10n.deliveryPickedUp;
@@ -324,7 +358,8 @@ class AppStrings {
   static String get deliveryUnknown => l10n.deliveryUnknown;
   static String get dossierAttemptLabel => l10n.dossierAttemptLabel;
   static String get dossierConsentLabel => l10n.dossierConsentLabel;
-  static String dossierConsentVersions(String terms, String declaration) => l10n.dossierConsentVersions(terms, declaration);
+  static String dossierConsentVersions(String terms, String declaration) =>
+      l10n.dossierConsentVersions(terms, declaration);
   static String get dossierReviewedAtLabel => l10n.dossierReviewedAtLabel;
   static String get dossierSubmittedAtLabel => l10n.dossierSubmittedAtLabel;
   static String get duplicateBackToCatalog => l10n.duplicateBackToCatalog;
@@ -335,7 +370,8 @@ class AppStrings {
   static String get duplicateCreate => l10n.duplicateCreate;
   static String get duplicateCreated => l10n.duplicateCreated;
   static String get duplicateCreating => l10n.duplicateCreating;
-  static String duplicateDefaultName(String name) => l10n.duplicateDefaultName(name);
+  static String duplicateDefaultName(String name) =>
+      l10n.duplicateDefaultName(name);
   static String get duplicateError => l10n.duplicateError;
   static String get duplicateForbiddenTitle => l10n.duplicateForbiddenTitle;
   static String get duplicateImage => l10n.duplicateImage;
@@ -375,7 +411,8 @@ class AppStrings {
   static String get homeActiveOrdersEmpty => l10n.homeActiveOrdersEmpty;
   static String get homeActiveOrdersTitle => l10n.homeActiveOrdersTitle;
   static String get homeCountCourier => l10n.homeCountCourier;
-  static String get homeCountCourierUnavailable => l10n.homeCountCourierUnavailable;
+  static String get homeCountCourierUnavailable =>
+      l10n.homeCountCourierUnavailable;
   static String get homeCountIncoming => l10n.homeCountIncoming;
   static String get homeCountPreparing => l10n.homeCountPreparing;
   static String get homeCountReady => l10n.homeCountReady;
@@ -398,12 +435,17 @@ class AppStrings {
   static String get hoursExceptionsConflict => l10n.hoursExceptionsConflict;
   static String get hoursExceptionsDate => l10n.hoursExceptionsDate;
   static String get hoursExceptionsDateHint => l10n.hoursExceptionsDateHint;
-  static String get hoursExceptionsDateRequired => l10n.hoursExceptionsDateRequired;
+  static String get hoursExceptionsDateRequired =>
+      l10n.hoursExceptionsDateRequired;
   static String get hoursExceptionsDateTaken => l10n.hoursExceptionsDateTaken;
-  static String hoursExceptionsDeleteBody(String date) => l10n.hoursExceptionsDeleteBody(date);
-  static String get hoursExceptionsDeleteConfirm => l10n.hoursExceptionsDeleteConfirm;
-  static String get hoursExceptionsDeleteError => l10n.hoursExceptionsDeleteError;
-  static String get hoursExceptionsDeleteTitle => l10n.hoursExceptionsDeleteTitle;
+  static String hoursExceptionsDeleteBody(String date) =>
+      l10n.hoursExceptionsDeleteBody(date);
+  static String get hoursExceptionsDeleteConfirm =>
+      l10n.hoursExceptionsDeleteConfirm;
+  static String get hoursExceptionsDeleteError =>
+      l10n.hoursExceptionsDeleteError;
+  static String get hoursExceptionsDeleteTitle =>
+      l10n.hoursExceptionsDeleteTitle;
   static String get hoursExceptionsDeleted => l10n.hoursExceptionsDeleted;
   static String get hoursExceptionsEdit => l10n.hoursExceptionsEdit;
   static String get hoursExceptionsEmpty => l10n.hoursExceptionsEmpty;
@@ -411,28 +453,34 @@ class AppStrings {
   static String get hoursExceptionsHelpOk => l10n.hoursExceptionsHelpOk;
   static String get hoursExceptionsHelpTitle => l10n.hoursExceptionsHelpTitle;
   static String get hoursExceptionsHours => l10n.hoursExceptionsHours;
-  static String get hoursExceptionsIntervalsRequired => l10n.hoursExceptionsIntervalsRequired;
+  static String get hoursExceptionsIntervalsRequired =>
+      l10n.hoursExceptionsIntervalsRequired;
   static String get hoursExceptionsInvalid => l10n.hoursExceptionsInvalid;
   static String get hoursExceptionsLabel => l10n.hoursExceptionsLabel;
   static String get hoursExceptionsLabelHint => l10n.hoursExceptionsLabelHint;
-  static String get hoursExceptionsLabelRequired => l10n.hoursExceptionsLabelRequired;
+  static String get hoursExceptionsLabelRequired =>
+      l10n.hoursExceptionsLabelRequired;
   static String get hoursExceptionsLoadError => l10n.hoursExceptionsLoadError;
   static String get hoursExceptionsMessage => l10n.hoursExceptionsMessage;
-  static String get hoursExceptionsMessageHint => l10n.hoursExceptionsMessageHint;
+  static String get hoursExceptionsMessageHint =>
+      l10n.hoursExceptionsMessageHint;
   static String get hoursExceptionsNavSub => l10n.hoursExceptionsNavSub;
   static String get hoursExceptionsOpen => l10n.hoursExceptionsOpen;
   static String get hoursExceptionsSameDay => l10n.hoursExceptionsSameDay;
   static String get hoursExceptionsSave => l10n.hoursExceptionsSave;
   static String get hoursExceptionsSaveError => l10n.hoursExceptionsSaveError;
   static String get hoursExceptionsSaved => l10n.hoursExceptionsSaved;
-  static String get hoursExceptionsStaffReadOnly => l10n.hoursExceptionsStaffReadOnly;
+  static String get hoursExceptionsStaffReadOnly =>
+      l10n.hoursExceptionsStaffReadOnly;
   static String get hoursExceptionsStatus => l10n.hoursExceptionsStatus;
   static String get hoursExceptionsTitle => l10n.hoursExceptionsTitle;
   static String get hoursExceptionsTo => l10n.hoursExceptionsTo;
-  static String hoursExceptionsToday(String label) => l10n.hoursExceptionsToday(label);
+  static String hoursExceptionsToday(String label) =>
+      l10n.hoursExceptionsToday(label);
   static String get hoursExceptionsTooMany => l10n.hoursExceptionsTooMany;
   static String get hoursExceptionsUpcoming => l10n.hoursExceptionsUpcoming;
-  static String get hoursExceptionsWeeklyRequired => l10n.hoursExceptionsWeeklyRequired;
+  static String get hoursExceptionsWeeklyRequired =>
+      l10n.hoursExceptionsWeeklyRequired;
   static String get issuesApplicationTitle => l10n.issuesApplicationTitle;
   static String get issuesDocumentTitle => l10n.issuesDocumentTitle;
   static String get issuesFixHint => l10n.issuesFixHint;
@@ -447,6 +495,7 @@ class AppStrings {
         ? '1 point restant à corriger'
         : '$count points restants à corriger';
   }
+
   static String get issuesReplaceDocument => l10n.issuesReplaceDocument;
   static String get issuesResolved => l10n.issuesResolved;
   static String get issuesTitle => l10n.issuesTitle;
@@ -471,7 +520,8 @@ class AppStrings {
   static String get legalSectionTitle => l10n.legalSectionTitle;
   static String get legalTermsLabel => l10n.legalTermsLabel;
   static String get legalVersionOutdated => l10n.legalVersionOutdated;
-  static String legalVersionTag(String version) => l10n.legalVersionTag(version);
+  static String legalVersionTag(String version) =>
+      l10n.legalVersionTag(version);
   static String get loading => l10n.loading;
   static String get logout => l10n.logout;
   static String get logoutActiveOrders => l10n.logoutActiveOrders;
@@ -497,30 +547,38 @@ class AppStrings {
   static String get needHelp => l10n.needHelp;
   static String get networkError => l10n.networkError;
   static String get noMembershipBody => l10n.noMembershipBody;
-  static String get noMembershipInvitationsCta => l10n.noMembershipInvitationsCta;
+  static String get noMembershipInvitationsCta =>
+      l10n.noMembershipInvitationsCta;
   static String get noMembershipTitle => l10n.noMembershipTitle;
   static String get notifPushStatusDenied => l10n.notifPushStatusDenied;
   static String get notifPushStatusDisabled => l10n.notifPushStatusDisabled;
   static String get notifPushStatusFailed => l10n.notifPushStatusFailed;
   static String get notifPushStatusPending => l10n.notifPushStatusPending;
   static String get notifPushStatusRegistered => l10n.notifPushStatusRegistered;
-  static String get notifPushStatusTokenUnavailable => l10n.notifPushStatusTokenUnavailable;
-  static String get notifSettingsCriticalWarning => l10n.notifSettingsCriticalWarning;
+  static String get notifPushStatusTokenUnavailable =>
+      l10n.notifPushStatusTokenUnavailable;
+  static String get notifSettingsCriticalWarning =>
+      l10n.notifSettingsCriticalWarning;
   static String get notifSettingsForeground => l10n.notifSettingsForeground;
   static String get notifSettingsInAppSection => l10n.notifSettingsInAppSection;
-  static String get notifSettingsLockScreenNote => l10n.notifSettingsLockScreenNote;
+  static String get notifSettingsLockScreenNote =>
+      l10n.notifSettingsLockScreenNote;
   static String get notifSettingsNativePush => l10n.notifSettingsNativePush;
-  static String get notifSettingsNativePushSub => l10n.notifSettingsNativePushSub;
+  static String get notifSettingsNativePushSub =>
+      l10n.notifSettingsNativePushSub;
   static String get notifSettingsOsDenied => l10n.notifSettingsOsDenied;
   static String get notifSettingsOsDeniedPush => l10n.notifSettingsOsDeniedPush;
   static String get notifSettingsOsEnabled => l10n.notifSettingsOsEnabled;
-  static String get notifSettingsOsEnabledPush => l10n.notifSettingsOsEnabledPush;
+  static String get notifSettingsOsEnabledPush =>
+      l10n.notifSettingsOsEnabledPush;
   static String get notifSettingsOsNotAsked => l10n.notifSettingsOsNotAsked;
   static String get notifSettingsOsOpen => l10n.notifSettingsOsOpen;
   static String get notifSettingsPushBlocked => l10n.notifSettingsPushBlocked;
-  static String get notifSettingsPushNotConfigured => l10n.notifSettingsPushNotConfigured;
+  static String get notifSettingsPushNotConfigured =>
+      l10n.notifSettingsPushNotConfigured;
   static String get notifSettingsPushSection => l10n.notifSettingsPushSection;
-  static String get notifSettingsPushUnavailable => l10n.notifSettingsPushUnavailable;
+  static String get notifSettingsPushUnavailable =>
+      l10n.notifSettingsPushUnavailable;
   static String get notifSettingsSave => l10n.notifSettingsSave;
   static String get notifSettingsSaved => l10n.notifSettingsSaved;
   static String get notifSettingsScreenTitle => l10n.notifSettingsScreenTitle;
@@ -529,7 +587,8 @@ class AppStrings {
   static String get notifSettingsSwitchesNote => l10n.notifSettingsSwitchesNote;
   static String get notifSettingsTitle => l10n.notifSettingsTitle;
   static String get notifSettingsVibration => l10n.notifSettingsVibration;
-  static String get notifSettingsVibrationSection => l10n.notifSettingsVibrationSection;
+  static String get notifSettingsVibrationSection =>
+      l10n.notifSettingsVibrationSection;
   static String get notificationsEmpty => l10n.notificationsEmpty;
   static String get notificationsFilterAll => l10n.notificationsFilterAll;
   static String get notificationsFilterOrders => l10n.notificationsFilterOrders;
@@ -541,6 +600,113 @@ class AppStrings {
   static String get notificationsTitle => l10n.notificationsTitle;
   static String get notificationsToday => l10n.notificationsToday;
   static String get notificationsYesterday => l10n.notificationsYesterday;
+  static String get notificationsMarkReadError => isArabic
+      ? 'تعذّر تحديث حالة القراءة.'
+      : 'Impossible de mettre à jour l’état de lecture.';
+  static String get notificationsLoadMore =>
+      isArabic ? 'عرض المزيد' : 'Voir plus';
+  static String get notificationsLoadingMore =>
+      isArabic ? 'جاري التحميل…' : 'Chargement…';
+  static String get notificationsDestinationUnavailable => isArabic
+      ? 'لا يمكن فتح هذا الإشعار هنا.'
+      : 'Cette notification ne peut pas être ouverte ici.';
+  static String notificationsMinutesShort(int count) =>
+      isArabic ? '$count د' : '$count min';
+  static String notificationsHoursShort(int count) =>
+      isArabic ? '$count س' : '$count h';
+
+  static String get notifTitleOrderAccepted =>
+      isArabic ? 'تم قبول الطلب' : 'Commande acceptée';
+  static String notifBodyOrderAccepted(String reference) => isArabic
+      ? (reference.isEmpty
+            ? 'تم قبول الطلب من المتجر.'
+            : 'تم قبول الطلب $reference من المتجر.')
+      : (reference.isEmpty
+            ? 'La commande a été acceptée.'
+            : 'La commande $reference a été acceptée.');
+  static String get notifTitleOrderRejected =>
+      isArabic ? 'رُفض الطلب' : 'Commande refusée';
+  static String notifBodyOrderRejected(String reference) => isArabic
+      ? (reference.isEmpty
+            ? 'رُفض الطلب.'
+            : 'رُفض الطلب $reference.')
+      : (reference.isEmpty
+            ? 'La commande a été refusée.'
+            : 'La commande $reference a été refusée.');
+  static String get notifTitleOrderCancelled =>
+      isArabic ? 'أُلغي الطلب' : 'Commande annulée';
+  static String notifBodyOrderCancelled(String reference) => isArabic
+      ? (reference.isEmpty ? 'تم إلغاء الطلب.' : 'تم إلغاء الطلب $reference.')
+      : (reference.isEmpty
+            ? 'La commande a été annulée.'
+            : 'La commande $reference a été annulée.');
+  static String get notifTitleOrderReady =>
+      isArabic ? 'الطلب جاهز' : 'Commande prête';
+  static String notifBodyOrderReady(String reference) => isArabic
+      ? (reference.isEmpty
+            ? 'الطلب جاهز للاستلام.'
+            : 'الطلب $reference جاهز للاستلام.')
+      : (reference.isEmpty
+            ? 'La commande est prête.'
+            : 'La commande $reference est prête.');
+  static String get notifTitleDriverAssigned =>
+      isArabic ? 'تم تعيين مندوب' : 'Livreur assigné';
+  static String notifBodyDriverAssigned(String reference) => isArabic
+      ? (reference.isEmpty
+            ? 'تم تعيين مندوب للطلب.'
+            : 'تم تعيين مندوب للطلب $reference.')
+      : (reference.isEmpty
+            ? 'Un livreur a été assigné.'
+            : 'Un livreur a été assigné à la commande $reference.');
+  static String get notifTitleDeliveryCompleted =>
+      isArabic ? 'تم التوصيل' : 'Commande livrée';
+  static String notifBodyDeliveryCompleted(String reference) => isArabic
+      ? (reference.isEmpty ? 'تم توصيل الطلب.' : 'تم توصيل الطلب $reference.')
+      : (reference.isEmpty
+            ? 'La commande a été livrée.'
+            : 'La commande $reference a été livrée.');
+  static String get notifTitlePaymentSucceeded =>
+      isArabic ? 'تم الدفع' : 'Paiement réussi';
+  static String notifBodyPaymentSucceeded(String reference) => isArabic
+      ? (reference.isEmpty
+            ? 'تم تأكيد الدفع.'
+            : 'تم تأكيد الدفع للطلب $reference.')
+      : (reference.isEmpty
+            ? 'Le paiement a réussi.'
+            : 'Le paiement de la commande $reference a réussi.');
+  static String get notifTitleRefundRefunded =>
+      isArabic ? 'اكتمل الاسترداد' : 'Remboursement effectué';
+  static String notifBodyRefundRefunded(String reference) => isArabic
+      ? (reference.isEmpty
+            ? 'اكتمل استرداد للطلب.'
+            : 'اكتمل استرداد للطلب $reference.')
+      : (reference.isEmpty
+            ? 'Un remboursement a été effectué.'
+            : 'Un remboursement pour la commande $reference a été effectué.');
+  static String get notifTitleMatchOffer =>
+      isArabic ? 'عرض توصيل جديد' : 'Nouvelle course proposée';
+  static String get notifBodyMatchOffer => isArabic
+      ? 'عرض توصيل جديد بانتظار الرد.'
+      : 'Une nouvelle course est proposée.';
+  static String get notifTitleSettlementFinalized =>
+      isArabic ? 'اكتمل التسوية' : 'Règlement finalisé';
+  static String get notifBodySettlementFinalized => isArabic
+      ? 'يتوفر كشف تسوية. هذا ليس تأكيد تحويل بنكي.'
+      : 'Un relevé de règlement est disponible. Ceci n’est pas une confirmation de virement.';
+  static String get notifTitleDriverEarningCreated =>
+      isArabic ? 'سُجّل ربح' : 'Gain enregistré';
+  static String get notifBodyDriverEarningCreated => isArabic
+      ? 'سُجّل ربح توصيل.'
+      : 'Un gain de livraison a été enregistré.';
+  static String get notifTitleMerchantOrderCreated =>
+      isArabic ? 'طلب جديد' : 'Nouvelle commande';
+  static String notifBodyMerchantOrderCreated(String reference) => isArabic
+      ? (reference.isEmpty
+            ? 'يتطلب طلب جديد انتباهك.'
+            : 'يتطلب الطلب $reference انتباهك.')
+      : (reference.isEmpty
+            ? 'Une nouvelle commande nécessite votre attention.'
+            : 'Une nouvelle commande $reference nécessite votre attention.');
   static String get onboardingHaveAccount => l10n.onboardingHaveAccount;
   static String get onboardingNext => l10n.onboardingNext;
   static String get onboardingPage1Body => l10n.onboardingPage1Body;
@@ -599,17 +765,22 @@ class AppStrings {
   static String get orderDriverAssigned => l10n.orderDriverAssigned;
   static String get orderDriverCall => l10n.orderDriverCall;
   static String get orderDriverCardTitle => l10n.orderDriverCardTitle;
-  static String get orderDriverContactUnavailable => l10n.orderDriverContactUnavailable;
+  static String get orderDriverContactUnavailable =>
+      l10n.orderDriverContactUnavailable;
   static String get orderDriverEtaLabel => l10n.orderDriverEtaLabel;
   static String get orderDriverEtaUnavailable => l10n.orderDriverEtaUnavailable;
   static String get orderDriverStatusLabel => l10n.orderDriverStatusLabel;
-  static String get orderFinanceCommissionUnavailable => l10n.orderFinanceCommissionUnavailable;
-  static String get orderFinanceDeliveryFeeDisclaimer => l10n.orderFinanceDeliveryFeeDisclaimer;
-  static String get orderFinanceDeliveryFeeNote => l10n.orderFinanceDeliveryFeeNote;
+  static String get orderFinanceCommissionUnavailable =>
+      l10n.orderFinanceCommissionUnavailable;
+  static String get orderFinanceDeliveryFeeDisclaimer =>
+      l10n.orderFinanceDeliveryFeeDisclaimer;
+  static String get orderFinanceDeliveryFeeNote =>
+      l10n.orderFinanceDeliveryFeeNote;
   static String get orderFinanceDiscount => l10n.orderFinanceDiscount;
   static String get orderFinanceGms => l10n.orderFinanceGms;
   static String get orderFinanceNet => l10n.orderFinanceNet;
-  static String get orderFinanceNetCancelledNote => l10n.orderFinanceNetCancelledNote;
+  static String get orderFinanceNetCancelledNote =>
+      l10n.orderFinanceNetCancelledNote;
   static String get orderFinanceRestricted => l10n.orderFinanceRestricted;
   static String get orderFinanceTitle => l10n.orderFinanceTitle;
   static String get orderFulfillmentAccepted => l10n.orderFulfillmentAccepted;
@@ -631,7 +802,8 @@ class AppStrings {
   static String get orderPaymentCod => l10n.orderPaymentCod;
   static String get orderPaymentElectronic => l10n.orderPaymentElectronic;
   static String get orderPaymentLabel => l10n.orderPaymentLabel;
-  static String orderPaymentMethod(String method) => l10n.orderPaymentMethod(method);
+  static String orderPaymentMethod(String method) =>
+      l10n.orderPaymentMethod(method);
   static String get orderQuickAccepted => l10n.orderQuickAccepted;
   static String get orderQuickAlreadyHandled => l10n.orderQuickAlreadyHandled;
   static String get orderQuickCheckFailed => l10n.orderQuickCheckFailed;
@@ -693,12 +865,14 @@ class AppStrings {
   static String get prepAcceptTitle => l10n.prepAcceptTitle;
   static String get prepAddTime => l10n.prepAddTime;
   static String get prepBranchLabel => l10n.prepBranchLabel;
-  static String prepClockOnDay(String day, String time) => l10n.prepClockOnDay(day, time);
+  static String prepClockOnDay(String day, String time) =>
+      l10n.prepClockOnDay(day, time);
   static String get prepConfirmAccept => l10n.prepConfirmAccept;
   static String get prepCurrentReady => l10n.prepCurrentReady;
   static String get prepCurrentShort => l10n.prepCurrentShort;
   static String get prepCustomEntry => l10n.prepCustomEntry;
-  static String prepCustomRange(String min, String max) => l10n.prepCustomRange(min, max);
+  static String prepCustomRange(String min, String max) =>
+      l10n.prepCustomRange(min, max);
   static String get prepCustomTime => l10n.prepCustomTime;
   static String get prepEstimatedTitle => l10n.prepEstimatedTitle;
   static String get prepInProgress => l10n.prepInProgress;
@@ -709,17 +883,20 @@ class AppStrings {
     }
     return count <= 1 ? '1 article' : '$n articles';
   }
+
   static String get prepLateHint => l10n.prepLateHint;
   static String get prepMinutesCaption => l10n.prepMinutesCaption;
   static String get prepNewShort => l10n.prepNewShort;
   static String prepOnDay(String day) => l10n.prepOnDay(day);
   static String prepOriginalReady(String time) => l10n.prepOriginalReady(time);
-  static String prepOriginalReadyLabel(String time) => l10n.prepOriginalReadyLabel(time);
+  static String prepOriginalReadyLabel(String time) =>
+      l10n.prepOriginalReadyLabel(time);
   static String get prepReasonBusy => l10n.prepReasonBusy;
   static String get prepReasonFieldLabel => l10n.prepReasonFieldLabel;
   static String get prepReasonHint => l10n.prepReasonHint;
   static String get prepReasonLongPrep => l10n.prepReasonLongPrep;
-  static String get prepReasonMissingIngredient => l10n.prepReasonMissingIngredient;
+  static String get prepReasonMissingIngredient =>
+      l10n.prepReasonMissingIngredient;
   static String get prepReasonOptional => l10n.prepReasonOptional;
   static String get prepReasonOther => l10n.prepReasonOther;
   static String get prepReasonShortcutsHint => l10n.prepReasonShortcutsHint;
@@ -768,7 +945,8 @@ class AppStrings {
   static String get regContinue => l10n.regContinue;
   static String get regCoordsConfirmHint => l10n.regCoordsConfirmHint;
   static String get regCoordsInvalid => l10n.regCoordsInvalid;
-  static String get regCorrectionActionRequired => l10n.regCorrectionActionRequired;
+  static String get regCorrectionActionRequired =>
+      l10n.regCorrectionActionRequired;
   static String get regCorrectionDetails => l10n.regCorrectionDetails;
   static String get regCorrectionSubmit => l10n.regCorrectionSubmit;
   static String get regCorrectionTitle => l10n.regCorrectionTitle;
@@ -801,13 +979,39 @@ class AppStrings {
   static String get regLocationMoveHint => l10n.regLocationMoveHint;
   static String get regLocationPickerTitle => l10n.regLocationPickerTitle;
   static String get regLocationRequired => l10n.regLocationRequired;
-  static String get regLocationServicesDisabled => l10n.regLocationServicesDisabled;
+  static String get regLocationServicesDisabled =>
+      l10n.regLocationServicesDisabled;
   static String get regLocationUnavailable => l10n.regLocationUnavailable;
   static String get regLocationUseGps => l10n.regLocationUseGps;
+  static String get locationSearchHint =>
+      isArabic ? 'ابحث عن عنوان' : 'Rechercher une adresse';
+  static String get locationSearchUnavailable => isArabic
+      ? 'البحث عن العناوين غير مفعّل. حدّد الموقع على الخريطة.'
+      : 'La recherche d’adresse n’est pas configurée. Choisissez le point sur la carte.';
+  static String get locationSearchEmpty => isArabic
+      ? 'لا توجد نتائج لهذا البحث.'
+      : 'Aucun résultat pour cette recherche.';
+  static String get locationSearchFailed => isArabic
+      ? 'تعذّر البحث. أعد المحاولة أو حدّد الموقع على الخريطة.'
+      : 'La recherche a échoué. Réessayez ou choisissez le point sur la carte.';
+  static String get locationPointConfirmed =>
+      isArabic ? 'تم تأكيد الموقع' : 'Emplacement confirmé';
+  static String get locationMapTilesDev => isArabic
+      ? 'خريطة تطوير (OSM). خرائط Google غير مفعّلة.'
+      : 'Carte de développement (tuiles OSM). Google Maps n’est pas activé.';
+  static String get locationChooseOnMap =>
+      isArabic ? 'اختيار على الخريطة' : 'Choisir sur la carte';
+  static String locationWilayaPinMismatch(String wilayaLabel) => isArabic
+      ? 'النقطة المؤكَّدة ليست في ولاية $wilayaLabel. حرّك الخريطة ثم أكّد. تغيير الولاية لا ينقل النقطة.'
+      : 'Le point confirmé n’est pas dans la wilaya $wilayaLabel. Déplacez la carte puis confirmez. Changer la wilaya ne déplace pas le point.';
+  static String locationRecenterWilaya(String wilayaLabel) => isArabic
+      ? 'إظهار $wilayaLabel على الخريطة'
+      : 'Recentrer la carte sur $wilayaLabel';
   static String get regMissingSteps => l10n.regMissingSteps;
   static String get regOperator => l10n.regOperator;
   static String get regOperatorHint => l10n.regOperatorHint;
-  static String get regOperatorOpenInvitations => l10n.regOperatorOpenInvitations;
+  static String get regOperatorOpenInvitations =>
+      l10n.regOperatorOpenInvitations;
   static String get regOperatorUnsupported => l10n.regOperatorUnsupported;
   static String get regOwner => l10n.regOwner;
   static String get regOwnerHint => l10n.regOwnerHint;
@@ -831,37 +1035,60 @@ class AppStrings {
   static String get regVerifiedPhoneHint => l10n.regVerifiedPhoneHint;
   static String get rejectReasonClosingSoon => l10n.rejectReasonClosingSoon;
   static String get rejectReasonOther => l10n.rejectReasonOther;
-  static String get rejectReasonProductUnavailable => l10n.rejectReasonProductUnavailable;
+  static String get rejectReasonProductUnavailable =>
+      l10n.rejectReasonProductUnavailable;
   static String get rejectReasonTilesHint => l10n.rejectReasonTilesHint;
   static String get rejectReasonTooBusy => l10n.rejectReasonTooBusy;
-  static String get reportsAverageBasketMetric => l10n.reportsAverageBasketMetric;
-  static String get reportsCancellationsMetric => l10n.reportsCancellationsMetric;
+  static String get reportsAverageBasketMetric =>
+      l10n.reportsAverageBasketMetric;
+  static String get reportsCancellationsMetric =>
+      l10n.reportsCancellationsMetric;
   static String get reportsCommission => l10n.reportsCommission;
-  static String get reportsCommissionMixedRates => l10n.reportsCommissionMixedRates;
+  static String get reportsCommissionMixedRates =>
+      l10n.reportsCommissionMixedRates;
   static String get reportsCustomRangeTooLong => l10n.reportsCustomRangeTooLong;
-  static String get reportsDailySummaryBreakdownTitle => l10n.reportsDailySummaryBreakdownTitle;
-  static String get reportsDailySummaryCancellationMotifs => l10n.reportsDailySummaryCancellationMotifs;
-  static String get reportsDailySummaryCancellationsKpi => l10n.reportsDailySummaryCancellationsKpi;
-  static String get reportsDailySummaryCancelled => l10n.reportsDailySummaryCancelled;
-  static String get reportsDailySummaryDelivered => l10n.reportsDailySummaryDelivered;
+  static String get reportsDailySummaryBreakdownTitle =>
+      l10n.reportsDailySummaryBreakdownTitle;
+  static String get reportsDailySummaryCancellationMotifs =>
+      l10n.reportsDailySummaryCancellationMotifs;
+  static String get reportsDailySummaryCancellationsKpi =>
+      l10n.reportsDailySummaryCancellationsKpi;
+  static String get reportsDailySummaryCancelled =>
+      l10n.reportsDailySummaryCancelled;
+  static String get reportsDailySummaryDelivered =>
+      l10n.reportsDailySummaryDelivered;
   static String get reportsDailySummaryEmpty => l10n.reportsDailySummaryEmpty;
-  static String get reportsDailySummaryInProgress => l10n.reportsDailySummaryInProgress;
-  static String get reportsDailySummaryLoadError => l10n.reportsDailySummaryLoadError;
-  static String reportsDailySummaryOnTimePercent(String percent) => l10n.reportsDailySummaryOnTimePercent(percent);
-  static String get reportsDailySummaryOnTimeRate => l10n.reportsDailySummaryOnTimeRate;
-  static String get reportsDailySummaryOrdersKpi => l10n.reportsDailySummaryOrdersKpi;
-  static String get reportsDailySummaryPrepAverage => l10n.reportsDailySummaryPrepAverage;
-  static String get reportsDailySummaryPrepEfficiencyTitle => l10n.reportsDailySummaryPrepEfficiencyTitle;
-  static String get reportsDailySummaryPrepKpi => l10n.reportsDailySummaryPrepKpi;
-  static String get reportsDailySummarySalesKpi => l10n.reportsDailySummarySalesKpi;
-  static String get reportsDailySummaryShortcut => l10n.reportsDailySummaryShortcut;
+  static String get reportsDailySummaryInProgress =>
+      l10n.reportsDailySummaryInProgress;
+  static String get reportsDailySummaryLoadError =>
+      l10n.reportsDailySummaryLoadError;
+  static String reportsDailySummaryOnTimePercent(String percent) =>
+      l10n.reportsDailySummaryOnTimePercent(percent);
+  static String get reportsDailySummaryOnTimeRate =>
+      l10n.reportsDailySummaryOnTimeRate;
+  static String get reportsDailySummaryOrdersKpi =>
+      l10n.reportsDailySummaryOrdersKpi;
+  static String get reportsDailySummaryPrepAverage =>
+      l10n.reportsDailySummaryPrepAverage;
+  static String get reportsDailySummaryPrepEfficiencyTitle =>
+      l10n.reportsDailySummaryPrepEfficiencyTitle;
+  static String get reportsDailySummaryPrepKpi =>
+      l10n.reportsDailySummaryPrepKpi;
+  static String get reportsDailySummarySalesKpi =>
+      l10n.reportsDailySummarySalesKpi;
+  static String get reportsDailySummaryShortcut =>
+      l10n.reportsDailySummaryShortcut;
   static String get reportsDailySummaryTitle => l10n.reportsDailySummaryTitle;
-  static String reportsDailySummaryTodayDate(String label) => l10n.reportsDailySummaryTodayDate(label);
-  static String get reportsDailySummaryViewOrders => l10n.reportsDailySummaryViewOrders;
+  static String reportsDailySummaryTodayDate(String label) =>
+      l10n.reportsDailySummaryTodayDate(label);
+  static String get reportsDailySummaryViewOrders =>
+      l10n.reportsDailySummaryViewOrders;
   static String get reportsDataUnavailable => l10n.reportsDataUnavailable;
-  static String get reportsDataUnavailableShort => l10n.reportsDataUnavailableShort;
+  static String get reportsDataUnavailableShort =>
+      l10n.reportsDataUnavailableShort;
   static String get reportsDeletedProduct => l10n.reportsDeletedProduct;
-  static String get reportsFinanceMissingSnapshot => l10n.reportsFinanceMissingSnapshot;
+  static String get reportsFinanceMissingSnapshot =>
+      l10n.reportsFinanceMissingSnapshot;
   static String get reportsFinanceRestricted => l10n.reportsFinanceRestricted;
   static String get reportsFinanceTitle => l10n.reportsFinanceTitle;
   static String get reportsFinanceUnavailable => l10n.reportsFinanceUnavailable;
@@ -876,10 +1103,12 @@ class AppStrings {
     }
     return n == 1 ? '1 commande' : '$count commandes';
   }
+
   static String get reportsOrdersMetric => l10n.reportsOrdersMetric;
   static String get reportsPeriodCustom => l10n.reportsPeriodCustom;
   static String get reportsPeriodMonth => l10n.reportsPeriodMonth;
-  static String get reportsPeriodSelectorLabel => l10n.reportsPeriodSelectorLabel;
+  static String get reportsPeriodSelectorLabel =>
+      l10n.reportsPeriodSelectorLabel;
   static String get reportsPeriodToday => l10n.reportsPeriodToday;
   static String get reportsPeriodWeek => l10n.reportsPeriodWeek;
   static String get reportsPeriodYesterday => l10n.reportsPeriodYesterday;
@@ -896,19 +1125,24 @@ class AppStrings {
   static String get reportsSalesLoadError => l10n.reportsSalesLoadError;
   static String get reportsSeeAll => l10n.reportsSeeAll;
   static String get reportsSettlementsEmpty => l10n.reportsSettlementsEmpty;
-  static String get reportsSettlementsForbidden => l10n.reportsSettlementsForbidden;
+  static String get reportsSettlementsForbidden =>
+      l10n.reportsSettlementsForbidden;
   static String get reportsSettlementsTitle => l10n.reportsSettlementsTitle;
   static String get reportsSortOrders => l10n.reportsSortOrders;
   static String get reportsSortRevenue => l10n.reportsSortRevenue;
   static String get reportsTitle => l10n.reportsTitle;
   static String get reportsTopProductsEmpty => l10n.reportsTopProductsEmpty;
-  static String get reportsTopProductsLoadError => l10n.reportsTopProductsLoadError;
-  static String get reportsTopProductsScreenTitle => l10n.reportsTopProductsScreenTitle;
+  static String get reportsTopProductsLoadError =>
+      l10n.reportsTopProductsLoadError;
+  static String get reportsTopProductsScreenTitle =>
+      l10n.reportsTopProductsScreenTitle;
   static String get reportsTopProductsTitle => l10n.reportsTopProductsTitle;
-  static String get reportsTopProductsUnavailable => l10n.reportsTopProductsUnavailable;
+  static String get reportsTopProductsUnavailable =>
+      l10n.reportsTopProductsUnavailable;
   static String get reportsTopSales => l10n.reportsTopSales;
   static String get reportsTrendEmpty => l10n.reportsTrendEmpty;
-  static String reportsTrendSemantics(String orders, String gross) => l10n.reportsTrendSemantics(orders, gross);
+  static String reportsTrendSemantics(String orders, String gross) =>
+      l10n.reportsTrendSemantics(orders, gross);
   static String get reportsTrendTitle => l10n.reportsTrendTitle;
   static String get reportsTrendUnavailable => l10n.reportsTrendUnavailable;
   static String get resend => l10n.resend;
@@ -943,7 +1177,8 @@ class AppStrings {
   static String get settingsNotificationsOff => l10n.settingsNotificationsOff;
   static String get settingsProfileRow => l10n.settingsProfileRow;
   static String get settingsSupportSection => l10n.settingsSupportSection;
-  static String get settingsTeamInvitationsRow => l10n.settingsTeamInvitationsRow;
+  static String get settingsTeamInvitationsRow =>
+      l10n.settingsTeamInvitationsRow;
   static String get settingsTeamRow => l10n.settingsTeamRow;
   static String get splashLegacyTagline => l10n.splashLegacyTagline;
   static String get splashTagline => l10n.splashTagline;
@@ -952,7 +1187,8 @@ class AppStrings {
   static String get storeAddressConfirmMap => l10n.storeAddressConfirmMap;
   static String get storeAddressCoordsSection => l10n.storeAddressCoordsSection;
   static String get storeAddressDetailed => l10n.storeAddressDetailed;
-  static String get storeAddressLocationSummary => l10n.storeAddressLocationSummary;
+  static String get storeAddressLocationSummary =>
+      l10n.storeAddressLocationSummary;
   static String get storeAddressPhone => l10n.storeAddressPhone;
   static String get storeAddressPhoneHint => l10n.storeAddressPhoneHint;
   static String get storeAddressPickupHints => l10n.storeAddressPickupHints;
@@ -981,7 +1217,8 @@ class AppStrings {
   static String get storeCoverBindPartial => l10n.storeCoverBindPartial;
   static String get storeCoverHint => l10n.storeCoverHint;
   static String get storeCoverPick => l10n.storeCoverPick;
-  static String get storeCoverRemoteUnavailable => l10n.storeCoverRemoteUnavailable;
+  static String get storeCoverRemoteUnavailable =>
+      l10n.storeCoverRemoteUnavailable;
   static String get storeCoverRemove => l10n.storeCoverRemove;
   static String get storeCoverReplace => l10n.storeCoverReplace;
   static String get storeCoverSave => l10n.storeCoverSave;
@@ -992,22 +1229,27 @@ class AppStrings {
   static String get storeCustomerPreviewHint => l10n.storeCustomerPreviewHint;
   static String get storeCustomerPreviewTitle => l10n.storeCustomerPreviewTitle;
   static String get storeGeneralBranchName => l10n.storeGeneralBranchName;
-  static String get storeGeneralBranchNameHint => l10n.storeGeneralBranchNameHint;
+  static String get storeGeneralBranchNameHint =>
+      l10n.storeGeneralBranchNameHint;
   static String get storeGeneralDescription => l10n.storeGeneralDescription;
-  static String get storeGeneralDescriptionHint => l10n.storeGeneralDescriptionHint;
+  static String get storeGeneralDescriptionHint =>
+      l10n.storeGeneralDescriptionHint;
   static String get storeGeneralEmailInvalid => l10n.storeGeneralEmailInvalid;
   static String get storeGeneralForbidden => l10n.storeGeneralForbidden;
-  static String get storeGeneralMerchantLocked => l10n.storeGeneralMerchantLocked;
+  static String get storeGeneralMerchantLocked =>
+      l10n.storeGeneralMerchantLocked;
   static String get storeGeneralMerchantName => l10n.storeGeneralMerchantName;
   static String get storeGeneralNameAr => l10n.storeGeneralNameAr;
   static String get storeGeneralNameArHint => l10n.storeGeneralNameArHint;
   static String get storeGeneralNameRequired => l10n.storeGeneralNameRequired;
-  static String get storeGeneralPhoneElsewhere => l10n.storeGeneralPhoneElsewhere;
+  static String get storeGeneralPhoneElsewhere =>
+      l10n.storeGeneralPhoneElsewhere;
   static String get storeGeneralPreviewClosed => l10n.storeGeneralPreviewClosed;
   static String get storeGeneralPreviewOpen => l10n.storeGeneralPreviewOpen;
   static String get storeGeneralPreviewTitle => l10n.storeGeneralPreviewTitle;
   static String get storeGeneralPublicEmail => l10n.storeGeneralPublicEmail;
-  static String get storeGeneralPublicEmailHint => l10n.storeGeneralPublicEmailHint;
+  static String get storeGeneralPublicEmailHint =>
+      l10n.storeGeneralPublicEmailHint;
   static String get storeGeneralReadOnly => l10n.storeGeneralReadOnly;
   static String get storeGeneralRestricted => l10n.storeGeneralRestricted;
   static String get storeGeneralSave => l10n.storeGeneralSave;
@@ -1019,7 +1261,8 @@ class AppStrings {
   static String get storeLogoEdit => l10n.storeLogoEdit;
   static String get storeLogoEmpty => l10n.storeLogoEmpty;
   static String get storeLogoPending => l10n.storeLogoPending;
-  static String get storeLogoRemoteUnavailable => l10n.storeLogoRemoteUnavailable;
+  static String get storeLogoRemoteUnavailable =>
+      l10n.storeLogoRemoteUnavailable;
   static String get storeLogoRemove => l10n.storeLogoRemove;
   static String get storeLogoRemoveError => l10n.storeLogoRemoveError;
   static String get storeLogoRemoved => l10n.storeLogoRemoved;
@@ -1032,27 +1275,34 @@ class AppStrings {
   static String get storeProfileAddress => l10n.storeProfileAddress;
   static String get storeProfileAddressSub => l10n.storeProfileAddressSub;
   static String get storeProfileAvailability => l10n.storeProfileAvailability;
-  static String get storeProfileAvailabilitySub => l10n.storeProfileAvailabilitySub;
+  static String get storeProfileAvailabilitySub =>
+      l10n.storeProfileAvailabilitySub;
   static String get storeProfileCategory => l10n.storeProfileCategory;
   static String get storeProfileCategorySub => l10n.storeProfileCategorySub;
-  static String get storeProfileCustomerPreview => l10n.storeProfileCustomerPreview;
+  static String get storeProfileCustomerPreview =>
+      l10n.storeProfileCustomerPreview;
   static String get storeProfileGeneral => l10n.storeProfileGeneral;
   static String get storeProfileGeneralSub => l10n.storeProfileGeneralSub;
   static String get storeProfileHours => l10n.storeProfileHours;
   static String get storeProfileHoursSub => l10n.storeProfileHoursSub;
   static String get storeProfileMedia => l10n.storeProfileMedia;
   static String get storeProfileMediaSub => l10n.storeProfileMediaSub;
-  static String get storeProfileMediaUnavailable => l10n.storeProfileMediaUnavailable;
+  static String get storeProfileMediaUnavailable =>
+      l10n.storeProfileMediaUnavailable;
   static String get storeProfileNotifications => l10n.storeProfileNotifications;
-  static String get storeProfileNotificationsSub => l10n.storeProfileNotificationsSub;
+  static String get storeProfileNotificationsSub =>
+      l10n.storeProfileNotificationsSub;
   static String get storeProfilePrep => l10n.storeProfilePrep;
-  static String get storeProfilePrepUnavailable => l10n.storeProfilePrepUnavailable;
-  static String get storeProfilePreviewUnavailable => l10n.storeProfilePreviewUnavailable;
+  static String get storeProfilePrepUnavailable =>
+      l10n.storeProfilePrepUnavailable;
+  static String get storeProfilePreviewUnavailable =>
+      l10n.storeProfilePreviewUnavailable;
   static String get storeProfileSettings => l10n.storeProfileSettings;
   static String get storeProfileSettingsSub => l10n.storeProfileSettingsSub;
   static String get storeProfileTitle => l10n.storeProfileTitle;
   static String get submitVerification => l10n.submitVerification;
-  static String get submitVerificationUnavailable => l10n.submitVerificationUnavailable;
+  static String get submitVerificationUnavailable =>
+      l10n.submitVerificationUnavailable;
   static String get supportActiveTickets => l10n.supportActiveTickets;
   static String get supportBackToOrder => l10n.supportBackToOrder;
   static String get supportCenterTitle => l10n.supportCenterTitle;
@@ -1097,6 +1347,7 @@ class AppStrings {
   static String get supportTopicsHint => l10n.supportTopicsHint;
   static String get supportTopicsLoadError => l10n.supportTopicsLoadError;
   static String get supportTopicsTitle => l10n.supportTopicsTitle;
+
   /// Editable body prefixes for the legacy topic-tile compose sheet (D-G6).
   static String get supportTopicCatalogPrefix =>
       isArabic ? 'الكتالوج: ' : 'Catalogue : ';
@@ -1118,7 +1369,8 @@ class AppStrings {
   static String get teamAcceptTitle => l10n.teamAcceptTitle;
   static String get teamActiveMembers => l10n.teamActiveMembers;
   static String get teamCancelInvitation => l10n.teamCancelInvitation;
-  static String teamCancelInviteBody(String phone) => l10n.teamCancelInviteBody(phone);
+  static String teamCancelInviteBody(String phone) =>
+      l10n.teamCancelInviteBody(phone);
   static String get teamCancelInviteConfirm => l10n.teamCancelInviteConfirm;
   static String get teamCancelInviteTitle => l10n.teamCancelInviteTitle;
   static String get teamChangeRole => l10n.teamChangeRole;
@@ -1188,46 +1440,59 @@ class AppStrings {
   static String get teamTitle => l10n.teamTitle;
   static String get temporaryClosure1h => l10n.temporaryClosure1h;
   static String get temporaryClosure30m => l10n.temporaryClosure30m;
-  static String get temporaryClosureActionRequired => l10n.temporaryClosureActionRequired;
+  static String get temporaryClosureActionRequired =>
+      l10n.temporaryClosureActionRequired;
   static String get temporaryClosureConfirm => l10n.temporaryClosureConfirm;
-  static String get temporaryClosureImageImpact => l10n.temporaryClosureImageImpact;
-  static String get temporaryClosureImpactLead => l10n.temporaryClosureImpactLead;
-  static String get temporaryClosureImpactNone => l10n.temporaryClosureImpactNone;
-  static String get temporaryClosureImpactUnknown => l10n.temporaryClosureImpactUnknown;
-  static String get temporaryClosureIndefinite => l10n.temporaryClosureIndefinite;
-  static String get temporaryClosureManualReopenHint => l10n.temporaryClosureManualReopenHint;
+  static String get temporaryClosureImageImpact =>
+      l10n.temporaryClosureImageImpact;
+  static String get temporaryClosureImpactLead =>
+      l10n.temporaryClosureImpactLead;
+  static String get temporaryClosureImpactNone =>
+      l10n.temporaryClosureImpactNone;
+  static String get temporaryClosureImpactUnknown =>
+      l10n.temporaryClosureImpactUnknown;
+  static String get temporaryClosureIndefinite =>
+      l10n.temporaryClosureIndefinite;
+  static String get temporaryClosureManualReopenHint =>
+      l10n.temporaryClosureManualReopenHint;
   static String get temporaryClosureMessage => l10n.temporaryClosureMessage;
-  static String get temporaryClosureMessageHint => l10n.temporaryClosureMessageHint;
+  static String get temporaryClosureMessageHint =>
+      l10n.temporaryClosureMessageHint;
   static String get temporaryClosureOptional => l10n.temporaryClosureOptional;
   static String get temporaryClosurePastTime => l10n.temporaryClosurePastTime;
   static String get temporaryClosurePickTime => l10n.temporaryClosurePickTime;
   static String get temporaryClosureReason => l10n.temporaryClosureReason;
   static String get temporaryClosureReopen => l10n.temporaryClosureReopen;
-  static String get temporaryClosureStaffReadOnly => l10n.temporaryClosureStaffReadOnly;
+  static String get temporaryClosureStaffReadOnly =>
+      l10n.temporaryClosureStaffReadOnly;
   static String get temporaryClosureTitle => l10n.temporaryClosureTitle;
   static String get valueUnavailable => l10n.valueUnavailable;
   static String get verificationApprovedBody => l10n.verificationApprovedBody;
   static String get verificationApprovedTitle => l10n.verificationApprovedTitle;
-  static String get verificationCorrectAndSubmit => l10n.verificationCorrectAndSubmit;
-  static String get verificationDossierProgress => l10n.verificationDossierProgress;
+  static String get verificationCorrectAndSubmit =>
+      l10n.verificationCorrectAndSubmit;
+  static String get verificationDossierProgress =>
+      l10n.verificationDossierProgress;
   static String get verificationFinalStep => l10n.verificationFinalStep;
   static String get verificationFinalStepBody => l10n.verificationFinalStepBody;
   static String get verificationNeedHelp => l10n.verificationNeedHelp;
   static String get verificationPendingBody => l10n.verificationPendingBody;
   static String get verificationPendingTitle => l10n.verificationPendingTitle;
   static String get verificationReferenceFull => l10n.verificationReferenceFull;
-  static String get verificationReferenceLabel => l10n.verificationReferenceLabel;
+  static String get verificationReferenceLabel =>
+      l10n.verificationReferenceLabel;
   static String get verificationRejectedBody => l10n.verificationRejectedBody;
   static String get verificationRejectedTitle => l10n.verificationRejectedTitle;
-  static String get verificationRequestIdLabel => l10n.verificationRequestIdLabel;
+  static String get verificationRequestIdLabel =>
+      l10n.verificationRequestIdLabel;
   static String get verificationReviewStep => l10n.verificationReviewStep;
-  static String get verificationReviewStepBody => l10n.verificationReviewStepBody;
+  static String get verificationReviewStepBody =>
+      l10n.verificationReviewStepBody;
   static String get verificationSubmittedStep => l10n.verificationSubmittedStep;
   static String get verificationTimelineTitle => l10n.verificationTimelineTitle;
   static String get verify => l10n.verify;
 
   // Complex helpers
-
 
   static String otpSentTo(String masked) =>
       isArabic ? 'تم إرسال الرمز إلى $masked' : 'Code envoyé au $masked';
@@ -1269,8 +1534,9 @@ class AppStrings {
   static String orderFinanceCommission(String amount) =>
       isArabic ? 'العمولة: $amount' : 'Commission : $amount';
 
-  static String orderDriverSearchStarted(String when) =>
-      isArabic ? 'بدأ البحث عن سائق في $when' : 'Recherche livreur démarrée à $when';
+  static String orderDriverSearchStarted(String when) => isArabic
+      ? 'بدأ البحث عن سائق في $when'
+      : 'Recherche livreur démarrée à $when';
   static String orderDriverSearchStartedAt(String hhmm) =>
       isArabic ? 'بدأ البحث عند $hhmm' : 'Recherche démarrée à $hhmm';
   static String orderDriverEtaEstimate(String minutes) =>
@@ -1285,6 +1551,7 @@ class AppStrings {
     }
     return count == 1 ? '1 unité' : '$count unités';
   }
+
   static String catalogCategoriesCount(int count) =>
       isArabic ? '$count فئة' : '$count catégorie${count == 1 ? '' : 's'}';
   static String catalogBulkSelected(int count) =>
@@ -1307,9 +1574,7 @@ class AppStrings {
       : 'Invitation acceptée. Vous avez maintenant accès à $merchantName.';
   static String temporaryClosureImpactTail(int count) {
     if (isArabic) {
-      return count == 1
-          ? ' سيُبقى ويجب تحضيره.'
-          : ' ستُبقى ويجب تحضيرها.';
+      return count == 1 ? ' سيُبقى ويجب تحضيره.' : ' ستُبقى ويجب تحضيرها.';
     }
     return count == 1
         ? ' sera maintenue et doit être préparée.'
@@ -1467,7 +1732,9 @@ class AppStrings {
     if (isArabic) {
       return count == 1 ? 'الطلب الجاري' : 'الـ $count طلبات الجارية';
     }
-    return count == 1 ? 'La commande en cours' : 'Les $count commandes en cours';
+    return count == 1
+        ? 'La commande en cours'
+        : 'Les $count commandes en cours';
   }
 
   static String reportsTotalArticles(int count) {
@@ -1483,7 +1750,6 @@ class AppStrings {
     }
     return n == 1 ? 'Maximum 1 sélection' : 'Maximum $n sélections';
   }
-
 
   static String prepMinutesLabel(int minutes) =>
       isArabic ? '$minutes د' : '$minutes min';
@@ -1511,20 +1777,17 @@ class AppStrings {
   }) {
     if (isArabic) {
       return switch ((hasActiveOrders, storeOpen)) {
-        (true, true) =>
-          'لديك طلبات نشطة والمتجر مفتوح حاليًا.',
+        (true, true) => 'لديك طلبات نشطة والمتجر مفتوح حاليًا.',
         (true, false) => 'لديك طلبات نشطة.',
         _ => 'المتجر مفتوح حاليًا.',
       };
     }
     return switch ((hasActiveOrders, storeOpen)) {
-      (true, true) =>
-        'Vous avez des commandes actives et le magasin est actuellement ouvert.',
+      (true, true) => 'Vous avez des commandes actives et le magasin est actuellement ouvert.',
       (true, false) => 'Vous avez des commandes actives.',
       _ => 'Le magasin est actuellement ouvert.',
     };
   }
-
 
   static String catalogGroupsCount(int n) {
     if (isArabic) {
@@ -1559,7 +1822,6 @@ class AppStrings {
 
   static String reportsDailySummaryMinutes(int minutes) =>
       isArabic ? "$minutes د" : "$minutes min";
-
 
   static String errorForCode(String? code) {
     switch (code) {

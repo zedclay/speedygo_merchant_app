@@ -15,8 +15,8 @@ import 'package:speedygo_merchant_app/features/orders/presentation/order_detail_
 
 import '../../features/phase1_flow_test.dart';
 
-const _out =
-    '/Users/mac/Downloads/speedygo_project/apps/merchant_app/audit/parity/comparisons';
+final _out =
+    '${Directory.current.path}/audit/parity/comparisons';
 const _rootKey = Key('driver-handoff-capture-root');
 
 MerchantOrderDetail _readyOrder({required String id}) {

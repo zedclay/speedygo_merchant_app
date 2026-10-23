@@ -18,8 +18,8 @@ import 'package:speedygo_merchant_app/features/catalog/presentation/catalog_scre
 
 import '../../features/phase1_flow_test.dart';
 
-const _out =
-    '/Users/mac/Downloads/speedygo_project/apps/merchant_app/audit/parity/catalog_loading/mocked';
+final _out =
+    '${Directory.current.path}/audit/parity/catalog_loading/mocked';
 
 const _rootKey = Key('capture-root');
 const _phone = Size(390, 844);

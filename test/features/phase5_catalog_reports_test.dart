@@ -23,6 +23,8 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   test('majorInputToMinor parses DZD without float math', () {
+    expect(MoneyFormat.centimesToDzdV2(45000), '450.00');
+    expect(MoneyFormat.centimesToDzdV2(65000), '650.00');
     expect(MoneyFormat.majorInputToMinor('12'), 1200);
     expect(MoneyFormat.majorInputToMinor('12,5'), 1250);
     expect(MoneyFormat.majorInputToMinor('12.50'), 1250);

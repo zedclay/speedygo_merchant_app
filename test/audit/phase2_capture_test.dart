@@ -15,8 +15,8 @@ import 'package:speedygo_merchant_app/features/orders/presentation/order_detail_
 
 import '../features/phase1_flow_test.dart';
 
-const _out =
-    '/Users/mac/Downloads/speedygo_project/apps/merchant_app/audit/phase-2/captures';
+final _out =
+    '${Directory.current.path}/audit/phase-2/captures';
 
 Future<void> _capture(WidgetTester tester, String name) async {
   await tester.pump();

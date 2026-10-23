@@ -26,8 +26,8 @@ import 'package:speedygo_merchant_app/features/store/presentation/store_cover_sc
 import '../features/phase1_flow_test.dart';
 import '../helpers/path_provider_fixture.dart';
 
-const _out =
-    '/Users/mac/Downloads/speedygo_project/apps/merchant_app/audit/phase-5-ui/mocked/editors';
+final _out =
+    '${Directory.current.path}/audit/phase-5-ui/mocked/editors';
 
 const _captureRootKey = Key('capture-root');
 

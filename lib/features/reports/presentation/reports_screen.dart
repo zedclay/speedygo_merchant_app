@@ -29,7 +29,7 @@ class ReportsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final unread = ref.watch(notificationsUnreadCountProvider).value ?? 0;
+    final unread = ref.watch(notificationsUnreadCountProvider) ?? 0;
     return MerchantScaffold(
       title: AppStrings.reportsTitle,
       headerColor: AppColors.surface,

@@ -1,0 +1,31 @@
+# SpeedyGo Merchant App CI — speedygo_merchant_app.git
+name: Merchant App CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: merchant-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.2'
+          channel: stable
+          cache: true
+      - run: flutter --version
+      - run: flutter pub get
+      - name: Analyze under analysis_options.yaml
+        run: dart analyze --fatal-warnings
+      - name: Unit and widget tests
+        run: flutter test

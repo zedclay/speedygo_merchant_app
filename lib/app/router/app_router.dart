@@ -61,6 +61,7 @@ String? _redirect(SessionState session, AccessState access, String path) {
       if (path == AppRoutes.otp || path == AppRoutes.phone) return null;
       return AppRoutes.otp;
     case SessionPhase.resolvingAccess:
+      if (path == AppRoutes.logout) return null;
       return switch (access.destination) {
         AccessDestination.loading => AppRoutes.accessLoading,
         AccessDestination.error => AppRoutes.accessError,

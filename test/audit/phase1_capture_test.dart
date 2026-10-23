@@ -20,7 +20,7 @@ Future<void> _capture(WidgetTester tester, String name) async {
   final renderObject = tester.renderObject(finder);
   if (renderObject is! RenderRepaintBoundary) {
     final dir = Directory(
-      '/Users/mac/Downloads/speedygo_project/apps/merchant_app/audit/phase-1/captures',
+      '${Directory.current.path}/audit/phase-1/captures',
     );
     dir.createSync(recursive: true);
     File('${dir.path}/$name.txt')
@@ -31,7 +31,7 @@ Future<void> _capture(WidgetTester tester, String name) async {
     final image = await renderObject.toImage(pixelRatio: 1.5);
     final bytes = await image.toByteData(format: ui.ImageByteFormat.png);
     final file = File(
-      '/Users/mac/Downloads/speedygo_project/apps/merchant_app/audit/phase-1/captures/$name.png',
+      '${Directory.current.path}/audit/phase-1/captures/$name.png',
     );
     file.parent.createSync(recursive: true);
     await file.writeAsBytes(bytes!.buffer.asUint8List());

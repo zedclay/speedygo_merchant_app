@@ -8,19 +8,35 @@ class MoneyFormat {
   MoneyFormat._();
 
   static final _nonNegative = RegExp(r'^[0-9]+$');
+  static final _dzdDecimal = RegExp(r'^-?[0-9]+(\.[0-9]{1,2})?$');
 
   /// 100 centimes per DZD (DOMAIN_MODEL / TECH_STACK / ERD).
   static final centimesPerDzd = BigInt.from(100);
 
   static bool isMinorString(String raw) => _nonNegative.hasMatch(raw);
 
-  /// Whole amounts omit the centimes: `1200` → `12 DZD`;
-  /// `220000` → `2 200 DZD`; `220005` → `2 200,05 DZD`.
-  static String dzd(String minor) {
-    if (!isMinorString(minor)) {
-      throw FormatException('Invalid money minor string', minor);
+  /// Accepts legacy minor ("65000") or new DZD decimal ("650.00").
+  static BigInt _toCentimes(String raw) {
+    if (_dzdDecimal.hasMatch(raw) && raw.contains('.')) {
+      final neg = raw.startsWith('-');
+      final body = neg ? raw.substring(1) : raw;
+      final parts = body.split('.');
+      final whole = BigInt.parse(parts[0]);
+      final frac =
+          BigInt.parse(parts.length > 1 ? parts[1].padRight(2, '0') : '0');
+      final v = whole * centimesPerDzd + frac;
+      return neg ? -v : v;
     }
-    final value = BigInt.parse(minor);
+    if (!isMinorString(raw)) {
+      throw FormatException('Invalid money minor string', raw);
+    }
+    return BigInt.parse(raw);
+  }
+
+  /// Whole amounts omit the centimes: `1200` → `12 DZD`;
+  /// `220000` → `2 200 DZD`; also `"650.00"`.
+  static String dzd(String minor) {
+    final value = _toCentimes(minor);
     final whole = value ~/ centimesPerDzd;
     final fraction = value.remainder(centimesPerDzd);
     if (fraction == BigInt.zero) return '${_group(whole.toString())} DZD';
@@ -61,6 +77,17 @@ class MoneyFormat {
   static String dzdOrEmpty(String? minor) {
     if (minor == null || minor.isEmpty || !isMinorString(minor)) return '';
     return dzd(minor);
+  }
+
+  /// dzd-v2 JSON amount from integer centimes.
+  static String centimesToDzdV2(int centimes) {
+    final value = BigInt.from(centimes);
+    final neg = value < BigInt.zero;
+    final abs = neg ? -value : value;
+    final whole = abs ~/ centimesPerDzd;
+    final fraction = abs.remainder(centimesPerDzd);
+    final body = '${whole.toString()}.${_twoDigits(fraction)}';
+    return neg ? '-$body' : body;
   }
 
   /// Parses a user major-unit DZD string (`12`, `12,5`, `12.50`) to minor units.

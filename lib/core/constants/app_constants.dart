@@ -8,6 +8,10 @@ class AppConstants {
   );
   static const int otpResendCooldownSeconds = 60;
   static const int otpLength = 6;
+
+  /// Untrusted requested application context (Backend compares to DB ownership).
+  static const String speedyGoAppAudience = 'MERCHANT';
+  static const String speedyGoAppHeader = 'X-SpeedyGo-App';
 }
 
 class ApiEndpoints {
@@ -34,6 +38,9 @@ class ApiEndpoints {
   static const geoWilayas = '/geo/wilayas';
   static String geoCommunes(String wilayaCode) =>
       '/geo/wilayas/$wilayaCode/communes';
+  static const geoPlacesAutocomplete = '/geo/places/autocomplete';
+  static const geoPlacesDetails = '/geo/places/details';
+  static const geoReverseGeocode = '/geo/geocode/reverse';
   static String merchantOrders(String merchantId) =>
       '/merchant/$merchantId/orders';
   static String merchantOrder(String merchantId, String orderId) =>

@@ -291,6 +291,18 @@ class MerchantNotificationItem {
   final String? type;
   final String? sourceId;
 
+  MerchantNotificationItem copyWith({bool? read}) {
+    return MerchantNotificationItem(
+      id: id,
+      title: title,
+      body: body,
+      read: read ?? this.read,
+      createdAt: createdAt,
+      type: type,
+      sourceId: sourceId,
+    );
+  }
+
   factory MerchantNotificationItem.fromJson(Map<String, dynamic> json) {
     final type = json['type']?.toString();
     var sourceId = json['sourceId']?.toString();
@@ -317,4 +329,16 @@ class MerchantNotificationItem {
       sourceId: sourceId,
     );
   }
+}
+
+class MerchantNotificationPage {
+  const MerchantNotificationPage({
+    required this.items,
+    required this.total,
+    required this.unreadCount,
+  });
+
+  final List<MerchantNotificationItem> items;
+  final int total;
+  final int unreadCount;
 }

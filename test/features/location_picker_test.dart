@@ -336,7 +336,7 @@ void main() {
     expect(find.textContaining('36.75380'), findsNothing);
   });
 
-  testWidgets('coords stay visible when only the branch label is set',
+  testWidgets('raw coordinates stay hidden when only the branch label is set',
       (tester) async {
     await tester.pumpWidget(
       ProviderScope(
@@ -356,6 +356,79 @@ void main() {
       ),
     );
     await tester.pump(const Duration(milliseconds: 100));
-    expect(find.textContaining('36.75380'), findsOneWidget);
+    expect(find.textContaining('36.75380'), findsNothing);
+    expect(find.byKey(const Key('merchant-location-draft-coords')), findsOneWidget);
+  });
+
+  testWidgets('keyboard inset keeps confirm reachable without overflow', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(1170, 2532);
+    tester.view.devicePixelRatio = 3;
+    tester.view.viewInsets = const FakeViewPadding(bottom: 1008);
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    addTearDown(tester.view.resetViewInsets);
+
+    FlutterError.onError = (details) {
+      if (details.toString().contains('overflowed')) {
+        fail(details.toString());
+      }
+    };
+
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [
+          locationClientProvider.overrideWithValue(
+            _FakeLocationClient(LocationAccess.granted),
+          ),
+        ],
+        child: MaterialApp(
+          theme: AppTheme.light(),
+          home: const LocationPickerScreen(
+            initialLatitude: 35.1939,
+            initialLongitude: -0.6417,
+            branchLabel: 'Dar El Bahja',
+            addressHint:
+                'Commerce fictif SpeedyGo — identité inventée pour la revue visuelle. Ne représente aucun commerce réel. 8 rue de la Casbah, Alger-Centre.',
+            wilayaCode: '22',
+            wilayaLabel: 'Sidi Bel Abbès',
+          ),
+        ),
+      ),
+    );
+    await tester.pump(const Duration(milliseconds: 100));
+    expect(tester.takeException(), isNull);
+    expect(find.byKey(const Key('merchant-location-confirm')), findsOneWidget);
+    expect(find.byKey(const Key('merchant-location-search')), findsOneWidget);
+  });
+
+  testWidgets('Algiers pin vs SBA wilaya shows mismatch and recenter', (
+    tester,
+  ) async {
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [
+          locationClientProvider.overrideWithValue(
+            _FakeLocationClient(LocationAccess.granted),
+          ),
+        ],
+        child: MaterialApp(
+          theme: AppTheme.light(),
+          home: const LocationPickerScreen(
+            initialLatitude: 36.7538,
+            initialLongitude: 3.0588,
+            wilayaCode: '22',
+            wilayaLabel: 'Sidi Bel Abbès',
+          ),
+        ),
+      ),
+    );
+    await tester.pump(const Duration(milliseconds: 100));
+    expect(find.byKey(const Key('merchant-location-mismatch')), findsOneWidget);
+    expect(
+      find.byKey(const Key('merchant-location-recenter-wilaya')),
+      findsOneWidget,
+    );
   });
 }

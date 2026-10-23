@@ -58,8 +58,8 @@ class MerchantBranch {
       name: json['name']?.toString() ?? '',
       phone: json['phone']?.toString() ?? '',
       addressText: json['addressText']?.toString() ?? '',
-      latitude: (json['latitude'] as num?)?.toDouble() ?? 0,
-      longitude: (json['longitude'] as num?)?.toDouble() ?? 0,
+      latitude: _parseCoord(json['latitude']),
+      longitude: _parseCoord(json['longitude']),
       operationalStatus: json['operationalStatus']?.toString() ?? '',
       wilayaCode: json['wilayaCode']?.toString(),
       communeId: (json['communeId'] as num?)?.toInt(),
@@ -76,6 +76,16 @@ class MerchantBranch {
 String? _optionalText(Object? raw) {
   final value = raw?.toString().trim();
   return value == null || value.isEmpty ? null : value;
+}
+
+double _parseCoord(Object? value) {
+  if (value is num) {
+    return value.toDouble();
+  }
+  if (value is String) {
+    return double.tryParse(value.trim()) ?? 0;
+  }
+  return 0;
 }
 
 class MerchantEvidenceItem {
