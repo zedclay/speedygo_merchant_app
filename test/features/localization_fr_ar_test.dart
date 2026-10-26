@@ -74,6 +74,10 @@ void main() {
     expect(AppStrings.catalogAddProduct, isNotEmpty);
     expect(AppStrings.tabHome, isNot('Accueil'));
     expect(RegExp(r'[\u0600-\u06FF]').hasMatch(AppStrings.tabHome), isTrue);
+    expect(AppStrings.locationSearchLoading, 'جاري البحث…');
+    expect(AppStrings.locationSearchUnavailable, contains('الخريطة'));
+    _bind('fr');
+    expect(AppStrings.locationSearchLoading, 'Recherche en cours…');
   });
 
   testWidgets('language settings switches locale immediately and persists', (

@@ -42,11 +42,17 @@ class MerchantGeoClient {
   Future<List<PlaceSuggestion>> autocomplete({
     required String q,
     String language = 'fr',
+    String? sessionToken,
   }) async {
     try {
+      final token = sessionToken?.trim();
       final response = await _dio.get<Map<String, dynamic>>(
         ApiEndpoints.geoPlacesAutocomplete,
-        queryParameters: {'q': q, 'language': language},
+        queryParameters: {
+          'q': q,
+          'language': language,
+          if (token != null && token.isNotEmpty) 'sessionToken': token,
+        },
       );
       final raw = response.data?['suggestions'];
       if (raw is! List) return const [];
@@ -72,11 +78,17 @@ class MerchantGeoClient {
   Future<PlaceDetails> placeDetails({
     required String placeId,
     String language = 'fr',
+    String? sessionToken,
   }) async {
     try {
+      final token = sessionToken?.trim();
       final response = await _dio.get<Map<String, dynamic>>(
         ApiEndpoints.geoPlacesDetails,
-        queryParameters: {'placeId': placeId, 'language': language},
+        queryParameters: {
+          'placeId': placeId,
+          'language': language,
+          if (token != null && token.isNotEmpty) 'sessionToken': token,
+        },
       );
       final data = response.data;
       final lat = (data?['latitude'] as num?)?.toDouble();

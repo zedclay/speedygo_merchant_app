@@ -985,6 +985,8 @@ class AppStrings {
   static String get regLocationUseGps => l10n.regLocationUseGps;
   static String get locationSearchHint =>
       isArabic ? 'ابحث عن عنوان' : 'Rechercher une adresse';
+  static String get locationSearchLoading =>
+      isArabic ? 'جاري البحث…' : 'Recherche en cours…';
   static String get locationSearchUnavailable => isArabic
       ? 'البحث عن العناوين غير مفعّل. حدّد الموقع على الخريطة.'
       : 'La recherche d’adresse n’est pas configurée. Choisissez le point sur la carte.';
@@ -999,6 +1001,12 @@ class AppStrings {
   static String get locationMapTilesDev => isArabic
       ? 'خريطة تطوير (OSM). خرائط Google غير مفعّلة.'
       : 'Carte de développement (tuiles OSM). Google Maps n’est pas activé.';
+  static String get locationMapUnavailable => isArabic
+      ? 'خرائط Google غير مُعدّة. لا يمكن تأكيد الموقع هنا.'
+      : 'Google Maps n’est pas configuré. Impossible de confirmer un point ici.';
+  static String get locationSearchDisabledOnDevMap => isArabic
+      ? 'بحث Google معطّل على خريطة التطوير. حرّك الدبوس ثم أكّد.'
+      : 'La recherche Google est désactivée sur la carte de développement. Déplacez l’épingle, puis confirmez.';
   static String get locationChooseOnMap =>
       isArabic ? 'اختيار على الخريطة' : 'Choisir sur la carte';
   static String locationWilayaPinMismatch(String wilayaLabel) => isArabic

@@ -46,3 +46,4 @@ app.*.map.json
 
 # Native Push client config (dart-define-from-file). Never commit real values.
 /config/push.local.json
+/android/app/google-services.json

@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:permission_handler/permission_handler.dart';
 
@@ -28,31 +29,44 @@ class MerchantPushRegistration {
     required String platform,
     required String? accountId,
   }) async {
-    await _storage.write(key: _tokenKey, value: token);
-    await _storage.write(key: _platformKey, value: platform);
-    if (accountId == null) {
-      await _storage.delete(key: _accountKey);
-    } else {
-      await _storage.write(key: _accountKey, value: accountId);
+    try {
+      await _storage.write(key: _tokenKey, value: token);
+      await _storage.write(key: _platformKey, value: platform);
+      if (accountId == null) {
+        await _storage.delete(key: _accountKey);
+      } else {
+        await _storage.write(key: _accountKey, value: accountId);
+      }
+    } catch (e) {
+      debugPrint('push token store failed: $e');
     }
   }
 
   Future<StoredPushToken?> loadStoredToken() async {
-    final token = await _storage.read(key: _tokenKey);
-    final platform = await _storage.read(key: _platformKey);
-    if (token == null ||
-        token.isEmpty ||
-        platform == null ||
-        platform.isEmpty) {
+    try {
+      final token = await _storage.read(key: _tokenKey);
+      final platform = await _storage.read(key: _platformKey);
+      if (token == null ||
+          token.isEmpty ||
+          platform == null ||
+          platform.isEmpty) {
+        return null;
+      }
+      final accountId = await _storage.read(key: _accountKey);
+      return (token: token, platform: platform, accountId: accountId);
+    } catch (e) {
+      debugPrint('push token load failed: $e');
       return null;
     }
-    final accountId = await _storage.read(key: _accountKey);
-    return (token: token, platform: platform, accountId: accountId);
   }
 
   Future<void> clearStoredToken() async {
-    await _storage.delete(key: _tokenKey);
-    await _storage.delete(key: _platformKey);
-    await _storage.delete(key: _accountKey);
+    try {
+      await _storage.delete(key: _tokenKey);
+      await _storage.delete(key: _platformKey);
+      await _storage.delete(key: _accountKey);
+    } catch (e) {
+      debugPrint('push token clear failed: $e');
+    }
   }
 }

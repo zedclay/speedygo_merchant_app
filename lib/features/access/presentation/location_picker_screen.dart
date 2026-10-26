@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:speedygo_merchant_app/app/theme/app_theme.dart';
@@ -11,6 +10,8 @@ import 'package:speedygo_merchant_app/features/access/data/geo_admin_consistency
 import 'package:speedygo_merchant_app/features/access/data/geo_api.dart';
 import 'package:speedygo_merchant_app/features/access/data/location_client.dart';
 import 'package:speedygo_merchant_app/features/access/data/map_config.dart';
+import 'package:speedygo_merchant_app/features/access/data/place_session_token.dart';
+import 'package:speedygo_merchant_app/features/access/presentation/location_map_surface.dart';
 import 'package:speedygo_merchant_app/features/store/presentation/merchant_branch_cover_thumb.dart';
 
 class LocationPickResult {
@@ -53,7 +54,7 @@ class LocationPickerScreen extends ConsumerStatefulWidget {
 }
 
 class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
-  final _mapController = MapController();
+  LocationMapController? _map;
   final _search = TextEditingController();
   late LatLng _center;
   late bool _selectionReady;
@@ -65,6 +66,8 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
   Timer? _debounce;
   var _generation = 0;
   var _mapReady = false;
+  var _placeSessionToken = PlaceSessionToken.create();
+  String _lastQuery = '';
 
   bool get _hadConfirmedInitial {
     final lat = widget.initialLatitude;
@@ -99,7 +102,6 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
   void dispose() {
     _debounce?.cancel();
     _search.dispose();
-    _mapController.dispose();
     super.dispose();
   }
 
@@ -110,33 +112,36 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
   void _recenterToWilaya() {
     if (!_mapReady) return;
     final target = GeoAdminConsistency.cameraForWilaya(widget.wilayaCode);
-    _mapController.move(target, MerchantMapConfig.explorationZoom);
+    unawaited(
+      _map?.moveTo(
+        target.latitude,
+        target.longitude,
+        MerchantMapConfig.explorationZoom,
+      ),
+    );
     setState(() {
       _center = target;
       _selectionReady = true;
       _generation += 1;
       _suggestions = const [];
+      _placeSessionToken = PlaceSessionToken.create();
     });
   }
 
-  void _onMapEvent(MapEvent event) {
-    if (event is MapEventMoveEnd ||
-        event is MapEventMove ||
-        event is MapEventFlingAnimationEnd) {
-      _unfocusSearch();
-      final next = event.camera.center;
-      final moved =
-          (next.latitude - _center.latitude).abs() > 1e-7 ||
-          (next.longitude - _center.longitude).abs() > 1e-7;
-      setState(() {
-        _center = next;
-        if (moved || _hadConfirmedInitial) {
-          _selectionReady = true;
-          _generation += 1;
-          _suggestions = const [];
-        }
-      });
-    }
+  void _onCameraIdle(double latitude, double longitude) {
+    final next = LatLng(latitude, longitude);
+    final moved =
+        (next.latitude - _center.latitude).abs() > 1e-7 ||
+        (next.longitude - _center.longitude).abs() > 1e-7;
+    setState(() {
+      _center = next;
+      if (moved || _hadConfirmedInitial) {
+        _selectionReady = true;
+        _generation += 1;
+        _suggestions = const [];
+        _placeSessionToken = PlaceSessionToken.create();
+      }
+    });
   }
 
   Future<void> _useMyLocation() async {
@@ -174,7 +179,11 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
       final fix = await client.readCurrent();
       if (!mounted || generation != _generation) return;
       final target = LatLng(fix.latitude, fix.longitude);
-      _mapController.move(target, MerchantMapConfig.confirmedZoom);
+      await _map?.moveTo(
+        target.latitude,
+        target.longitude,
+        MerchantMapConfig.confirmedZoom,
+      );
       setState(() {
         _center = target;
         _selectionReady = true;
@@ -197,12 +206,16 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
   }
 
   void _onSearchChanged(String raw) {
+    if (!ref.read(mapRuntimeConfigProvider).placesLookupEnabled) {
+      return;
+    }
     _debounce?.cancel();
     final q = raw.trim();
     if (q.length < 2) {
       setState(() {
         _suggestions = const [];
         _searchMessage = null;
+        _lastQuery = '';
       });
       return;
     }
@@ -212,15 +225,26 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
     });
   }
 
+  bool get _searchCanRetry =>
+      _lastQuery.length >= 2 &&
+      (_searchMessage == AppStrings.locationSearchFailed ||
+          _searchMessage == AppStrings.locationSearchUnavailable);
+
   Future<void> _runSearch(String q, int generation) async {
+    if (!ref.read(mapRuntimeConfigProvider).placesLookupEnabled) {
+      return;
+    }
     setState(() {
       _searchBusy = true;
-      _searchMessage = null;
+      _lastQuery = q;
+      _searchMessage = AppStrings.locationSearchLoading;
     });
     try {
-      final hits = await ref
-          .read(merchantGeoClientProvider)
-          .autocomplete(q: q, language: AppStrings.isArabic ? 'ar' : 'fr');
+      final hits = await ref.read(merchantGeoClientProvider).autocomplete(
+            q: q,
+            language: AppStrings.isArabic ? 'ar' : 'fr',
+            sessionToken: _placeSessionToken,
+          );
       if (!mounted || generation != _generation) return;
       setState(() {
         _searchBusy = false;
@@ -245,25 +269,39 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
   }
 
   Future<void> _selectSuggestion(PlaceSuggestion hit) async {
+    if (!ref.read(mapRuntimeConfigProvider).placesLookupEnabled) {
+      return;
+    }
     final generation = ++_generation;
     _search.text = hit.text;
     setState(() {
       _suggestions = const [];
       _searchBusy = true;
-      _searchMessage = null;
+      _searchMessage = AppStrings.locationSearchLoading;
     });
     try {
-      final details = await ref
-          .read(merchantGeoClientProvider)
-          .placeDetails(placeId: hit.placeId);
+      final details = await ref.read(merchantGeoClientProvider).placeDetails(
+            placeId: hit.placeId,
+            language: AppStrings.isArabic ? 'ar' : 'fr',
+            sessionToken: _placeSessionToken,
+          );
       if (!mounted || generation != _generation) return;
       final target = LatLng(details.latitude, details.longitude);
-      _mapController.move(target, MerchantMapConfig.confirmedZoom);
+      await _map?.moveTo(
+        target.latitude,
+        target.longitude,
+        MerchantMapConfig.confirmedZoom,
+      );
       setState(() {
         _center = target;
         _selectionReady = true;
         _searchBusy = false;
+        _searchMessage = null;
       });
+      if (details.formattedAddress != null &&
+          details.formattedAddress!.isNotEmpty) {
+        _search.text = details.formattedAddress!;
+      }
     } on GeocodingNotConfiguredException {
       if (!mounted || generation != _generation) return;
       setState(() {
@@ -276,6 +314,8 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
         _searchBusy = false;
         _searchMessage = AppStrings.locationSearchFailed;
       });
+    } finally {
+      _placeSessionToken = PlaceSessionToken.create();
     }
   }
 
@@ -306,6 +346,14 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
       latitude: _center.latitude,
       longitude: _center.longitude,
     );
+    final runtime = ref.watch(mapRuntimeConfigProvider);
+    final lookups = runtime.placesLookupEnabled;
+    final mode = runtime.mode;
+    final searchMessage = !lookups
+        ? (mode == MapRenderMode.osmDev
+              ? AppStrings.locationSearchDisabledOnDevMap
+              : AppStrings.locationMapUnavailable)
+        : _searchMessage;
 
     return Scaffold(
       key: const Key('merchant-location-picker'),
@@ -348,6 +396,7 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
                     child: TextField(
                       key: const Key('merchant-location-search'),
                       controller: _search,
+                      enabled: lookups,
                       onChanged: _onSearchChanged,
                       onTapOutside: (_) => _unfocusSearch(),
                       decoration: InputDecoration(
@@ -368,19 +417,37 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
                       ),
                     ),
                   ),
-                  if (_searchMessage != null)
+                  if (searchMessage != null)
                     Padding(
                       padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
-                      child: Text(
-                        _searchMessage!,
-                        key: const Key('merchant-location-search-message'),
-                        maxLines: 3,
-                        overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.bodySmall
-                            ?.copyWith(color: AppColors.onSurfaceVariant),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text(
+                            searchMessage,
+                            key: const Key('merchant-location-search-message'),
+                            maxLines: 3,
+                            overflow: TextOverflow.ellipsis,
+                            style: Theme.of(context).textTheme.bodySmall
+                                ?.copyWith(color: AppColors.onSurfaceVariant),
+                          ),
+                          if (_searchCanRetry)
+                            Align(
+                              alignment: AlignmentDirectional.centerStart,
+                              child: TextButton(
+                                key: const Key('merchant-location-search-retry'),
+                                onPressed: _searchBusy
+                                    ? null
+                                    : () => unawaited(
+                                        _runSearch(_lastQuery, _generation),
+                                      ),
+                                child: Text(AppStrings.retry),
+                              ),
+                            ),
+                        ],
                       ),
                     ),
-                  if (_suggestions.isNotEmpty)
+                  if (lookups && _suggestions.isNotEmpty)
                     ConstrainedBox(
                       constraints: const BoxConstraints(maxHeight: 120),
                       child: ListView.builder(
@@ -389,6 +456,7 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
                         itemBuilder: (context, index) {
                           final hit = _suggestions[index];
                           return ListTile(
+                            key: Key('merchant-location-suggestion-$index'),
                             dense: true,
                             title: Text(hit.text),
                             onTap: () => unawaited(_selectSuggestion(hit)),
@@ -409,48 +477,28 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
                   return Column(
                     children: [
                       Expanded(
-                        child: Stack(
+                        child: mode == MapRenderMode.unavailable
+                            ? const ColoredBox(
+                                key: Key('merchant-location-map-unavailable'),
+                                color: Color(0xFFE8EEF4),
+                                child: SizedBox.expand(),
+                              )
+                            : Stack(
                           children: [
-                            FlutterMap(
+                            LocationMapSurface(
                               key: const Key('merchant-location-map'),
-                              mapController: _mapController,
-                              options: MapOptions(
-                                initialCenter: _center,
-                                initialZoom: _hadConfirmedInitial
-                                    ? MerchantMapConfig.confirmedZoom
-                                    : MerchantMapConfig.explorationZoom,
-                                minZoom: 5,
-                                maxZoom: 19,
-                                onMapReady: () =>
-                                    setState(() => _mapReady = true),
-                                onMapEvent: _onMapEvent,
-                                onTap: (tapPosition, point) => _unfocusSearch(),
-                                interactionOptions: const InteractionOptions(
-                                  flags:
-                                      InteractiveFlag.all &
-                                      ~InteractiveFlag.rotate,
-                                ),
-                              ),
-                              children: [
-                                TileLayer(
-                                  urlTemplate:
-                                      MerchantMapConfig.tileUrlTemplate,
-                                  userAgentPackageName:
-                                      MerchantMapConfig.userAgentPackageName,
-                                  maxNativeZoom: 19,
-                                  tileProvider: NetworkTileProvider(
-                                    cachingProvider:
-                                        const DisabledMapCachingProvider(),
-                                  ),
-                                ),
-                                const RichAttributionWidget(
-                                  attributions: [
-                                    TextSourceAttribution(
-                                      MerchantMapConfig.osmAttribution,
-                                    ),
-                                  ],
-                                ),
-                              ],
+                              mode: mode,
+                              useStub: ref.watch(locationMapStubProvider),
+                              initialLatitude: _center.latitude,
+                              initialLongitude: _center.longitude,
+                              initialZoom: _hadConfirmedInitial
+                                  ? MerchantMapConfig.confirmedZoom
+                                  : MerchantMapConfig.explorationZoom,
+                              onReady: () =>
+                                  setState(() => _mapReady = true),
+                              onCameraIdle: _onCameraIdle,
+                              onInteraction: _unfocusSearch,
+                              onCreated: (controller) => _map = controller,
                             ),
                             IgnorePointer(
                               child: Center(
@@ -541,23 +589,17 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
                                         IconButton(
                                           onPressed: !_mapReady
                                               ? null
-                                              : () => _mapController.move(
-                                                  _center,
-                                                  (_mapController.camera.zoom +
-                                                          1)
-                                                      .clamp(5, 19),
-                                                ),
+                                              : () => unawaited(
+                                                    _map?.zoomBy(1),
+                                                  ),
                                           icon: const Icon(Icons.add),
                                         ),
                                         IconButton(
                                           onPressed: !_mapReady
                                               ? null
-                                              : () => _mapController.move(
-                                                  _center,
-                                                  (_mapController.camera.zoom -
-                                                          1)
-                                                      .clamp(5, 19),
-                                                ),
+                                              : () => unawaited(
+                                                    _map?.zoomBy(-1),
+                                                  ),
                                           icon: const Icon(Icons.remove),
                                         ),
                                       ],
@@ -711,7 +753,30 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
                                           color: AppColors.onSurfaceVariant,
                                         ),
                                   ),
-                                if (MerchantMapConfig.usingDefaultOsmTiles)
+                                if (mode == MapRenderMode.unavailable)
+                                  Text(
+                                    AppStrings.locationMapUnavailable,
+                                    textAlign: TextAlign.center,
+                                    maxLines: 3,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: Theme.of(context).textTheme.bodySmall
+                                        ?.copyWith(
+                                          color: AppColors.onSurfaceVariant,
+                                        ),
+                                  ),
+                                if (mode == MapRenderMode.google)
+                                  const Text(
+                                    'Google Maps',
+                                    textAlign: TextAlign.center,
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 12,
+                                      color: Color(0xFF5E5E5E),
+                                    ),
+                                  ),
+                                if (mode == MapRenderMode.osmDev)
                                   Text(
                                     AppStrings.locationMapTilesDev,
                                     textAlign: TextAlign.center,
@@ -736,7 +801,12 @@ class _LocationPickerScreenState extends ConsumerState<LocationPickerScreen> {
                             key: const Key('merchant-location-confirm'),
                             label: AppStrings.regLocationConfirm,
                             icon: Icons.check_circle_outline,
-                            onPressed: _selectionReady ? _confirm : null,
+                            onPressed:
+                                mode != MapRenderMode.unavailable &&
+                                    _selectionReady &&
+                                    _mapReady
+                                ? _confirm
+                                : null,
                           ),
                         ),
                       ),
