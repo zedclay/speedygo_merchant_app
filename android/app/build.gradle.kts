@@ -5,6 +5,10 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+if (file("google-services.json").exists()) {
+    apply(plugin = "com.google.gms.google-services")
+}
+
 android {
     namespace = "com.speedygo.speedygo_merchant_app"
     compileSdk = flutter.compileSdkVersion
@@ -28,6 +32,7 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        manifestPlaceholders["googleMapsApiKey"] = androidMapsSdkKey()
     }
 
     buildTypes {
@@ -41,4 +46,24 @@ android {
 
 flutter {
     source = "../.."
+}
+
+fun androidMapsSdkKey(): String {
+    val fromEnv = System.getenv("GOOGLE_MAPS_ANDROID_API_KEY")?.trim().orEmpty()
+    if (fromEnv.isNotEmpty()) {
+        return fromEnv
+    }
+    val packed = (project.findProperty("dart-defines") as? String)
+        ?: System.getenv("DART_DEFINES")
+        ?: return ""
+    packed.split(",").forEach { encoded ->
+        val decoded = runCatching {
+            String(java.util.Base64.getDecoder().decode(encoded), Charsets.UTF_8)
+        }.getOrNull() ?: return@forEach
+        val idx = decoded.indexOf("=")
+        if (idx > 0 && decoded.substring(0, idx) == "GOOGLE_MAPS_ANDROID_API_KEY") {
+            return decoded.substring(idx + 1)
+        }
+    }
+    return ""
 }

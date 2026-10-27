@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
-import 'package:speedygo_merchant_app/features/notifications/data/push_config.dart';
 
 final _uuid = RegExp(
   r'^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$',
@@ -99,24 +98,28 @@ class DisabledPushMessagingGateway implements PushMessagingGateway {
   Future<PushOrderHint?> takeInitialHint() async => null;
 }
 
+/// Android displays the notification payload. Do not mutate business state.
+@pragma('vm:entry-point')
+Future<void> firebaseMessagingBackgroundHandler(RemoteMessage message) async {}
+
 class FirebasePushMessagingGateway implements PushMessagingGateway {
   FirebasePushMessagingGateway._();
 
   static PushMessagingGateway? _instance;
 
-  /// Initializes Firebase when configured; otherwise returns a disabled
-  /// gateway. Must run before `runApp` so a cold-launch tap is captured.
+  /// Android-only. `google-services.json` + Gradle applicationId select the
+  /// Merchant Firebase app. iOS/APNs stays disabled this round.
   static Future<PushMessagingGateway> bootstrap() async {
     final existing = _instance;
     if (existing != null) return existing;
-    final options = MerchantPushConfig.currentPlatformOptions();
-    if (options == null) {
+    if (kIsWeb || defaultTargetPlatform != TargetPlatform.android) {
       return _instance = const DisabledPushMessagingGateway();
     }
     try {
       if (Firebase.apps.isEmpty) {
-        await Firebase.initializeApp(options: options);
+        await Firebase.initializeApp();
       }
+      FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
       // Foreground: no OS banner; the in-app alert is the only surface.
       await FirebaseMessaging.instance
           .setForegroundNotificationPresentationOptions(

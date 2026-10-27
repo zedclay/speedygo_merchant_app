@@ -14,15 +14,16 @@
 | Back/cancel | Pops `null` — draft unchanged |
 | Continue | Blocked with `regLocationRequired` until confirmed |
 | GPS | Permission only after GPS tap; suggestion only; still requires Confirm |
-| Address text | Never overwritten by picker (no geocoder) |
+| Address search | Suggestions from Backend only. Select moves the pin; **Confirm** still required. GPS denied / 503 keeps map pan. |
+| Address text | Formatted reverse/details may fill an empty search field; registration address text is not silently replaced |
 
 ## Provider / configuration
 
 | Item | State |
 | --- | --- |
-| Backend `GOOGLE_MAPS_API_KEY` | Declared, **empty** |
-| Google Maps mobile SDK | **Not** wired in Merchant/Customer |
-| Geocoding / Places | **None** → no address search |
+| Backend `GOOGLE_MAPS_API_KEY` | Declared, **empty** — live search fail-closed 503 |
+| Google Maps mobile SDK | Wired in the maps worktree picker (`google_maps_flutter`). Keys `GOOGLE_MAPS_IOS_API_KEY` / `GOOGLE_MAPS_ANDROID_API_KEY` remain unset; picker is unavailable unless `MAP_DEV_OSM=true` (lookups off). Never the server key. |
+| Geocoding / Places | Backend proxy `GET /geo/places/autocomplete` + `details`; UUID v4 session token; map still required to confirm |
 | Interactive tiles | `flutter_map` + `MAP_TILE_URL_TEMPLATE` (default OSM public tiles) |
 
 **Blocker for production tiles:** default OSMF public tiles are not licensed for unrestricted app use. Set a licensed template:

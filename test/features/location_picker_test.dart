@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -7,15 +8,57 @@ import 'package:speedygo_merchant_app/core/storage/session_store.dart';
 import 'package:speedygo_merchant_app/core/widgets/merchant_primary_button.dart';
 import 'package:speedygo_merchant_app/features/access/application/access_controller.dart';
 import 'package:speedygo_merchant_app/features/access/application/registration_controller.dart';
+import 'package:speedygo_merchant_app/features/access/data/geo_api.dart';
 import 'package:speedygo_merchant_app/features/access/data/location_client.dart';
+import 'package:speedygo_merchant_app/features/access/data/map_config.dart';
 import 'package:speedygo_merchant_app/features/access/data/models.dart';
 import 'package:speedygo_merchant_app/features/access/presentation/location_picker_screen.dart';
 import 'package:speedygo_merchant_app/features/auth/application/session_controller.dart';
 import 'package:speedygo_merchant_app/features/auth/application/session_providers.dart';
 import 'package:speedygo_merchant_app/features/auth/data/models.dart';
+import 'package:speedygo_merchant_app/l10n/app_localizations.dart';
 
 import 'phase1_flow_test.dart';
 import 'startup_flow_test.dart';
+
+class _FakeGeoClient extends MerchantGeoClient {
+  _FakeGeoClient() : super(Dio());
+
+  List<PlaceSuggestion> suggestions = const [];
+  Object? autocompleteError;
+  PlaceDetails details = const PlaceDetails(
+    placeId: 'ChIJ-hydra',
+    latitude: 36.748,
+    longitude: 3.039,
+    formattedAddress: 'Hydra, Alger',
+  );
+  var autocompleteCalls = 0;
+  String? lastSessionToken;
+
+  @override
+  Future<List<PlaceSuggestion>> autocomplete({
+    required String q,
+    String language = 'fr',
+    String? sessionToken,
+  }) async {
+    autocompleteCalls += 1;
+    lastSessionToken = sessionToken;
+    if (autocompleteError != null) {
+      throw autocompleteError!;
+    }
+    return suggestions;
+  }
+
+  @override
+  Future<PlaceDetails> placeDetails({
+    required String placeId,
+    String language = 'fr',
+    String? sessionToken,
+  }) async {
+    lastSessionToken = sessionToken;
+    return details;
+  }
+}
 
 class _FakeLocationClient implements LocationClient {
   _FakeLocationClient(this.access);
@@ -58,15 +101,26 @@ ProviderContainer _authed(FakeMerchantApi merchant) {
   return container;
 }
 
+void _bindFr() {
+  AppStrings.bind(lookupAppLocalizations(const Locale('fr')), 'fr');
+}
+
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
+  setUp(_bindFr);
 
   testWidgets('picker back returns null; confirm disabled until selection',
       (tester) async {
     final fake = _FakeLocationClient(LocationAccess.granted);
     await tester.pumpWidget(
       ProviderScope(
-        overrides: [locationClientProvider.overrideWithValue(fake)],
+        overrides: [
+          mapRuntimeConfigProvider.overrideWithValue(
+            const MapRuntimeConfig(googleMapsReady: true, osmDevMode: false),
+          ),
+          locationMapStubProvider.overrideWithValue(true),
+          locationClientProvider.overrideWithValue(fake),
+        ],
         child: MaterialApp(
           theme: AppTheme.light(),
           home: const LocationPickerScreen(),
@@ -93,6 +147,10 @@ void main() {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
+          mapRuntimeConfigProvider.overrideWithValue(
+            const MapRuntimeConfig(googleMapsReady: true, osmDevMode: false),
+          ),
+          locationMapStubProvider.overrideWithValue(true),
           locationClientProvider.overrideWithValue(
             _FakeLocationClient(LocationAccess.granted),
           ),
@@ -141,7 +199,13 @@ void main() {
     final fake = _FakeLocationClient(LocationAccess.granted);
     await tester.pumpWidget(
       ProviderScope(
-        overrides: [locationClientProvider.overrideWithValue(fake)],
+        overrides: [
+          mapRuntimeConfigProvider.overrideWithValue(
+            const MapRuntimeConfig(googleMapsReady: true, osmDevMode: false),
+          ),
+          locationMapStubProvider.overrideWithValue(true),
+          locationClientProvider.overrideWithValue(fake),
+        ],
         child: MaterialApp(
           theme: AppTheme.light(),
           home: Builder(
@@ -181,7 +245,13 @@ void main() {
     final fake = _FakeLocationClient(LocationAccess.denied);
     await tester.pumpWidget(
       ProviderScope(
-        overrides: [locationClientProvider.overrideWithValue(fake)],
+        overrides: [
+          mapRuntimeConfigProvider.overrideWithValue(
+            const MapRuntimeConfig(googleMapsReady: true, osmDevMode: false),
+          ),
+          locationMapStubProvider.overrideWithValue(true),
+          locationClientProvider.overrideWithValue(fake),
+        ],
         child: MaterialApp(
           theme: AppTheme.light(),
           home: const LocationPickerScreen(
@@ -311,6 +381,10 @@ void main() {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
+          mapRuntimeConfigProvider.overrideWithValue(
+            const MapRuntimeConfig(googleMapsReady: true, osmDevMode: false),
+          ),
+          locationMapStubProvider.overrideWithValue(true),
           locationClientProvider.overrideWithValue(
             _FakeLocationClient(LocationAccess.granted),
           ),
@@ -341,6 +415,10 @@ void main() {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
+          mapRuntimeConfigProvider.overrideWithValue(
+            const MapRuntimeConfig(googleMapsReady: true, osmDevMode: false),
+          ),
+          locationMapStubProvider.overrideWithValue(true),
           locationClientProvider.overrideWithValue(
             _FakeLocationClient(LocationAccess.granted),
           ),
@@ -379,6 +457,10 @@ void main() {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
+          mapRuntimeConfigProvider.overrideWithValue(
+            const MapRuntimeConfig(googleMapsReady: true, osmDevMode: false),
+          ),
+          locationMapStubProvider.overrideWithValue(true),
           locationClientProvider.overrideWithValue(
             _FakeLocationClient(LocationAccess.granted),
           ),
@@ -409,6 +491,10 @@ void main() {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
+          mapRuntimeConfigProvider.overrideWithValue(
+            const MapRuntimeConfig(googleMapsReady: true, osmDevMode: false),
+          ),
+          locationMapStubProvider.overrideWithValue(true),
           locationClientProvider.overrideWithValue(
             _FakeLocationClient(LocationAccess.granted),
           ),
@@ -430,5 +516,212 @@ void main() {
       find.byKey(const Key('merchant-location-recenter-wilaya')),
       findsOneWidget,
     );
+  });
+
+  testWidgets('unavailable search shows retry and keeps the map', (tester) async {
+    final geo = _FakeGeoClient()
+      ..autocompleteError = const GeocodingNotConfiguredException();
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [
+          mapRuntimeConfigProvider.overrideWithValue(
+            const MapRuntimeConfig(googleMapsReady: true, osmDevMode: false),
+          ),
+          locationMapStubProvider.overrideWithValue(true),
+          locationClientProvider.overrideWithValue(
+            _FakeLocationClient(LocationAccess.denied),
+          ),
+          merchantGeoClientProvider.overrideWithValue(geo),
+        ],
+        child: MaterialApp(
+          theme: AppTheme.light(),
+          home: const LocationPickerScreen(
+            initialLatitude: 36.75,
+            initialLongitude: 3.05,
+          ),
+        ),
+      ),
+    );
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.enterText(
+      find.byKey(const Key('merchant-location-search')),
+      'Hydra',
+    );
+    await tester.pump(const Duration(milliseconds: 400));
+    expect(find.text(AppStrings.locationSearchUnavailable), findsOneWidget);
+    expect(find.byKey(const Key('merchant-location-search-retry')), findsOneWidget);
+    await tester.tap(find.byKey(const Key('merchant-location-search-retry')));
+    await tester.pump();
+    expect(geo.autocompleteCalls, 2);
+    expect(geo.lastSessionToken, isNotEmpty);
+    expect(find.byKey(const Key('merchant-location-map')), findsOneWidget);
+    expect(find.textContaining('36.75'), findsNothing);
+  });
+
+  testWidgets('search suggestion still requires explicit confirm', (tester) async {
+    LocationPickResult? result = const LocationPickResult(
+      latitude: 1,
+      longitude: 1,
+    );
+    final geo = _FakeGeoClient()
+      ..suggestions = const [
+        PlaceSuggestion(placeId: 'ChIJ-hydra', text: 'Hydra, Alger'),
+      ];
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [
+          mapRuntimeConfigProvider.overrideWithValue(
+            const MapRuntimeConfig(googleMapsReady: true, osmDevMode: false),
+          ),
+          locationMapStubProvider.overrideWithValue(true),
+          locationClientProvider.overrideWithValue(
+            _FakeLocationClient(LocationAccess.denied),
+          ),
+          merchantGeoClientProvider.overrideWithValue(geo),
+        ],
+        child: MaterialApp(
+          theme: AppTheme.light(),
+          home: Builder(
+            builder: (context) {
+              return Scaffold(
+                body: TextButton(
+                  onPressed: () async {
+                    result = await Navigator.of(context).push<LocationPickResult>(
+                      MaterialPageRoute(
+                        builder: (_) => const LocationPickerScreen(),
+                      ),
+                    );
+                  },
+                  child: const Text('open'),
+                ),
+              );
+            },
+          ),
+        ),
+      ),
+    );
+    await tester.tap(find.text('open'));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.enterText(
+      find.byKey(const Key('merchant-location-search')),
+      'Hydra',
+    );
+    await tester.pump(const Duration(milliseconds: 400));
+    await tester.tap(find.byKey(const Key('merchant-location-suggestion-0')));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 50));
+    expect(find.textContaining('36.748'), findsNothing);
+    expect(result?.latitude, 1);
+    final cta = tester.widget<MerchantPrimaryButton>(
+      find.byKey(const Key('merchant-location-confirm')),
+    );
+    expect(cta.onPressed, isNotNull);
+    await tester.tap(find.byKey(const Key('merchant-location-confirm')));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 50));
+    expect(result?.latitude, closeTo(36.748, 0.0001));
+  });
+
+  test('map and search copy is French and Arabic without exposing coordinates',
+      () {
+    _bindFr();
+    expect(AppStrings.locationSearchLoading, 'Recherche en cours…');
+    expect(AppStrings.locationMapUnavailable, contains('configuré'));
+    expect(AppStrings.locationSearchDisabledOnDevMap, contains('désactivée'));
+    AppStrings.bind(lookupAppLocalizations(const Locale('ar')), 'ar');
+    expect(AppStrings.locationSearchLoading, 'جاري البحث…');
+    expect(AppStrings.locationMapUnavailable, contains('غير مُعدّ'));
+    expect(AppStrings.locationSearchDisabledOnDevMap, contains('معطّل'));
+    _bindFr();
+  });
+
+  testWidgets('OSM development mode disables Google lookups and keeps confirm',
+      (tester) async {
+    final geo = _FakeGeoClient()
+      ..suggestions = const [
+        PlaceSuggestion(placeId: 'ChIJ-hydra', text: 'Hydra, Alger'),
+      ];
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [
+          mapRuntimeConfigProvider.overrideWithValue(
+            const MapRuntimeConfig(googleMapsReady: false, osmDevMode: true),
+          ),
+          locationMapStubProvider.overrideWithValue(true),
+          locationClientProvider.overrideWithValue(
+            _FakeLocationClient(LocationAccess.denied),
+          ),
+          merchantGeoClientProvider.overrideWithValue(geo),
+        ],
+        child: MaterialApp(
+          theme: AppTheme.light(),
+          home: const LocationPickerScreen(
+            initialLatitude: 36.75,
+            initialLongitude: 3.05,
+          ),
+        ),
+      ),
+    );
+    await tester.pump(const Duration(milliseconds: 100));
+    expect(
+      find.text(AppStrings.locationSearchDisabledOnDevMap),
+      findsOneWidget,
+    );
+    expect(
+      tester
+          .widget<TextField>(find.byKey(const Key('merchant-location-search')))
+          .enabled,
+      isFalse,
+    );
+    await tester.enterText(
+      find.byKey(const Key('merchant-location-search')),
+      'Hydra',
+    );
+    await tester.pump(const Duration(milliseconds: 400));
+    expect(geo.autocompleteCalls, 0);
+    expect(find.byKey(const Key('merchant-location-map')), findsOneWidget);
+    final cta = tester.widget<MerchantPrimaryButton>(
+      find.byKey(const Key('merchant-location-confirm')),
+    );
+    expect(cta.onPressed, isNotNull);
+  });
+
+  testWidgets('missing Google configuration is an honest unavailable state',
+      (tester) async {
+    final geo = _FakeGeoClient();
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [
+          mapRuntimeConfigProvider.overrideWithValue(
+            const MapRuntimeConfig(googleMapsReady: false, osmDevMode: false),
+          ),
+          locationMapStubProvider.overrideWithValue(true),
+          locationClientProvider.overrideWithValue(
+            _FakeLocationClient(LocationAccess.denied),
+          ),
+          merchantGeoClientProvider.overrideWithValue(geo),
+        ],
+        child: MaterialApp(
+          theme: AppTheme.light(),
+          home: const LocationPickerScreen(
+            initialLatitude: 36.75,
+            initialLongitude: 3.05,
+          ),
+        ),
+      ),
+    );
+    await tester.pump(const Duration(milliseconds: 100));
+    expect(find.text(AppStrings.locationMapUnavailable), findsWidgets);
+    expect(
+      find.byKey(const Key('merchant-location-map-unavailable')),
+      findsOneWidget,
+    );
+    expect(find.byKey(const Key('merchant-location-map')), findsNothing);
+    final cta = tester.widget<MerchantPrimaryButton>(
+      find.byKey(const Key('merchant-location-confirm')),
+    );
+    expect(cta.onPressed, isNull);
+    expect(geo.autocompleteCalls, 0);
   });
 }
