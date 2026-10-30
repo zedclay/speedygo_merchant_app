@@ -78,6 +78,13 @@ void main() {
     expect(AppStrings.locationSearchUnavailable, contains('الخريطة'));
     _bind('fr');
     expect(AppStrings.locationSearchLoading, 'Recherche en cours…');
+    expect(AppStrings.weekdayThursday, 'Jeudi');
+    expect(AppStrings.sellingUnitPlat, 'Plat');
+    _bind('ar');
+    expect(AppStrings.weekdayThursday, 'الخميس');
+    expect(AppStrings.sellingUnitPlat, 'طبق');
+    _bind('fr');
+    expect(AppStrings.weekdayThursday, 'Jeudi');
   });
 
   testWidgets('language settings switches locale immediately and persists', (

@@ -505,6 +505,35 @@ class AppStrings {
   static String get languageOptionArabic => l10n.languageOptionArabic;
   static String get languageOptionFrench => l10n.languageOptionFrench;
   static String get languagePreviewNote => l10n.languagePreviewNote;
+
+  static String weekdayIso(int isoWeekday) {
+    switch (isoWeekday) {
+      case 1:
+        return weekdayMonday;
+      case 2:
+        return weekdayTuesday;
+      case 3:
+        return weekdayWednesday;
+      case 4:
+        return weekdayThursday;
+      case 5:
+        return weekdayFriday;
+      case 6:
+        return weekdaySaturday;
+      case 7:
+        return weekdaySunday;
+      default:
+        return '';
+    }
+  }
+
+  static String get weekdayFriday => l10n.weekdayFriday;
+  static String get weekdayMonday => l10n.weekdayMonday;
+  static String get weekdaySaturday => l10n.weekdaySaturday;
+  static String get weekdaySunday => l10n.weekdaySunday;
+  static String get weekdayThursday => l10n.weekdayThursday;
+  static String get weekdayTuesday => l10n.weekdayTuesday;
+  static String get weekdayWednesday => l10n.weekdayWednesday;
   static String get languageSaveFailed => l10n.languageSaveFailed;
   static String get languageSettingsSubtitle => l10n.languageSettingsSubtitle;
   static String get languageSettingsTitle => l10n.languageSettingsTitle;
@@ -757,6 +786,10 @@ class AppStrings {
   static String get orderCurrentStatus => l10n.orderCurrentStatus;
   static String get orderCustomerLabel => l10n.orderCustomerLabel;
   static String get orderDeliveryAddress => l10n.orderDeliveryAddress;
+  static String get orderAddressBuilding => l10n.orderAddressBuilding;
+  static String get orderAddressEntrance => l10n.orderAddressEntrance;
+  static String get orderAddressFloor => l10n.orderAddressFloor;
+  static String get orderAddressLandmark => l10n.orderAddressLandmark;
   static String get orderDeliveryStatusTitle => l10n.orderDeliveryStatusTitle;
   static String get orderDetailCancelledTitle => l10n.orderDetailCancelledTitle;
   static String get orderDetailLoadError => l10n.orderDetailLoadError;
@@ -1168,9 +1201,16 @@ class AppStrings {
   static String get sellingUnitApply => l10n.sellingUnitApply;
   static String get sellingUnitCalloutBody => l10n.sellingUnitCalloutBody;
   static String get sellingUnitCalloutTitle => l10n.sellingUnitCalloutTitle;
+  static String get sellingUnitBoite => l10n.sellingUnitBoite;
   static String get sellingUnitCommon => l10n.sellingUnitCommon;
+  static String get sellingUnitCustom => l10n.sellingUnitCustom;
   static String get sellingUnitCustomHint => l10n.sellingUnitCustomHint;
   static String get sellingUnitCustomName => l10n.sellingUnitCustomName;
+  static String get sellingUnitPack => l10n.sellingUnitPack;
+  static String get sellingUnitPiece => l10n.sellingUnitPiece;
+  static String get sellingUnitPlat => l10n.sellingUnitPlat;
+  static String get sellingUnitPlateau => l10n.sellingUnitPlateau;
+  static String get sellingUnitPortion => l10n.sellingUnitPortion;
   static String get sellingUnitNone => l10n.sellingUnitNone;
   static String get sellingUnitNoneSub => l10n.sellingUnitNoneSub;
   static String get sellingUnitNotSet => l10n.sellingUnitNotSet;

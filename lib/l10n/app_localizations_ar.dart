@@ -3793,4 +3793,58 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get languagePreviewNote =>
       'تتبدل نصوص الواجهة بين الفرنسية والعربية. تبقى بيانات العمل دون تغيير.';
+
+  @override
+  String get weekdayMonday => 'الإثنين';
+
+  @override
+  String get weekdayTuesday => 'الثلاثاء';
+
+  @override
+  String get weekdayWednesday => 'الأربعاء';
+
+  @override
+  String get weekdayThursday => 'الخميس';
+
+  @override
+  String get weekdayFriday => 'الجمعة';
+
+  @override
+  String get weekdaySaturday => 'السبت';
+
+  @override
+  String get weekdaySunday => 'الأحد';
+
+  @override
+  String get sellingUnitPlat => 'طبق';
+
+  @override
+  String get sellingUnitPiece => 'قطعة';
+
+  @override
+  String get sellingUnitPortion => 'حصة';
+
+  @override
+  String get sellingUnitBoite => 'علبة';
+
+  @override
+  String get sellingUnitPack => 'باك';
+
+  @override
+  String get sellingUnitPlateau => 'صينية';
+
+  @override
+  String get sellingUnitCustom => 'وحدة مخصصة';
+
+  @override
+  String get orderAddressBuilding => 'المبنى';
+
+  @override
+  String get orderAddressFloor => 'الطابق';
+
+  @override
+  String get orderAddressEntrance => 'المدخل';
+
+  @override
+  String get orderAddressLandmark => 'معلم';
 }

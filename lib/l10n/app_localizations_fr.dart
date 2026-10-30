@@ -3890,4 +3890,58 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get languagePreviewNote =>
       'Les textes de l’interface basculent entre le français et l’arabe. Les données métier restent inchangées.';
+
+  @override
+  String get weekdayMonday => 'Lundi';
+
+  @override
+  String get weekdayTuesday => 'Mardi';
+
+  @override
+  String get weekdayWednesday => 'Mercredi';
+
+  @override
+  String get weekdayThursday => 'Jeudi';
+
+  @override
+  String get weekdayFriday => 'Vendredi';
+
+  @override
+  String get weekdaySaturday => 'Samedi';
+
+  @override
+  String get weekdaySunday => 'Dimanche';
+
+  @override
+  String get sellingUnitPlat => 'Plat';
+
+  @override
+  String get sellingUnitPiece => 'Pièce';
+
+  @override
+  String get sellingUnitPortion => 'Portion';
+
+  @override
+  String get sellingUnitBoite => 'Boîte';
+
+  @override
+  String get sellingUnitPack => 'Pack';
+
+  @override
+  String get sellingUnitPlateau => 'Plateau';
+
+  @override
+  String get sellingUnitCustom => 'Unité personnalisée';
+
+  @override
+  String get orderAddressBuilding => 'Immeuble';
+
+  @override
+  String get orderAddressFloor => 'Étage';
+
+  @override
+  String get orderAddressEntrance => 'Entrée';
+
+  @override
+  String get orderAddressLandmark => 'Point de repère';
 }

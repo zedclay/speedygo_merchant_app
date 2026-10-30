@@ -131,6 +131,10 @@ class FakeMerchantApi implements MerchantClient {
   })?
   dailySummaryHandler;
 
+  final createdBranches = <Map<String, Object?>>[];
+  List<AlgeriaWilaya>? wilayaCatalog;
+  Map<String, List<AlgeriaCommune>>? communesByWilaya;
+
   Future<MerchantMe> Function()? meHandler;
   Future<MerchantOrderListPage> Function({
     required String merchantId,
@@ -245,6 +249,16 @@ class FakeMerchantApi implements MerchantClient {
     required String wilayaCode,
     required int communeId,
   }) async {
+    createdBranches.add({
+      'merchantId': merchantId,
+      'name': name,
+      'phone': phone,
+      'addressText': addressText,
+      'latitude': latitude,
+      'longitude': longitude,
+      'wilayaCode': wilayaCode,
+      'communeId': communeId,
+    });
     return MerchantBranch(
       id: 'b-new',
       name: name,
@@ -346,9 +360,10 @@ class FakeMerchantApi implements MerchantClient {
 
   @override
   Future<List<AlgeriaWilaya>> listWilayas() async {
-    return const [
-      AlgeriaWilaya(code: '16', nameFr: 'Alger', nameAr: 'الجزائر'),
-    ];
+    return wilayaCatalog ??
+        const [
+          AlgeriaWilaya(code: '16', nameFr: 'Alger', nameAr: 'الجزائر'),
+        ];
   }
 
   @override
@@ -356,6 +371,10 @@ class FakeMerchantApi implements MerchantClient {
     required String wilayaCode,
     String? q,
   }) async {
+    final catalog = communesByWilaya;
+    if (catalog != null) {
+      return catalog[wilayaCode] ?? const [];
+    }
     return const [
       AlgeriaCommune(
         id: 556,

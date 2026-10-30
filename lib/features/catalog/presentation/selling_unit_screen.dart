@@ -134,7 +134,7 @@ class _SellingUnitScreenState extends State<SellingUnitScreen> {
                   const Divider(height: 32),
                   _UnitTile(
                     tileKey: const Key('selling-unit-CUSTOM'),
-                    label: SellingUnit.custom.labelFr,
+                    label: SellingUnit.custom.localizedLabel,
                     selected: _unit == SellingUnit.custom,
                     onTap: () => _pick(SellingUnit.custom),
                   ),
@@ -313,7 +313,7 @@ class _Group extends StatelessWidget {
                     width: width,
                     child: _UnitTile(
                       tileKey: Key('selling-unit-${unit.code}'),
-                      label: unit.labelFr,
+                      label: unit.localizedLabel,
                       selected: selected == unit,
                       onTap: () => onPick(unit),
                     ),

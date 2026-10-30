@@ -147,18 +147,40 @@ class MerchantOrderItem {
   }
 }
 
+String? _snapshotText(Object? raw) {
+  if (raw == null) return null;
+  final text = raw.toString().trim();
+  return text.isEmpty ? null : text;
+}
+
 class MerchantOrderAddress {
   const MerchantOrderAddress({
     required this.addressText,
     required this.latitude,
     required this.longitude,
+    this.building,
+    this.floor,
+    this.entrance,
+    this.landmark,
     this.instructions,
   });
 
   final String addressText;
   final double latitude;
   final double longitude;
+  final String? building;
+  final String? floor;
+  final String? entrance;
+  final String? landmark;
   final String? instructions;
+
+  bool get hasVisibleContent =>
+      addressText.trim().isNotEmpty ||
+      building != null ||
+      floor != null ||
+      entrance != null ||
+      landmark != null ||
+      (instructions != null && instructions!.trim().isNotEmpty);
 
   factory MerchantOrderAddress.fromJson(Map<String, dynamic>? json) {
     if (json == null) {
@@ -172,7 +194,11 @@ class MerchantOrderAddress {
       addressText: json['addressText']?.toString() ?? '',
       latitude: (json['latitude'] as num?)?.toDouble() ?? 0,
       longitude: (json['longitude'] as num?)?.toDouble() ?? 0,
-      instructions: json['instructions']?.toString(),
+      building: _snapshotText(json['building']),
+      floor: _snapshotText(json['floor']),
+      entrance: _snapshotText(json['entrance']),
+      landmark: _snapshotText(json['landmark']),
+      instructions: _snapshotText(json['instructions']),
     );
   }
 }
