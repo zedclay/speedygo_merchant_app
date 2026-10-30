@@ -66,7 +66,7 @@ class _OpeningHoursScreenState extends ConsumerState<OpeningHoursScreen> {
       showDragHandle: true,
       backgroundColor: AppColors.surface,
       builder: (_) => _DayEditorSheet(
-        dayLabel: openingHoursDayLabels[dow]!,
+        dayLabel: openingHoursDayLabel(dow),
         initial: seed ?? _draft![dow]!,
       ),
     );
@@ -406,7 +406,7 @@ class _DayRow extends StatelessWidget {
     final stacked = MediaQuery.textScalerOf(context).scale(1) >= 1.25;
     final open = intervals.isNotEmpty;
     final day = Text(
-      openingHoursDayLabels[dow]!,
+      openingHoursDayLabel(dow),
       style: theme.textTheme.bodyLarge?.copyWith(
         color: AppColors.onSurface,
         fontWeight: FontWeight.w400,

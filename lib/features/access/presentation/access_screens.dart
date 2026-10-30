@@ -5,11 +5,14 @@ import 'package:speedygo_merchant_app/app/theme/app_theme.dart';
 import 'package:speedygo_merchant_app/core/constants/app_strings.dart';
 import 'package:speedygo_merchant_app/core/navigation/app_routes.dart';
 import 'package:speedygo_merchant_app/core/widgets/merchant_ui.dart';
+import 'package:speedygo_merchant_app/core/widgets/searchable_admin_picker.dart';
 import 'package:speedygo_merchant_app/features/access/application/access_controller.dart';
+import 'package:speedygo_merchant_app/features/access/data/geo_models.dart';
 import 'package:speedygo_merchant_app/features/access/data/models.dart';
 import 'package:speedygo_merchant_app/features/access/presentation/location_picker_screen.dart';
 import 'package:speedygo_merchant_app/features/access/presentation/evidence_presentation.dart';
 import 'package:speedygo_merchant_app/features/access/presentation/verification_review_widgets.dart';
+import 'package:speedygo_merchant_app/features/auth/application/auth_infrastructure.dart';
 import 'package:speedygo_merchant_app/features/auth/application/session_controller.dart';
 import 'package:speedygo_merchant_app/features/orders/presentation/order_public_reference.dart';
 import 'package:speedygo_merchant_app/features/shell/profile_settings_screen.dart'
@@ -140,16 +143,35 @@ class NeedBranchScreen extends ConsumerStatefulWidget {
   const NeedBranchScreen({super.key});
 
   @override
-  ConsumerState<NeedBranchScreen> createState() => _NeedBranchScreenState();
+  NeedBranchScreenState createState() => NeedBranchScreenState();
 }
 
-class _NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
+class NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
   final _name = TextEditingController();
   final _phone = TextEditingController();
   final _address = TextEditingController();
   final _lat = TextEditingController();
   final _lng = TextEditingController();
   var _pointConfirmed = false;
+  String? _formError;
+
+  List<AlgeriaWilaya> _wilayas = const [];
+  List<AlgeriaCommune> _communes = const [];
+  AlgeriaWilaya? _selectedWilaya;
+  AlgeriaCommune? _selectedCommune;
+  var _wilayasLoading = false;
+  var _communesLoading = false;
+  String? _wilayasError;
+  String? _communesError;
+  int _communesRequestId = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _loadWilayas();
+    });
+  }
 
   @override
   void dispose() {
@@ -161,9 +183,164 @@ class _NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
     super.dispose();
   }
 
+  @visibleForTesting
+  void debugConfirmPoint({
+    required double latitude,
+    required double longitude,
+  }) {
+    setState(() {
+      _lat.text = latitude.toString();
+      _lng.text = longitude.toString();
+      _pointConfirmed = true;
+      _formError = null;
+    });
+  }
+
+  Future<void> _loadWilayas() async {
+    setState(() {
+      _wilayasLoading = true;
+      _wilayasError = null;
+    });
+    try {
+      final list = await ref.read(merchantApiProvider).listWilayas();
+      if (!mounted) return;
+      setState(() {
+        _wilayas = list;
+        _wilayasLoading = false;
+      });
+    } catch (_) {
+      if (!mounted) return;
+      setState(() {
+        _wilayasLoading = false;
+        _wilayasError = AppStrings.adminLocationLoadError;
+      });
+    }
+  }
+
+  Future<void> _loadCommunes(String wilayaCode) async {
+    final requestId = ++_communesRequestId;
+    setState(() {
+      _communesLoading = true;
+      _communesError = null;
+      _communes = const [];
+    });
+    try {
+      final list = await ref
+          .read(merchantApiProvider)
+          .listCommunes(wilayaCode: wilayaCode);
+      if (!mounted || requestId != _communesRequestId) return;
+      setState(() {
+        _communes = list;
+        _communesLoading = false;
+      });
+    } catch (_) {
+      if (!mounted || requestId != _communesRequestId) return;
+      setState(() {
+        _communesLoading = false;
+        _communesError = AppStrings.adminLocationLoadError;
+      });
+    }
+  }
+
+  Future<void> _pickWilaya() async {
+    if (_wilayasLoading) return;
+    if (_wilayas.isEmpty) {
+      await _loadWilayas();
+      if (!mounted || _wilayas.isEmpty) return;
+    }
+    final picked = await showSearchableAdminPicker<AlgeriaWilaya>(
+      context: context,
+      title: AppStrings.storeAddressWilaya,
+      options: _wilayas,
+      labelOf: (w) => w.displayLabel,
+      searchTextOf: (w) => '${w.code} ${w.nameFr} ${w.nameAr}',
+      selected: _selectedWilaya,
+    );
+    if (!mounted || picked == null) return;
+    final wilayaChanged = _selectedWilaya?.code != picked.code;
+    setState(() {
+      _selectedWilaya = picked;
+      if (wilayaChanged) {
+        _selectedCommune = null;
+        _communes = const [];
+      }
+      _formError = null;
+    });
+    if (wilayaChanged) {
+      await _loadCommunes(picked.code);
+    }
+  }
+
+  Future<void> _pickCommune() async {
+    final wilaya = _selectedWilaya;
+    if (wilaya == null) {
+      setState(() => _formError = AppStrings.adminLocationWilayaRequired);
+      return;
+    }
+    if (_communesLoading) return;
+    if (_communes.isEmpty) {
+      await _loadCommunes(wilaya.code);
+      if (!mounted || _communes.isEmpty) return;
+    }
+    final picked = await showSearchableAdminPicker<AlgeriaCommune>(
+      context: context,
+      title: AppStrings.storeAddressCommune,
+      options: _communes,
+      labelOf: (c) => c.displayLabel,
+      searchTextOf: (c) => '${c.nameFr} ${c.nameAr} ${c.aliasesFr.join(' ')}',
+      selected: _selectedCommune,
+    );
+    if (!mounted || picked == null) return;
+    setState(() {
+      _selectedCommune = picked;
+      _formError = null;
+    });
+  }
+
+  void _submit() {
+    final lat = double.tryParse(_lat.text);
+    final lng = double.tryParse(_lng.text);
+    if (lat == null ||
+        lng == null ||
+        (lat == 0 && lng == 0) ||
+        !_pointConfirmed) {
+      setState(() => _formError = AppStrings.storeAddressSaveError);
+      return;
+    }
+    final wilaya = _selectedWilaya;
+    final commune = _selectedCommune;
+    if (wilaya == null || commune == null) {
+      setState(() => _formError = AppStrings.adminLocationPairRequired);
+      return;
+    }
+    final communeMatches =
+        commune.wilayaCode == wilaya.code &&
+        _communes.any((c) => c.id == commune.id && c.wilayaCode == wilaya.code);
+    if (!communeMatches) {
+      setState(() {
+        _selectedCommune = null;
+        _formError = AppStrings.adminLocationPairRequired;
+      });
+      return;
+    }
+    setState(() => _formError = null);
+    ref.read(accessControllerProvider.notifier).createBranch(
+      name: _name.text,
+      phone: _phone.text,
+      addressText: _address.text,
+      latitude: lat,
+      longitude: lng,
+      wilayaCode: wilaya.code,
+      communeId: commune.id,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final access = ref.watch(accessControllerProvider);
+    final communeEnabled =
+        !access.busy && _selectedWilaya != null && !_communesLoading;
+    final theme = Theme.of(context);
     return MerchantScaffold(
       title: AppStrings.needBranchTitle,
       body: ListView(
@@ -194,6 +371,72 @@ class _NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
               labelText: AppStrings.branchAddressLabel,
             ),
           ),
+          const SizedBox(height: 16),
+          if (_wilayasError != null)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      _wilayasError!,
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        color: AppColors.error,
+                      ),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: _wilayasLoading ? null : _loadWilayas,
+                    child: Text(AppStrings.adminLocationRetry),
+                  ),
+                ],
+              ),
+            ),
+          AdminLocationSelectField(
+            key: const Key('need-branch-wilaya'),
+            label: AppStrings.storeAddressWilaya,
+            valueText: _selectedWilaya?.displayLabel,
+            enabled: !access.busy && !_wilayasLoading,
+            onTap: _pickWilaya,
+            hint: _wilayasLoading
+                ? AppStrings.loading
+                : AppStrings.adminLocationChoose,
+          ),
+          const SizedBox(height: 12),
+          if (_communesError != null)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      _communesError!,
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        color: AppColors.error,
+                      ),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: _selectedWilaya == null || _communesLoading
+                        ? null
+                        : () => _loadCommunes(_selectedWilaya!.code),
+                    child: Text(AppStrings.adminLocationRetry),
+                  ),
+                ],
+              ),
+            ),
+          AdminLocationSelectField(
+            key: const Key('need-branch-commune'),
+            label: AppStrings.storeAddressCommune,
+            valueText: _selectedCommune?.displayLabel,
+            enabled: communeEnabled,
+            onTap: _pickCommune,
+            hint: _selectedWilaya == null
+                ? AppStrings.adminLocationWilayaRequired
+                : (_communesLoading
+                      ? AppStrings.loading
+                      : AppStrings.adminLocationChoose),
+          ),
           const SizedBox(height: 12),
           OutlinedButton.icon(
             key: const Key('branch-choose-map'),
@@ -210,6 +453,8 @@ class _NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
                           initialLongitude: lng,
                           addressHint: _address.text.trim(),
                           branchLabel: _name.text.trim(),
+                          wilayaCode: _selectedWilaya?.code,
+                          wilayaLabel: _selectedWilaya?.nameFr,
                         ),
                       ),
                     );
@@ -218,6 +463,7 @@ class _NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
                       _lat.text = result.latitude.toString();
                       _lng.text = result.longitude.toString();
                       _pointConfirmed = true;
+                      _formError = null;
                     });
                   },
             icon: const Icon(Icons.map_outlined),
@@ -231,42 +477,36 @@ class _NeedBranchScreenState extends ConsumerState<NeedBranchScreen> {
             offstage: true,
             child: Column(
               children: [
-                TextField(controller: _lat),
-                TextField(controller: _lng),
+                TextField(
+                  key: const Key('branch-latitude'),
+                  controller: _lat,
+                ),
+                TextField(
+                  key: const Key('branch-longitude'),
+                  controller: _lng,
+                ),
               ],
             ),
           ),
+          if (_formError != null) ...[
+            const SizedBox(height: 12),
+            Text(
+              _formError!,
+              key: const Key('need-branch-geo-error'),
+              style: TextStyle(color: theme.colorScheme.error),
+            ),
+          ],
           if (access.errorMessage != null) ...[
             const SizedBox(height: 12),
             Text(
               access.errorMessage!,
-              style: TextStyle(color: Theme.of(context).colorScheme.error),
+              style: TextStyle(color: theme.colorScheme.error),
             ),
           ],
           const SizedBox(height: 24),
           FilledButton(
             key: const Key('branch-create-submit'),
-            onPressed: access.busy
-                ? null
-                : () {
-                    final lat = double.tryParse(_lat.text);
-                    final lng = double.tryParse(_lng.text);
-                    if (lat == null ||
-                        lng == null ||
-                        (lat == 0 && lng == 0) ||
-                        !_pointConfirmed) {
-                      return;
-                    }
-                    ref.read(accessControllerProvider.notifier).createBranch(
-                      name: _name.text,
-                      phone: _phone.text,
-                      addressText: _address.text,
-                      latitude: lat,
-                      longitude: lng,
-                      wilayaCode: '22',
-                      communeId: 824,
-                    );
-                  },
+            onPressed: access.busy ? null : _submit,
             child: Text(AppStrings.addBranch),
           ),
         ],

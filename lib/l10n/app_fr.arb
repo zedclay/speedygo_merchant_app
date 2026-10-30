@@ -4914,5 +4914,77 @@
   "languagePreviewNote": "Les textes de l’interface basculent entre le français et l’arabe. Les données métier restent inchangées.",
   "@languagePreviewNote": {
     "description": "Merchant UI string languagePreviewNote"
+  },
+  "weekdayMonday": "Lundi",
+  "@weekdayMonday": {
+    "description": "Merchant UI string weekdayMonday"
+  },
+  "weekdayTuesday": "Mardi",
+  "@weekdayTuesday": {
+    "description": "Merchant UI string weekdayTuesday"
+  },
+  "weekdayWednesday": "Mercredi",
+  "@weekdayWednesday": {
+    "description": "Merchant UI string weekdayWednesday"
+  },
+  "weekdayThursday": "Jeudi",
+  "@weekdayThursday": {
+    "description": "Merchant UI string weekdayThursday"
+  },
+  "weekdayFriday": "Vendredi",
+  "@weekdayFriday": {
+    "description": "Merchant UI string weekdayFriday"
+  },
+  "weekdaySaturday": "Samedi",
+  "@weekdaySaturday": {
+    "description": "Merchant UI string weekdaySaturday"
+  },
+  "weekdaySunday": "Dimanche",
+  "@weekdaySunday": {
+    "description": "Merchant UI string weekdaySunday"
+  },
+  "sellingUnitPlat": "Plat",
+  "@sellingUnitPlat": {
+    "description": "Merchant UI string sellingUnitPlat"
+  },
+  "sellingUnitPiece": "Pièce",
+  "@sellingUnitPiece": {
+    "description": "Merchant UI string sellingUnitPiece"
+  },
+  "sellingUnitPortion": "Portion",
+  "@sellingUnitPortion": {
+    "description": "Merchant UI string sellingUnitPortion"
+  },
+  "sellingUnitBoite": "Boîte",
+  "@sellingUnitBoite": {
+    "description": "Merchant UI string sellingUnitBoite"
+  },
+  "sellingUnitPack": "Pack",
+  "@sellingUnitPack": {
+    "description": "Merchant UI string sellingUnitPack"
+  },
+  "sellingUnitPlateau": "Plateau",
+  "@sellingUnitPlateau": {
+    "description": "Merchant UI string sellingUnitPlateau"
+  },
+  "sellingUnitCustom": "Unité personnalisée",
+  "@sellingUnitCustom": {
+    "description": "Merchant UI string sellingUnitCustom"
+  },
+  "orderAddressBuilding": "Immeuble",
+  "@orderAddressBuilding": {
+    "description": "Merchant UI string orderAddressBuilding"
+  },
+  "orderAddressFloor": "Étage",
+  "@orderAddressFloor": {
+    "description": "Merchant UI string orderAddressFloor"
+  },
+  "orderAddressEntrance": "Entrée",
+  "@orderAddressEntrance": {
+    "description": "Merchant UI string orderAddressEntrance"
+  },
+  "orderAddressLandmark": "Point de repère",
+  "@orderAddressLandmark": {
+    "description": "Merchant UI string orderAddressLandmark"
   }
 }

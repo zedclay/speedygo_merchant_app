@@ -1,3 +1,4 @@
+import 'package:speedygo_merchant_app/core/constants/app_strings.dart';
 import 'package:speedygo_merchant_app/features/store/data/store_models.dart';
 
 /// Mirrors backend `OPENING_HOURS_MAX_INTERVALS_PER_DAY`.
@@ -18,6 +19,12 @@ const openingHoursDayLabels = <int, String>{
   6: 'Samedi',
   7: 'Dimanche',
 };
+
+String openingHoursDayLabel(int isoWeekday) {
+  final localized = AppStrings.weekdayIso(isoWeekday);
+  if (localized.isNotEmpty) return localized;
+  return openingHoursDayLabels[isoWeekday] ?? '';
+}
 
 DateTime branchLocalNow(DateTime now) => now.toUtc().add(branchUtcOffset);
 
@@ -159,6 +166,6 @@ String civilDateKey(DateTime date) =>
 String formatCivilDateFr(String value) {
   final date = parseCivilDate(value);
   if (date == null) return value;
-  return '${openingHoursDayLabels[date.weekday]} ${date.day} '
+  return '${openingHoursDayLabel(date.weekday)} ${date.day} '
       '${_frMonths[date.month - 1]} ${date.year}';
 }

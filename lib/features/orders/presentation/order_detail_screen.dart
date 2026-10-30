@@ -1330,7 +1330,7 @@ class _AddressCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final addr = order.deliveryAddress;
-    if (addr.addressText.isEmpty) return const SizedBox.shrink();
+    if (!addr.hasVisibleContent) return const SizedBox.shrink();
     final theme = Theme.of(context);
     return MerchantCard(
       child: Row(
@@ -1348,13 +1348,43 @@ class _AddressCard extends StatelessWidget {
                     color: AppColors.onSurfaceVariant,
                   ),
                 ),
-                const SizedBox(height: 4),
-                Text(addr.addressText, style: theme.textTheme.bodyMedium),
-                if (addr.instructions != null &&
-                    addr.instructions!.isNotEmpty) ...[
+                if (addr.addressText.trim().isNotEmpty) ...[
+                  const SizedBox(height: 4),
+                  Text(
+                    addr.addressText,
+                    key: const Key('order-address-street'),
+                    style: theme.textTheme.bodyMedium,
+                  ),
+                ],
+                ..._snapshotLine(
+                  theme,
+                  key: const Key('order-address-building'),
+                  label: AppStrings.orderAddressBuilding,
+                  value: addr.building,
+                ),
+                ..._snapshotLine(
+                  theme,
+                  key: const Key('order-address-floor'),
+                  label: AppStrings.orderAddressFloor,
+                  value: addr.floor,
+                ),
+                ..._snapshotLine(
+                  theme,
+                  key: const Key('order-address-entrance'),
+                  label: AppStrings.orderAddressEntrance,
+                  value: addr.entrance,
+                ),
+                ..._snapshotLine(
+                  theme,
+                  key: const Key('order-address-landmark'),
+                  label: AppStrings.orderAddressLandmark,
+                  value: addr.landmark,
+                ),
+                if (addr.instructions != null) ...[
                   const SizedBox(height: 4),
                   Text(
                     addr.instructions!,
+                    key: const Key('order-address-instructions'),
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: AppColors.onSurfaceVariant,
                     ),
@@ -1366,6 +1396,23 @@ class _AddressCard extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  List<Widget> _snapshotLine(
+    ThemeData theme, {
+    required Key key,
+    required String label,
+    required String? value,
+  }) {
+    if (value == null) return const [];
+    return [
+      const SizedBox(height: 4),
+      Text(
+        '$label · $value',
+        key: key,
+        style: theme.textTheme.bodyMedium,
+      ),
+    ];
   }
 }
 

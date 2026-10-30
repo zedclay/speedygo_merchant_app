@@ -183,7 +183,7 @@ class SessionController extends Notifier<SessionState> {
     state = state.copyWith(busy: true, clearError: true);
     try {
       final pair = await _authApi.verifyOtp(
-        OtpVerifyBody(identifier: phone, code: code.trim()),
+        OtpVerifyBody.forDevice(identifier: phone, code: code.trim()),
       );
       if (!_isCurrent(generation)) return;
       await _store.write(pair);

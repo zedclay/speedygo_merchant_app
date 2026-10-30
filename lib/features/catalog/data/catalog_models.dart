@@ -1,3 +1,4 @@
+import 'package:speedygo_merchant_app/core/constants/app_strings.dart';
 import 'package:speedygo_merchant_app/core/money/money_format.dart';
 
 class CatalogStats {
@@ -77,7 +78,27 @@ enum SellingUnit {
   const SellingUnit(this.code, this.labelFr);
 
   final String code;
+  /// Stored/API French allowlist label. UI uses [localizedLabel].
   final String labelFr;
+
+  String get localizedLabel {
+    switch (this) {
+      case SellingUnit.plat:
+        return AppStrings.sellingUnitPlat;
+      case SellingUnit.piece:
+        return AppStrings.sellingUnitPiece;
+      case SellingUnit.portion:
+        return AppStrings.sellingUnitPortion;
+      case SellingUnit.boite:
+        return AppStrings.sellingUnitBoite;
+      case SellingUnit.pack:
+        return AppStrings.sellingUnitPack;
+      case SellingUnit.plateau:
+        return AppStrings.sellingUnitPlateau;
+      case SellingUnit.custom:
+        return AppStrings.sellingUnitCustom;
+    }
+  }
 
   static SellingUnit? fromCode(String? code) {
     for (final unit in values) {
@@ -95,7 +116,7 @@ String? sellingUnitDisplayLabel(String? code, String? labelFr) {
   if (custom != null && custom.isNotEmpty) return custom;
   final unit = SellingUnit.fromCode(code);
   if (unit == null || unit == SellingUnit.custom) return null;
-  return unit.labelFr;
+  return unit.localizedLabel;
 }
 
 /// A product's selling unit as sent to the API. [none] clears the unit.

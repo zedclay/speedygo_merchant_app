@@ -4914,5 +4914,77 @@
   "languagePreviewNote": "تتبدل نصوص الواجهة بين الفرنسية والعربية. تبقى بيانات العمل دون تغيير.",
   "@languagePreviewNote": {
     "description": "Merchant UI string languagePreviewNote"
+  },
+  "weekdayMonday": "الإثنين",
+  "@weekdayMonday": {
+    "description": "Merchant UI string weekdayMonday"
+  },
+  "weekdayTuesday": "الثلاثاء",
+  "@weekdayTuesday": {
+    "description": "Merchant UI string weekdayTuesday"
+  },
+  "weekdayWednesday": "الأربعاء",
+  "@weekdayWednesday": {
+    "description": "Merchant UI string weekdayWednesday"
+  },
+  "weekdayThursday": "الخميس",
+  "@weekdayThursday": {
+    "description": "Merchant UI string weekdayThursday"
+  },
+  "weekdayFriday": "الجمعة",
+  "@weekdayFriday": {
+    "description": "Merchant UI string weekdayFriday"
+  },
+  "weekdaySaturday": "السبت",
+  "@weekdaySaturday": {
+    "description": "Merchant UI string weekdaySaturday"
+  },
+  "weekdaySunday": "الأحد",
+  "@weekdaySunday": {
+    "description": "Merchant UI string weekdaySunday"
+  },
+  "sellingUnitPlat": "طبق",
+  "@sellingUnitPlat": {
+    "description": "Merchant UI string sellingUnitPlat"
+  },
+  "sellingUnitPiece": "قطعة",
+  "@sellingUnitPiece": {
+    "description": "Merchant UI string sellingUnitPiece"
+  },
+  "sellingUnitPortion": "حصة",
+  "@sellingUnitPortion": {
+    "description": "Merchant UI string sellingUnitPortion"
+  },
+  "sellingUnitBoite": "علبة",
+  "@sellingUnitBoite": {
+    "description": "Merchant UI string sellingUnitBoite"
+  },
+  "sellingUnitPack": "باك",
+  "@sellingUnitPack": {
+    "description": "Merchant UI string sellingUnitPack"
+  },
+  "sellingUnitPlateau": "صينية",
+  "@sellingUnitPlateau": {
+    "description": "Merchant UI string sellingUnitPlateau"
+  },
+  "sellingUnitCustom": "وحدة مخصصة",
+  "@sellingUnitCustom": {
+    "description": "Merchant UI string sellingUnitCustom"
+  },
+  "orderAddressBuilding": "المبنى",
+  "@orderAddressBuilding": {
+    "description": "Merchant UI string orderAddressBuilding"
+  },
+  "orderAddressFloor": "الطابق",
+  "@orderAddressFloor": {
+    "description": "Merchant UI string orderAddressFloor"
+  },
+  "orderAddressEntrance": "المدخل",
+  "@orderAddressEntrance": {
+    "description": "Merchant UI string orderAddressEntrance"
+  },
+  "orderAddressLandmark": "معلم",
+  "@orderAddressLandmark": {
+    "description": "Merchant UI string orderAddressLandmark"
   }
 }

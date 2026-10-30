@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 class SessionParseException implements Exception {
   const SessionParseException();
 }
@@ -53,13 +55,47 @@ class OtpRequestBody {
   };
 }
 
+/// Backend `DevicePlatform`: `ios` | `android` | `web`.
+String authOtpVerifyPlatform({
+  TargetPlatform? platform,
+  bool? isWeb,
+}) {
+  if (isWeb ?? kIsWeb) {
+    return 'web';
+  }
+  switch (platform ?? defaultTargetPlatform) {
+    case TargetPlatform.iOS:
+      return 'ios';
+    case TargetPlatform.android:
+      return 'android';
+    case TargetPlatform.macOS:
+    case TargetPlatform.windows:
+    case TargetPlatform.linux:
+    case TargetPlatform.fuchsia:
+      return 'web';
+  }
+}
+
 class OtpVerifyBody {
   const OtpVerifyBody({
     required this.identifier,
     required this.code,
-    this.platform = 'ios',
+    required this.platform,
     this.appVersion = '1.0.0',
   });
+
+  factory OtpVerifyBody.forDevice({
+    required String identifier,
+    required String code,
+    String appVersion = '1.0.0',
+  }) {
+    return OtpVerifyBody(
+      identifier: identifier,
+      code: code,
+      platform: authOtpVerifyPlatform(),
+      appVersion: appVersion,
+    );
+  }
 
   final String identifier;
   final String code;

@@ -7183,6 +7183,114 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Les textes de l’interface basculent entre le français et l’arabe. Les données métier restent inchangées.'**
   String get languagePreviewNote;
+
+  /// Merchant UI string weekdayMonday
+  ///
+  /// In fr, this message translates to:
+  /// **'Lundi'**
+  String get weekdayMonday;
+
+  /// Merchant UI string weekdayTuesday
+  ///
+  /// In fr, this message translates to:
+  /// **'Mardi'**
+  String get weekdayTuesday;
+
+  /// Merchant UI string weekdayWednesday
+  ///
+  /// In fr, this message translates to:
+  /// **'Mercredi'**
+  String get weekdayWednesday;
+
+  /// Merchant UI string weekdayThursday
+  ///
+  /// In fr, this message translates to:
+  /// **'Jeudi'**
+  String get weekdayThursday;
+
+  /// Merchant UI string weekdayFriday
+  ///
+  /// In fr, this message translates to:
+  /// **'Vendredi'**
+  String get weekdayFriday;
+
+  /// Merchant UI string weekdaySaturday
+  ///
+  /// In fr, this message translates to:
+  /// **'Samedi'**
+  String get weekdaySaturday;
+
+  /// Merchant UI string weekdaySunday
+  ///
+  /// In fr, this message translates to:
+  /// **'Dimanche'**
+  String get weekdaySunday;
+
+  /// Merchant UI string sellingUnitPlat
+  ///
+  /// In fr, this message translates to:
+  /// **'Plat'**
+  String get sellingUnitPlat;
+
+  /// Merchant UI string sellingUnitPiece
+  ///
+  /// In fr, this message translates to:
+  /// **'Pièce'**
+  String get sellingUnitPiece;
+
+  /// Merchant UI string sellingUnitPortion
+  ///
+  /// In fr, this message translates to:
+  /// **'Portion'**
+  String get sellingUnitPortion;
+
+  /// Merchant UI string sellingUnitBoite
+  ///
+  /// In fr, this message translates to:
+  /// **'Boîte'**
+  String get sellingUnitBoite;
+
+  /// Merchant UI string sellingUnitPack
+  ///
+  /// In fr, this message translates to:
+  /// **'Pack'**
+  String get sellingUnitPack;
+
+  /// Merchant UI string sellingUnitPlateau
+  ///
+  /// In fr, this message translates to:
+  /// **'Plateau'**
+  String get sellingUnitPlateau;
+
+  /// Merchant UI string sellingUnitCustom
+  ///
+  /// In fr, this message translates to:
+  /// **'Unité personnalisée'**
+  String get sellingUnitCustom;
+
+  /// Merchant UI string orderAddressBuilding
+  ///
+  /// In fr, this message translates to:
+  /// **'Immeuble'**
+  String get orderAddressBuilding;
+
+  /// Merchant UI string orderAddressFloor
+  ///
+  /// In fr, this message translates to:
+  /// **'Étage'**
+  String get orderAddressFloor;
+
+  /// Merchant UI string orderAddressEntrance
+  ///
+  /// In fr, this message translates to:
+  /// **'Entrée'**
+  String get orderAddressEntrance;
+
+  /// Merchant UI string orderAddressLandmark
+  ///
+  /// In fr, this message translates to:
+  /// **'Point de repère'**
+  String get orderAddressLandmark;
 }
 
 class _AppLocalizationsDelegate
